@@ -1,0 +1,132 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+"""
+CBT 폴더의 모든 HTML 파일에서
+해설 버튼 클릭시 나타나는 오류신고 폼의 내용(p 태그와 textarea) 제거
+"""
+
+import re
+import sys
+from pathlib import Path
+
+# UTF-8 출력 설정
+if sys.stdout.encoding != 'utf-8':
+    sys.stdout.reconfigure(encoding='utf-8')
+
+
+def remove_report_form_content(content):
+    """오류신고 폼에서 p 태그와 textarea 제거"""
+    # 패턴: report-form 내부의 p 태그와 textarea를 찾아서 제거
+    # <p>*오류신고 접수시 100포인트 지급해드립니다.</p> 제거
+    # <textarea class="form-control report-reason" ...></textarea> 제거
+    
+    # 1단계: p 태그 제거 (오류신고 관련 텍스트)
+    pattern_p = r'<p>\*오류신고 접수시 100포인트 지급해드립니다\.</p>\s*'
+    content = re.sub(pattern_p, '', content)
+    
+    # 2단계: textarea 제거 (오류신고 내용 입력칸)
+    pattern_textarea = r'<textarea[^>]*class="[^"]*report-reason[^"]*"[^>]*>.*?</textarea>\s*'
+    content = re.sub(pattern_textarea, '', content, flags=re.DOTALL)
+    
+    return content
+
+
+def process_file(file_path, dry_run=False):
+    """단일 파일 처리"""
+    try:
+        with open(file_path, 'r', encoding='utf-8') as f:
+            content = f.read()
+        
+        original_content = content
+        new_content = remove_report_form_content(content)
+        
+        if new_content == original_content:
+            return False  # 변경사항 없음
+        
+        if not dry_run:
+            with open(file_path, 'w', encoding='utf-8') as f:
+                f.write(new_content)
+        
+        return True
+        
+    except Exception as e:
+        print(f"❌ {file_path.name} 처리 오류: {e}")
+        import traceback
+        traceback.print_exc()
+        return False
+
+
+def main():
+    """메인 함수"""
+    print("=" * 60)
+    print("오류신고 폼 내용 제거")
+    print("제거 대상: <p>*오류신고 접수시 100포인트 지급해드립니다.</p>")
+    print("제거 대상: <textarea ... report-reason ...></textarea>")
+    print("=" * 60)
+    print()
+    
+    cbt_folder = Path("CBT")
+    if not cbt_folder.exists():
+        print("❌ CBT 폴더를 찾을 수 없습니다.")
+        return
+    
+    html_files = list(cbt_folder.rglob("*.html"))
+    
+    # 백업 폴더 제외
+    html_files = [f for f in html_files if '백업' not in str(f)]
+    
+    print(f"📁 총 {len(html_files)}개의 HTML 파일을 찾았습니다.")
+    print()
+    
+    # Dry run 먼저 실행 (처음 10개만 테스트)
+    print("=" * 60)
+    print("1단계: DRY RUN (처음 10개 파일 테스트)")
+    print("=" * 60)
+    
+    modified_count = 0
+    for file_path in html_files[:10]:
+        if process_file(file_path, dry_run=True):
+            print(f"✅ {file_path.relative_to(cbt_folder)} - 수정 필요")
+            modified_count += 1
+        else:
+            print(f"⏭️  {file_path.relative_to(cbt_folder)} - 변경사항 없음")
+    
+    print()
+    print(f"📊 DRY RUN 결과 (처음 10개): {modified_count}/10개 파일 수정 필요")
+    print()
+    
+    # 전체 파일 처리
+    print("=" * 60)
+    print("2단계: 실제 파일 수정 (전체)")
+    print("=" * 60)
+    print()
+    
+    success_count = 0
+    skip_count = 0
+    error_count = 0
+    
+    for i, file_path in enumerate(html_files, 1):
+        try:
+            if process_file(file_path, dry_run=False):
+                print(f"✅ [{i}/{len(html_files)}] {file_path.relative_to(cbt_folder)} - 수정 완료")
+                success_count += 1
+            else:
+                skip_count += 1
+                if i % 100 == 0 or i <= 10:
+                    print(f"⏭️  [{i}/{len(html_files)}] {file_path.relative_to(cbt_folder)} - 변경사항 없음")
+        except Exception as e:
+            error_count += 1
+            print(f"❌ [{i}/{len(html_files)}] {file_path.relative_to(cbt_folder)} - 오류: {e}")
+    
+    print()
+    print("=" * 60)
+    print("완료!")
+    print("=" * 60)
+    print(f"📊 총 파일 수: {len(html_files)}개")
+    print(f"✅ 수정 완료: {success_count}개")
+    print(f"⏭️  스킵/변경없음: {skip_count}개")
+    print(f"❌ 오류: {error_count}개")
+
+
+if __name__ == "__main__":
+    main()

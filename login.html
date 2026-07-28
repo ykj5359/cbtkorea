@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 - CBT 기출문제</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+        body { font-family: 'Noto Sans KR', sans-serif; }
+        .page-bg {
+            background: linear-gradient(135deg, #0f2460 0%, #1e3a8a 45%, #2563eb 100%);
+            min-height: 100vh;
+        }
+        /* 카카오 버튼 */
+        .kakao-btn {
+            background: #FEE500;
+            color: #191600;
+            font-weight: 700;
+            font-size: 16px;
+            border-radius: 12px;
+            padding: 15px 24px;
+            width: 100%;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transition: all 0.2s;
+            box-shadow: 0 2px 10px rgba(254,229,0,0.4);
+        }
+        .kakao-btn:hover  { background: #F5DC00; transform: translateY(-2px); box-shadow: 0 6px 16px rgba(254,229,0,0.5); }
+        .kakao-btn:active { transform: translateY(0); }
+        /* 닉네임 버튼 */
+        .nick-btn {
+            width: 100%; padding: 13px 24px; border-radius: 12px;
+            border: 2px solid #cbd5e1; background: white;
+            font-size: 15px; font-weight: 600; color: #374151;
+            cursor: pointer; transition: all 0.2s; display: flex;
+            align-items: center; justify-content: center; gap: 8px;
+        }
+        .nick-btn:hover { border-color: #2563eb; color: #2563eb; background: #f0f7ff; }
+        /* 로딩 오버레이 */
+        #loadingOverlay {
+            position: fixed; inset: 0; background: rgba(15,36,96,0.7);
+            z-index: 100; display: none;
+            align-items: center; justify-content: center;
+        }
+        #loadingOverlay.show { display: flex; }
+        .spinner {
+            width: 48px; height: 48px;
+            border: 5px solid rgba(255,255,255,0.25);
+            border-top-color: #FEE500;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        /* 혜택 아이템 */
+        .benefit-item { display: flex; align-items: center; gap: 8px; font-size: 13px; color: #3b82f6; }
+        .benefit-item i { color: #93c5fd; width: 14px; flex-shrink: 0; }
+        /* 카드 입장 애니메이션 */
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(24px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+        .card-enter { animation: fadeUp 0.45s ease both; }
+    </style>
+</head>
+<body class="page-bg flex flex-col">
+
+    <!-- 미니 네비 -->
+    <nav class="px-6 py-4 flex items-center justify-between">
+        <a href="index.html" class="text-white text-xl font-black tracking-tight">CBT 기출문제</a>
+        <a href="index.html" class="text-blue-200 text-sm hover:text-white transition flex items-center gap-1">
+            <i class="fas fa-arrow-left text-xs"></i> 메인으로
+        </a>
+    </nav>
+
+    <!-- 로그인 카드 영역 -->
+    <div class="flex-1 flex items-center justify-center px-4 py-6">
+        <div class="w-full max-w-sm">
+
+            <!-- 헤딩 -->
+            <div class="text-center mb-7 card-enter" style="animation-delay:0.05s">
+                <div class="w-16 h-16 bg-white/10 backdrop-blur rounded-2xl flex items-center justify-center mx-auto mb-4 ring-2 ring-white/20">
+                    <i class="fas fa-graduation-cap text-white text-3xl"></i>
+                </div>
+                <h1 class="text-3xl font-black text-white mb-1">로그인</h1>
+                <p class="text-blue-200 text-sm">학습 기록·오답노트·북마크를 저장하세요</p>
+            </div>
+
+            <!-- 메인 카드 -->
+            <div class="bg-white rounded-2xl shadow-2xl overflow-hidden card-enter" style="animation-delay:0.15s">
+
+                <!-- 카카오 로그인 -->
+                <div class="p-7 space-y-4">
+                    <button class="kakao-btn" id="kakaoLoginBtn">
+                        <!-- 카카오 로고 (공식 색상) -->
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M11 2C6.032 2 2 5.358 2 9.5c0 2.716 1.71 5.1 4.29 6.428l-1.1 4.063a.3.3 0 0 0 .456.328l4.832-3.196A10.3 10.3 0 0 0 11 17c4.968 0 9-3.358 9-7.5S15.968 2 11 2Z"
+                                fill="#191600"/>
+                        </svg>
+                        카카오로 3초 로그인
+                    </button>
+
+                    <div class="flex items-center gap-3">
+                        <div class="flex-1 h-px bg-gray-100"></div>
+                        <span class="text-xs text-gray-400 font-medium">또는</span>
+                        <div class="flex-1 h-px bg-gray-100"></div>
+                    </div>
+
+                    <!-- 회원 로그인 (닉네임 + 비밀번호) -->
+                    <div class="space-y-2">
+                        <input
+                            type="text" id="memberNickname"
+                            placeholder="닉네임 (아이디)"
+                            maxlength="16" autocomplete="username"
+                            class="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm
+                                   focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-100 transition">
+                        <input
+                            type="password" id="memberPassword"
+                            placeholder="비밀번호" autocomplete="current-password"
+                            class="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm
+                                   focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-100 transition"
+                            onkeydown="if(event.key==='Enter') doMemberLogin()">
+                        <p id="memberLoginErr" class="text-xs text-red-500 hidden"></p>
+                        <button class="nick-btn" onclick="doMemberLogin()" style="border-color:#2563eb;color:#2563eb;background:#f0f7ff;">
+                            <i class="fas fa-right-to-bracket"></i>
+                            로그인
+                        </button>
+                        <p class="text-center text-xs text-gray-400 pt-1">
+                            아직 회원이 아니신가요?
+                            <a href="signup.html" class="text-blue-500 font-bold underline hover:text-blue-700">회원가입</a>
+                        </p>
+                    </div>
+
+                    <div class="flex items-center gap-3">
+                        <div class="flex-1 h-px bg-gray-100"></div>
+                        <span class="text-xs text-gray-300 font-medium">가입 없이 둘러보기</span>
+                        <div class="flex-1 h-px bg-gray-100"></div>
+                    </div>
+
+                    <!-- 닉네임 게스트 로그인 -->
+                    <div class="space-y-2">
+                        <input
+                            type="text" id="nicknameInput"
+                            placeholder="닉네임만 입력하고 게스트로 시작"
+                            maxlength="16"
+                            class="w-full px-4 py-2.5 border border-gray-200 rounded-xl text-sm text-center
+                                   focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-100 transition"
+                            onkeydown="if(event.key==='Enter') doNicknameLogin()">
+                        <button class="nick-btn" onclick="doNicknameLogin()" style="padding:10px 24px;font-size:14px;">
+                            <i class="fas fa-user-circle text-blue-400"></i>
+                            게스트로 시작하기
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 혜택 안내 -->
+                <div class="bg-blue-50 px-7 py-5 border-t border-blue-100/60">
+                    <p class="text-xs font-bold text-blue-800 mb-3 flex items-center gap-1.5">
+                        <i class="fas fa-star text-yellow-400"></i> 로그인하면 이런 기능을 쓸 수 있어요
+                    </p>
+                    <div class="grid grid-cols-2 gap-2">
+                        <div class="benefit-item"><i class="fas fa-bookmark"></i>문제 체크/북마크</div>
+                        <div class="benefit-item"><i class="fas fa-calculator"></i>채점 결과 저장</div>
+                        <div class="benefit-item"><i class="fas fa-book-open"></i>오답노트 자동 생성</div>
+                        <div class="benefit-item"><i class="fas fa-chart-line"></i>학습 통계 분석</div>
+                        <div class="benefit-item"><i class="fas fa-pen"></i>커뮤니티 실명 글쓰기</div>
+                        <div class="benefit-item"><i class="fas fa-history"></i>풀이 기록 히스토리</div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="text-center text-blue-200/70 text-xs mt-5 card-enter" style="animation-delay:0.25s">
+                로그인 없이도 기출문제를 풀 수 있습니다 &nbsp;·&nbsp;
+                <a href="index.html" class="text-blue-200 hover:text-white underline transition">메인으로</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- 로딩 오버레이 -->
+    <div id="loadingOverlay">
+        <div class="text-center">
+            <div class="spinner mx-auto mb-4"></div>
+            <p class="text-white font-semibold text-base" id="loadingMsg">로그인 중...</p>
+        </div>
+    </div>
+
+    <script src="cbt-auth.js?v=6"></script>
+    <script>
+    /* ── 이미 로그인돼 있으면 바로 리다이렉트 ── */
+    (function () {
+        if (!CBT_AUTH.isLoggedIn()) return;
+        var dest = localStorage.getItem('cbt_redirect') || 'index.html';
+        localStorage.removeItem('cbt_redirect');
+        location.replace(dest);
+    })();
+
+    /* ── 로딩 오버레이 헬퍼 ── */
+    function showLoading(msg) {
+        document.getElementById('loadingMsg').textContent = msg || '로그인 중...';
+        document.getElementById('loadingOverlay').classList.add('show');
+    }
+    function hideLoading() {
+        document.getElementById('loadingOverlay').classList.remove('show');
+    }
+
+    /* ── 로그인 성공 공통 처리 ── */
+    function onLoginSuccess() {
+        var dest = localStorage.getItem('cbt_redirect') || 'index.html';
+        localStorage.removeItem('cbt_redirect');
+        location.replace(dest);
+    }
+
+    /* ── 카카오 로그인 ── */
+    document.getElementById('kakaoLoginBtn').addEventListener('click', function () {
+        showLoading('카카오 로그인 중...');
+        CBT_AUTH.kakaoLogin(
+            function (user) { onLoginSuccess(); },
+            function (err)  {
+                hideLoading();
+                alert(
+                    '카카오 로그인에 실패했습니다.\n\n' +
+                    '카카오 개발자 콘솔에서 도메인 등록이 필요할 수 있습니다.\n' +
+                    '아래 닉네임 로그인을 이용해 주세요.\n\n' +
+                    '상세: ' + (err && err.msg ? err.msg : JSON.stringify(err))
+                );
+            }
+        );
+    });
+
+    /* ── 회원 로그인 (닉네임+비밀번호) ── */
+    function doMemberLogin() {
+        var nickname = document.getElementById('memberNickname').value.trim();
+        var password = document.getElementById('memberPassword').value;
+        var errEl = document.getElementById('memberLoginErr');
+        errEl.classList.add('hidden');
+
+        var res = CBT_AUTH.pwLogin(nickname, password);
+        if (!res.ok) {
+            errEl.textContent = res.msg;
+            errEl.classList.remove('hidden');
+            return;
+        }
+        showLoading(res.user.nickname + '님, 환영합니다!');
+        setTimeout(onLoginSuccess, 700);
+    }
+
+    /* ── 닉네임 로그인 ── */
+    function doNicknameLogin() {
+        var nickname = document.getElementById('nicknameInput').value.trim();
+        if (!nickname) {
+            document.getElementById('nicknameInput').focus();
+            document.getElementById('nicknameInput').placeholder = '닉네임을 입력해 주세요!';
+            return;
+        }
+        showLoading(nickname + '님, 환영합니다!');
+        CBT_AUTH.nicknameLogin(nickname);
+        setTimeout(onLoginSuccess, 700);
+    }
+    </script>
+</body>
+</html>

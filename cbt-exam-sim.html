@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CBT 시험 응시 - CBT 기출문제</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { height:100%; }
+body { font-family:'Noto Sans KR','Malgun Gothic',sans-serif; background:#fff; color:#222; overflow:hidden; }
+.phase { display:none; height:100vh; overflow-y:auto; }
+.phase.on { display:block; }
+button { font-family:inherit; cursor:pointer; }
+
+/* ══════════ 공통 안내 화면 ══════════ */
+.guide-wrap { max-width:860px; margin:0 auto; padding:48px 28px 60px; }
+.guide-title { font-size:30px; font-weight:900; color:#111; display:flex; align-items:center; gap:10px; }
+.guide-title small { font-size:20px; font-weight:700; color:#333; }
+.num-badge { display:inline-flex; width:28px; height:28px; border-radius:50%; background:#111; color:#fff;
+  font-size:15px; font-weight:800; align-items:center; justify-content:center; flex:none; }
+.guide-body { margin-top:26px; font-size:16.5px; line-height:1.75; color:#222; }
+.guide-body ul { padding-left:22px; }
+.guide-body li { margin-bottom:13px; }
+.guide-body .rd { color:#e01e1e; font-weight:700; }
+.guide-body .bl { color:#1d4ed8; font-weight:700; }
+.guide-btns { display:flex; justify-content:center; gap:14px; margin-top:52px; }
+.gbtn { min-width:150px; padding:14px 34px; border:none; border-radius:6px; font-size:18px; font-weight:800; color:#fff;
+  background:#1d6ff2; transition:background .15s; display:inline-flex; align-items:center; justify-content:center; gap:8px; }
+.gbtn:hover { background:#1656c0; }
+.gbtn.back { background:#7ba6e8; }
+.gbtn.back:hover { background:#5f8ed8; }
+.gbtn:disabled { background:#c9ced6; color:#f2f2f2; cursor:not-allowed; }
+.wait-msg { text-align:center; color:#e01e1e; font-size:13.5px; font-weight:700; margin-top:38px; margin-bottom:-30px; }
+
+/* ══════════ 수험자 정보 확인 ══════════ */
+.idc-banner { background:#1d6ff2; color:#fff; font-size:26px; font-weight:900; padding:14px 22px;
+  display:flex; align-items:center; gap:10px; border-radius:4px; }
+.idc-banner .num-badge { background:#fff; color:#1d6ff2; }
+.idc-notice { background:#fdecec; border:1px solid #f5b5b5; color:#e01e1e; font-weight:700; text-align:center;
+  padding:12px; margin-top:14px; font-size:16px; border-radius:4px; }
+.idc-grid { display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-top:18px; }
+@media (max-width:760px){ .idc-grid { grid-template-columns:1fr; } }
+.idc-card { border:3px solid #37b6e2; border-radius:8px; overflow:hidden; background:#eaf7fd; padding:14px; }
+.idc-photo-row { display:flex; gap:14px; }
+.idc-photo { width:130px; height:160px; background:#dde7ef; border:1px solid #b9c6d2; border-radius:4px;
+  display:flex; align-items:center; justify-content:center; overflow:hidden; flex:none; }
+.idc-photo svg { width:100%; height:100%; }
+.idc-seat { flex:1; background:#1d6ff2; border-radius:6px; color:#fff; display:flex; flex-direction:column;
+  align-items:center; justify-content:center; gap:4px; }
+.idc-seat .lbl { font-size:18px; font-weight:800; }
+.idc-seat .no { font-size:56px; font-weight:900; line-height:1; }
+.idc-table { margin-top:14px; background:#fff; border-radius:6px; padding:10px 16px; }
+.idc-table .row { display:flex; padding:9px 0; border-bottom:1px dashed #e2e8f0; font-size:15.5px; }
+.idc-table .row:last-child { border-bottom:none; }
+.idc-table .k { width:92px; color:#334155; font-weight:700; text-align:right; margin-right:18px; flex:none; }
+.idc-table .v { font-weight:600; color:#111; }
+.idc-poster { border:1px solid #d7dee8; border-radius:8px; background:#fff; overflow:hidden;
+  display:flex; flex-direction:column; }
+.idc-poster .p-top { background:#123a8f; color:#fff; text-align:center; padding:10px; font-weight:800; font-size:15px; }
+.idc-poster .p-body { flex:1; padding:20px 18px; text-align:center; background:linear-gradient(180deg,#f2f7ff,#e6efff); }
+.idc-poster .p-badge { display:inline-block; background:#123a8f; color:#fff; font-size:12px; font-weight:700;
+  border-radius:999px; padding:4px 14px; margin-bottom:12px; }
+.idc-poster .p-big { font-size:26px; font-weight:900; color:#1546b0; line-height:1.35; }
+.idc-poster .p-sub { margin-top:10px; font-size:15px; font-weight:800; color:#123a8f; }
+.idc-poster .p-small { margin-top:10px; font-size:12px; color:#5b6b85; line-height:1.6; }
+.idc-poster .p-bottom { border-top:1px solid #d7dee8; padding:10px 16px; font-size:13px; font-weight:700; color:#123a8f; text-align:center; }
+.idc-foot { margin-top:16px; color:#e01e1e; font-size:14px; font-weight:700; line-height:1.7; }
+.idc-count { text-align:center; margin-top:20px; color:#64748b; font-size:14px; }
+.idc-count b { color:#1d6ff2; font-size:18px; }
+.idc-disclaimer { text-align:center; margin-top:14px; padding:10px 14px; background:#f1f5f9;
+  border:1px dashed #cbd5e1; border-radius:8px; color:#64748b; font-size:12.5px; }
+
+/* ══════════ 시험 화면 (큐넷 CBT 동일 구성) ══════════ */
+#phase-exam { display:none; height:100vh; overflow:hidden; flex-direction:column;
+  font-family:'돋움',Dotum,'Malgun Gothic','Noto Sans KR',sans-serif; }
+#phase-exam.on { display:flex; }
+/* 상단: 네이비 헤더 + 우측 제한시간 박스 */
+.ex-top { display:flex; align-items:stretch; flex:none; }
+.ex-header { flex:1; background:linear-gradient(180deg,#2a4682,#1c2f5e); color:#fff;
+  display:flex; align-items:center; padding:7px 12px; gap:10px; min-width:0; }
+.ex-header .badge { background:#e8590c; color:#fff; font-weight:900; font-size:16px; border-radius:3px; padding:5px 9px; flex:none; }
+.ex-header .title { font-size:18px; font-weight:800; flex:1; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.ex-header .uinfo { font-size:11.5px; text-align:right; line-height:1.55; opacity:.95; flex:none; }
+.ex-timer { width:196px; flex:none; background:#1c2f5e; color:#fff; text-align:center;
+  padding:5px 4px 6px; border-left:1px solid rgba(255,255,255,.18); }
+.ex-timer .lbl { font-size:11px; opacity:.92; }
+.ex-timer .tm { font-size:29px; font-weight:900; letter-spacing:1.5px; line-height:1.12; }
+.ex-timer.warn { background:#8a1f1f; }
+.ex-main { flex:1; display:flex; min-height:0; }
+.ex-content-col { flex:1; display:flex; flex-direction:column; min-width:0; }
+.ex-toolbar { display:flex; justify-content:space-between; align-items:center; background:#fff;
+  border-bottom:1px solid #e2e6ee; padding:5px 12px 4px; flex:none; }
+.ex-subject { font-size:13.5px; font-weight:800; color:#123a8f; }
+.ex-subject small { color:#64748b; font-weight:600; margin-left:6px; }
+.ex-tools { display:flex; gap:4px; align-items:center; }
+.tool-lbl { font-size:10.5px; color:#475569; font-weight:700; margin-left:8px; margin-right:2px; }
+.tbtn { border:1px solid #b9c4d4; background:#fff; border-radius:4px; padding:4px 8px; font-size:12px;
+  font-weight:700; color:#334155; }
+.tbtn:hover { background:#eef4ff; border-color:#1d6ff2; color:#1d6ff2; }
+.tbtn.on { background:#dbe9ff; color:#1d6ff2; border-color:#1d6ff2; }
+.tbtn.calc { background:#2e6bd6; color:#fff; border-color:#2e6bd6; margin-left:8px; }
+.tbtn.calc:hover { background:#1d5ac0; color:#fff; }
+/* 문제 영역: 2단 = 세로 채움(01,02,03 왼쪽 → 04.. 오른쪽), 가운데 구분선 */
+.ex-qarea { flex:1; overflow-y:auto; padding:10px 16px 26px; background:#fff; }
+.q-grid { column-count:2; column-gap:30px; column-rule:1px solid #e5e9f0; }
+.q-grid.one { column-count:1; max-width:840px; margin:0 auto; }
+.q-item { padding:9px 2px 13px; font-size:calc(13.5px * var(--qfs,1)); line-height:1.62; color:#222;
+  break-inside:avoid; -webkit-column-break-inside:avoid; }
+.q-head { display:flex; gap:6px; align-items:flex-start; }
+.q-chk { flex:none; width:17px; height:17px; border:1px solid #b3c0b3; border-radius:3px; background:#f2f6f2;
+  display:inline-flex; align-items:center; justify-content:center; font-size:10.5px; color:#a9bfa9; cursor:pointer; margin-top:1px; }
+.q-item.checked .q-chk { background:#f97316; border-color:#ea580c; color:#fff; }
+.q-title { font-weight:700; color:#111; }
+.q-title img, .q-body img { max-width:100%; height:auto; display:block; margin:6px 0; }
+.q-body { margin-top:4px; }
+.q-opts { list-style:none; margin-top:6px; }
+.q-opts li { display:flex; gap:6px; padding:2.5px 4px; border-radius:4px; cursor:pointer; align-items:flex-start; }
+.q-opts li:hover { background:#eef4ff; }
+.q-opts .oc { flex:none; color:#333; line-height:1.55; min-width:18px; text-align:center; }
+.q-opts .oc .mark-on { display:none; font-size:1.2em; line-height:1.3; color:#000; }
+.q-opts li.sel .oc .mark-off { display:none; }
+.q-opts li.sel .oc .mark-on { display:inline; }
+.q-opts li.sel { font-weight:700; }
+.q-opts li img { max-width:100%; height:auto; }
+/* 우측 OMR 답안 표기란 */
+.ex-sheet { width:196px; flex:none; border-left:2px solid #c0392b; background:#fff; display:flex; flex-direction:column; }
+.sheet-head { background:#2e6bd6; color:#fff; text-align:center; font-size:13.5px; font-weight:800; padding:7px; flex:none; }
+.sheet-subsel { padding:5px 6px; border-bottom:1px solid #f0d9d9; flex:none; }
+.sheet-subsel select { width:100%; font-size:11.5px; padding:4px; border:1px solid #c9d4e4; border-radius:4px; font-family:inherit; }
+.sheet-rows { flex:1; overflow-y:auto; padding:4px 6px 10px; }
+.s-row { display:flex; align-items:center; gap:5px; padding:3px 3px; border-bottom:1px dashed #f2dcdc; }
+.s-row.cur { background:#fdf3e3; }
+.s-row .s-chk { width:12px; height:12px; border:1px solid #cfcfcf; border-radius:2px; flex:none; background:#f7f7f7;
+  cursor:pointer; display:inline-flex; align-items:center; justify-content:center; font-size:8px; color:transparent; }
+.s-row.cur .s-chk { border-color:#e0a259; background:#fbe6c8; }
+.s-row.checked .s-chk { background:#f97316 !important; border-color:#ea580c !important; color:#fff; }
+.s-row .s-num { width:20px; font-size:11px; font-weight:800; color:#c0392b; text-align:right; flex:none; cursor:pointer; }
+.s-row .s-opts { display:flex; gap:2px; flex:1; justify-content:space-around; }
+.s-row .s-o { width:19px; height:18px; font-size:12.5px; color:#555; display:inline-flex; align-items:center;
+  justify-content:center; cursor:pointer; line-height:1; }
+.s-row .s-o:hover { color:#1d6ff2; }
+.s-row .s-o .mark-on { display:none; font-size:15px; color:#000; }
+.s-row .s-o.sel .mark-off { display:none; }
+.s-row .s-o.sel .mark-on { display:inline; }
+/* 하단 바 */
+.ex-bottom { background:#3d3d3d; display:flex; align-items:center; padding:6px 10px; gap:7px; flex:none; }
+.cnt-btn { border:none; border-radius:3px; padding:8px 12px; font-size:12.5px; font-weight:800; }
+.cnt-btn.all { background:#fff; color:#111; }
+.cnt-btn.left { background:#1faa4b; color:#fff; }
+.cnt-btn.chk { background:#f97316; color:#fff; }
+.pg-nav { flex:1; display:flex; justify-content:center; align-items:center; gap:9px; }
+.pg-btn { background:#fff; border:none; border-radius:3px; padding:7px 13px; font-size:12.5px; font-weight:800; color:#111; }
+.pg-btn:disabled { opacity:.4; cursor:default; }
+.pg-info { color:#fff; font-size:13.5px; font-weight:700; min-width:60px; text-align:center; }
+.lock-btn { background:#d9dde3; border:none; border-radius:3px; padding:8px 13px; font-size:12.5px; font-weight:800; color:#374151; }
+.submit-btn { background:#1d6ff2; border:none; border-radius:4px; padding:9px 18px; font-size:14px; font-weight:900; color:#fff;
+  display:inline-flex; align-items:center; gap:7px; }
+.submit-btn:hover { background:#1656c0; }
+
+/* 문제 목록 팝업 */
+.qlist-pop { position:fixed; bottom:56px; left:10px; background:#fff; border:1px solid #cbd5e1; border-radius:10px;
+  box-shadow:0 10px 30px rgba(0,0,0,.25); padding:12px; z-index:60; max-width:340px; display:none; }
+.qlist-pop.on { display:block; }
+.qlist-pop h4 { font-size:13px; font-weight:800; margin-bottom:8px; color:#334155; }
+.qlist-nums { display:flex; flex-wrap:wrap; gap:5px; max-height:180px; overflow-y:auto; }
+.qlist-nums span { display:inline-flex; width:32px; height:28px; align-items:center; justify-content:center;
+  border:1px solid #cbd5e1; border-radius:5px; font-size:12px; font-weight:700; cursor:pointer; color:#334155; }
+.qlist-nums span:hover { background:#1d6ff2; color:#fff; border-color:#1d6ff2; }
+
+/* ══════════ 답안 제출 확인 화면 ══════════ */
+#phase-submit { background:#eef1f6; }
+.sb-wrap { display:flex; min-height:100vh; }
+.sb-side { width:230px; flex:none; background:#dfe7f2; padding:16px 14px; }
+.sb-side h3 { background:#2e6bd6; color:#fff; text-align:center; font-size:15px; font-weight:800; padding:9px; border-radius:4px; }
+.sb-side .tbl { background:#fff; border-radius:6px; margin-top:10px; overflow:hidden; }
+.sb-side .r { display:flex; border-bottom:1px solid #eef2f7; font-size:12.5px; }
+.sb-side .r:last-child { border-bottom:none; }
+.sb-side .k { width:78px; flex:none; background:#f4f7fb; padding:9px 8px; font-weight:800; color:#40506b; }
+.sb-side .v { flex:1; padding:9px 8px; color:#111; font-weight:600; word-break:break-all; }
+.sb-main { flex:1; padding:16px 18px 90px; overflow-x:auto; }
+.sb-title { background:#2e6bd6; color:#fff; text-align:center; font-size:17px; font-weight:900; padding:10px; border-radius:4px; }
+.sb-grid { display:flex; gap:10px; margin-top:12px; align-items:flex-start; flex-wrap:wrap; }
+.sb-col { background:#fff; border:1px solid #d8dee9; border-radius:6px; overflow:hidden; min-width:158px; flex:1; }
+.sb-col h5 { background:#f4f7fb; border-bottom:1px solid #e2e8f2; text-align:center; font-size:12.5px; font-weight:800;
+  padding:7px 4px; color:#b93838; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.sb-col .rows { padding:5px 7px; }
+.sb-r { display:flex; align-items:center; gap:5px; padding:2.5px 2px; border-radius:4px; cursor:pointer; }
+.sb-r:hover { background:#eef4ff; }
+.sb-r.empty { background:#ffe9a8; }
+.sb-r .n { width:20px; font-size:11.5px; font-weight:800; color:#40506b; text-align:right; flex:none; }
+.sb-r .o { width:16px; height:16px; border:1px solid #8fa1bb; border-radius:50%; font-size:9.5px;
+  display:inline-flex; align-items:center; justify-content:center; color:#3c4c63; background:#fff; margin-right:1px; }
+.sb-r .o.sel { background:#111; border-color:#111; color:#111; }
+.sb-note { color:#e01e1e; font-size:13px; font-weight:700; margin-top:12px; }
+.sb-bottom { position:fixed; left:0; right:0; bottom:0; background:#4b5563; display:flex; justify-content:space-between;
+  padding:9px 14px; z-index:5; }
+.sb-edit { background:#eab308; border:none; border-radius:6px; color:#111; font-size:14px; font-weight:900; padding:10px 18px; }
+.sb-final { background:#f97316; border:none; border-radius:6px; color:#fff; font-size:15px; font-weight:900; padding:10px 22px; }
+.sb-final:hover { background:#ea580c; }
+
+/* 제출 확인 모달 */
+.modal-bg { position:fixed; inset:0; background:rgba(0,0,0,.45); z-index:80; display:none; align-items:center; justify-content:center; }
+.modal-bg.on { display:flex; }
+.sub-modal { width:420px; max-width:92vw; background:#fff; border-radius:8px; overflow:hidden; box-shadow:0 20px 60px rgba(0,0,0,.4); }
+.sub-modal .hd { background:#e01e1e; color:#fff; text-align:center; font-size:19px; font-weight:900; padding:11px; }
+.sub-modal .bd { padding:24px 20px; text-align:center; font-size:15.5px; font-weight:600; line-height:1.7; }
+.sub-modal .bt { display:flex; justify-content:center; gap:12px; padding:0 20px 22px; }
+.sub-modal .ok { background:#1d6ff2; color:#fff; border:none; border-radius:6px; font-size:15px; font-weight:800; padding:10px 26px; }
+.sub-modal .no { background:#fff; color:#111; border:1.5px solid #9aa4b2; border-radius:6px; font-size:15px; font-weight:800; padding:10px 24px; }
+
+/* 화면 잠금 */
+#lockOverlay { position:fixed; inset:0; background:#10254d; z-index:90; display:none; align-items:center; justify-content:center; }
+#lockOverlay.on { display:flex; }
+.lock-box { text-align:center; color:#fff; }
+.lock-box i { font-size:52px; margin-bottom:18px; color:#93c5fd; }
+.lock-box h3 { font-size:26px; font-weight:900; margin-bottom:8px; }
+.lock-box p { font-size:14px; color:#bfdbfe; margin-bottom:22px; }
+.lock-box input { width:220px; padding:11px; border-radius:8px; border:none; text-align:center; font-size:16px;
+  letter-spacing:4px; font-family:inherit; outline:none; }
+.lock-box button { display:block; margin:14px auto 0; background:#1d6ff2; color:#fff; border:none; border-radius:8px;
+  font-size:15px; font-weight:800; padding:11px 34px; }
+
+/* 계산기 */
+#calcBox { position:fixed; top:90px; right:220px; width:230px; background:#1f2937; border-radius:12px; padding:12px;
+  z-index:70; display:none; box-shadow:0 14px 40px rgba(0,0,0,.45); }
+#calcBox.on { display:block; }
+#calcBox .c-head { color:#9ca3af; font-size:11px; font-weight:700; display:flex; justify-content:space-between;
+  margin-bottom:8px; cursor:move; user-select:none; }
+#calcBox .c-head button { background:none; border:none; color:#9ca3af; font-size:13px; }
+#calcDisp { width:100%; background:#111827; border:none; color:#f9fafb; font-size:22px; text-align:right; padding:10px;
+  border-radius:8px; margin-bottom:8px; font-family:inherit; }
+.c-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:6px; }
+.c-grid button { padding:11px 0; border:none; border-radius:8px; background:#374151; color:#f9fafb; font-size:15px; font-weight:700; }
+.c-grid button:hover { background:#4b5563; }
+.c-grid button.op { background:#f97316; }
+.c-grid button.eq { background:#1d6ff2; }
+
+/* ══════════ 결과 화면 ══════════ */
+#phase-result { background:#fff; }
+.rs-wrap { max-width:760px; margin:0 auto; padding:44px 24px 70px; text-align:center; }
+.rs-msg { font-size:26px; font-weight:900; margin-bottom:10px; }
+.rs-msg.pass { color:#111; }
+.rs-msg.fail { color:#b91c1c; }
+.rs-desc { font-size:12.5px; color:#64748b; line-height:1.7; margin-bottom:26px; }
+.rs-table { width:100%; border-collapse:collapse; margin-bottom:26px; }
+.rs-table th, .rs-table td { border:1px solid #cbd5e1; padding:11px 12px; font-size:15px; }
+.rs-table th { background:#eef2f8; font-weight:800; color:#334155; width:170px; }
+.rs-table td { font-weight:700; color:#111; }
+.rs-score { font-size:22px; font-weight:900; color:#1d6ff2; }
+.rs-pass  { font-size:22px; font-weight:900; color:#1d6ff2; }
+.rs-fail  { font-size:22px; font-weight:900; color:#dc2626; }
+.rs-sub { width:100%; border-collapse:collapse; margin-bottom:30px; }
+.rs-sub th, .rs-sub td { border:1px solid #cbd5e1; padding:9px 12px; font-size:13.5px; }
+.rs-sub th { background:#eef2f8; font-weight:800; color:#334155; }
+.rs-save-banner { background:#eff6ff; border:1px solid #bfdbfe; color:#1d4ed8; font-size:13px; font-weight:700;
+  border-radius:10px; padding:12px; margin-bottom:26px; }
+.rs-done { border:3px solid #e01e1e; background:#1d6ff2; color:#fff; font-size:19px; font-weight:900;
+  border-radius:8px; padding:13px 60px; }
+.rs-done:hover { background:#1656c0; }
+.rs-links { margin-top:18px; font-size:13px; }
+.rs-links a { color:#2563eb; font-weight:700; text-decoration:underline; margin:0 10px; }
+
+/* 로딩/에러 — 반드시 .on 일 때만 표시 (ID 선택자가 .phase{display:none}을 덮어쓰지 않도록) */
+#phase-load { display:none; }
+#phase-load.on { display:flex; align-items:center; justify-content:center; }
+.ld-box { text-align:center; color:#334155; }
+.ld-spin { width:52px; height:52px; border:6px solid #dbeafe; border-top-color:#1d6ff2; border-radius:50%;
+  margin:0 auto 18px; animation:spin .8s linear infinite; }
+@keyframes spin { to { transform:rotate(360deg); } }
+.ld-err { color:#b91c1c; font-size:14px; line-height:1.8; max-width:440px; }
+.ld-err a { color:#2563eb; font-weight:700; }
+</style>
+</head>
+<body>
+
+<!-- ═══════ 로딩 ═══════ -->
+<div class="phase on" id="phase-load">
+    <div class="ld-box">
+        <div class="ld-spin"></div>
+        <p style="font-weight:800;font-size:17px;" id="loadMsg">시험 문제를 불러오는 중입니다...</p>
+        <p style="font-size:13px;color:#94a3b8;margin-top:6px;" id="loadSub">잠시만 기다려 주세요.</p>
+    </div>
+</div>
+
+<!-- ═══════ 1. 수험자 정보 확인 ═══════ -->
+<div class="phase" id="phase-id">
+    <div class="guide-wrap" style="max-width:960px;">
+        <div class="idc-banner">수험자 정보 확인 <span class="num-badge" style="background:#fff;color:#1d6ff2;">1</span></div>
+        <div class="idc-notice">신분확인이 끝나면 시험이 곧 시작됩니다. 잠시만 기다려 주세요.</div>
+        <div class="idc-grid">
+            <div class="idc-card">
+                <div class="idc-photo-row">
+                    <div class="idc-photo">
+                        <svg viewBox="0 0 64 80" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="64" height="80" fill="#dde7ef"/>
+                            <circle cx="32" cy="28" r="13" fill="#94a3b8"/>
+                            <path d="M8 78c2-16 12-24 24-24s22 8 24 24" fill="#94a3b8"/>
+                        </svg>
+                    </div>
+                    <div class="idc-seat">
+                        <span class="lbl">좌석번호</span>
+                        <span class="no">01</span>
+                    </div>
+                </div>
+                <div class="idc-table">
+                    <div class="row"><span class="k">수험번호</span><span class="v">1000001</span></div>
+                    <div class="row"><span class="k">성명</span><span class="v" id="idName">수험자</span></div>
+                    <div class="row"><span class="k">생년월일</span><span class="v">******</span></div>
+                    <div class="row"><span class="k">응시종목</span><span class="v" id="idCat">-</span></div>
+                </div>
+            </div>
+            <div class="idc-poster">
+                <div class="p-top">부정행위! 묵인하면 계속 됩니다.</div>
+                <div class="p-body">
+                    <span class="p-badge">응시자격서류 상시 제출 안내</span>
+                    <div class="p-big">응시자격서류,<br>언제든 제출 가능합니다!</div>
+                    <div class="p-sub">"시험 미접수자도 제출 가능"</div>
+                    <div class="p-small">
+                        단, 필기시험 합격자는 회차별 지정된 기한까지 미제출<br>
+                        또는 응시자격 요건 미충족시 불합격 처리됨에 유의
+                    </div>
+                </div>
+                <div class="p-bottom">청렴한 세상, 한국산업인력공단이 함께 만들겠습니다!</div>
+            </div>
+        </div>
+        <p class="idc-foot">
+            ※ 수험자 본인의 사진, 수험번호, 성명, 응시종목이 맞는지 확인하시고, 이상이 있는 경우<br>
+            즉시 시험감독위원에게 알려주시기 바랍니다. (대리시험 또는 부정행위자로 간주되는 등 불이익을 받을 수 있음)
+        </p>
+        <p class="idc-count"><b id="idCountdown">5</b>초 후 안내사항으로 이동합니다...</p>
+        <p class="idc-disclaimer">이 페이지는 Q-Net의 CBT 자격시험가이드를 참고한 이미지입니다. (실제내용과는 다름을 알려드립니다.)</p>
+    </div>
+</div>
+
+<!-- ═══════ 2. 안내/유의사항 공통 ═══════ -->
+<div class="phase" id="phase-notice">
+    <div class="guide-wrap">
+        <div class="guide-title" id="ntTitle"></div>
+        <div class="guide-body" id="ntBody"></div>
+        <p class="wait-msg" id="ntWait" style="display:none;">2초 뒤에 이동 버튼이 활성화됩니다.</p>
+        <div class="guide-btns">
+            <button class="gbtn back" id="ntBack" onclick="noticeNav(-1)">뒤로</button>
+            <button class="gbtn" id="ntNext" onclick="noticeNav(1)">다음 <span class="num-badge" style="background:#fff;color:#1d6ff2;width:22px;height:22px;font-size:12px;" id="ntNextBadge">2</span></button>
+        </div>
+    </div>
+</div>
+
+<!-- ═══════ 3. 시험 준비 완료 ═══════ -->
+<div class="phase" id="phase-ready">
+    <div class="guide-wrap" style="text-align:center;padding-top:110px;">
+        <div style="font-size:56px;color:#1d6ff2;margin-bottom:22px;"><i class="fas fa-laptop-file"></i></div>
+        <h2 style="font-size:30px;font-weight:900;margin-bottom:12px;">시험 준비 완료</h2>
+        <p style="font-size:16px;color:#475569;line-height:1.8;margin-bottom:8px;" id="readyInfo">-</p>
+        <p style="font-size:14px;color:#94a3b8;margin-bottom:40px;">[시험 시작] 버튼을 누르면 즉시 시험이 시작되고 남은 시간이 차감됩니다.</p>
+        <button class="gbtn" style="font-size:20px;padding:16px 56px;" onclick="startExamPhase()">시험 시작 <i class="fas fa-play"></i></button>
+    </div>
+</div>
+
+<!-- ═══════ 4. 시험 화면 ═══════ -->
+<div class="phase" id="phase-exam">
+    <div class="ex-top">
+        <div class="ex-header">
+            <span class="badge">01</span>
+            <span class="title" id="exTitle">-</span>
+            <div class="uinfo">수험번호 : 1000001<br>수험자명 : <span id="exName">수험자</span></div>
+        </div>
+        <div class="ex-timer" id="exTimerBox">
+            <div class="lbl">제한 시간 <span id="exLimitMin">-</span>분</div>
+            <div class="tm" id="exTimer">--:--</div>
+        </div>
+    </div>
+    <div class="ex-main">
+        <div class="ex-content-col">
+            <div class="ex-toolbar">
+                <div class="ex-subject" id="exSubject"></div>
+                <div class="ex-tools">
+                    <span class="tool-lbl">글자 크기</span>
+                    <button class="tbtn" onclick="fontScale(-1)" title="글자 축소"><i class="fas fa-magnifying-glass-minus"></i></button>
+                    <button class="tbtn" onclick="fontScale(1)" title="글자 확대"><i class="fas fa-magnifying-glass-plus"></i></button>
+                    <span class="tool-lbl">화면 배치</span>
+                    <button class="tbtn" id="lay0" onclick="setLayout(0)" title="한 문제씩"><i class="fas fa-square"></i></button>
+                    <button class="tbtn" id="lay1" onclick="setLayout(1)" title="1단 배치"><i class="fas fa-bars"></i></button>
+                    <button class="tbtn on" id="lay2" onclick="setLayout(2)" title="2단 배치"><i class="fas fa-table-columns"></i></button>
+                    <button class="tbtn calc" onclick="toggleCalc()"><i class="fas fa-calculator"></i> 계산기</button>
+                </div>
+            </div>
+            <div class="ex-qarea" id="qArea">
+                <div class="q-grid" id="qGrid"></div>
+            </div>
+        </div>
+        <div class="ex-sheet">
+            <div class="sheet-head">답안 표기란</div>
+            <div class="sheet-subsel" id="sheetSubWrap" style="display:none;">
+                <select id="sheetSubSel" onchange="jumpSubject(this.value)"></select>
+            </div>
+            <div class="sheet-rows" id="sheetRows"></div>
+        </div>
+    </div>
+    <div class="ex-bottom">
+        <button class="cnt-btn all" onclick="showQList('all')">전체 문제(<span id="cntAll">0</span>)</button>
+        <button class="cnt-btn left" onclick="showQList('left')">남은 문제(<span id="cntLeft">0</span>)</button>
+        <button class="cnt-btn chk" onclick="showQList('chk')">체크 문제(<span id="cntChk">0</span>)</button>
+        <div class="pg-nav">
+            <button class="pg-btn" id="pgPrev" onclick="movePage(-1)">&lt; 이전</button>
+            <span class="pg-info" id="pgInfo">1 / 1</span>
+            <button class="pg-btn" id="pgNext" onclick="movePage(1)">다음 &gt;</button>
+        </div>
+        <button class="lock-btn" onclick="lockScreen()">화면 잠금</button>
+        <button class="submit-btn" onclick="gotoSubmit()">답안 제출 <i class="fas fa-arrow-right"></i></button>
+    </div>
+    <div class="qlist-pop" id="qlistPop">
+        <h4 id="qlistTitle">문제 목록</h4>
+        <div class="qlist-nums" id="qlistNums"></div>
+    </div>
+</div>
+
+<!-- ═══════ 5. 답안 제출 확인 ═══════ -->
+<div class="phase" id="phase-submit">
+    <div class="sb-wrap">
+        <div class="sb-side">
+            <h3>수험자 정보</h3>
+            <div class="tbl">
+                <div class="r"><span class="k">시험명</span><span class="v" id="sbExamName">-</span></div>
+                <div class="r"><span class="k">시험일자</span><span class="v" id="sbDate">-</span></div>
+                <div class="r"><span class="k">부</span><span class="v">1</span></div>
+                <div class="r"><span class="k">응시종목</span><span class="v" id="sbCat">-</span></div>
+                <div class="r"><span class="k">수험번호</span><span class="v">1000001</span></div>
+                <div class="r"><span class="k">수험자명</span><span class="v" id="sbName">수험자</span></div>
+                <div class="r"><span class="k">남은시간</span><span class="v" id="sbTimer" style="color:#b91c1c;font-weight:800;">--:--</span></div>
+            </div>
+        </div>
+        <div class="sb-main">
+            <div class="sb-title">답안표기란</div>
+            <div class="sb-grid" id="sbGrid"></div>
+            <p class="sb-note">* 문항번호를 클릭하면 해당 문항으로 이동합니다.</p>
+        </div>
+    </div>
+    <div class="sb-bottom">
+        <button class="sb-edit" onclick="backToExam()"><i class="fas fa-rotate-left"></i> 답안 수정</button>
+        <button class="sb-final" onclick="askFinalSubmit()">답안 최종 제출 <span class="num-badge" style="width:22px;height:22px;font-size:12px;background:#111;">2</span></button>
+    </div>
+</div>
+
+<!-- 제출 확인 모달 -->
+<div class="modal-bg" id="submitModal">
+    <div class="sub-modal">
+        <div class="hd">답안 제출</div>
+        <div class="bd" id="submitModalMsg">답안을 제출하시겠습니까?</div>
+        <div class="bt">
+            <button class="ok" onclick="finalSubmit()"><i class="fas fa-check"></i> 확인</button>
+            <button class="no" onclick="closeSubmitModal()"><i class="fas fa-xmark"></i> 취소</button>
+        </div>
+    </div>
+</div>
+
+<!-- 화면 잠금 -->
+<div id="lockOverlay">
+    <div class="lock-box">
+        <i class="fas fa-lock"></i>
+        <h3>화면이 잠겨 있습니다</h3>
+        <p>잠금 해제를 위해 본인 확인(생년월일 6자리)이 필요합니다.<br>남은 시간은 계속 차감됩니다.</p>
+        <input type="text" id="lockInput" maxlength="6" placeholder="●●●●●●" inputmode="numeric"
+            onkeydown="if(event.key==='Enter') unlockScreen()">
+        <button onclick="unlockScreen()"><i class="fas fa-unlock"></i> 잠금 해제</button>
+    </div>
+</div>
+
+<!-- 계산기 -->
+<div id="calcBox">
+    <div class="c-head" id="calcDrag"><span><i class="fas fa-calculator"></i> 계산기</span><button onclick="toggleCalc()">✕</button></div>
+    <input type="text" id="calcDisp" value="0" readonly>
+    <div class="c-grid">
+        <button onclick="calcClear()">C</button><button onclick="calcBack()">←</button>
+        <button class="op" onclick="calcOp('%')">%</button><button class="op" onclick="calcOp('/')">÷</button>
+        <button onclick="calcNum('7')">7</button><button onclick="calcNum('8')">8</button>
+        <button onclick="calcNum('9')">9</button><button class="op" onclick="calcOp('*')">×</button>
+        <button onclick="calcNum('4')">4</button><button onclick="calcNum('5')">5</button>
+        <button onclick="calcNum('6')">6</button><button class="op" onclick="calcOp('-')">−</button>
+        <button onclick="calcNum('1')">1</button><button onclick="calcNum('2')">2</button>
+        <button onclick="calcNum('3')">3</button><button class="op" onclick="calcOp('+')">+</button>
+        <button onclick="calcNum('0')">0</button><button onclick="calcNum('.')">.</button>
+        <button onclick="calcNeg()">±</button><button class="eq" onclick="calcEq()">=</button>
+    </div>
+</div>
+
+<!-- ═══════ 6. 결과 ═══════ -->
+<div class="phase" id="phase-result">
+    <div class="rs-wrap">
+        <div class="rs-msg" id="rsMsg">합격을 축하드립니다.</div>
+        <p class="rs-desc">
+            본 결과는 CBT 기출문제 모의시험 가채점 결과입니다. 실제 시험의 합격 여부는
+            큐넷(Q-Net)의 공식 발표를 통해 확인하시기 바랍니다.<br>
+            (실제 CBT는 합격자 발표일에 큐넷 마이페이지에서 최종 확인)
+        </p>
+        <table class="rs-table">
+            <tr><th>수험자 이름</th><td id="rsName">수험자</td></tr>
+            <tr><th>응시종목</th><td id="rsCat">-</td></tr>
+            <tr><th>득점</th><td><span class="rs-score" id="rsScore">0</span></td></tr>
+            <tr><th>가채점결과</th><td id="rsPassCell"><span class="rs-pass">합격</span></td></tr>
+        </table>
+        <table class="rs-sub" id="rsSubTable">
+            <thead><tr><th>세부과목명</th><th style="width:110px;">득점</th><th style="width:80px;">비고</th></tr></thead>
+            <tbody id="rsSubBody"></tbody>
+        </table>
+        <div class="rs-save-banner" id="rsSaveBanner" style="display:none;"></div>
+        <button class="rs-done" onclick="finishAll()">확인 완료</button>
+        <div class="rs-links">
+            <a href="cbt-qnet.html">다른 시험 응시하기</a>
+            <a href="mypage.html">마이페이지(오답노트)</a>
+        </div>
+        <p style="font-size:11px;color:#94a3b8;margin-top:26px;">시험실 내에서는 사진 촬영이 금지되어 있습니다.</p>
+    </div>
+</div>
+
+<script>
+/* ══════════════ 로딩 워치독 (메인 스크립트 실행 실패 대비, 독립 블록) ══════════════ */
+window.__cbtLoaded = false;
+window.__cbtDiag = function (title, detail) {
+    var m = document.getElementById('loadMsg');
+    var s = document.getElementById('loadSub');
+    var sp = document.querySelector('.ld-spin');
+    if (sp) sp.style.display = 'none';
+    if (m) m.textContent = title;
+    if (s) s.innerHTML = '<span class="ld-err">' + detail +
+        '<br><br><a href="cbt-qnet.html">← 뀨-Net CBT로 돌아가기</a></span>';
+};
+window.onerror = function (msg, src, line) {
+    if (window.__cbtLoaded) return;
+    window.__cbtDiag('스크립트 오류가 발생했습니다.',
+        String(msg).replace(/</g, '&lt;') + '<br>(줄: ' + line + ')' +
+        '<br><br>브라우저를 최신 크롬/엣지로 업데이트한 뒤<br><b>Ctrl+F5</b> (강력 새로고침)를 눌러 주세요.');
+};
+setTimeout(function () {
+    if (window.__cbtLoaded) return;
+    window.__cbtDiag('로딩이 지연되고 있습니다.',
+        '아래 순서로 시도해 주세요.<br><br>' +
+        '1. <b>Ctrl+F5</b> 로 강력 새로고침<br>' +
+        '2. 최신 <b>크롬 또는 엣지</b> 브라우저 사용<br>' +
+        '3. 뀨-Net CBT 페이지에서 시험 다시 선택<br><br>' +
+        '<span style="color:#94a3b8;font-size:12px;">진단: ' +
+        location.protocol + ' · ' + (location.pathname || '').split('/').pop().slice(0, 40) +
+        (location.search ? ' · ' + location.search.slice(0, 60).replace(/</g, '&lt;') : '') + '</span>');
+}, 7000);
+</script>
+<script src="cbt-auth.js?v=6"></script>
+<script>
+'use strict';
+/* ══════════════ 파라미터 & 전역 상태 ══════════════ */
+function getParam(name){
+    var m = (location.search || '').match(new RegExp('[?&]' + name + '=([^&]*)'));
+    if (!m) return null;
+    try { return decodeURIComponent(m[1].replace(/\+/g, ' ')); } catch(e) { return m[1]; }
+}
+var EXAM_URL = getParam('exam') || '';
+var CAT      = getParam('cat') || (EXAM_URL.split('/')[1] || '').replace(/-/g,' ');
+var ROUND    = getParam('round') || '';
+var EXAM_ID  = (EXAM_URL.split('/').pop() || '').replace(/\.html?$/i, '');
+var EXAM_DIR = EXAM_URL.replace(/[^\/]+$/, '');
+var USER     = (window.CBT_AUTH && CBT_AUTH.getUser()) || null;
+var UNAME    = USER ? USER.nickname : '수험자';
+var EXAM_TITLE = (ROUND ? ROUND.replace(/기출문제$/, '').trim() + ' ' : '') + CAT;
+
+var Q = [];             // {num,qid,titleHtml,bodyHtml,options[],correct,subject,subjectIdx}
+var SUBJECTS = [];      // {name,start,count}
+var answers = {};       // num -> 1-base choice
+var checks  = {};       // num -> true
+var page = 0, PAGE_SIZE = 4, layoutMode = 2, fs = 1;   // layoutMode: 0=한 문제씩, 1=1단, 2=2단
+var totalSec = 0, remainSec = 0, timerId = null, examDone = false;
+
+/* ══════════════ 유틸 ══════════════ */
+function $(id){ return document.getElementById(id); }
+function showPhase(id){
+    window.__cbtLoaded = true;
+    document.querySelectorAll('.phase').forEach(function(p){ p.classList.remove('on'); });
+    $(id).classList.add('on');
+}
+function circled(n){ return ['①','②','③','④','⑤','⑥','⑦','⑧'][n-1] || n; }
+function fmtTime(s){
+    if (s < 0) s = 0;
+    var m = Math.floor(s/60), ss = s%60;
+    return m + ':' + (ss<10?'0':'') + ss;
+}
+function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+/* 전체 제한시간(초) — 기능사/기능장 1분/문항, 그 외 1.5분/문항 (cbt-qnet 과 동일 기준) */
+function examTotalSec(){
+    var perQ = /기능사|기능장/.test(CAT || '') ? 60 : 90;
+    return Math.round(Q.length * perQ);
+}
+
+/* ══════════════ 문제 로드 ══════════════ */
+function loadExam(){
+    /* 1) 시험 페이지에서 전달된 페이로드 (file:// 포함 모든 환경 동작) */
+    if (getParam('src') === 'store') {
+        var payload = null;
+        /* 1-a) window.name — 같은 탭 이동 간 유지, 오리진 격리와 무관 (Edge file:// 포함) */
+        try {
+            if (window.name && window.name.indexOf('CBTSIM1:') === 0) {
+                payload = JSON.parse(window.name.slice(8));
+                window.name = '';
+            }
+        } catch(e) {}
+        /* 1-b) URL 해시(#p=...) — 구버전 호환 */
+        if (!payload && location.hash && location.hash.indexOf('#p=') === 0) {
+            try { payload = JSON.parse(decodeURIComponent(location.hash.slice(3))); } catch(e) {}
+        }
+        /* 1-c) localStorage */
+        if (!payload) {
+            try { payload = JSON.parse(localStorage.getItem('cbt_sim_payload') || 'null'); } catch(e) {}
+        }
+        if (payload && payload.questions && payload.questions.length) {
+            try { loadFromPayload(payload); }
+            catch(e) { loadError('시험 데이터 처리 중 오류가 발생했습니다.', esc(e.message)); }
+            return;
+        }
+        loadError('전달된 시험 데이터가 없습니다.',
+            '<a href="cbt-qnet.html">뀨-Net CBT</a>에서 시험을 다시 선택해 주세요.');
+        return;
+    }
+    if (!EXAM_URL) { loadError('시험 정보가 없습니다.', 'cbt-qnet.html 에서 시험을 선택해 주세요.'); return; }
+
+    /* 2) file:// 에서는 fetch 불가 → 시험 페이지를 경유해 문제를 추출(?cbt=1) */
+    if (location.protocol === 'file:') {
+        $('loadMsg').textContent = '시험 페이지로 이동 중입니다...';
+        location.replace(EXAM_URL + '?cbt=1' + (ROUND ? '&round=' + encodeURIComponent(ROUND) : ''));
+        return;
+    }
+
+    /* 3) 일반 환경: fetch 로 직접 로드 */
+    fetch(EXAM_URL)
+        .then(function(r){ if(!r.ok) throw new Error('HTTP '+r.status); return r.text(); })
+        .then(parseExam)
+        .catch(function(e){
+            loadError('문제를 불러오지 못했습니다.', esc(e.message));
+        });
+}
+
+/* 시험 페이지가 localStorage 로 전달한 데이터로 구성 */
+function loadFromPayload(p){
+    EXAM_ID  = p.examId || EXAM_ID;
+    CAT      = p.cat || CAT;
+    ROUND    = p.round || ROUND;
+    EXAM_DIR = p.examDir || EXAM_DIR;
+    EXAM_TITLE = (ROUND ? ROUND.replace(/기출문제$/, '').trim() + ' ' : '') + CAT;
+
+    SUBJECTS = (p.subjects || []).slice();
+    Q = p.questions.map(function(q){
+        return {
+            num: q.num, qid: q.qid,
+            titleHtml: fixImgSrc(q.titleHtml),
+            bodyHtml:  fixImgSrc(q.bodyHtml),
+            options:   (q.options || []).map(fixImgSrc),
+            correct:   q.correct,
+            subject:   (q.subjectIdx >= 0 && SUBJECTS[q.subjectIdx]) ? SUBJECTS[q.subjectIdx].name : '',
+            subjectIdx: q.subjectIdx,
+        };
+    });
+    if (!SUBJECTS.length) SUBJECTS.push({ name: '전과목', start: 0, count: Q.length });
+
+    totalSec = remainSec = examTotalSec();
+    initUI();
+    startIdPhase();
+}
+function loadError(msg, sub){
+    window.__cbtLoaded = true;
+    $('loadMsg').textContent = msg;
+    $('loadSub').innerHTML = '<span class="ld-err">' + sub +
+        '<br><br><a href="cbt-qnet.html">← 시험 선택으로 돌아가기</a></span>';
+    document.querySelector('.ld-spin').style.display = 'none';
+}
+
+function parseExam(html){
+    var doc = new DOMParser().parseFromString(html, 'text/html');
+    var nodes = doc.querySelectorAll('.exam-class-title, .exam-box');
+    var curSubject = '', subIdx = -1, gnum = 0;
+
+    nodes.forEach(function(node){
+        if (node.classList.contains('exam-class-title')) {
+            var t = node.textContent.trim().replace(/\s+/g,' ');
+            if (t) {
+                curSubject = t.replace(/^\d+과목\s*:\s*/,'');
+                SUBJECTS.push({ name: curSubject, start: gnum, count: 0 });
+                subIdx = SUBJECTS.length - 1;
+            }
+            return;
+        }
+        /* .exam-box */
+        var ol = node.querySelector('ol.circlednumbers');
+        if (!ol) return;
+        var correct = parseInt(ol.getAttribute('correct'), 10) || 0;
+
+        var titleEl = node.querySelector('.exam-title');
+        var titleHtml = '';
+        if (titleEl) {
+            var tc = titleEl.cloneNode(true);
+            var numSpan = tc.querySelector('.exam-number');
+            if (numSpan) numSpan.remove();
+            titleHtml = tc.innerHTML.replace(/^\s*[.．]\s*/, '');
+        }
+        /* 문제 본문(이미지 등): exam-title 행과 보기 행 사이의 추가 row */
+        var bodyHtml = '';
+        var rows = node.querySelectorAll(':scope > .row');
+        var seenTitle = false;
+        rows.forEach(function(row){
+            if (row.querySelector('.exam-title')) { seenTitle = true; return; }
+            if (row.querySelector('.question-choice') || row.querySelector('.exam-cpercent')
+                || row.querySelector('.exam-buttons') || !seenTitle) return;
+            bodyHtml += row.innerHTML;
+        });
+
+        var options = [];
+        ol.querySelectorAll(':scope > li').forEach(function(li){
+            var lc = li.cloneNode(true);
+            lc.classList.remove('correct');
+            options.push(lc.innerHTML);
+        });
+
+        gnum++;
+        if (subIdx >= 0) SUBJECTS[subIdx].count++;
+        Q.push({
+            num: gnum,
+            qid: node.getAttribute('question-id') || (EXAM_ID + '-' + gnum),
+            titleHtml: fixImgSrc(titleHtml),
+            bodyHtml:  fixImgSrc(bodyHtml),
+            options:   options.map(fixImgSrc),
+            correct:   correct,
+            subject:   curSubject,
+            subjectIdx: subIdx,
+        });
+    });
+
+    if (!Q.length) { loadError('이 시험에서 문제를 찾지 못했습니다.', '다른 회차를 선택해 주세요.'); return; }
+    if (!SUBJECTS.length) SUBJECTS.push({ name: '전과목', start: 0, count: Q.length });
+
+    totalSec = remainSec = examTotalSec();
+    initUI();
+    startIdPhase();
+}
+
+function fixImgSrc(html){
+    if (!html) return '';
+    return html.replace(/(<img[^>]+src=")([^"]+)(")/gi, function(m, a, src, c){
+        if (/^(https?:|data:|\/)/i.test(src)) return m;
+        return a + EXAM_DIR + src + c;
+    });
+}
+
+/* ══════════════ 안내/유의사항 데이터 ══════════════ */
+var NOTICES = [
+ { t:'1.안내사항', p:'(1/3)', delay:0, html:
+   '<ul>'+
+   '<li><span class="bl">시험의 문제수와 제한시간은</span> 수험자께서 응시하는 등급 및 종목에 따라 다르게 진행됨에 따라 <span class="rd">시험 시작 후 우측 최상단의 남은 시간을 통하여 확인</span>하여 주시기 바랍니다.</li>'+
+   '<li>시험도중 <span class="bl">수험자 PC장애 발생 시</span> 손을 들어 <span class="bl">시험 감독위원에게 알리면</span> 전산조치 또는 자리이동을 할 수 있습니다.</li>'+
+   '<li><span class="rd">시험이 끝나면 채점결과(점수)를 바로 확인</span>할 수 있습니다.</li>'+
+   '<li><span class="rd">공학용계산기</span>는 큐넷에 공지 된 <span class="rd">허용기종 외에는 사용이 불가</span>하고, 기사, 산업기사 등급의 과목면제 신청 수험자는 면제과목의 시험문제를 확인할 수 없습니다.</li>'+
+   '<li>수험자는 시험 중 다른 수험자와 필기구, 계산기 등을 공유하여 사용할 수 없습니다.</li>'+
+   '<li><span class="rd">배부 받은 연습지 이외의 용지는 사용이 불가</span>하며, 사용 시 부정행위로 간주 되어 불이익을 받을 수 있습니다.</li>'+
+   '</ul>' },
+ { t:'1.안내사항', p:'(2/3)', delay:2, html:
+   '<ul>'+
+   '<li>CBT로 시행하는 국가기술자격 중 <span class="rd">기능장, 기사, 산업기사 등급 및 서비스 분야 등 응시자격이 있는 종목</span>은 채점 결과가 합격점수라도 <span class="rd">서류심사가 완료되어야 최종 합격 되어 실기시험 원서접수가 가능</span>하니 유의하시기 바랍니다.</li>'+
+   '<li>이에, <span class="bl">채점결과가 합격점수 이상인 수험자</span> 중 응시자격서류 제출 대상자께서는 큐넷의 응시자격서류 제출 안내 사항을 확인하신 후 <span class="rd">가급적 합격예정자 발표일 전까지 서류를 제출</span>하여 주시기 바랍니다.</li>'+
+   '</ul>' },
+ { t:'1.안내사항', p:'(3/3)', delay:0, html:
+   '<ul>'+
+   '<li>CBT 시험 소지품 정리 시간 이후 및 시험 중 개인 시계는 <span class="rd">아날로그 손목시계만 착용·소지 가능</span><br>'+
+   '<span style="font-size:14px;color:#555;">※ 아날로그 (손목)시계는 통신·결제기능(블루투스 등) 및 전자식 화면표시기 (LCD, LED 등)가 없는 시침, 분침(초침)으로만 구성된 시계를 의미</span></li>'+
+   '<li>전자·통신기기 또는 메모지 등 소지 관련 부정행위 처리 안내<br>'+
+   '<span style="display:block;margin-top:6px;">-시험 중 소지가 금지된 전자·통신기기 또는 메모지 등 <span class="rd">시험부정에 활용 가능한 물품의 단순 소지·착용이 적발된 경우, 당해시험 정지 및 무효</span></span>'+
+   '<span style="display:block;margin-top:6px;">-전자·통신기기 등 <span class="rd">시험부정에 활용 가능한 물품의 사용이 적발된 경우, 관련 법령에 따라 부정행위 처리(당해시험 무효 및 3년간 국가기술자격시험 응시 제한)</span></span></li>'+
+   '</ul>' },
+ { t:'2.유의사항', p:'(1/3)', delay:0, html:
+   '<p class="rd" style="margin-bottom:16px;">다음과 같은 부정행위가 발각될 경우 시험감독위원의 지시에 따라 퇴실 조치되고, 시험은 무효로 처리되며, 3년간 국가기술자격검정에 응시할 자격이 정지됩니다.</p>'+
+   '<ul style="color:#1d4ed8;">'+
+   '<li>시험 중 다른 수험자와 시험에 관련한 대화를 하는 행위</li>'+
+   '<li>시험 중 다른 수험자의 문제 및 답안을 엿보고 답안지를 작성하는 행위</li>'+
+   '<li>다른 수험자를 위하여 답안을 알려주거나, 엿보게 하는 행위</li>'+
+   '<li>시험 중 시험문제 내용과 관련된 물건을 휴대하여 사용하거나 이를 주고받는 행위</li>'+
+   '<li>시험장 내외의 자로부터 도움을 받고 답안을 작성하는 행위</li>'+
+   '<li>대리시험을 치르거나 치르게 하는 행위</li>'+
+   '<li>시험시간에 통신기기 및 전자기기를 사용하여 답안을 작성하거나 다른 수험자에게 답안을 송신하는 행위</li>'+
+   '<li>그밖에 부정 또는 불공정한 방법으로 시험을 치르는 행위</li>'+
+   '<li>시험실 내에서는 사진 촬영이 금지되어 있습니다.</li>'+
+   '</ul>' },
+ { t:'2.유의사항', p:'(2/3)', delay:0, html:
+   '<p class="rd" style="margin-bottom:16px;font-size:15px;">국가기술자격 시험문제 저작권 보호와 관련된 주요 내용</p>'+
+   '<ul>'+
+   '<li>국가기술자격 <span class="rd">CBT 필기시험 문제는 저작권법상 보호되는 저작물</span>이고, 저작권자는 한국산업인력공단입니다.</li>'+
+   '<li>국가기술자격 CBT 필기 <span class="rd">시험 문제는 비공개 사항</span>으로 문제의 일부 또는 전부를 복원하여 <span class="rd">무단 복제, 배포, 촬영, (전자)출판</span>하는 등 저작권을 침해하는 <span class="rd">일체의 행위를 금지</span>하고 있으며, <span class="rd">이를 위반할 경우</span> 관계법에 따라 민/형사상 <span class="rd">법적 책임을 물을 수 있음</span>을 알려 드립니다.</li>'+
+   '</ul>' },
+ { t:'2.유의사항', p:'(3/3)', delay:0, html:
+   '<p class="rd" style="margin-bottom:16px;font-size:15px;">국가기술자격 시험문제 저작권 보호와 관련된 주요 내용</p>'+
+   '<ul>'+
+   '<li>또한, 초소형 카메라 등 <span class="rd">촬영 도구 사용이 의심</span>될 경우, 부정행위 예방을 위하여 시험위원은 <span class="rd">금속탐지기 등으로 확인</span> 할 수 있습니다.</li>'+
+   '<li>국가기술자격 <span class="rd">CBT 필기 시험문제 및 답안</span>은 공공기관의 정보공개에 관한 법률 제9조(비공개대상정보) 제1항 제5호 등에 의거하여 <span class="rd">공개하지 않습니다.</span></li>'+
+   '</ul>' },
+];
+var noticeIdx = 0;
+var MAX_NOTICE = 1;   // 안내사항 1번만 표시 후 바로 시험 준비완료로 이동
+
+function startIdPhase(){
+    $('idName').textContent = UNAME;
+    $('idCat').textContent = CAT;
+    showPhase('phase-id');
+    var n = 5;
+    var iv = setInterval(function(){
+        n--;
+        $('idCountdown').textContent = n;
+        if (n <= 0) { clearInterval(iv); noticeIdx = 0; showNotice(); }
+    }, 1000);
+}
+
+function showNotice(){
+    var nt = NOTICES[noticeIdx];
+    $('ntTitle').innerHTML = nt.t + '<small>' + nt.p + '</small> <span class="num-badge">1</span>';
+    $('ntBody').innerHTML = nt.html;
+    $('ntBack').style.visibility = noticeIdx === 0 ? 'hidden' : 'visible';
+    $('ntNext').lastChild.textContent = '';
+    showPhase('phase-notice');
+    $('phase-notice').scrollTop = 0;
+
+    if (nt.delay > 0) {
+        $('ntWait').style.display = 'block';
+        $('ntBack').disabled = true;
+        $('ntNext').disabled = true;
+        setTimeout(function(){
+            $('ntWait').style.display = 'none';
+            $('ntBack').disabled = false;
+            $('ntNext').disabled = false;
+        }, nt.delay * 1000);
+    } else {
+        $('ntWait').style.display = 'none';
+        $('ntBack').disabled = false;
+        $('ntNext').disabled = false;
+    }
+}
+function noticeNav(dir){
+    noticeIdx += dir;
+    if (noticeIdx < 0) noticeIdx = 0;
+    if (noticeIdx >= MAX_NOTICE) { showReady(); return; }
+    showNotice();
+}
+
+function showReady(){
+    $('readyInfo').innerHTML =
+        '<b>' + esc(CAT) + '</b> · ' + esc(ROUND || EXAM_ID) + '<br>' +
+        '총 <b>' + Q.length + '문항</b> · 제한 시간 <b>' + Math.round(totalSec/60) + '분</b>' +
+        (SUBJECTS.length > 1 ? ' · ' + SUBJECTS.length + '개 과목' : '');
+    showPhase('phase-ready');
+}
+
+/* ══════════════ 시험 UI 초기화 ══════════════ */
+function initUI(){
+    $('exTitle').textContent = EXAM_TITLE;
+    $('exName').textContent = UNAME;
+    $('exLimitMin').textContent = Math.round(totalSec/60);
+    $('cntAll').textContent = Q.length;
+
+    if (SUBJECTS.length > 1) {
+        $('sheetSubWrap').style.display = 'block';
+        var sel = $('sheetSubSel');
+        SUBJECTS.forEach(function(s, i){
+            var o = document.createElement('option');
+            o.value = i; o.textContent = (i+1) + '과목: ' + s.name;
+            sel.appendChild(o);
+        });
+    }
+    /* 답안 표기란 행 생성 */
+    var rows = $('sheetRows');
+    Q.forEach(function(q){
+        var r = document.createElement('div');
+        r.className = 's-row'; r.id = 'srow-' + q.num;
+        var oc = Math.max(q.options.length, 4);
+        var h = '<span class="s-chk" onclick="toggleCheck(' + q.num + ')">✔</span>' +
+                '<span class="s-num" onclick="jumpTo(' + q.num + ')">' + (q.num<10?'0':'') + q.num + '</span>' +
+                '<span class="s-opts">';
+        for (var i = 1; i <= oc; i++) {
+            h += '<span class="s-o" data-c="' + i + '" onclick="selectAnswer(' + q.num + ',' + i + ')">' +
+                 '<span class="mark-off">' + circled(i) + '</span><span class="mark-on">●</span></span>';
+        }
+        h += '</span>';
+        r.innerHTML = h;
+        rows.appendChild(r);
+    });
+}
+
+function startExamPhase(){
+    showPhase('phase-exam');
+    try { document.documentElement.requestFullscreen(); } catch(e) {}
+    renderPage();
+    timerId = setInterval(tick, 1000);
+    window.onbeforeunload = function(){ return '시험이 진행 중입니다. 페이지를 나가면 답안이 사라집니다.'; };
+}
+
+function tick(){
+    remainSec--;
+    var t = fmtTime(remainSec);
+    $('exTimer').textContent = t;
+    $('sbTimer').textContent = t;
+    if (remainSec <= 600) $('exTimerBox').classList.add('warn');
+    if (remainSec <= 0) {
+        clearInterval(timerId);
+        alert('시험 시간이 종료되었습니다. 답안이 자동 제출됩니다.');
+        finalSubmit();
+    }
+}
+
+/* ══════════════ 문제 렌더링 ══════════════ */
+function totalPages(){ return Math.ceil(Q.length / PAGE_SIZE); }
+
+function renderPage(){
+    var grid = $('qGrid');
+    grid.className = 'q-grid' + (layoutMode === 2 ? '' : ' one');
+    grid.innerHTML = '';
+    var s = page * PAGE_SIZE, e = Math.min(s + PAGE_SIZE, Q.length);
+
+    for (var i = s; i < e; i++) {
+        (function(q){
+            var d = document.createElement('div');
+            d.className = 'q-item' + (checks[q.num] ? ' checked' : '');
+            d.id = 'q-' + q.num;
+            var h = '<div class="q-head">' +
+                    '<span class="q-chk" onclick="toggleCheck(' + q.num + ')">✔</span>' +
+                    '<div style="flex:1;min-width:0;">' +
+                    '<span class="q-title">' + (q.num<10?'0':'') + q.num + '. ' + q.titleHtml + '</span>' +
+                    (q.bodyHtml ? '<div class="q-body">' + q.bodyHtml + '</div>' : '') +
+                    '<ul class="q-opts">';
+            q.options.forEach(function(opt, oi){
+                var c = oi + 1;
+                h += '<li data-c="' + c + '" class="' + (answers[q.num] === c ? 'sel' : '') + '"' +
+                     ' onclick="selectAnswer(' + q.num + ',' + c + ')">' +
+                     '<span class="oc"><span class="mark-off">' + circled(c) + '</span><span class="mark-on">●</span></span>' +
+                     '<span style="flex:1;min-width:0;">' + opt + '</span></li>';
+            });
+            h += '</ul></div></div>';
+            d.innerHTML = h;
+            grid.appendChild(d);
+        })(Q[i]);
+    }
+    /* 과목 표시 */
+    var first = Q[s];
+    if (first && first.subjectIdx >= 0 && SUBJECTS.length > 1) {
+        var sub = SUBJECTS[first.subjectIdx];
+        $('exSubject').innerHTML = '제 ' + (first.subjectIdx+1) + '과목 : ' + esc(sub.name) +
+            '<small>(과목 문제 수: ' + sub.count + ')</small>';
+        $('sheetSubSel').value = first.subjectIdx;
+    } else {
+        $('exSubject').innerHTML = esc(CAT) + ' <small>(총 ' + Q.length + '문항)</small>';
+    }
+    $('pgInfo').textContent = (page+1) + ' / ' + totalPages();
+    $('pgPrev').disabled = page === 0;
+    $('pgNext').disabled = page >= totalPages() - 1;
+    $('qArea').scrollTop = 0;
+    highlightSheet();
+    updateCounts();
+}
+
+function highlightSheet(){
+    var s = page * PAGE_SIZE, e = Math.min(s + PAGE_SIZE, Q.length);
+    document.querySelectorAll('.s-row').forEach(function(r){ r.classList.remove('cur'); });
+    for (var i = s; i < e; i++) {
+        var r = $('srow-' + Q[i].num);
+        if (r) r.classList.add('cur');
+    }
+    var firstRow = $('srow-' + (s+1));
+    if (firstRow) firstRow.scrollIntoView({ block:'nearest' });
+}
+
+function movePage(dir){
+    var np = page + dir;
+    if (np < 0 || np >= totalPages()) return;
+    page = np;
+    renderPage();
+    hideQList();
+}
+function jumpTo(num){
+    page = Math.floor((num-1) / PAGE_SIZE);
+    renderPage();
+    hideQList();
+    var el = $('q-' + num);
+    if (el) el.scrollIntoView({ block:'start', behavior:'smooth' });
+}
+function jumpSubject(idx){
+    var s = SUBJECTS[parseInt(idx,10)];
+    if (s) jumpTo(s.start + 1);
+}
+
+/* ══════════════ 답안/체크 ══════════════ */
+function selectAnswer(num, c){
+    if (examDone) return;
+    answers[num] = (answers[num] === c) ? undefined : c;
+    if (answers[num] === undefined) delete answers[num];
+    /* 문제 영역 갱신 */
+    var qEl = $('q-' + num);
+    if (qEl) {
+        qEl.querySelectorAll('.q-opts li').forEach(function(li){
+            li.classList.toggle('sel', parseInt(li.getAttribute('data-c'),10) === answers[num]);
+        });
+    }
+    /* 답안 표기란 갱신 */
+    var row = $('srow-' + num);
+    if (row) {
+        row.querySelectorAll('.s-o').forEach(function(o){
+            o.classList.toggle('sel', parseInt(o.getAttribute('data-c'),10) === answers[num]);
+        });
+    }
+    updateCounts();
+}
+function toggleCheck(num){
+    checks[num] = !checks[num];
+    if (!checks[num]) delete checks[num];
+    var qEl = $('q-' + num);
+    if (qEl) qEl.classList.toggle('checked', !!checks[num]);
+    var row = $('srow-' + num);
+    if (row) row.classList.toggle('checked', !!checks[num]);
+    updateCounts();
+}
+function updateCounts(){
+    var answered = Object.keys(answers).length;
+    $('cntLeft').textContent = Q.length - answered;
+    $('cntChk').textContent = Object.keys(checks).length;
+}
+
+/* ══════════════ 문제 목록 팝업 ══════════════ */
+function showQList(mode){
+    var pop = $('qlistPop'), nums = [], title = '';
+    if (mode === 'all')  { title = '전체 문제';  Q.forEach(function(q){ nums.push(q.num); }); }
+    if (mode === 'left') { title = '남은 문제';  Q.forEach(function(q){ if (!answers[q.num]) nums.push(q.num); }); }
+    if (mode === 'chk')  { title = '체크 문제';  Q.forEach(function(q){ if (checks[q.num]) nums.push(q.num); }); }
+    if (pop.classList.contains('on') && pop.getAttribute('data-mode') === mode) { hideQList(); return; }
+    pop.setAttribute('data-mode', mode);
+    $('qlistTitle').textContent = title + ' (' + nums.length + ') — 번호를 클릭하면 이동';
+    var box = $('qlistNums');
+    box.innerHTML = nums.length ? '' : '<span style="border:none;width:auto;color:#94a3b8;">없음</span>';
+    nums.forEach(function(n){
+        var sp = document.createElement('span');
+        sp.textContent = n;
+        sp.onclick = function(){ jumpTo(n); };
+        box.appendChild(sp);
+    });
+    pop.classList.add('on');
+}
+function hideQList(){ $('qlistPop').classList.remove('on'); }
+
+/* ══════════════ 도구 ══════════════ */
+function fontScale(dir){
+    fs = Math.min(1.45, Math.max(0.8, fs + dir * 0.12));
+    $('qArea').style.setProperty('--qfs', fs);
+}
+function setLayout(mode){
+    var firstNum = page * PAGE_SIZE + 1;      // 현재 보고 있던 첫 문제 유지
+    layoutMode = mode;
+    PAGE_SIZE = (mode === 0) ? 1 : 4;
+    $('lay0').classList.toggle('on', mode === 0);
+    $('lay1').classList.toggle('on', mode === 1);
+    $('lay2').classList.toggle('on', mode === 2);
+    page = Math.floor((firstNum - 1) / PAGE_SIZE);
+    renderPage();
+}
+function lockScreen(){ $('lockOverlay').classList.add('on'); $('lockInput').value=''; $('lockInput').focus(); }
+function unlockScreen(){
+    var v = $('lockInput').value.trim();
+    if (!/^\d{6}$/.test(v)) { alert('생년월일 6자리를 입력해 주세요. (예: 990101)'); return; }
+    $('lockOverlay').classList.remove('on');
+}
+
+/* 계산기 */
+var calcCur = '0', calcPrev = null, calcOpv = null, calcFresh = true;
+function calcRender(){ $('calcDisp').value = calcCur; }
+function calcNum(d){
+    if (calcFresh) { calcCur = (d === '.') ? '0.' : d; calcFresh = false; }
+    else {
+        if (d === '.' && calcCur.indexOf('.') !== -1) return;
+        calcCur = (calcCur === '0' && d !== '.') ? d : calcCur + d;
+    }
+    calcRender();
+}
+function calcOp(op){
+    if (calcOpv !== null && !calcFresh) calcEq();
+    calcPrev = parseFloat(calcCur); calcOpv = op; calcFresh = true;
+}
+function calcEq(){
+    if (calcOpv === null || calcPrev === null) return;
+    var b = parseFloat(calcCur), r = 0;
+    if (calcOpv === '+') r = calcPrev + b;
+    if (calcOpv === '-') r = calcPrev - b;
+    if (calcOpv === '*') r = calcPrev * b;
+    if (calcOpv === '/') r = b === 0 ? NaN : calcPrev / b;
+    if (calcOpv === '%') r = calcPrev % b;
+    calcCur = String(Math.round(r * 1e10) / 1e10);
+    calcPrev = null; calcOpv = null; calcFresh = true;
+    calcRender();
+}
+function calcClear(){ calcCur='0'; calcPrev=null; calcOpv=null; calcFresh=true; calcRender(); }
+function calcBack(){ calcCur = calcCur.length > 1 ? calcCur.slice(0,-1) : '0'; calcRender(); }
+function calcNeg(){ calcCur = calcCur.charAt(0)==='-' ? calcCur.slice(1) : (calcCur!=='0' ? '-'+calcCur : calcCur); calcRender(); }
+function toggleCalc(){ $('calcBox').classList.toggle('on'); }
+/* 계산기 드래그 */
+(function(){
+    var box=null, sx=0, sy=0, bx=0, by=0;
+    document.addEventListener('mousedown', function(e){
+        if (!e.target.closest || !e.target.closest('#calcDrag')) return;
+        box = $('calcBox'); sx=e.clientX; sy=e.clientY;
+        var r = box.getBoundingClientRect(); bx=r.left; by=r.top;
+        e.preventDefault();
+    });
+    document.addEventListener('mousemove', function(e){
+        if (!box) return;
+        box.style.left = (bx + e.clientX - sx) + 'px';
+        box.style.top  = (by + e.clientY - sy) + 'px';
+        box.style.right = 'auto';
+    });
+    document.addEventListener('mouseup', function(){ box = null; });
+})();
+
+/* ══════════════ 답안 제출 확인 화면 ══════════════ */
+function gotoSubmit(){
+    hideQList();
+    $('sbExamName').textContent = EXAM_TITLE;
+    $('sbCat').textContent = CAT;
+    $('sbName').textContent = UNAME;
+    $('sbDate').textContent = new Date().toISOString().slice(0,10);
+    $('sbTimer').textContent = fmtTime(remainSec);
+
+    var grid = $('sbGrid');
+    grid.innerHTML = '';
+    SUBJECTS.forEach(function(sub){
+        var col = document.createElement('div');
+        col.className = 'sb-col';
+        var h = '<h5>' + esc(sub.name) + '</h5><div class="rows">';
+        for (var i = sub.start; i < sub.start + sub.count; i++) {
+            var q = Q[i];
+            var a = answers[q.num];
+            var oc = Math.max(q.options.length, 4);
+            h += '<div class="sb-r' + (a ? '' : ' empty') + '" onclick="jumpBackTo(' + q.num + ')">' +
+                 '<span class="n">' + (q.num<10?'0':'') + q.num + '</span>';
+            for (var c = 1; c <= oc; c++) {
+                h += '<span class="o' + (a === c ? ' sel' : '') + '">' + circled(c) + '</span>';
+            }
+            h += '</div>';
+        }
+        h += '</div>';
+        col.innerHTML = h;
+        grid.appendChild(col);
+    });
+    showPhase('phase-submit');
+}
+function backToExam(){ showPhase('phase-exam'); }
+function jumpBackTo(num){ showPhase('phase-exam'); jumpTo(num); }
+
+function askFinalSubmit(){
+    var unanswered = Q.length - Object.keys(answers).length;
+    $('submitModalMsg').innerHTML = unanswered > 0
+        ? '안 푼 문제가 <b style="color:#e01e1e;">' + unanswered + '개</b> 존재합니다. 그래도 답안을 제출하시겠습니까?'
+        : '모든 문제에 답하셨습니다.<br>답안을 최종 제출하시겠습니까?';
+    $('submitModal').classList.add('on');
+}
+function closeSubmitModal(){ $('submitModal').classList.remove('on'); }
+
+/* ══════════════ 최종 제출 & 채점 ══════════════ */
+function finalSubmit(){
+    if (examDone) return;
+    examDone = true;
+    closeSubmitModal();
+    clearInterval(timerId);
+    window.onbeforeunload = null;
+    try { if (document.fullscreenElement) document.exitFullscreen(); } catch(e) {}
+
+    var correct = 0, wrongItems = [];
+    var subStats = SUBJECTS.map(function(s){ return { name:s.name, correct:0, count:s.count }; });
+
+    Q.forEach(function(q){
+        var a = answers[q.num] || 0;
+        var ok = a === q.correct;
+        if (ok) {
+            correct++;
+            if (q.subjectIdx >= 0) subStats[q.subjectIdx].correct++;
+        } else {
+            var tmp = document.createElement('div');
+            tmp.innerHTML = q.titleHtml;
+            var qText = tmp.textContent.trim().slice(0, 200);
+            var optTexts = q.options.map(function(o){
+                var t = document.createElement('div'); t.innerHTML = o;
+                return t.textContent.trim().slice(0, 120);
+            });
+            wrongItems.push({
+                questionId: q.qid, questionText: qText, options: optTexts,
+                correctAnswer: q.correct, userAnswer: a || null,
+                examId: EXAM_ID, category: CAT,
+            });
+        }
+    });
+
+    var score = Math.round(100 * correct / Q.length);
+    var subScores = subStats.map(function(s){
+        return { name: s.name, score: s.count ? Math.round(100 * s.correct / s.count) : 0 };
+    });
+    /* 합격 판정: 과목 2개 이상이면 평균 60 + 과목별 40(과락), 아니면 60점 이상 */
+    var pass;
+    if (subScores.length > 1) {
+        var avg = Math.round(subScores.reduce(function(s,x){ return s + x.score; }, 0) / subScores.length);
+        pass = avg >= 60 && subScores.every(function(x){ return x.score >= 40; });
+        score = avg;
+    } else {
+        pass = score >= 60;
+    }
+
+    /* 저장 (로그인 시) */
+    var saved = false;
+    if (window.CBT_AUTH && CBT_AUTH.isLoggedIn()) {
+        CBT_AUTH.saveHistory({
+            examId: EXAM_ID, category: CAT, totalQ: Q.length,
+            answered: Object.keys(answers).length, correct: correct,
+            score: score, solvedAt: new Date().toISOString(), mode: 'cbt',
+        });
+        if (wrongItems.length) CBT_AUTH.saveWrong(wrongItems);
+        saved = true;
+    }
+
+    /* 결과 렌더 */
+    $('rsMsg').textContent = pass ? '합격을 축하드립니다.' : '아쉽지만 불합격입니다. 다시 도전해 보세요!';
+    $('rsMsg').className = 'rs-msg ' + (pass ? 'pass' : 'fail');
+    $('rsName').textContent = UNAME;
+    $('rsCat').textContent = CAT;
+    $('rsScore').textContent = score;
+    $('rsPassCell').innerHTML = pass ? '<span class="rs-pass">합격</span>' : '<span class="rs-fail">불합격</span>';
+
+    var tb = $('rsSubBody');
+    tb.innerHTML = '';
+    subScores.forEach(function(s){
+        var tr = document.createElement('tr');
+        tr.innerHTML = '<td style="text-align:left;">' + esc(s.name) + '</td>' +
+            '<td style="font-weight:800;color:' + (s.score < 40 ? '#dc2626' : '#111') + ';">' + s.score + '</td>' +
+            '<td style="color:#94a3b8;">' + (s.score < 40 ? '과락' : '-') + '</td>';
+        tb.appendChild(tr);
+    });
+
+    var banner = $('rsSaveBanner');
+    if (saved) {
+        banner.style.display = 'block';
+        banner.innerHTML = '<i class="fas fa-circle-check"></i> 풀이 기록이 저장되었고, 틀린 ' +
+            wrongItems.length + '문제가 <b>오답노트</b>에 자동 추가되었습니다.';
+    } else {
+        banner.style.display = 'block';
+        banner.innerHTML = '<i class="fas fa-circle-info"></i> <a href="login.html" style="text-decoration:underline;font-weight:800;">로그인</a>하면 풀이 기록과 오답노트가 자동 저장됩니다.';
+    }
+    showPhase('phase-result');
+}
+
+function finishAll(){
+    location.href = (window.CBT_AUTH && CBT_AUTH.isLoggedIn()) ? 'mypage.html' : 'cbt-qnet.html';
+}
+
+/* ══════════════ 시작 ══════════════ */
+loadExam();
+</script>
+</body>
+</html>

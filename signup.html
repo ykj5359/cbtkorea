@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 - CBT 기출문제</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+        body { font-family: 'Noto Sans KR', sans-serif; }
+        .page-bg {
+            background: linear-gradient(135deg, #0f2460 0%, #1e3a8a 45%, #2563eb 100%);
+            min-height: 100vh;
+        }
+        .kakao-btn {
+            background: #FEE500; color: #191600; font-weight: 700; font-size: 15px;
+            border-radius: 12px; padding: 13px 24px; width: 100%; border: none; cursor: pointer;
+            display: flex; align-items: center; justify-content: center; gap: 10px;
+            transition: all 0.2s; box-shadow: 0 2px 10px rgba(254,229,0,0.4);
+        }
+        .kakao-btn:hover { background: #F5DC00; transform: translateY(-2px); }
+        .field-input {
+            width: 100%; padding: 12px 16px; border: 1.5px solid #e2e8f0; border-radius: 12px;
+            font-size: 14px; transition: all .15s; outline: none;
+        }
+        .field-input:focus { border-color: #2563eb; box-shadow: 0 0 0 3px rgba(37,99,235,0.12); }
+        .field-input.err { border-color: #ef4444; box-shadow: 0 0 0 3px rgba(239,68,68,0.1); }
+        .submit-btn {
+            width: 100%; padding: 14px 24px; border-radius: 12px; border: none;
+            background: linear-gradient(135deg, #2563eb, #1e40af); color: white;
+            font-size: 16px; font-weight: 700; cursor: pointer; transition: all .2s;
+            box-shadow: 0 4px 14px rgba(37,99,235,0.35);
+        }
+        .submit-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(37,99,235,0.45); }
+        #loadingOverlay {
+            position: fixed; inset: 0; background: rgba(15,36,96,0.7); z-index: 100;
+            display: none; align-items: center; justify-content: center;
+        }
+        #loadingOverlay.show { display: flex; }
+        .spinner {
+            width: 48px; height: 48px; border: 5px solid rgba(255,255,255,0.25);
+            border-top-color: #FEE500; border-radius: 50%; animation: spin 0.8s linear infinite;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+        .card-enter { animation: fadeUp 0.45s ease both; }
+        .msg-err { color: #ef4444; font-size: 12px; margin-top: 4px; display: none; }
+        .msg-err.show { display: block; }
+    </style>
+</head>
+<body class="page-bg flex flex-col">
+
+    <nav class="px-6 py-4 flex items-center justify-between">
+        <a href="index.html" class="text-white text-xl font-black tracking-tight">CBT 기출문제</a>
+        <a href="login.html" class="text-blue-200 text-sm hover:text-white transition flex items-center gap-1">
+            이미 회원이신가요? <span class="underline font-bold">로그인</span>
+        </a>
+    </nav>
+
+    <div class="flex-1 flex items-center justify-center px-4 py-6">
+        <div class="w-full max-w-sm">
+
+            <div class="text-center mb-6 card-enter" style="animation-delay:0.05s">
+                <div class="w-16 h-16 bg-white/10 backdrop-blur rounded-2xl flex items-center justify-center mx-auto mb-4 ring-2 ring-white/20">
+                    <i class="fas fa-user-plus text-white text-2xl"></i>
+                </div>
+                <h1 class="text-3xl font-black text-white mb-1">회원가입</h1>
+                <p class="text-blue-200 text-sm">30초면 충분해요. 학습 기록을 저장하세요!</p>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-2xl overflow-hidden card-enter" style="animation-delay:0.15s">
+                <div class="p-7 space-y-4">
+
+                    <!-- 카카오로 바로 가입 -->
+                    <button class="kakao-btn" id="kakaoSignupBtn">
+                        <svg width="20" height="20" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M11 2C6.032 2 2 5.358 2 9.5c0 2.716 1.71 5.1 4.29 6.428l-1.1 4.063a.3.3 0 0 0 .456.328l4.832-3.196A10.3 10.3 0 0 0 11 17c4.968 0 9-3.358 9-7.5S15.968 2 11 2Z"
+                                fill="#191600"/>
+                        </svg>
+                        카카오로 3초만에 가입
+                    </button>
+
+                    <div class="flex items-center gap-3">
+                        <div class="flex-1 h-px bg-gray-100"></div>
+                        <span class="text-xs text-gray-400 font-medium">또는 직접 가입</span>
+                        <div class="flex-1 h-px bg-gray-100"></div>
+                    </div>
+
+                    <!-- 직접 가입 폼 -->
+                    <form id="signupForm" class="space-y-3" onsubmit="return doSignup(event)">
+                        <div>
+                            <label class="block text-xs font-bold text-gray-500 mb-1.5">닉네임 <span class="text-red-400">*</span></label>
+                            <input type="text" id="suNickname" class="field-input" placeholder="2~16자 (로그인 아이디로 사용됩니다)" maxlength="16" autocomplete="username">
+                            <p class="msg-err" id="errNickname"></p>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-gray-500 mb-1.5">이메일 <span class="text-gray-300 font-normal">(선택)</span></label>
+                            <input type="email" id="suEmail" class="field-input" placeholder="example@email.com" autocomplete="email">
+                            <p class="msg-err" id="errEmail"></p>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-gray-500 mb-1.5">비밀번호 <span class="text-red-400">*</span></label>
+                            <input type="password" id="suPassword" class="field-input" placeholder="4자 이상" autocomplete="new-password">
+                            <p class="msg-err" id="errPassword"></p>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-gray-500 mb-1.5">비밀번호 확인 <span class="text-red-400">*</span></label>
+                            <input type="password" id="suPassword2" class="field-input" placeholder="비밀번호 재입력" autocomplete="new-password">
+                            <p class="msg-err" id="errPassword2"></p>
+                        </div>
+
+                        <label class="flex items-start gap-2 pt-1 cursor-pointer select-none">
+                            <input type="checkbox" id="suAgree" class="mt-0.5 accent-blue-600">
+                            <span class="text-xs text-gray-500 leading-relaxed">
+                                (필수) 서비스 이용약관 및 개인정보 처리방침에 동의합니다.
+                                <span class="text-gray-400">학습 데이터는 이 기기(브라우저)에만 저장됩니다.</span>
+                            </span>
+                        </label>
+                        <p class="msg-err" id="errAgree"></p>
+
+                        <button type="submit" class="submit-btn mt-2">
+                            <i class="fas fa-check mr-1"></i> 가입하고 시작하기
+                        </button>
+                    </form>
+                </div>
+
+                <div class="bg-blue-50 px-7 py-4 border-t border-blue-100/60 text-center">
+                    <p class="text-xs text-blue-700">
+                        이미 계정이 있으신가요?
+                        <a href="login.html" class="font-bold underline hover:text-blue-900">로그인 하러가기</a>
+                    </p>
+                </div>
+            </div>
+
+            <p class="text-center text-blue-200/70 text-xs mt-5 card-enter" style="animation-delay:0.25s">
+                가입 없이도 기출문제를 풀 수 있습니다 &nbsp;·&nbsp;
+                <a href="index.html" class="text-blue-200 hover:text-white underline transition">메인으로</a>
+            </p>
+        </div>
+    </div>
+
+    <div id="loadingOverlay">
+        <div class="text-center">
+            <div class="spinner mx-auto mb-4"></div>
+            <p class="text-white font-semibold text-base" id="loadingMsg">가입 처리 중...</p>
+        </div>
+    </div>
+
+    <script src="cbt-auth.js?v=6"></script>
+    <script>
+    /* 이미 로그인돼 있으면 리다이렉트 */
+    (function () {
+        if (!CBT_AUTH.isLoggedIn()) return;
+        var dest = localStorage.getItem('cbt_redirect') || 'index.html';
+        localStorage.removeItem('cbt_redirect');
+        location.replace(dest);
+    })();
+
+    function showLoading(msg) {
+        document.getElementById('loadingMsg').textContent = msg || '처리 중...';
+        document.getElementById('loadingOverlay').classList.add('show');
+    }
+    function hideLoading() { document.getElementById('loadingOverlay').classList.remove('show'); }
+
+    function onSignupSuccess() {
+        var dest = localStorage.getItem('cbt_redirect') || 'index.html';
+        localStorage.removeItem('cbt_redirect');
+        location.replace(dest);
+    }
+
+    function setErr(id, msg) {
+        var el = document.getElementById('err' + id);
+        var input = document.getElementById('su' + id);
+        if (msg) {
+            el.textContent = msg; el.classList.add('show');
+            if (input) input.classList.add('err');
+        } else {
+            el.classList.remove('show');
+            if (input) input.classList.remove('err');
+        }
+    }
+
+    function doSignup(e) {
+        e.preventDefault();
+        ['Nickname','Email','Password','Password2','Agree'].forEach(function (k) { setErr(k, ''); });
+
+        var nickname = document.getElementById('suNickname').value.trim();
+        var email    = document.getElementById('suEmail').value.trim();
+        var pw       = document.getElementById('suPassword').value;
+        var pw2      = document.getElementById('suPassword2').value;
+        var agree    = document.getElementById('suAgree').checked;
+        var hasErr = false;
+
+        if (nickname.length < 2) { setErr('Nickname', '닉네임은 2자 이상 입력해 주세요.'); hasErr = true; }
+        if (pw.length < 4)       { setErr('Password', '비밀번호는 4자 이상 입력해 주세요.'); hasErr = true; }
+        if (pw !== pw2)          { setErr('Password2', '비밀번호가 일치하지 않습니다.'); hasErr = true; }
+        if (!agree)              { setErr('Agree', '약관에 동의해 주세요.'); hasErr = true; }
+        if (hasErr) return false;
+
+        var res = CBT_AUTH.signup(nickname, email, pw);
+        if (!res.ok) {
+            if (res.msg.indexOf('닉네임') !== -1)      setErr('Nickname', res.msg);
+            else if (res.msg.indexOf('이메일') !== -1)  setErr('Email', res.msg);
+            else if (res.msg.indexOf('비밀번호') !== -1) setErr('Password', res.msg);
+            else alert(res.msg);
+            return false;
+        }
+        showLoading(nickname + '님, 가입을 환영합니다!');
+        setTimeout(onSignupSuccess, 900);
+        return false;
+    }
+
+    /* 카카오 가입 (= 카카오 로그인) */
+    document.getElementById('kakaoSignupBtn').addEventListener('click', function () {
+        showLoading('카카오 가입 중...');
+        CBT_AUTH.kakaoLogin(
+            function () { onSignupSuccess(); },
+            function (err) {
+                hideLoading();
+                alert(
+                    '카카오 연동에 실패했습니다.\n\n' +
+                    '카카오 개발자 콘솔에서 도메인 등록이 필요할 수 있습니다.\n' +
+                    '아래 직접 가입을 이용해 주세요.\n\n' +
+                    '상세: ' + (err && err.msg ? err.msg : JSON.stringify(err))
+                );
+            }
+        );
+    });
+    </script>
+</body>
+</html>

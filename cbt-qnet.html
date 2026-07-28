@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>뀨-Net CBT - CBT 기출문제</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+        /* 뀨-Net CBT — 사이트 기본(블루)과 구분되는 그린(emerald) 테마 */
+        body { font-family: 'Noto Sans KR', sans-serif; background-color: #f2fbf6; }
+        .hero-gradient {
+            background: linear-gradient(135deg, #064e3b 0%, #047857 45%, #059669 78%, #34d399 100%);
+            position: relative;
+        }
+        .hero-gradient::after {
+            content: ''; position: absolute; inset: 0; pointer-events: none;
+            background:
+                radial-gradient(circle at 12% 20%, rgba(16,185,129,.20), transparent 40%),
+                radial-gradient(circle at 88% 80%, rgba(52,211,153,.16), transparent 42%);
+        }
+        .accent-ico { color: #059669; }
+        .step-badge {
+            display: inline-flex; width: 26px; height: 26px; border-radius: 50%;
+            background: linear-gradient(135deg, #059669, #047857); color: white; font-weight: 800; font-size: 14px;
+            align-items: center; justify-content: center; box-shadow: 0 2px 8px rgba(5,150,105,.4);
+        }
+        .cat-item {
+            padding: 10px 14px; border-radius: 10px; cursor: pointer; font-size: 14px;
+            color: #374151; border: 1px solid transparent; transition: all .12s;
+        }
+        .cat-item:hover { background: #ecfdf5; color: #047857; }
+        .cat-item.active { background: linear-gradient(135deg, #059669, #047857); color: white; font-weight: 700; }
+        .round-item {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 14px 18px; border: 1px solid #d7ede0; border-radius: 12px;
+            cursor: pointer; transition: all .12s; background: white;
+        }
+        .round-item:hover { border-color: #6ee7b7; background: #ecfdf5; }
+        .round-item.active { border-color: #059669; background: #d1fae5; box-shadow: 0 0 0 2px rgba(5,150,105,.28); }
+        .start-btn {
+            background: linear-gradient(135deg, #059669, #047857); color: white;
+            padding: 16px 48px; border-radius: 14px; font-size: 18px; font-weight: 800;
+            border: none; cursor: pointer; transition: all .2s;
+            box-shadow: 0 6px 20px rgba(5,150,105,0.4);
+        }
+        .start-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 28px rgba(5,150,105,0.5); }
+        .start-btn:disabled { background: #cbd5e1; box-shadow: none; cursor: not-allowed; transform: none; }
+        /* 진행 절차 카드 아이콘 배경 */
+        .proc-ico { display:inline-flex; width:44px; height:44px; border-radius:12px; align-items:center; justify-content:center;
+            background: linear-gradient(135deg, #d1fae5, #ecfdf5); color:#059669; font-size:20px; }
+    </style>
+</head>
+<body>
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-blue-600">CBT 기출문제</a>
+                </div>
+                <div class="hidden md:flex space-x-8 text-black font-medium">
+                    <a href="notice.html" class="text-black hover:text-gray-700">공지사항</a>
+                    <a href="exams.html" class="text-black hover:text-gray-700">기출문제</a>
+                    <a href="cbt-qnet.html" class="text-blue-600 font-bold">뀨-Net CBT</a>
+                    <a href="videos.html" class="text-black hover:text-gray-700">기출문제영상</a>
+                    <a href="community.html" class="text-black hover:text-gray-700">커뮤니티</a>
+                    <a href="mypage.html" class="text-black hover:text-gray-700">마이페이지</a>
+                </div>
+                <div id="navAuthArea" class="flex items-center space-x-4"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 히어로 -->
+    <section class="hero-gradient py-14 px-4">
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <div class="inline-flex items-center gap-2 bg-white/15 backdrop-blur text-emerald-100 text-xs font-bold px-4 py-1.5 rounded-full mb-4">
+                <i class="fas fa-desktop"></i> 실전 CBT 체험 · 큐넷 스타일 연습 화면
+            </div>
+            <h1 class="text-4xl md:text-5xl font-black text-white mb-4">뀨-Net CBT</h1>
+            <p class="text-emerald-100 text-lg">실제 국가기술자격 CBT 시험 환경을 참고한 연습 화면으로<br class="md:hidden"> 기출문제를 풀어보세요</p>
+        </div>
+    </section>
+
+    <!-- 절차 안내 -->
+    <div class="max-w-5xl mx-auto px-4 -mt-7">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 bg-white p-5 rounded-2xl shadow-xl text-center relative z-10">
+            <div class="p-2 flex flex-col items-center">
+                <div class="proc-ico mb-2"><i class="fas fa-id-card"></i></div>
+                <p class="text-xs font-bold text-gray-700">1. 수험자 정보 확인</p>
+            </div>
+            <div class="p-2 flex flex-col items-center">
+                <div class="proc-ico mb-2"><i class="fas fa-circle-info"></i></div>
+                <p class="text-xs font-bold text-gray-700">2. 안내·유의사항</p>
+            </div>
+            <div class="p-2 flex flex-col items-center">
+                <div class="proc-ico mb-2"><i class="fas fa-pen-to-square"></i></div>
+                <p class="text-xs font-bold text-gray-700">3. 시험 응시 (실전화면)</p>
+            </div>
+            <div class="p-2 flex flex-col items-center">
+                <div class="proc-ico mb-2"><i class="fas fa-square-poll-vertical"></i></div>
+                <p class="text-xs font-bold text-gray-700">4. 즉시 채점·합격 확인</p>
+            </div>
+        </div>
+    </div>
+
+    <main class="max-w-5xl mx-auto px-4 py-12">
+
+        <!-- STEP 1 : 종목 선택 -->
+        <section class="mb-10">
+            <h2 class="text-xl font-bold text-gray-800 mb-4 flex items-center gap-2">
+                <span class="step-badge">1</span> 응시 종목 선택
+            </h2>
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-6">
+                <div class="relative mb-4">
+                    <input type="text" id="catSearch" placeholder="종목명 검색  (예: 정보처리기사, 전기기능사)"
+                        class="w-full px-5 py-3.5 pr-12 border border-gray-200 rounded-xl focus:outline-none focus:border-emerald-400 focus:ring-2 focus:ring-emerald-100 text-sm">
+                    <i class="fas fa-search absolute right-5 top-4 text-gray-400"></i>
+                </div>
+                <div id="catList" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1.5 max-h-80 overflow-y-auto pr-1"></div>
+            </div>
+        </section>
+
+        <!-- STEP 2 : 회차 선택 -->
+        <section class="mb-10 hidden" id="roundSection">
+            <h2 class="text-xl font-bold text-gray-800 mb-4 flex items-center gap-2">
+                <span class="step-badge">2</span> 시험 회차 선택
+                <span id="roundCatName" class="text-sm font-normal text-emerald-600 ml-1"></span>
+            </h2>
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-6">
+                <div id="roundLoading" class="text-center py-8 text-gray-400 hidden">
+                    <i class="fas fa-spinner fa-spin text-2xl mb-2"></i>
+                    <p class="text-sm">회차 목록을 불러오는 중...</p>
+                </div>
+                <div id="roundError" class="text-center py-8 text-red-500 hidden text-sm"></div>
+                <div id="roundList" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3"></div>
+            </div>
+        </section>
+
+        <!-- STEP 3 : 시험 시작 -->
+        <section class="hidden" id="startSection">
+            <h2 class="text-xl font-bold text-gray-800 mb-4 flex items-center gap-2">
+                <span class="step-badge">3</span> 시험 시작
+            </h2>
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-8 text-center">
+                <div class="inline-block bg-emerald-50 rounded-xl px-8 py-5 mb-6 text-left">
+                    <p class="text-sm text-gray-500 mb-1">선택한 시험</p>
+                    <p class="text-lg font-bold text-gray-800" id="selExamName">-</p>
+                    <p class="text-sm text-emerald-600 mt-1" id="selExamRound">-</p>
+                </div>
+                <div class="grid grid-cols-3 gap-3 max-w-md mx-auto mb-8 text-center">
+                    <div class="bg-gray-50 rounded-xl py-3">
+                        <p class="text-xs text-gray-400">문항 수</p>
+                        <p class="text-sm font-bold text-gray-700 mt-0.5"><span id="selExamCount">-</span>문항</p>
+                    </div>
+                    <div class="bg-gray-50 rounded-xl py-3">
+                        <p class="text-xs text-gray-400">제한 시간</p>
+                        <p class="text-sm font-bold text-gray-700 mt-0.5" id="selExamTime">-</p>
+                    </div>
+                    <div class="bg-gray-50 rounded-xl py-3">
+                        <p class="text-xs text-gray-400">합격 기준</p>
+                        <p class="text-sm font-bold text-gray-700 mt-0.5">60점 이상</p>
+                    </div>
+                </div>
+                <button class="start-btn" id="startBtn" onclick="startExam()" disabled>
+                    <i class="fas fa-play mr-2"></i>CBT 시험 시작하기
+                </button>
+                <p class="text-xs text-gray-400 mt-4">
+                    시험 화면은 전체화면으로 진행됩니다. 실제 CBT 시험 흐름을 참고한 절차(수험자 정보 확인 → 안내사항 → 유의사항 → 시험)로 진행돼요.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-gray-400 py-12 px-4 mt-16">
+        <div class="max-w-7xl mx-auto text-center">
+            <p class="text-sm">© 2025 CBT 기출문제. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="cbt-auth.js?v=6"></script>
+    <script src="cbt-qnet-data.js?v=6"></script>
+    <script>
+    /* ══════════ 전체 종목 목록 ══════════ */
+    var ALL_CATS = ["DIAT-정보통신상식", "DIAT-정보통신상식(구)", "ERP-인사-2급-실무", "ERP-인사-2급-이론", "ERP-회계-2급-실무", "ERP-회계-2급-이론", "FAT-1급", "FAT-1급(구)", "FAT-2급", "FAT-2급(구)", "IoT지식능력검정", "PC정비사-1급", "PC정비사-2급", "PSAT-상황판단", "PSAT-언어논리", "PSAT-자료해석", "PSAT-헌법", "RFID-GL", "TAT-1급", "TAT-2급", "TAT-2급(구)", "가구제작기능사", "가맹거래사", "가스기능사", "가스기능장", "가스기사", "가스산업기사", "감정평가사-1차-1교시", "감정평가사-1차-1교시(구)", "감정평가사-1차-2교시", "건설기계설비기사", "건설기계설비산업기사", "건설기계정비기능사", "건설기계정비기능장", "건설기계정비기사", "건설기계정비산업기사", "건설안전기사", "건설안전산업기사", "건설재료시험기능사", "건설재료시험기사", "건설재료시험산업기사", "건축기사", "건축목공산업기사", "건축목재시공기능장", "건축산업기사", "건축설비기사", "건축설비산업기사", "건축일반시공기능장", "건축일반시공산업기사", "검량사", "경비지도사-1차(법학개론,민간경비론)", "경비지도사-2차(경비업법)", "경비지도사-2차(경호학)", "경비지도사-2차(기계경비개론)", "경비지도사-2차(기계경비기획및설계)", "경비지도사-2차(범죄학)", "경비지도사-2차(소방학)", "경영지도사-1차", "경영지도사-1차-1교시", "경영지도사-1차-1교시(구)", "경영지도사-1차-2교시", "경영지도사-1차-2교시(구)", "공유압기능사", "공인노무사-1차(경영학개론)", "공인노무사-1차(경영학개론)(구)", "공인노무사-1차(경제학원론)", "공인노무사-1차(경제학원론)(구)", "공인노무사-1차(노동법1)", "공인노무사-1차(노동법1)(구)", "공인노무사-1차(노동법2)", "공인노무사-1차(노동법2)(구)", "공인노무사-1차(민법)", "공인노무사-1차(민법)(구)", "공인노무사-1차(사회보험법)", "공인노무사-1차(사회보험법)(구)", "공인중개사-1차", "공인중개사-2차", "공조냉동기계기능사", "공조냉동기계기사", "공조냉동기계기사(구)", "공조냉동기계산업기사", "관광통역안내사", "관광통역안내사-1교시", "관광통역안내사-2교시", "광고도장기능사", "광학기능사", "광학기사", "교통기사", "교통산업기사", "국내여행안내사-1차", "굴삭기운전기능사", "귀금속가공기능사", "귀금속가공기능장", "귀금속가공산업기사", "금속도장기능사", "금속재료기능장", "금속재료기사", "금속재료산업기사", "금속재료시험기능사", "금형기능사", "금형제작기능장", "기계가공기능장", "기계가공조립기능사", "기계설계기사", "기계설계산업기사", "기계정비기능사", "기계정비산업기사", "기계조립산업기사", "기상기사", "네트워크관리사-1급", "네트워크관리사-2급", "농기계운전기능사", "농기계정비기능사", "농림토양평가관리산업기사", "농산물품질관리사-1차", "농업기계기사", "농업기계산업기사", "농작업안전보건기사", "누설비파괴검사기사", "누설비파괴검사기사(구)", "대기환경기사", "대기환경산업기사", "도시계획기사", "도자기공예기능사", "동력기계정비기능사", "디지털영상편집-1급", "디지털영상편집-2급", "리눅스마스터-1급", "리눅스마스터-2급", "멀티미디어콘텐츠제작전문가", "멀티미디어콘텐츠제작전문가(구)", "모터그레이더운전기능사", "목공예기능사", "무선설비기능사", "무선설비기사", "무선설비산업기사", "물류관리사-1교시", "물류관리사-2교시", "미용사(네일)", "미용사(일반)", "미용사(피부)", "미용장", "바리스타-2급", "바이오화학제품제조기사", "반도체설계산업기사", "방사선비파괴검사기능사", "방사선비파괴검사기사", "방사선비파괴검사기사(구)", "방사선비파괴검사산업기사", "방사선비파괴검사산업기사(구)", "방송통신기능사", "방송통신기사", "방송통신산업기사", "방수산업기사", "방재기사", "배관기능사", "배관기능장", "버섯종균기능사", "법조윤리", "변리사-1차(1교시)", "변리사-1차(2교시)", "변리사-1차(3교시)", "보석가공기능사", "보석감정사(기능사)", "비서-1급", "비서-2급", "비서-3급", "사무자동화산업기사", "사진기능사", "사출(프레스)금형산업기사", "사출(프레스)금형설계기사", "사회복지사-1급(1교시)", "사회복지사-1급(1교시)(구)", "사회복지사-1급(2교시)", "사회복지사-1급(2교시)(구)", "사회복지사-1급(3교시)", "사회복지사-1급(3교시)(구)", "사회조사분석사-1급", "사회조사분석사-2급", "산림기능사", "산림기사", "산림산업기사", "산림산업기사(구60문항)", "산업보건지도사", "산업안전기사", "산업안전산업기사", "산업안전지도사", "산업위생관리기사", "산업위생관리산업기사", "생물분류기사(동물)", "생물분류기사(식물)", "생산자동화기능사", "생산자동화산업기사", "석공예기능사", "선체건조기능사", "설비보전기능사", "설비보전기사", "설비보전기사(구)", "섬유디자인산업기사", "세탁기능사", "소방설비기사(기계분야)", "소방설비기사(전기분야)", "소방설비산업기사(기계)", "소방설비산업기사(전기)", "소방시설관리사", "소비자전문상담사-2급", "소음진동기사", "소음진동기사(구)", "소음진동산업기사", "손해평가사", "수능(경제)", "수능(국사)", "수능(국어영역)", "수능(동아시아사)", "수능(물리I)", "수능(물리II)", "수능(법과정치)", "수능(생명과학I)", "수능(생명과학II)", "수능(생활과윤리)", "수능(세계사)", "수능(세계지리)", "수능(윤리와사상)", "수능(지구과학I)", "수능(지구과학II)", "수능(한국근ㆍ현대사)", "수능(한국사)", "수능(한국지리)", "수능(화학I)", "수능(화학II)", "수산물품질관리사-1차", "수산양식기능사", "수산양식기사", "수산양식산업기사", "수산제조기사", "수질환경기사", "수질환경산업기사", "스포츠경영관리사", "승강기기능사", "승강기기사", "승강기산업기사", "시각디자인기사", "시각디자인산업기사", "시설원예기사", "식물보호기사", "식물보호산업기사", "식육가공기사", "식품가공기능사", "식품기사", "식품산업기사", "식품산업기사(구)", "신발류제조기능사", "신재생에너지발전설비기능사", "신재생에너지발전설비기사", "신재생에너지발전설비기사(구)", "신재생에너지발전설비산업기사", "실내건축기능사", "실내건축기사", "실내건축기사(구)", "실내건축산업기사", "압연기능사", "압연기능장", "양복기능사", "양장기능사", "양화장치운전기능사", "어로산업기사", "에너지관리기능사", "에너지관리기능장", "에너지관리기사", "에너지관리산업기사", "연구실안전관리사", "연삭기능사", "열처리기능사", "염색기능사", "영사기능사", "영상정보관리사", "온실가스관리기사", "와전류비파괴검사기사", "와전류비파괴검사기사(구)", "용접기능사", "용접기능장", "용접기사", "용접산업기사", "운전면허-학과시험(필기)-1종-2종(2020년판)", "운전면허-학과시험(필기)-2종-소형-이륜(2020년판)", "워드프로세서-(구-1급)", "워드프로세서-2급(폐지)", "워드프로세서-3급(폐지)", "원예기능사", "원자력기사", "원형기능사", "웹디자인기능사", "위험물기능사", "위험물기능장", "위험물산업기사", "유기농업기능사", "유기농업기사", "유기농업산업기사", "유통관리사-1급", "유통관리사-2급", "유통관리사-3급", "육상무선통신사", "응용지질기사", "의공기사", "의공산업기사", "의료전자기능사", "의류기사", "이용사", "이용장", "인간공학기사", "인쇄기능사", "인쇄기사", "인쇄산업기사", "인터넷보안전문가-2급", "인터넷정보관리사-2급", "일반기계기사", "임산가공기능사", "임산가공기사", "임산가공산업기사", "임상심리사-1급", "임상심리사-2급", "임업종묘기능사", "임업종묘기사", "자기비파괴검사기능사", "자기비파괴검사기사", "자기비파괴검사기사(구)", "자기비파괴검사산업기사", "자기비파괴검사산업기사(구)", "자동차보수도장기능사", "자동차정비기능사", "자동차정비기능장", "자동차정비기사", "자동차정비산업기사", "자동차차체수리기능사", "자연생태복원기사", "자연생태복원기사(구)", "자연생태복원산업기사", "잠수기능사", "잠수산업기사", "잠수산업기사(구)", "전기공사기사", "전기공사산업기사", "전기기능사", "전기기능장", "전기기사", "전기산업기사", "전기철도기사", "전기철도산업기사", "전산세무-1급", "전산세무-2급", "전산응용건축제도기능사", "전산응용기계제도기능사", "전산응용조선제도기능사", "전산응용토목제도기능사", "전산회계-1급", "전산회계-2급", "전산회계운용사-1급", "전산회계운용사-2급", "전산회계운용사-3급", "전자계산기기능사", "전자계산기기사", "전자계산기제어산업기사", "전자계산기제어산업기사(구)", "전자계산기조직응용기사", "전자기기기능사", "전자기기기능장", "전자기사", "전자부품장착기능사", "전자산업기사", "전자상거래관리사-1급", "전자상거래관리사-2급", "전자상거래운용사", "전자출판기능사", "전자캐드기능사", "전파전자기능사(구)", "전파전자통신기능사", "전파전자통신기사", "전파통신기능사(구)", "정밀측정기능사", "정밀측정산업기사", "정보기기운용기능사", "정보보안기사", "정보처리기능사", "정보처리기능사-실기(베타)", "정보처리기사", "정보처리기사(구)", "정보처리산업기사", "정보통신기사", "정보통신기사(구)", "정보통신산업기사", "정수시설운영관리사-1급-1차", "정수시설운영관리사-2급-1차", "정수시설운영관리사-3급-1차", "제강기능사", "제강기능장", "제과기능사", "제과기능장", "제빵기능사", "제선기능사", "제선기능장", "제품디자인기사", "제품디자인산업기사", "제품응용모델링기능사", "조경기능사", "조경기사", "조경산업기사", "조리기능장", "조리산업기사(공통)", "조선기사", "조선산업기사", "조주기능사", "종자기능사", "종자기사", "종자산업기사", "주조기능사", "주조기능장", "주조산업기사", "주택관리사보-1차", "주택관리사보-2차", "지게차운전기능사", "지게차유사(롤러,기중기등)", "지능형홈관리사", "지적기능사", "지적기사", "지적산업기사", "직업상담사-1급(구)", "직업상담사-2급", "직업상담사-2급(구)", "천장크레인운전기능사", "철도신호기사", "철도신호산업기사", "철도운송산업기사", "철도차량기사", "철도차량정비기능사", "철도차량정비기능사(구)", "철도차량정비기능장", "철도토목기능사", "철도토목산업기사", "청소년상담사-1급(1교시)", "청소년상담사-1급(1교시)(구)", "청소년상담사-1급(2교시)", "청소년상담사-1급(2교시)(구)", "청소년상담사-2급(1교시)", "청소년상담사-2급(1교시)(구)", "청소년상담사-2급(2교시)", "청소년상담사-2급(2교시)(구)", "청소년상담사-3급(1교시)", "청소년상담사-3급(1교시)(구)", "청소년상담사-3급(2교시)", "청소년상담사-3급(2교시)(구)", "초음파비파괴검사기능사", "초음파비파괴검사기사", "초음파비파괴검사기사(구)", "초음파비파괴검사산업기사", "초음파비파괴검사산업기사(구)", "축로기능사", "축산기능사", "축산기사", "축산산업기사", "측량기능사", "측량및지형공간정보기사", "측량및지형공간정보산업기사", "치공구설계산업기사", "침투비파괴검사기능사", "침투비파괴검사기사", "침투비파괴검사기사(구)", "침투비파괴검사산업기사", "침투비파괴검사산업기사(구)", "컨벤션기획사-2급", "컨벤션기획사-2급(구)", "컨테이너크레인운전기능사", "컬러리스트기사", "컬러리스트산업기사", "컴퓨터그래픽스운용기능사", "컴퓨터응용가공산업기사", "컴퓨터응용밀링기능사", "컴퓨터응용선반기능사", "컴퓨터활용능력-1급", "컴퓨터활용능력-2급", "컴퓨터활용능력-3급(폐지)", "콘크리트기능사", "콘크리트기사", "콘크리트산업기사", "타워크레인운전기능사", "텔레마케팅관리사", "토목기사", "토목산업기사", "토양환경기사", "통신기기기능사", "통신선로기능사", "통신선로산업기사", "통신설비기능장", "특수용접기능사", "판금제관기능장", "판금제관산업기사", "패션디자인산업기사", "패션머천다이징산업기사", "폐기물처리기사", "폐기물처리산업기사", "포장기사", "포장산업기사", "표면처리기능사", "표면처리기능장", "표면처리산업기사", "품질경영기사", "품질경영산업기사", "플라스틱창호기능사", "피아노조율기능사", "피아노조율산업기사", "한국사능력검정시험-기본", "한국사능력검정시험-심화", "한국사능력검정시험-중급(폐지)", "한국사능력검정시험-초급(폐지)", "한국수어교원자격검정", "한복기능사", "한복산업기사", "한식조리기능사", "항공기관정비기능사", "항공기사", "항공기체정비기능사", "항공무선통신사", "항공산업기사", "항공장비정비기능사", "항공전자정비기능사", "항로표지기능사", "항로표지기사", "항로표지산업기사", "해상무선통신사", "해양공학기사", "해양자원개발기사", "해양조사산업기사", "해양환경기사", "화공기사", "화공기사(구)", "화공기사(구)(구)", "화약류관리기사", "화약류관리산업기사", "화약취급기능사", "화재감식평가기사", "화재감식평가산업기사", "화학분석기능사", "화학분석기사", "화학분석기사(구)", "화훼장식기능사", "화훼장식기사", "환경기능사"];
+
+    var selCat = null;      // 선택된 종목
+    var selRound = null;    // { href, title }
+
+    /* 데이터 파일이 있으면 폴더 기준 전체 목록 사용 (더 정확) */
+    if (window.CBT_QNET_DATA) {
+        ALL_CATS = Object.keys(window.CBT_QNET_DATA).sort(function (a, b) {
+            return a.localeCompare(b, 'ko');
+        });
+    }
+
+    /* ══════════ STEP 1 : 종목 목록 렌더 ══════════ */
+    function renderCats(filter) {
+        var list = document.getElementById('catList');
+        list.innerHTML = '';
+        var f = (filter || '').toLowerCase().replace(/\s/g, '');
+        ALL_CATS.forEach(function (cat) {
+            var display = cat.replace(/-/g, ' ');
+            if (f && display.toLowerCase().replace(/\s/g, '').indexOf(f) === -1) return;
+            var div = document.createElement('div');
+            div.className = 'cat-item' + (cat === selCat ? ' active' : '');
+            div.textContent = display;
+            div.onclick = function () { selectCat(cat); };
+            list.appendChild(div);
+        });
+        if (!list.children.length) {
+            list.innerHTML = '<p class="col-span-full text-center text-gray-400 text-sm py-6">검색 결과가 없습니다.</p>';
+        }
+    }
+
+    document.getElementById('catSearch').addEventListener('input', function (e) {
+        renderCats(e.target.value);
+    });
+
+    /* ══════════ STEP 2 : 회차 목록 ══════════ */
+    function selectCat(cat) {
+        selCat = cat;
+        selRound = null;
+        renderCats(document.getElementById('catSearch').value);
+        document.getElementById('roundSection').classList.remove('hidden');
+        document.getElementById('startSection').classList.add('hidden');
+        document.getElementById('roundCatName').textContent = '— ' + cat.replace(/-/g, ' ');
+        document.getElementById('roundList').innerHTML = '';
+        document.getElementById('roundError').classList.add('hidden');
+        document.getElementById('roundLoading').classList.remove('hidden');
+        document.getElementById('roundSection').scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+        /* 1순위: 정적 데이터(cbt-qnet-data.js) — file:// 에서도 동작 */
+        var staticRounds = (window.CBT_QNET_DATA && window.CBT_QNET_DATA[cat]) || null;
+        if (staticRounds && staticRounds.length) {
+            document.getElementById('roundLoading').classList.add('hidden');
+            renderRounds(staticRounds.map(function (r) {
+                return { href: 'CBT/' + cat + '/' + r.f, title: r.t, n: r.n };
+            }));
+            return;
+        }
+
+        /* 2순위: CBT-list 페이지 fetch */
+        fetch('CBT-list/' + encodeURIComponent(cat) + '-list.html')
+            .then(function (r) {
+                if (!r.ok) throw new Error('HTTP ' + r.status);
+                return r.text();
+            })
+            .then(function (html) {
+                var doc = new DOMParser().parseFromString(html, 'text/html');
+                var links = doc.querySelectorAll('a[href*="CBT/"]');
+                var rounds = [];
+                links.forEach(function (a) {
+                    var href = a.getAttribute('href') || '';
+                    if (href.indexOf('CBT/') === -1 || href.indexOf('.html') === -1) return;
+                    href = href.replace(/^(\.\.\/)+/, '');   // ../CBT/... → CBT/...
+                    var titleEl = a.querySelector('p') || a;
+                    rounds.push({ href: href, title: titleEl.textContent.trim() });
+                });
+                document.getElementById('roundLoading').classList.add('hidden');
+                if (!rounds.length) {
+                    showRoundError('이 종목의 회차 목록을 찾을 수 없습니다.');
+                    return;
+                }
+                renderRounds(rounds);
+            })
+            .catch(function (err) {
+                document.getElementById('roundLoading').classList.add('hidden');
+                showRoundError('회차 목록을 불러오지 못했습니다. (' + err.message + ')');
+            });
+    }
+
+    function showRoundError(msg) {
+        var el = document.getElementById('roundError');
+        el.textContent = msg;
+        el.classList.remove('hidden');
+    }
+
+    function renderRounds(rounds) {
+        var list = document.getElementById('roundList');
+        list.innerHTML = '';
+        rounds.forEach(function (r) {
+            var div = document.createElement('div');
+            div.className = 'round-item';
+            div.innerHTML =
+                '<span class="text-sm font-semibold text-gray-700">' + r.title + '</span>' +
+                '<i class="fas fa-chevron-right text-gray-300 text-xs"></i>';
+            div.onclick = function () { selectRound(r, div); };
+            list.appendChild(div);
+        });
+    }
+
+    /* 문항 수 → 전체 제한시간(분). 기능사/기능장 1분/문항, 그 외 1.5분/문항 */
+    function examMinutes(n, cat) {
+        var perQ = /기능사|기능장/.test(cat || '') ? 1 : 1.5;
+        return Math.round(n * perQ);
+    }
+    /* 전체 시간을 사람이 읽기 좋은 형태로 (예: "150분 (2시간 30분)") */
+    function timeText(mins) {
+        if (!mins) return '시험 시작 시 안내';
+        var h = Math.floor(mins / 60), m = mins % 60;
+        if (h > 0) return mins + '분 (' + h + '시간' + (m ? ' ' + m + '분' : '') + ')';
+        return mins + '분';
+    }
+
+    /* ══════════ STEP 3 : 시작 ══════════ */
+    function selectRound(r, el) {
+        selRound = r;
+        document.querySelectorAll('.round-item').forEach(function (d) { d.classList.remove('active'); });
+        el.classList.add('active');
+        document.getElementById('startSection').classList.remove('hidden');
+        document.getElementById('selExamName').textContent = selCat.replace(/-/g, ' ');
+        document.getElementById('selExamRound').textContent = r.title;
+
+        var n = r.n || 0;
+        document.getElementById('selExamCount').textContent = n || '-';
+        document.getElementById('selExamTime').textContent =
+            n ? timeText(examMinutes(n, selCat)) : '시험 시작 시 안내';
+
+        document.getElementById('startBtn').disabled = false;
+        document.getElementById('startSection').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    function startExam() {
+        if (!selCat || !selRound) return;
+        if (location.protocol === 'file:') {
+            /* file:// 은 fetch 불가 → 시험 페이지가 문제를 추출해 CBT로 전달 (?cbt=1) */
+            location.href = selRound.href
+                + '?cbt=1&round=' + encodeURIComponent(selRound.title);
+            return;
+        }
+        location.href = 'cbt-exam-sim.html'
+            + '?exam=' + encodeURIComponent(selRound.href)
+            + '&cat=' + encodeURIComponent(selCat.replace(/-/g, ' '))
+            + '&round=' + encodeURIComponent(selRound.title);
+    }
+
+    renderCats('');
+    </script>
+</body>
+</html>

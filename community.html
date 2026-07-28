@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>커뮤니티 - CBT 기출문제</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+        body { font-family: 'Noto Sans KR', sans-serif; background-color: #f8fafc; }
+        .hero-gradient { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); }
+        .category-tab.active { background-color: #2563eb; color: white; border-color: #2563eb; }
+        .post-row:hover { background-color: #f0f7ff; }
+        .tag-pill { display: inline-block; padding: 2px 10px; border-radius: 9999px; font-size: 11px; font-weight: 600; }
+        .stat-card { transition: transform 0.2s; }
+        .stat-card:hover { transform: translateY(-2px); }
+        /* 모달 */
+        .modal-overlay {
+            position: fixed; inset: 0; background: rgba(0,0,0,0.55);
+            z-index: 1000; display: flex; align-items: center; justify-content: center; padding: 1rem;
+        }
+        .modal-box {
+            background: white; border-radius: 1rem; width: 100%; max-width: 660px;
+            max-height: 90vh; overflow-y: auto; box-shadow: 0 25px 60px rgba(0,0,0,0.3);
+        }
+        .view-content { white-space: pre-wrap; line-height: 1.85; word-break: break-word; }
+        /* 토스트 */
+        #toast {
+            position: fixed; bottom: 2rem; left: 50%; transform: translateX(-50%);
+            background: #1e3a8a; color: white; padding: 0.75rem 1.75rem;
+            border-radius: 9999px; font-size: 0.875rem; font-weight: 600;
+            z-index: 2000; transition: opacity 0.3s; box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+            white-space: nowrap;
+        }
+        @media print { html { zoom: 0.7; } nav, footer, .no-print { display: none !important; } }
+    </style>
+</head>
+<body>
+
+    <!-- 네비게이션 -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <a href="index.html" class="text-2xl font-bold text-blue-600">CBT 기출문제</a>
+                <div class="hidden md:flex space-x-8 text-black font-medium">
+                    <a href="notice.html" class="hover:text-gray-700">공지사항</a>
+                    <a href="exams.html" class="hover:text-gray-700">기출문제</a>
+                    <a href="cbt-qnet.html" class="text-black hover:text-gray-700">뀨-Net CBT</a>
+                    <a href="videos.html" class="hover:text-gray-700">기출문제영상</a>
+                    <a href="community.html" class="border-b-2 border-black font-bold">커뮤니티</a>
+                    <a href="mypage.html" class="hover:text-gray-700">마이페이지</a>
+                </div>
+                <div class="flex items-center space-x-4" id="navAuthArea">
+                    <a href="login.html" class="text-sm font-medium text-gray-500 hover:text-blue-600 transition">로그인</a>
+                    <a href="login.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-bold hover:bg-blue-700 transition">회원가입</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 헤더 (Hero) -->
+    <section class="hero-gradient py-12 px-4">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-3">
+                <i class="fas fa-users mr-3"></i>커뮤니티
+            </h1>
+            <p class="text-blue-100 text-lg">합격을 향한 길, 함께 걸어가요</p>
+        </div>
+    </section>
+
+    <!-- 통계 카드 -->
+    <div class="max-w-7xl mx-auto px-4 -mt-6 mb-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 bg-white p-6 rounded-2xl shadow-xl">
+            <div class="stat-card text-center border-r border-gray-100">
+                <p class="text-xs text-gray-500 mb-1">전체 게시글</p>
+                <p class="text-xl font-bold text-blue-600" id="statTotalPosts">42,318</p>
+            </div>
+            <div class="stat-card text-center border-r border-gray-100">
+                <p class="text-xs text-gray-500 mb-1">오늘의 새 글</p>
+                <p class="text-xl font-bold text-blue-600" id="statToday">128</p>
+            </div>
+            <div class="stat-card text-center border-r border-gray-100">
+                <p class="text-xs text-gray-500 mb-1">활동 회원</p>
+                <p class="text-xl font-bold text-blue-600">3,541</p>
+            </div>
+            <div class="stat-card text-center">
+                <p class="text-xs text-gray-500 mb-1">합격 수기</p>
+                <p class="text-xl font-bold text-blue-600">12,402</p>
+            </div>
+        </div>
+    </div>
+
+    <main class="max-w-7xl mx-auto px-4 pb-16">
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+
+            <!-- 메인 영역 -->
+            <div class="lg:col-span-3 space-y-6">
+
+                <!-- 카테고리 탭 -->
+                <div class="bg-white rounded-xl shadow-sm p-4">
+                    <div class="flex flex-wrap gap-2">
+                        <button class="category-tab active px-4 py-2 rounded-lg border border-gray-200 text-sm font-semibold hover:bg-blue-50 transition" data-category="all">
+                            <i class="fas fa-th-large mr-1"></i>전체
+                        </button>
+                        <button class="category-tab px-4 py-2 rounded-lg border border-gray-200 text-sm font-semibold hover:bg-blue-50 transition" data-category="free">
+                            <i class="fas fa-comments mr-1"></i>자유게시판
+                        </button>
+                        <button class="category-tab px-4 py-2 rounded-lg border border-gray-200 text-sm font-semibold hover:bg-blue-50 transition" data-category="pass">
+                            <i class="fas fa-trophy mr-1"></i>합격수기
+                        </button>
+                        <button class="category-tab px-4 py-2 rounded-lg border border-gray-200 text-sm font-semibold hover:bg-blue-50 transition" data-category="qa">
+                            <i class="fas fa-question-circle mr-1"></i>질문&amp;답변
+                        </button>
+                        <button class="category-tab px-4 py-2 rounded-lg border border-gray-200 text-sm font-semibold hover:bg-blue-50 transition" data-category="study">
+                            <i class="fas fa-user-friends mr-1"></i>스터디 모집
+                        </button>
+                        <button class="category-tab px-4 py-2 rounded-lg border border-gray-200 text-sm font-semibold hover:bg-blue-50 transition" data-category="share">
+                            <i class="fas fa-folder-open mr-1"></i>자료공유
+                        </button>
+                        <button class="category-tab px-4 py-2 rounded-lg border border-gray-200 text-sm font-semibold hover:bg-blue-50 transition" data-category="review">
+                            <i class="fas fa-pen-to-square mr-1"></i>문제오류신고
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 검색 / 정렬 / 글쓰기 -->
+                <div class="bg-white rounded-xl shadow-sm p-4 flex flex-col md:flex-row gap-3 items-center justify-between">
+                    <div class="relative flex-1 w-full md:max-w-md">
+                        <input type="text" id="searchInput" placeholder="제목, 내용, 작성자 검색..."
+                            class="w-full pl-10 pr-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:border-blue-500 text-sm">
+                        <i class="fas fa-search absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                    </div>
+                    <div class="flex items-center gap-2 w-full md:w-auto">
+                        <select id="sortSelect" class="px-3 py-2 border border-gray-200 rounded-lg text-sm focus:outline-none">
+                            <option value="latest">최신순</option>
+                            <option value="popular">조회순</option>
+                            <option value="likes">추천순</option>
+                            <option value="comments">댓글순</option>
+                        </select>
+                        <button id="writeBtn"
+                            class="bg-blue-600 text-white px-5 py-2 rounded-lg text-sm font-bold hover:bg-blue-700 active:scale-95 transition whitespace-nowrap shadow-sm">
+                            <i class="fas fa-pen mr-1"></i>글쓰기
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 인기 게시글 (HOT) -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+                    <div class="px-6 py-4 border-b border-gray-100 bg-gradient-to-r from-red-50 to-orange-50">
+                        <h2 class="text-lg font-bold text-gray-800">
+                            <i class="fas fa-fire text-red-500 mr-2"></i>지금 가장 핫한 글
+                        </h2>
+                    </div>
+                    <div class="divide-y divide-gray-100" id="hotPosts"></div>
+                </div>
+
+                <!-- 게시글 목록 -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+                    <div class="px-6 py-4 border-b border-gray-100 flex items-center justify-between">
+                        <h2 class="text-lg font-bold text-gray-800">
+                            <i class="fas fa-list text-blue-600 mr-2"></i>전체 게시글
+                        </h2>
+                        <span class="text-sm text-gray-500" id="postCount">총 42,318건</span>
+                    </div>
+                    <table class="w-full text-sm">
+                        <thead class="bg-gray-50 text-gray-600">
+                            <tr>
+                                <th class="px-3 py-3 w-20 text-center font-semibold">분류</th>
+                                <th class="px-3 py-3 text-left font-semibold">제목</th>
+                                <th class="px-3 py-3 w-24 text-center font-semibold hidden md:table-cell">작성자</th>
+                                <th class="px-3 py-3 w-20 text-center font-semibold hidden md:table-cell">날짜</th>
+                                <th class="px-3 py-3 w-16 text-center font-semibold hidden md:table-cell">조회</th>
+                                <th class="px-3 py-3 w-16 text-center font-semibold hidden md:table-cell">추천</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-100" id="postList"></tbody>
+                    </table>
+                    <!-- 페이지네이션 -->
+                    <div class="px-6 py-4 flex items-center justify-center gap-1 border-t border-gray-100">
+                        <button class="px-3 py-1.5 rounded text-sm text-gray-500 hover:bg-gray-100"><i class="fas fa-angle-double-left"></i></button>
+                        <button class="px-3 py-1.5 rounded text-sm text-gray-500 hover:bg-gray-100"><i class="fas fa-angle-left"></i></button>
+                        <button class="px-3 py-1.5 rounded text-sm bg-blue-600 text-white font-bold">1</button>
+                        <button class="px-3 py-1.5 rounded text-sm text-gray-700 hover:bg-gray-100">2</button>
+                        <button class="px-3 py-1.5 rounded text-sm text-gray-700 hover:bg-gray-100">3</button>
+                        <button class="px-3 py-1.5 rounded text-sm text-gray-700 hover:bg-gray-100">4</button>
+                        <button class="px-3 py-1.5 rounded text-sm text-gray-700 hover:bg-gray-100">5</button>
+                        <button class="px-3 py-1.5 rounded text-sm text-gray-500 hover:bg-gray-100"><i class="fas fa-angle-right"></i></button>
+                        <button class="px-3 py-1.5 rounded text-sm text-gray-500 hover:bg-gray-100"><i class="fas fa-angle-double-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 사이드바 -->
+            <aside class="space-y-6">
+                <div class="bg-white rounded-xl shadow-sm p-6">
+                    <h3 class="text-base font-bold text-gray-800 mb-4">
+                        <i class="fas fa-crown text-yellow-500 mr-2"></i>이달의 베스트 회원
+                    </h3>
+                    <div class="space-y-3" id="bestUsers"></div>
+                </div>
+                <div class="bg-white rounded-xl shadow-sm p-6">
+                    <h3 class="text-base font-bold text-gray-800 mb-4">
+                        <i class="fas fa-hashtag text-blue-600 mr-2"></i>인기 태그
+                    </h3>
+                    <div class="flex flex-wrap gap-2" id="popularTags"></div>
+                </div>
+                <div class="bg-white rounded-xl shadow-sm p-6">
+                    <h3 class="text-base font-bold text-gray-800 mb-4">
+                        <i class="fas fa-trophy text-green-600 mr-2"></i>최근 합격 수기
+                    </h3>
+                    <div class="space-y-3" id="recentPass"></div>
+                    <a href="#" class="block text-center text-xs text-blue-600 hover:underline mt-3">전체보기 →</a>
+                </div>
+                <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 border border-blue-100">
+                    <h3 class="text-base font-bold text-gray-800 mb-2">
+                        <i class="fas fa-bullhorn text-blue-600 mr-2"></i>커뮤니티 이용 안내
+                    </h3>
+                    <ul class="text-xs text-gray-600 space-y-1.5 mt-3">
+                        <li><i class="fas fa-check text-blue-500 mr-1"></i>로그인 없이 익명으로 글 작성 가능</li>
+                        <li><i class="fas fa-check text-blue-500 mr-1"></i>광고 / 욕설 게시물 작성 금지</li>
+                        <li><i class="fas fa-check text-blue-500 mr-1"></i>저작권 침해 자료 업로드 금지</li>
+                        <li><i class="fas fa-check text-blue-500 mr-1"></i>개인정보 노출 주의</li>
+                        <li><i class="fas fa-check text-blue-500 mr-1"></i>서로 존중하는 문화 만들기</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- 푸터 -->
+    <footer class="bg-gray-800 text-gray-400 py-12 px-4">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <span class="text-2xl font-bold text-white mb-4 block">CBT 기출문제</span>
+                <p class="text-sm leading-relaxed">
+                    CBT 기출문제는 과거 기출문제를 온라인에서 풀어보는 무료사이트 입니다.
+                    기출문제의 저작권은 출제기관에게 있으며, 관련 문의는 아래 주소로 메일 바랍니다.
+                </p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">바로가기</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:text-white">이용약관</a></li>
+                    <li><a href="#" class="hover:text-white">개인정보처리방침</a></li>
+                    <li><a href="#" class="hover:text-white">고객센터</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">Contact</h4>
+                <p class="text-sm">문의: <a href="mailto:kj5359@gmail.com" class="hover:text-white text-blue-400">kj5359@gmail.com</a></p>
+                <p class="text-sm mt-2">© 2025 CBT 기출문제. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== 글쓰기 모달 ===== -->
+    <div id="writeModal" class="modal-overlay hidden" onclick="if(event.target===this)closeWriteModal()">
+        <div class="modal-box">
+            <div class="flex items-center justify-between px-6 py-4 border-b border-gray-100">
+                <h2 class="text-lg font-bold text-gray-800"><i class="fas fa-pen text-blue-600 mr-2"></i>글쓰기</h2>
+                <button onclick="closeWriteModal()" class="w-8 h-8 flex items-center justify-center rounded-full text-gray-400 hover:bg-gray-100 hover:text-gray-700 text-xl transition">&times;</button>
+            </div>
+            <form id="writeForm" class="px-6 py-5 space-y-4">
+                <!-- 로그인 사용자 표시 배너 (JS가 채움) -->
+                <div id="writeMemberBanner" class="hidden rounded-xl bg-blue-50 border border-blue-100 px-4 py-2.5 text-sm text-blue-700 font-semibold flex items-center gap-2">
+                    <i class="fas fa-user-circle text-blue-400"></i>
+                    <span id="writeMemberName"></span>
+                    <span class="ml-auto text-xs text-blue-400 font-normal">로그인 계정으로 게시됩니다</span>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-1">
+                            닉네임 <span class="text-xs font-normal text-gray-400">(미입력 시 익명)</span>
+                        </label>
+                        <input type="text" id="postAuthor" placeholder="닉네임 입력 (선택)" maxlength="20"
+                            class="w-full px-3 py-2 border border-gray-200 rounded-lg text-sm focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-100">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-1">
+                            카테고리 <span class="text-red-500">*</span>
+                        </label>
+                        <select id="postCategory"
+                            class="w-full px-3 py-2 border border-gray-200 rounded-lg text-sm focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-100">
+                            <option value="free">자유게시판</option>
+                            <option value="pass">합격수기</option>
+                            <option value="qa">질문&amp;답변</option>
+                            <option value="study">스터디 모집</option>
+                            <option value="share">자료공유</option>
+                            <option value="review">문제오류신고</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold text-gray-700 mb-1">
+                        제목 <span class="text-red-500">*</span>
+                    </label>
+                    <input type="text" id="postTitle" placeholder="제목을 입력해주세요" maxlength="100"
+                        class="w-full px-3 py-2 border border-gray-200 rounded-lg text-sm focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-100">
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold text-gray-700 mb-1">
+                        내용 <span class="text-red-500">*</span>
+                    </label>
+                    <textarea id="postContent" rows="9"
+                        placeholder="내용을 자유롭게 작성해주세요&#10;&#10;※ 광고, 욕설, 개인정보 노출은 금지됩니다."
+                        class="w-full px-3 py-2 border border-gray-200 rounded-lg text-sm focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-100 resize-none"></textarea>
+                </div>
+                <p class="text-xs text-gray-400"><i class="fas fa-info-circle mr-1"></i>로그인 없이 누구나 익명으로 글을 작성할 수 있습니다.</p>
+                <div class="flex justify-end gap-3 pt-1">
+                    <button type="button" onclick="closeWriteModal()"
+                        class="px-5 py-2 rounded-lg text-sm font-semibold border border-gray-200 text-gray-600 hover:bg-gray-50 transition">취소</button>
+                    <button type="button" onclick="submitPost()"
+                        class="px-6 py-2 rounded-lg text-sm font-bold bg-blue-600 text-white hover:bg-blue-700 active:scale-95 transition shadow-sm">
+                        <i class="fas fa-paper-plane mr-1"></i>등록
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- ===== 게시글 보기 모달 ===== -->
+    <div id="viewModal" class="modal-overlay hidden" onclick="if(event.target===this)closeViewModal()">
+        <div class="modal-box">
+            <div class="flex items-start justify-between px-6 py-4 border-b border-gray-100 gap-4">
+                <h2 class="text-base font-bold text-gray-900 leading-snug" id="viewModalTitle"></h2>
+                <button onclick="closeViewModal()" class="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full text-gray-400 hover:bg-gray-100 hover:text-gray-700 text-xl transition">&times;</button>
+            </div>
+            <div class="px-6 py-3 border-b border-gray-100 flex flex-wrap items-center gap-3" id="viewModalMeta"></div>
+            <div class="px-6 py-6">
+                <p class="view-content text-sm text-gray-800 min-h-[100px]" id="viewModalContent"></p>
+            </div>
+            <div class="px-6 py-4 border-t border-gray-100 flex items-center justify-between">
+                <button id="viewLikeBtn" onclick="likeCurrentPost()"
+                    class="flex items-center gap-2 px-5 py-2 rounded-full border border-gray-200 text-sm text-gray-600 hover:border-red-400 hover:text-red-500 transition">
+                    <i class="fas fa-heart"></i>
+                    <span id="viewLikeCount">0</span>
+                    <span class="hidden sm:inline">추천</span>
+                </button>
+                <button onclick="closeViewModal()"
+                    class="px-5 py-2 rounded-lg text-sm font-semibold border border-gray-200 text-gray-600 hover:bg-gray-50 transition">닫기</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 토스트 알림 -->
+    <div id="toast" class="hidden opacity-0"></div>
+
+    <script src="cbt-auth.js?v=6"></script>
+    <script>
+    // ============================================================
+    //  카테고리 정의
+    // ============================================================
+    const categories = {
+        free:   { label: '자유',     color: 'bg-gray-100 text-gray-700' },
+        pass:   { label: '합격수기', color: 'bg-green-100 text-green-700' },
+        qa:     { label: 'Q&A',     color: 'bg-yellow-100 text-yellow-700' },
+        study:  { label: '스터디',   color: 'bg-purple-100 text-purple-700' },
+        share:  { label: '자료',     color: 'bg-blue-100 text-blue-700' },
+        review: { label: '오류신고', color: 'bg-red-100 text-red-700' },
+        notice: { label: '공지',     color: 'bg-indigo-100 text-indigo-700' },
+    };
+
+    // ============================================================
+    //  샘플 데이터 (id 음수 = 샘플, 양수 = 사용자 작성)
+    // ============================================================
+    const hotPosts = [
+        { tag: 'notice', title: '[공지] 커뮤니티 운영원칙 안내 (2025-05 개정)',         author: '관리자',      views: 18420, likes: 524 },
+        { tag: 'pass',   title: '정보처리기사 6개월 만에 합격한 후기 (비전공자)',         author: '합격해버린개미', views: 12340, likes: 489, comments: 142 },
+        { tag: 'qa',     title: '전기기능사 실기시험 단답형 어떻게 공부하셨나요?',        author: '전기공부중',   views: 8231,  likes: 312, comments: 98 },
+        { tag: 'pass',   title: '공인중개사 1차 86점 합격! 인강 후기 + 시간표 공유합니다', author: '부동산준비생', views: 7541,  likes: 287, comments: 76 },
+        { tag: 'share',  title: '한국사능력검정시험 심화 핵심정리 PDF (35회~70회)',      author: '역사덕후',     views: 6230,  likes: 251 },
+    ];
+
+    const samplePosts = [
+        { id:-1,  tag:'notice', title:'[공지] 2025년 5월 시험일정 안내',                            author:'관리자',       date:'05-22', views:4231, likes:89,  pinned:true },
+        { id:-2,  tag:'notice', title:'[공지] 자료공유 게시판 이용 규칙',                           author:'관리자',       date:'05-15', views:3120, likes:67,  pinned:true },
+        { id:-3,  tag:'pass',   title:'한국사능력검정시험 심화 87점 합격기 (3주 단기 합격)',          author:'한사덕후',     date:'05-24', views:2841, likes:142, comments:38 },
+        { id:-4,  tag:'qa',     title:'지게차운전기능사 실기 작업 순서 질문있습니다',                 author:'굴착기조심',   date:'05-24', views:521,  likes:18,  comments:12 },
+        { id:-5,  tag:'free',   title:'시험 전날 잠이 안와요 ㅠㅠ 다들 어떻게 주무세요?',           author:'내일이시험',   date:'05-24', views:892,  likes:34,  comments:47 },
+        { id:-6,  tag:'study',  title:'[서울/강남] 정보처리기사 실기 스터디원 모집 (5/30 ~)',        author:'SeoulStudy',  date:'05-24', views:312,  likes:22,  comments:9 },
+        { id:-7,  tag:'share',  title:'컴퓨터활용능력 1급 엑셀 함수 정리 노트 공유',                author:'excel_master',date:'05-23', views:1890, likes:87,  comments:14 },
+        { id:-8,  tag:'qa',     title:'소방설비기사 기계분야 실기 작업형 vs 필답형 비중?',           author:'소방준비',     date:'05-23', views:743,  likes:27,  comments:18 },
+        { id:-9,  tag:'pass',   title:'비전공자 컴활 1급 한방에 합격한 30대 직장인입니다',           author:'직장맘준비',   date:'05-23', views:3421, likes:198, comments:52 },
+        { id:-10, tag:'review', title:'정보처리기사 2024년 1회 문제 12번 정답 오류 같습니다',        author:'꼼꼼이',       date:'05-23', views:1234, likes:45,  comments:23 },
+        { id:-11, tag:'free',   title:'회사 다니면서 자격증 공부, 시간 어떻게 분배하시나요?',        author:'워라밸원함',   date:'05-23', views:1567, likes:73,  comments:31 },
+        { id:-12, tag:'study',  title:'[온라인] 공인중개사 1차 매주 일요일 줌 스터디',              author:'주말스터디',   date:'05-22', views:287,  likes:19,  comments:8 },
+        { id:-13, tag:'pass',   title:'한식조리기능사 실기 보고 왔습니다 (생강채는 정말 어렵네요)',  author:'쉐프지망생',   date:'05-22', views:1432, likes:61,  comments:24 },
+        { id:-14, tag:'qa',     title:'전산세무 1급 vs 2급, 회사에서는 어느 정도 인정해주나요?',    author:'경리신입',     date:'05-22', views:2103, likes:56,  comments:41 },
+        { id:-15, tag:'share',  title:'에너지관리기능사 필기 핵심요약 5장으로 정리했습니다',         author:'에너지왕',     date:'05-22', views:921,  likes:48,  comments:11 },
+        { id:-16, tag:'free',   title:'50대도 자격증 공부 늦지 않았을까요?',                        author:'인생2막',      date:'05-22', views:2210, likes:132, comments:67 },
+        { id:-17, tag:'qa',     title:'용접기능사 가스용접 vs 아크용접 실기 어떤게 쉬워요?',         author:'용접배움',     date:'05-21', views:651,  likes:22,  comments:15 },
+        { id:-18, tag:'review', title:'한국사능력검정 68회 23번 자료 해석 이상한데요?',              author:'historyfan',  date:'05-21', views:1089, likes:38,  comments:19 },
+        { id:-19, tag:'pass',   title:'40대 가장의 산업안전기사 합격기 - 가족이 힘이었어요',         author:'두아이아빠',   date:'05-21', views:2890, likes:167, comments:49 },
+        { id:-20, tag:'free',   title:'시험장 도착하면 항상 화장실부터 가는데 저만 그런가요?ㅋㅋ',  author:'소심한수험생', date:'05-21', views:1782, likes:95,  comments:78 },
+    ];
+
+    const bestUsers = [
+        { rank:1, name:'합격왕김씨',    posts:234, likes:4821, color:'bg-yellow-500' },
+        { rank:2, name:'CBT마스터',     posts:198, likes:3920, color:'bg-gray-400' },
+        { rank:3, name:'문제풀이왕',    posts:176, likes:3210, color:'bg-orange-600' },
+        { rank:4, name:'자격증컬렉터',  posts:142, likes:2870, color:'bg-blue-500' },
+        { rank:5, name:'오늘도공부',    posts:121, likes:2541, color:'bg-blue-500' },
+    ];
+
+    const popularTags = [
+        { name:'정보처리기사', count:1240, color:'bg-blue-100 text-blue-700' },
+        { name:'컴활1급',     count:892,  color:'bg-green-100 text-green-700' },
+        { name:'한국사',      count:743,  color:'bg-purple-100 text-purple-700' },
+        { name:'공인중개사',  count:621,  color:'bg-pink-100 text-pink-700' },
+        { name:'전기기능사',  count:587,  color:'bg-yellow-100 text-yellow-700' },
+        { name:'지게차',      count:432,  color:'bg-indigo-100 text-indigo-700' },
+        { name:'합격수기',    count:412,  color:'bg-red-100 text-red-700' },
+        { name:'스터디모집',  count:287,  color:'bg-teal-100 text-teal-700' },
+        { name:'실기시험',    count:263,  color:'bg-orange-100 text-orange-700' },
+    ];
+
+    const recentPass = [
+        { exam:'정보처리기사',  author:'합격해버린개미', date:'05-24' },
+        { exam:'컴활 1급',     author:'직장맘준비',    date:'05-23' },
+        { exam:'한식조리기능사', author:'쉐프지망생',   date:'05-22' },
+        { exam:'산업안전기사',  author:'두아이아빠',    date:'05-21' },
+    ];
+
+    // ============================================================
+    //  localStorage 연동
+    // ============================================================
+    const LS_KEY = 'cbt_community_posts';
+
+    function loadUserPosts() {
+        try { return JSON.parse(localStorage.getItem(LS_KEY) || '[]'); }
+        catch (e) { return []; }
+    }
+
+    function saveUserPost(post) {
+        const posts = loadUserPosts();
+        posts.unshift(post);
+        localStorage.setItem(LS_KEY, JSON.stringify(posts));
+    }
+
+    function updateUserPost(post) {
+        const posts = loadUserPosts();
+        const idx = posts.findIndex(p => p.id === post.id);
+        if (idx >= 0) { posts[idx] = post; localStorage.setItem(LS_KEY, JSON.stringify(posts)); }
+    }
+
+    function getMergedPosts() {
+        const userPosts = loadUserPosts();
+        const pinned    = samplePosts.filter(p => p.pinned);
+        const unpinned  = samplePosts.filter(p => !p.pinned);
+        // 공지 → 사용자 최신 → 샘플(비공지)
+        return [...pinned, ...userPosts, ...unpinned];
+    }
+
+    function getPostById(id) {
+        if (id > 0) return loadUserPosts().find(p => p.id === id) || null;
+        return samplePosts.find(p => p.id === id) || null;
+    }
+
+    // ============================================================
+    //  정렬 상태
+    // ============================================================
+    let currentSort = 'latest';
+
+    // ============================================================
+    //  유틸
+    // ============================================================
+    function escapeHtml(str) {
+        return String(str)
+            .replace(/&/g, '&amp;').replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    }
+
+    // ============================================================
+    //  렌더링 함수
+    // ============================================================
+    function renderHotPosts() {
+        document.getElementById('hotPosts').innerHTML = hotPosts.map((p, i) => {
+            const cat = categories[p.tag] || categories.free;
+            return `
+            <div class="post-row px-6 py-3 flex items-center gap-4 cursor-pointer">
+                <span class="text-lg font-black text-red-500 w-6 text-center flex-shrink-0">${i + 1}</span>
+                <span class="tag-pill ${cat.color} flex-shrink-0">${cat.label}</span>
+                <span class="flex-1 text-sm text-gray-800 font-medium truncate">${escapeHtml(p.title)}</span>
+                <span class="hidden md:flex items-center gap-3 text-xs text-gray-500 flex-shrink-0">
+                    <span><i class="fas fa-eye mr-1"></i>${p.views.toLocaleString()}</span>
+                    <span><i class="fas fa-heart mr-1 text-red-400"></i>${p.likes}</span>
+                </span>
+            </div>`;
+        }).join('');
+    }
+
+    function renderPostList(filter = 'all', query = '') {
+        const tbody = document.getElementById('postList');
+        let posts = getMergedPosts();
+
+        if (filter !== 'all') {
+            posts = posts.filter(p => p.tag === filter || p.pinned);
+        }
+        if (query) {
+            const q = query.toLowerCase();
+            posts = posts.filter(p =>
+                p.title.toLowerCase().includes(q) ||
+                (p.author  || '').toLowerCase().includes(q) ||
+                (p.content || '').toLowerCase().includes(q)
+            );
+        }
+
+        // 정렬 (공지 항상 최상단 고정)
+        const pinned   = posts.filter(p => p.pinned);
+        let   unpinned = posts.filter(p => !p.pinned);
+        const sortFns  = {
+            latest:   (a, b) => ((b.timestamp || '') > (a.timestamp || '')) ? 1 :
+                                ((b.timestamp || '') < (a.timestamp || '')) ? -1 :
+                                (b.date || '').localeCompare(a.date || ''),
+            popular:  (a, b) => (b.views    || 0) - (a.views    || 0),
+            likes:    (a, b) => (b.likes    || 0) - (a.likes    || 0),
+            comments: (a, b) => (b.comments || 0) - (a.comments || 0),
+        };
+        unpinned.sort(sortFns[currentSort] || sortFns.latest);
+        posts = [...pinned, ...unpinned];
+
+        if (posts.length === 0) {
+            tbody.innerHTML = `<tr><td colspan="6" class="px-3 py-14 text-center text-gray-400">
+                <i class="fas fa-inbox text-3xl mb-2 block"></i>게시글이 없습니다.</td></tr>`;
+        } else {
+            tbody.innerHTML = posts.map(p => {
+                const cat       = categories[p.tag] || categories.free;
+                const titleCls  = p.pinned ? 'font-bold text-gray-900' : 'text-gray-800';
+                const rowBg     = p.pinned ? 'bg-blue-50/30' : '';
+                const cmtBadge  = p.comments ? `<span class="ml-1.5 text-xs font-bold text-blue-600">[${p.comments}]</span>` : '';
+                const newBadge  = p.isUser   ? `<span class="ml-1 text-xs font-black text-red-500">N</span>` : '';
+                return `
+                <tr class="post-row ${rowBg} cursor-pointer" onclick="openPostView(${p.id})">
+                    <td class="px-3 py-3 text-center">
+                        <span class="tag-pill ${cat.color}">${cat.label}</span>
+                    </td>
+                    <td class="px-3 py-3">
+                        <span class="${titleCls}">${escapeHtml(p.title)}</span>${cmtBadge}${newBadge}
+                    </td>
+                    <td class="px-3 py-3 text-center text-xs text-gray-600 hidden md:table-cell">${escapeHtml(p.author || '익명')}</td>
+                    <td class="px-3 py-3 text-center text-xs text-gray-500 hidden md:table-cell">${p.date || ''}</td>
+                    <td class="px-3 py-3 text-center text-xs text-gray-500 hidden md:table-cell">${(p.views || 0).toLocaleString()}</td>
+                    <td class="px-3 py-3 text-center text-xs text-red-500 font-semibold hidden md:table-cell">${p.likes || 0}</td>
+                </tr>`;
+            }).join('');
+        }
+
+        const total = 42318 + loadUserPosts().length;
+        document.getElementById('postCount').textContent =
+            query ? `검색결과 ${posts.length}건` : `총 ${total.toLocaleString()}건`;
+    }
+
+    function renderBestUsers() {
+        document.getElementById('bestUsers').innerHTML = bestUsers.map(u => `
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-full ${u.color} text-white font-bold flex items-center justify-center text-sm flex-shrink-0">${u.rank}</div>
+                <div class="flex-1 min-w-0">
+                    <p class="text-sm font-semibold text-gray-800 truncate">${u.name}</p>
+                    <p class="text-xs text-gray-500">글 ${u.posts} · 추천 ${u.likes.toLocaleString()}</p>
+                </div>
+            </div>`).join('');
+    }
+
+    function renderTags() {
+        document.getElementById('popularTags').innerHTML = popularTags.map(t => `
+            <button class="tag-pill ${t.color} hover:opacity-80 transition cursor-pointer">
+                #${t.name} <span class="opacity-60">${t.count}</span>
+            </button>`).join('');
+    }
+
+    function renderRecentPass() {
+        document.getElementById('recentPass').innerHTML = recentPass.map(p => `
+            <div class="flex items-center gap-2 text-sm">
+                <i class="fas fa-medal text-yellow-500 text-xs flex-shrink-0"></i>
+                <span class="font-semibold text-gray-800">${p.exam}</span>
+                <span class="text-xs text-gray-500 ml-auto">${p.author} · ${p.date}</span>
+            </div>`).join('');
+    }
+
+    function updateStats() {
+        const userPosts = loadUserPosts();
+        document.getElementById('statTotalPosts').textContent = (42318 + userPosts.length).toLocaleString();
+        const today = new Date().toDateString();
+        const todayCount = userPosts.filter(p => new Date(p.timestamp || 0).toDateString() === today).length;
+        document.getElementById('statToday').textContent = (128 + todayCount).toLocaleString();
+    }
+
+    // ============================================================
+    //  글쓰기 모달
+    // ============================================================
+    function openWriteModal() {
+        document.getElementById('writeModal').classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+
+        // 로그인 사용자 닉네임 자동 입력
+        const authUser = (window.CBT_AUTH && CBT_AUTH.getUser) ? CBT_AUTH.getUser() : null;
+        const banner   = document.getElementById('writeMemberBanner');
+        const authorEl = document.getElementById('postAuthor');
+        if (authUser) {
+            banner.classList.remove('hidden');
+            document.getElementById('writeMemberName').textContent = authUser.nickname + '님';
+            authorEl.value    = authUser.nickname;
+            authorEl.readOnly = true;
+            authorEl.classList.add('bg-gray-50', 'text-gray-500');
+        } else {
+            banner.classList.add('hidden');
+            authorEl.readOnly = false;
+            authorEl.classList.remove('bg-gray-50', 'text-gray-500');
+        }
+        setTimeout(() => document.getElementById('postTitle').focus(), 80);
+    }
+
+    function closeWriteModal() {
+        document.getElementById('writeModal').classList.add('hidden');
+        document.body.style.overflow = '';
+        document.getElementById('writeForm').reset();
+    }
+
+    function submitPost() {
+        const title   = document.getElementById('postTitle').value.trim();
+        const content = document.getElementById('postContent').value.trim();
+        const author  = document.getElementById('postAuthor').value.trim() || '익명';
+        const tag     = document.getElementById('postCategory').value;
+
+        if (!title)   { showToast('제목을 입력해주세요.', 'error'); document.getElementById('postTitle').focus(); return; }
+        if (!content) { showToast('내용을 입력해주세요.', 'error'); document.getElementById('postContent').focus(); return; }
+
+        const now = new Date();
+        const mm  = String(now.getMonth() + 1).padStart(2, '0');
+        const dd  = String(now.getDate()).padStart(2, '0');
+
+        const post = {
+            id:        Date.now(),
+            tag, title, content, author,
+            date:      `${mm}-${dd}`,
+            timestamp: now.toISOString(),
+            views:     0, likes: 0, comments: 0,
+            isUser:    true,
+        };
+
+        saveUserPost(post);
+        closeWriteModal();
+
+        const activeTab = document.querySelector('.category-tab.active');
+        renderPostList(activeTab ? activeTab.dataset.category : 'all',
+                       document.getElementById('searchInput').value.toLowerCase().trim());
+        updateStats();
+        showToast('게시글이 등록되었습니다! 🎉');
+    }
+
+    // ============================================================
+    //  게시글 보기 모달
+    // ============================================================
+    let currentViewPost = null;
+    let hasLiked = false;
+
+    function openPostView(postId) {
+        const post = getPostById(postId);
+        if (!post) return;
+        currentViewPost = post;
+        hasLiked = false;
+
+        // 조회수 증가 (사용자 작성 글만)
+        if (post.isUser) {
+            post.views = (post.views || 0) + 1;
+            updateUserPost(post);
+        }
+
+        const cat = categories[post.tag] || categories.free;
+        document.getElementById('viewModalTitle').textContent = post.title;
+        document.getElementById('viewModalMeta').innerHTML = `
+            <span class="tag-pill ${cat.color}">${cat.label}</span>
+            <span class="text-sm text-gray-600"><i class="fas fa-user mr-1 text-gray-400"></i>${escapeHtml(post.author || '익명')}</span>
+            <span class="text-sm text-gray-500"><i class="fas fa-calendar mr-1 text-gray-400"></i>${post.date || ''}</span>
+            <span class="text-sm text-gray-500"><i class="fas fa-eye mr-1 text-gray-400"></i>${(post.views || 0).toLocaleString()} 조회</span>`;
+        document.getElementById('viewModalContent').textContent = post.content || '(내용이 없습니다.)';
+        document.getElementById('viewLikeCount').textContent = post.likes || 0;
+
+        const likeBtn = document.getElementById('viewLikeBtn');
+        likeBtn.disabled = false;
+        likeBtn.classList.remove('border-red-400', 'text-red-500', 'bg-red-50');
+
+        document.getElementById('viewModal').classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeViewModal() {
+        document.getElementById('viewModal').classList.add('hidden');
+        document.body.style.overflow = '';
+        currentViewPost = null;
+        hasLiked = false;
+        // 조회수 반영을 위해 목록 재렌더
+        const activeTab = document.querySelector('.category-tab.active');
+        renderPostList(activeTab ? activeTab.dataset.category : 'all',
+                       document.getElementById('searchInput').value.toLowerCase().trim());
+    }
+
+    function likeCurrentPost() {
+        if (!currentViewPost || hasLiked) return;
+        hasLiked = true;
+        const post = currentViewPost;
+        post.likes = (post.likes || 0) + 1;
+        if (post.isUser) updateUserPost(post);
+        document.getElementById('viewLikeCount').textContent = post.likes;
+        const btn = document.getElementById('viewLikeBtn');
+        btn.classList.add('border-red-400', 'text-red-500', 'bg-red-50');
+        btn.disabled = true;
+        showToast('추천했습니다! ❤️');
+    }
+
+    // ============================================================
+    //  토스트 알림
+    // ============================================================
+    let toastTimer = null;
+    function showToast(msg, type = 'success') {
+        const el = document.getElementById('toast');
+        el.textContent = msg;
+        el.style.background = type === 'error' ? '#dc2626' : '#1e3a8a';
+        el.classList.remove('hidden', 'opacity-0');
+        el.classList.add('opacity-100');
+        if (toastTimer) clearTimeout(toastTimer);
+        toastTimer = setTimeout(() => {
+            el.classList.remove('opacity-100');
+            el.classList.add('opacity-0');
+            setTimeout(() => el.classList.add('hidden'), 310);
+        }, 2600);
+    }
+
+    // ============================================================
+    //  이벤트 바인딩
+    // ============================================================
+    document.getElementById('writeBtn').addEventListener('click', openWriteModal);
+
+    // Escape 키로 모달 닫기
+    document.addEventListener('keydown', e => {
+        if (e.key === 'Escape') {
+            if (!document.getElementById('writeModal').classList.contains('hidden')) closeWriteModal();
+            else if (!document.getElementById('viewModal').classList.contains('hidden')) closeViewModal();
+        }
+    });
+
+    // 카테고리 탭
+    document.querySelectorAll('.category-tab').forEach(btn => {
+        btn.addEventListener('click', () => {
+            document.querySelectorAll('.category-tab').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            renderPostList(btn.dataset.category,
+                document.getElementById('searchInput').value.toLowerCase().trim());
+        });
+    });
+
+    // 검색
+    document.getElementById('searchInput').addEventListener('input', e => {
+        const activeTab = document.querySelector('.category-tab.active');
+        renderPostList(activeTab ? activeTab.dataset.category : 'all',
+                       e.target.value.toLowerCase().trim());
+    });
+
+    // 정렬
+    document.getElementById('sortSelect').addEventListener('change', e => {
+        currentSort = e.target.value;
+        const activeTab = document.querySelector('.category-tab.active');
+        renderPostList(activeTab ? activeTab.dataset.category : 'all',
+                       document.getElementById('searchInput').value.toLowerCase().trim());
+    });
+
+    // ============================================================
+    //  초기 렌더
+    // ============================================================
+    renderHotPosts();
+    renderPostList('all');
+    renderBestUsers();
+    renderTags();
+    renderRecentPass();
+    updateStats();
+    </script>
+</body>
+</html>

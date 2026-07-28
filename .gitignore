@@ -1,0 +1,7 @@
+# Local temp/backup files
+*복사본*
+*.txt
+*.log
+
+# Python cache
+__pycache__/

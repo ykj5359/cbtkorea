@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마이페이지 - CBT 기출문제</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+        body { font-family: 'Noto Sans KR', sans-serif; background: #f8fafc; }
+        .hero-gradient { background: linear-gradient(135deg, #0f2460 0%, #1e3a8a 50%, #2563eb 100%); }
+        .tab-btn { padding: 11px 20px; font-size: 14px; font-weight: 600; color: #6b7280;
+                   border-bottom: 3px solid transparent; white-space: nowrap; transition: all .2s;
+                   cursor: pointer; background: none; border-top: none; border-left: none; border-right: none; }
+        .tab-btn.active { color: #2563eb; border-bottom-color: #2563eb; }
+        .tab-btn:hover:not(.active) { color: #374151; border-bottom-color: #e5e7eb; }
+        .stat-card { transition: transform .2s; }
+        .stat-card:hover { transform: translateY(-3px); }
+        .item-card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px;
+                     padding: 14px 16px; transition: box-shadow .2s; }
+        .item-card:hover { box-shadow: 0 4px 14px rgba(0,0,0,.07); }
+        .empty-state { text-align: center; padding: 64px 20px; color: #9ca3af; }
+        .empty-state i { font-size: 40px; margin-bottom: 14px; display: block; }
+        .score-bar-bg { height: 6px; border-radius: 3px; background: #e5e7eb; width: 64px; }
+        .score-bar    { height: 6px; border-radius: 3px; }
+        .item-card img { max-width: 100%; height: auto; display: inline-block; vertical-align: middle; }
+        .bookmark-card { transition: box-shadow .2s; }
+    </style>
+</head>
+<body>
+
+    <!-- ── 네비게이션 ─────────────────────── -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <a href="index.html" class="text-2xl font-black text-blue-600">CBT 기출문제</a>
+                <div class="hidden md:flex space-x-8 font-medium">
+                    <a href="notice.html"    class="text-gray-600 hover:text-gray-900">공지사항</a>
+                    <a href="exams.html"     class="text-gray-600 hover:text-gray-900">기출문제</a>
+                    <a href="cbt-qnet.html" class="text-black hover:text-gray-700">뀨-Net CBT</a>
+                    <a href="videos.html"    class="text-gray-600 hover:text-gray-900">기출문제영상</a>
+                    <a href="community.html" class="text-gray-600 hover:text-gray-900">커뮤니티</a>
+                    <a href="mypage.html"    class="text-gray-900 border-b-2 border-blue-600 font-bold">마이페이지</a>
+                </div>
+                <div class="flex items-center space-x-4" id="navAuthArea">
+                    <a href="login.html" class="text-sm text-gray-500 hover:text-blue-600 transition">로그인</a>
+                    <a href="login.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-bold hover:bg-blue-700 transition">회원가입</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ── 히어로 / 프로필 ───────────────────── -->
+    <section class="hero-gradient py-10 px-4">
+        <div class="max-w-4xl mx-auto">
+            <div class="flex flex-col sm:flex-row items-center sm:items-start gap-5">
+                <div id="profileAvatar"
+                     class="w-20 h-20 rounded-2xl bg-white/20 ring-4 ring-white/30 flex items-center justify-center
+                            text-white text-3xl font-black flex-shrink-0 overflow-hidden">?</div>
+                <div class="text-center sm:text-left">
+                    <div class="flex items-center gap-2 justify-center sm:justify-start mb-1">
+                        <h1 class="text-2xl font-black text-white" id="profileName">로딩 중...</h1>
+                        <span class="text-xs px-2.5 py-0.5 rounded-full bg-white/20 text-white font-semibold" id="profileProvider"></span>
+                    </div>
+                    <p class="text-blue-200 text-sm" id="profileLoginAt"></p>
+                    <button onclick="CBT_AUTH.logout()"
+                        class="mt-3 text-xs text-blue-200 hover:text-white border border-white/30 hover:border-white/60
+                               px-3 py-1 rounded-full transition flex items-center gap-1.5">
+                        <i class="fas fa-sign-out-alt"></i>로그아웃
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── 통계 카드 ─────────────────────────── -->
+    <div class="max-w-4xl mx-auto px-4 -mt-5 mb-6 relative z-10">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+            <div class="stat-card bg-white rounded-xl shadow-md p-4 text-center">
+                <i class="fas fa-pen-to-square text-blue-500 mb-1 block"></i>
+                <p class="text-2xl font-black text-gray-800" id="statAttempts">0</p>
+                <p class="text-xs text-gray-500 mt-0.5">총 풀이 횟수</p>
+            </div>
+            <div class="stat-card bg-white rounded-xl shadow-md p-4 text-center">
+                <i class="fas fa-star text-yellow-500 mb-1 block"></i>
+                <p class="text-2xl font-black text-gray-800" id="statAvgScore">0<span class="text-sm text-gray-400">점</span></p>
+                <p class="text-xs text-gray-500 mt-0.5">평균 점수</p>
+            </div>
+            <div class="stat-card bg-white rounded-xl shadow-md p-4 text-center">
+                <i class="fas fa-bookmark text-orange-500 mb-1 block"></i>
+                <p class="text-2xl font-black text-gray-800" id="statBookmarks">0</p>
+                <p class="text-xs text-gray-500 mt-0.5">북마크 문제</p>
+            </div>
+            <div class="stat-card bg-white rounded-xl shadow-md p-4 text-center">
+                <i class="fas fa-exclamation-circle text-red-500 mb-1 block"></i>
+                <p class="text-2xl font-black text-gray-800" id="statWrong">0</p>
+                <p class="text-xs text-gray-500 mt-0.5">오답 문제</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ── 메인 콘텐츠 ────────────────────────── -->
+    <main class="max-w-4xl mx-auto px-4 pb-16">
+
+        <!-- 탭 헤더 -->
+        <div class="bg-white rounded-xl shadow-sm mb-4">
+            <div class="flex border-b border-gray-100 overflow-x-auto">
+                <button class="tab-btn active" data-tab="history">
+                    <i class="fas fa-history mr-1.5"></i>풀이 기록
+                </button>
+                <button class="tab-btn" data-tab="wrong">
+                    <i class="fas fa-times-circle mr-1.5 text-red-400"></i>오답노트
+                </button>
+                <button class="tab-btn" data-tab="bookmarks">
+                    <i class="fas fa-bookmark mr-1.5 text-orange-400"></i>북마크
+                </button>
+            </div>
+        </div>
+
+        <!-- 탭: 풀이 기록 -->
+        <div id="tab-history" class="tab-panel">
+            <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+                <div class="px-5 py-4 border-b border-gray-100 flex items-center justify-between">
+                    <h2 class="font-bold text-gray-800 text-base">
+                        <i class="fas fa-history text-blue-500 mr-2"></i>채점 풀이 기록
+                    </h2>
+                    <button onclick="if(confirm('풀이 기록을 모두 삭제할까요?')){CBT_AUTH.clearHistory();renderHistory();}"
+                        class="text-xs text-gray-400 hover:text-red-500 transition">전체 삭제</button>
+                </div>
+                <div id="historyList"></div>
+            </div>
+        </div>
+
+        <!-- 탭: 오답노트 -->
+        <div id="tab-wrong" class="tab-panel hidden">
+            <div class="bg-white rounded-xl shadow-sm mb-3">
+                <div class="px-5 py-4 border-b border-gray-100 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+                    <h2 class="font-bold text-gray-800 text-base">
+                        <i class="fas fa-times-circle text-red-400 mr-2"></i>오답노트
+                        <span class="text-sm font-normal text-gray-500 ml-1">— 틀린 문제를 자동으로 정리합니다</span>
+                    </h2>
+                    <div class="flex items-center gap-2">
+                        <select id="wrongCatFilter"
+                            class="text-sm border border-gray-200 rounded-lg px-3 py-1.5 focus:outline-none focus:border-blue-400">
+                            <option value="">전체 과목</option>
+                        </select>
+                        <button onclick="if(confirm('오답노트를 모두 삭제할까요?')){CBT_AUTH.clearWrong();renderWrong();}"
+                            class="text-xs text-gray-400 hover:text-red-500 transition">전체 삭제</button>
+                    </div>
+                </div>
+            </div>
+            <div id="wrongList" class="space-y-3"></div>
+        </div>
+
+        <!-- 탭: 북마크 -->
+        <div id="tab-bookmarks" class="tab-panel hidden">
+            <div class="bg-white rounded-xl shadow-sm mb-3">
+                <div class="px-5 py-4 border-b border-gray-100 flex items-center justify-between">
+                    <h2 class="font-bold text-gray-800 text-base">
+                        <i class="fas fa-bookmark text-orange-400 mr-2"></i>체크한 문제 <span class="text-sm font-normal text-gray-500 ml-1">— 시험 페이지에서 체크 버튼으로 저장</span>
+                    </h2>
+                    <button onclick="if(confirm('북마크를 모두 삭제할까요?')){CBT_AUTH.clearBookmarks();renderBookmarks();}"
+                        class="text-xs text-gray-400 hover:text-red-500 transition">전체 삭제</button>
+                </div>
+            </div>
+            <div id="bookmarkList" class="space-y-3"></div>
+        </div>
+    </main>
+
+    <!-- ── 푸터 ──────────────────────────────── -->
+    <footer class="bg-gray-800 text-gray-400 py-10 px-4">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <span class="text-2xl font-bold text-white mb-3 block">CBT 기출문제</span>
+                <p class="text-sm leading-relaxed">CBT 기출문제는 과거 기출문제를 온라인에서 풀어보는 무료사이트입니다.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-3">바로가기</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:text-white">이용약관</a></li>
+                    <li><a href="#" class="hover:text-white">개인정보처리방침</a></li>
+                    <li><a href="community.html" class="hover:text-white">커뮤니티</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-3">Contact</h4>
+                <p class="text-sm">문의: <a href="mailto:kj5359@gmail.com" class="hover:text-white text-blue-400">kj5359@gmail.com</a></p>
+                <p class="text-sm mt-1">© 2025 CBT 기출문제. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="cbt-auth.js?v=6"></script>
+    <script>
+    /* ────────────────────────────────────────────
+       로그인 확인 — 미로그인 시 login.html 이동
+    ──────────────────────────────────────────── */
+    (function () {
+        if (CBT_AUTH.isLoggedIn()) return;
+        localStorage.setItem('cbt_redirect', location.href);
+        location.replace('login.html');
+    })();
+
+    /* ────────────────────────────────────────────
+       유틸
+    ──────────────────────────────────────────── */
+    var OPTS = ['①','②','③','④','⑤','⑥','⑦','⑧'];
+    function esc(s) {
+        return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+    }
+    /* 퍼센트 인코딩된 옛 데이터도 보기 좋게 표시 */
+    function decCat(s) {
+        s = String(s||'');
+        if (/%[0-9A-Fa-f]{2}/.test(s)) { try { s = decodeURIComponent(s); } catch(e){} }
+        return s.replace(/-/g,' ');
+    }
+    function fmtDate(iso) {
+        if (!iso) return '';
+        try { return new Date(iso).toLocaleDateString('ko-KR',{year:'numeric',month:'short',day:'numeric'}); }
+        catch(e) { return iso.slice(0,10); }
+    }
+    function userId() { var u = CBT_AUTH.getUser(); return u ? u.id : ''; }
+
+    /* ────────────────────────────────────────────
+       프로필 렌더
+    ──────────────────────────────────────────── */
+    function renderProfile() {
+        var user = CBT_AUTH.getUser();
+        if (!user) return;
+        var av = document.getElementById('profileAvatar');
+        if (user.profileImage) {
+            av.innerHTML = '<img src="'+user.profileImage+'" alt="" style="width:100%;height:100%;object-fit:cover;">';
+        } else {
+            av.textContent = (user.nickname||'?').charAt(0).toUpperCase();
+        }
+        document.getElementById('profileName').textContent = user.nickname||'사용자';
+        var pm = {kakao:'카카오 로그인', nickname:'닉네임 로그인', demo:'닉네임 로그인'};
+        document.getElementById('profileProvider').textContent = pm[user.provider]||user.provider||'';
+        var d = fmtDate(user.loginAt);
+        document.getElementById('profileLoginAt').textContent = d ? '최근 로그인: '+d : '';
+    }
+
+    /* ────────────────────────────────────────────
+       통계 렌더
+    ──────────────────────────────────────────── */
+    function renderStats() {
+        var s  = CBT_AUTH.calcStats();
+        var uid = userId();
+        var bm = CBT_AUTH.getBookmarks().filter(function(b){return b.userId===uid;}).length;
+        var wr = CBT_AUTH.getWrong().filter(function(w){return w.userId===uid;}).length;
+        document.getElementById('statAttempts').textContent = s.totalAttempts;
+        document.getElementById('statAvgScore').innerHTML   = s.avgScore+'<span class="text-sm text-gray-400">점</span>';
+        document.getElementById('statBookmarks').textContent= bm;
+        document.getElementById('statWrong').textContent    = wr;
+    }
+
+    /* ────────────────────────────────────────────
+       탭 1: 풀이 기록
+    ──────────────────────────────────────────── */
+    function renderHistory() {
+        var uid  = userId();
+        var list = CBT_AUTH.getHistory().filter(function(h){return h.userId===uid;});
+        var el   = document.getElementById('historyList');
+        if (!list.length) {
+            el.innerHTML = '<div class="empty-state">' +
+                '<i class="fas fa-pen-to-square text-blue-200"></i>' +
+                '아직 채점 기록이 없어요<br>' +
+                '<small style="font-size:13px;">시험 페이지 하단 <strong>채점하기</strong> 버튼을 눌러보세요!</small>' +
+                '</div>';
+            renderStats(); return;
+        }
+        var rows = list.map(function(h,i) {
+            var sc  = h.score||0;
+            var col = sc >= 60 ? '#059669' : '#dc2626';
+            var bg  = i%2===0 ? '' : 'style="background:#f9fafb"';
+            return '<tr '+bg+' class="border-b border-gray-50 hover:bg-blue-50/30 transition">' +
+                '<td class="px-4 py-3 text-xs text-gray-500 whitespace-nowrap">'+fmtDate(h.savedAt)+'</td>' +
+                '<td class="px-4 py-3 text-sm font-semibold text-gray-800">'+esc(decCat(h.category)||esc(h.examId)||'-')+'</td>' +
+                '<td class="px-4 py-3 text-center">' +
+                    '<span style="font-size:18px;font-weight:900;color:'+col+';">'+sc+'</span>' +
+                    '<span class="text-xs text-gray-400">점</span>' +
+                '</td>' +
+                '<td class="px-4 py-3 text-center text-xs text-gray-500 hidden sm:table-cell">' +
+                    (h.correct||0)+' / '+(h.totalQ||0)+
+                '</td>' +
+                '<td class="px-4 py-3 text-center hidden sm:table-cell">' +
+                    '<div class="score-bar-bg mx-auto">' +
+                    '<div class="score-bar" style="background:'+col+';width:'+Math.min(sc,100)+'%"></div>' +
+                    '</div>' +
+                '</td>' +
+            '</tr>';
+        }).join('');
+        el.innerHTML =
+            '<div class="overflow-x-auto">' +
+            '<table class="w-full text-sm">' +
+            '<thead><tr class="bg-gray-50 text-xs text-gray-500">' +
+            '<th class="px-4 py-3 text-left font-semibold">날짜</th>' +
+            '<th class="px-4 py-3 text-left font-semibold">과목</th>' +
+            '<th class="px-4 py-3 text-center font-semibold">점수</th>' +
+            '<th class="px-4 py-3 text-center font-semibold hidden sm:table-cell">정답/전체</th>' +
+            '<th class="px-4 py-3 text-center font-semibold hidden sm:table-cell">달성률</th>' +
+            '</tr></thead><tbody>'+rows+'</tbody></table></div>';
+        renderStats();
+    }
+
+    /* ────────────────────────────────────────────
+       탭 2: 오답노트
+    ──────────────────────────────────────────── */
+    function buildCatFilter() {
+        var uid  = userId();
+        var list = CBT_AUTH.getWrong().filter(function(w){return w.userId===uid;});
+        var cats = {};
+        list.forEach(function(w){ if(w.category) cats[w.category]=true; });
+        var sel = document.getElementById('wrongCatFilter');
+        var cur = sel.value;
+        sel.innerHTML = '<option value="">전체 과목 ('+list.length+')</option>';
+        Object.keys(cats).sort().forEach(function(c){
+            var cnt = list.filter(function(w){return w.category===c;}).length;
+            var o = document.createElement('option');
+            o.value=c; o.textContent=decCat(c)+' ('+cnt+')'; sel.appendChild(o);
+        });
+        sel.value = cur||'';
+    }
+
+    function renderWrong() {
+        var uid    = userId();
+        var filter = document.getElementById('wrongCatFilter').value;
+        var list   = CBT_AUTH.getWrong().filter(function(w){
+            return w.userId===uid && (!filter||w.category===filter);
+        });
+        var el = document.getElementById('wrongList');
+        buildCatFilter();
+        if (!list.length) {
+            el.innerHTML = '<div class="empty-state bg-white rounded-xl">' +
+                '<i class="fas fa-check-circle text-green-300"></i>' +
+                (filter ? '['+esc(filter)+'] ' : '')+'틀린 문제가 없어요! 🎉' +
+                '</div>';
+            renderStats(); return;
+        }
+        el.innerHTML = list.map(function(w){
+            var uA  = w.userAnswer>0 ? (OPTS[w.userAnswer-1]||w.userAnswer)+' '+esc((w.options||[])[w.userAnswer-1]||'') : '미선택';
+            var cA  = w.correctAnswer>0 ? (OPTS[w.correctAnswer-1]||w.correctAnswer)+' '+esc((w.options||[])[w.correctAnswer-1]||'') : '-';
+            var cnt = w.wrongCount>1 ?
+                '<span style="background:#fee2e2;color:#dc2626;font-size:11px;font-weight:700;padding:1px 7px;border-radius:99px;margin-left:6px;">'+w.wrongCount+'회 틀림</span>' : '';
+            return '<div class="item-card">' +
+                /* 헤더 줄 */
+                '<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;flex-wrap:wrap;gap:4px;">' +
+                    '<div style="display:flex;align-items:center;gap:4px;flex-wrap:wrap;">' +
+                        '<span style="background:#fef3c7;color:#92400e;font-size:11px;font-weight:700;padding:2px 9px;border-radius:99px;">'+esc(decCat(w.category)||'-')+'</span>' + cnt +
+                    '</div>' +
+                    '<div style="display:flex;align-items:center;gap:6px;">' +
+                        (w.lastWrong ? '<span style="font-size:11px;color:#9ca3af;">'+fmtDate(w.lastWrong)+'</span>' : '') +
+                        '<button onclick="doRemoveWrong(\''+w.key+'\')" style="font-size:12px;color:#d1d5db;background:none;border:none;cursor:pointer;padding:2px 5px;transition:color .15s;" onmouseover="this.style.color=\'#ef4444\'" onmouseout="this.style.color=\'#d1d5db\'" title="삭제"><i class="fas fa-trash-alt"></i></button>' +
+                    '</div>' +
+                '</div>' +
+                /* 문제 텍스트 */
+                '<p style="font-size:14px;font-weight:600;color:#111827;line-height:1.65;margin-bottom:10px;">'+esc(w.questionText||'-')+'</p>' +
+                /* 내 답 / 정답 */
+                '<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">' +
+                    '<div style="background:#fff5f5;border-radius:8px;padding:9px 11px;">' +
+                        '<p style="font-size:11px;color:#ef4444;font-weight:700;margin-bottom:3px;"><i class="fas fa-times-circle mr-1"></i>내 답</p>' +
+                        '<p style="font-size:13px;color:#7f1d1d;line-height:1.5;">'+uA+'</p>' +
+                    '</div>' +
+                    '<div style="background:#f0fdf4;border-radius:8px;padding:9px 11px;">' +
+                        '<p style="font-size:11px;color:#059669;font-weight:700;margin-bottom:3px;"><i class="fas fa-check-circle mr-1"></i>정답</p>' +
+                        '<p style="font-size:13px;color:#065f46;line-height:1.5;">'+cA+'</p>' +
+                    '</div>' +
+                '</div>' +
+            '</div>';
+        }).join('');
+        renderStats();
+    }
+    function doRemoveWrong(key){ CBT_AUTH.removeWrong(key); renderWrong(); }
+
+    /* ────────────────────────────────────────────
+       탭 3: 북마크
+    ──────────────────────────────────────────── */
+    function renderBookmarks() {
+        var uid  = userId();
+        var list = CBT_AUTH.getBookmarks().filter(function(b){return b.userId===uid;});
+        var el   = document.getElementById('bookmarkList');
+        if (!list.length) {
+            el.innerHTML = '<div class="empty-state bg-white rounded-xl">' +
+                '<i class="fas fa-bookmark text-orange-200"></i>' +
+                '북마크한 문제가 없어요<br>' +
+                '<small style="font-size:13px;">시험 페이지에서 <strong>체크</strong> 버튼으로 저장하세요!</small>' +
+                '</div>';
+            renderStats(); return;
+        }
+        el.innerHTML = list.map(function(b){
+            var optsSrc = (b.optionsHtml && b.optionsHtml.length) ? b.optionsHtml : (b.options||[]);
+            var useHtml = !!(b.optionsHtml && b.optionsHtml.length);
+            var allOpts = optsSrc.map(function(o,i){
+                var isC = i+1===b.correctAnswer;
+                var body = useHtml ? o : esc(o);
+                return '<div style="padding:6px 10px;border-radius:7px;font-size:13px;margin-bottom:3px;display:flex;gap:6px;align-items:flex-start;' +
+                    (isC ? 'background:#f0fdf4;border-left:3px solid #10b981;color:#065f46;font-weight:700;'
+                         : 'background:#f8fafc;color:#374151;') + '">' +
+                    '<span style="flex:none;">'+(OPTS[i]||'')+'</span><span style="flex:1;min-width:0;">'+body+'</span></div>';
+            }).join('');
+            var qBody = b.questionHtml ? b.questionHtml : esc(b.questionText||'-');
+            var goExam = b.examUrl
+                ? '<a href="'+esc(b.examUrl)+'" style="font-size:12px;color:#2563eb;font-weight:700;text-decoration:none;" title="문제 페이지로 이동"><i class="fas fa-arrow-up-right-from-square"></i> 문제 보기</a>'
+                : '';
+            return '<div class="item-card bookmark-card">' +
+                '<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;">' +
+                    '<span style="background:#fff7ed;color:#c2410c;font-size:11px;font-weight:700;padding:2px 9px;border-radius:99px;">'+esc(decCat(b.category)||'-')+'</span>' +
+                    '<div style="display:flex;align-items:center;gap:10px;">' +
+                        goExam +
+                        (b.savedAt ? '<span style="font-size:11px;color:#9ca3af;">'+fmtDate(b.savedAt)+'</span>' : '') +
+                        '<button onclick="doRemoveBm(\''+b.key+'\')" style="font-size:12px;color:#d1d5db;background:none;border:none;cursor:pointer;padding:2px 5px;transition:color .15s;" onmouseover="this.style.color=\'#ef4444\'" onmouseout="this.style.color=\'#d1d5db\'" title="삭제"><i class="fas fa-trash-alt"></i></button>' +
+                    '</div>' +
+                '</div>' +
+                '<div style="font-size:14px;font-weight:600;color:#111827;line-height:1.65;margin-bottom:10px;">'+qBody+'</div>' +
+                (allOpts ? '<div>'+allOpts+'</div>' : '') +
+            '</div>';
+        }).join('');
+        renderStats();
+    }
+    function doRemoveBm(key){ CBT_AUTH.removeBookmark(key); renderBookmarks(); }
+
+    /* ────────────────────────────────────────────
+       탭 전환
+    ──────────────────────────────────────────── */
+    var renderers = { history: renderHistory, wrong: renderWrong, bookmarks: renderBookmarks };
+    document.querySelectorAll('.tab-btn').forEach(function(btn){
+        btn.addEventListener('click', function(){
+            document.querySelectorAll('.tab-btn').forEach(function(b){b.classList.remove('active');});
+            document.querySelectorAll('.tab-panel').forEach(function(p){p.classList.add('hidden');});
+            btn.classList.add('active');
+            var tab = btn.dataset.tab;
+            document.getElementById('tab-'+tab).classList.remove('hidden');
+            if (renderers[tab]) renderers[tab]();
+        });
+    });
+    document.getElementById('wrongCatFilter').addEventListener('change', renderWrong);
+
+    /* ────────────────────────────────────────────
+       초기 실행
+    ──────────────────────────────────────────── */
+    renderProfile();
+    renderStats();
+    renderHistory();
+    </script>
+</body>
+</html>
