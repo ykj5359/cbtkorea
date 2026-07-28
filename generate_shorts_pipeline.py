@@ -198,6 +198,23 @@ def create_frame_image_2k(data, is_answer_revealed=False, timer_progress=1.0):
 # 3. Microsoft Edge-TTS 1순위 아나운서 음성 엔진 (ThreadedResolver)
 # ----------------------------------------------------
 def generate_audio_file_edge(text, output_file, voice="ko-KR-SunHiNeural", duration_fallback=6.0):
+    # 0순위: 로컬 AI Voice Server (http://127.0.0.1:9880) 확인
+    try:
+        import urllib.request
+        req_health = urllib.request.Request("http://127.0.0.1:9880/health")
+        with urllib.request.urlopen(req_health, timeout=1) as resp:
+            if resp.status == 200:
+                post_data = json.dumps({"text": text, "voice": voice}).encode('utf-8')
+                req_tts = urllib.request.Request("http://127.0.0.1:9880/tts", data=post_data, headers={"Content-Type": "application/json"})
+                with urllib.request.urlopen(req_tts, timeout=10) as tts_resp:
+                    with open(output_file, 'wb') as f:
+                        f.write(tts_resp.read())
+                if os.path.exists(output_file) and os.path.getsize(output_file) > 100:
+                    print(f"🎙️ Local Custom AI Voice Generated from Server: {output_file}")
+                    return
+    except Exception:
+        pass
+
     # 1순위: Microsoft Edge-TTS
     try:
         import edge_tts
