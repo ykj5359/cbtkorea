@@ -315,8 +315,8 @@ def build_shorts_video(quiz_data, output_mp4_path, voice_question="shimmer", voi
         codec='libx264',
         audio_codec='aac',
         bitrate="12000k",
-        temp_audiofile=os.path.join(temp_dir, "temp-audio.m4a"),
-        remove_temp=True
+        temp_audiofile=os.path.join(temp_dir, f"temp-audio-{random.randint(1000, 9999)}.m4a"),
+        remove_temp=False
     )
 
     print(f"🎬 PRO 2K High-Bitrate Shorts Video Created: {output_mp4_path}")
