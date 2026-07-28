@@ -5,3 +5,5 @@
 
 # Python cache
 __pycache__/
+temp_shorts/
+shorts_output/
