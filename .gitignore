@@ -3,7 +3,11 @@
 *.txt
 *.log
 
-# Python cache
+# Secrets & Local Environment
+.env
+
+# Python cache & outputs
 __pycache__/
 temp_shorts/
 shorts_output/
+cardnews_output/
