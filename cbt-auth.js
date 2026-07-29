@@ -13,7 +13,7 @@
     /* ═══════════════════════════════════════════════════
        상수
     ═══════════════════════════════════════════════════ */
-    var KAKAO_APP_KEY = '8f47347dccd575fe0ed854e2231377ed';
+    var KAKAO_APP_KEY = '6e17535219b4a0f4db5654e88297e303';
 
     var LS_SESSION   = 'cbt_session';
     var LS_HISTORY   = 'cbt_quiz_history';
