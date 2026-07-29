@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+    <script>
+    if (location.protocol === 'http:' && location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
+        location.replace('https://' + location.hostname + location.pathname + location.search + location.hash);
+    }
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>로그인 - CBT 기출문제</title>
