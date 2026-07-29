@@ -215,17 +215,14 @@
 
     /* 카카오 가입 (= 카카오 로그인) */
     document.getElementById('kakaoSignupBtn').addEventListener('click', function () {
-        showLoading('카카오 가입 중...');
         CBT_AUTH.kakaoLogin(
-            function () { onSignupSuccess(); },
+            function (user) {
+                showLoading((user.nickname || '카카오') + '님, 가입을 환영합니다!');
+                setTimeout(onSignupSuccess, 500);
+            },
             function (err) {
                 hideLoading();
-                alert(
-                    '카카오 연동에 실패했습니다.\n\n' +
-                    '카카오 개발자 콘솔에서 도메인 등록이 필요할 수 있습니다.\n' +
-                    '아래 직접 가입을 이용해 주세요.\n\n' +
-                    '상세: ' + (err && err.msg ? err.msg : JSON.stringify(err))
-                );
+                alert('카카오 연동 에러 메시지:\n\n' + (err && err.msg ? err.msg : JSON.stringify(err)));
             }
         );
     });

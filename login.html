@@ -219,17 +219,14 @@
 
     /* ── 카카오 로그인 ── */
     document.getElementById('kakaoLoginBtn').addEventListener('click', function () {
-        showLoading('카카오 로그인 중...');
         CBT_AUTH.kakaoLogin(
-            function (user) { onLoginSuccess(); },
+            function (user) {
+                showLoading((user.nickname || '카카오') + '님 환영합니다!');
+                setTimeout(onLoginSuccess, 500);
+            },
             function (err)  {
                 hideLoading();
-                alert(
-                    '카카오 로그인에 실패했습니다.\n\n' +
-                    '카카오 개발자 콘솔에서 도메인 등록이 필요할 수 있습니다.\n' +
-                    '아래 닉네임 로그인을 이용해 주세요.\n\n' +
-                    '상세: ' + (err && err.msg ? err.msg : JSON.stringify(err))
-                );
+                alert('카카오 로그인 에러 메시지:\n\n' + (err && err.msg ? err.msg : JSON.stringify(err)));
             }
         );
     });

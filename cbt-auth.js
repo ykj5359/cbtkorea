@@ -96,50 +96,46 @@
          */
         kakaoLogin: function (onSuccess, onFail) {
             var self = this;
-            if (!window.Kakao) {
-                if (onFail) onFail({ msg: '카카오 SDK가 로드되지 않았습니다.' });
+            if (window.Kakao && !window.Kakao.isInitialized()) {
+                try { window.Kakao.init(KAKAO_APP_KEY); } catch (e) {}
+            }
+            if (!window.Kakao || !window.Kakao.isInitialized()) {
+                if (onFail) onFail({ msg: '카카오 SDK 초기화에 실패했습니다. 페이지를 새로고침 해주세요.' });
                 return;
             }
+
             try {
-                if (!window.Kakao.isInitialized()) {
-                    window.Kakao.init(KAKAO_APP_KEY);
-                }
-            } catch (e) {
-                console.error('[CBT_AUTH] Kakao Init error:', e);
+                window.Kakao.Auth.login({
+                    success: function (authObj) {
+                        window.Kakao.API.request({
+                            url: '/v2/user/me',
+                            success: function (res) {
+                                var profile = (res.kakao_account && res.kakao_account.profile) || {};
+                                var user = {
+                                    id:           'kakao_' + res.id,
+                                    nickname:     profile.nickname || '카카오유저',
+                                    profileImage: profile.profile_image_url || profile.thumbnail_image_url || '',
+                                    provider:     'kakao',
+                                };
+                                self.setUser(user);
+                                if (onSuccess) onSuccess(user);
+                            },
+                            fail: function (e) {
+                                console.error('[CBT_AUTH] Kakao API user/me error:', e);
+                                if (onFail) onFail({ msg: '사용자 정보 요청 실패: ' + (e.error_description || JSON.stringify(e)) });
+                            }
+                        });
+                    },
+                    fail: function (e) {
+                        console.error('[CBT_AUTH] Kakao Auth.login fail:', e);
+                        var errStr = e.error_description || e.error || JSON.stringify(e);
+                        if (onFail) onFail({ msg: errStr });
+                    }
+                });
+            } catch (err) {
+                console.error('[CBT_AUTH] Kakao Auth.login exception:', err);
+                if (onFail) onFail({ msg: '팝업 실행 실패: ' + err.message });
             }
-
-            if (!window.Kakao.Auth) {
-                if (onFail) onFail({ msg: '카카오 Auth 인증 모듈이 준비되지 않았습니다.' });
-                return;
-            }
-
-            window.Kakao.Auth.login({
-                success: function (authObj) {
-                    window.Kakao.API.request({
-                        url: '/v2/user/me',
-                        success: function (res) {
-                            var profile = (res.kakao_account && res.kakao_account.profile) || {};
-                            var user = {
-                                id:           'kakao_' + res.id,
-                                nickname:     profile.nickname || '카카오유저',
-                                profileImage: profile.profile_image_url || profile.thumbnail_image_url || '',
-                                provider:     'kakao',
-                            };
-                            self.setUser(user);
-                            if (onSuccess) onSuccess(user);
-                        },
-                        fail: function (e) {
-                            console.error('[CBT_AUTH] Kakao API user/me error:', e);
-                            if (onFail) onFail({ msg: '카카오 사용자 정보 요청 실패: ' + (e.error_description || JSON.stringify(e)) });
-                        }
-                    });
-                },
-                fail: function (e) {
-                    console.error('[CBT_AUTH] Kakao Auth.login error:', e);
-                    var errMsg = e.error_description || e.error || JSON.stringify(e);
-                    if (onFail) onFail({ msg: errMsg });
-                }
-            });
         },
 
         /**
