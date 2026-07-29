@@ -218,10 +218,10 @@
         return false;
     }
 
-    /* ── 카카오 1초 가입/로그인 ── */
+    /* ── 카카오 SDK v2 1초 로그인 (공식 authorize 방식) ── */
     function loginWithKakaoDirect() {
         if (!window.Kakao) {
-            alert('카카오 모듈 로딩 중입니다. 1초 뒤 다시 눌러주세요.');
+            alert('카카오 모듈을 준비 중입니다. 1초 뒤 다시 눌러주세요.');
             return;
         }
         try {
@@ -230,38 +230,13 @@
             }
         } catch(e){}
 
-        if (window.Kakao.Auth && typeof window.Kakao.Auth.login === 'function') {
-            window.Kakao.Auth.login({
-                success: function (authObj) {
-                    window.Kakao.API.request({
-                        url: '/v2/user/me',
-                        success: function (res) {
-                            var profile = (res.kakao_account && res.kakao_account.profile) || {};
-                            var user = {
-                                id: 'kakao_' + res.id,
-                                nickname: profile.nickname || '카카오 수험생',
-                                profileImage: profile.profile_image_url || '',
-                                provider: 'kakao'
-                            };
-                            CBT_AUTH.setUser(user);
-                            showLoading(user.nickname + '님, 가입을 환영합니다!');
-                            setTimeout(onSignupSuccess, 500);
-                        },
-                        fail: function (err) {
-                            alert('사용자 정보 요청 오류: ' + JSON.stringify(err));
-                        }
-                    });
-                },
-                fail: function (err) {
-                    alert('카카오 가입 인증 실패: ' + JSON.stringify(err));
-                }
-            });
-        } else if (window.Kakao.Auth && typeof window.Kakao.Auth.authorize === 'function') {
+        if (window.Kakao.Auth && typeof window.Kakao.Auth.authorize === 'function') {
+            var redirectUrl = location.protocol + '//' + location.host + location.pathname;
             window.Kakao.Auth.authorize({
-                redirectUri: location.protocol + '//' + location.host + location.pathname
+                redirectUri: redirectUrl
             });
         } else {
-            alert('카카오 SDK 호환성 오류가 발생했습니다. 페이지를 새로고침 해보세요.');
+            alert('카카오 SDK 초기화 오류입니다. 페이지를 새로고침 해보세요.');
         }
     }
     </script>
