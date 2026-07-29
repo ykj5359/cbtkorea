@@ -113,43 +113,15 @@
             }
 
             try {
-                // 1순위: Kakao SDK v2 공식 authorize (리다이렉트 방식 - 팝업 차단 0%)
+                // Kakao SDK v2 공식 authorize (리다이렉트 방식)
                 if (window.Kakao.Auth && typeof window.Kakao.Auth.authorize === 'function') {
                     var cleanUrl = location.protocol + '//' + location.host + location.pathname;
                     window.Kakao.Auth.authorize({
                         redirectUri: cleanUrl
                     });
                     return;
-                }
-
-                // 2순위: Kakao SDK v1 login (팝업 방식)
-                if (window.Kakao.Auth && typeof window.Kakao.Auth.login === 'function') {
-                    window.Kakao.Auth.login({
-                        success: function () {
-                            window.Kakao.API.request({
-                                url: '/v2/user/me',
-                                success: function (res) {
-                                    var profile = (res.kakao_account && res.kakao_account.profile) || {};
-                                    var user = {
-                                        id:           'kakao_' + res.id,
-                                        nickname:     profile.nickname || '카카오유저',
-                                        profileImage: profile.profile_image_url || profile.thumbnail_image_url || '',
-                                        provider:     'kakao',
-                                    };
-                                    self.setUser(user);
-                                    if (onSuccess) onSuccess(user);
-                                },
-                                fail: function (e) {
-                                    if (onFail) onFail({ msg: '사용자 정보 요청 실패: ' + (e.error_description || JSON.stringify(e)) });
-                                }
-                            });
-                        },
-                        fail: function (e) {
-                            var errStr = e.error_description || e.error || JSON.stringify(e);
-                            if (onFail) onFail({ msg: errStr });
-                        }
-                    });
-                    return;
+                } else {
+                    if (onFail) onFail({ msg: '카카오 Auth 인증 모듈 준비 중입니다.' });
                 }
             } catch (err) {
                 console.error('[CBT_AUTH] Kakao Login Exception:', err);
