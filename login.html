@@ -242,10 +242,10 @@
         location.replace(dest);
     }
 
-    /* ── 카카오 1초 로그인 (팝업 & 리다이렉트 자동 지원) ── */
+    /* ── 카카오 1초 로그인 ── */
     function loginWithKakaoDirect() {
         if (!window.Kakao) {
-            alert('카카오 모듈을 준비 중입니다. 1초 뒤 다시 눌러주세요.');
+            alert('카카오 모듈을 로딩 중입니다. 1초 뒤 다시 눌러주세요.');
             return;
         }
         try {
@@ -256,6 +256,7 @@
 
         if (window.Kakao.Auth && typeof window.Kakao.Auth.login === 'function') {
             window.Kakao.Auth.login({
+                throughTalk: true,
                 success: function () {
                     window.Kakao.API.request({
                         url: '/v2/user/me',
@@ -264,7 +265,7 @@
                             var user = {
                                 id: 'kakao_' + res.id,
                                 nickname: profile.nickname || '카카오 수험생',
-                                profileImage: profile.profile_image_url || '',
+                                profileImage: profile.profile_image_url || profile.thumbnail_image_url || '',
                                 provider: 'kakao'
                             };
                             CBT_AUTH.setUser(user);
@@ -272,18 +273,20 @@
                             setTimeout(onLoginSuccess, 500);
                         },
                         fail: function (err) {
-                            alert('카카오 정보 요청 실패: ' + JSON.stringify(err));
+                            alert('카카오 사용자 정보 수집 실패: ' + (err.error_description || JSON.stringify(err)));
                         }
                     });
                 },
                 fail: function () {
-                    var redirectUrl = location.protocol + '//' + location.host + location.pathname;
-                    window.Kakao.Auth.authorize({ redirectUri: redirectUrl });
+                    var cleanUrl = location.protocol + '//' + location.host + location.pathname;
+                    if (window.Kakao.Auth.authorize) {
+                        window.Kakao.Auth.authorize({ redirectUri: cleanUrl });
+                    }
                 }
             });
         } else if (window.Kakao.Auth && typeof window.Kakao.Auth.authorize === 'function') {
-            var redirectUrl = location.protocol + '//' + location.host + location.pathname;
-            window.Kakao.Auth.authorize({ redirectUri: redirectUrl });
+            var cleanUrl = location.protocol + '//' + location.host + location.pathname;
+            window.Kakao.Auth.authorize({ redirectUri: cleanUrl });
         }
     }
 
