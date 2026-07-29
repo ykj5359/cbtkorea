@@ -11,6 +11,14 @@
     'use strict';
 
     /* ═══════════════════════════════════════════════════
+       자동 HTTPS 강제 전환 (카카오 로그인 및 보안 필수)
+    ═══════════════════════════════════════════════════ */
+    if (location.protocol === 'http:' && location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
+        location.replace('https://' + location.hostname + location.pathname + location.search + location.hash);
+        return;
+    }
+
+    /* ═══════════════════════════════════════════════════
        상수
     ═══════════════════════════════════════════════════ */
     var KAKAO_APP_KEY = '6e17535219b4a0f4db5654e88297e303';
