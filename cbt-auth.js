@@ -97,29 +97,48 @@
         kakaoLogin: function (onSuccess, onFail) {
             var self = this;
             if (!window.Kakao) {
-                if (onFail) onFail({ msg: '카카오 SDK 미로드' });
+                if (onFail) onFail({ msg: '카카오 SDK가 로드되지 않았습니다.' });
                 return;
             }
-            try { if (!Kakao.isInitialized()) Kakao.init(KAKAO_APP_KEY); } catch (e) {}
-            Kakao.Auth.login({
-                success: function () {
-                    Kakao.API.request({
+            try {
+                if (!window.Kakao.isInitialized()) {
+                    window.Kakao.init(KAKAO_APP_KEY);
+                }
+            } catch (e) {
+                console.error('[CBT_AUTH] Kakao Init error:', e);
+            }
+
+            if (!window.Kakao.Auth) {
+                if (onFail) onFail({ msg: '카카오 Auth 인증 모듈이 준비되지 않았습니다.' });
+                return;
+            }
+
+            window.Kakao.Auth.login({
+                success: function (authObj) {
+                    window.Kakao.API.request({
                         url: '/v2/user/me',
                         success: function (res) {
                             var profile = (res.kakao_account && res.kakao_account.profile) || {};
                             var user = {
                                 id:           'kakao_' + res.id,
                                 nickname:     profile.nickname || '카카오유저',
-                                profileImage: profile.profile_image_url || '',
+                                profileImage: profile.profile_image_url || profile.thumbnail_image_url || '',
                                 provider:     'kakao',
                             };
                             self.setUser(user);
                             if (onSuccess) onSuccess(user);
                         },
-                        fail: function (e) { if (onFail) onFail(e); }
+                        fail: function (e) {
+                            console.error('[CBT_AUTH] Kakao API user/me error:', e);
+                            if (onFail) onFail({ msg: '카카오 사용자 정보 요청 실패: ' + (e.error_description || JSON.stringify(e)) });
+                        }
                     });
                 },
-                fail: function (e) { if (onFail) onFail(e); }
+                fail: function (e) {
+                    console.error('[CBT_AUTH] Kakao Auth.login error:', e);
+                    var errMsg = e.error_description || e.error || JSON.stringify(e);
+                    if (onFail) onFail({ msg: errMsg });
+                }
             });
         },
 
