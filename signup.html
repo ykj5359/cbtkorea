@@ -79,7 +79,7 @@
                 <div class="p-7 space-y-4">
 
                     <!-- 카카오로 바로 가입 -->
-                    <button type="button" class="kakao-btn" id="kakaoSignupBtn">
+                    <button type="button" class="kakao-btn" id="kakaoSignupBtn" onclick="loginWithKakaoDirect()">
                         <svg width="20" height="20" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
                                 d="M11 2C6.032 2 2 5.358 2 9.5c0 2.716 1.71 5.1 4.29 6.428l-1.1 4.063a.3.3 0 0 0 .456.328l4.832-3.196A10.3 10.3 0 0 0 11 17c4.968 0 9-3.358 9-7.5S15.968 2 11 2Z"
@@ -218,20 +218,52 @@
         return false;
     }
 
-    /* 카카오 가입 (= 카카오 로그인) */
-    document.getElementById('kakaoSignupBtn').addEventListener('click', function (e) {
-        if (e) { e.preventDefault(); e.stopPropagation(); }
-        CBT_AUTH.kakaoLogin(
-            function (user) {
-                showLoading((user.nickname || '카카오') + '님, 가입을 환영합니다!');
-                setTimeout(onSignupSuccess, 500);
-            },
-            function (err) {
-                hideLoading();
-                alert('카카오 연동 안내:\n\n' + (err && err.msg ? err.msg : JSON.stringify(err)));
+    /* ── 카카오 1초 가입/로그인 ── */
+    function loginWithKakaoDirect() {
+        if (!window.Kakao) {
+            alert('카카오 모듈 로딩 중입니다. 1초 뒤 다시 눌러주세요.');
+            return;
+        }
+        try {
+            if (!window.Kakao.isInitialized()) {
+                window.Kakao.init('6e17535219b4a0f4db5654e88297e303');
             }
-        );
-    });
+        } catch(e){}
+
+        if (window.Kakao.Auth && typeof window.Kakao.Auth.login === 'function') {
+            window.Kakao.Auth.login({
+                success: function (authObj) {
+                    window.Kakao.API.request({
+                        url: '/v2/user/me',
+                        success: function (res) {
+                            var profile = (res.kakao_account && res.kakao_account.profile) || {};
+                            var user = {
+                                id: 'kakao_' + res.id,
+                                nickname: profile.nickname || '카카오 수험생',
+                                profileImage: profile.profile_image_url || '',
+                                provider: 'kakao'
+                            };
+                            CBT_AUTH.setUser(user);
+                            showLoading(user.nickname + '님, 가입을 환영합니다!');
+                            setTimeout(onSignupSuccess, 500);
+                        },
+                        fail: function (err) {
+                            alert('사용자 정보 요청 오류: ' + JSON.stringify(err));
+                        }
+                    });
+                },
+                fail: function (err) {
+                    alert('카카오 가입 인증 실패: ' + JSON.stringify(err));
+                }
+            });
+        } else if (window.Kakao.Auth && typeof window.Kakao.Auth.authorize === 'function') {
+            window.Kakao.Auth.authorize({
+                redirectUri: location.protocol + '//' + location.host + location.pathname
+            });
+        } else {
+            alert('카카오 SDK 호환성 오류가 발생했습니다. 페이지를 새로고침 해보세요.');
+        }
+    }
     </script>
 </body>
 </html>
