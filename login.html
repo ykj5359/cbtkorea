@@ -198,6 +198,23 @@
 
     <script src="cbt-auth-v2.js"></script>
     <script>
+    /* ── CBT_AUTH.kakaoLogin 강제 메모리 패치 (옛날 CDN 캐시 무력화) ── */
+    if (window.CBT_AUTH) {
+        window.CBT_AUTH.kakaoLogin = function (onSuccess, onFail) {
+            if (window.Kakao && !window.Kakao.isInitialized()) {
+                try { window.Kakao.init('6e17535219b4a0f4db5654e88297e303'); } catch (e) {}
+            }
+            if (!window.Kakao || !window.Kakao.isInitialized()) {
+                if (onFail) onFail({ msg: '카카오 SDK 로딩 중입니다.' });
+                return;
+            }
+            if (window.Kakao.Auth && typeof window.Kakao.Auth.authorize === 'function') {
+                var cleanUrl = location.protocol + '//' + location.host + location.pathname;
+                window.Kakao.Auth.authorize({ redirectUri: cleanUrl });
+            }
+        };
+    }
+
     /* ── 이미 로그인돼 있으면 바로 리다이렉트 ── */
     (function () {
         if (!CBT_AUTH.isLoggedIn()) return;
