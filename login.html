@@ -102,7 +102,7 @@
 
                 <!-- 카카오 로그인 -->
                 <div class="p-7 space-y-4">
-                    <button class="kakao-btn" id="kakaoLoginBtn">
+                    <button type="button" class="kakao-btn" id="kakaoLoginBtn">
                         <!-- 카카오 로고 (공식 색상) -->
                         <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -223,7 +223,8 @@
     }
 
     /* ── 카카오 로그인 ── */
-    document.getElementById('kakaoLoginBtn').addEventListener('click', function () {
+    document.getElementById('kakaoLoginBtn').addEventListener('click', function (e) {
+        if (e) { e.preventDefault(); e.stopPropagation(); }
         CBT_AUTH.kakaoLogin(
             function (user) {
                 showLoading((user.nickname || '카카오') + '님 환영합니다!');
@@ -231,7 +232,7 @@
             },
             function (err)  {
                 hideLoading();
-                alert('카카오 로그인 에러 메시지:\n\n' + (err && err.msg ? err.msg : JSON.stringify(err)));
+                alert('카카오 로그인 안내:\n\n' + (err && err.msg ? err.msg : JSON.stringify(err)));
             }
         );
     });
