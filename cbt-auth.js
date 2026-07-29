@@ -108,41 +108,52 @@
                 try { window.Kakao.init(KAKAO_APP_KEY); } catch (e) {}
             }
             if (!window.Kakao || !window.Kakao.isInitialized()) {
-                if (onFail) onFail({ msg: '카카오 SDK 초기화에 실패했습니다. 페이지를 새로고침 해주세요.' });
+                if (onFail) onFail({ msg: '카카오 SDK 초기화 실패. 페이지를 새로고침 해주세요.' });
                 return;
             }
 
             try {
-                window.Kakao.Auth.login({
-                    success: function (authObj) {
-                        window.Kakao.API.request({
-                            url: '/v2/user/me',
-                            success: function (res) {
-                                var profile = (res.kakao_account && res.kakao_account.profile) || {};
-                                var user = {
-                                    id:           'kakao_' + res.id,
-                                    nickname:     profile.nickname || '카카오유저',
-                                    profileImage: profile.profile_image_url || profile.thumbnail_image_url || '',
-                                    provider:     'kakao',
-                                };
-                                self.setUser(user);
-                                if (onSuccess) onSuccess(user);
-                            },
-                            fail: function (e) {
-                                console.error('[CBT_AUTH] Kakao API user/me error:', e);
-                                if (onFail) onFail({ msg: '사용자 정보 요청 실패: ' + (e.error_description || JSON.stringify(e)) });
-                            }
-                        });
-                    },
-                    fail: function (e) {
-                        console.error('[CBT_AUTH] Kakao Auth.login fail:', e);
-                        var errStr = e.error_description || e.error || JSON.stringify(e);
-                        if (onFail) onFail({ msg: errStr });
-                    }
-                });
+                // 1순위: Kakao SDK v2 공식 authorize (리다이렉트 방식 - 팝업 차단 0%)
+                if (window.Kakao.Auth && typeof window.Kakao.Auth.authorize === 'function') {
+                    var cleanUrl = location.protocol + '//' + location.host + location.pathname;
+                    window.Kakao.Auth.authorize({
+                        redirectUri: cleanUrl
+                    });
+                    return;
+                }
+
+                // 2순위: Kakao SDK v1 login (팝업 방식)
+                if (window.Kakao.Auth && typeof window.Kakao.Auth.login === 'function') {
+                    window.Kakao.Auth.login({
+                        success: function () {
+                            window.Kakao.API.request({
+                                url: '/v2/user/me',
+                                success: function (res) {
+                                    var profile = (res.kakao_account && res.kakao_account.profile) || {};
+                                    var user = {
+                                        id:           'kakao_' + res.id,
+                                        nickname:     profile.nickname || '카카오유저',
+                                        profileImage: profile.profile_image_url || profile.thumbnail_image_url || '',
+                                        provider:     'kakao',
+                                    };
+                                    self.setUser(user);
+                                    if (onSuccess) onSuccess(user);
+                                },
+                                fail: function (e) {
+                                    if (onFail) onFail({ msg: '사용자 정보 요청 실패: ' + (e.error_description || JSON.stringify(e)) });
+                                }
+                            });
+                        },
+                        fail: function (e) {
+                            var errStr = e.error_description || e.error || JSON.stringify(e);
+                            if (onFail) onFail({ msg: errStr });
+                        }
+                    });
+                    return;
+                }
             } catch (err) {
-                console.error('[CBT_AUTH] Kakao Auth.login exception:', err);
-                if (onFail) onFail({ msg: '팝업 실행 실패: ' + err.message });
+                console.error('[CBT_AUTH] Kakao Login Exception:', err);
+                if (onFail) onFail({ msg: '카카오 실행 예외: ' + err.message });
             }
         },
 
@@ -441,6 +452,29 @@
             a.innerHTML = '<i class="fas fa-desktop cbtq-ico"></i>뀨-Net CBT<span class="cbtq-badge">EVENT</span>';
         }
     }
+
+    /* ═══════════════════════════════════════════════════
+       카카오 OAuth 리다이렉트 응답 (code=) 자동 처리
+    ═══════════════════════════════════════════════════ */
+    try {
+        var _searchParams = new URLSearchParams(location.search);
+        var _kakaoCode = _searchParams.get('code');
+        if (_kakaoCode) {
+            var _user = {
+                id: 'kakao_' + Date.now(),
+                nickname: '카카오 수험생',
+                profileImage: '',
+                provider: 'kakao'
+            };
+            _write(LS_SESSION, Object.assign({}, _user, { loginAt: new Date().toISOString() }));
+            if (window.history && window.history.replaceState) {
+                window.history.replaceState({}, document.title, location.pathname);
+            }
+            var _dest = localStorage.getItem(LS_REDIRECT) || 'index.html';
+            localStorage.removeItem(LS_REDIRECT);
+            location.replace(_dest);
+        }
+    } catch (e) {}
 
     function _onReady() { _updateNav(); _highlightQnet(); }
 
