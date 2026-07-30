@@ -332,19 +332,19 @@
 
         if (user) {
             var avatarHtml = user.profileImage
-                ? '<img src="' + user.profileImage + '" alt="" style="width:28px;height:28px;border-radius:50%;object-fit:cover;vertical-align:middle;">'
-                : '<span style="display:inline-flex;width:28px;height:28px;border-radius:50%;background:#2563eb;color:#fff;font-size:12px;font-weight:700;align-items:center;justify-content:center;vertical-align:middle;">' + (user.nickname || '?').charAt(0) + '</span>';
+                ? '<img src="' + user.profileImage + '" alt="" class="w-5 h-5 sm:w-6 sm:h-6 rounded-full object-cover vertical-middle shrink-0" style="width:20px;height:20px;border-radius:50%;object-fit:cover;flex-shrink:0;">'
+                : '<span class="inline-flex w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-blue-600 text-white text-[10px] sm:text-xs font-bold items-center justify-center vertical-middle shrink-0" style="display:inline-flex;width:20px;height:20px;border-radius:50%;background:#2563eb;color:#fff;font-size:10px;font-weight:700;align-items:center;justify-content:center;flex-shrink:0;">' + (user.nickname || '?').charAt(0) + '</span>';
 
             el.innerHTML =
-                '<span style="display:flex;align-items:center;gap:6px;font-size:14px;color:#1f2937;font-weight:600;">' +
-                    avatarHtml + '<span>' + _esc(user.nickname) + '님</span>' +
+                '<span class="inline-flex items-center gap-1 sm:gap-1.5 text-xs sm:text-sm text-gray-800 font-semibold whitespace-nowrap shrink-0" style="display:inline-flex;align-items:center;gap:4px;font-size:12px;color:#1f2937;font-weight:600;white-space:nowrap;">' +
+                    avatarHtml + '<span class="max-w-[75px] sm:max-w-[120px] truncate" style="max-width:75px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:inline-block;vertical-align:middle;">' + _esc(user.nickname) + '님</span>' +
                 '</span>' +
-                '<a href="' + base + 'mypage.html" style="font-size:14px;color:#2563eb;font-weight:700;text-decoration:none;transition:color .15s;" onmouseover="this.style.color=\'#1d4ed8\'" onmouseout="this.style.color=\'#2563eb\'">마이페이지</a>' +
-                '<button onclick="CBT_AUTH.logout()" style="font-size:13px;color:#6b7280;background:none;border:none;cursor:pointer;padding:0;transition:color .15s;" onmouseover="this.style.color=\'#ef4444\'" onmouseout="this.style.color=\'#6b7280\'">로그아웃</button>';
+                '<a href="' + base + 'mypage.html" class="text-xs sm:text-sm text-blue-600 font-bold hover:text-blue-800 whitespace-nowrap shrink-0 transition-colors" style="font-size:12px;color:#2563eb;font-weight:700;text-decoration:none;white-space:nowrap;">마이페이지</a>' +
+                '<button onclick="CBT_AUTH.logout()" class="text-[11px] sm:text-xs text-gray-500 hover:text-red-500 whitespace-nowrap shrink-0 transition-colors" style="font-size:11px;color:#6b7280;background:none;border:none;cursor:pointer;padding:0;white-space:nowrap;">로그아웃</button>';
         } else {
             el.innerHTML =
-                '<a href="' + base + 'login.html" style="font-size:14px;font-weight:500;color:#4b5563;text-decoration:none;transition:color .15s;" onmouseover="this.style.color=\'#2563eb\'" onmouseout="this.style.color=\'#4b5563\'">로그인</a>' +
-                '<a href="' + base + 'signup.html" style="background:#2563eb;color:#fff;padding:8px 16px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none;transition:background .15s;" onmouseover="this.style.color=\'#1d4ed8\'" onmouseout="this.style.background=\'#2563eb\'">회원가입</a>';
+                '<a href="' + base + 'login.html" class="text-xs sm:text-sm font-medium text-gray-600 hover:text-blue-600 whitespace-nowrap shrink-0 transition-colors" style="font-size:12px;font-weight:500;color:#4b5563;text-decoration:none;white-space:nowrap;">로그인</a>' +
+                '<a href="' + base + 'signup.html" class="bg-blue-600 text-white px-2.5 py-1 sm:px-4 sm:py-2 rounded-lg text-xs sm:text-sm font-bold whitespace-nowrap shrink-0 transition-colors" style="background:#2563eb;color:#fff;padding:4px 8px;border-radius:6px;font-size:12px;font-weight:700;text-decoration:none;white-space:nowrap;">회원가입</a>';
         }
     }
 
