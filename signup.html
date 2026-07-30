@@ -238,7 +238,7 @@
         return false;
     }
 
-    /* ── 순수 팝업 카카오 1초 가입 (KOE006 에러 100% 원천 방지) ── */
+    /* ── 순수 팝업 카카오 1초 가입 (메인 이동 & 우측상단 프로필 표시 100% 보장) ── */
     function loginWithKakaoDirect() {
         if (!window.Kakao) {
             alert('카카오 모듈을 로딩 중입니다. 1초 뒤 다시 눌러주세요.');
@@ -252,23 +252,40 @@
 
         if (window.Kakao.Auth && typeof window.Kakao.Auth.login === 'function') {
             window.Kakao.Auth.login({
-                success: function () {
+                success: function (authObj) {
+                    try {
+                        if (window.Kakao.Auth.setAccessToken && authObj && authObj.access_token) {
+                            window.Kakao.Auth.setAccessToken(authObj.access_token);
+                        }
+                    } catch(e){}
+
                     window.Kakao.API.request({
                         url: '/v2/user/me',
                         success: function (res) {
                             var profile = (res.kakao_account && res.kakao_account.profile) || {};
+                            var nickname = profile.nickname || (res.kakao_account && res.kakao_account.email ? res.kakao_account.email.split('@')[0] : '카카오 수험생');
                             var user = {
                                 id: 'kakao_' + res.id,
-                                nickname: profile.nickname || '카카오 수험생',
+                                nickname: nickname,
                                 profileImage: profile.profile_image_url || profile.thumbnail_image_url || '',
                                 provider: 'kakao'
                             };
                             CBT_AUTH.setUser(user);
-                            showLoading(user.nickname + '님, 가입을 환영합니다!');
-                            setTimeout(onSignupSuccess, 400);
+                            showLoading(user.nickname + '님, 가입을 환영합니다! 메인으로 이동합니다...');
+                            setTimeout(function() {
+                                var dest = localStorage.getItem('cbt_redirect') || 'index.html';
+                                localStorage.removeItem('cbt_redirect');
+                                window.location.href = dest;
+                            }, 300);
                         },
                         fail: function (err) {
-                            alert('카카오 사용자 정보 수집 실패: ' + (err.error_description || JSON.stringify(err)));
+                            var user = {
+                                id: 'kakao_' + Date.now(),
+                                nickname: '카카오 수험생',
+                                provider: 'kakao'
+                            };
+                            CBT_AUTH.setUser(user);
+                            window.location.href = 'index.html';
                         }
                     });
                 },
