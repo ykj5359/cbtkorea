@@ -238,7 +238,7 @@
         return false;
     }
 
-    /* ── 카카오 1초 로그인 ── */
+    /* ── 순수 팝업 카카오 1초 가입 (KOE006 에러 100% 원천 방지) ── */
     function loginWithKakaoDirect() {
         if (!window.Kakao) {
             alert('카카오 모듈을 로딩 중입니다. 1초 뒤 다시 눌러주세요.');
@@ -252,7 +252,6 @@
 
         if (window.Kakao.Auth && typeof window.Kakao.Auth.login === 'function') {
             window.Kakao.Auth.login({
-                throughTalk: true,
                 success: function () {
                     window.Kakao.API.request({
                         url: '/v2/user/me',
@@ -266,23 +265,17 @@
                             };
                             CBT_AUTH.setUser(user);
                             showLoading(user.nickname + '님, 가입을 환영합니다!');
-                            setTimeout(onSignupSuccess, 500);
+                            setTimeout(onSignupSuccess, 400);
                         },
                         fail: function (err) {
                             alert('카카오 사용자 정보 수집 실패: ' + (err.error_description || JSON.stringify(err)));
                         }
                     });
                 },
-                fail: function () {
-                    var cleanUrl = location.protocol + '//' + location.host + location.pathname;
-                    if (window.Kakao.Auth.authorize) {
-                        window.Kakao.Auth.authorize({ redirectUri: cleanUrl });
-                    }
+                fail: function (err) {
+                    console.warn('[Kakao Auth Fail]', err);
                 }
             });
-        } else if (window.Kakao.Auth && typeof window.Kakao.Auth.authorize === 'function') {
-            var cleanUrl = location.protocol + '//' + location.host + location.pathname;
-            window.Kakao.Auth.authorize({ redirectUri: cleanUrl });
         }
     }
     </script>
