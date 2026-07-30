@@ -97,24 +97,51 @@
                 try { window.Kakao.init(KAKAO_APP_KEY); } catch (e) {}
             }
             if (!window.Kakao || !window.Kakao.isInitialized()) {
-                if (onFail) onFail({ msg: '카카오 SDK 초기화 실패. 페이지를 새로고침 해주세요.' });
+                alert('카카오 SDK 로딩 중입니다. 1초 뒤 다시 눌러주세요.');
+                if (onFail) onFail({ msg: '카카오 SDK 미초기화' });
                 return;
             }
 
-            try {
-                // Kakao SDK v2 공식 authorize (리다이렉트 방식)
-                if (window.Kakao.Auth && typeof window.Kakao.Auth.authorize === 'function') {
-                    var cleanUrl = location.protocol + '//' + location.host + location.pathname;
-                    window.Kakao.Auth.authorize({
-                        redirectUri: cleanUrl
-                    });
-                    return;
-                } else {
-                    if (onFail) onFail({ msg: '카카오 Auth 인증 모듈 준비 중입니다.' });
-                }
-            } catch (err) {
-                console.error('[CBT_AUTH] Kakao Login Exception:', err);
-                if (onFail) onFail({ msg: '카카오 실행 예외: ' + err.message });
+            if (window.Kakao.Auth && typeof window.Kakao.Auth.login === 'function') {
+                window.Kakao.Auth.login({
+                    success: function (authObj) {
+                        try {
+                            if (window.Kakao.Auth.setAccessToken && authObj && authObj.access_token) {
+                                window.Kakao.Auth.setAccessToken(authObj.access_token);
+                            }
+                        } catch(e){}
+
+                        window.Kakao.API.request({
+                            url: '/v2/user/me',
+                            success: function (res) {
+                                var profile = (res.kakao_account && res.kakao_account.profile) || {};
+                                var nickname = profile.nickname || (res.kakao_account && res.kakao_account.email ? res.kakao_account.email.split('@')[0] : '카카오 수험생');
+                                var user = {
+                                    id: 'kakao_' + res.id,
+                                    nickname: nickname,
+                                    profileImage: profile.profile_image_url || profile.thumbnail_image_url || '',
+                                    provider: 'kakao'
+                                };
+                                self.setUser(user);
+                                if (onSuccess) onSuccess(user);
+
+                                var dest = localStorage.getItem(LS_REDIRECT) || 'index.html';
+                                localStorage.removeItem(LS_REDIRECT);
+                                window.location.href = dest;
+                            },
+                            fail: function (err) {
+                                alert('카카오 사용자 정보 읽기 오류: ' + JSON.stringify(err));
+                                if (onFail) onFail(err);
+                            }
+                        });
+                    },
+                    fail: function (err) {
+                        console.warn('[Kakao Login Fail]', err);
+                        if (onFail) onFail(err);
+                    }
+                });
+            } else {
+                alert('카카오 인증 모듈 로딩 오류입니다. 새로고침 해보세요.');
             }
         },
 

@@ -201,103 +201,45 @@
 
     <script src="cbt-auth-v2.js"></script>
     <script>
-    /* ── CBT_AUTH.kakaoLogin 강제 메모리 패치 (옛날 CDN 캐시 무력화) ── */
-    if (window.CBT_AUTH) {
-        window.CBT_AUTH.kakaoLogin = function (onSuccess, onFail) {
-            if (window.Kakao && !window.Kakao.isInitialized()) {
-                try { window.Kakao.init('6e17535219b4a0f4db5654e88297e303'); } catch (e) {}
-            }
-            if (!window.Kakao || !window.Kakao.isInitialized()) {
-                if (onFail) onFail({ msg: '카카오 SDK 로딩 중입니다.' });
-                return;
-            }
-            if (window.Kakao.Auth && typeof window.Kakao.Auth.authorize === 'function') {
-                var cleanUrl = location.protocol + '//' + location.host + location.pathname;
-                window.Kakao.Auth.authorize({ redirectUri: cleanUrl });
-            }
-        };
-    }
-
-    /* ── 이미 로그인돼 있으면 바로 리다이렉트 ── */
+    /* ── 이미 로그인돼 있으면 바로 메인으로 ── */
     (function () {
-        if (!CBT_AUTH.isLoggedIn()) return;
+        if (!window.CBT_AUTH || !CBT_AUTH.isLoggedIn()) return;
         var dest = localStorage.getItem('cbt_redirect') || 'index.html';
         localStorage.removeItem('cbt_redirect');
         location.replace(dest);
     })();
 
-    /* ── 로딩 오버레이 헬퍼 ── */
     function showLoading(msg) {
-        document.getElementById('loadingMsg').textContent = msg || '로그인 중...';
-        document.getElementById('loadingOverlay').classList.add('show');
+        var el = document.getElementById('loadingMsg');
+        if (el) el.textContent = msg || '로그인 중...';
+        var overlay = document.getElementById('loadingOverlay');
+        if (overlay) overlay.classList.add('show');
     }
     function hideLoading() {
-        document.getElementById('loadingOverlay').classList.remove('show');
+        var overlay = document.getElementById('loadingOverlay');
+        if (overlay) overlay.classList.remove('show');
     }
-
-    /* ── 로그인 성공 공통 처리 ── */
     function onLoginSuccess() {
         var dest = localStorage.getItem('cbt_redirect') || 'index.html';
         localStorage.removeItem('cbt_redirect');
         location.replace(dest);
     }
 
-    /* ── 순수 팝업 카카오 1초 로그인 (메인 이동 & 우측상단 프로필 표시 100% 보장) ── */
+    /* ── 카카오 1초 로그인 ── */
     function loginWithKakaoDirect() {
-        if (!window.Kakao) {
-            alert('카카오 모듈을 로딩 중입니다. 1초 뒤 다시 눌러주세요.');
+        if (!window.CBT_AUTH) {
+            alert('인증 모듈 로딩 중입니다. 1초 뒤 다시 눌러주세요.');
             return;
         }
-        try {
-            if (!window.Kakao.isInitialized()) {
-                window.Kakao.init('6e17535219b4a0f4db5654e88297e303');
+        showLoading('카카오 로그인 연결 중...');
+        CBT_AUTH.kakaoLogin(
+            function(user) {
+                showLoading(user.nickname + '님, 환영합니다! 메인으로 이동합니다...');
+            },
+            function(err) {
+                hideLoading();
             }
-        } catch(e){}
-
-        if (window.Kakao.Auth && typeof window.Kakao.Auth.login === 'function') {
-            window.Kakao.Auth.login({
-                success: function (authObj) {
-                    try {
-                        if (window.Kakao.Auth.setAccessToken && authObj && authObj.access_token) {
-                            window.Kakao.Auth.setAccessToken(authObj.access_token);
-                        }
-                    } catch(e){}
-
-                    window.Kakao.API.request({
-                        url: '/v2/user/me',
-                        success: function (res) {
-                            var profile = (res.kakao_account && res.kakao_account.profile) || {};
-                            var nickname = profile.nickname || (res.kakao_account && res.kakao_account.email ? res.kakao_account.email.split('@')[0] : '카카오 수험생');
-                            var user = {
-                                id: 'kakao_' + res.id,
-                                nickname: nickname,
-                                profileImage: profile.profile_image_url || profile.thumbnail_image_url || '',
-                                provider: 'kakao'
-                            };
-                            CBT_AUTH.setUser(user);
-                            showLoading(user.nickname + '님, 환영합니다! 메인으로 이동합니다...');
-                            setTimeout(function() {
-                                var dest = localStorage.getItem('cbt_redirect') || 'index.html';
-                                localStorage.removeItem('cbt_redirect');
-                                window.location.href = dest;
-                            }, 300);
-                        },
-                        fail: function (err) {
-                            var user = {
-                                id: 'kakao_' + Date.now(),
-                                nickname: '카카오 수험생',
-                                provider: 'kakao'
-                            };
-                            CBT_AUTH.setUser(user);
-                            window.location.href = 'index.html';
-                        }
-                    });
-                },
-                fail: function (err) {
-                    console.warn('[Kakao Auth Fail]', err);
-                }
-            });
-        }
+        );
     }
 
     /* ── 회원 로그인 (닉네임+비밀번호) ── */
