@@ -38,6 +38,8 @@
         body { font-family: 'Noto Sans KR', sans-serif; background-color: #f8fafc; }
         .hero-gradient { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); }
         .title-dark { color: #1a1a1a; }
+        /* 모바일화면 statsBoxBar (전체문제수, 오늘방문자수, 합격수기, 진행중인시험) 숨김 */
+        @media (max-width: 767px) { #statsBoxBar { display: none !important; } }
         /* 뀨-Net CBT 강조 메뉴 (이벤트 페이지) */
         .qnet-menu {
             position: relative;
@@ -97,7 +99,7 @@
         </div>
     </section>
 
-    <div class="max-w-7xl mx-auto px-4 -mt-8">
+    <div class="hidden md:block max-w-7xl mx-auto px-4 -mt-8" id="statsBoxBar">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 bg-white p-6 rounded-2xl shadow-xl">
             <div class="text-center border-r border-gray-100">
                 <p class="text-sm text-gray-500">전체 문제 수</p>
