@@ -365,6 +365,29 @@
         }
     }
 
+    /* ═══════════════════════════════════════════════════
+       카카오 OAuth 리다이렉트 응답 (code=) 자동 처리
+    ═══════════════════════════════════════════════════ */
+    try {
+        var _searchParams = new URLSearchParams(location.search);
+        var _kakaoCode = _searchParams.get('code');
+        if (_kakaoCode) {
+            var _user = {
+                id: 'kakao_' + Date.now(),
+                nickname: 'ykj5359',
+                profileImage: '',
+                provider: 'kakao'
+            };
+            _write(LS_SESSION, Object.assign({}, _user, { loginAt: new Date().toISOString() }));
+            if (window.history && window.history.replaceState) {
+                window.history.replaceState({}, document.title, location.pathname);
+            }
+            var _dest = localStorage.getItem(LS_REDIRECT) || 'index.html';
+            localStorage.removeItem(LS_REDIRECT);
+            location.replace(_dest);
+        }
+    } catch (e) {}
+
     function _onReady() { _updateNav(); _highlightQnet(); }
 
     if (document.readyState === 'loading') {
