@@ -351,8 +351,30 @@
        공통 네비게이션 업데이트
        id="navAuthArea" 요소가 있는 페이지에서 자동 실행
     ═══════════════════════════════════════════════════ */
-    function _updateNav() {
+    /* 로그인 상태를 표시할 네비 영역을 찾는다.
+       navAuthArea id 가 없으면(시험 페이지 등) 로그인+회원가입 버튼을 감싼
+       네비 컨테이너를 찾아 그 자리에 표시한다. */
+    function _findAuthArea() {
         var el = document.getElementById('navAuthArea');
+        if (el) return el;
+        var nav = document.querySelector('nav');
+        if (!nav) return null;
+        var divs = nav.querySelectorAll('div');
+        for (var i = 0; i < divs.length; i++) {
+            var d = divs[i];
+            var txt = (d.textContent || '').replace(/\s+/g, '');
+            if (txt.indexOf('로그인') !== -1 && txt.indexOf('회원가입') !== -1 &&
+                txt.indexOf('공지사항') === -1 &&
+                d.querySelectorAll('button, a').length <= 3) {
+                d.id = 'navAuthArea';
+                return d;
+            }
+        }
+        return null;
+    }
+
+    function _updateNav() {
+        var el = _findAuthArea();
         if (!el) return;
 
         var user = CBT_AUTH.getUser();

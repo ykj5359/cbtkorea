@@ -12,7 +12,7 @@ import re
 from pathlib import Path
 
 ROOT = Path(r"E:\00.CBT\CBT")
-VER  = "5"
+VER  = "7"
 
 RE_AUTH = re.compile(r'src="(\.\./\.\./cbt-auth\.js)(?:\?v=\d+)?"')
 RE_EXAM = re.compile(r'src="(\.\./\.\./cbt-exam\.js)(?:\?v=\d+)?"')

@@ -35,6 +35,11 @@
         }
         @media print { html { zoom: 0.7; } nav, footer, .no-print { display: none !important; } }
     </style>
+
+<!-- ADSENSE-CBT -->
+<meta name="google-adsense-account" content="ca-pub-3399466730471372">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3399466730471372"
+     crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -344,6 +349,7 @@
     <div id="toast" class="hidden opacity-0"></div>
 
     <script src="cbt-auth-v3.js?v=20260730_1055"></script>
+    <script src="cbt-community-feed.js?v=20260801"></script>
     <script>
     // ============================================================
     //  카테고리 정의
@@ -391,6 +397,11 @@
         { id:-19, tag:'pass',   title:'40대 가장의 산업안전기사 합격기 - 가족이 힘이었어요',         author:'두아이아빠',   date:'05-21', views:2890, likes:167, comments:49 },
         { id:-20, tag:'free',   title:'시험장 도착하면 항상 화장실부터 가는데 저만 그런가요?ㅋㅋ',  author:'소심한수험생', date:'05-21', views:1782, likes:95,  comments:78 },
     ];
+
+    // 운영자 자동 글(cbt-community-feed.js?v=20260801)을 게시판에 병합 — 모든 방문자에게 표시
+    if (window.CBT_OPS_POSTS && window.CBT_OPS_POSTS.length) {
+        samplePosts.unshift(...window.CBT_OPS_POSTS);
+    }
 
     const bestUsers = [
         { rank:1, name:'합격왕김씨',    posts:234, likes:4821, color:'bg-yellow-500' },

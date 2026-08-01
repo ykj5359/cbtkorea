@@ -10,7 +10,7 @@ import re
 from pathlib import Path
 
 ROOT = Path(r"E:\00.CBT")
-VER = "6"
+VER = "7"
 FILES = ["index.html", "notice.html", "videos.html", "exams.html",
          "community.html", "mypage.html", "login.html", "signup.html",
          "cbt-qnet.html", "cbt-exam-sim.html"]
