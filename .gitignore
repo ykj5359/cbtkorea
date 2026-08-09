@@ -4,6 +4,8 @@
 *.log
 # 애드센스 필수 파일 — 반드시 커밋/배포되어야 함
 !ads.txt
+# 검색엔진 필수 파일 — 반드시 커밋/배포되어야 함
+!robots.txt
 
 # Secrets & Local Environment
 .env
