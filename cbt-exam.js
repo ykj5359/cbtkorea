@@ -448,8 +448,9 @@
         var wrongItems = results.filter(function (r) { return r.userAnswer > 0 && !r.isOk; });
         var wrongHtml  = '';
         wrongItems.forEach(function (r) {
-            var uAns = r.options[r.userAnswer - 1] ? ('① ② ③ ④'.split(' ')[r.userAnswer - 1] + ' ' + esc(r.options[r.userAnswer - 1])) : r.userAnswer;
-            var cAns = r.options[r.correctAnswer - 1] ? ('① ② ③ ④'.split(' ')[r.correctAnswer - 1] + ' ' + esc(r.options[r.correctAnswer - 1])) : r.correctAnswer;
+            var CIRC = ['①','②','③','④','⑤','⑥','⑦','⑧'];
+            var uAns = r.options[r.userAnswer - 1] ? ((CIRC[r.userAnswer - 1] || r.userAnswer) + ' ' + esc(r.options[r.userAnswer - 1])) : r.userAnswer;
+            var cAns = r.options[r.correctAnswer - 1] ? ((CIRC[r.correctAnswer - 1] || r.correctAnswer) + ' ' + esc(r.options[r.correctAnswer - 1])) : r.correctAnswer;
             wrongHtml +=
                 '<div style="border:1px solid #fecaca;border-radius:10px;padding:12px;margin-bottom:8px;background:#fff;">' +
                 '<p style="font-size:13px;font-weight:700;color:#1f2937;margin-bottom:8px;line-height:1.5;">' +
