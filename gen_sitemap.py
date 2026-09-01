@@ -46,6 +46,7 @@ def write_urlset(path: Path, body: str):
 PAGES = [
     ("", "daily", "1.0"),               # 홈 (루트)
     ("exams.html", "weekly", "0.8"),
+    ("guides.html", "weekly", "0.9"),
     ("cbt-qnet.html", "weekly", "0.8"),
     ("videos.html", "weekly", "0.6"),
     ("notice.html", "weekly", "0.6"),
@@ -56,6 +57,10 @@ PAGES = [
     ("terms.html", "monthly", "0.5"),
 ]
 pages_body = "".join(url_block(BASE + f, cf, pr) for f, cf, pr in PAGES)
+# 자격증 가이드 페이지 (원본 콘텐츠 — 높은 우선순위)
+for f in sorted((ROOT / "guide").glob("*.html")):
+    if not skip(f):
+        pages_body += url_block(enc("guide/" + f.name), "monthly", "0.8")
 write_urlset(ROOT / "sitemap-pages.xml", pages_body)
 
 # ── 2) CBT-list 종목 목록 ──
