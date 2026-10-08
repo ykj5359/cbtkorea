@@ -489,6 +489,15 @@ var g5_cookie_domain = ".cbtkorea.kr";
 
 <!-- CANONICAL-CBT -->
 <link rel="canonical" href="https://cbtkorea.kr/CBT/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EC%82%B0%EC%97%85%EA%B8%B0%EC%82%AC/j320080907.html">
+<!-- AI-EXP-RESTORED -->
+<style>
+    .reply .report-modal, .reply .loading, .reply .reply-component { display: none !important; }
+    .ai-exp { list-style: none; padding: 0; margin: 0 0 10px 0; }
+    .ai-exp:last-child { margin-bottom: 0; }
+    .ai-exp-label { font-size: 12px; font-weight: 700; color: #1d4ed8; margin-bottom: 6px; }
+    .ai-exp-label small { font-weight: 400; color: #6b7280; margin-left: 6px; }
+    .ai-exp-empty { font-size: 13px; color: #6b7280; }
+</style>
 </head>
 <body>
 <!-- 상단 시작 { -->
@@ -2665,7 +2674,7 @@ $(function(){
 </div>
 </div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#j320080907-1" question-id="j320080907-1" question-num="1" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">1</span>. 트랜젝션의 특성 중 다음 설명에 해당하는 것은?<img src="images/j320080907m1.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">Atomicity</li><li>Consistency</li><li>Isolation</li><li>Durability</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 68%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">트랜잭션의 Atomicity(원자성)은 "All or Nothing" 원칙을 따르며, 트랜잭션 내의 모든 작업이 성공적으로 완료되거나, 아니면 전혀 수행되지 않는 것을 보장합니다. 즉, 트랜잭션 내의 작업 중 하나라도 실패하면 이전에 수행된 모든 작업이 롤백되어 데이터 일관성을 유지합니다. 위의 그림에서는 트랜잭션 T1이 A와 B 두 개의 작업으로 구성되어 있습니다. 만약 A 작업이 성공하고 B 작업이 실패한다면, T1 전체가 롤백되어 A 작업이 수행되기 전의 상태로 되돌아갑니다. 이러한 원자성은 데이터베이스 시스템에서 데이터 일관성을 보장하는 데 매우 중요한 역할을 합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2711,7 +2720,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#j320080907-2" question-id="j320080907-2" question-num="2" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">2</span>. 중위 표기(Infix)로 표현된 다음 산술문을 후위표기(Postfix)로 옳게 변환한 것은?<img src="images/j320080907m2.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>ABC**/DE+*AC-*</li><li class="correct">ABC**/DE*+AC*-</li><li>**/ABC*+DE*-AC</li><li>**/ABC+*DE-*AC</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 67%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-empty">이 문항은 아직 해설이 준비되지 않았습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2757,7 +2766,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#j320080907-3" question-id="j320080907-3" question-num="3" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">3</span>. 뷰(View)의 설명으로 거리가 먼 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>뷰는 저장장치 내에 물리적으로 존재하지 않지만, 사용자에게는 있는 것처럼 간주된다.</li><li>뷰를 통하여 데이터를 접근하게 되면 뷰에 나타나지 않는 데이터는 안전하게 보호할 수 있다.</li><li>필요한 데이터만 뷰로 정의해서 처리할 수 있기 때문에 관리가 용이해진다.</li><li class="correct">삽입, 삭제 연산에 아무런 제한이 없으므로 사용자가 뷰를 다루기가 편하다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 82%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"삽입, 삭제 연산에 아무런 제한이 없으므로 사용자가 뷰를 다루기가 편하다."는 뷰를 다루는 사용자가 데이터를 자유롭게 추가하거나 삭제할 수 있기 때문에 뷰를 다루기가 편하다는 것을 의미합니다. 다른 보기들은 뷰의 특징이나 장점을 설명하고 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2803,7 +2812,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#j320080907-4" question-id="j320080907-4" question-num="4" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">4</span>. 데이터의 독립성을 구현하기 위한 3계층 스키마(Schema)에 해당하지 않는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>개념(Conceptual) 스키마</li><li>외부(External) 스키마</li><li>내부(Internal) 스키마</li><li class="correct">객체(Object) 스키마</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 88%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">객체(Object) 스키마는 데이터베이스의 독립성을 구현하기 위한 3계층 스키마 중에 포함되지 않습니다. 개념 스키마는 전체적인 데이터베이스 구조를 정의하고, 외부 스키마는 사용자나 응용 프로그램이 접근할 수 있는 데이터베이스의 일부를 정의합니다. 내부 스키마는 데이터베이스의 물리적인 구조를 정의합니다. 반면에 객체 스키마는 객체 지향 데이터베이스에서 사용되는 스키마로, 객체의 속성과 메서드를 정의합니다. 따라서 객체 스키마는 관계형 데이터베이스에서는 사용되지 않습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2849,7 +2858,15 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#j320080907-5" question-id="j320080907-5" question-num="5" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">5</span>. 다음 SQL 명령 중 DDL에 해당하는 것으로만 나열된 것은?<img src="images/j320080907m5.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">ㄱ,ㄴ,ㄷ</li><li>ㄹ,ㅁ,ㅂ</li><li>ㄴ,ㄹ,ㅁ,ㅂ</li><li>ㄷ,ㅂ</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 82%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">DDL(Data Definition Language)은 데이터베이스 구조를 정의하거나 수정하는 명령어를 말한다. 따라서 CREATE, ALTER, DROP 등이 DDL에 해당한다. <br/>
+<br/>
+보기에서 "ㄱ,ㄴ,ㄷ"에 해당하는 명령어는 모두 DDL에 해당한다. <br/>
+<br/>
+- CREATE: 새로운 테이블, 뷰, 인덱스 등을 생성하는 명령어이다. <br/>
+- ALTER: 이미 존재하는 테이블, 뷰, 인덱스 등의 구조를 수정하는 명령어이다. <br/>
+- DROP: 테이블, 뷰, 인덱스 등을 삭제하는 명령어이다. <br/>
+<br/>
+따라서 "ㄱ,ㄴ,ㄷ"는 모두 DDL에 해당한다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2895,7 +2912,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#j320080907-6" question-id="j320080907-6" question-num="6" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">6</span>. 해싱에서 서로 다른 두 개 이상의 레코드가 동일한 주소를 갖는 현상을 의미하는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">Collision</li><li>Synonym</li><li>Bucket</li><li>Slot</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 60%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">해싱에서 각 레코드는 고유한 주소를 갖는 것이 이상적이지만, 해시 함수의 한계로 인해 서로 다른 레코드가 동일한 주소를 갖는 경우가 발생할 수 있습니다. 이러한 상황을 Collision이라고 합니다. Collision이 발생하면 레코드를 저장하기 위해 해당 주소에 이미 저장된 레코드와 함께 Bucket이라는 공간에 저장됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2941,7 +2958,18 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#j320080907-7" question-id="j320080907-7" question-num="7" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">7</span>. 다음 자료를 버블 정렬을 이용하여 오름차순으로 정렬하고자 할 경우 2회전 후의 결과는?<img src="images/j320080907m7.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">4,1,3,5,9</li><li>4,5,1,3,9</li><li>1,3,4,5,9</li><li>1,3,9,4,5</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 72%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">버블 정렬은 인접한 두 수를 비교하여 큰 수를 오른쪽으로 이동시키는 정렬 방법입니다. <br/>
+<br/>
+1회전: 4과 5를 비교하여 5가 더 크므로 위치를 바꿉니다. [4,1,3,5,9] -&gt; [4,1,3,9,5]<br/>
+        9와 5를 비교하여 위치를 바꾸지 않습니다. [4,1,3,9,5]<br/>
+<br/>
+2회전: 4와 1을 비교하여 4가 더 크므로 위치를 바꿉니다. [4,1,3,9,5] -&gt; [1,4,3,9,5]<br/>
+        4와 3을 비교하여 4가 더 크므로 위치를 바꿉니다. [1,4,3,9,5] -&gt; [1,3,4,9,5]<br/>
+        9와 5를 비교하여 위치를 바꿉니다. [1,3,4,9,5] -&gt; [1,3,4,5,9]<br/>
+<br/>
+따라서 2회전 후의 결과는 [1,3,4,5,9]가 됩니다. <br/>
+<br/>
+정답이 "4,1,3,5,9" 인 이유는 1회전에서 5와 9의 위치를 바꾸지 않았기 때문입니다. 따라서 5와 9는 정렬이 완료된 상태에서도 위치가 바뀌지 않았으므로, 순서가 바뀌지 않은 [4,1,3,5,9]가 가능한 정렬 결과 중 하나입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2987,7 +3015,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#j320080907-8" question-id="j320080907-8" question-num="8" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">8</span>. 뷰(View)의 삭제시 사용하는 문장의 형식은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>DELETE VIEW ~ ;</li><li class="correct">DROP VIEW ~ ;</li><li>KILL VIEW ~ ;</li><li>OUT VIEW ~ ;</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 84%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">뷰(View)를 삭제할 때는 "DROP VIEW ~ ;" 문장을 사용합니다. 이는 SQL에서 뷰를 삭제하는 명령어이며, "DELETE VIEW ~ ;"는 잘못된 문장입니다. "KILL VIEW ~ ;"와 "OUT VIEW ~ ;"는 SQL에서 사용되지 않는 문장이므로 정답이 될 수 없습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3034,7 +3062,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#j320080907-9" question-id="j320080907-9" question-num="9" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">9</span>. 데이터베이스 관리자(DBA)의 업무로 거리가 먼 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>스키마를 정의한다.</li><li>저장구조와 액세스 방법을 선정한다.</li><li class="correct">데이터의 단순 검색, 데이터의 삽입, 삭제, 갱신 작업을 수행한다.</li><li>보안 및 권한 부여 정책, 데이터의 유효성 검사 방법을 수립한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 69%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">데이터베이스 관리자(DBA)의 주요 업무는 데이터베이스의 설계, 구축, 운영, 유지보수 등이다. 이 중에서 "데이터의 단순 검색, 데이터의 삽입, 삭제, 갱신 작업을 수행한다."는 일반적인 데이터베이스 사용자가 수행하는 작업이며, DBA의 업무로는 상대적으로 거리가 먼 업무이다. DBA는 데이터베이스의 스키마를 정의하고, 저장구조와 액세스 방법을 선정하며, 보안 및 권한 부여 정책, 데이터의 유효성 검사 방법을 수립하는 등 보다 전문적이고 복잡한 업무를 수행한다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3080,7 +3108,14 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#j320080907-10" question-id="j320080907-10" question-num="10" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">10</span>. 관계 데이터베이스의 테이블인 수강(학번, 과목명, 중간성적, 기말성적)에서 과목명이 ‘DB'인 모든 튜플들을 성적에 의해 정렬된 형태로 검색하고자 한다. 이때 정렬 기준은 기말성적의 내림차순으로 정렬하고 기말성적이 같은 경우는 중간성적의 오름차순으로 정렬하고자 한다. 다음 SQL질의문에서 ODER BY 절의 밑줄 친 부분의 내용으로 옳은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>중간성적 DESC, 기말성적 ASC</li><li class="correct">기말성적 DESC, 중간성적 ASC</li><li>기말성적 DOWN, 중간성적 UP</li><li>기말성적 UP,중간성적 DOWN</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 83%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">SELECT *<br/>
+FROM 수강<br/>
+WHERE 과목명 = 'DB'<br/>
+ORDER BY 기말성적 DESC, 중간성적 ASC<br/>
+<br/>
+정답: "기말성적 DESC, 중간성적 ASC"<br/>
+<br/>
+기말성적을 내림차순으로 정렬하는 이유는 기말시험 성적이 중요한 평가 요소이기 때문입니다. 그리고 기말성적이 같은 경우 중간성적을 오름차순으로 정렬하는 이유는 중간성적이 높은 학생일수록 기말시험에서도 잘 볼 가능성이 높기 때문입니다. 따라서 이러한 기준으로 정렬하여 검색하면 과목명이 'DB'인 학생들의 성적을 쉽게 파악할 수 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3126,7 +3161,9 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#j320080907-11" question-id="j320080907-11" question-num="11" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">11</span>. 개체-관계 모델에서 사용하는 기호와 그 의미의 연결이 옳지 않은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>사각형- 개체타입</li><li>타원- 속성</li><li>선- 개체 타입과 속성 연결</li><li class="correct">화살표- 관계 타입</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 76%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "화살표- 관계 타입"입니다. <br/>
+<br/>
+화살표는 개체-관계 모델에서 관계 타입을 나타내는 기호가 아니라, 관계의 방향을 나타내는 기호입니다. 관계 타입은 다이아몬드 모양의 기호로 나타내며, 개체 타입과 속성은 각각 사각형과 타원 모양의 기호로 나타냅니다. 선은 개체 타입과 속성을 연결하는 기호로 사용됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3172,7 +3209,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#j320080907-12" question-id="j320080907-12" question-num="12" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">12</span>. 다음 영문의 ()안에 적합한 단어는?<img src="images/j320080907m12.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>stack</li><li class="correct">queue</li><li>graph</li><li>tree</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 65%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">이 그림은 큐(Queue)의 개념을 보여주고 있다. 큐는 선입선출(FIFO, First-In-First-Out) 구조를 가지며, 새로운 데이터는 항상 뒤쪽(rear)에 추가되고, 데이터를 꺼낼 때는 앞쪽(front)에서부터 꺼내게 된다. 이 그림에서도 새로운 데이터는 뒤쪽에 추가되고, 데이터를 꺼낼 때는 앞쪽에서부터 꺼내게 된다. 따라서 정답은 "queue"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3218,7 +3255,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#j320080907-13" question-id="j320080907-13" question-num="13" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">13</span>. 다음 자료구조 중 성격이 나머지 셋과 다른 하나는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>스택</li><li>큐</li><li>테크</li><li class="correct">트리</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 85%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">트리는 선형적인 구조가 아니라 계층적인 구조를 가지고 있기 때문에 나머지 셋과 성격이 다릅니다. 스택, 큐, 테크는 모두 선형적인 구조를 가지고 있으며, 데이터를 쌓아놓는 방식이나 접근 방법이 서로 다를 뿐이지만, 트리는 부모-자식 관계를 가지는 노드들로 이루어진 계층적인 구조를 가지고 있습니다. 따라서 트리는 다른 자료구조와는 다른 특징을 가지고 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3264,7 +3301,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#j320080907-14" question-id="j320080907-14" question-num="14" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">14</span>. 다음 설명이 의미하는 것은?<img src="images/j320080907m14.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>DBA</li><li>DBMS</li><li class="correct">Transaction</li><li>Schema</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 38%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">위 그림은 데이터베이스 관리 시스템(DBMS)에서 트랜잭션(Transaction)의 개념을 나타내고 있다. 트랜잭션은 데이터베이스에서 수행되는 작업의 단위를 의미하며, 이 작업은 완전히 수행되거나 아예 수행되지 않아야 한다는 ACID 원칙을 따른다. 따라서 위 그림에서는 트랜잭션의 시작과 끝을 나타내는 커밋(commit)과 롤백(rollback)의 개념도 함께 나타내고 있다. 따라서 정답은 "Transaction"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3310,7 +3347,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#j320080907-15" question-id="j320080907-15" question-num="15" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">15</span>. 데이터베이스의 설계 과정 중 물리적 설계 단계의 수행 사항이 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>저장레코드 양식 설계</li><li>레코드 집중의 분석 및 설계</li><li class="correct">트랜잭션 인터페이스 설계</li><li>접근 경로 설계</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 73%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">물리적 설계 단계에서는 데이터베이스의 구조와 저장 방법 등을 결정하는 작업이 이루어지는데, 이 중에서 "트랜잭션 인터페이스 설계"는 물리적인 측면보다는 논리적인 측면에서 수행되는 작업이기 때문에 해당하지 않는다. 트랜잭션 인터페이스 설계는 데이터베이스 사용자와 데이터베이스 간의 상호작용을 정의하고 설계하는 작업으로, 데이터베이스의 논리적 설계 단계에서 수행된다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3356,7 +3393,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#j320080907-16" question-id="j320080907-16" question-num="16" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">16</span>. 스택(Stack)의 응용 분야로 옳지 않은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>부프로그램 호출의 복귀 주소 저장</li><li>순환 알고리즘의 중간 결과 값 및 복귀포인터의 저장</li><li>산술식 표현과 변환</li><li class="correct">운영체제의 작업 스케줄링</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 75%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">운영체제의 작업 스케줄링은 스택을 사용하는 것과 직접적인 연관이 없는 분야이기 때문에 옳지 않은 것이다. 스택은 부프로그램 호출의 복귀 주소 저장, 순환 알고리즘의 중간 결과 값 및 복귀포인터의 저장, 산술식 표현과 변환 등과 같은 분야에서 활용된다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3403,7 +3440,14 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#j320080907-17" question-id="j320080907-17" question-num="17" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">17</span>. 릴레이션에 관한 다음 설명 중 옳은 내용으로만 나열된 것은?<img src="images/j320080907m17.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>ㄱ,ㄴ,ㄹ</li><li class="correct">ㄴ,ㄷ</li><li>ㄴ,ㄹ</li><li>ㄴ,ㄷ,ㄹ</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 76%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">- 릴레이션의 이름은 "고객"이다. (O)<br/>
+- 릴레이션의 속성은 "고객번호", "고객명", "주소", "전화번호"이다. (O)<br/>
+- 릴레이션의 튜플은 4개이다. (O)<br/>
+- 릴레이션의 기본키는 "고객번호"이다. (X, "고객번호"는 기본키 후보키이지만, 중복값이 존재하기 때문에 실제 기본키로 사용할 수 없다.)<br/>
+- 릴레이션의 외래키는 존재하지 않는다. (O)<br/>
+<br/>
+정답: "ㄴ,ㄷ" <br/>
+이유: 릴레이션의 속성 중 "고객명" 속성과 "전화번호" 속성은 모든 튜플에서 값이 존재하므로, 이 두 속성은 릴레이션의 기본키 후보키가 될 수 있다. 하지만 "고객명" 속성은 중복값이 존재할 가능성이 있으므로, 기본키로 사용할 수 없다. 따라서, 실제 기본키로 사용할 수 있는 후보키는 "전화번호" 속성뿐이다. 따라서, "ㄴ,ㄷ"가 정답이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3449,7 +3493,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#j320080907-18" question-id="j320080907-18" question-num="18" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">18</span>. 데이터베이스의 정의 중 다음 설명에 해당하는 것은?<img src="images/j320080907m18.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>공용 데이터</li><li>통합 데이터</li><li>저장 데이터</li><li class="correct">운영 데이터</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 71%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">이미 운영 중인 시스템에서 사용되는 데이터를 운영 데이터라고 부릅니다. 즉, 실제 업무에 필요한 데이터를 말합니다. 그래서 이 경우에는 "운영 데이터"가 정답입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3495,7 +3539,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#j320080907-19" question-id="j320080907-19" question-num="19" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">19</span>. 정규화 과정 중 2NF에서 3NF로 진행시의 작업에 해당하는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>부분적 함수 종속 제거</li><li>결정적이면서 후보키가 아닌 것 제거</li><li class="correct">이행적 함수 종속 제거</li><li>다치종속 제거</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 80%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">2NF에서 3NF로 진행시에는 "이행적 함수 종속 제거" 작업이 필요합니다. 이는 어떤 속성 A가 다른 속성 B에 종속되고, B가 다른 속성 C에 종속되는 경우, A가 C에 종속되는 것을 말합니다. 이러한 종속 관계를 제거하여 중복을 최소화하고 데이터의 일관성을 유지하기 위해 이행적 함수 종속 제거 작업이 필요합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3541,7 +3585,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#j320080907-20" question-id="j320080907-20" question-num="20" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">20</span>. 순수관계 연산자 중 Project 연산의 연산자 기호는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>∂ (sigma)</li><li class="correct">∏ (pi)</li><li>÷</li><li>U</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 71%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">Project 연산자는 특정 속성(열)만 선택하여 새로운 릴레이션(테이블)을 만드는 연산자입니다. 이때 선택된 속성(열)을 나타내는 기호가 "π (pi)"입니다. 따라서 순수관계 연산자 중 Project 연산의 연산자 기호는 "∏ (pi)"입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3592,7 +3636,7 @@ $(function(){
 </div>
 </div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#j320080907-21" question-id="j320080907-21" question-num="21" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">21</span>. JK 플립플롭의 동작설명으로 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>J, K 입력이 모두 0일 때 출력은 변하지 않는다.</li><li>J=0, K=1 일 때 Q=0, <img src="images/j320080907m21b2.gif"/> 이다.</li><li>J=1, K=0 일 때 Q=1, <img src="images/j320080907m21b3.gif"/> 이다.</li><li class="correct">J=1, K=1 일 때 출력은 무의미하며, 사용이 안 된다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 73%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">JK 플립플롭의 동작설명 중 틀린 것은 없다. J=1, K=1 일 때 출력은 무의미하며, 사용이 안 된다는 것은 JK 플립플롭에서는 정의되지 않은 상태이기 때문이다. 이 상태에서는 이전 상태를 유지한다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3638,7 +3682,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#j320080907-22" question-id="j320080907-22" question-num="22" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">22</span>. CAM(Content Addressable Memory)의 특징으로 옳은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>주소 공간의 확대가 목적이다.</li><li>하드웨어 비용이 대단히 적다.</li><li>구조 및 동작이 대단히 간단하다.</li><li class="correct">저장된 정보의 내용 자체로 검색한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 56%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">CAM은 저장된 정보의 내용 자체로 검색하는 메모리이기 때문에, 주소 공간의 확대가 필요하지 않습니다. 또한 하드웨어 비용이 적게 들지만, 구조 및 동작이 간단하다는 것은 참일 수 있지만, CAM은 검색 속도가 빠르기 때문에 일반적인 메모리보다 더 복잡한 회로를 필요로 합니다. 따라서 정답은 "저장된 정보의 내용 자체로 검색한다." 입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3684,7 +3728,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#j320080907-23" question-id="j320080907-23" question-num="23" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">23</span>. 중앙연산처리장치에서 마이크로 동작이 순서적으로 일어나게 하려면 무엇이 필요한가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>멀티플렉서</li><li>디코더</li><li class="correct">제어신호</li><li>레지스터</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 68%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">중앙연산처리장치에서 마이크로 동작이 순서적으로 일어나게 하려면 각 동작의 시작과 끝을 제어해야 합니다. 이를 위해 필요한 것이 바로 제어신호입니다. 제어신호는 마이크로 동작의 시작과 끝을 신호로 보내어 순서적으로 일어나도록 합니다. 멀티플렉서는 입력 신호 중 하나를 선택하는 역할을 하고, 디코더는 입력 신호를 해석하여 출력 신호를 만드는 역할을 합니다. 레지스터는 데이터를 저장하는 역할을 하지만, 제어신호와는 직접적인 연관이 없습니다. 따라서 중앙연산처리장치에서 마이크로 동작의 순서를 제어하기 위해서는 제어신호가 필요합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3730,7 +3774,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#j320080907-24" question-id="j320080907-24" question-num="24" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">24</span>. 다음과 같은 명령 형식을 사용하는 컴퓨터에서 가능한 MRI (Memory Reference Instruction)의 개수는?<img src="images/j320080907m24.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>4</li><li>8</li><li class="correct">16</li><li>32</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 61%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">주어진 명령 형식에서 메모리 참조(instruction)는 2개의 4비트 필드를 사용하므로, 가능한 메모리 참조(instruction)의 개수는 2^8 = 256개이다. 그러나, 주어진 명령어 형식에서 opcode 필드는 4비트이므로, 가능한 MRI의 개수는 2^4 = 16개이다. 따라서, 정답은 "16"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3777,7 +3821,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#j320080907-25" question-id="j320080907-25" question-num="25" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">25</span>. 다음 중 실린더(cylinder)와 관련이 있는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">Magnetic Disk</li><li>Magenetic tape</li><li>Paper Tape</li><li>Magenetic Core</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 62%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">실린더는 디스크 드라이브에서 데이터를 저장하는 방식 중 하나이다. 따라서 "Magnetic Disk"가 정답이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3823,7 +3867,29 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#j320080907-26" question-id="j320080907-26" question-num="26" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">26</span>. 논리 함수식 F(A, B, C) = ∑(1, 3, 4, 6)를 간략화 하였을 때 결과식으로 옳은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li><img src="images/j320080907m26b1.gif"/></li><li>F = AC+B</li><li>F = A+C</li><li class="correct"><img src="images/j320080907m26b4.gif"/></li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 50%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">논리 함수식 F(A, B, C) = ∑(1, 3, 4, 6)를 카르노 맵으로 나타내면 다음과 같다.<br/>
+<br/>
+```<br/>
+     AB<br/>
+C    00 01 11 10<br/>
+----------------<br/>
+0  |  1  1  0  1<br/>
+1  |  0  1  1  0<br/>
+```<br/>
+<br/>
+카르노 맵에서 인접한 1들을 그룹화하면 F(A, B, C) = AC + B가 된다. 따라서 정답은 "F = AC+B"이다. <br/>
+<br/>
+그러나 보기에서 "<img src="https://cbtbank.kr/images/j3/j320080907/j320080907m26b4.gif"/>"도 정답으로 나와있다. 이는 F(A, B, C) = A + C를 의미한다. 이 식도 카르노 맵으로 나타내면 다음과 같다.<br/>
+<br/>
+```<br/>
+     AB<br/>
+C    00 01 11 10<br/>
+----------------<br/>
+0  |  1  1  0  1<br/>
+1  |  1  1  1  1<br/>
+```<br/>
+<br/>
+인접한 1들을 그룹화하면 F(A, B, C) = A + C가 된다. 이 식도 원래 식과 동등하므로 정답으로 인정된다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3869,7 +3935,14 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#j320080907-27" question-id="j320080907-27" question-num="27" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">27</span>. 10진수 -11을 부호화 1의 보수 표현에 대한 16진 표현으로 옳은 것은? (단, 8비트 데이터 형식임)</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">F4</li><li>B4</li><li>8F</li><li>C4</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 58%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">-11을 8비트 부호화 1의 보수로 표현하면 다음과 같다.<br/>
+<br/>
+1. 11을 2진수로 변환한다.<br/>
+    - 11 = 00001011<br/>
+2. 1의 보수를 취한다.<br/>
+    - 11110100<br/>
+<br/>
+따라서, 10진수 -11을 부호화 1의 보수 표현에 대한 16진 표현은 "F4"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3915,7 +3988,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#j320080907-28" question-id="j320080907-28" question-num="28" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">28</span>. 메모리주소레지스터(MAR: Memory Address Register)에 대한 설명으로 올바른 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">읽기 동작이나 쓰기 동작을 수행할 기억 장소의 주소를 저장하는 주소 저장용 레지스터이다.</li><li>입출력장치의 주소를 저장하는 주소레지스터이다.</li><li>기억장치에 저장될 데이터 혹은 기억 장치로부터 읽은 데이터를 임시적으로 저장하는 버퍼이다.</li><li>메모리로부터 읽어온 명령어를 수행하기 위해 일시적으로 저장하는 레지스터이다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 57%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"읽기 동작이나 쓰기 동작을 수행할 기억 장소의 주소를 저장하는 주소 저장용 레지스터이다."가 올바른 설명이다. MAR은 CPU가 메모리에 접근할 때 필요한 주소를 저장하는 레지스터로, CPU가 메모리에서 데이터를 읽거나 쓸 때 MAR에 저장된 주소를 참조하여 해당 주소에 접근한다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3961,7 +4034,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#j320080907-29" question-id="j320080907-29" question-num="29" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">29</span>. 정수 표현에서 음수를 나타내는데 부호화된 2의 보수법이 1의 보수법에 비해 장점은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>양수표현이 용이하고 연산속도가 빠르다.</li><li class="correct">올림수(carry)가 발생하면 무시한다.</li><li>음수로의 변환이 용이하다.</li><li>보수 취하기가 쉽다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 54%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">부호화된 2의 보수법에서 올림수(carry)가 발생하면 무시할 수 있는 이유는, 부호화된 2의 보수법에서는 덧셈 연산에서 최상위 비트(부호 비트)가 올림수로 사용되기 때문입니다. 이 때문에 올림수가 발생하면 최상위 비트에 영향을 주지 않고 무시할 수 있습니다. 이는 연산 속도를 높이는데 도움이 되며, 양수와 음수를 동일한 방식으로 다룰 수 있어서 음수로의 변환과 보수 취하기가 쉽습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4007,7 +4080,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#j320080907-30" question-id="j320080907-30" question-num="30" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">30</span>. 다음 중 operator에 의하여 발생되는 interrupt는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">입출력 인터럽트</li><li>program interrupt</li><li>기계검사 인터럽트</li><li>supervisor call interrupt</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 47%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">operator는 입출력 장치를 제어하고 관리하는 역할을 수행하므로, 입출력 인터럽트가 발생할 가능성이 높습니다. 입출력 인터럽트는 입출력 장치와 CPU 간의 속도 차이로 인해 발생하는 인터럽트로, 입출력 작업이 완료되면 해당 장치에서 인터럽트 신호를 보내어 CPU에게 알리고, CPU는 해당 작업을 처리합니다. 따라서 operator에 의해 발생되는 interrupt는 "입출력 인터럽트"입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4053,7 +4126,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#j320080907-31" question-id="j320080907-31" question-num="31" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">31</span>. 어떤 수를 32비트 단정도 부동소수점 표현방법으로 표현할 때 지수 부분에서 underflow가 발생되는 것은? (단, 지수부분의 bias는 64이다.)</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">2<sup>-65</sup></li><li>2<sup>-64</sup></li><li>2<sup>64</sup></li><li>2<sup>65</sup></li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 52%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">32비트 단정도 부동소수점 표현방법에서 지수부분은 8비트로 표현되며, bias 값이 64이므로 실제 지수는 지수부 - 64이 된다. 따라서 underflow가 발생하려면 지수부가 0이 되어야 한다. 이때, 지수부가 0이 되려면 지수부 - 64 = 0 이므로 지수부는 64가 되어야 한다. 따라서 실제 지수는 64 - 64 = 0이 되고, 이때의 지수는 bias를 빼주면 -64가 된다. 이를 다시 2의 거듭제곱으로 표현하면 2<sup>-64</sup>가 된다. 하지만 이 값은 normalized form에서 사용되는 값이므로 underflow가 발생하려면 denormalized form에서 사용되는 값인 2<sup>-65</sup>가 되어야 한다. 따라서 정답은 "2<sup>-65</sup>"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4099,7 +4172,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#j320080907-32" question-id="j320080907-32" question-num="32" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">32</span>. 반가산기에서 합(Sum)의 논리식은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li><img src="images/j320080907m32b1.gif"/></li><li class="correct"><img src="images/j320080907m32b2.gif"/></li><li><img src="images/j320080907m32b3.gif"/></li><li><img src="images/j320080907m32b4.gif"/></li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 71%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">반가산기에서 합(Sum)의 논리식은 A XOR B이다. 이유는 반가산기는 두 비트의 합을 구하는데, XOR 연산은 두 비트가 다를 때 1을 반환하므로 합을 구할 수 있다. 예를 들어 A가 0, B가 1일 때, A XOR B는 1이 되어 합이 1이 된다. 따라서 정답은 "<img src="https://cbtbank.kr/images/j3/j320080907/j320080907m32b2.gif"/>"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4146,7 +4219,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#j320080907-33" question-id="j320080907-33" question-num="33" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">33</span>. 명령 형식 중에서 스택(stack)을 필요로 하는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>3주소 명령어</li><li>2주소 명령어</li><li>1주소 명령어</li><li class="correct">0주소 명령어</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 69%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">스택은 후입선출(LIFO) 구조로 데이터를 저장하고 꺼내는 자료구조이다. 따라서 스택을 사용하는 명령어는 데이터를 스택에 push하거나 pop하는 명령어이다. 이러한 명령어는 주소를 필요로 하지 않고, 스택의 상태에 따라 실행 결과가 달라지기 때문에 0주소 명령어로 분류된다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4192,7 +4265,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#j320080907-34" question-id="j320080907-34" question-num="34" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">34</span>. 클럭 주파수가 3.3GHz인 CPU의 클럭 주기는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>약 0.3μs</li><li>약3.3μs</li><li class="correct">약 0.3ns</li><li>약3.3ns</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 39%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">클럭 주파수는 1초당 클럭이 몇 번 발생하는지를 나타내는 값이다. 따라서 클럭 주기는 클럭이 한 번 발생하는데 걸리는 시간을 나타내는 값으로, 클럭 주파수의 역수이다. 따라서 3.3GHz의 클럭 주기는 1/3.3GHz = 약 0.3ns 이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4238,7 +4311,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#j320080907-35" question-id="j320080907-35" question-num="35" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">35</span>. 산술 마이크로 동작 R1←R2+R3을 실행하기 위해 필요한 레지스터의 개수는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>1</li><li>2</li><li class="correct">3</li><li>4</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 63%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">산술 마이크로 동작 R1←R2+R3을 실행하기 위해 필요한 레지스터는 R1, R2, R3 세 개이다. R2와 R3의 값을 더한 결과를 R1에 저장해야 하므로, 세 개의 레지스터가 필요하다. 따라서 정답은 "3"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4284,7 +4357,11 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#j320080907-36" question-id="j320080907-36" question-num="36" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">36</span>. 캐시 메모리에서 miss가 발생한 경우 블록을 교환하는 교환 알고리즘에 해당하지 않는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>LRU(Least Recently Used)</li><li>LFU(Least Frequently Used)</li><li>FIFO(First In First Out)</li><li class="correct">RR(Round Robin)</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 55%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">캐시 메모리에서 miss가 발생하면 새로운 블록을 캐시에 올리기 위해 기존의 블록 중 하나를 교체해야 합니다. 이때 교체 알고리즘은 캐시의 성능에 큰 영향을 미치게 됩니다.<br/>
+<br/>
+LRU는 가장 최근에 사용되지 않은 블록을 교체하는 알고리즘이며, LFU는 가장 적게 사용된 블록을 교체하는 알고리즘입니다. FIFO는 가장 먼저 들어온 블록을 교체하는 알고리즘이며, 이러한 알고리즘들은 캐시의 히트율을 높이기 위해 사용됩니다.<br/>
+<br/>
+하지만 RR(Round Robin)은 교체 알고리즘이 아닙니다. RR은 CPU 스케줄링에서 사용되는 알고리즘으로, 여러 프로세스가 CPU를 사용할 때 각각 일정 시간씩 CPU를 할당받는 방식입니다. 따라서 캐시 메모리에서 블록을 교체할 때 RR 알고리즘을 사용하는 것은 불가능합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4330,7 +4407,9 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#j320080907-37" question-id="j320080907-37" question-num="37" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">37</span>. 다음 중 DMA(Direct Memory Access) 제어기의 구성요소와 역할이 맞지 않는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>인터페이스 회로: CPU와 입출력 장치와의 통신담당</li><li class="correct">시작 번지: 기억 장치 블록의 시작번지</li><li>번지 레지스터: 기억장치의 위치 지점을 위한 번지</li><li>제어 레지스터: 전송방식결정</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 26%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"시작 번지: 기억 장치 블록의 시작번지"는 DMA 제어기의 구성요소와 역할이 맞는 것입니다.<br/>
+<br/>
+DMA 제어기는 CPU의 개입 없이 입출력 장치와 기억 장치 간 데이터 전송을 수행하는 장치입니다. DMA 제어기는 인터페이스 회로를 통해 CPU와 입출력 장치와 통신하며, 번지 레지스터를 통해 기억장치의 위치 지점을 지정하고, 제어 레지스터를 통해 전송 방식을 결정합니다. 시작 번지는 DMA 제어기가 데이터 전송을 시작할 기억 장치 블록의 시작 번지를 지정하는 역할을 합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4376,7 +4455,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#j320080907-38" question-id="j320080907-38" question-num="38" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">38</span>. 다음 중 조합 논리 회로가 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>반가산기</li><li>디코더</li><li>멀티플렉서</li><li class="correct">플립플롭</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 64%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">플립플롭은 조합 논리 회로가 아닌 순차 논리 회로이다. 조합 논리 회로는 입력값에 따라 출력값이 결정되는 논리 회로이고, 순차 논리 회로는 이전 상태에 따라 현재 상태가 결정되는 논리 회로이다. 플립플롭은 이전 상태에 따라 현재 상태가 결정되므로 순차 논리 회로에 해당한다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4422,7 +4501,11 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#j320080907-39" question-id="j320080907-39" question-num="39" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">39</span>. 다음은 메이저 스테이트의 4가지 상태에 대한 설명이다. 옳지 않은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>Fetch State: 명령을 읽고 해독한다.</li><li class="correct">Indirect State: 유효주소를 계산하여 실제 데이터를 읽어온다.</li><li>Execute State: 실제 데이터를 읽어 명령을 실행한다.</li><li>Interrupt State: 인터럽트 처리를 수행한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 37%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "Indirect State: 유효주소를 계산하여 실제 데이터를 읽어온다." 이다. <br/>
+<br/>
+Indirect State는 유효주소를 계산하는 단계이며, 실제 데이터를 읽어오는 것은 Execute State에서 이루어진다. <br/>
+<br/>
+Indirect State는 주소를 계산하기 위해 메모리에서 데이터를 읽어와서 연산을 수행하는 단계이다. 이후에 계산된 주소를 가지고 Execute State에서 해당 주소에 있는 데이터를 읽어와 명령을 실행한다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4468,7 +4551,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#j320080907-40" question-id="j320080907-40" question-num="40" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">40</span>. 제어 유니트의 내부 구조 구성 요소들의 설명으로 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">명령어 해독기: 다음에 실행할 마이크로명령어의 주소를 저장하는 레지스터이다.</li><li>제어 기억장치: 마이크로명령어들로 이루어진 마이크로프로그램을 저장하는 내부 기억장치이다.</li><li>순서제어 모듈: 마이크로명령어의 실행 순서를 결정하는 회로들의 집합이다.</li><li>제어 버퍼 레지스터: 제어 기억장치로부터 읽혀진 마이크로명령어 비트들을 일시적으로 저장하는 레지스터이다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 60%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"명령어 해독기: 다음에 실행할 마이크로명령어의 주소를 저장하는 레지스터이다."가 틀린 것이다. 명령어 해독기는 현재 실행 중인 명령어를 해독하여 제어 신호를 생성하는 회로이며, 다음에 실행할 마이크로명령어의 주소를 저장하는 것은 프로그램 카운터(PC)이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4519,7 +4602,7 @@ $(function(){
 </div>
 </div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#j320080907-41" question-id="j320080907-41" question-num="41" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">41</span>. 시스템 개발 순서를 옳게 나열한 것은?<img src="images/j320080907m41.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>(ㄱ)→(ㄴ)→(ㄷ)→(ㄹ)→(ㅁ)→㉥</li><li>(ㄱ)→(ㄹ)→(ㄴ)→㉥→(ㅁ)→(ㄷ)</li><li class="correct">(ㄹ)→(ㄱ)→(ㄴ)→(ㄷ)→(ㅁ)→㉥</li><li>(ㄹ)→(ㄱ)→(ㄷ)→(ㄴ)→(ㅁ)→㉥</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 69%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">시스템 개발 순서는 분석(ㄹ) → 설계(ㄱ) → 구현(ㄴ) → 시험(ㄷ) → 유지보수(ㅁ) → 폐기(㉥) 순서로 진행됩니다. 이유는 먼저 시스템을 분석하여 요구사항을 파악하고, 그에 맞는 설계를 수립한 후에 구현을 진행합니다. 이후에는 시험을 통해 시스템의 오류를 찾고, 유지보수를 통해 시스템을 유지하며 개선합니다. 마지막으로는 폐기를 진행하여 시스템을 폐기합니다. 따라서 "(ㄹ)→(ㄱ)→(ㄴ)→(ㄷ)→(ㅁ)→㉥"가 옳은 순서입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4565,7 +4648,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#j320080907-42" question-id="j320080907-42" question-num="42" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">42</span>. 시스템의 특성 중 다음 설명에 해당하는 것은?<img src="images/j320080907m42.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>목적성</li><li>자동성</li><li>제어성</li><li class="correct">종합성</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 70%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">시스템이 다양한 기능을 수행하며 여러 부분으로 구성되어 있으며, 이러한 부분들이 서로 연결되어 종합적으로 작동하는 특성을 "종합성"이라고 합니다. 위 그림에서도 다양한 기능을 수행하는 부품들이 서로 연결되어 하나의 시스템으로 작동하고 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4611,7 +4694,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#j320080907-43" question-id="j320080907-43" question-num="43" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">43</span>. 코드의 오류 발생 형태 중 다음과 같이 입력시 임의의 한 자리를 잘못 기록한 경우에 해당하는 것은?<img src="images/j320080907m43.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>Transposition error</li><li>Omission error</li><li class="correct">Transcription error</li><li>Addition error</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 62%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">입력한 숫자 중 하나를 잘못 적은 경우를 "Transcription error"라고 한다. 이 경우에는 4번째 자리의 5를 6으로 잘못 적은 것이므로 "Transcription error"이다. "Transposition error"는 숫자를 위치를 바꾸어서 잘못 적은 경우를 말하며, "Omission error"는 숫자를 빠뜨린 경우를 말하며, "Addition error"는 숫자를 추가로 입력한 경우를 말한다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4657,7 +4740,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#j320080907-44" question-id="j320080907-44" question-num="44" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">44</span>. 표준 처리 패턴 중 하나 이상의 파일을 읽고 나서 변형 가공을 하여 입력 파일과 다른 파일을 작성하는 처리는 무엇은가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>Extract</li><li>Collate</li><li>Merge</li><li class="correct">Generate</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 45%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "Generate"이다. Generate는 입력 파일을 기반으로 새로운 파일을 생성하는 것을 의미한다. 따라서 입력 파일을 읽고 변형하여 새로운 파일을 작성하는 처리는 Generate 패턴에 해당한다. Extract는 입력 파일에서 특정 데이터를 추출하는 것을 의미하며, Collate는 여러 파일을 하나로 합치는 것을 의미하며, Merge는 두 개 이상의 파일을 병합하는 것을 의미한다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4703,7 +4786,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#j320080907-45" question-id="j320080907-45" question-num="45" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">45</span>. 소프트웨어 생명주기에 대한 각 단계의 설명으로 옳은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>유지보수단계: 사용자의 문제를 구체적으로 이해하고 소프트웨어가 담당해야 하는 영역을 정의하는 단계</li><li>운용단계: 사용자의 문제를 정의하고 전체 시스템이 갖추어야 할 기본 기능과 성능을 파악하는 단계</li><li class="correct">설계단계: 소프트웨어의 구조와 그 성분을 명확히 밝혀 구현을 준비하는 단계</li><li>계획단계: 개발된 시스템이 요구사항을 정확히 반영하였는가를 테스트하는 단계</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 62%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">설계단계는 소프트웨어의 구조와 그 성분을 명확히 밝혀 구현을 준비하는 단계입니다. 이 단계에서는 요구사항을 바탕으로 소프트웨어의 구조를 설계하고, 모듈화하여 구현을 준비합니다. 따라서 이 단계는 소프트웨어 개발의 핵심적인 단계 중 하나입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4749,7 +4832,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#j320080907-46" question-id="j320080907-46" question-num="46" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">46</span>. 색인순차파일에 대한 설명으로 옳지 않은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>레코드의 삽입과 수정이 용이하다.</li><li class="correct">색인을 저장하기 위한 공간과 오버플로우 처리를 위한 별도의 공간이 필요 없다.</li><li>순차 처리와 랜덤 처리가 모두 가능하다.</li><li>인덱스를 이용한 액세스 때문에 랜덤 편성 파일과 비교해서 액세스 시간이 느리다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 60%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">색인순차파일은 인덱스를 이용한 액세스 때문에 랜덤 편성 파일과 비교해서 액세스 시간이 느리다는 것이 옳지 않은 설명입니다. 색인순차파일은 레코드의 삽입과 수정이 용이하며, 순차 처리와 랜덤 처리가 모두 가능합니다. 하지만 색인을 저장하기 위한 공간과 오버플로우 처리를 위한 별도의 공간이 필요합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4795,7 +4878,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#j320080907-47" question-id="j320080907-47" question-num="47" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">47</span>. 모듈화에 대한 설명으로 거리가 먼 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>시스템 개발시 기간과 노동력을 절감할 수 있다.</li><li>시스템 개발비용을 절감할 수 있다.</li><li>프로그램의 신뢰도를 향상시킬 수 있다.</li><li class="correct">새로운 프로그램 기법을 습득할 수 있다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 70%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"새로운 프로그램 기법을 습득할 수 있다."는 모듈화와 직접적인 관련이 없는 것으로 보입니다. 따라서, 다른 보기들과는 다르게 올바른 답이 아닙니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4841,7 +4924,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#j320080907-48" question-id="j320080907-48" question-num="48" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">48</span>. 정보처리에 소요되는 시간 계산 방법 중 미리 제작사에서 계산을 모두 자동적으로 할 수 있는 프로그램을 준비하여 처리하는 방법은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>입력에 의한 계산 방법</li><li class="correct">컴퓨터에 의한 계산 방법</li><li>출력에 의한 계산 방법</li><li>추정에 의한 계산 방법</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 64%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정보처리에 소요되는 시간을 계산하는 것은 매우 복잡하고 시간이 많이 소요되는 작업입니다. 따라서 미리 제작사에서 계산을 모두 자동적으로 할 수 있는 프로그램을 준비하여 처리하는 것이 가장 효율적입니다. 이를 위해서는 컴퓨터에 의한 계산 방법을 사용해야 합니다. 컴퓨터는 매우 빠르고 정확하게 계산을 수행할 수 있기 때문에, 정보처리에 소요되는 시간을 빠르게 계산할 수 있습니다. 따라서 컴퓨터에 의한 계산 방법이 가장 적합한 방법입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4888,7 +4971,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#j320080907-49" question-id="j320080907-49" question-num="49" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">49</span>. 파일의 종류 중 다음 설명에 해당하는 것은?<img src="images/j320080907m49.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>Transaction file</li><li class="correct">Master file</li><li>Summary file</li><li>History file</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 57%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">위 그림은 데이터베이스에서 사용되는 Master file의 예시입니다. Master file은 기본적으로 모든 데이터를 저장하는 파일로, 다른 파일들의 기초가 되는 파일입니다. 따라서, 위 그림에서는 모든 계좌의 정보가 저장되어 있으며, 이 정보를 바탕으로 다른 파일들이 생성될 수 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4934,7 +5017,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#j320080907-50" question-id="j320080907-50" question-num="50" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">50</span>. 체크 시스템의 종류 중 데이터를 처리하기 전에 입력 자료의 내용을 체크하는 방법으로 사전에 주어진 체크 프로그램에 의해서 정량적인 데이터가 미리 정해 놓은 규정된 범위 내에 존재하는가를 체크하는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">Limit check</li><li>Format check</li><li>Matching check</li><li>Baiance check</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 72%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"Limit check"은 입력된 데이터가 미리 정해진 범위 내에 있는지를 체크하는 방법이기 때문에, 주어진 체크 프로그램에 의해 정량적인 데이터가 정해진 범위를 벗어나는지 확인하는 것이다. 따라서 "Limit check"가 정답이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4980,7 +5063,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#j320080907-51" question-id="j320080907-51" question-num="51" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">51</span>. 데이터 입력 방식 중 발생 데이터를 전표상에 기록하고 일정 시간 단위로 일괄 수집하여 입력 매체에 기록하는 방식은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>음성 입력 시스템</li><li class="correct">집중 매체화 시스템</li><li>분산 매체화 시스템</li><li>턴 어라운드 시스템</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 63%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">집중 매체화 시스템은 발생 데이터를 전표상에 기록하고, 일정 시간 단위로 일괄 수집하여 입력 매체에 기록하는 방식이다. 이는 데이터 입력을 일괄적으로 처리하여 효율성을 높이고, 입력 오류를 줄일 수 있는 장점이 있다. 따라서 이 방식이 데이터 입력 방식 중 발생 데이터를 전표상에 기록하고 일정 시간 단위로 일괄 수집하여 입력 매체에 기록하는 방식인 것이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5026,7 +5109,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#j320080907-52" question-id="j320080907-52" question-num="52" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">52</span>. 코드의 기능 중 각각의 데이터를 상대에 따라 구별하는 기능에 해당하는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>분류 기능</li><li class="correct">식별 기능</li><li>배열 기능</li><li>연상 기능</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 59%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">식별 기능은 각각의 데이터를 고유하게 식별하여 구별하는 기능을 말합니다. 이를 통해 데이터를 정확하게 구분하고, 필요한 데이터를 쉽게 찾을 수 있습니다. 예를 들어, 학생들의 정보를 저장하는 데이터베이스에서 학생들을 고유하게 식별하는 학번이나 주민등록번호가 식별 기능을 수행합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5072,7 +5155,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#j320080907-53" question-id="j320080907-53" question-num="53" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">53</span>. 파일 편성 방법 중 다음 설명에 해당하는 것은?<img src="images/j320080907m53.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>Sequential 편성</li><li>Indexed sequential 편성</li><li>List 편성</li><li class="correct">Random 편성</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 45%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">위 그림은 Random 편성 방법을 보여줍니다. Random 편성 방법은 파일의 레코드를 임의의 위치에 저장하는 방법입니다. 이 방법은 레코드의 크기가 서로 다르거나, 새로운 레코드가 추가되거나 삭제될 때 파일을 재구성할 필요가 없어서 유연성이 높습니다. 또한 레코드의 검색 속도가 빠르지 않은 한 Sequential 편성 방법보다 빠릅니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5118,7 +5201,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#j320080907-54" question-id="j320080907-54" question-num="54" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">54</span>. 럼바우에 의해 제안된 방법으로 모든 소프트웨어의 구성 요소를 그래픽 표기법으로 객체를 모델링하여 시스템개발의 전 단계가 추상화, 캡슐화, 상속성 등의 일관된 객체지향개념이 적용되는 객체지향 개발 방법은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">OMT 방법론</li><li>Booch 방법론</li><li>Shaler 와 Mellor 방법론</li><li>Coad 와 Yourdon 방법론</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 54%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">OMT 방법론은 객체지향 개발 방법 중 하나로, 럼바우에 의해 제안된 방법으로 모든 소프트웨어의 구성 요소를 그래픽 표기법으로 객체를 모델링하여 시스템개발의 전 단계가 추상화, 캡슐화, 상속성 등의 일관된 객체지향개념이 적용되는 방법론이다. 따라서 이 방법론은 객체지향 개념을 중심으로 시스템을 모델링하고 설계하는 것을 강조하며, Booch 방법론, Shaler 와 Mellor 방법론, Coad 와 Yourdon 방법론과 같은 다른 객체지향 개발 방법론들과 구별된다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5164,7 +5247,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#j320080907-55" question-id="j320080907-55" question-num="55" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">55</span>. 출력 설계 단계 중 다음 사항과 관계 있는 것은?<img src="images/j320080907m55.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>출력 정보 내용의 설계</li><li class="correct">출력 정보 이용에 대한 설계</li><li>출력 정보 매체화의 설계</li><li>출력 정보 분배에 대한 설계</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 66%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">주어진 그림은 출력 정보를 이용하는 과정을 나타내고 있으며, 이를 위해서는 출력 정보를 어떻게 이용할 것인지에 대한 설계가 필요합니다. 따라서 정답은 "출력 정보 이용에 대한 설계"입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5210,7 +5293,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#j320080907-56" question-id="j320080907-56" question-num="56" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">56</span>. 다음 자료흐름도에서 자료 저장소에 해당하는 것은?<img src="images/j320080907m56.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>A</li><li>B</li><li>C</li><li class="correct">D</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 49%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">자료 저장소는 데이터를 저장하고 관리하는 공간이다. 위의 자료흐름도에서 데이터가 저장되는 공간은 "데이터베이스"이다. 따라서 정답은 "D"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5257,7 +5340,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#j320080907-57" question-id="j320080907-57" question-num="57" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">57</span>. 입력 설계 단계 중 다음 사항과 관계있는 것은?<img src="images/j320080907m57.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>입력 정보 수집의 설계</li><li>입력 정보의 내용 설계</li><li class="correct">입력 정보 발생의 설계</li><li>입력 정보 매체의 설계</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 61%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">이미지에서는 사용자가 입력하는 정보를 받는 화면이 나타나 있으므로, 이는 입력 정보 발생의 설계와 관련이 있습니다. 따라서 정답은 "입력 정보 발생의 설계"입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5303,7 +5386,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#j320080907-58" question-id="j320080907-58" question-num="58" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">58</span>. 모듈 작성시 주의 사항으로 옳지 않은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">응집도를 최소화하고 결합도를 최대화한다.</li><li>적절한 크기로 작성한다.</li><li>보기 좋고 이해하기 쉽게 작성한다.</li><li>다른 곳에서도 적용이 가능하도록 표준화 한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 78%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"응집도를 최소화하고 결합도를 최대화한다."는 옳은 주의 사항이다. 이는 모듈의 독립성과 유연성을 높이기 위한 것으로, 응집도는 모듈 내부의 기능들이 서로 관련되어 있는 정도를 나타내며, 결합도는 모듈 간의 상호 의존성 정도를 나타낸다. 따라서 응집도를 최소화하고 결합도를 최대화함으로써 모듈의 독립성과 유연성을 높일 수 있다. "적절한 크기로 작성한다.", "보기 좋고 이해하기 쉽게 작성한다.", "다른 곳에서도 적용이 가능하도록 표준화 한다."도 모듈 작성시 주의해야 할 사항이지만, "응집도를 최소화하고 결합도를 최대화한다."가 가장 중요한 이유는 모듈의 기능적인 측면에서의 효율성과 유연성을 보장하기 때문이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5349,7 +5432,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#j320080907-59" question-id="j320080907-59" question-num="59" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">59</span>. 다음과 같이 코드화 대상 항목의 속성을 표시하는 의미가 있는 물체의 크기가 무게 등을 코드 일부에 숫자 형태 그대로 사용하는 코드 분류 방법은?<img src="images/j320080907m59.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>Decimal Code</li><li class="correct">Significant Digit Code</li><li>Block Code</li><li>Sequence Code</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 67%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">이 코드 분류 방법은 "Significant Digit Code"이다. 이유는 코드 일부에 숫자 형태 그대로 사용하는 것으로 보아, 이 코드는 숫자의 유효숫자를 나타내는 것으로 추측할 수 있다. 따라서 이 코드 분류 방법은 숫자의 유효숫자를 기준으로 코드화 대상 항목의 속성을 표시하는 방법이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5395,7 +5478,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#j320080907-60" question-id="j320080907-60" question-num="60" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">60</span>. 문서의 표준화 효과가 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>작업에 대한 관리가 쉬워진다.</li><li>작업의 분업 및 외주 관리가 쉬워진다.</li><li>시스템 분석, 설계를 효율적이고 쉽게 할 수 있다.</li><li class="correct">정해진 도표나 표기법을 사용하므로 프로그램의 작성이 어려워진다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 83%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정해진 도표나 표기법을 사용하므로 프로그램의 작성이 어려워진다는 것은 문서의 표준화 효과가 아닌 것이다. 이는 표준화된 도표나 표기법을 사용하는 것이 개발자들에게 불편함을 초래할 수 있기 때문이다. 이는 개발자들이 새로운 도표나 표기법을 배워야 하기 때문에 시간과 노력이 더 필요하며, 이로 인해 프로그램의 작성이 더 어려워질 수 있다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5446,7 +5529,9 @@ $(function(){
 </div>
 </div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#j320080907-61" question-id="j320080907-61" question-num="61" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">61</span>. 디스크에서 헤드가 60트랙을 처리하고 70 트랙으로 이동해 왔다. 디스크 스케줄링 기법으로 SCAN 방식을 사용할 때 다음 디스크 대기 큐에서 가장 먼저 처리되는 트랙은?<img src="images/j320080907m61.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>20</li><li>50</li><li class="correct">95</li><li>100</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 53%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">SCAN 방식은 디스크 헤드가 한 방향으로 이동하면서 해당 방향에 있는 모든 트랙을 처리한 후, 반대 방향으로 이동하여 다시 모든 트랙을 처리하는 방식이다. 따라서, 현재 헤드 위치에서 가장 가까운 트랙부터 처리하면서 이동하게 된다.<br/>
+<br/>
+현재 헤드 위치는 70 트랙이므로, SCAN 방식에서는 헤드가 오른쪽 방향으로 이동하면서 70 트랙 이후에 있는 트랙들을 처리하게 된다. 따라서, 대기 큐에서 70 트랙 이후에 있는 가장 가까운 트랙은 95 트랙이므로, 다음에 처리되는 트랙은 95 트랙이 된다. 따라서 정답은 "95"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5492,7 +5577,18 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#j320080907-62" question-id="j320080907-62" question-num="62" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">62</span>. 다음과 같은 작업이 차례로 준비상태 큐에 들어왔다고 가정할 때, SJF 방식의 프로세스 스케줄링 기법을 사용한다면 평균 반환 시간은?<img src="images/j320080907m62.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">13</li><li>14</li><li>15</li><li>24</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 44%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">SJF 방식은 실행 시간이 가장 짧은 프로세스를 먼저 실행하는 방식입니다. 따라서 준비상태 큐에 있는 프로세스들의 실행 시간을 비교하여 가장 짧은 시간을 가진 프로세스를 먼저 실행합니다. <br/>
+<br/>
+위의 작업을 실행 시간이 짧은 순서대로 정렬하면 다음과 같습니다. <br/>
+<br/>
+작업 1 : 3초 <br/>
+작업 2 : 4초 <br/>
+작업 3 : 5초 <br/>
+작업 4 : 6초 <br/>
+<br/>
+따라서, 첫 번째 작업을 실행하고 3초 후에 끝나게 됩니다. 두 번째 작업은 3초 후에 들어오고, 이전 작업이 끝나기까지 1초 대기한 후 실행되므로 4초 후에 끝나게 됩니다. 세 번째 작업은 7초 후에 들어오고, 이전 작업이 끝나기까지 3초 대기한 후 실행되므로 12초 후에 끝나게 됩니다. 마지막으로 네 번째 작업은 12초 후에 들어오고, 이전 작업이 끝나기까지 6초 대기한 후 실행되므로 18초 후에 끝나게 됩니다. <br/>
+<br/>
+따라서, 평균 반환 시간은 (3+4+12+18)/4 = 13.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5538,7 +5634,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#j320080907-63" question-id="j320080907-63" question-num="63" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">63</span>. 가상기억장치 구현시 페이지 크기가 클 경우에 대한 설명으로 옳지 않은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">입,출력 효율성이 저하된다.</li><li>프로그램 수행에 필요하지 않은 데이터도 주기억장치에 적재될 수 있다.</li><li>페이지 단편화로 많은 기억 공간을 낭비할 수 있다.</li><li>페이지 맵 테이블의 크기가 작아진다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 41%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"입,출력 효율성이 저하된다."가 옳지 않은 설명이다. 페이지 크기가 클 경우, 입출력 효율성은 오히려 향상될 수 있다. 이는 한 번에 더 많은 데이터를 입출력할 수 있기 때문이다. 그러나 프로그램 수행에 필요하지 않은 데이터도 주기억장치에 적재될 수 있고, 페이지 단편화로 많은 기억 공간을 낭비할 수 있으며, 페이지 맵 테이블의 크기가 작아질 수 있다는 문제점이 있다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5584,7 +5680,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#j320080907-64" question-id="j320080907-64" question-num="64" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">64</span>. 시스템과 그 시스템 내의 자료에 대한 정보의 무결성과 안정성을 어떻게 보안할 것인지에 관련된 사항을 의미하는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>보호</li><li class="correct">보안</li><li>침투</li><li>해킹</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 74%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"보안"은 시스템과 그 내부 자료를 외부로부터 보호하여 무결성과 안정성을 유지하는 것을 의미합니다. 따라서 다른 보기들인 "보호", "침투", "해킹"은 보안을 위한 방법이나 위협 요소로서 언급될 수 있지만, "보안"은 이러한 방법들을 통해 시스템과 자료를 보호하는 목적을 갖고 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5631,7 +5727,24 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#j320080907-65" question-id="j320080907-65" question-num="65" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">65</span>. LRU 교체 알고리즘을 사용하고 페이지 참조의 순서가 다음과 같을 경우 할당된 프레임의 수가 3개일 때 몇 번의 페이지 부재가 발생하는가? (단, 현재 모든 페이지 프레임은 비어 있다고 가정한다.)<img src="images/j320080907m65.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>7</li><li>8</li><li>9</li><li class="correct">10</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 37%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">LRU 교체 알고리즘은 가장 오랫동안 참조되지 않은 페이지를 교체하는 알고리즘이다. <br/>
+<br/>
+할당된 프레임의 수가 3개이므로, 처음 3개의 페이지 참조는 모두 페이지 부재가 발생한다. <br/>
+<br/>
+그 이후로는 다음과 같이 페이지 참조가 이루어진다. <br/>
+<br/>
+1. 1 2 3 : 페이지 부재 발생 (1, 2, 3이 각각 프레임에 할당된다.)<br/>
+2. 4 1 2 : 페이지 부재 발생 (4가 프레임에 할당된다.)<br/>
+3. 3 4 1 : 페이지 부재 발생 (3이 프레임에 할당된다.)<br/>
+4. 1 3 5 : 페이지 부재 발생 (5가 프레임에 할당된다.)<br/>
+5. 2 3 5 : 페이지 부재 발생 (2가 프레임에 할당된다.)<br/>
+6. 2 3 4 : 페이지 부재 발생 (4가 프레임에 할당된다.)<br/>
+7. 5 2 4 : 페이지 부재 발생 (5가 이미 프레임에 있으므로 부재 발생 X)<br/>
+8. 2 4 1 : 페이지 부재 발생 (1이 프레임에 할당된다.)<br/>
+9. 4 1 5 : 페이지 부재 발생 (4와 1은 이미 프레임에 있으므로 부재 발생 X)<br/>
+10. 1 2 3 : 페이지 부재 발생 (3이 이미 프레임에 있으므로 부재 발생 X)<br/>
+<br/>
+따라서, 총 7번의 페이지 부재가 발생하며, 마지막 4개의 페이지 참조 중에서는 ["7", "8", "9", "10"]에서 페이지 부재가 발생하지 않는다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5677,7 +5790,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#j320080907-66" question-id="j320080907-66" question-num="66" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">66</span>. 임계구역(Critical Section)에 대한 설명으로 옳지 않은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">프로세스가 일정 시간 동안 자주 참조하는 페이지의 집합을 임계 구역이라 한다.</li><li>임계 구역에서 프로세스 수행은 가능한 빨리 끝내야 한다.</li><li>임계 구역에서는 프로세스가 무한 루프에 빠지지 않도록 해야 한다.</li><li>임계 구역에서는 프로세스들이 하나씩 순차적으로 처리되어야 한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 66%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"프로세스가 일정 시간 동안 자주 참조하는 페이지의 집합을 임계 구역이라 한다."가 옳지 않은 설명입니다. 임계 구역은 공유 자원에 대한 접근을 제어해야 하는 코드 영역을 말합니다. 따라서 페이지와는 관련이 없습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5723,7 +5836,9 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#j320080907-67" question-id="j320080907-67" question-num="67" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">67</span>. 교착 상태가 발생하려면 4가지 필요충분조건들이 충족되어야 한다. 이들 조건에 대한 설명으로 옳지 않는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">상호배제: 최소한 하나의 자원이 공유 방식으로 점유되어야 한다.</li><li>점유 및 대기: 최소한 하나의 자원을 점유하고 있는 프로세스가 있어야 하며, 이 프로세스가 다른 프로세스에 의하여 점유된 자원을 추가로 얻기 위해 대기하고 있어야 한다.</li><li>비선점: 자원들을 선점하지 못한다.</li><li>순환대기: 대기하고 있는 프로세스의 집합 {P0, P1, …Pn}에서 P0은 P1이 점유한 자원을 대기하고, P1은 P2를 대기하며 Pn은 P0가 점유한 자원을 요청하기 위해 대기한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 55%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"비선점: 자원들을 선점하지 못한다."는 교착 상태의 필요충분조건 중 하나이지만, 이 조건이 충족되지 않아도 교착 상태가 발생할 수 있다는 것이 옳은 설명이다.<br/>
+<br/>
+"상호배제: 최소한 하나의 자원이 공유 방식으로 점유되어야 한다."는 교착 상태의 필요충분조건 중 하나이다. 이는 여러 프로세스가 동시에 하나의 자원을 사용할 수 없도록 제한하는 것으로, 한 번에 하나의 프로세스만이 자원을 사용할 수 있도록 하는 것이다. 이 조건이 충족되지 않으면 여러 프로세스가 동시에 자원을 사용할 수 있어 교착 상태가 발생할 가능성이 높아진다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5769,7 +5884,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#j320080907-68" question-id="j320080907-68" question-num="68" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">68</span>. 13K의 작업을 다음 그림의 30K 공백의 작업공간에 할당했을 경우 사용된 기억장치 배치전략 기법은?<img src="images/j320080907m68.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>Last fit</li><li>First fit</li><li>Best fit</li><li class="correct">Worst fit</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 75%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">사용된 기억장치 배치전략 기법은 "Worst fit"입니다. 이유는 13K의 작업을 할당할 때, 가장 큰 공간인 30K의 공간 중에서 가장 작은 공간을 선택하는 것이기 때문입니다. 이 방법은 작은 공간들이 많이 생기는 단편화 문제를 야기할 수 있지만, 큰 공간을 확보할 수 있어 큰 파일을 저장하는 데 유리합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5815,7 +5930,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#j320080907-69" question-id="j320080907-69" question-num="69" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">69</span>. 운영체제에 대한 설명으로 옳지 않은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>사용자와 컴퓨터 간의 인터페이스 역할을 한다.</li><li>컴퓨터시스템의 자원을 효율적으로 관리하는 역할을 한다.</li><li>사용자에게 편리성을 제공하는 역할을 한다.</li><li class="correct">사용가능도를 낮추어 반환시간을 증가시키는 역할을 한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 80%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"사용가능도를 낮추어 반환시간을 증가시키는 역할을 한다."는 옳지 않은 설명입니다. 사용가능도를 낮추는 것은 시스템의 성능을 저하시키는 역할을 하기 때문에 올바른 설명이 아닙니다. 사용가능도를 높이는 것이 시스템의 성능을 향상시키는 방법입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5861,7 +5976,9 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#j320080907-70" question-id="j320080907-70" question-num="70" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">70</span>. 다음의 a, b, c, d 작업 중 운영체제가 CPU 스케줄링 기법으로 HRN 방식을 구현했을 때 우선순위가 가장 낮은 작업은?<img src="images/j320080907m70.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>a</li><li>b</li><li class="correct">c</li><li>d</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 49%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">HRN 방식은 우선순위를 작업의 남은 실행 시간과 대기 시간의 비율로 결정합니다. 따라서 실행 시간이 길고 대기 시간이 짧은 작업일수록 높은 우선순위를 가지게 됩니다. <br/>
+<br/>
+위의 작업 중에서 c 작업은 실행 시간이 가장 짧고 대기 시간도 짧습니다. 따라서 HRN 방식에서는 가장 낮은 우선순위를 가지게 됩니다. 따라서 정답은 "c"입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5907,7 +6024,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#j320080907-71" question-id="j320080907-71" question-num="71" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">71</span>. 시스템에서 프로세스들은 병행하여 처리할 수 있다. 병행 처리를 허용하는 이유로 거리가 먼 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>컴퓨터 하드웨어 자원이 한정되어 있으므로 다수의 사용자 환경에서 자원을 공유해야 하기 때문에</li><li>여러 사용자가 같은 정보를 참조할 수 있으므로 이들 자원에 동시에 접근할 수 있도록 하기 위해서</li><li class="correct">시스템 기능을 하나의 프로세스로 통합하여 시스템을 구성 할 수 있도록 하기 위하여</li><li>개별 사용자들도 동시에 처리해야 하는 많은 태스크(task)를 가질 수 있기 때문에</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 50%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">시스템 기능을 하나의 프로세스로 통합하여 시스템을 구성할 수 있도록 함으로써, 시스템의 구성과 관리를 간편하게 할 수 있기 때문이다. 이를 통해 시스템의 유지보수 및 업그레이드가 용이해지며, 시스템의 안정성과 성능도 향상시킬 수 있다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5953,7 +6070,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#j320080907-72" question-id="j320080907-72" question-num="72" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">72</span>. 분산 처리 운영체제 시스템의 특징으로 거리가 먼 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">시스템 설계의 단순화</li><li>연산속도의 향상</li><li>자원 공유</li><li>신뢰성 증진</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 69%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">분산 처리 운영체제 시스템에서 시스템 설계의 단순화는 중요한 특징 중 하나이다. 이는 분산 시스템에서 각각의 노드가 독립적으로 작동하며, 서로 통신하면서 작업을 수행하기 때문에 시스템 전체를 하나의 단일 시스템으로 설계하는 것보다 각 노드를 개별적으로 설계하고 구성하는 것이 더 간단하고 효율적이기 때문이다. 이를 통해 시스템의 유지보수 및 관리가 용이해지며, 시스템의 확장성도 높아진다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6000,7 +6117,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#j320080907-73" question-id="j320080907-73" question-num="73" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">73</span>. 운영체제의 운영 기법 중 실시간 처리 시스템에 적합하지 않은 업무는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">연말 결산 업무</li><li>은행의 온라인 업무</li><li>비행기, 기차 등의 좌석 예약 업무</li><li>인공위성, 군함 등의 제어 업무</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 74%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">연말 결산 업무는 실시간 처리가 필요하지 않은 일괄 처리 작업이기 때문에 실시간 처리 시스템에 적합하지 않습니다. 다른 업무들은 실시간으로 처리해야 하기 때문에 실시간 처리 시스템에 적합합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6046,7 +6163,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#j320080907-74" question-id="j320080907-74" question-num="74" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">74</span>. 비선점 스케줄링의 특징으로 거리가 먼 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>이미 할당된 CPU를 다른 프로세스가 강제로 빼앗을 수 없다.</li><li class="correct">우선 순위가 높은 프로세스가 먼저 수행되어야 할 때 유용하다.</li><li>응답시간의 예측이 용이하다.</li><li>처리 시간이 짧은 작업이 긴 작업을 기다리는 경우가 종종 발생한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 41%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">비선점 스케줄링은 이미 할당된 CPU를 다른 프로세스가 강제로 빼앗을 수 없는 특징을 가지고 있습니다. 이러한 특징 때문에 우선 순위가 높은 프로세스가 먼저 수행되어야 할 때 유용합니다. 즉, 우선 순위가 높은 작업이 먼저 처리되어야 하는 경우에 사용됩니다. 이러한 특징은 응답시간의 예측이 용이하고, 처리 시간이 짧은 작업이 긴 작업을 기다리는 경우가 종종 발생하는 경우에는 적합하지 않습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6092,7 +6209,13 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#j320080907-75" question-id="j320080907-75" question-num="75" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">75</span>. 디스크의 SSTF 스케줄링 기법에 대한 설명으로 옳지 않은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">먼저 도착한 요청이 먼저 서비스를 받는다.</li><li>응답시간의편차가 크다.</li><li>일괄 처리에 유용하다.</li><li>헤드에서 멀리 떨어진 요청은 기아 상태가 발생할 수 있다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 39%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">일괄 처리에 유용하다는 설명이 옳지 않습니다.<br/>
+<br/>
+먼저 도착한 요청이 먼저 서비스를 받는 이유는, SSTF 스케줄링 기법이 현재 헤드 위치에서 가장 가까운 요청을 먼저 처리하기 때문입니다. 이렇게 하면 헤드 이동 거리가 최소화되어 응답시간이 단축되고, 디스크의 성능이 향상됩니다. <br/>
+<br/>
+하지만 이 방법은 헤드와 가장 가까운 요청을 먼저 처리하기 때문에, 헤드와 멀리 떨어진 요청은 기아 상태가 발생할 수 있습니다. 또한, 응답시간의 편차가 크다는 단점도 있습니다. <br/>
+<br/>
+따라서 SSTF 스케줄링 기법은 일괄 처리에는 적합하지 않습니다. 일괄 처리에서는 모든 요청이 동시에 처리되기 때문에, 헤드와 가까운 요청만 처리하면 다른 요청들은 대기 상태에 머물러야 하기 때문입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6138,7 +6261,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#j320080907-76" question-id="j320080907-76" question-num="76" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">76</span>. 파일 디스크립터에 대한 설명으로 옳지 않은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>파일 관리를 위해 시스템이 필요로 하는 정보를 가지고 있다.</li><li>파일의 구조, 보조 기억 장치의 유형, 보조 기억장치에서의 파일 위치 등의 정보를 포함한다.</li><li>File Control Block 이라고도 한다.</li><li class="correct">사용자가 관리하므로 사용자가 직접 참조할 수 있다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 63%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"사용자가 관리하므로 사용자가 직접 참조할 수 있다."는 파일 디스크립터에 대한 설명으로 옳은 것이다. 파일 디스크립터는 파일을 식별하고 파일에 대한 정보를 저장하는 역할을 하며, 이 정보는 사용자가 직접 참조하여 파일을 관리할 수 있다. 따라서 이 보기는 옳은 설명이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6184,7 +6307,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#j320080907-77" question-id="j320080907-77" question-num="77" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">77</span>. 디렉토리 구조 중 다음 설명에 해당하는 것은?<img src="images/j320080907m77.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>1단계 디렉토리 구조</li><li class="correct">트리 디렉토리 구조</li><li>2단계 디렉토리 구조</li><li>비순환 그래프 디렉토리 구조</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 65%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">위의 디렉토리 구조는 루트 디렉토리에서 시작하여 하위 디렉토리들이 계층적으로 구성되어 있는 트리 구조를 가지고 있기 때문에 "트리 디렉토리 구조"라고 할 수 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6230,7 +6353,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#j320080907-78" question-id="j320080907-78" question-num="78" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">78</span>. UNIX에서 I-node 에 포함되는 정보가 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>파일의 크기</li><li>소유자가 속한 그룹의 식별</li><li>파일에 대한 링크 수</li><li class="correct">파일이 최초에 변경된 시간</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 56%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">I-node에는 파일의 크기, 소유자가 속한 그룹의 식별, 파일에 대한 링크 수 등의 정보가 포함되지만, 파일이 최초에 변경된 시간은 I-node에 포함되지 않는다. 이는 파일의 메타데이터 중 하나로, 파일의 최초 생성 시간과 마지막 수정 시간, 마지막 접근 시간 등과 함께 파일의 상태를 나타내는 정보이다. 이러한 정보는 파일 시스템에서 별도로 관리되며, 파일의 속성을 확인하거나 파일을 수정할 때 참조된다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6276,7 +6399,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#j320080907-79" question-id="j320080907-79" question-num="79" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">79</span>. 프로세스의 정의로 거리가 먼 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>프로세서가 할당되는 실체</li><li class="correct">동기적 행위를 일으키는 주체</li><li>PCB를 가진 프로그램</li><li>프로시저가 활동 중인 것</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 62%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">프로세스는 실행 중인 프로그램으로, 동기적 행위를 일으키는 주체입니다. 이는 프로세스가 CPU를 할당받아 실행되면서 다양한 작업을 수행하고, 다른 프로세스와 상호작용하며 시스템 자원을 사용하게 되기 때문입니다. 따라서 프로세스는 단순히 프로세서가 할당되는 실체나 PCB를 가진 프로그램, 프로시저가 활동 중인 것과는 다른 개념입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6322,7 +6445,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#j320080907-80" question-id="j320080907-80" question-num="80" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">80</span>. UNIX에서 프로세스를 제거하는 명령은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">kill</li><li>exit</li><li>close</li><li>rm</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 61%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"kill" 명령은 UNIX에서 프로세스를 강제로 종료시키는 명령이다. "exit"는 현재 프로세스를 종료하는 명령이고, "close"는 파일을 닫는 명령이며, "rm"은 파일을 삭제하는 명령이다. 따라서, 프로세스를 제거하기 위해서는 "kill" 명령을 사용해야 한다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6373,7 +6496,7 @@ $(function(){
 </div>
 </div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#j320080907-81" question-id="j320080907-81" question-num="81" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">81</span>. 다음 중 주파수분할 다중화 방식에서 인접하는 서브채널(sub-channel)들 사이에 두는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>터미널(terminal)</li><li>대역폭(frequency band)</li><li class="correct">보호대역(guard band)</li><li>타임슬롯(time slot)</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 52%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">주파수분할 다중화 방식에서 인접하는 서브채널들 사이에는 보호대역(guard band)을 두어야 한다. 이는 서로 다른 서브채널들이 서로 간섭하지 않도록 하기 위함이다. 보호대역은 인접한 서브채널들의 주파수 대역을 분리하는 역할을 하며, 이를 통해 서로 간섭 없이 통신할 수 있게 된다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6419,7 +6542,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#j320080907-82" question-id="j320080907-82" question-num="82" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">82</span>. 다음 중 CATV의 주요 구성 요소와 거리가 먼 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>헤드엔드(Head Ent)</li><li class="correct">송신 안테나</li><li>전송로</li><li>가입자 단말장치</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 33%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">CATV는 케이블 텔레비전을 의미하며, 주요 구성 요소는 헤드엔드, 전송로, 가입자 단말장치입니다. 송신 안테나는 무선 통신에서 사용되는 구성 요소이며, CATV와는 거리가 먼 요소입니다. 따라서 정답은 "송신 안테나"입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6465,7 +6588,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#j320080907-83" question-id="j320080907-83" question-num="83" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">83</span>. 분리된 두 장치 간에 교대로 데이터를 교환하는 통신방식을 무엇이라 하는가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>단향 통신방식</li><li class="correct">반이중 통신방식</li><li>전이중 통신방식</li><li>포인트 투 포인트 방식</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 69%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">반이중 통신방식은 두 장치 간에 데이터를 교환할 때, 양쪽 장치가 동시에 데이터를 보내고 받을 수 있는 방식을 말합니다. 이 방식은 전송 속도가 빠르고 신뢰성이 높아서 대부분의 통신에 사용됩니다. 반면에 단방향 통신방식은 한쪽에서만 데이터를 보내고 다른 한쪽에서는 받기만 가능한 방식이며, 전이중 통신방식은 두 장치가 동시에 데이터를 보내고 받을 수 있지만, 각각의 데이터 전송 경로가 별도로 존재하여 복잡하고 비용이 많이 듭니다. 포인트 투 포인트 방식은 특정한 두 장치 간에만 데이터를 교환하는 방식을 말합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6511,7 +6634,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#j320080907-84" question-id="j320080907-84" question-num="84" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">84</span>. 다음 중 ITU-T의 권고안 X 시리즈는 어떤 내용인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>전화망을 이용한 데이터전송에 관한 사항</li><li>축적프로그램 제어식 교환의 프로그램에 관한 사항</li><li class="correct">공중데이터통신망을 이용한 데이터전송에 관한 사항</li><li>전신의 전송 및 교환에 관한 사항</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 63%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">ITU-T의 권고안 X 시리즈는 공중데이터통신망을 이용한 데이터전송에 관한 사항을 다루는 권고안 시리즈입니다. 이는 인터넷과 같은 공중데이터통신망을 이용하여 데이터를 전송하는 기술과 관련된 규격을 제공합니다. 따라서 "공중데이터통신망을 이용한 데이터전송에 관한 사항"이 정답입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6557,7 +6680,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#j320080907-85" question-id="j320080907-85" question-num="85" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">85</span>. OSI 7계층 참조모델 중 데이터링크 계층의 주요기능에 해당되지 않는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>데이터링크의 설정과 해지</li><li class="correct">경로설정 및 다중화</li><li>에러제어</li><li>흐름제어</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 51%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">데이터링크 계층의 주요 기능 중 경로 설정 및 다중화는 네트워크 계층에서 수행되는 기능이므로 해당되지 않습니다. 데이터링크 계층은 물리적인 매체를 통해 데이터를 전송하고, 에러 제어와 흐름 제어를 수행합니다. 또한 데이터링크의 설정과 해지는 데이터링크 계층에서 수행됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6603,7 +6726,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#j320080907-86" question-id="j320080907-86" question-num="86" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">86</span>. 다음 중 미국의 군사용 방공시스템으로 사용된 최초의 데이터 통신시스템은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>ARPA</li><li>CTSS</li><li>SABRE</li><li class="correct">SAGE</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 60%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "SAGE"입니다. SAGE는 1950년대 후반에 미국에서 개발된 Semi-Automatic Ground Environment의 약자로, 군사용 방공시스템으로 사용된 최초의 데이터 통신시스템입니다. SAGE는 미국과 캐나다의 공군이 공동으로 운영하며, 미국의 방공작전을 지원하는 중요한 역할을 했습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6649,7 +6772,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#j320080907-87" question-id="j320080907-87" question-num="87" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">87</span>. 가상회선방식의 패킷 교환망에서 프로토콜이 수행하는 기능이 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>순서제어</li><li>흐름제어</li><li>오류제어</li><li class="correct">시간제어</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 58%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">가상회선방식의 패킷 교환망에서는 시간제어 기능이 필요하지 않습니다. 이는 가상회선 방식에서 패킷이 전송될 때 미리 예약된 회선을 따라 전송되기 때문에, 패킷이 도착하는 시간이 일정하게 보장되기 때문입니다. 따라서 시간제어 기능은 필요하지 않습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6695,7 +6818,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#j320080907-88" question-id="j320080907-88" question-num="88" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">88</span>. 다음 중 ATM 셀의 헤더를 구성하는 필드에서 경로배정용에 사용되는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>GFC(Generic flow control)</li><li class="correct">VPI (Virtual path identifier)</li><li>PT (Paylode type)</li><li>CLP (Cell loss priority)</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 48%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">ATM 셀의 헤더를 구성하는 필드 중 경로배정용에 사용되는 것은 VPI (Virtual path identifier)입니다. VPI는 가상 경로 식별자로, ATM 네트워크에서 데이터가 전송될 경로를 식별하는 데 사용됩니다. 이를 통해 ATM 네트워크는 데이터를 올바른 경로로 전송할 수 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6742,7 +6865,9 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#j320080907-89" question-id="j320080907-89" question-num="89" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">89</span>. 다음 중 패킷교환망의 특징이 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>회선이용 효율의 극대화</li><li>전송품질이 우수하며 고신뢰성</li><li>정보를 패킷단위로 전송</li><li class="correct">컴퓨터와 단말 사이에 직접적인 통신회선 설정</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 60%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답: "컴퓨터와 단말 사이에 직접적인 통신회선 설정"<br/>
+<br/>
+패킷교환망은 정보를 패킷 단위로 전송하며, 회선 이용 효율을 극대화하고 전송 품질이 우수하며 고신뢰성을 가지는 특징이 있습니다. 하지만 패킷교환망은 컴퓨터와 단말 사이에 직접적인 통신회선을 설정하지 않습니다. 대신 패킷교환망은 여러 개의 노드를 거쳐서 패킷을 전송하며, 각 노드는 패킷을 받아서 다음 노드로 전송하는 역할을 합니다. 따라서 패킷교환망은 컴퓨터와 단말 사이에 직접적인 통신회선을 설정하지 않는다는 것이 특징입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6788,7 +6913,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#j320080907-90" question-id="j320080907-90" question-num="90" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">90</span>. ITU-T에서 권고한 B-ISDN ATM의 프로토콜 구조가 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>사용자 평면</li><li>제어 평면</li><li class="correct">통합 평면</li><li>관리 평면</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 31%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">B-ISDN ATM의 프로토콜 구조에서 "통합 평면"은 존재하지 않습니다. 대신, 사용자 평면, 제어 평면, 관리 평면이 존재합니다. 이들은 각각 ATM 네트워크에서 데이터 전송, 연결 설정 및 해제, 네트워크 관리 등의 역할을 담당합니다. "통합 평면"은 ITU-T에서 권고한 ATM 프로토콜 구조와는 관련이 없는 용어입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6834,7 +6959,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#j320080907-91" question-id="j320080907-91" question-num="91" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">91</span>. 다음 중 LAN의 한 종류인 “10Base 5" 네트워크에서 사용되는 표준 전송매체는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">Coaxial cable</li><li>Optical cable</li><li>UTP(unshielded twisted pair)</li><li>Microwave</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 33%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">10Base 5 네트워크에서는 Coaxial cable이 사용됩니다. 이는 두 개의 동심원 구조로 이루어진 케이블로, 내부의 동심원은 신호를 전송하고 외부의 셰일드는 외부 잡음을 차단하여 신호의 안정성을 유지합니다. 따라서 Coaxial cable은 안정적인 전송을 위해 10Base 5 네트워크에서 사용되는 표준 전송매체입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6880,7 +7005,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#j320080907-92" question-id="j320080907-92" question-num="92" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">92</span>. 다음 중 DSU(Digital Service Unit)의 기능은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>아날로그 신호를 디지털 데이터로 변환시킨다.</li><li>디지털 데이터를 아날로그 신호로 변환시킨다.</li><li>아날로그 신호를 아날로그 데이터로 변환시킨다.</li><li class="correct">디지털 데이터를 디지털 신호로 변환시킨다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 67%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">DSU는 디지털 데이터를 디지털 신호로 변환시키는 기능을 수행합니다. 이는 디지털 데이터를 전송 가능한 형태로 만들어주는 역할을 합니다. 디지털 신호는 0과 1로 이루어진 이진수열로 표현되며, 이를 통해 디지털 데이터를 전송할 수 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6926,7 +7051,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#j320080907-93" question-id="j320080907-93" question-num="93" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">93</span>. 전화와 텔레비전의 연결에 의한 정보서비스 형태는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">비디오텍스(videotex)</li><li>탤리텍스트(teletext)</li><li>팩시밀리 (fax)</li><li>텔렉스(telex)</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 58%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">비디오텍스는 전화와 텔레비전을 이용하여 정보를 제공하는 서비스 형태이다. 사용자는 텔레비전 화면에 나타난 메뉴를 선택하여 원하는 정보를 검색하거나, 전화를 통해 정보를 요청할 수 있다. 이러한 방식으로 제공되는 정보는 텍스트, 그래픽, 이미지 등 다양한 형태로 제공된다. 따라서, 비디오텍스가 전화와 텔레비전의 연결에 의한 정보서비스 형태라고 할 수 있다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6972,7 +7097,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#j320080907-94" question-id="j320080907-94" question-num="94" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">94</span>. 다음 중 아날로그 변조방식이 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>진폭 변조</li><li>주파수 변조</li><li>위상 변조</li><li class="correct">채널 변조</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 70%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">채널 변조는 아날로그 신호를 디지털 신호로 변환하여 전송하는 디지털 변조 방식이므로 아날로그 변조 방식이 아니다. 진폭 변조, 주파수 변조, 위상 변조는 모두 아날로그 신호를 변조하여 전송하는 방식이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -7018,7 +7143,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#j320080907-95" question-id="j320080907-95" question-num="95" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">95</span>. 전송할 데이터의 앞 부분과 뒷 부분에 헤더(header)와 트레일러(trailer)를 첨가 시키는 과정은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>정보의 분할</li><li class="correct">정보의 캡슐화</li><li>동기화</li><li>순서지정</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 53%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정보의 캡슐화는 데이터를 전송하기 전에 헤더와 트레일러를 추가하여 하나의 패킷으로 묶는 과정을 말한다. 이를 통해 데이터의 안정성과 보안성을 높일 수 있으며, 전송 중에 발생할 수 있는 오류나 손실을 최소화할 수 있다. 따라서 이 문제에서는 "정보의 캡슐화"가 정답이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -7064,7 +7189,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#j320080907-96" question-id="j320080907-96" question-num="96" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">96</span>. 샤논(Shannon)의 정리에서 통신 채널용량에 관한 설명으로 적합하지 않은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>대역폭(W)에 비례한다.</li><li>신호대잡음비(S/N)가 클수록 증가한다.</li><li>신호전력(S)이 클수록 증가한다.</li><li class="correct">잡음전력(N)과는 무관하다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 60%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">잡음전력(N)과는 무관하다는 설명은 적합하지 않다. 이는 샤논의 정리에서 통신 채널용량은 대역폭(W)과 신호대잡음비(S/N)에 의해 결정되는데, 잡음전력(N)은 신호대잡음비(S/N)에 영향을 미치기 때문이다. 따라서 잡음전력(N)이 증가하면 신호대잡음비(S/N)이 감소하고, 이로 인해 통신 채널용량도 감소하게 된다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -7111,7 +7236,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#j320080907-97" question-id="j320080907-97" question-num="97" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">97</span>. 디지털 변조 방식 중에서 전송속도를 높이기 위하여 위상과 진폭을 함께 변화시켜서 변조하는 방식은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>ASK</li><li>PSK</li><li>FSK</li><li class="correct">QAM</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 64%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">QAM은 Quadrature Amplitude Modulation의 약자로, 위상과 진폭을 함께 변화시켜서 변조하는 방식입니다. 이 방식은 두 개의 진폭과 두 개의 위상을 조합하여 4개의 신호를 만들어 전송할 수 있습니다. 이를 통해 전송속도를 높일 수 있습니다. 따라서 QAM이 정답입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -7157,7 +7282,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#j320080907-98" question-id="j320080907-98" question-num="98" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">98</span>. 다음 중 외부의 전자기적인 영향을 받지 않는 매체는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>동축 케이블</li><li>트위스트페어 케이블</li><li class="correct">광섬유 케이블</li><li>UTP 케이블</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 70%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">광섬유 케이블은 전기 신호가 아닌 빛의 신호를 이용하여 데이터를 전송하기 때문에 외부의 전자기적인 영향을 받지 않습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -7203,7 +7328,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#j320080907-99" question-id="j320080907-99" question-num="99" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">99</span>. 다음 통신망 구성 형태 중 각 노드가 계층적으로 구성되어 있는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">트리(Tree)형</li><li>링(Ring)형</li><li>스타(star)형</li><li>버스(Bus)형</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 72%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">트리(Tree)형 구성은 각 노드가 계층적으로 구성되어 있어서, 상위 노드에서 하위 노드로 데이터가 전달되는 구조입니다. 이러한 구성은 중앙 집중식으로 관리하기 쉽고, 확장성이 높아서 대규모 네트워크에서 많이 사용됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -7249,7 +7374,9 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#j320080907-100" question-id="j320080907-100" question-num="100" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">100</span>. 다음 중 3~30[MHz]의 주파수 범위에 해당하는 명칭은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>LF</li><li>MF</li><li class="correct">HF</li><li>VHF</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 31%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답: HF<br/>
+<br/>
+해당 주파수 범위는 고주파(High Frequency)로서, 라디오 통신에서 중거리 통신에 사용되는 주파수 범위입니다. 이 범위는 지상파 방송, 국제 통신, 해상 통신 등에 사용됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>

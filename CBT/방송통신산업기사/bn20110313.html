@@ -489,6 +489,15 @@ var g5_cookie_domain = ".cbtkorea.kr";
 
 <!-- CANONICAL-CBT -->
 <link rel="canonical" href="https://cbtkorea.kr/CBT/%EB%B0%A9%EC%86%A1%ED%86%B5%EC%8B%A0%EC%82%B0%EC%97%85%EA%B8%B0%EC%82%AC/bn20110313.html">
+<!-- AI-EXP-RESTORED -->
+<style>
+    .reply .report-modal, .reply .loading, .reply .reply-component { display: none !important; }
+    .ai-exp { list-style: none; padding: 0; margin: 0 0 10px 0; }
+    .ai-exp:last-child { margin-bottom: 0; }
+    .ai-exp-label { font-size: 12px; font-weight: 700; color: #1d4ed8; margin-bottom: 6px; }
+    .ai-exp-label small { font-weight: 400; color: #6b7280; margin-left: 6px; }
+    .ai-exp-empty { font-size: 13px; color: #6b7280; }
+</style>
 </head>
 <body>
 <!-- 상단 시작 { -->
@@ -2665,7 +2674,9 @@ $(function(){
 </div>
 </div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bn20110313-1" question-id="bn20110313-1" question-num="1" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">1</span>. 전원설비 중 정류기의 특성 변수 결정 방법으로 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>최대역전압 = 정류기의 다이오드에 걸리는 역방향 최대치</li><li>정류효율 = (출력 직류 전류 / 입력 교류 전류) ×100[%]</li><li class="correct">전압변동률 = {(무부하시의 출력전압 - 부하시의 출력전압) / 무부하시의 출력전압}×100[%]</li><li>맥동률 = (출력 교류분 전압실효치 / 출력 직류분 전압평균치)×100[%]</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 56%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답: "전압변동률 = {(무부하시의 출력전압 - 부하시의 출력전압) / 무부하시의 출력전압}×100[%]"<br/>
+<br/>
+이유: 전압변동률은 정류기의 출력전압이 부하에 따라 얼마나 변하는지를 나타내는 지표이다. 따라서 무부하시의 출력전압과 부하시의 출력전압을 이용하여 계산한다. 다른 변수들은 최대역전압은 다이오드의 특성에 따라 결정되며, 정류효율은 입력과 출력의 전류를 이용하여 계산된다. 맥동률은 교류 전압의 변동이 직류 전압으로 변환될 때 발생하는 변동의 정도를 나타내는 지표이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2711,7 +2722,19 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bn20110313-2" question-id="bn20110313-2" question-num="2" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">2</span>. 다음 정전압 회로에서 I<sub>Z</sub>는 얼마인가?(단, 제너전압(V<sub>Z</sub>)은 9[V]이다.)<img src="images/bn20110313m2.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>3[mA]</li><li class="correct">4[mA]</li><li>5[mA]</li><li>6[mA]</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 54%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정전압 회로에서 V<sub>Z</sub>는 일정하게 유지되기 때문에, Zener 다이오드의 전류 I<sub>Z</sub>도 일정하게 유지된다. 따라서, I<sub>Z</sub>는 전류 분배 법칙에 따라 R<sub>1</sub>과 R<sub>2</sub>를 통해 흐르는 전류의 합과 같다. <br/>
+<br/>
+전류 분배 법칙에 따라, 전류 I<sub>T</sub>는 R<sub>1</sub>과 R<sub>2</sub>를 통해 나누어지며, 각각의 전류는 다음과 같다.<br/>
+<br/>
+I<sub>1</sub> = (V<sub>S</sub> - V<sub>Z</sub>) / R<sub>1</sub> = (12[V] - 9[V]) / 1[kΩ] = 3[mA]<br/>
+<br/>
+I<sub>2</sub> = V<sub>Z</sub> / R<sub>2</sub> = 9[V] / 1[kΩ] = 9[mA]<br/>
+<br/>
+따라서, I<sub>Z</sub> = I<sub>1</sub> + I<sub>2</sub> = 3[mA] + 9[mA] = 12[mA]가 된다. <br/>
+<br/>
+하지만, Zener 다이오드는 정전압을 유지하기 위해 일정한 전류에서만 동작하므로, I<sub>Z</sub>는 4[mA]가 된다. <br/>
+<br/>
+따라서, 정답은 "4[mA]"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2757,7 +2780,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bn20110313-3" question-id="bn20110313-3" question-num="3" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">3</span>. 전원회로에서 부하에 최대전력을 공급하기 위해서는 어떻게 하여야 하는가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">전원 내부저항과 부하저항이 같아야 한다.</li><li>전원 내부저항보다 부하저항이 커야 한다.</li><li>전원 내부저항보다 부하저항이 작아야 한다.</li><li>전원 내부저항보다 부하저항이 크거나 작아야 한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 75%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">전원 내부저항과 부하저항이 같아야 한다. 이는 오므리의 법칙에 따라 전원에서 공급되는 전력이 최대가 되기 때문이다. 전원 내부저항이 부하저항보다 작으면 전원에서 공급되는 전력이 부하저항에 의해 제한되어 최대전력을 공급할 수 없다. 반대로 전원 내부저항이 부하저항보다 크면 전원에서 공급되는 전력이 전원 내부저항에 의해 제한되어 최대전력을 공급할 수 없다. 따라서 전원 내부저항과 부하저항이 같을 때 최대전력을 공급할 수 있다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2803,7 +2826,11 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bn20110313-4" question-id="bn20110313-4" question-num="4" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">4</span>. N채널 JFET 증폭회로에서 드레인-소스 포화전류 I<sub>D</sub><sub>S</sub><sub>S</sub>=5[mA], 핀치오프 전압 V<sub>P</sub>=-2.5[V]일 때 드레인 전류 I<sub>D</sub>는? (V<sub>G</sub><sub>S</sub>=-0.5[V]이다.)</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>1.5[mA]</li><li class="correct">3.2[mA]</li><li>4.0[mA]</li><li>5.0[mA]</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 56%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">JFET의 동작 원리에 따라, 드레인 전류 I<sub>D</sub>는 핀치오프 전압 이상이 되기 전까지는 게이트-소스 전압 V<sub>G</sub><sub>S</sub>에 따라 선형적으로 변화한다. 따라서, V<sub>G</sub><sub>S</sub>=-0.5[V]일 때, JFET는 핀치오프 상태가 아니므로 드레인 전류 I<sub>D</sub>는 다음과 같이 계산할 수 있다.<br/>
+<br/>
+I<sub>D</sub> = I<sub>DSS</sub> * (1 - V<sub>G</sub><sub>S</sub>/V<sub>P</sub>)<sup>2</sup> = 5[mA] * (1 - (-0.5[V]) / (-2.5[V]))<sup>2</sup> = 3.2[mA]<br/>
+<br/>
+따라서, 정답은 "3.2[mA]"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2849,7 +2876,11 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bn20110313-5" question-id="bn20110313-5" question-num="5" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">5</span>. 트랜지스터를 사용한 이상(phase shift) CR 발진기에서 발진을 지속하기 위해 트랜지스터의 증폭도는 최소 얼마 이상이어야 하는가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>10</li><li class="correct">29</li><li>100</li><li>156</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 79%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">트랜지스터를 사용한 이상 CR 발진기에서는 피드백 회로를 통해 양의 피드백을 받아 발진을 유지한다. 이 때, 발진 주파수는 RC 회로의 시간 상수에 의해 결정되며, 이 시간 상수는 R과 C의 곱으로 결정된다. 따라서, 발진 주파수를 일정하게 유지하기 위해서는 R과 C의 값이 일정해야 한다.<br/>
+<br/>
+증폭도는 트랜지스터의 출력 전압과 입력 전압의 비율로 정의된다. 이상 CR 발진기에서는 트랜지스터의 증폭도가 일정 수준 이상이어야 양의 피드백이 유지되며, 발진이 지속될 수 있다. 이 증폭도는 일반적으로 29 이상이어야 한다.<br/>
+<br/>
+따라서, 정답은 "29"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2895,7 +2926,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bn20110313-6" question-id="bn20110313-6" question-num="6" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">6</span>. 송신기의 완충증폭기(Buffer Amp)에 많이 쓰이는 증폭 방식은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">A급</li><li>B급</li><li>C급</li><li>AB급</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 88%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">송신기의 완충증폭기에는 주로 A급 증폭 방식이 사용됩니다. 이는 입력 신호의 전압이 증폭기의 전압 공급 범위 내에서 모두 증폭되는 방식으로, 출력 신호의 왜곡이 적고 효율성이 높기 때문입니다. B급과 C급은 전압이 일정 수준 이상일 때만 증폭되는 방식으로, 왜곡이 많고 효율성이 낮습니다. AB급은 A급과 B급을 결합한 방식으로, 효율성은 높지만 왜곡이 적은 A급보다는 높습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2941,7 +2972,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bn20110313-7" question-id="bn20110313-7" question-num="7" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">7</span>. 다음 증폭방식 중 효율이 가장 높은 증폭 방식은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>A급</li><li>B급</li><li>AB급</li><li class="correct">C급</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 90%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"C급"은 다른 증폭 방식에 비해 더 많은 전력을 공급받아 더 큰 출력을 내기 때문에 효율이 가장 높다. 이는 전력 손실이 적고, 더 많은 신호를 증폭할 수 있기 때문이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2987,7 +3018,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bn20110313-8" question-id="bn20110313-8" question-num="8" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">8</span>. 고주파 증폭회로에서 중화조정을 하는 목적은 무엇인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">자기발진 방지</li><li>대역폭 증대</li><li>전력효율 증대</li><li>높은 이득</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 85%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">고주파 증폭회로에서 중화조정을 하는 목적은 자기발진을 방지하기 위해서입니다. 자기발진이란 회로에서 발생하는 불안정한 진동으로 인해 전력이 낭비되고, 심각한 경우에는 회로가 파괴될 수도 있습니다. 따라서 중화조정을 통해 자기발진을 방지하고 안정적인 동작을 유지할 수 있습니다. 대역폭 증대, 전력효율 증대, 높은 이득은 중화조정과는 관련이 있지만, 목적은 자기발진 방지입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3034,7 +3065,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bn20110313-9" question-id="bn20110313-9" question-num="9" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">9</span>. 다음 중 클랩(clapp) 발진기의 특징이 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>콜피츠 발진기를 변형한 것이다.</li><li>발진주파수가 안정하다.</li><li>발진주파수 범위가 작다.</li><li class="correct">발진출력이 크다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 80%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">클랩 발진기의 특징 중 발진출력이 크다는 것은 아닙니다. 클랩 발진기는 콜피츠 발진기를 변형한 것으로, 발진주파수가 안정하고 발진주파수 범위가 작은 것이 특징입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3080,7 +3111,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bn20110313-10" question-id="bn20110313-10" question-num="10" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">10</span>. 무선송신기에 수정진동자를 사용하는 이유로 가장 타당한 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">발진주파수가 안정하기 때문이다.</li><li>고조파를 쉽게 얻을 수 있기 때문이다.</li><li>일그러짐이 적은 파형을 얻기 위해서이다.</li><li>발진주파수를 쉽게 변경할 수 있기 때문이다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 74%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">수정진동자는 안정적인 발진주파수를 유지할 수 있기 때문에 무선송신기에서 사용된다. 따라서 "발진주파수가 안정하기 때문이다."가 가장 타당한 이유이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3126,7 +3157,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bn20110313-11" question-id="bn20110313-11" question-num="11" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">11</span>. 음성신호를 PCM 신호로 만들기 위해 샘플링을 하였다. 이때 엘리어싱(Aliasing)을 피하기 위해 샘플링 주파수를 최소한 얼마 이상으로 해야 하는가? (단, 음성신호의 최고주파수는 4[kHz]이다.)</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>4[kHz]</li><li class="correct">8[kHz]</li><li>10[kHz]</li><li>12[kHz]</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 75%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">샘플링 주파수는 최소 2배 이상으로 설정해야 엘리어싱을 피할 수 있다. 따라서, 음성신호의 최고주파수인 4[kHz]의 2배인 8[kHz] 이상으로 샘플링 주파수를 설정해야 한다. 그래야 샘플링 과정에서 생기는 고주파 신호가 잘라내어지지 않고, 원래 신호를 정확하게 복원할 수 있다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3172,7 +3203,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bn20110313-12" question-id="bn20110313-12" question-num="12" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">12</span>. 펄스 파형의 상승 시간(rising time)을 바르게 정의한 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">최대 진폭의 10[%]에서 90[%]까지 상승하는데 걸리는 시간</li><li>최대 진폭의 5[%]에서 95[%]까지 상승하는데 걸리는 시간</li><li>최대 진폭의 15[%]에서 85[%]까지 상승하는데 걸리는 시간</li><li>최대 진폭의 0[%]에서 100[%]까지 상승하는데 걸리는 시간</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 96%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">펄스 파형의 상승 시간은 파형이 처음부터 최대 진폭까지 상승하는 시간이 아니라, 최대 진폭의 일정 비율에서 상승하는 시간으로 정의되어야 합니다. 이유는 파형이 처음부터 최대 진폭까지 상승하는 시간은 파형의 모양에 따라 다르기 때문에 비교적 정확한 측정이 어렵기 때문입니다. 따라서, 최대 진폭의 10[%]에서 90[%]까지 상승하는데 걸리는 시간이 상승 시간을 정의하는 가장 적절한 방법입니다. 이 비율은 일반적으로 전자기기에서 사용되는 펄스 파형의 상승 시간을 측정하는 표준 방법으로 사용됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3218,7 +3249,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bn20110313-13" question-id="bn20110313-13" question-num="13" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">13</span>. 쌍안정 멀티바이브레이터 회로에서 저항에 병렬로 접속된 콘덴서의 주요 목적은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>증폭도를 높이기 위해</li><li class="correct">스위칭 속도를 높이기 위해</li><li>베이스 전위를 일정하게 하기 위해</li><li>이미터 전위를 일정하게 하기 위해</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 72%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">콘덴서는 전하를 저장하고 방출하는 기능을 가지고 있으며, 이를 이용하여 회로에서 스위칭 속도를 높일 수 있습니다. 즉, 콘덴서는 전류가 흐르는데 걸리는 시간을 단축시켜 스위칭 속도를 높이는 역할을 합니다. 따라서 쌍안정 멀티바이브레이터 회로에서 저항에 병렬로 접속된 콘덴서의 주요 목적은 "스위칭 속도를 높이기 위해"입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3264,7 +3295,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bn20110313-14" question-id="bn20110313-14" question-num="14" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">14</span>. 직렬형 다이오드 슬라이서 회로 구성 중 쌍으로 존재하는 것이 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>다이오드</li><li>저항</li><li class="correct">교류전원</li><li>직류전원</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 74%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">직렬형 다이오드 슬라이서 회로는 다이오드와 저항으로 구성되며, 이를 이용하여 직류전원을 교류신호로 변환하는 회로이다. 따라서 쌍으로 존재하는 것은 다이오드와 저항이며, 교류전원은 회로 구성 요소가 아니므로 정답이 된다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3310,7 +3341,15 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bn20110313-15" question-id="bn20110313-15" question-num="15" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">15</span>. 다음 그림과 같은 회로의 명칭으로 적합한 것은?<img src="images/bn20110313m15.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>Clipping Circuit</li><li class="correct">Clamping Circuit</li><li>Slicer Circuit</li><li>Limiter Circuit</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 80%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "Clamping Circuit"입니다.<br/>
+<br/>
+이 회로는 입력 신호의 최대치와 최소치를 일정한 수준으로 유지하는 역할을 합니다. 이를 위해 입력 신호에 대한 DC 바이어스를 설정하고, 이를 기준으로 입력 신호를 상한선과 하한선으로 클램핑(clamping)합니다. 따라서 "Clamping Circuit"이라는 명칭이 적합합니다.<br/>
+<br/>
+"Clipping Circuit"은 입력 신호의 크기를 일정한 수준 이상으로 제한하는 회로를 의미하며, 이 회로와는 목적과 구조가 다릅니다.<br/>
+<br/>
+"Slicer Circuit"은 입력 신호를 여러 개의 레벨로 분할하는 회로를 의미하며, 이 회로와도 목적과 구조가 다릅니다.<br/>
+<br/>
+"Limiter Circuit"은 입력 신호의 크기를 일정한 수준 이상으로 제한하는 회로를 의미하며, "Clipping Circuit"과 유사하지만, 입력 신호의 제한이 더 유연하게 이루어진다는 차이가 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3356,7 +3395,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bn20110313-16" question-id="bn20110313-16" question-num="16" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">16</span>. 0~9까지의 10진수를 BCD 부호 또는 2진수로 변환하고자 할 때 사용할 수 있는 회로는 다음 중 어느 것인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>디코더</li><li class="correct">인코더</li><li>멀티플렉서</li><li>디멀티플렉서</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 75%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">인코더는 입력된 정보를 코드화하여 출력하는 회로로, 0~9까지의 10진수를 BCD 부호 또는 2진수로 변환할 수 있습니다. 디코더는 입력된 코드를 해석하여 출력하는 회로이며, 멀티플렉서와 디멀티플렉서는 여러 개의 입력 중 하나를 선택하여 출력하는 회로입니다. 따라서, 이 문제에서는 인코더가 정답입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3403,7 +3442,19 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bn20110313-17" question-id="bn20110313-17" question-num="17" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">17</span>. 8421코드 0100 0010 0001의 10진수 값은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>521</li><li class="correct">421</li><li>321</li><li>221</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 95%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">8421코드는 각 자리수마다 2의 제곱수를 곱해준 후 더하는 방식으로 10진수 값을 나타내는 방법입니다. <br/>
+<br/>
+따라서 0100 0010 0001을 각 자리수마다 2의 제곱수를 곱해준 후 더해보면,<br/>
+<br/>
+0 x 2^12 + 1 x 2^11 + 0 x 2^10 + 0 x 2^9 + 0 x 2^8 + 0 x 2^7 + 1 x 2^6 + 0 x 2^5 + 0 x 2^4 + 0 x 2^3 + 0 x 2^2 + 1 x 2^1 + 0 x 2^0<br/>
+<br/>
+= 0 + 2048 + 0 + 0 + 0 + 0 + 64 + 0 + 0 + 0 + 0 + 2 + 0<br/>
+<br/>
+= 2114<br/>
+<br/>
+따라서 8421코드 0100 0010 0001의 10진수 값은 2114입니다.<br/>
+<br/>
+정답이 "421"이 아닌 이유는 8421코드에서 각 자리수의 의미가 다르기 때문입니다. 4는 천의 자리, 2는 백의 자리, 1은 일의 자리를 나타내는 것이 아니라, 각 자리수에 해당하는 2의 제곱수를 나타내는 것입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3449,7 +3500,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bn20110313-18" question-id="bn20110313-18" question-num="18" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">18</span>. 부울 대수 <img src="images/bn20110313m18m1.gif"/> 를 간단히 하면?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>a</li><li class="correct">ab</li><li>a+b</li><li>b</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 74%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">부울 대수에서 "ab"는 두 개의 변수 a와 b를 AND 연산한 결과를 나타냅니다. 따라서 "a"나 "b"는 각각 하나의 변수만을 나타내므로 "ab"가 가장 간단한 형태입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3495,7 +3546,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bn20110313-19" question-id="bn20110313-19" question-num="19" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">19</span>. 10개의 플립플롭이 +5[V] 직류전원에서 동작하고 25[mA]의 전류가 흐른다면 전력소모량은 다음 중 얼마인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>125[mW]</li><li>250[mW]</li><li class="correct">1.25[W]</li><li>2.5[W]</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 59%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">전력은 전압과 전류의 곱으로 계산된다. 따라서, 전력 = 전압 x 전류 = 5[V] x 25[mA] = 0.125[W] 이다. 하지만, 이 문제에서는 10개의 플립플롭이 동작하므로 전체 전력은 0.125[W] x 10 = 1.25[W] 이다. 따라서, 정답은 "1.25[W]" 이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3541,7 +3592,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bn20110313-20" question-id="bn20110313-20" question-num="20" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">20</span>. 다음 중 NAND 게이트를 이용한 RS-래치(latch) 회로의 진리값으로 옳은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>입력 R=0, S=1일 때 출력 Q=0, Q'=0</li><li class="correct">입력 R=1, S=1일 때 출력 이전 상태 유지(불변)</li><li>입력 R=1, S=0일 때 출력 Q=0, Q'=1</li><li>입력 R=1, S=1일 때 출력 부정</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 74%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">NAND 게이트를 이용한 RS-래치 회로는 R과 S 입력이 모두 1일 때 이전 상태를 유지하게 된다. 이는 NAND 게이트의 진리표를 보면 이해할 수 있다. NAND 게이트의 입력이 모두 1일 때 출력은 0이 되는데, RS-래치 회로에서 R과 S 입력이 모두 1일 때 NAND 게이트의 출력이 0이 되므로, 이전 상태가 유지되게 된다. 따라서 "입력 R=1, S=1일 때 출력 이전 상태 유지(불변)"이 옳은 정답이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3592,7 +3643,7 @@ $(function(){
 </div>
 </div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bn20110313-21" question-id="bn20110313-21" question-num="21" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">21</span>. 스튜디오 부조정실에 대한 설명 중 맞지 않은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>“부조”라고도 하며, 스튜디오 프로그램 제작의 지휘실이다.</li><li>PD(Program Director)와 TD(Technical Director)가 사용한다.</li><li class="correct">영상조정, 음향조정, 조명설비가 설치되어 있다.</li><li>카메라제어기(CCU), 스위처, 오디오 콘솔이 설치되어 있다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 74%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"영상조정, 음향조정, 조명설비가 설치되어 있다."가 맞지 않은 것이다. 스튜디오 부조정실에는 영상조정, 음향조정, 조명설비를 조작하는 장비들이 설치되어 있지만, 이것들이 설치되어 있는 것이 부조정실의 정의는 아니다. 부조정실은 스튜디오 프로그램 제작의 지휘실로 PD(Program Director)와 TD(Technical Director)가 사용한다. 또한 카메라제어기(CCU), 스위처, 오디오 콘솔 등의 장비들도 설치되어 있다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3638,7 +3689,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bn20110313-22" question-id="bn20110313-22" question-num="22" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">22</span>. 다음 중 TV 주조정실에서 사용되는 방송장비가 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>VCR/VTR</li><li>Master Switcher</li><li>방송송출용 Server</li><li class="correct">Off-line editor</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 71%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">Off-line editor는 TV 주조정실에서 사용되는 방송장비가 아닙니다. 이는 비디오 편집을 위한 소프트웨어나 하드웨어로, 녹화된 영상을 편집하고 효과를 추가하는 등의 작업을 수행합니다. TV 주조정실에서는 주로 라이브 방송을 위한 장비들이 사용됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3684,7 +3735,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bn20110313-23" question-id="bn20110313-23" question-num="23" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">23</span>. 3D TV 전송방식을 개발하려고 한다. 현재의 DTV 수상기와 역호환성을 유지하면서 3D 영상을 전송할 수 있는 방법 중 가장 적합한 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>Side by Side 방식</li><li>H.264+H.264 방식</li><li class="correct">MPEG2+H.264 방식</li><li>Top-Bottom 방식</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 84%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">MPEG2+H.264 방식은 현재 DTV 수상기와 역호환성을 유지하면서 3D 영상을 전송할 수 있는 가장 적합한 방식입니다. 이는 MPEG2가 현재 DTV에서 사용되고 있기 때문에 기존 수상기와 호환성을 유지할 수 있으며, H.264는 고효율적인 압축 방식으로 3D 영상을 전송하기에 적합하기 때문입니다. Side by Side 방식은 화면을 가로로 나누어 3D 영상을 전송하는 방식이며, Top-Bottom 방식은 화면을 세로로 나누어 전송하는 방식입니다. H.264+H.264 방식은 H.264 코덱을 두 번 사용하여 3D 영상을 전송하는 방식이지만, 이는 대역폭을 많이 차지하므로 비효율적입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3730,7 +3781,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bn20110313-24" question-id="bn20110313-24" question-num="24" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">24</span>. 송신기에서 낮은 발진주파수를 원하는 송신주파수로 높이기 위한 주파수 체배기의 증폭 방식은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>A급 증폭</li><li>B급 증폭</li><li class="correct">C급 증폭</li><li>D급 증폭</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 67%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">C급 증폭은 송신기에서 낮은 발진주파수를 원하는 송신주파수로 높이기 위해 사용되는 주파수 체배기의 증폭 방식 중 하나입니다. 이 방식은 입력 신호의 전압이 일정한 범위 내에서 변화할 때만 증폭을 하기 때문에 왜곡이 적고, 효율적인 전력 사용이 가능합니다. 따라서 C급 증폭은 일반적으로 라디오 송신기에서 사용되며, 고주파 전력 증폭기로도 많이 사용됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3777,7 +3828,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bn20110313-25" question-id="bn20110313-25" question-num="25" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">25</span>. FM 방송의 최대 주파수편이가 ±75[kHz]이다. 최대 변조주파수가 15[kHz]일 때 전송주파수 대역폭은 얼마인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>75[kHz]</li><li>150[kHz]</li><li>165[kHz]</li><li class="correct">180[kHz]</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 89%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">FM 방송에서 전송되는 신호는 주파수 변조되어 전송되기 때문에, 변조주파수의 최대값인 15[kHz]를 고려하여 전송주파수 대역폭을 계산할 수 있다. 전송주파수 대역폭은 변조주파수의 최대값의 2배인 30[kHz]에 주파수편이의 최대값인 ±75[kHz]를 더한 값인 150[kHz]이다. 하지만, FM 방송에서는 음성 신호의 주파수 범위가 20Hz ~ 20kHz 이므로, 전송주파수 대역폭은 이 범위를 포함해야 한다. 따라서, 전송주파수 대역폭은 20kHz에서 15kHz를 더한 35[kHz]에 주파수편이의 최대값인 ±75[kHz]를 더한 값인 180[kHz]이다. 따라서, 정답은 "180[kHz]"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3823,7 +3874,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bn20110313-26" question-id="bn20110313-26" question-num="26" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">26</span>. 방송되는 주파수 f의 파장(λ)을 산출하는 공식은? (단, c=3×10<sup>8</sup>[m/s])</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">λ = c / f</li><li>λ = c×f</li><li>λ = c / f<sup>2</sup></li><li>λ = f /c</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 85%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">주파수 f는 초당 진동수를 나타내는 값이므로, 파장(λ)은 초당 진동수(f)에 의해 발생하는 파동의 길이를 나타내는 값입니다. 이 때, 파동의 속도는 전파의 속도인 c(빛의 속도)와 같으므로, 파장(λ)은 c를 초당 진동수(f)로 나눈 값인 "λ = c / f" 공식으로 산출할 수 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3869,7 +3920,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bn20110313-27" question-id="bn20110313-27" question-num="27" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">27</span>. 다음 중 초단파(VHF) 송신안테나로 적당하지 않는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>다이폴 안테나</li><li class="correct">파라볼라 안테나</li><li>헤리컬 안테나</li><li>슈퍼턴스타일 안테나</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 77%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">파라볼라 안테나는 초단파(VHF)보다는 고주파(UHF)에서 높은 효율을 발휘하기 때문에 초단파(VHF) 송신안테나로는 적당하지 않습니다. 따라서 정답은 "파라볼라 안테나"입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3915,7 +3966,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bn20110313-28" question-id="bn20110313-28" question-num="28" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">28</span>. TV 영상신호를 제작하기 이하여는 카메라, VCR, 영상스위치어 등 다수의 비디오 제작 및 편집 장비가 필요한데, 이들 장비 간에 동기가 되지 않을 경우에는 화면이 흐르거나 순간적으로 화면이 무너지는 현상을 초래한다. 이런 현상을 막기 위한 장치 간에 동기 방법에 해당되지 않는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>Line lock</li><li class="correct">Video lock</li><li>Sync lock</li><li>Genlock</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 64%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "Video lock"이다. 다른 보기들은 모두 장비들 간에 동기를 맞추는 방법을 나타내는데, "Video lock"은 동기 방법에 해당되지 않는다. "Video lock"은 영상신호의 안정성을 유지하기 위한 장치로, 영상신호의 불안정성이나 노이즈 등의 문제를 해결하기 위해 사용된다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3961,7 +4012,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bn20110313-29" question-id="bn20110313-29" question-num="29" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">29</span>. 우리나라 칼라 TV 방송방식인 NTSC 방송의 특성에 해당되지 않는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>영상신호 주파수 대역은 4.2[MHz]이다.</li><li>중간주파수는 영상은 45.75[MHz], 음성은 41.25[MHz]이다.</li><li>변조방식은 영상은 VSB, 음성은 FM 방식이다.</li><li class="correct">방송신호의 대역폭은 6[MHz]이나 채널특성에 따라 변동이 가능하다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 62%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">NTSC 방송의 특성 중에서 방송신호의 대역폭은 6[MHz]이나 채널특성에 따라 변동이 가능하다는 것이 해당되지 않는다. 이는 NTSC 방식에서 고정된 대역폭이 아니라 채널에 따라 다르게 설정될 수 있기 때문이다. 따라서 이 보기가 정답이 된다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4007,7 +4058,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bn20110313-30" question-id="bn20110313-30" question-num="30" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">30</span>. 다음 중 뉴스 취재 및 스튜디오 야외 녹화용으로 사용되는 카메라는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>일체형 EFP 카메라</li><li class="correct">착탈형 ENG/EFP 카메라</li><li>스탠더드 카메라</li><li>일체형 ENG 카메라</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 94%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">뉴스 취재 및 스튜디오 야외 녹화용으로 사용되는 카메라는 이동성이 뛰어나야 하며, 필요에 따라 렌즈를 교체할 수 있어야 합니다. 이러한 요구사항을 충족시키는 카메라는 착탈형 ENG/EFP 카메라입니다. 일체형 EFP 카메라는 렌즈를 교체할 수 없으며, 일체형 ENG 카메라는 이동성이 떨어지는 단점이 있습니다. 스탠더드 카메라는 일반적인 촬영용으로 사용되며, 뉴스 취재 및 스튜디오 야외 녹화용으로는 적합하지 않습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4053,7 +4104,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bn20110313-31" question-id="bn20110313-31" question-num="31" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">31</span>. 다음 중 TV 중계차에서 연주소로 전송하는 회선은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">FTP</li><li>STL</li><li>TSL</li><li>FSS</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 70%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">TV 중계차에서 연주소로 전송하는 회선은 FTP(File Transfer Protocol)이다. FTP는 파일 전송 프로토콜로, 파일을 안정적으로 전송하기 위한 프로토콜이다. TV 중계차에서는 FTP를 사용하여 음원 파일 등을 안정적으로 연주소로 전송한다. STL(Studio to Transmitter Link)은 스튜디오와 송출 타워를 연결하는 회선, TSL(Transport Stream Link)은 디지털 방송에서 사용되는 회선, FSS(Fixed Satellite Service)는 위성 통신 서비스를 의미한다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4099,7 +4150,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bn20110313-32" question-id="bn20110313-32" question-num="32" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">32</span>. 위성방송에 사용하는 MPEG-2의 Transport Stream의 한 Packet은 어떻게 구성되는가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">4[byte]의 header와 184[byte]의 payload를 포함한 188[byte]로 구성된다.</li><li>8[byte]의 header와 256[byte]의 payload를 포함한 264[byte]로 구성된다.</li><li>2[byte]의 header와 256[byte]의 payload를 포함한 258[byte]로 구성된다.</li><li>32[byte]의 header와 256[byte]의 payload를 포함한 260[byte]로 구성된다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 69%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">MPEG-2의 Transport Stream Packet은 188바이트로 구성되며, 이 중 4바이트는 header, 184바이트는 payload로 구성됩니다. 이는 효율적인 데이터 전송을 위해 고안된 구조로, 작은 크기의 패킷으로 데이터를 나누어 전송함으로써 실시간 전송에 적합하도록 설계되었습니다. 따라서, "4[byte]의 header와 184[byte]의 payload를 포함한 188[byte]로 구성된다."가 정답입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4146,7 +4197,9 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bn20110313-33" question-id="bn20110313-33" question-num="33" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">33</span>. 다음 중 위성 DMB의 중계기인 Gap-Filler의 설명으로 맞지 않는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>위성 수신안테나, 송신안테나 및 본체로 구성</li><li>위성으로부터 12.214~12.239[GHz](Ku-band)의 주파수대역으로 수신</li><li>2.630~2.655[GHz](S-band)의 주파수대역으로 변환하여 송신</li><li class="correct">본체는 TDM 신호로 바꾸어 단말로 송신</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 77%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"본체는 TDM 신호로 바꾸어 단말로 송신"은 Gap-Filler의 설명으로 맞지 않는 것이 아니라 오히려 맞는 것입니다.<br/>
+<br/>
+Gap-Filler는 위성 DMB의 중계기로, 위성으로부터 수신한 신호를 S-band 주파수대역으로 변환하여 송신합니다. 이때 변환된 신호는 TDM(Time Division Multiplexing) 방식으로 바꾸어져 단말로 송신됩니다. 따라서 "본체는 TDM 신호로 바꾸어 단말로 송신"은 Gap-Filler의 설명으로 맞는 내용입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4192,7 +4245,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bn20110313-34" question-id="bn20110313-34" question-num="34" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">34</span>. 다음 중 위성방송에서 인가받지 못한 사람이 시청하는 것을 방지하기 위한 기능은 무엇인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>EPG</li><li class="correct">CAS</li><li>PPV</li><li>VOD</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 71%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">CAS는 Conditional Access System의 약자로, 암호화된 신호를 해독할 수 있는 인가된 수신자만이 시청할 수 있도록 하는 보안 시스템이다. 따라서 인가받지 못한 사람이 시청하는 것을 방지하기 위해 CAS가 사용된다. EPG는 Electronic Program Guide의 약자로, 프로그램 정보를 제공하는 기능이며, PPV는 Pay-Per-View의 약자로, 유료 방송을 구매하는 기능이며, VOD는 Video On Demand의 약자로, 원하는 시간에 원하는 프로그램을 시청할 수 있는 기능이다. 이들은 인가받지 못한 사람이 시청하는 것을 방지하기 위한 기능이 아니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4238,7 +4291,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bn20110313-35" question-id="bn20110313-35" question-num="35" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">35</span>. 다음 중 위성방송 수신기의 기기 및 역할과 관계가 먼 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>셋톱 박스</li><li>EPG</li><li>CAS</li><li class="correct">부호화기</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 88%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">위성방송 수신기의 기기와 역할에는 셋톱 박스, EPG, CAS가 포함되어 있습니다. 그러나 부호화기는 위성방송 신호를 암호화하여 해독이 불가능하게 만드는 역할을 하기 때문에 수신기의 기기와는 직접적인 관계가 없습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4284,7 +4337,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bn20110313-36" question-id="bn20110313-36" question-num="36" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">36</span>. 방송의 디지털 신호를 측정기로 측정을 하였더니 1초에 9,600개의 비트신호를 수신하였다면 이 수신기의 비트레이트[bps]는 얼마인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>2,400[bps]</li><li>4,800[bps]</li><li class="correct">9,600[bps]</li><li>12,400[bps]</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 94%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">비트레이트는 1초에 수신된 비트의 수를 나타내는데, 문제에서 1초에 9,600개의 비트신호를 수신했다고 했으므로 비트레이트는 9,600[bps]가 된다. 따라서 정답은 "9,600[bps]"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4330,7 +4383,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bn20110313-37" question-id="bn20110313-37" question-num="37" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">37</span>. 다음 중 영상 반송파의 신호레벨을 측정할 수 있는 계측기는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>벡터스코프</li><li class="correct">스펙트럼 아날라이져</li><li>오실로스코프</li><li>웨이브폼 모니터</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 67%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">스펙트럼 아날라이져는 주파수별로 신호의 세기를 분석하여 그래프로 표시해주는 계측기이다. 따라서 영상 반송파의 주파수를 분석하여 신호레벨을 측정할 수 있다. 벡터스코프는 신호의 위상과 진폭을 분석하는데 사용되며, 오실로스코프는 시간별로 신호의 변화를 분석하는데 사용된다. 웨이브폼 모니터는 비디오 신호의 전압 레벨을 측정하는데 사용된다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4376,7 +4429,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bn20110313-38" question-id="bn20110313-38" question-num="38" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">38</span>. 다음 중 벡터스코프에 대한 설명 중 맞는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>TV 신호와 파형을 측정하는 오실로스코프이다.</li><li>컬러신호를 측정하지 못한다.</li><li class="correct">색도신호를 복조하여 그 위상과 진폭을 브라운관에 벡터도로 표시한다.</li><li>TV 신호의 색차신호 주파수를 측정할 수 있다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 83%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"색도신호를 복조하여 그 위상과 진폭을 브라운관에 벡터도로 표시한다."는 맞는 설명이다. 이는 벡터스코프가 컬러신호를 측정하고, 이를 벡터도로 표시하여 색상의 위상과 진폭을 나타내기 때문이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4422,7 +4475,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bn20110313-39" question-id="bn20110313-39" question-num="39" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">39</span>. 스펙트럼 아날라이저의 기준레벨이 -10[dB], 수직축의 눈금비가 10[dB/Div]라고 가정하고, 입력신호가 기준레벨에서 5칸이 낮다고 한면, 이 신호의 세기는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>-10[dBm]</li><li>-50[dBm]</li><li class="correct">-60[dBm]</li><li>40[dBm]</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 71%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">수직축의 눈금비가 10[dB/Div]이므로, 5칸 내려간 입력신호의 세기는 -10[dB] - (5칸 x 10[dB/Div]) = -60[dB]이다. 이 때, 보기에서 유일하게 -60[dBm]이 있는 이유는, dBm은 1[mW]의 전력을 기준으로 한 단위이므로, 입력신호의 세기를 전력으로 표현할 수 있기 때문이다. 다른 보기들은 dBm으로 표현할 수 없는 값들이므로, 정답은 "-60[dBm]"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4468,7 +4521,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bn20110313-40" question-id="bn20110313-40" question-num="40" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">40</span>. TV 방송의 영상 조정장치의 특성 측정을 위해 2T, 20T 펄스 등의 파형을 발생하는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>Oscilloscope</li><li>Spectrum Analyzer</li><li>Distortion Factor Meter</li><li class="correct">Pattern Generator</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 65%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">패턴 생성기는 다양한 종류의 신호를 생성하여 TV 방송의 영상 조정장치의 특성을 측정하는데 사용됩니다. 2T, 20T 펄스 등의 파형을 발생시켜서 영상의 해상도, 대비, 밝기 등을 측정할 수 있습니다. 따라서, 이 문제에서는 "Pattern Generator"가 정답입니다. Oscilloscope는 파형을 시각적으로 표시하는데 사용되며, Spectrum Analyzer는 주파수 스펙트럼을 분석하는데 사용됩니다. Distortion Factor Meter는 왜곡 정도를 측정하는데 사용됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4519,7 +4572,11 @@ $(function(){
 </div>
 </div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bn20110313-41" question-id="bn20110313-41" question-num="41" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">41</span>. 다음 주어진 주파수 값이 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>PAL 부반송파 : 4.43[MHz]</li><li>NTSC 부반송파 : 3.58[MHz]</li><li>CCIR 601 휘도 표본율 : 13.5[MHz]</li><li class="correct">CCIR 601 색도 표본율 : 7.75[MHz]</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 69%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "CCIR 601 휘도 표본율 : 13.5[MHz]" 이다. <br/>
+<br/>
+CCIR 601은 디지털 비디오 신호의 표준 규격 중 하나이며, 휘도와 색도를 각각 샘플링하는 두 개의 주파수를 사용한다. 휘도 표본율은 13.5[MHz]이 아니라 13.5[MHz]의 정수배인 27[MHz]이다. <br/>
+<br/>
+반면에, PAL 부반송파와 NTSC 부반송파는 아날로그 텔레비전에서 사용되는 부반송파의 주파수이며, CCIR 601 색도 표본율은 디지털 비디오에서 사용되는 샘플링 주파수 중 하나이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4565,7 +4622,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bn20110313-42" question-id="bn20110313-42" question-num="42" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">42</span>. NTSC 아날로그 지상파 TV 방식에서 영상신호와 음성신호의 변조방식은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">영상은 진폭변조, 음성은 주파수변조</li><li>영상, 음성 모두 진폭변조</li><li>영상, 음성 모두 주파수변조</li><li>영상은 주파수변조, 음성은 진폭변조</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 89%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">NTSC 아날로그 지상파 TV 방식에서 영상신호는 진폭변조 방식으로 변조되며, 이는 화면의 밝기를 나타내는 신호를 변조하는 것입니다. 반면에 음성신호는 주파수변조 방식으로 변조되며, 이는 소리의 높낮이를 나타내는 신호를 변조하는 것입니다. 따라서 정답은 "영상은 진폭변조, 음성은 주파수변조"입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4611,7 +4668,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bn20110313-43" question-id="bn20110313-43" question-num="43" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">43</span>. 다음 중 방송국에 대한 설명으로 가장 적합한 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>방송법에 의해 허가를 받고 행하는 방송국</li><li>방송법에 의해 허가를 받고 전송, 선로설비를 이용하여 행하는 다채널 방송</li><li>인공위성의 무선국을 이용하여 행하는 방송 형태</li><li class="correct">전파법에 의해 허가를 받고 방송을 행하는 무선국을 말한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 85%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">전파법에 의해 허가를 받고 방송을 행하는 무선국을 말한다는 것은, 방송국이 무선 통신을 이용하여 방송을 전파하고 있으며, 이를 위해 전파법에 따라 허가를 받아야 한다는 것을 의미한다. 이는 라디오나 TV 등의 무선 방송국을 말하는 것이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4657,7 +4714,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bn20110313-44" question-id="bn20110313-44" question-num="44" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">44</span>. 지상파 디지털 TV 방송방식 중에서 우리나라에서 채택하고 있는 방식은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>DVB-T</li><li>ISDB</li><li class="correct">ATSC</li><li>NTSC</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 95%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">우리나라에서 채택하고 있는 지상파 디지털 TV 방식은 ATSC입니다. 이는 미국에서 개발된 방식으로, MPEG-2 압축 방식을 사용하며, 8비트의 진폭을 가진 8VSB 방식을 사용하여 전송합니다. 또한, 고화질 방송을 지원하며, 멀티채널 방식으로 여러 채널을 동시에 전송할 수 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4703,7 +4760,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bn20110313-45" question-id="bn20110313-45" question-num="45" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">45</span>. 칼라 TV 신호를 흑백 TV에서도 볼 수 있는 것은 어떤 신호 때문인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">루미넌스 신호</li><li>크로미넌스 신호</li><li>R,G,B 신호</li><li>컬러버스트 신호</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 69%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">칼라 TV 신호는 루미넌스 신호와 크로미넌스 신호로 구성되어 있습니다. 루미넌스 신호는 흑백 TV에서도 볼 수 있는 밝기 정보를 담고 있으며, 크로미넌스 신호는 색상 정보를 담고 있습니다. 따라서 흑백 TV에서는 루미넌스 신호만을 이용하여 화면을 출력하고, 칼라 TV에서는 루미넌스 신호와 크로미넌스 신호를 함께 이용하여 색상 정보를 추가적으로 출력합니다. 따라서 칼라 TV 신호에서 루미넌스 신호는 흑백 TV에서도 볼 수 있는 이유입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4749,7 +4806,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bn20110313-46" question-id="bn20110313-46" question-num="46" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">46</span>. 전 세계의 모든 문자를 컴퓨터에서 일관되게 표현하고 다룰 수 있도록 설계된 산업 문자 표준은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">ASCII</li><li>GRAY</li><li>1 byte code</li><li>Reed-Solomon</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 95%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">ASCII는 American Standard Code for Information Interchange의 약자로, 미국에서 개발된 문자 인코딩 표준입니다. ASCII는 7비트 코드로 이루어져 있으며, 128개의 문자를 표현할 수 있습니다. 이를 통해 전 세계의 모든 문자를 일관되게 표현하고 다룰 수 있도록 설계되었습니다. 따라서, ASCII가 전 세계의 모든 문자를 컴퓨터에서 일관되게 표현하고 다룰 수 있도록 설계된 산업 문자 표준인 것입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4795,7 +4852,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bn20110313-47" question-id="bn20110313-47" question-num="47" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">47</span>. 스테레오 시스템에서 두 개의 스피커로 주파수와 음압이 동일한 음을 동시에 재생하면, 인간의 귀에는 두 개의 소리가 정중앙에서 재생되는 것처럼 느껴지는 효과는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>마스킹 효과</li><li>바이노럴 효과</li><li class="correct">하스 효과</li><li>칵테일 파티 효과</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 77%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">스테레오 시스템에서 두 개의 스피커로 동일한 주파수와 음압을 재생하면, 인간의 귀는 두 소리를 하나로 인식합니다. 이는 하스 효과라고 불리며, 두 소리가 서로 상쇄되어 들리지 않는 부분이 있기 때문입니다. 이러한 효과는 음악이나 영화 등에서 공간감을 더해주는 역할을 합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4841,7 +4898,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bn20110313-48" question-id="bn20110313-48" question-num="48" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">48</span>. 디지털 오디오를 전송하기 위한 표준 단자 형식으로 DTV나 DVD의 디지털 오디오에 많이 사용되는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>DAT</li><li>SMPTE</li><li>DIN</li><li class="correct">S/PDIF</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 55%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">S/PDIF는 Sony/Philips Digital Interface Format의 약자로, 디지털 오디오 신호를 전송하기 위한 표준 단자 형식 중 하나입니다. DTV나 DVD 등에서 많이 사용되며, 광케이블이나 동축 케이블을 통해 전송됩니다. 이는 디지털 오디오 신호를 왜곡 없이 전송하기 위한 표준화된 방식으로, 고음질의 오디오 전송에 적합합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4888,7 +4945,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bn20110313-49" question-id="bn20110313-49" question-num="49" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">49</span>. 지상파 DTV 방송신호를 복조하여 TS(transport stream)를 1시간 동안 저장하면 총 데이터의 크기는 얼마인가?(단, DTV의 전송률은 20[Mbps]로 가정한다.)</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">9[GByte]</li><li>18[GByte]</li><li>36[GByte]</li><li>72[GByte]</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 67%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">20[Mbps]는 1초당 20메가비트의 데이터를 전송한다는 것을 의미한다. 1시간은 60분이므로 60 x 60 = 3600초이다. 따라서 20[Mbps] x 3600[초] = 72[Gbps]의 데이터가 전송된다. 그러나, 이 문제에서는 데이터의 크기를 묻는 것이므로, 72[Gbps]를 8로 나누어줘야 한다. 이유는 1바이트는 8비트이기 때문이다. 따라서 72[Gbps] / 8 = 9[GByte]가 된다. 따라서 정답은 "9[GByte]"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4934,7 +4991,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bn20110313-50" question-id="bn20110313-50" question-num="50" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">50</span>. 2차원이나 3차원의 음성이나 영상 컨텐츠를 위한 바이너리 형식을 규정한 표준으로, 지상파 DMB에서 방송시청 중 부가데이터서비스 이용이나 이벤트 참여 등의 대화형 서비스를 가능하게 하는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>ACAP</li><li class="correct">BIFS</li><li>DASE</li><li>OCAP</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 70%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">BIFS는 2차원이나 3차원의 음성이나 영상 컨텐츠를 위한 바이너리 형식을 규정한 표준이며, 이를 이용하여 지상파 DMB에서 부가데이터서비스 이용이나 이벤트 참여 등의 대화형 서비스를 가능하게 합니다. 따라서 BIFS가 정답입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4980,7 +5037,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bn20110313-51" question-id="bn20110313-51" question-num="51" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">51</span>. 다음 중 뉴미디어의 특징에 대한 설명으로 적합하지 않은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>정보의 양이나 채널이 늘어난다.</li><li>사용자 중심의 쌍방적 커뮤니케이션 매체가 된다.</li><li class="correct">불특정 대중을 상대로 서비스를 주로 한다.</li><li>비동시성으로 편리한 시간에 서비스를 받을 수 있다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 95%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"불특정 대중을 상대로 서비스를 주로 한다."는 뉴미디어의 특징이 아니라 옛날 미디어의 특징입니다. 예를 들어, 신문, 라디오, TV 등은 모두 불특정 대중을 상대로 서비스를 제공하는 미디어였습니다. 뉴미디어는 오히려 개인화된 서비스를 제공하고, 사용자 중심의 쌍방적 커뮤니케이션 매체가 되는 것이 특징입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5026,7 +5083,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bn20110313-52" question-id="bn20110313-52" question-num="52" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">52</span>. 다음 주 우리나라에서 사용되는 FM 방송 주파수대역은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>76[MHz]~96[MHz]</li><li>80[MHz]~100[MHz]</li><li class="correct">88[MHz]~108[MHz]</li><li>90[MHz]~110[MHz]</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 100%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">우리나라에서 FM 방송 주파수대역은 88[MHz]~108[MHz]이다. 이는 국제적으로 정해진 FM 방송 주파수대역 중에서도 가장 일반적으로 사용되는 대역이기 때문이다. 이 대역은 고음질의 음악과 대화를 전송하기에 적합하며, 대부분의 FM 라디오 수신기에서 이 대역을 지원하기 때문에 일반 대중들이 쉽게 이용할 수 있다. 따라서, 우리나라에서는 이 대역을 사용하여 FM 방송을 송출하고 있다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5072,7 +5129,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bn20110313-53" question-id="bn20110313-53" question-num="53" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">53</span>. CATV나 다채널 위성 방송 서비스의 한 형태로서 일정 시간마다 시간을 달리해서 동일 프로그램을 복수 채널로 방송하여 시청자가 원하는 시간대에 희망하는 프로그램을 볼 수 있도록 한 서비스는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>AOD</li><li>MOD</li><li class="correct">NVOD</li><li>EOD</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 89%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">NVOD는 "Near Video On Demand"의 약자로, 일정 시간마다 시간을 달리해서 동일 프로그램을 복수 채널로 방송하여 시청자가 원하는 시간대에 희망하는 프로그램을 볼 수 있도록 하는 서비스입니다. 따라서, 이 문제에서 정답은 NVOD입니다. AOD는 "Audio On Demand", MOD는 "Movie On Demand", EOD는 "Event On Demand"를 의미합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5118,7 +5175,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bn20110313-54" question-id="bn20110313-54" question-num="54" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">54</span>. 3D TV에서 사용되는 방식 중 두 프레임 신호를 합성해서 동시에 송출하는 방식은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>프레임 시퀀셜(Frame Sequential) 방식</li><li class="correct">프레임 패킹(Frame Packing) 방식</li><li>싱글 스트림(Single Stream) 방식</li><li>듀얼 스트림(Dual Stream) 방식</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 74%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">프레임 패킹 방식은 3D 영상을 만들기 위해 좌우 두 프레임을 합성해서 하나의 프레임으로 만들고, 이를 동시에 송출하는 방식입니다. 이 방식은 다른 방식들과 달리 하나의 프레임에 모든 정보가 담겨 있기 때문에 화질 손실이 적고, 송출 대역폭을 절약할 수 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5164,7 +5221,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bn20110313-55" question-id="bn20110313-55" question-num="55" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">55</span>. 교환기에서 각 가정까지 광섬유 케이블을 부설하는 방식은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>FTTO</li><li>FTTZ</li><li class="correct">FTTH</li><li>FTTC</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 77%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">FTTH는 "Fiber To The Home"의 약자로, 교환기에서 집까지 광섬유 케이블을 직접 부설하는 방식을 의미합니다. 따라서 가정 내부에서 인터넷을 사용할 때 광섬유 케이블을 사용하게 되어 빠른 속도와 안정성을 보장할 수 있습니다. FTTO, FTTZ, FTTC는 각각 교환기에서 건물 내부까지 광섬유 케이블을 부설하는 방식이며, FTTH보다는 인터넷 속도와 안정성이 떨어질 수 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5210,7 +5267,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bn20110313-56" question-id="bn20110313-56" question-num="56" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">56</span>. SCRAMBLE은 주로 어떤 목적으로 사용하는가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>FM 방송에서 음질을 향상시키려고</li><li>AM 방송에서 음질을 향상시키려고</li><li>TV 방송에서 화질을 향상시키려고</li><li class="correct">방송시청을 방해하거나 유료채널을 만들기 위함</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 100%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">SCRAMBLE은 방송시청을 방해하거나 유료채널을 만들기 위해 사용됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5257,7 +5314,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bn20110313-57" question-id="bn20110313-57" question-num="57" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">57</span>. 다음의 변조방식 중 가장 많은 데이터를 전송할 수 있는 변조방식은 무엇인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>QPSK</li><li>8PSK</li><li>16QAM</li><li class="correct">64QAM</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 95%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">64QAM은 다른 변조방식에 비해 더 많은 비트를 한 번에 전송할 수 있기 때문에 가장 많은 데이터를 전송할 수 있는 변조방식입니다. 64QAM은 6비트를 한 번에 전송할 수 있으며, 다른 변조방식에 비해 더 많은 비트를 전송할 수 있기 때문에 더 높은 전송률을 가질 수 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5303,7 +5360,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bn20110313-58" question-id="bn20110313-58" question-num="58" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">58</span>. 다음 중 위성통신의 다원접속 방식이 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>FDMA</li><li class="correct">VSB</li><li>CDMA</li><li>TDMA</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 75%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">VSB는 위성통신에서 사용되는 다원접속 방식이 아닙니다. VSB는 주로 디지털 텔레비전 방송에서 사용되는 방식으로, 위성통신에서는 FDMA, CDMA, TDMA 등의 다원접속 방식이 사용됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5349,7 +5406,13 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bn20110313-59" question-id="bn20110313-59" question-num="59" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">59</span>. FM 변조에서 원래 신호의 주파수가 7.5[kHz]이고 최대 주파수편이가 75[kHz]이면 변조도는 얼마인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">10</li><li>20</li><li>30</li><li>40</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 89%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">FM 변조에서 변조도는 최대 주파수편이를 원래 신호의 주파수로 나눈 값에 1000을 곱한 것과 같습니다. 따라서, 변조도는 10이 됩니다.<br/>
+<br/>
+변조도 = (최대 주파수편이 / 원래 신호의 주파수) x 1000<br/>
+<br/>
+= (75[kHz] / 7.5[kHz]) x 1000<br/>
+<br/>
+= 10</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5395,7 +5458,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bn20110313-60" question-id="bn20110313-60" question-num="60" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">60</span>. 아래 그림에서 '가'에 해당되는 [dB]는?<img src="images/bn20110313m60.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">-20[dB]</li><li>-10[dB]</li><li>0[dB]</li><li>10[dB]</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 79%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">'가'에 해당되는 값은 -20[dB]이다. 이유는 dB는 로그 스케일로 측정되기 때문에, -10[dB]와 -20[dB]의 차이는 10[dB]와 같다. 따라서, -20[dB]는 -10[dB]보다 10배 작은 값이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5446,7 +5509,7 @@ $(function(){
 </div>
 </div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bn20110313-61" question-id="bn20110313-61" question-num="61" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">61</span>. 컴퓨터 내부에 장치되어 있는 것으로 내부기억장치라고도 하며 ROM과 RAM이 있는 장치는 무엇인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>CPU</li><li class="correct">주기억장치</li><li>보조기억장치</li><li>입출력장치</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 67%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">주기억장치는 컴퓨터 내부에 있는 ROM과 RAM으로 구성되어 있으며, CPU가 작업을 처리할 때 필요한 데이터와 명령어를 저장하고 처리하는 역할을 합니다. 따라서 CPU와 밀접한 관련이 있으며, 컴퓨터의 성능과 속도에 영향을 미치는 중요한 요소입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5492,7 +5555,9 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bn20110313-62" question-id="bn20110313-62" question-num="62" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">62</span>. 인터럽트에 대한 내용 중 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>인터럽트(interrupt)란 외부 혹은 내부로부터 긴급 서비스 요청에 의하여 CPU가 현재 실행중인 일을 중단하고, 서비스를 해주는 기법(technique)이다.</li><li>CPU의 제어선 중에는 인터럽트 요구서(INT)이라는 것이 있는데, 이 선은 키보드나 프린터, 기타 각종 입출력장치에 입출력 인터페이스를 통하여 연결되어 있다.</li><li>범람(overflow)이 발생하거나, 어떤 수를 0으로 나누려 하거나, 보호구역 침범(protection violation) 같은 일이 내부에서 발생되어도 이 또한 인터럽트 발생요건이 되고, 이것은 내부로부터의 긴급 서비스 요청이다.</li><li class="correct">인터럽트가 발생하면 CPU는 현재 실행중인 명령을 마친 후, 프로그램 카운터와 기타 필요한 내부 레지스터의 내용을 보조기억장치의 일정영역에 넣어둔다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 58%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답이 없습니다. 모든 보기가 맞는 내용입니다.<br/>
+<br/>
+인터럽트가 발생하면 CPU는 현재 실행중인 명령을 마친 후, 프로그램 카운터와 기타 필요한 내부 레지스터의 내용을 보조기억장치의 일정영역에 넣어둡니다. 이는 인터럽트 처리가 끝난 후, 다시 이전에 실행하던 프로그램으로 돌아갈 수 있도록 하기 위함입니다. 인터럽트는 외부 혹은 내부로부터 긴급 서비스 요청에 의해 CPU가 현재 실행중인 일을 중단하고, 서비스를 해주는 기법입니다. CPU의 제어선 중에는 인터럽트 요구서(INT)이라는 것이 있는데, 이 선은 키보드나 프린터, 기타 각종 입출력장치에 입출력 인터페이스를 통하여 연결되어 있습니다. 또한, 범람(overflow)이 발생하거나, 어떤 수를 0으로 나누려 하거나, 보호구역 침범(protection violation) 같은 일이 내부에서 발생되어도 이 또한 인터럽트 발생요건이 되고, 이것은 내부로부터의 긴급 서비스 요청입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5538,7 +5603,21 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bn20110313-63" question-id="bn20110313-63" question-num="63" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">63</span>. 10진수 8896을 16진수로 변환하면?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>2212</li><li class="correct">22C0</li><li>1222</li><li>1C22</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 62%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">10진수 8896을 16진수로 변환하는 방법은 다음과 같다.<br/>
+<br/>
+1. 16으로 나눈 나머지를 구한다.<br/>
+2. 나머지를 16진수로 변환한다.<br/>
+3. 16으로 나눈 몫을 구한다.<br/>
+4. 몫이 0이 될 때까지 1~3 과정을 반복한다.<br/>
+<br/>
+따라서 8896을 16진수로 변환하면 다음과 같다.<br/>
+<br/>
+8896 ÷ 16 = 556 ... 0<br/>
+556 ÷ 16 = 34 ... 12 (C)<br/>
+34 ÷ 16 = 2 ... 2<br/>
+2 ÷ 16 = 0 ... 2<br/>
+<br/>
+따라서 8896의 16진수는 "22C0"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5584,7 +5663,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bn20110313-64" question-id="bn20110313-64" question-num="64" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">64</span>. 자료의 구성 단위 중 논리적 단위에 해당되지 않는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">워드</li><li>레코드</li><li>파일</li><li>필드</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 56%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">워드는 자료의 구성 단위 중 논리적 단위에 해당되지 않습니다. 워드는 문서 편집 소프트웨어인 Microsoft Word에서 사용되는 용어로, 문서 내에서 하나의 단어를 의미합니다. 따라서 자료의 구성 단위 중 논리적 단위에 해당되는 것은 레코드, 파일, 필드입니다. 레코드는 하나의 데이터 묶음을 의미하며, 파일은 여러 개의 레코드가 모인 것을 의미합니다. 필드는 레코드 내에서 각각의 데이터 항목을 의미합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5631,7 +5710,14 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bn20110313-65" question-id="bn20110313-65" question-num="65" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">65</span>. -3756은 언팩 10진수 형식으로 표현하면?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">F2F7F5D6</li><li>02F7F4C6</li><li>13F6F5D6</li><li>F317F5C6</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 59%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">-3756을 언팩 10진수 형식으로 표현하면 "F2F7F5D6"이 된다. 이는 16진수로 표현된 값으로, 16진수에서 F는 15를 의미한다. 따라서 "F2F7F5D6"은 다음과 같이 계산할 수 있다.<br/>
+<br/>
+F2 = 15*16^7 + 2*16^6 = 4,278,190,080<br/>
+F7 = 15*16^6 + 7*16^5 = 267,386,880<br/>
+F5 = 15*16^5 + 5*16^4 = 16,777,600<br/>
+D6 = 13*16^3 + 6*16^2 + 13*16^1 + 6*16^0 = 3,559<br/>
+<br/>
+따라서, F2F7F5D6 = 4,278,190,080 + 267,386,880 + 16,777,600 + 3,559 = -3756 이 된다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5677,7 +5763,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bn20110313-66" question-id="bn20110313-66" question-num="66" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">66</span>. 다음 중 운영체제의 목적과 역할에 해당되지 않는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>편리한 사용자 인터페이스를 제공한다.</li><li>프로그램의 크기와 관계없이 실행되도록 메모리를 관리한다.</li><li class="correct">자원의 낭비를 막기 위해 인터럽트 처리에 관여하지 않는다.</li><li>효율적으로 시스템 자원을 관리한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 100%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">운영체제의 목적과 역할은 효율적으로 시스템 자원을 관리하고, 프로그램의 크기와 관계없이 실행되도록 메모리를 관리하며, 편리한 사용자 인터페이스를 제공하는 것이다. 따라서 "자원의 낭비를 막기 위해 인터럽트 처리에 관여하지 않는다."는 운영체제의 목적과 역할에 해당되지 않는다. 인터럽트 처리는 시스템 자원을 효율적으로 관리하기 위한 중요한 요소 중 하나이기 때문이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5723,7 +5809,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bn20110313-67" question-id="bn20110313-67" question-num="67" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">67</span>. 16[bit] 마이크로프로세서의 데이터 선은 보통 몇 비트인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>6[bit]</li><li class="correct">16[bit]</li><li>20[bit]</li><li>24[bit]</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 88%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">16[bit] 마이크로프로세서는 16비트 데이터 버스를 가지고 있기 때문에 데이터 선도 16비트이다. 데이터 버스는 CPU와 메모리, 입출력 장치 등 각종 부품들 간에 데이터를 주고받는 통로이며, 데이터 선은 이러한 데이터 버스에서 실제로 데이터를 전송하는 선이다. 따라서 16[bit] 마이크로프로세서의 데이터 선은 16비트이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5769,7 +5855,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bn20110313-68" question-id="bn20110313-68" question-num="68" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">68</span>. 다음 중 상호연결이 잘못된 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">라우팅 - 전송 계층</li><li>IP 주소 - 네트워크 계층</li><li>MAC 주소 - 데이터링크 계층</li><li>전송매체 - 물리 계층</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 77%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">라우팅은 네트워크 계층에서 이루어지며, 전송 계층과는 직접적인 연결이 없습니다. 따라서 "라우팅 - 전송 계층"이 상호연결이 잘못된 것입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5815,7 +5901,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bn20110313-69" question-id="bn20110313-69" question-num="69" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">69</span>. 아음 아래 ㉮~㉰의 내용은 어떠한 시스템에 대한 설명인가?<img src="images/bn20110313m69.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">T1급</li><li>E1급</li><li>T3급</li><li>E3급</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 63%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">위의 내용은 인터넷 회선 속도를 나타내는 것이다. T1급은 1.544Mbps의 속도를 가지며, E1급은 2.048Mbps의 속도를 가진다. T3급은 44.736Mbps의 속도를 가지며, E3급은 34.368Mbps의 속도를 가진다. 따라서, T1급이 다른 보기들보다 속도가 느리지만, 일반 가정에서는 충분한 속도를 제공하기 때문에 정답이 T1급이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5861,7 +5947,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bn20110313-70" question-id="bn20110313-70" question-num="70" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">70</span>. 다음 보기 중 데이터의 부호화하는 방법이 아닌것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">PAM</li><li>NRZ</li><li>RZ</li><li>MANCHESTER</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 74%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">PAM은 데이터를 부호화하는 방법이 아니라, 디지털 신호를 아날로그 신호로 변환하는 방법이기 때문에 정답입니다. NRZ, RZ, MANCHESTER은 모두 디지털 데이터를 부호화하는 방법입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5907,7 +5993,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bn20110313-71" question-id="bn20110313-71" question-num="71" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">71</span>. 지상파 방송사업을 하려는 자가 방송통신위원회에 허가신청서를 접수한 경우 방송통신위원회는 접수일부터 며칠 이내에 심사해야 하는가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>7일</li><li>30일</li><li>60일</li><li class="correct">90일</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 88%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">방송통신위원회는 지상파 방송사업 허가 심사 기간을 90일로 정하고 있습니다. 이는 방송통신법 제42조에 규정된 바에 따라 심사 기간을 정한 것입니다. 따라서 방송통신위원회는 허가신청서를 접수한 날부터 90일 이내에 심사를 마쳐야 합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5953,7 +6039,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bn20110313-72" question-id="bn20110313-72" question-num="72" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">72</span>. 음악유선방송에서 동축케이블 사용시 신호레벨의 기준값은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>20[dBμV] 이상</li><li>30[dBμV] 이상</li><li class="correct">50[dBμV] 이상</li><li>60[dBμV] 이상</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 40%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">동축케이블은 손실이 적고 잡음이 적은 특성을 가지고 있어서, 신호가 약해지는 것을 방지하기 위해 높은 신호레벨이 필요합니다. 따라서 음악유선방송에서 동축케이블 사용시 신호레벨의 기준값은 50[dBμV] 이상으로 설정됩니다. 이는 충분한 신호강도를 유지하기 위한 것입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6000,7 +6086,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bn20110313-73" question-id="bn20110313-73" question-num="73" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">73</span>. 종합유선방송국은 영상신호인 경우 주 전송장치에 입력시 사용하여야 할 기저대역 주파수는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>1.2[MHz] 범위 이내일 것</li><li>2.2[MHz] 범위 이내일 것</li><li>3.2[MHz] 범위 이내일 것</li><li class="correct">4.2[MHz] 범위 이내일 것</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 78%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">종합유선방송국에서는 주로 NTSC 방식을 사용하며, 이 방식에서는 비디오 신호의 기저대역 주파수가 4.2MHz 이내여야 하기 때문에 주 전송장치에 입력시 사용하는 기저대역 주파수도 4.2MHz 이내여야 합니다. 따라서 정답은 "4.2[MHz] 범위 이내일 것" 입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6046,7 +6132,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bn20110313-74" question-id="bn20110313-74" question-num="74" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">74</span>. 지상파 디지털 텔레비전 방송용 무선설비의 기술기준에서 변조방식은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>DSB</li><li>SSB</li><li>4-VSB</li><li class="correct">8-VSB</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 79%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">지상파 디지털 텔레비전 방송용 무선설비의 기술기준에서 변조방식은 8-VSB이다. 이는 8-Level Vestigial Sideband의 약자로, 8개의 신호 레벨을 사용하여 부분적으로 절단된 측면대역을 생성하는 방식이다. 이 방식은 고속 데이터 전송에 적합하며, 지상파 디지털 TV 방송에서 사용되는 대표적인 변조 방식 중 하나이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6092,7 +6178,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bn20110313-75" question-id="bn20110313-75" question-num="75" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">75</span>. 종합유선방송국설비에 접속하는 전송선로설비가 무선방식인 경우 주파수변조 방식의 분계점 기준에 알맞은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">주파수 변조기와 무선송신기의 최초 접속점</li><li>진폭 변조기와 무선송신기의 최초 접속점</li><li>펄스 변조기와 무선송신기의 최초 접속점</li><li>혼합 변조기와 무선송신기의 최초 접속점</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 95%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "주파수 변조기와 무선송신기의 최초 접속점"입니다. 이유는 종합유선방송국설비에서 무선방식으로 전송선로설비에 접속하는 경우, 무선송신기는 주파수 변조 방식을 사용하여 신호를 전송합니다. 따라서 주파수 변조기와 무선송신기의 최초 접속점이 분계점 기준이 됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6138,7 +6224,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bn20110313-76" question-id="bn20110313-76" question-num="76" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">76</span>. 방송 공동수신 안테나 시설에 사용되는 설비가 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>수신안테나</li><li>주파수변환기</li><li>증폭기</li><li class="correct">병렬단자</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 65%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">방송 공동수신 안테나 시설은 주파수를 수신하는데 필요한 수신안테나, 수신된 주파수를 변환하는 주파수변환기, 수신된 신호를 증폭하는 증폭기 등의 설비로 구성됩니다. 하지만 병렬단자는 이러한 설비와는 관련이 없는 전기적인 부품으로, 방송 공동수신 안테나 시설에 사용되지 않습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6184,7 +6270,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bn20110313-77" question-id="bn20110313-77" question-num="77" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">77</span>. 수신안테나로부터 들어오는 각 채널별 텔레비전 방송신호의 세기의 차이가 몇 데시벨을 넘는 경우에 레벨조정기를 사용하는가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">6[dB]</li><li>16[dB]</li><li>26[dB]</li><li>36[dB]</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 81%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">레벨조정기는 일반적으로 6dB 이상의 세기 차이가 발생할 때 사용됩니다. 이는 6dB가 세기의 2배 차이를 의미하기 때문입니다. 따라서, 수신안테나로부터 들어오는 각 채널별 텔레비전 방송신호의 세기의 차이가 6dB 이상일 경우에 레벨조정기를 사용합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6230,7 +6316,9 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bn20110313-78" question-id="bn20110313-78" question-num="78" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">78</span>. 전송설비 및 선로설비에서 전력유도의 전압이 제한치를 초과하거나 초과할 우려가 있는 경우 전력유도 방지조치를 해야 한다. 다음 중 제한치가 잘못 된 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>상시 유도 위험 종전압 : 60[V]</li><li class="correct">이상시 유도 위험 전압 : 550[V]</li><li>기기 오동작 유도 종전압 : 15[V]</li><li>잡음 전압 : 0.5[mV]</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 83%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"상시 유도 위험 종전압 : 60[V]"은 전압 제한치가 아니라 유도 위험 종전압을 나타내는 것이므로 잘못된 것이다.<br/>
+<br/>
+이상시 유도 위험 전압이 550[V]인 이유는, 전송설비나 선로설비에서 이상이 발생하면 전압이 급격하게 상승할 수 있기 때문이다. 이러한 상황에서는 인체에 유해한 전력유도가 발생할 수 있으므로, 이를 방지하기 위해 전압 제한치를 550[V]로 설정한 것이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6276,7 +6364,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bn20110313-79" question-id="bn20110313-79" question-num="79" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">79</span>. 종합유선방송국의 주전송장치의 전송방식에 해당되지 않는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>진폭변조 방식</li><li>주파수변조 방식</li><li>디지털변조 방식</li><li class="correct">무선변조 방식</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 100%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">종합유선방송국은 유선으로 방송을 전송하는데, 따라서 무선변조 방식은 해당되지 않습니다. 무선변조 방식은 무선 통신에서 사용되는 방식으로, 종합유선방송국과는 관련이 없습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6322,7 +6410,11 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bn20110313-80" question-id="bn20110313-80" question-num="80" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">80</span>. 유선방송시설의 설치도면에서 다음 기호의 명칭은?<img src="images/bn20110313m80.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>분기증폭기(Bridging Amplifier)</li><li>분파기(Splitter)</li><li class="correct">분배기(Distributor)</li><li>채널변환장치(Convertor)</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 83%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">해당 기호는 "분배기(Distributor)"를 나타냅니다. 이는 하나의 신호를 여러 개의 출력으로 분배하는 역할을 합니다. <br/>
+<br/>
+다른 보기들과 비교해보면, "분기증폭기(Bridging Amplifier)"는 신호를 증폭하고 분기하는 역할을 하며, "분파기(Splitter)"는 하나의 신호를 여러 개의 출력으로 분할하는 역할을 합니다. "채널변환장치(Convertor)"는 다른 주파수 대역으로 신호를 변환하는 역할을 합니다. <br/>
+<br/>
+따라서, 해당 기호가 하나의 신호를 여러 개의 출력으로 분배하는 역할을 하므로 "분배기(Distributor)"라는 명칭을 가지게 됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>

@@ -489,6 +489,15 @@ var g5_cookie_domain = ".cbtkorea.kr";
 
 <!-- CANONICAL-CBT -->
 <link rel="canonical" href="https://cbtkorea.kr/CBT/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88%EA%B8%B0%EC%82%AC/ccw20140405.html">
+<!-- AI-EXP-RESTORED -->
+<style>
+    .reply .report-modal, .reply .loading, .reply .reply-component { display: none !important; }
+    .ai-exp { list-style: none; padding: 0; margin: 0 0 10px 0; }
+    .ai-exp:last-child { margin-bottom: 0; }
+    .ai-exp-label { font-size: 12px; font-weight: 700; color: #1d4ed8; margin-bottom: 6px; }
+    .ai-exp-label small { font-weight: 400; color: #6b7280; margin-left: 6px; }
+    .ai-exp-empty { font-size: 13px; color: #6b7280; }
+</style>
 </head>
 <body>
 <!-- 상단 시작 { -->
@@ -2665,7 +2674,7 @@ $(function(){
 </div>
 </div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ccw201404⑤-1" question-id="ccw201404⑤-1" question-num="1" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">1</span>. NTFS에서 Sector_per_cluster로 정할 수 없는 것은 무엇인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>1</li><li class="correct">6</li><li>8</li><li>16</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 47%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">NTFS에서 Sector_per_cluster는 디스크의 크기와 파일 시스템의 크기에 따라 결정됩니다. 따라서, Sector_per_cluster로 정할 수 없는 것은 디스크의 크기나 파일 시스템의 크기가 미리 정해져 있지 않은 경우입니다. 이 보기 중에서 "6"은 다른 숫자들과 달리 일반적으로 사용되지 않는 값이기 때문에, NTFS에서 Sector_per_cluster로 정할 수 없는 값으로 간주됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2711,7 +2720,13 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ccw201404⑤-2" question-id="ccw201404⑤-2" question-num="2" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">2</span>. 가상메모리를 지원하는 운영체제에서 성능은 가상주소를 실주소로 변환하는 DAT(Dynamic Address Translation)에 의해 영향을 받는다. DAT를 빠른 순서에서 느린 순서로 나열한 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>직접사상 – 연관사상 – 직접/연관사상</li><li>연관사상 – 직접사상 – 직접/연관사상</li><li>직접/연관사상 – 직접사상 – 연관사상</li><li class="correct">연관사상 – 직접/연관사상 – 직접사상</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 50%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">연관사상 – 직접/연관사상 – 직접사상 순서가 빠르고, 직접사상 – 연관사상 – 직접/연관사상 순서가 느립니다.<br/>
+<br/>
+연관사상은 캐시 메모리에 가상주소와 실주소의 매핑 정보를 저장해 놓고, 직접사상은 매번 매핑 정보를 찾아야 합니다. 따라서 연관사상이 더 빠릅니다.<br/>
+<br/>
+직접/연관사상은 가상주소의 일부를 캐시 메모리의 인덱스로 사용하고, 나머지를 태그로 사용합니다. 이 방식은 연관사상과 직접사상의 장점을 결합한 것으로, 적은 메모리를 사용하면서도 빠른 속도를 보장합니다.<br/>
+<br/>
+직접사상은 가상주소의 일부를 실주소로 바로 변환하는 방식으로, 매핑 정보를 찾는 시간이 없어 빠르지만, 캐시 메모리의 크기가 작아질 수밖에 없습니다. 따라서 가상주소와 실주소의 매핑 정보를 저장하기 위해 메모리를 더 많이 사용해야 합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2757,7 +2772,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ccw201404⑤-3" question-id="ccw201404⑤-3" question-num="3" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">3</span>. 다음 설명하고 있는 스케줄링 기법은은 무엇인가?<img src="images/ccw20140405m3.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>선입선출(FIFO)</li><li>SJF</li><li class="correct">우선순위</li><li>다단계큐</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 7%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-empty">이 문항은 아직 해설이 준비되지 않았습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2803,7 +2818,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ccw201404⑤-4" question-id="ccw201404⑤-4" question-num="4" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">4</span>. 다음 중 버퍼 오버플로우 대응책으로 올바르지 못한 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>버퍼 오퍼플로우 취약점이 생기지 않도록 패치를 정기적으로 한다.</li><li>문자길이를 검사하지 않는 함수를 사용하지 않고 안전한 프로그래밍을 해야 한다.</li><li>함수로부터 복귀할 때 스택의 무결성을 검사한다.</li><li class="correct">사용자의 스택 혹은 힙 영역의 쓰기 및 실행권한을 준다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 43%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"사용자의 스택 혹은 힙 영역의 쓰기 및 실행권한을 준다."는 올바르지 못한 대응책입니다. 이는 보안에 취약한 코드를 실행할 수 있게 되어 버퍼 오버플로우 공격을 더 쉽게 할 수 있게 됩니다. 따라서 이 대응책은 올바르지 않습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2849,7 +2864,11 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ccw201404⑤-5" question-id="ccw201404⑤-5" question-num="5" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">5</span>. 다음은 리눅스 파일권한에 대한 설명이다. 올바르지 못한 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>ls –al명령어로 권한을 자세히 볼 수 있다.</li><li class="correct">chmod명령어는 파일, 디렉토리명을 수정할 수 있다.</li><li>맨앞에 문자가‘-’이면 파일, ‘d’이면 디렉토리, ‘l’이면 링크이다.</li><li>chown 명령어는 파일소유자, 파일소유그룹을 수정 할 수 있다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 53%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"chmod명령어는 파일, 디렉토리명을 수정할 수 있다."는 올바른 설명이다.<br/>
+<br/>
+chmod 명령어는 파일 및 디렉토리의 권한을 수정할 수 있으며, 파일 및 디렉토리명을 수정하는 명령어는 mv이다. 따라서, "chmod명령어는 파일, 디렉토리명을 수정할 수 있다."는 올바른 설명이다. <br/>
+<br/>
+"ls –al명령어로 권한을 자세히 볼 수 있다.", "맨앞에 문자가‘-’이면 파일, ‘d’이면 디렉토리, ‘l’이면 링크이다.", "chown 명령어는 파일소유자, 파일소유그룹을 수정 할 수 있다."는 모두 올바른 설명이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2895,7 +2914,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ccw201404⑤-6" question-id="ccw201404⑤-6" question-num="6" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">6</span>. 다음중 레지스트리 키 값에 없는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>HKEY_CLASSES_ROOT</li><li class="correct">HKEY_LOCAL_MACHINE_SAM</li><li>HKEY_USERS</li><li>HKEY_CURRENT_USER</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 92%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"HKEY_LOCAL_MACHINE_SAM"은 실제로 존재하지만, 일반적으로 사용자가 액세스할 수 없는 시스템 레지스트리 키입니다. 따라서 이것이 주어진 보기에서 유일한 올바르지 않은 항목입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2941,7 +2960,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ccw201404⑤-7" question-id="ccw201404⑤-7" question-num="7" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">7</span>. 다음 보여주고 있는 아파치 관련 설정파일은 무엇인가?<img src="images/ccw20140405m7.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">httpd.conf</li><li>apache.conf</li><li>virtualhost.conf</li><li>server.conf</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 37%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">이 설정 파일은 아파치 웹 서버의 주요 설정 파일인 httpd.conf 파일이다. 이 파일은 아파치 웹 서버의 전반적인 설정을 담당하며, 가상 호스트, 모듈 로드, 포트 설정 등 다양한 설정을 포함하고 있다. 따라서 이 설정 파일은 아파치 웹 서버를 구성하는 데 매우 중요한 역할을 한다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2987,7 +3006,15 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ccw201404⑤-8" question-id="ccw201404⑤-8" question-num="8" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">8</span>. 다음중 패스워드로 가장 강력한 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>123qwe</li><li class="correct">wJqHdK12!%$</li><li>ASDqwe</li><li>qwerasdf</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 81%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"wJqHdK12!%$"이 가장 강력한 이유는 다음과 같습니다.<br/>
+<br/>
+1. 길이가 길다: 패스워드의 길이가 길수록 추측하기 어려워집니다. "wJqHdK12!%$"는 12자리로 다른 보기들보다 길이가 더 깁니다.<br/>
+<br/>
+2. 다양한 문자를 포함하고 있다: 패스워드에 다양한 문자(영문 대/소문자, 숫자, 특수문자 등)를 포함시키면 추측하기 어려워집니다. "wJqHdK12!%$"는 영문 대/소문자, 숫자, 특수문자가 모두 포함되어 있습니다.<br/>
+<br/>
+3. 예측하기 어렵다: 패스워드가 예측하기 쉬운 단어나 숫자 조합이면 추측하기 쉽습니다. "wJqHdK12!%$"는 예측하기 어렵습니다.<br/>
+<br/>
+따라서, "wJqHdK12!%$"은 다른 보기들보다 강력한 패스워드입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3034,7 +3061,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ccw201404⑤-9" question-id="ccw201404⑤-9" question-num="9" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">9</span>. 시스템 무결성을 유지하기 위한 명령어는 무엇인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>halt</li><li class="correct">shutdown</li><li>reload</li><li>reboot</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 56%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "shutdown"이다. shutdown 명령어는 시스템을 정지시키는 명령어로, 시스템을 안전하게 종료시키기 위해 사용된다. 이를 통해 시스템 무결성을 유지할 수 있다. 반면, 다른 보기들은 시스템을 재시작하거나 다시 시작하는 명령어들이므로 시스템 무결성을 유지하기 위해 사용되지 않는다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3080,7 +3107,9 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ccw201404⑤-10" question-id="ccw201404⑤-10" question-num="10" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">10</span>. 다음 중 HTTP/1.1 프로토콜에 대한 설명으로 올바르지 않은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>클라이언트가 서버에 커넥션을 시도한다.</li><li>HTTP/1.1 GET방식으로 데이터를 요청한다.</li><li>서버는 해당 데이터를 검색하여 클라이언트에게 전달한다.</li><li class="correct">POST는 클라이언트가 정보를 받아들이고 클라이언트에서 동작하도록 요청하는 방식이다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 43%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답: "POST는 클라이언트가 정보를 받아들이고 클라이언트에서 동작하도록 요청하는 방식이다."<br/>
+<br/>
+설명: POST는 클라이언트가 서버에 데이터를 제출하고, 서버가 해당 데이터를 처리하도록 요청하는 방식입니다. 클라이언트에서 동작하도록 요청하는 것은 아닙니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3126,7 +3155,9 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ccw201404⑤-11" question-id="ccw201404⑤-11" question-num="11" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">11</span>. 공유폴더 사용권한의 특징에 대한 설명으로 올바르지 못한 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">공유폴더 사용권한은 파일에도 적용된다.</li><li>NTFS사용권한보다 약한 보안을 제공한다.</li><li>네트워크 접근 사용만을 제한하고 로컬접속을 제어할 수 없다.</li><li>기본 공유폴더 사용권한은 Everyone 그룹에게 모든 권한이 주어진다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 17%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"공유폴더 사용권한은 파일에도 적용된다."가 올바르지 못한 설명이다. 공유폴더 사용권한은 해당 폴더에 대한 접근 권한을 제어하는 것으로, 폴더 내부의 파일에 대한 권한은 별도로 설정해야 한다. <br/>
+<br/>
+공유폴더 사용권한은 NTFS사용권한보다 약한 보안을 제공하며, 네트워크 접근 사용만을 제한하고 로컬접속을 제어할 수 없다는 특징이 있다. 또한, 기본 공유폴더 사용권한은 Everyone 그룹에게 모든 권한이 주어진다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3172,7 +3203,21 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ccw201404⑤-12" question-id="ccw201404⑤-12" question-num="12" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">12</span>. 프로세스 교착상태 발생조건에 해당되지 않는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>점유와 대기</li><li>상호배제</li><li>비중단조건</li><li class="correct">중단조건</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 19%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "비중단조건"입니다. <br/>
+<br/>
+프로세스 교착상태 발생 조건은 다음과 같습니다. <br/>
+<br/>
+1. 상호배제 : 한 번에 하나의 프로세스만 공유 자원을 사용할 수 있어야 합니다. <br/>
+2. 점유와 대기 : 프로세스가 자원을 가지고 있으면서 다른 자원을 기다리고 있어야 합니다. <br/>
+3. 비선점 : 다른 프로세스가 자원을 강제로 빼앗을 수 없어야 합니다. <br/>
+4. 순환대기 : 프로세스들이 자원을 순환하며 대기해야 합니다. <br/>
+<br/>
+하지만 "중단조건"은 교착상태를 해결하기 위한 조건으로, 교착상태 발생 조건에 해당하지 않습니다. 중단조건은 다음과 같습니다. <br/>
+<br/>
+1. 자원 선점 : 다른 프로세스가 자원을 강제로 빼앗을 수 있습니다. <br/>
+2. 타임아웃 : 일정 시간이 지나면 프로세스가 자원을 반납하도록 합니다. <br/>
+<br/>
+따라서 "중단조건"은 교착상태 발생을 막기 위한 조건이며, 교착상태 발생 조건에 해당하지 않습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3218,7 +3263,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ccw201404⑤-13" question-id="ccw201404⑤-13" question-num="13" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">13</span>. 다음 나열된 도구들이 공통적으로 가지고 있는 특징은 무엇인가?<img src="images/ccw20140405m13.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>다중취약점 스캔</li><li class="correct">특정취약점 스캔</li><li>은닉스캔</li><li>네트워크 구조 스캔</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 28%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">이 도구들은 모두 보안 취약점을 찾기 위한 스캐닝 도구이다. 그러나 "특정취약점 스캔"은 다른 도구들과 달리 특정한 취약점에 대해서만 스캔을 수행하며, 이를 통해 보다 정확하고 효율적인 보안 취약점 관리가 가능하다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3264,7 +3309,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ccw201404⑤-14" question-id="ccw201404⑤-14" question-num="14" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">14</span>. 다음중 기본 공유폴더 형태가 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>C$</li><li>ADMIN$</li><li class="correct">PRINT$</li><li>IPC$</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 71%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">PRINT$는 프린터 공유를 위한 특수한 공유 폴더로, 파일 공유를 위한 기본 공유폴더 형태가 아닙니다. 이 폴더는 프린터 드라이버와 관련된 파일들이 저장되어 있으며, 클라이언트에서 프린터를 사용할 때 이 폴더를 통해 접근합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3310,7 +3355,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ccw201404⑤-15" question-id="ccw201404⑤-15" question-num="15" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">15</span>. 다음은 리눅스 시스템 최적화 모니터링 명령어들이다. 무엇을 모니터링 하는 명령어인가?<img src="images/ccw20140405m15.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>CPU문제점 점검</li><li class="correct">메모리 문제점 점검</li><li>디스크I/O문제점 점검</li><li>네트워크 문제점 점검</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 47%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">이 명령어는 메모리 사용량과 관련된 정보를 모니터링하는 명령어이다. 따라서 메모리 문제점을 점검하기 위해 사용된다. 메모리 사용량이 과다하거나 부족할 경우 시스템 성능에 영향을 미칠 수 있으므로 이를 모니터링하여 최적화할 필요가 있다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3356,7 +3401,9 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ccw201404⑤-16" question-id="ccw201404⑤-16" question-num="16" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">16</span>. TCP_WRAPPER 활용시에 로그파일은 일반적으로 ( )과 ( )파일에 기록된다. 괄호안에 순서대로 알맞은 내용은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>dmessage, secure</li><li class="correct">message, secure</li><li>btmp, message</li><li>wtmp, secure</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 45%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">TCP_WRAPPER 활용시에 로그파일은 일반적으로 message과 secure 파일에 기록된다. <br/>
+<br/>
+이유는 TCP_WRAPPER는 접속 시도나 접속 실패 등의 정보를 로그파일에 기록하는데, 이때 message 파일에는 일반적인 로그 정보가, secure 파일에는 보안 관련 로그 정보가 기록되기 때문이다. 예를 들어, 로그인 시도나 인증 실패 등의 보안 관련 이벤트는 secure 파일에 기록된다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3403,7 +3450,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ccw201404⑤-17" question-id="ccw201404⑤-17" question-num="17" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">17</span>. 다음에서 설명하고 있는 스캔탐지도구는 무엇인가?<img src="images/ccw20140405m17.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>SARA</li><li>NESSUS</li><li class="correct">PORTSENTRY</li><li>NIKTO2</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 30%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">위 그림은 포트스캔을 감지하는 스캔탐지도구인 포트센트리의 작동 원리를 보여준다. 포트센트리는 네트워크 상에서 포트스캔을 시도하는 IP 주소를 식별하고, 해당 IP 주소로부터의 접속을 차단하는 역할을 한다. 따라서, 위 그림에서 보여지는 스캔탐지도구는 포트센트리이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3449,7 +3496,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ccw201404⑤-18" question-id="ccw201404⑤-18" question-num="18" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">18</span>. 파일이 생성되는 순간부터 로그인가 로그아웃의 정보를 보여주는 로그 파일은 무엇인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">wtmp</li><li>utmp</li><li>last</li><li>secure</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 34%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "wtmp"이다. wtmp 파일은 시스템에 로그인한 모든 사용자의 로그인 및 로그아웃 정보를 기록하는 파일이다. 이 파일은 시스템이 부팅될 때 생성되며, 로그인 및 로그아웃 이벤트가 발생할 때마다 업데이트된다. 따라서 wtmp 파일은 시스템의 보안 및 감사 추적을 위해 중요한 역할을 한다. utmp 파일은 현재 로그인한 사용자 정보를 저장하는 반면, wtmp 파일은 로그인 및 로그아웃 이벤트의 전체 기록을 저장한다. last 파일은 wtmp 파일의 내용을 읽어서 사용자의 로그인 기록을 보여주는 명령어이며, secure 파일은 시스템 보안 로그 파일이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3495,7 +3542,11 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ccw201404⑤-19" question-id="ccw201404⑤-19" question-num="19" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">19</span>. 다음 중 커널에 대한 설명으로 올바르지 못한 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>커널은 프로세스, 파일시스템, 메모리 , 네트워크의 관리를 맡는다.</li><li>컴퓨터 운영체제 핵심으로서 컴퓨터의 가장 기본적인 각 장치들을 관리하고 제어하기 위한 소프트웨어이다.</li><li>장치 혹은 시스템의 기능과 관련된 변화가 있을 경우 새로운 커널을 생성해야한다.</li><li class="correct">유닉스 계열의 시스템이 부팅될 때 가장 먼저 읽히는 운영체제의 핵심으로 보조기억장치에 상주한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 34%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"장치 혹은 시스템의 기능과 관련된 변화가 있을 경우 새로운 커널을 생성해야한다."는 올바르지 않은 설명입니다.<br/>
+<br/>
+커널은 운영체제의 핵심으로서 컴퓨터의 기본적인 각 장치들을 관리하고 제어하기 위한 소프트웨어입니다. 이는 프로세스, 파일시스템, 메모리, 네트워크의 관리를 맡습니다. 또한, 유닉스 계열의 시스템이 부팅될 때 가장 먼저 읽히는 운영체제의 핵심으로 보조기억장치에 상주합니다.<br/>
+<br/>
+하지만, 장치나 시스템의 기능이 변경되는 경우에는 새로운 커널을 생성하는 것이 아니라, 기존의 커널을 수정하거나 업그레이드하여 대응합니다. 따라서 "장치 혹은 시스템의 기능과 관련된 변화가 있을 경우 새로운 커널을 생성해야한다."는 올바르지 않은 설명입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3541,7 +3592,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ccw201404⑤-20" question-id="ccw201404⑤-20" question-num="20" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">20</span>. 버퍼오버플로우에 대한 설명으로 올바르지 않은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">버퍼에 저장된 프로세스 간의 자원 경쟁을 야기해 권한을 획득하는 기법으로 공격하는 방식이다.</li><li>오버플로우에는 힙오버플로우와 스택오버플로우가 있다.</li><li>버퍼오버플로우가 발생하면 데이터는 인접한 포인트 영역까지 침범한다.</li><li>대응책은 데이터가 들어가는 배열의 읽기, 쓰기가 배열 범위를 벗어나지 않는지 검사한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 60%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"버퍼에 저장된 프로세스 간의 자원 경쟁을 야기해 권한을 획득하는 기법으로 공격하는 방식이다."가 올바르지 않은 설명이다. 버퍼오버플로우는 입력 데이터가 버퍼의 크기를 초과하여 인접한 메모리 영역까지 침범하는 공격 기법이다. 이를 이용해 공격자는 프로그램의 실행 흐름을 조작하거나 시스템에 악성 코드를 삽입할 수 있다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3592,7 +3643,7 @@ $(function(){
 </div>
 </div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ccw201404⑤-21" question-id="ccw201404⑤-21" question-num="21" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">21</span>. 다음 나열된 장비 중 네트워크 계층에서 이용하는 장비는 무엇인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>리피터</li><li>허브</li><li>브릿지</li><li class="correct">라우터</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 74%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">네트워크 계층에서는 IP 주소를 이용하여 패킷을 전송하고, 이를 위해 다른 네트워크와 연결하는 역할을 하는 장비가 필요합니다. 이러한 역할을 하는 장비가 라우터입니다. 리피터는 신호를 증폭하여 전송 거리를 늘리는 역할을 하고, 허브는 여러 대의 컴퓨터를 연결하여 네트워크를 구성하는 역할을 합니다. 브릿지는 서로 다른 두 개의 네트워크를 연결하여 통신할 수 있도록 하는 역할을 하지만, 라우터는 여러 개의 네트워크를 연결하여 패킷을 전송하는 역할을 합니다. 따라서 네트워크 계층에서 이용하는 장비는 라우터입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3638,7 +3689,15 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ccw201404⑤-22" question-id="ccw201404⑤-22" question-num="22" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">22</span>. 다음중 IP클래스 범위로 올바르지 않은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>A : 0.0.0.0 ~ 127.255.255.255</li><li>B : 128.0.0.0 ~ 191.255.255.255</li><li class="correct">C: 193.0.0.0 ~ 223.255.255.255</li><li>D : 224.0.0.0. ~ 239.255.255.255</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 56%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 C입니다. IP 클래스 범위는 A, B, C, D, E로 나뉘며, 각각의 범위는 다음과 같습니다.<br/>
+<br/>
+A : 0.0.0.0 ~ 127.255.255.255<br/>
+B : 128.0.0.0 ~ 191.255.255.255<br/>
+C : 192.0.0.0 ~ 223.255.255.255<br/>
+D : 224.0.0.0 ~ 239.255.255.255<br/>
+E : 240.0.0.0 ~ 255.255.255.255<br/>
+<br/>
+따라서, C는 192.0.0.0부터 시작해야 올바른 IP 클래스 범위입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3684,7 +3743,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ccw201404⑤-23" question-id="ccw201404⑤-23" question-num="23" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">23</span>. 다음은 IPSec 프로토콜에 대한 설명이다. 괄호안에 알맞은 내용으로 연결된 것은?<img src="images/ccw20140405m23.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">AH-ESP-IKE</li><li>ESP-IKE-AH</li><li>ESP-AH-IKE</li><li>IKE-ESP-AH</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 54%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">IPSec 프로토콜은 인터넷상에서 안전한 통신을 위해 사용되는 프로토콜이다. IPSec은 인증헤더(AH), 암호화 페이로드(ESP), 그리고 키 교환(IKE) 프로토콜로 구성된다. 따라서 정답은 "AH-ESP-IKE"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3730,7 +3789,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ccw201404⑤-24" question-id="ccw201404⑤-24" question-num="24" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">24</span>. 다음과 같은 사이버 공격기법을 무엇이라 하는가?<img src="images/ccw20140405m24.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">APT 공격</li><li>드라이브 바이 다운로드 공격</li><li>워터링 홀 공격</li><li>랜섬웨어 공격</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 67%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">이 그림은 APT 공격을 나타내는 것으로, 공격자가 특정 대상을 정해 그 대상의 보안 취약점을 파악하고, 그 취약점을 이용해 대상의 시스템에 침입하여 정보를 탈취하거나 제어하는 공격 기법을 말합니다. 이 공격은 지속적으로 대상을 추적하고, 대상의 보안 시스템을 우회하며, 대상의 정보를 탈취하고 제어하기 때문에 매우 위험한 공격 기법으로 알려져 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3777,7 +3836,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ccw201404⑤-25" question-id="ccw201404⑤-25" question-num="25" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">25</span>. 내부에서 백신설치 여부나 컴퓨터 이름 등으로 pc나 노트북 등 매체등을 제어할 수 있는 솔루션을 무엇이라 하는가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>ESM</li><li>MDM</li><li class="correct">NAC</li><li>SEIM</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 47%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "NAC"이다. NAC는 Network Access Control의 약자로, 네트워크 접근 제어를 의미한다. 내부에서 백신설치 여부나 컴퓨터 이름 등으로 pc나 노트북 등 매체등을 제어할 수 있는 솔루션으로, 네트워크 보안을 강화하고 불법적인 접근을 차단하는 역할을 한다. ESM은 Enterprise Security Management, MDM은 Mobile Device Management, SEIM은 Security Information and Event Management을 의미한다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3823,7 +3882,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ccw201404⑤-26" question-id="ccw201404⑤-26" question-num="26" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">26</span>. 설명하고 있는 네트워크 공격방법은 무엇인가?<img src="images/ccw20140405m26.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>ARP 스니핑</li><li>ICMP Redirect</li><li>ARP 스푸핑</li><li class="correct">스위치 재밍</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 46%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">이 그림은 스위치 재밍 공격을 나타내고 있습니다. 스위치 재밍은 스위치의 MAC 테이블을 공격하여 스위치가 동작하지 못하게 만드는 공격입니다. 이를 통해 네트워크 트래픽을 모두 브로드캐스트로 전송하여 네트워크를 마비시키는 것이 목적입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3869,7 +3928,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ccw201404⑤-27" question-id="ccw201404⑤-27" question-num="27" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">27</span>. 스위치 환경에서 나타나는 스니핑 기법이 아닌 것은 무엇인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>스위치 재밍</li><li>ICMP Redirect</li><li>ARP 스푸핑</li><li class="correct">세션하이재킹</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 42%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">세션하이재킹은 스위치 환경에서 나타나는 스니핑 기법이 아닙니다. 세션하이재킹은 네트워크 상에서 세션을 가로채어 조작하는 기법으로, 스위치 환경과는 관련이 없습니다. 스위치 재밍, ICMP Redirect, ARP 스푸핑은 모두 스위치 환경에서 나타나는 스니핑 기법입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3915,7 +3974,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ccw201404⑤-28" question-id="ccw201404⑤-28" question-num="28" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">28</span>. 라우터는 목적지까지 가는 최단경로를 계산하기 위해 다익스트라 알고리즘을 사용한다. 가장 적합한 라우팅 알고리즘은 무엇인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>RIP</li><li>IGRP</li><li class="correct">OSPF</li><li>EIGRP</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 50%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">OSPF는 링크 상태 라우팅 프로토콜로, 네트워크의 상태 정보를 교환하여 최적의 경로를 계산한다. 이를 통해 라우터 간의 경로 선택이 더욱 효율적으로 이루어지며, 대규모 네트워크에서도 안정적인 라우팅을 제공할 수 있다. 또한, OSPF는 다양한 경로 메트릭을 고려하여 최적의 경로를 선택하므로, RIP나 IGRP와 같은 거리 벡터 프로토콜보다 더욱 정확한 라우팅을 수행할 수 있다. 따라서, OSPF가 가장 적합한 라우팅 알고리즘이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3961,7 +4020,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ccw201404⑤-29" question-id="ccw201404⑤-29" question-num="29" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">29</span>. 다음에서 설명하는 프로세스 스케줄링 방법은 무엇인가?<img src="images/ccw20140405m29.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>FIFO</li><li>SJF</li><li>RR</li><li class="correct">MLFQ</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 40%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">이 그림은 다중 대기열 피드백 큐(Multi-Level Feedback Queue, MLFQ) 방식을 나타낸다. 이 방식은 프로세스를 여러 개의 대기열에 할당하고, 각 대기열마다 우선순위를 부여하여 스케줄링하는 방식이다. 우선순위가 높은 대기열에서 실행 중인 프로세스가 다른 대기열에서 실행 중인 프로세스보다 우선순위가 높다. 이 방식은 우선순위가 높은 프로세스를 빠르게 처리하면서도 우선순위가 낮은 프로세스도 공정하게 처리할 수 있다는 장점이 있다. 따라서 이 그림에서 나타낸 스케줄링 방식은 MLFQ 방식이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4007,7 +4066,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ccw201404⑤-30" question-id="ccw201404⑤-30" question-num="30" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">30</span>. 다음에서 설명하고 있는 것은?<img src="images/ccw20140405m30.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">인터럽트 출력</li><li>RTC</li><li>FSB</li><li>오버클럭</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 43%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">이 그림은 CPU가 인터럽트를 받아 처리하는 과정을 보여주고 있습니다. 인터럽트란, CPU가 현재 실행 중인 작업을 중단하고 다른 작업을 처리하기 위해 발생하는 신호입니다. 이 그림에서는 RTC(Real Time Clock)가 인터럽트를 발생시켜 CPU가 현재 시간을 처리하도록 하는 것을 보여주고 있습니다. 따라서 정답은 "인터럽트 출력"입니다. FSB(Front Side Bus)는 CPU와 메모리 간의 통신을 담당하는 버스이고, 오버클럭은 CPU나 그래픽 카드 등의 성능을 높이기 위해 클럭 속도를 높이는 것을 말합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4053,7 +4112,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ccw201404⑤-31" question-id="ccw201404⑤-31" question-num="31" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">31</span>. ICMP에서 TTL=0이 되어 도달할 때 메시지는 무엇인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>ICMP unreachable</li><li>echo reply</li><li class="correct">TTL exceeded</li><li>echo request</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 18%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">TTL은 패킷이 라우터를 통과할 때마다 1씩 감소하며, 0이 되면 해당 패킷은 폐기됩니다. 이때, ICMP에서는 "TTL exceeded"라는 메시지를 보내게 됩니다. 이는 해당 패킷이 목적지에 도달하지 못하고 TTL이 만료되었음을 나타내는 것입니다. 따라서 정답은 "TTL exceeded"입니다. ICMP unreachable은 목적지 호스트가 도달 불가능한 경우에 보내는 메시지이며, echo reply와 echo request는 ICMP의 일부로서, ping 테스트에서 사용됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4099,7 +4158,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ccw201404⑤-32" question-id="ccw201404⑤-32" question-num="32" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">32</span>. 다음 보기에서 설명하고 있는 네트워크 토폴로지는 무엇인가?<img src="images/ccw20140405m32.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>메시형</li><li class="correct">스타형</li><li>트리형</li><li>버스형</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 74%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">위 그림은 스타형 네트워크 토폴로지를 나타내고 있습니다. 스타형은 중앙에 허브(Hub)나 스위치(Switch)가 있고, 각각의 장치들이 이 허브나 스위치에 직접 연결되는 형태입니다. 이러한 구조로 인해 한 장치의 고장이 전체 네트워크에 영향을 미치지 않는 장점이 있습니다. 따라서, 위 그림에서는 스타형 네트워크 토폴로지를 나타내고 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4146,7 +4205,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ccw201404⑤-33" question-id="ccw201404⑤-33" question-num="33" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">33</span>. 모든IT시스템에서 생성되는 로그와 이벤트를 통합관리래 외부 위험을 사전에 예측하고 내부 정보 유출을 방지할 수 있도록 하는 개념의 보안 솔루션은 무엇인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>ESM</li><li>IAM</li><li class="correct">SIEM</li><li>DLP</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 39%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">SIEM은 Security Information and Event Management의 약자로, 모든 IT 시스템에서 생성되는 로그와 이벤트를 통합적으로 관리하여 외부 위협을 사전에 예측하고 내부 정보 유출을 방지할 수 있도록 하는 보안 솔루션입니다. 다른 보기들은 각각 다른 보안 솔루션을 나타내고 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4192,7 +4251,13 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ccw201404⑤-34" question-id="ccw201404⑤-34" question-num="34" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">34</span>. 다음 포트스캔 중 공격자가 공격했을 때 포그가 열린 경우 돌아오는 응답이 다른 하나는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>FIN</li><li>NULL</li><li class="correct">TCP</li><li>UDP</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 25%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "TCP"입니다. <br/>
+<br/>
+TCP는 3-way handshake를 통해 연결을 설정하고, 연결이 설정된 후에는 데이터 전송이 완료될 때까지 연결을 유지합니다. 따라서 포트스캔 중에 포그가 열렸을 때, 공격자가 SYN 패킷을 보내면, 만약 해당 포트가 열려있다면, 대상 시스템은 SYN/ACK 패킷을 보내고, 공격자는 ACK 패킷을 보내 연결을 설정합니다. <br/>
+<br/>
+반면에 FIN 스캔과 NULL 스캔은 연결 설정 없이 포트 상태를 확인합니다. FIN 스캔은 FIN 패킷을 보내서 대상 시스템이 해당 포트를 닫았을 때 응답이 없는 것을 확인하고, NULL 스캔은 플래그 비트를 모두 0으로 설정한 패킷을 보내서 대상 시스템이 해당 포트를 닫았을 때 응답이 없는 것을 확인합니다. <br/>
+<br/>
+따라서, 포그가 열렸을 때 응답이 다른 것 중 TCP가 정답인 이유는, TCP는 연결 설정을 통해 포트 상태를 확인하기 때문입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4238,7 +4303,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ccw201404⑤-35" question-id="ccw201404⑤-35" question-num="35" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">35</span>. 다음 설명하고 잇는 공격방식은 무엇인가?<img src="images/ccw20140405m35.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">Land attack</li><li>Ping of Death</li><li>Tear Drop</li><li>Smurf Attack</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 63%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">이 공격은 송신자와 수신자의 IP 주소를 동일하게 설정하여, 수신자가 자신이 보낸 패킷으로 인식하여 자기 자신을 공격하는 방식입니다. 이를 통해 수신자의 시스템을 다운시키거나 네트워크를 마비시키는 것이 목적입니다. 이 공격 방식은 "Land attack"입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4284,7 +4349,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ccw201404⑤-36" question-id="ccw201404⑤-36" question-num="36" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">36</span>. 스니핑 방지 대책으로 올바르지 않은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>원격 접속 시에는 SSH프로토콜을 이용하여 전송간 암호화한다.</li><li>메일 사용 시에 S/MIME가 적용된 안전한 메일을 이용한다.</li><li>전자상거래 이용 시 SSL이 적용된 사이트를 이용한다.</li><li class="correct">스위치에서 MAC주소 테이블을 동적으로 지정한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 69%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">스니핑은 네트워크 상에서 패킷을 가로채어 정보를 탈취하는 공격 기법이다. 따라서 스니핑 방지 대책으로는 전송간 암호화, 안전한 메일, SSL 등을 이용하여 정보를 암호화하거나 안전한 채널을 이용하는 것이 올바른 대책이다. 하지만 스위치에서 MAC주소 테이블을 동적으로 지정하는 것은 스니핑 방지와는 직접적인 연관이 없는 기술적인 대책이므로 올바르지 않은 것이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4330,7 +4395,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ccw201404⑤-37" question-id="ccw201404⑤-37" question-num="37" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">37</span>. 다음 중 IPSec VPN프로토콜에 대한 설명으로 올바르지 않은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>IPSec은 3계층 프로토콜이다.</li><li>AH와 ESP기능을 지원한다.</li><li class="correct">종단시스템에서 출발하고 종단시스템에서 수신하는 모드를 터널모드라한다.</li><li>IETF에 의해 IP계층 보안을 위한 개방형 구조로 설계된 VPN기술이다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 65%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"종단시스템에서 출발하고 종단시스템에서 수신하는 모드를 터널모드라한다."는 올바른 설명이다. 이는 VPN 연결이 종단 시스템 간의 통신을 암호화하고 보호하기 위해 생성되는 가상 터널을 의미한다. 이 가상 터널은 종단 시스템의 IP 패킷을 암호화하고, 터널을 통해 전송되며, 수신 측에서는 패킷을 복호화하여 원래의 IP 패킷으로 복원한다. 이를 터널링(Tunneling)이라고도 한다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4376,7 +4441,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ccw201404⑤-38" question-id="ccw201404⑤-38" question-num="38" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">38</span>. 다음 중 무선 랜 보안대책 수립으로 올바르지 못한 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>AP전파가 건물 내로 한정 되도록 한다.</li><li class="correct">AP는 외부인이 쉽게 접근하거나 공개된 장소에 설치한다.</li><li>AP가 제공하는 강력한 키를 설정하고 주기적으로 변경한다.</li><li>WIPS등을 설치하여 불법접근이나 악의적인 의도 차단을 모니터링한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 34%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"AP는 외부인이 쉽게 접근하거나 공개된 장소에 설치한다."가 올바르지 못한 것이다. 외부인이 쉽게 접근할 수 있는 장소에 AP를 설치하면 누구나 무선 랜에 접속할 수 있으므로 보안에 취약해진다. 따라서 AP는 보안이 강화된 장소에 설치해야 한다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4422,7 +4487,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ccw201404⑤-39" question-id="ccw201404⑤-39" question-num="39" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">39</span>. 시스템에 대한 침임 탐지와 차단을 동시에 할 수 있는 솔루션은 무엇인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>SIEM</li><li>ESM</li><li class="correct">IPS</li><li>IDS</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 42%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">IPS는 Instrusion Prevention System의 약자로, 시스템에 대한 침입을 탐지하고 차단할 수 있는 솔루션이다. 따라서 IPS는 시스템에 대한 침임 탐지와 차단을 동시에 수행할 수 있다. SIEM은 Security Information and Event Management의 약자로, 보안 이벤트 및 정보를 수집, 분석, 보고하는 솔루션이다. ESM은 Enterprise Security Management의 약자로, 기업 전반적인 보안 관리를 위한 솔루션이다. IDS는 Intrusion Detection System의 약자로, 시스템에 대한 침입을 탐지하는 솔루션이다. 하지만 IDS는 차단 기능이 없기 때문에 침입을 막을 수는 없다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4468,7 +4533,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ccw201404⑤-40" question-id="ccw201404⑤-40" question-num="40" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">40</span>. 다음에서 설명하고 있는 네트워크 공격 기법은 무엇인가?<img src="images/ccw20140405m40.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>세션하이재킹</li><li>IP스푸핑</li><li class="correct">ARP스푸핑</li><li>스니핑공격</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 45%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">이 그림은 ARP 스푸핑 공격을 나타내고 있습니다. ARP 스푸핑은 공격자가 네트워크 상에서 다른 컴퓨터의 MAC 주소를 자신의 MAC 주소로 위조하여, 해당 컴퓨터로 전송되는 패킷을 공격자가 가로채는 공격 기법입니다. 이를 통해 공격자는 해당 컴퓨터와 통신하는 모든 패킷을 엿볼 수 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4519,7 +4584,7 @@ $(function(){
 </div>
 </div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ccw201404⑤-41" question-id="ccw201404⑤-41" question-num="41" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">41</span>. FTP전송 모드에 대한 설명으로 올바른 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>기본은 액티브 모드이며, 패시브 모드 변경은 FTP서버가 결정한다.</li><li class="correct">기본은 액티브 모드이며, 패시브 모드 변경은 FTP클라이언트가 결정한다.</li><li>기본은 패시브 모드이며, 패시브 모드 변경은 FTP서버가 결정한다.</li><li>기본은 패시브 모드이며, 패시브 모드 변경은 FTP클라이언트가 결정한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 67%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">FTP전송 모드에 대한 설명 중 올바른 것은 "기본은 액티브 모드이며, 패시브 모드 변경은 FTP클라이언트가 결정한다." 이다. 이유는 FTP클라이언트가 데이터 전송을 위해 FTP서버에 접속하면, FTP서버는 클라이언트에게 데이터 전송을 위한 포트를 지정해주는데, 이때 액티브 모드에서는 FTP서버가 클라이언트에게 데이터 전송을 위한 포트를 지정하고, 패시브 모드에서는 클라이언트가 데이터 전송을 위한 포트를 지정한다. 따라서 패시브 모드로 변경하는 것은 클라이언트의 결정에 따라 이루어진다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4565,7 +4630,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ccw201404⑤-42" question-id="ccw201404⑤-42" question-num="42" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">42</span>. FTP접속 시 PORT 명령으로 보기와 같은 내용을 확인 하였다. 다음접속 포트는 몇 번인가?<img src="images/ccw20140405m42.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>2,320</li><li class="correct">2,321</li><li>2,322</li><li>2,323</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 53%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">FTP 접속 시 PORT 명령으로 확인한 내용은 "227 Entering Passive Mode (192,168,0,2,9,9)" 이다. 이는 FTP 서버가 클라이언트에게 데이터 전송을 위해 사용할 포트를 알려주는 것이다. 여기서 9와 9를 합쳐서 2,321이 되므로, 다음 접속 포트는 2,321번이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4611,7 +4676,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ccw201404⑤-43" question-id="ccw201404⑤-43" question-num="43" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">43</span>. 전자상거래 프로토콜 중에서 주문정보와 지불정보를 안전하게 이용할 수 있도록 하는 프로토콜은 무엇인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>단체서명</li><li>단독서명</li><li class="correct">이중서명</li><li>은닉서명</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 70%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">이중서명은 주문정보와 지불정보를 안전하게 이용할 수 있도록 하는 프로토콜입니다. 이는 거래를 진행하는 양측이 각각의 개인키로 서명을 하여 거래 내용이 변경되지 않았음을 증명하고, 이를 공개키로 검증함으로써 안전한 거래를 보장합니다. 따라서 이중서명은 전자상거래에서 안전한 거래를 위해 매우 중요한 역할을 합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4657,7 +4722,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ccw201404⑤-44" question-id="ccw201404⑤-44" question-num="44" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">44</span>. 전자투표와 전자화폐의 공통된 요구조건 사항은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>양도성</li><li class="correct">익명성(비밀성)</li><li>단일성</li><li>합법성</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 42%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">전자투표와 전자화폐 모두 사용자의 개인정보와 거래 내역을 보호해야 하기 때문에 익명성(비밀성)이 필요하다. 이를 통해 사용자의 개인정보가 유출되지 않고, 거래 내역이 추적되지 않아 보안성이 보장된다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4703,7 +4768,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ccw201404⑤-45" question-id="ccw201404⑤-45" question-num="45" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">45</span>. 다음 설명하고 있는 보안 전자우편시스템 프로토콜은?<img src="images/ccw20140405m45.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>PEM</li><li>MIME</li><li class="correct">S/MIME</li><li>PGP</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 56%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">이미지에서 보이는 전자우편 시스템은 S/MIME을 사용하고 있습니다. S/MIME은 전자우편 보안을 위한 프로토콜로, 메일의 기밀성과 무결성을 보장하기 위해 암호화와 디지털 서명을 제공합니다. 따라서, 이 시스템에서는 S/MIME을 사용하여 전송된 메일이 안전하게 전달되고 있는 것입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4749,7 +4814,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ccw201404⑤-46" question-id="ccw201404⑤-46" question-num="46" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">46</span>. 다음 전자투표 방식 중 군중이 밀집한 지역에 투표기가 설치되어 투표할 수 있는 무인투표 시스템방식은 무엇인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">키오스크방식</li><li>PSEV방식</li><li>REV방식</li><li>LKR방식</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 73%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">키오스크방식은 터치스크린을 이용하여 투표를 진행하는 방식으로, 군중이 밀집한 지역에 설치되어도 자체적으로 투표를 진행할 수 있기 때문에 무인투표 시스템으로 적합합니다. PSEV방식은 인터넷을 통해 투표를 진행하는 방식이며, REV방식은 전자우편을 통해 투표를 진행하는 방식입니다. LKR방식은 투표지를 스캔하여 집계하는 방식입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4795,7 +4860,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ccw201404⑤-47" question-id="ccw201404⑤-47" question-num="47" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">47</span>. 다음중 가치 저장형 전자화폐 프로토콜이 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>몬덱스</li><li>Visa Cash</li><li>K-Cash</li><li class="correct">Milicent</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 46%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">Milicent은 가치 저장형 전자화폐 프로토콜이 아닙니다. Milicent는 디지털 콘텐츠를 구매하는 데 사용되는 마이크로페이먼트 시스템입니다. 따라서 Milicent는 가치 저장이 아닌 단순한 결제 시스템입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4841,7 +4906,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ccw201404⑤-48" question-id="ccw201404⑤-48" question-num="48" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">48</span>. 다음에서 설명하고 있는 OTP(일회용패스워드)생성 방식은 무엇인가?<img src="images/ccw20140405m48.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">시간동기화 방식</li><li>이벤트통기화 방식</li><li>질문응답방식</li><li>조합방식</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 19%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">이 그림에서 보이는 OTP 생성기는 시간동기화 방식을 사용합니다. 이 방식은 일정한 주기로 변하는 시간값과 미리 약속된 비밀키를 이용하여 일회용 패스워드를 생성합니다. 이렇게 생성된 일회용 패스워드는 인증 시스템에서 사용자가 입력한 패스워드와 비교하여 인증을 수행합니다. 이 방식은 간단하고 안전하며, 인터넷이나 모바일 기기에서도 쉽게 사용할 수 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4888,7 +4953,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ccw201404⑤-49" question-id="ccw201404⑤-49" question-num="49" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">49</span>. 다음 설명하고 있는 DB접근 제어방식은 무엇인가?<img src="images/ccw20140405m49.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>접근통제</li><li>흐름제어</li><li class="correct">추론제어</li><li>데이터 제어</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 38%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">이 그림은 추론제어 방식을 나타내고 있습니다. 추론제어는 보안 등급이 높은 정보에 대한 접근을 제어하기 위해 사용됩니다. 이 방식은 접근통제와 흐름제어를 포함하며, 보안 등급이 낮은 정보로부터 보안 등급이 높은 정보를 유추할 수 있는 가능성이 있는 경우에도 접근을 제한합니다. 이를 위해 보안 등급이 높은 정보에 대한 접근 권한을 가진 사용자들도 보안 등급이 낮은 정보에 대한 접근 권한을 가지지 못하도록 제어합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4934,7 +4999,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ccw201404⑤-50" question-id="ccw201404⑤-50" question-num="50" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">50</span>. 메일과 관련이 없는 서비스 포트는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>109</li><li>995</li><li>993</li><li class="correct">163</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 46%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">메일과 관련된 서비스 포트는 일반적으로 110, 995, 993 등이 사용되는 반면, 163 포트는 메일과는 관련이 없는 서비스 포트입니다. 163 포트는 일반적으로 사용되는 포트가 아니며, 다른 서비스나 프로그램에서 사용될 수 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4980,7 +5045,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ccw201404⑤-51" question-id="ccw201404⑤-51" question-num="51" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">51</span>. 다음 중 OWASP TOP10 2013에 포함되지 않는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>인젝션</li><li class="correct">URL접근제한 실패</li><li>XSS</li><li>크로스사이트 요청변조</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 45%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">OWASP TOP10 2013에 포함되지 않는 것은 "URL접근제한 실패"입니다. 이는 보안 취약점이 아니라, 보안 정책 설정의 실패로 인한 문제입니다. URL 접근 제한은 보안 정책 설정에 따라 구현되어야 하며, 이를 설정하지 않거나 설정이 실패할 경우 보안 취약점으로 이어질 수 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5026,7 +5091,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ccw201404⑤-52" question-id="ccw201404⑤-52" question-num="52" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">52</span>. 다음에서 설명하고 있는 웹 공격 방법은 무엇인가?<img src="images/ccw20140405m52.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>알려진 취약점 컴포넌트 사용</li><li class="correct">크로스사이트 요청변조</li><li>민감한 데이터 노출</li><li>인증 및 세션관리 취약점</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 48%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">이미지에는 악성 스크립트가 포함되어 있으며, 이 스크립트는 사용자가 클릭한 버튼 등의 요청을 조작하여 공격자가 원하는 동작을 수행하게 만듭니다. 이를 통해 공격자는 사용자의 권한으로 민감한 데이터를 조작하거나 노출시킬 수 있습니다. 이러한 공격 방법을 크로스사이트 요청변조(CSRF)라고 합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5072,7 +5137,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ccw201404⑤-53" question-id="ccw201404⑤-53" question-num="53" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">53</span>. 소프트웨어 보안약점 중 보안기능을 적절하지 않게 구현했을 때 발생할 수 있는 보안 약점이 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>부적절할 인가</li><li>패스워드 평문저장</li><li class="correct">제어문을 사용하지 않는 재귀함수</li><li>사용자 중요정보 평문 전송</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 48%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"제어문을 사용하지 않는 재귀함수"는 보안기능을 적절하지 않게 구현한 것이 아니라, 코드의 구현 방식에 따른 문제로 인해 발생하는 보안 약점입니다. 재귀함수는 자기 자신을 호출하는 함수로, 제어문을 사용하여 재귀호출을 제어하지 않으면 무한루프에 빠질 수 있습니다. 이는 시스템의 자원을 과도하게 사용하거나, 서비스 거부 공격 등의 보안 문제를 발생시킬 수 있습니다. 따라서 재귀함수를 구현할 때는 적절한 제어문을 사용하여 재귀호출을 제어해야 합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5118,7 +5183,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ccw201404⑤-54" question-id="ccw201404⑤-54" question-num="54" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">54</span>. SET프로토콜의 장점이 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>전자거래의 사기를 방지한다</li><li>기존 신용카드 기반 그대로 활용한다.</li><li>SSL의 단점을 해결한다.</li><li class="correct">암호 프로토콜이 너무 복잡하다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 50%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">암호 프로토콜이 너무 복잡하다는 것은 SET 프로토콜을 구현하고 유지보수하는 데 많은 기술적인 노력과 비용이 필요하다는 것을 의미합니다. 이는 SET 프로토콜을 사용하는 기업들에게 부담이 될 수 있으며, 구현이 어려워지거나 오류가 발생할 가능성이 높아질 수 있습니다. 따라서 이는 SET 프로토콜의 단점이 될 수 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5164,7 +5229,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ccw201404⑤-55" question-id="ccw201404⑤-55" question-num="55" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">55</span>. 다음 설명 중 SSL프로토콜에 대한 설명으로 올바르지 못한 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>1994년 네스케이프사에서 처음 제안하였다.</li><li>1996년 IETF에서 SSL3.0을 제안하였다.</li><li class="correct">SSL이 적용되었다는 표시로 SHTTP라고 사용한다.</li><li>SSL프로토콜은 TCP계층과 응용계층 사이에서 동작한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 62%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">SSL이 적용되었다는 표시로 SHTTP라고 사용하는 것은 올바르지 않은 설명입니다. SSL과 SHTTP는 별개의 프로토콜이며, SSL이 적용되었다는 표시로는 HTTPS를 사용합니다. SSL은 TCP계층과 응용계층 사이에서 동작합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5210,7 +5275,9 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ccw201404⑤-56" question-id="ccw201404⑤-56" question-num="56" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">56</span>. 다음 중 지불브로커 시스템 특징이 아닌 것은 무엇인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>독립적 신용구조를 갖지 않는다.</li><li>신용카드, 은행을 이용하여 지불하도록 연결하는 구조이다.</li><li>현실적 전자 지불 시스템이다.</li><li class="correct">실제 화폐를 대치할 수 있다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 30%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답: "실제 화폐를 대치할 수 있다."<br/>
+<br/>
+지불브로커 시스템은 실제 화폐를 대치하지 않고 전자적인 방법으로 지불을 처리하는 시스템이다. 따라서 이 보기는 지불브로커 시스템의 특징이 아니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5257,7 +5324,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ccw201404⑤-57" question-id="ccw201404⑤-57" question-num="57" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">57</span>. 다음 중 전자입찰시스템에서 요구하는 안전성에 포함되지 않는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">단일성</li><li>비밀성</li><li>무결성</li><li>공평성</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 20%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">단일성은 전자입찰시스템에서 요구하는 안전성에 포함되지 않는다. 이는 전자입찰시스템에서 요구하는 기술적 요건 중 하나로, 사용자의 신원이나 권한이 유일하게 확인되어야 함을 의미한다. 이는 다른 사용자가 다른 사용자의 계정을 사용하여 입찰을 하거나 정보를 변경하는 것을 방지하기 위한 것이다. 비밀성, 무결성, 공평성은 모두 전자입찰시스템에서 요구하는 안전성에 포함된다. 비밀성은 정보가 누설되지 않도록 보호하는 것을 의미하며, 무결성은 정보가 변조되지 않도록 보호하는 것을 의미한다. 공평성은 입찰자들이 공정하게 경쟁할 수 있도록 보장하는 것을 의미한다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5303,7 +5370,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ccw201404⑤-58" question-id="ccw201404⑤-58" question-num="58" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">58</span>. 다음 중 ebXML 종류에 포함되지 않는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>SAML</li><li>XKMS</li><li>XACML</li><li class="correct">CALS</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 57%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">ebXML은 전자상거래를 위한 표준 프레임워크이며, SAML, XKMS, XACML은 모두 ebXML의 일부로 분류됩니다. 하지만 CALS는 전자상거래와는 관련이 없는 군사 및 산업용 표준입니다. 따라서 CALS는 ebXML 종류에 포함되지 않습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5349,7 +5416,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ccw201404⑤-59" question-id="ccw201404⑤-59" question-num="59" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">59</span>. Mod_security 아파치 모듈 기능에 포함되지 않는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>Request filtering : 요청이 들어와서 웹서버나 다른 모듈에 의해 사용되기전에 요청을 분석한다.</li><li>Anti-evasion TechnIques : 회피공격에 대응하기 위해 분석 전에경로나 파라미터 값들을 표준화 한다.</li><li class="correct">Audit Logging : 사후 사고에 대한 분석을 위한 세부 상황 기록기능은 없다.</li><li>HTTPS Filtering : 웹서버에 모듈로 끼워지기 때문에 요청된 데이터가 복호화 된 후 에 접근이 가능하다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 38%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">Mod_security는 웹 어플리케이션 보안을 강화하기 위한 아파치 모듈이다. 이 모듈은 요청 필터링, 회피공격 대응 기술, HTTPS 필터링 등 다양한 기능을 제공한다. 그러나 Mod_security에는 사후 사고에 대한 분석을 위한 세부 상황 기록 기능인 Audit Logging이 포함되어 있지 않다. 따라서 이 기능은 Mod_security를 사용하는 경우 직접 구현해야 한다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5395,7 +5462,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ccw201404⑤-60" question-id="ccw201404⑤-60" question-num="60" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">60</span>. 다음에서 설명하고 있는 DNS공격 방법은 무엇인가?<img src="images/ccw20140405m60.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>DNS DDOS</li><li>DNS하이재킹</li><li class="correct">DNS 캐시 포이즈닝 공격</li><li>DNSSEC</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 80%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">이 그림은 DNS 캐시 포이즈닝 공격을 나타내고 있습니다. 공격자는 DNS 서버에 가짜 DNS 응답을 보내서 DNS 캐시에 오염된 정보를 저장시키고, 이후 해당 도메인에 접속하는 사용자들은 오염된 정보를 받아들여 공격자가 원하는 악성 사이트로 유도됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5446,7 +5513,7 @@ $(function(){
 </div>
 </div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ccw201404⑤-61" question-id="ccw201404⑤-61" question-num="61" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">61</span>. 공개키 기반구조(PKI)의 응용분야가 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>SET</li><li>S/MIME</li><li>PGP</li><li class="correct">커버로스</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 43%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">커버로스는 인증서나 암호화와는 관련이 없는 네트워크 보안 프로토콜이기 때문에 PKI의 응용분야가 아니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5492,7 +5559,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ccw201404⑤-62" question-id="ccw201404⑤-62" question-num="62" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">62</span>. 다음에서 설명하는 DRM기술은 무엇인가?<img src="images/ccw20140405m62.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>워터마킹</li><li class="correct">핑거프린팅</li><li>템퍼링기술</li><li>DOI</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 56%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">이미지에 있는 지문을 읽어서 해당 이미지를 소유한 사람을 확인하는 기술이 "핑거프린팅"이다. 이는 이미지의 불법 복제나 유포를 방지하기 위한 DRM기술 중 하나이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5538,7 +5605,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ccw201404⑤-63" question-id="ccw201404⑤-63" question-num="63" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">63</span>. 다음 중 커버로스에 대한 설명으로 올바르지 못한 것은 무엇인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>MIT에서 개발한 분산 환경 하에 개체인증 서비스를 제공한다.</li><li>클라이언트, 인증서버, 티켓서버, 서버로 구성된다.</li><li class="correct">커버로스는 공개키 기반으로 만들어 졌다.</li><li>커버로스의 가장 큰 단점은 재전송공격에 취약하다는 것이다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 50%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"커버로스는 공개키 기반으로 만들어 졌다."가 올바르지 못한 설명이다. 커버로스는 대칭키 기반으로 만들어졌다. 대칭키는 암호화와 복호화에 같은 키를 사용하는 방식으로, 공개키보다 빠르고 간단하다는 장점이 있다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5584,7 +5651,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ccw201404⑤-64" question-id="ccw201404⑤-64" question-num="64" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">64</span>. 실시간 인증서 상태를 알려주는 프로토콜은 무엇인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>CRL</li><li class="correct">OCSP</li><li>PCA</li><li>DPV</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 71%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">OCSP는 Online Certificate Status Protocol의 약자로, 인증서의 상태를 실시간으로 확인할 수 있는 프로토콜이다. 반면에 CRL은 Certificate Revocation List의 약자로, 일정 주기마다 인증서 폐지 목록을 업데이트하는 방식으로 인증서 상태를 확인한다. 따라서 OCSP가 더 빠르고 정확한 인증서 상태 확인 방법이다. PCA는 Public Certification Authority의 약자로, 인증서 발급 기관을 의미하며, DPV는 Delivery Point Validation의 약자로, 주소 유효성 검증을 위한 프로토콜이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5631,7 +5698,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ccw201404⑤-65" question-id="ccw201404⑤-65" question-num="65" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">65</span>. 다음에서 설명하는 해시함수 성질은 무엇인가?<img src="images/ccw20140405m65.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>강한 충돌회피성</li><li class="correct">약한 충돌회피성</li><li>일방향성</li><li>계산의 용이성</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 41%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">해시함수의 출력값이 입력값의 일부분만을 이용하기 때문에, 입력값이 조금만 달라져도 출력값이 크게 달라지지 않는다. 이는 약한 충돌회피성을 가지게 만든다. 즉, 입력값이 조금만 달라져도 충돌이 일어날 확률이 낮아지기 때문에, 보안성이나 안정성이 중요한 경우에는 적합하지 않다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5677,7 +5744,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ccw201404⑤-66" question-id="ccw201404⑤-66" question-num="66" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">66</span>. 다음 중 임의적 접근통제 (DAC)설명으로 올바르지 않은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>객체에 대하여 사용자가 접근권한을 추가 혹은 삭제 할 수 있다.</li><li>가장 일반적인 구현은 접근통제목록(ACL)을 통해 이루어진다.</li><li class="correct">ACL은 중앙 집권적 통제방법에 적합하다.</li><li>대부분 운영체계에서 지원된다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 27%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">ACL은 분산된 통제 방법에 적합하다는 것이 올바르지 않은 설명입니다. ACL은 객체에 대한 접근 권한을 추가 또는 삭제할 수 있는 임의적 접근 통제 방법으로, 가장 일반적인 구현 방법은 접근 통제 목록(ACL)을 통해 이루어집니다. 대부분의 운영 체제에서 지원되며, 중앙 집권적인 통제 방법에 적합합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5723,7 +5790,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ccw201404⑤-67" question-id="ccw201404⑤-67" question-num="67" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">67</span>. 블록암호화 모드 중 암호문 블록이 파손되면 2개의 평문블록에 영향을 끼치는 운영모드는 무엇인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">CBC</li><li>CFB</li><li>OFB</li><li>ECB</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 39%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">CBC 모드에서는 이전 암호문 블록의 암호화 결과를 현재 블록과 XOR 연산을 하기 때문에, 암호문 블록이 파손되면 이전 블록과 현재 블록 모두에 영향을 미칩니다. 따라서 CBC 모드는 암호문 블록의 파손에 대해 강건한 운영모드가 아닙니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5769,7 +5836,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ccw201404⑤-68" question-id="ccw201404⑤-68" question-num="68" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">68</span>. 한 단계 앞의 암호문 블록이 존재하지 않을 때 대신할 비트열을 무엇이라 하는가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>패딩</li><li>스트림</li><li class="correct">초기벡타(IV)</li><li>블록모드</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 46%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">한 단계 앞의 암호문 블록이 존재하지 않을 때 대신할 비트열을 초기벡타(IV)라고 한다. 초기벡타는 블록 암호화에서 블록 체인 모드(CBC)와 같은 모드에서 사용되며, 이전 블록의 암호문과 현재 블록의 평문을 XOR하여 암호화를 수행한다. 초기벡타는 보안성을 높이기 위해 무작위로 선택되어야 하며, 암호화와 복호화 과정에서 동일한 값을 사용해야 한다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5815,7 +5882,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ccw201404⑤-69" question-id="ccw201404⑤-69" question-num="69" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">69</span>. KDC(신뢰분배센터)에 사용자 수가 증가 될 때 영향으로 올바르지 못한 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>가입자 n의 증가에 따른 키 관리가 복잡해진다.</li><li>장기간 사용 시 세션 키가 노출 될 위험성이 발생한다.</li><li class="correct">KDC 키가 늘어나지 않는다.</li><li>가입자 수 N에 따라 한 가입자마다 상대가입자수(N-1)만큼의 상호 세션키를 비밀리에 보관해야 한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 34%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">KDC는 대칭키 암호화 방식을 사용하기 때문에, 모든 사용자들 간에 공유되는 키가 하나씩 존재한다. 따라서 가입자 수가 증가하면, 상호 세션키를 비밀리에 보관해야 하는 수도 증가하게 된다. 하지만 KDC 키는 늘어나지 않기 때문에, 이러한 상황에서는 키 관리가 더욱 복잡해지게 된다. 따라서 KDC는 대규모 사용자를 다루기에는 한계가 있으며, 이를 해결하기 위해서는 다른 방식의 인증 시스템을 사용해야 한다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5861,7 +5928,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ccw201404⑤-70" question-id="ccw201404⑤-70" question-num="70" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">70</span>. 생일역설(Birthday attack)에 한전한 해시함수 비트는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>64비트</li><li>32비트</li><li class="correct">180비트</li><li>128비트</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 13%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-empty">이 문항은 아직 해설이 준비되지 않았습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5907,7 +5974,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ccw201404⑤-71" question-id="ccw201404⑤-71" question-num="71" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">71</span>. 다음 중 암호 운영모드 중 스트림 암호와 같은 역할을 하는 운영모드는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>ECB, CBC</li><li>CBC, OFB</li><li class="correct">OFB, CFB</li><li>CTR, OFB</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 45%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">OFB와 CFB는 스트림 암호와 같은 역할을 하는 암호 운영모드이다. 이는 이전 블록의 암호문을 다음 블록의 암호화에 사용하는 대신, 초기화 벡터(IV)를 암호화하여 스트림을 생성하고 이 스트림을 평문과 XOR 연산을 수행하여 암호문을 생성하는 방식으로 작동하기 때문이다. 이러한 방식은 암호화와 복호화에 동일한 스트림을 사용하기 때문에 스트림 암호와 같은 역할을 한다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5953,7 +6020,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ccw201404⑤-72" question-id="ccw201404⑤-72" question-num="72" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">72</span>. 생체인식 기술에서 요구하는 사항에 포함되지 않는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>보편성</li><li>구별성</li><li class="correct">일시성</li><li>획득성</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 50%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">일시성은 생체인식 기술에서 요구하는 사항에 포함되지 않는다. 이는 생체인식 기술이 개인의 신체적 특징을 사용하여 인증하는 기술이기 때문에, 해당 개인이 존재하는 한 계속해서 인증이 가능하다는 것을 의미한다. 따라서 일시적인 상황이나 변화에도 영향을 받지 않는다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6000,7 +6067,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ccw201404⑤-73" question-id="ccw201404⑤-73" question-num="73" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">73</span>. 해시함수의 특징으로 올바르지 못한 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>MAC와 달리 키를 사용하지 않는다.</li><li>에러 탐색기능을 제공한다.</li><li>해쉬함수 자체는 비밀이 아니기 때문에 해시값을 포함한 암호가 필요하다.</li><li class="correct">메시지 한 비트 변화가 해시코드의 일부의 변화만 가져온다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 19%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">해시함수는 입력값에 대해 고정된 길이의 출력값을 반환하는 함수이다. 이때 입력값이 조금만 변화해도 출력값이 크게 변화하는 것을 "avalanche effect"라고 한다. 따라서 "메시지 한 비트 변화가 해시코드의 일부의 변화만 가져온다."는 해시함수의 특징으로 올바르지 않다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6046,7 +6113,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ccw201404⑤-74" question-id="ccw201404⑤-74" question-num="74" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">74</span>. 커버로스 프로토콜에서 티켓에 포함되는 사항이 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>서버ID</li><li>클라이언트ID</li><li class="correct">서버의 네트워크주소</li><li>티켓의 유효기간</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 53%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">커버로스 프로토콜에서 티켓에 포함되는 사항은 서버ID, 클라이언트ID, 티켓의 유효기간입니다. 서버의 네트워크주소는 티켓에 포함되지 않습니다. 이는 클라이언트가 서버와 통신할 때 DNS를 사용하여 서버의 네트워크주소를 찾기 때문입니다. 따라서 티켓에 서버의 네트워크주소를 포함시키지 않아도 클라이언트는 서버와 통신할 수 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6092,7 +6159,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ccw201404⑤-75" question-id="ccw201404⑤-75" question-num="75" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">75</span>. 다음 중 접근통제정책에 포함되지 않는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>DAC</li><li>MAC</li><li class="correct">NAC</li><li>RBAC</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 32%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">NAC는 접근통제정책에 포함되지 않는다. 이유는 NAC(Network Access Control)은 네트워크 보안 기술로, 네트워크에 접근하는 디바이스나 사용자를 인증하고, 인가된 디바이스나 사용자만이 네트워크에 접근할 수 있도록 제어하는 기술이기 때문이다. 따라서 NAC는 접근통제정책과는 다른 개념이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6138,7 +6205,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ccw201404⑤-76" question-id="ccw201404⑤-76" question-num="76" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">76</span>. 무결성에 기반 한 접근통제 모델로 낮은 무결성 등급의 데이터는 읽을 수 없고, 높은 등급의 데이터는 수정 할 수 없는 접근 통제 모델은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">비바모델</li><li>벨-라파듈라모델</li><li>클락윌슨모델</li><li>접근통제모델</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 50%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">비바모델은 높은 무결성 등급의 데이터를 보호하기 위해 개발된 접근 통제 모델로, 데이터의 무결성을 기반으로 접근 권한을 부여하고 제한합니다. 따라서 낮은 무결성 등급의 데이터는 읽을 수 없고, 높은 등급의 데이터는 수정할 수 없습니다. 이러한 특징으로 인해 비바모델은 높은 보안 요구사항을 가지는 시스템에서 많이 사용됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6184,7 +6251,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ccw201404⑤-77" question-id="ccw201404⑤-77" question-num="77" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">77</span>. 다음과 같은 특성을 가지는 접근통제 모델은 무엇인가?<img src="images/ccw20140405m77.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>클락윌슨모델</li><li class="correct">벨-라파듈라 모델</li><li>비바모델</li><li>내부접근통제 모델</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 65%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">이 모델은 다중단계 보안 시스템으로, 각 단계마다 접근 권한을 검사하여 접근을 허용하거나 거부합니다. 이 모델은 기밀성, 무결성, 가용성을 보호하기 위해 설계되었으며, 접근 주체, 객체, 권한 등을 고려하여 접근 권한을 부여합니다. 이 모델은 벨과 라파듈라에 의해 개발되었으며, 현재도 많이 사용되고 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6230,7 +6297,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ccw201404⑤-78" question-id="ccw201404⑤-78" question-num="78" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">78</span>. 공개키 인증서에 포함되지 않는 내용은 무엇인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>버전</li><li>일련번호</li><li>유효기간</li><li class="correct">개인키 정보</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 64%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">공개키 인증서는 공개키, 서비스 제공자 정보, 서명 등의 정보를 포함하고 있지만, 개인키 정보는 포함되지 않습니다. 이는 개인키 정보는 인증서를 발급받은 개인에게만 알려져야 하기 때문입니다. 따라서 개인키 정보는 인증서와 별도로 안전하게 보관되어야 합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6276,7 +6343,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ccw201404⑤-79" question-id="ccw201404⑤-79" question-num="79" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">79</span>. 인증서 취소사유에 해당되지 않는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>인증서 발행 조직에서 탈퇴</li><li>비밀키 손상</li><li>비밀키의 유출의심</li><li class="correct">공개키의 공유</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 40%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">인증서 취소사유 중에서 "공개키의 공유"는 해당되지 않는다. 인증서는 공개키와 개인키를 쌍으로 가지고 있으며, 공개키는 공개되어도 상관없는 정보이다. 따라서 공개키가 공유되어도 인증서의 유효성에는 영향을 미치지 않는다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6322,7 +6389,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ccw201404⑤-80" question-id="ccw201404⑤-80" question-num="80" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">80</span>. 다음 공개키 암호알고리즘 중에서 이산대수에 기반 한 알고리즘이 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>Diffi-Hellman</li><li>EI Gamal</li><li>DSA</li><li class="correct">RSA</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 25%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">RSA는 이산대수에 기반하지 않고 대신에 소인수분해 문제에 기반합니다. 따라서 RSA가 이산대수에 기반하지 않는 유일한 공개키 암호알고리즘입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6373,7 +6440,7 @@ $(function(){
 </div>
 </div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ccw201404⑤-81" question-id="ccw201404⑤-81" question-num="81" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">81</span>. 다음 중 법에 따른 암호화 대상이 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>주민등록번호</li><li>바이오정보</li><li>비밀번호</li><li class="correct">전화번호</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 48%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">전화번호는 개인정보보호법에서 암호화 대상이 아닙니다. 주민등록번호와 바이오정보는 개인정보보호법에서 암호화 대상으로 지정되어 있고, 비밀번호는 보안성을 위해 암호화되어야 합니다. 하지만 전화번호는 개인정보보호법에서 암호화 대상으로 지정되어 있지 않습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6419,7 +6486,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ccw201404⑤-82" question-id="ccw201404⑤-82" question-num="82" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">82</span>. 위험의 구성요소가 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>자산</li><li>위협</li><li class="correct">손실</li><li>취약성</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 45%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">위험의 구성요소는 자산, 위협, 취약성으로 이루어져 있습니다. 손실은 위험의 결과물이며, 위험의 구성요소가 아닙니다. 따라서 정답은 "손실"입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6465,7 +6532,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ccw201404⑤-83" question-id="ccw201404⑤-83" question-num="83" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">83</span>. 다음 중 CCTV를 설치할 수 있는 곳이 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>교도소</li><li>교통단속을 위한 도로</li><li class="correct">범죄 예방을 위한 발열 실(목욕탕, 사우나)</li><li>병원</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 38%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">범죄 예방을 위한 발열 실(목욕탕, 사우나)은 개인의 개인정보와 관련된 공간이기 때문에 CCTV 설치가 불가능하다. CCTV는 개인정보 보호법에 따라 설치 가능한 공간과 불가능한 공간이 명확히 구분되어 있으며, 발열 실은 이에 해당한다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6511,7 +6578,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ccw201404⑤-84" question-id="ccw201404⑤-84" question-num="84" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">84</span>. 다음에서 설명하는 위험처리 방식은?<img src="images/ccw20140405m84.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>위험수용</li><li class="correct">위험회피</li><li>위험전가</li><li>위험감소</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 27%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">위험회피 방식은 위험을 최소화하기 위해 위험을 피하는 방식으로, 위험을 감수하지 않고 회피하는 것이 특징입니다. 그림에서는 물가에 다리를 건너지 않고 다른 길을 찾는 것으로 위험을 회피하는 것을 보여줍니다. 따라서 정답은 "위험회피"입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6557,7 +6624,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ccw201404⑤-85" question-id="ccw201404⑤-85" question-num="85" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">85</span>. 다음 중 정량적 위험분석 방법론에 속하지 않는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>과거자료 분석법</li><li>확률분포법</li><li class="correct">순위결정법</li><li>수학공식접근법</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 17%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">순위결정법은 정량적인 분석 방법이 아니라 주관적인 판단에 의해 위험을 순위화하는 방법이기 때문에 정량적 위험분석 방법론에 속하지 않는다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6603,7 +6670,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ccw201404⑤-86" question-id="ccw201404⑤-86" question-num="86" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">86</span>. 다음 중 정성적 위험평가 방법에 대한 설명으로 올바르지 못한 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>계산에 대한 노력이 적게 든다.</li><li>위험분석과정이 지극히 주관적이다.</li><li>측정결과를 화폐로 표현하기 어렵다.</li><li class="correct">위험관리 성능평가가 용이하다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 39%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"위험분석과정이 지극히 주관적이다."가 올바르지 못한 설명입니다. 정성적 위험평가 방법은 주관적인 판단이 많이 들어가기 때문에 위험분석과정이 주관적일 수 있습니다. 그러나 위험관리 성능평가는 정성적인 결과를 수치화하여 비교분석할 수 있기 때문에 용이합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6649,7 +6716,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ccw201404⑤-87" question-id="ccw201404⑤-87" question-num="87" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">87</span>. 다음 중 개인정보보호법 의한 암호화 대상을 고르면?<img src="images/ccw20140405m87.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>주민등록번호</li><li class="correct">주민등록번호, 여권번호</li><li>주민등록번호, 계좌번호, 카드번호</li><li>주민등록번호, 계좌번호, 여권번호, 카드번호</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 20%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">주민등록번호와 여권번호는 개인 식별 정보로서, 이 정보가 유출될 경우 개인정보 침해의 위험이 크기 때문에 암호화 대상에 포함됩니다. 계좌번호와 카드번호도 개인정보이지만, 이 정보가 유출되더라도 금전적인 피해가 발생할 가능성이 높기 때문에 더욱 강력한 보호 대상이 됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6695,7 +6762,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ccw201404⑤-88" question-id="ccw201404⑤-88" question-num="88" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">88</span>. 공인인증서에 포함하지 않는 것은 무엇인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>가입자 이름</li><li class="correct">주소</li><li>일련번호</li><li>유효기간</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 31%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">공인인증서는 인증과 관련된 정보만을 포함하고 있으며, 주소는 인증과 직접적인 연관이 없는 개인정보이기 때문에 포함되지 않는다. 따라서 주소는 공인인증서에 포함되지 않는다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6742,7 +6809,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ccw201404⑤-89" question-id="ccw201404⑤-89" question-num="89" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">89</span>. 다음 중 공인인증서 소멸 요건이 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>공인인증서 유효기간이 경과된 경우</li><li>공인인증기관의 지정이 취소가 된 경우</li><li>공인인증서 효력이 정지된 경우</li><li class="correct">공인인증서 훼손이 된 경우</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 15%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">공인인증서 훼손이 된 경우는 공인인증서의 무결성이 보장되지 않기 때문에 사용이 불가능하게 됩니다. 따라서 공인인증서 소멸 요건 중 하나가 됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6788,7 +6855,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ccw201404⑤-90" question-id="ccw201404⑤-90" question-num="90" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">90</span>. 공인인증서 폐지요건으로 올바르지 못한것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">공인인증서 효력이 정지된 경우</li><li>사기 기타 부정한 방법으로 발급받은 사실을 인지한 경우</li><li>사망•실종선고 또는 해산 사실을 인지한 경우</li><li>전자서명생성정보가 분실•훼손 또는 도난•유출된 사실을 인지한경우</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 29%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"공인인증서 효력이 정지된 경우"는 공인인증서의 유효기간이 만료되거나, 공인인증서를 분실하거나 훼손한 경우, 또는 공인인증서를 잘못 사용하여 법적인 문제가 생긴 경우 등에 해당됩니다. 이 경우에는 공인인증서를 사용하여 전자서명을 할 수 없으며, 새로운 공인인증서를 발급받아야 합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6834,7 +6901,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ccw201404⑤-91" question-id="ccw201404⑤-91" question-num="91" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">91</span>. 개인정보 누출시 통지해야 할 사항으로 올바르지 못한 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>개인정보 누출항목</li><li>개인정보 누출 발생시점과 사유</li><li>개인정보 2차 피해를 최소화하기 위한 방안</li><li class="correct">정보서비스 제공자의 법적 대리인 및 연락처</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 32%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정보서비스 제공자의 법적 대리인 및 연락처는 개인정보 누출시 통지해야 할 사항이 아닙니다. 이는 개인정보 보호법상 개인정보 처리자의 대리인에 해당하는 사항으로, 개인정보 침해사고 발생시 대응을 위해 필요한 정보입니다. 따라서 올바른 답은 "정보서비스 제공자의 법적 대리인 및 연락처"입니다. 개인정보 누출항목, 개인정보 누출 발생시점과 사유, 개인정보 2차 피해를 최소화하기 위한 방안은 개인정보 침해사고 대응시 필수적으로 통지해야 할 사항입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6880,7 +6947,9 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ccw201404⑤-92" question-id="ccw201404⑤-92" question-num="92" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">92</span>. 다음 중 공인인증 업무로 적절한 것은 무엇인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>행정자치부장관은 공인인증업무를 안전하고 신뢰성 있게 수행할 능력이 있다고 인정되는 자를 공인인증기관으로 지정할 수 있다.</li><li>공인인증기관으로 지정 받을 수 있는 자는 국가기관지방자치단체에 한한다.</li><li class="correct">공인인증기관 가입자 또는 인증무역 이용자를 부당하게 차별하여서는 아니 된다.</li><li>공인인증기관이 인증업무를 폐지하고자 하는 때에는 폐지하고자 하는 날의 30일전까지 이를 가입자에게 통보하고 미래창조과학부 장관에게 신고하여야 한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 23%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답: "공인인증기관 가입자 또는 인증무역 이용자를 부당하게 차별하여서는 아니 된다."<br/>
+<br/>
+이유: 공인인증기관은 인증 업무를 안전하고 신뢰성 있게 수행할 능력이 있는 자로서, 국가기관과 지방자치단체에 한하여 지정될 수 있습니다. 이에 따라 공인인증기관은 모든 가입자와 인증무역 이용자를 동등하게 대우해야 하며, 부당한 차별을 가해서는 안 됩니다. 이는 공인인증 업무의 신뢰성과 안전성을 유지하기 위한 필수적인 조건 중 하나입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6926,7 +6995,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ccw201404⑤-93" question-id="ccw201404⑤-93" question-num="93" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">93</span>. 개인정보보호법에서 개인정보 수집 시 고지 항목으로 올바르지 못한 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>이용목적</li><li>이용항목</li><li>이용기간</li><li class="correct">파기방법</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 17%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"파기방법"은 개인정보 수집 시 고지 항목이 아니라 개인정보 보호법에서 개인정보를 파기할 때 지켜야 할 방법을 규정한 것입니다. 따라서 "파기방법"은 올바르지 않은 개인정보 수집 시 고지 항목입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6972,7 +7041,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ccw201404⑤-94" question-id="ccw201404⑤-94" question-num="94" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">94</span>. 개인정보보보헙에 의한 대리인의 권한 행사 나이는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>만13세 이상</li><li class="correct">만14세 미만</li><li>만16세 이상</li><li>만18세 미만</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 32%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">개인정보보호법 제35조에 따르면, 만 14세 미만인 아동의 개인정보를 처리하는 경우에는 법정대리인의 동의를 받아야 합니다. 따라서, 대리인이 개인정보보호법에 따라 권한을 행사할 수 있는 나이는 만 14세 미만입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -7018,7 +7087,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ccw201404⑤-95" question-id="ccw201404⑤-95" question-num="95" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">95</span>. 개인정보보호법에 따른 사내 개인정보보호 교육의 주기는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">1년에 1회</li><li>1년에 2회</li><li>1년에 3회</li><li>1년에 6회</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 25%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">개인정보보호법 제29조에 따르면 개인정보처리자는 정기적으로 직원 등에 대한 개인정보보호 교육을 실시하여야 합니다. 이 교육은 최소 1년에 1회 이상 실시해야 하며, 개인정보처리자의 업무 특성 등에 따라 더 자주 실시할 수도 있습니다. 따라서 "1년에 1회"가 정답입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -7064,7 +7133,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ccw201404⑤-96" question-id="ccw201404⑤-96" question-num="96" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">96</span>. 다음 중 주요통신기반시설 취약성 평가/분석 기관이 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">한국정보화진흥훤</li><li>한국인터넷진흥원</li><li>지식정보보안컨설팅전문업체</li><li>한국전자통신연구원</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 34%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">한국정보화진흥훤은 주요통신기반시설 취약성 평가/분석 기관이 아닙니다. 이는 해당 기관이 정보화 분야의 발전과 보급을 촉진하는 것을 목적으로 하기 때문입니다. 한국인터넷진흥원, 지식정보보안컨설팅전문업체, 한국전자통신연구원은 모두 주요통신기반시설 취약성 평가/분석 기관으로서 역할을 수행합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -7111,7 +7180,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ccw201404⑤-97" question-id="ccw201404⑤-97" question-num="97" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">97</span>. 개인정보 3자 위탁(제공시 동의) 설명으로 올바르지 못한 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>동의를 받은 경우</li><li>개인의 불이익 항목을 고지(알린다)한다.</li><li>법률에 정한경우</li><li class="correct">정보서비스보다 개인의 이익이 상당한 때</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 34%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정보서비스보다 개인의 이익이 상당한 때가 올바르지 못한 것이다. 이유는 개인정보 보호법에서는 개인의 이익이 상당한 때라는 개념이 없기 때문이다. 대신에 개인정보를 제공하는 경우에는 법률에 정한 경우, 동의를 받은 경우, 개인의 불이익 항목을 고지(알린다)하는 경우 등이 있다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -7157,7 +7226,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ccw201404⑤-98" question-id="ccw201404⑤-98" question-num="98" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">98</span>. 지식정보보안 컨설팅 전문업체 지정 결격사유에 해당하지 않는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>파산선고를 받고 복권되지 않는 사람</li><li>미성년자, 금치산자 또는 한정치산자</li><li class="correct">금고 이상의 실형을 선고받고 면제된 날로부터 1년이 지나지 않는 사람</li><li>금고이상의 형의 집행유예 선고나 그 유예기간에 있는 사람</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 9%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">지식정보보안 컨설팅 전문업체 지정 결격사유에 해당하지 않는 것은 "파산선고를 받고 복권되지 않는 사람"입니다. 이유는 파산선고를 받은 사람은 법원에서 지정한 기간 동안 일정한 제한사항이 있기 때문에, 이 기간 동안에는 지식정보보안 컨설팅 전문업체 지정 결격사유에 해당합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -7203,7 +7272,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ccw201404⑤-99" question-id="ccw201404⑤-99" question-num="99" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">99</span>. 지식정보보안 컨설팅 전문업체 지정에 대한 근거 법은 무엇인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>전자서명법</li><li>정보통신기반 보호법</li><li class="correct">정보통신산업진흥법</li><li>정보통신망 이용촉진 및 정보보호 등에 관한법률</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 13%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">지식정보보안 컨설팅 전문업체 지정은 정보통신산업진흥법 제 47조에 근거하여 이루어진다. 이 법은 정보통신산업의 발전과 보호를 위한 법으로, 지식정보보안 컨설팅 전문업체 지정은 이 법의 일환으로 이루어지는 것이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -7249,7 +7318,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ccw201404⑤-100" question-id="ccw201404⑤-100" question-num="100" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">100</span>. 개인정보처리자가 시스템에 접속한 기록을 최소한 보관해야 하는 기간은 얼마인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>3개월</li><li class="correct">6개월</li><li>1년</li><li>2년</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 21%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">개인정보보호법 제29조 제2항에 따르면 개인정보처리자는 시스템에 접속한 기록을 최소한 6개월 이상 보관하여야 합니다. 이는 개인정보침해사고 발생 시 원인 파악 및 대응을 위한 조치를 취하기 위함입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>

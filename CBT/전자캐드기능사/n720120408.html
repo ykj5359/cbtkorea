@@ -489,6 +489,15 @@ var g5_cookie_domain = ".cbtkorea.kr";
 
 <!-- CANONICAL-CBT -->
 <link rel="canonical" href="https://cbtkorea.kr/CBT/%EC%A0%84%EC%9E%90%EC%BA%90%EB%93%9C%EA%B8%B0%EB%8A%A5%EC%82%AC/n720120408.html">
+<!-- AI-EXP-RESTORED -->
+<style>
+    .reply .report-modal, .reply .loading, .reply .reply-component { display: none !important; }
+    .ai-exp { list-style: none; padding: 0; margin: 0 0 10px 0; }
+    .ai-exp:last-child { margin-bottom: 0; }
+    .ai-exp-label { font-size: 12px; font-weight: 700; color: #1d4ed8; margin-bottom: 6px; }
+    .ai-exp-label small { font-weight: 400; color: #6b7280; margin-left: 6px; }
+    .ai-exp-empty { font-size: 13px; color: #6b7280; }
+</style>
 </head>
 <body>
 <!-- 상단 시작 { -->
@@ -2665,7 +2674,17 @@ $(function(){
 </div>
 </div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n720120408-1" question-id="n720120408-1" question-num="1" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">1</span>. 다음 그림과 같은 트랜지스터회로에서 I<sub>C</sub>는 얼마인가? (단, B<sub>DC</sub>는 50이다.)<img src="images/n720120408m1.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">11.5[mA]</li><li>11.5 [μA]</li><li>0.5 [mA]</li><li>10.5 [μA]</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 54%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">I<sub>C</sub>는 B<sub>DC</sub>와 R<sub>C</sub>에 의해 결정된다. <br/>
+<br/>
+B<sub>DC</sub>는 50이므로, B<sub>DC</sub>와 R<sub>B</sub>에 의해 베이스 전류 I<sub>B</sub>는 다음과 같이 계산할 수 있다.<br/>
+<br/>
+I<sub>B</sub> = (V<sub>CC</sub> - V<sub>BE</sub>) / R<sub>B</sub> = (12 - 0.7) / 100k = 0.113[mA]<br/>
+<br/>
+따라서, 콜렉터 전류 I<sub>C</sub>는 다음과 같이 계산할 수 있다.<br/>
+<br/>
+I<sub>C</sub> = B<sub>DC</sub> x I<sub>B</sub> = 50 x 0.113[mA] = 5.65[mA]<br/>
+<br/>
+하지만, 다이오드의 전압강하 때문에 실제로는 베이스 전압이 0.7V보다 높아야 하므로, I<sub>C</sub>는 약간 더 큰 값이 된다. 따라서, 정답은 "11.5[mA]"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2711,7 +2730,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#n720120408-2" question-id="n720120408-2" question-num="2" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">2</span>. 연산증폭기에서 두 입력 단자가 접지되었을 때 두 출력 단자 사이에 나타나는 직류전압의 차는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>입력 오프셋 전압</li><li class="correct">출력 오프셋 전압</li><li>입력 오프셋 전압 드리프트</li><li>출력 오프셋 전압 드리프트</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 62%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">연산증폭기에서 두 입력 단자가 접지되면, 입력 신호가 없으므로 출력 단자에서는 오프셋 전압만 존재하게 됩니다. 이때 출력 오프셋 전압은 두 출력 단자 사이의 직류전압 차이를 나타내며, 입력 오프셋 전압과는 구분됩니다. 따라서 정답은 "출력 오프셋 전압"입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2757,7 +2776,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n720120408-3" question-id="n720120408-3" question-num="3" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">3</span>. 자석에 의한 자기 현상의 설명으로 옳은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>자력은 거리에 비례한다.</li><li>철심이 있으면 자속 발생이 어렵다.</li><li>자력선은 S극에서 나의 N극으로 들어간다.</li><li class="correct">서로 다른 극 사이에는 흡인력이 작용한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 76%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">서로 다른 극 사이에는 흡인력이 작용하는 이유는 서로 다른 극의 자기장이 반대 방향으로 작용하기 때문입니다. 이러한 반대 방향의 자기장이 서로 만나면서 서로 밀어내는 힘이 작용하게 되는데, 이 때 힘이 작용하는 방향이 서로 다른 극 사이로 향하게 되어 흡인력이 작용하게 됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2803,7 +2822,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#n720120408-4" question-id="n720120408-4" question-num="4" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">4</span>. 주로 100[kHZ] 이하의 저주파용 정현파 발신회로로 가장 많이 사용되는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>블로킹 발진회로</li><li>수정 발진회로</li><li>톱니파 발진회로</li><li class="correct">RC 발진회로</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 63%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">100[kHz] 이하의 저주파용 정현파 발신회로에서는 RC 발진회로가 가장 많이 사용됩니다. 이는 RC 발진회로가 간단하면서도 안정적이며, 저주파에서도 충분히 동작하기 때문입니다. 또한, RC 발진회로는 저주파에서의 정확한 주파수 조절이 가능하며, 저렴한 가격으로 제작할 수 있어서 널리 사용되고 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2849,7 +2868,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n720120408-5" question-id="n720120408-5" question-num="5" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">5</span>. 다음 중 디지털 변조에 속하지 않는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">PM</li><li>FSK</li><li>ASK</li><li>QAM</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 66%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">디지털 변조 기술 중에서는 PM이 아닌 모든 것들이 디지털 변조에 속합니다. PM은 진폭 변조(AM)와 위상 변조를 결합한 형태로, 아날로그 신호를 디지털 신호로 변환하는 것이 아니라 아날로그 신호를 직접 변조하여 전송하는 아날로그 변조 기술입니다. 따라서 PM은 디지털 변조에 속하지 않습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2895,7 +2914,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#n720120408-6" question-id="n720120408-6" question-num="6" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">6</span>. 100[V]용 500[W] 전열기의 저항값은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">20[Ω]</li><li>24[Ω]</li><li>30[Ω]</li><li>32[Ω]</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 66%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">전력과 전압, 저항의 관계식인 P=V^2/R을 이용하여 계산합니다. 전력은 500[W], 전압은 100[V]이므로, 500=100^2/R로 정리할 수 있습니다. 이를 계산하면 R=20[Ω]가 됩니다. 따라서 정답은 "20[Ω]"입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2941,7 +2960,11 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n720120408-7" question-id="n720120408-7" question-num="7" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">7</span>. 정현파 교류전압의 최대치와 실효치와의 관계는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li><img src="images/n720120408m7b1.gif"/></li><li class="correct"><img src="images/n720120408m7b2.gif"/></li><li>최대치=2×실효치</li><li><img src="images/n720120408m7b4.gif"/></li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 78%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정현파 교류전압의 최대치와 실효치는 다음과 같은 관계가 있습니다.<br/>
+<br/>
+최대치 = 2 × 실효치<br/>
+<br/>
+이는 정현파 교류전압이 사인파와 같은 형태를 가지고 있을 때 적용되는 공식입니다. 사인파는 최대치와 최소치가 있으며, 최대치와 최소치의 차이가 2배가 되는 것을 이용하여 위와 같은 공식이 유도됩니다. 따라서, 보기에서 정답은 "<img src="https://cbtbank.kr/images/n7/n720120408/n720120408m7b2.gif"/>"입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2987,7 +3010,13 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#n720120408-8" question-id="n720120408-8" question-num="8" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">8</span>. 그림과 같은 회로에서 전류 I는 몇 [A] 인가?<img src="images/n720120408m8.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>1.4</li><li>2.4</li><li class="correct">4.4</li><li>8.4</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 65%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">전류의 크기는 전류계를 통해 측정할 수 있습니다. 이 회로에서는 전류계가 A와 B 사이에 연결되어 있으므로, A와 B 사이를 흐르는 전류의 크기를 측정할 수 있습니다. <br/>
+<br/>
+전류의 크기는 전압과 저항에 의해 결정됩니다. 이 회로에서는 전압이 22V이고, 저항이 5Ω이므로 오므리 법칙을 이용하여 전류를 계산할 수 있습니다. <br/>
+<br/>
+전류 I = 전압 V / 저항 R = 22V / 5Ω = 4.4A<br/>
+<br/>
+따라서, 이 회로에서 흐르는 전류의 크기는 4.4A입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3034,7 +3063,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n720120408-9" question-id="n720120408-9" question-num="9" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">9</span>. 다음 설명에 가장 적합한 법칙은?<img src="images/n720120408m9.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>옴의 법칙</li><li>전자유도 법칙</li><li class="correct">쿨롱의 법칙</li><li>비오사바르의 법칙</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 72%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">이 그림은 전하가 있는 두 점 사이에 작용하는 힘을 나타내는 것입니다. 이러한 힘은 전하의 크기와 거리에 비례하며, 반대 방향으로 작용합니다. 이러한 성질은 쿨롱의 법칙으로 설명됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3080,7 +3109,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#n720120408-10" question-id="n720120408-10" question-num="10" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">10</span>. 차동증폭기에 대한 설명으로 적합하지 않은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>2개의 입력을 갖는다.</li><li>2개의 출력을 갖는다.</li><li class="correct">직류증폭이 어렵다.</li><li>공통성분제거비(CMRR)는 차동증폭기의 성능을 나타내는 것 중의 하나이다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 57%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">직류증폭이 어렵다는 것은 차동증폭기가 입력 신호의 직류 성분을 증폭하지 못한다는 것을 의미합니다. 이는 차동증폭기의 동작 원리 때문인데, 차동증폭기는 입력 신호의 차이 신호만을 증폭하기 때문에 공통 모드 신호(즉, 두 입력 신호의 평균값)는 증폭하지 않습니다. 따라서 입력 신호에 직류 성분이 포함되어 있으면 차동증폭기는 이를 증폭하지 못합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3126,7 +3155,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n720120408-11" question-id="n720120408-11" question-num="11" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">11</span>. 주파수 변조에 대한 설명으로 가장 적합한 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>신호파에 따라 반송파 진폭을 변화시키는 것</li><li>신호파에 따라 반송파의 위상을 변화시키는 것</li><li class="correct">신호파에 따라 반송파의 주파수를 변화시키는 것</li><li>신호파에 따라 반송파 진폭,위상을 변화시키는 것</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 72%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">주파수 변조는 신호파의 주파수를 변화시켜 반송파의 주파수를 변화시키는 것입니다. 이를 통해 정보를 전송하고, 수신측에서는 반대로 주파수를 변화시켜 원래의 신호를 복원합니다. 진폭이나 위상을 변화시키는 것은 다른 변조 방식입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3172,7 +3201,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#n720120408-12" question-id="n720120408-12" question-num="12" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">12</span>. 일반적인 반도체의 특성으로 접합하지 않은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">불순물이 섞이면 저항이 증가한다.</li><li>매우 낮은 온도에서 절연체가 된다.</li><li>전기적 전도성은 금속과 절연체의 중간적 성질을 가지고 있다.</li><li>온도가 상승하면 저항이 감소한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 59%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">불순물이 섞이면 반도체 내부의 전자와 결합하여 새로운 전자 상태를 만들어내고, 이로 인해 전자의 이동이 방해되어 전류의 흐름이 어려워지기 때문에 저항이 증가합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3218,7 +3247,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n720120408-13" question-id="n720120408-13" question-num="13" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">13</span>. 부궤한 증폭기의 일반적인 특징에 속하지 않는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>왜곡이 감소한다.</li><li class="correct">이득이 증가한다.</li><li>잡음이 감소한다.</li><li>주파수 대역폭이 넓어진다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 53%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">이득이 증가한다는 것은 입력 신호의 크기가 출력 신호의 크기보다 크게 증폭되는 것을 의미합니다. 이는 출력 신호의 왜곡을 유발할 수 있으므로 부궤한 증폭기의 일반적인 특징에 속하지 않습니다. 일반적으로는 왜곡이 감소하고, 잡음이 감소하며, 주파수 대역폭이 넓어지는 것이 부궤한 증폭기의 일반적인 특징입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3264,7 +3293,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#n720120408-14" question-id="n720120408-14" question-num="14" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">14</span>. 전계효과트랜지스터(FET)에 대한 설명으로 옳지 않은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>BJT 보다 잡음특성이 양호하다.</li><li class="correct">소수 반송자에 의한 전류 제어형이다.</li><li>접합형의 입력저항은 MOS형 보다 낮다.</li><li>BJT 보다 온도 변화에 따른 안정성이 높다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 59%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">전계효과트랜지스터(FET)는 소수 반송자에 의한 전류 제어형이 아니라 전기장에 의한 전류 제어형이다. 따라서 "소수 반송자에 의한 전류 제어형이다."가 옳지 않은 설명이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3310,7 +3339,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n720120408-15" question-id="n720120408-15" question-num="15" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">15</span>. 그림과 같은 트랜지스터회로에서 V<sub>IN</sub>=0[V]일때 V<sub>CE</sub> 는 얼마인가?<img src="images/n720120408m15.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>7[V]</li><li>5[V]</li><li class="correct">10[V]</li><li>15[V]</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 69%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">V<sub>IN</sub>=0[V]일때 Q1은 off 상태이므로 전류가 흐르지 않는다. 따라서 R<sub>1</sub>과 R<sub>2</sub>를 통해 V<sub>CC</sub>의 전압이 V<sub>CE</sub>에 걸리게 된다. R<sub>1</sub>과 R<sub>2</sub>는 10kΩ씩으로 같은 저항값을 가지므로 V<sub>CC</sub>의 절반인 15[V]의 전압이 R<sub>1</sub>과 R<sub>2</sub>에 걸리게 된다. 이때 Q2는 on 상태이므로 V<sub>CE</sub>는 R<sub>3</sub>의 저항값인 1kΩ과 Q2의 콜렉터-에미터 전압인 0.7[V]의 합인 1.7[V]이 된다. 따라서 정답은 "10[V]"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3361,7 +3390,7 @@ $(function(){
 </div>
 </div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n720120408-16" question-id="n720120408-16" question-num="16" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">16</span>. 주기적으로 재기록하면서 기억 내용을 보존해야 하는 반도체 기억장치는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>SRAM</li><li>EPROM</li><li>PROM</li><li class="correct">DRAM</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 66%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">DRAM은 동적 램(Dynamic Random Access Memory)의 약자로, 데이터를 저장하기 위해 전기적인 신호를 사용하는 반도체 기억장치입니다. 하지만 전하가 빠르게 누출되기 때문에 주기적으로 재기록해야 합니다. 따라서 기억 내용을 보존하기 위해서는 주기적으로 재기록해야 하는 DRAM이 적합합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3408,7 +3437,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div>
 <div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#n720120408-17" question-id="n720120408-17" question-num="17" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">17</span>. 컴퓨터와 오퍼레이터 사이에 필요한 정보를 주고 받을 수 있는 장치는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>자기디스크</li><li>라인프린터</li><li class="correct">콘솔</li><li>데이터 셀</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 67%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">콘솔은 컴퓨터와 오퍼레이터 사이에 필요한 정보를 주고 받을 수 있는 장치입니다. 다른 보기들은 데이터의 입력, 출력, 저장 등의 역할을 수행하지만, 콘솔은 컴퓨터와 직접적으로 상호작용하여 명령어를 입력하고 결과를 확인할 수 있는 인터페이스 역할을 합니다. 따라서 콘솔이 컴퓨터와 오퍼레이터 간의 필수적인 연결고리 역할을 하기 때문에 정답입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3454,7 +3483,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n720120408-18" question-id="n720120408-18" question-num="18" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">18</span>. 속도가 빠른 중앙처리장치와 속도가 느린 주기억장치 사이에 위치하며 주 장치간의 속도 차를 줄여 컴퓨터의 전체적인 동작 속도를 빠르게 하는 기억장치는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">캐시 메모리 (Cache Memory)</li><li>가상 메모리 (Virtual Memory)</li><li>플래시 메모리 (Flash Memory)</li><li>자기버블 메모리 (Megnetic Bubble Memory)</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 87%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">캐시 메모리는 CPU와 주기억장치 사이에 위치하여 CPU가 자주 사용하는 데이터를 미리 저장해 놓는 고속 기억장치입니다. 이렇게 함으로써 CPU가 데이터를 가져오기 위해 주기억장치에 접근하는 횟수를 줄여 전체적인 동작 속도를 빠르게 합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3500,7 +3529,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#n720120408-19" question-id="n720120408-19" question-num="19" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">19</span>. 각 세그먼트를 하나의 프로그램이 되도록 연결하고, 에셈블러가 번역한 목적프로그램을 실행 모듈로 바꾸어 주는 프로그램은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>에디터</li><li>ASM</li><li class="correct">LINKER</li><li>EXE2BIN</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 69%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">각 세그먼트를 하나의 프로그램으로 연결하고, 에셈블러가 번역한 목적프로그램을 실행 모듈로 바꾸어 주는 작업은 링킹(linking)이라고 합니다. 이 작업을 수행하는 프로그램이 LINKER입니다. 따라서 정답은 LINKER입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3546,7 +3575,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n720120408-20" question-id="n720120408-20" question-num="20" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">20</span>. 컴퓨터 내부에서 문자를 표현하는 방식은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>팩 방식</li><li class="correct">아스키 코드 방식</li><li>고정 소수점 방식</li><li>부동 소수점 방식</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 71%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">컴퓨터 내부에서 문자를 표현하는 방식은 아스키 코드 방식입니다. 이는 문자를 7비트 이진수로 표현하는 방식으로, 128개의 문자를 표현할 수 있습니다. 이 방식은 간단하고 효율적이며, 대부분의 컴퓨터와 프로그래밍 언어에서 지원됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3592,7 +3621,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#n720120408-21" question-id="n720120408-21" question-num="21" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">21</span>. 다음 그림은 어떤 주소 지정 방식인가?<img src="images/n720120408m21.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>즉시주소(Immediate Address) 지정</li><li class="correct">직접주소(Direct Address)  지정</li><li>간접주소(Indirect Address)  지정</li><li>상대주소(Relative Address)  지정</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 59%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">그림에서는 메모리 주소가 명확하게 지정되어 있으므로, 해당 주소에 직접 접근하여 데이터를 가져오는 직접주소(Direct Address) 지정 방식이 사용되고 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3638,7 +3667,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n720120408-22" question-id="n720120408-22" question-num="22" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">22</span>. 명령어 형식에 오퍼랜드(operand)부의 역할이라고 할 수 없는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>레지스터 지정</li><li class="correct">명령어 종류 지정</li><li>기억장치의 어드레스 지정</li><li>데이터 자체의 표현</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 44%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">명령어 형식에서 오퍼랜드는 명령어가 수행될 때 필요한 데이터나 주소를 나타내는데, 이 중에서 명령어 종류 지정은 오퍼랜드가 아니라 명령어 자체를 나타내는 역할을 하기 때문에 오퍼랜드 부의 역할이라고 할 수 없습니다. 따라서 정답은 "명령어 종류 지정"입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3684,7 +3713,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#n720120408-23" question-id="n720120408-23" question-num="23" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">23</span>. 프로그래밍에 사용하는 고급언어 중 절차지향언어에 포함되지 않는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>코볼(COBOL)</li><li>C 언어</li><li class="correct">자바(JAVA)</li><li>베이직(BASIC)</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 63%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">자바는 객체지향언어이기 때문에 절차지향언어에 포함되지 않습니다. 객체지향언어는 데이터와 해당 데이터를 처리하는 함수(메서드)를 하나의 단위인 객체로 묶어서 관리하는 방식을 사용합니다. 이에 반해 절차지향언어는 데이터와 함수(서브루틴)를 분리하여 처리하는 방식을 사용합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3730,7 +3759,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n720120408-24" question-id="n720120408-24" question-num="24" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">24</span>. 다음 논리연산 명령어 중 누산기의 값이 변하지 않는 것은? (단, 여기서 X는 임의의 8bit 데이터이다.)</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">CP X</li><li>AND X</li><li>OR X</li><li>EX-OR X</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 64%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"CP X" 명령어는 누산기의 값은 변하지 않고, X와 누산기의 값을 비교하여 상태 레지스터에 결과를 저장하는 명령어이기 때문입니다. "AND X", "OR X", "EX-OR X" 명령어는 누산기와 X를 비트 연산하여 누산기의 값이 변하기 때문에 정답이 될 수 없습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3777,7 +3806,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div>
 <div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#n720120408-25" question-id="n720120408-25" question-num="25" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">25</span>. 컴퓨터가 직접 인식하여 실행할 수 있는 언어로서, 2진수 “0”과 “1”만을 이용하여 명령어와 데이터를 나타내는 언어는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">기계어</li><li>어셈블리 언어</li><li>컴파일러 언어</li><li>인터프리터 언어</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 80%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">기계어는 컴퓨터가 직접 이해하고 실행할 수 있는 언어로, 2진수로 이루어져 있기 때문에 컴퓨터가 인식하기 쉽습니다. 다른 언어들은 기계어로 번역되어야만 컴퓨터가 실행할 수 있지만, 기계어는 번역과정이 필요하지 않기 때문에 가장 빠르고 효율적인 실행이 가능합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3823,7 +3852,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n720120408-26" question-id="n720120408-26" question-num="26" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">26</span>. 다음 중 “0”에서부터 “9”까지의 10진수를 4비트 2진수로 표현하는 코드는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>아스키 코드</li><li>3-초과 코드</li><li>그레이 코드</li><li class="correct">BCD 코드</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 71%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">BCD 코드는 Binary Coded Decimal의 약자로, 10진수를 4비트 2진수로 표현하는 코드입니다. 따라서 0부터 9까지의 10진수를 BCD 코드로 표현하면 각각 0000, 0001, 0010, 0011, 0100, 0101, 0110, 0111, 1000, 1001이 됩니다. 이는 10진수와 2진수 간의 변환을 간편하게 하기 위해 사용됩니다. 따라서 BCD 코드가 정답입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3869,7 +3898,18 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#n720120408-27" question-id="n720120408-27" question-num="27" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">27</span>. 16진수 (28C)<sub>16</sub>를 10진수로 변환한 것으로 옳은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>626</li><li>627</li><li>628</li><li class="correct">652</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 63%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">16진수 28C를 10진수로 변환하는 방법은 다음과 같습니다.<br/>
+<br/>
+1. 16진수 28C를 각 자리수별로 나눕니다.<br/>
+   - 2는 16^2의 자리수, 8은 16^1의 자리수, C는 16^0의 자리수입니다.<br/>
+2. 각 자리수를 10진수로 변환합니다.<br/>
+   - 2 × 16^2 = 2 × 256 = 512<br/>
+   - 8 × 16^1 = 8 × 16 = 128<br/>
+   - C × 16^0 = 12 × 1 = 12<br/>
+3. 각 자리수를 합하여 최종 결과를 구합니다.<br/>
+   - 512 + 128 + 12 = 652<br/>
+<br/>
+따라서, 16진수 (28C)<sub>16</sub>를 10진수로 변환한 결과는 652입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3915,7 +3955,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n720120408-28" question-id="n720120408-28" question-num="28" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">28</span>. PCB 제조 과정에서 프린트 배선판 상의 특정 영역에 하는 내열성 비폭 재료로 납땜 작업할 때 이 부분이 땝납이 붙지 않도록 하는 레지스트는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>포토 레지스트 (photo resist)</li><li class="correct">솔더 레지스트 (solder resist)</li><li>에칭 레지스트 (etching resist)</li><li>도금 레지스트 (plating resist)</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 61%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">솔더 레지스트는 PCB 제조 과정에서 프린트 배선판 상의 특정 영역에 내열성 비폭 재료로 코팅하여, 해당 영역에 땝납이 붙지 않도록 하는 역할을 합니다. 이는 납땜 작업 시 땝납이 불필요한 부분에 붙어 전기적인 문제를 일으키는 것을 방지하고, PCB의 신뢰성을 높이기 위해 사용됩니다. 따라서 솔더 레지스트가 정답입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3961,7 +4001,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#n720120408-29" question-id="n720120408-29" question-num="29" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">29</span>. 입ㆍ출력 장치로 모두 이용되고 있는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>마우스</li><li>플로터</li><li class="correct">터치스크린</li><li>디지타이저와 스타일러스 팬</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 79%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">터치스크린은 사용자의 손가락으로 직접 입력을 받아들이는 입력장치이며, 동시에 화면에 출력되는 정보를 시각적으로 제공하는 출력장치이기도 합니다. 따라서 입ㆍ출력 장치로 모두 이용되고 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4007,7 +4047,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n720120408-30" question-id="n720120408-30" question-num="30" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">30</span>. 도면으로부터 위치 좌표를 읽어들이고, 메뉴를 선택하여 도면 작업을 하는데 사용할 심벌 등을 메뉴에 등록시켜놓고, 필요할 때 불러내어 그려 넣을 수 있도록 하는 장치는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>트랙 볼 (Track Ball)</li><li class="correct">디지타이저 (Digital Zer)</li><li>펜 플로터 (Pen Plotter)</li><li>이미지 스캐너 (Image Scanner)</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 72%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">디지타이저는 도면으로부터 위치 좌표를 읽어들이고, 메뉴를 선택하여 도면 작업을 하는데 사용할 심벌 등을 메뉴에 등록시켜놓고, 필요할 때 불러내어 그려 넣을 수 있도록 하는 장치입니다. 따라서 디지타이저가 정답입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4058,7 +4098,7 @@ $(function(){
 </div>
 </div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n720120408-31" question-id="n720120408-31" question-num="31" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">31</span>. 다음 중 A4 용지의 크기에 해당되는 것은? (단, A0 : 841mm × 1189mm)</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>594mm × 841mm</li><li>420mm × 594mm</li><li>297mm × 420mm</li><li class="correct">210mm × 297mm</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 86%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">A4 용지는 A0 용지를 반으로 접은 후에 다시 반으로 접은 크기인 210mm × 297mm입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4104,7 +4144,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#n720120408-32" question-id="n720120408-32" question-num="32" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">32</span>. 다음 다이오드 중 정전압 용도로 쓰이는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>일반 다이오드</li><li class="correct">제너 다이오드</li><li>터널 다이오드</li><li>포토 다이오드</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 85%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">제너 다이오드는 양방향 전류가 흐를 때도 일정한 전압을 유지하는 특성을 가지고 있어 정전압 용도로 쓰입니다. 따라서 제너 다이오드가 정전압 용도로 쓰이는 다이오드 중 하나입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4151,7 +4191,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n720120408-33" question-id="n720120408-33" question-num="33" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">33</span>. 절연기판을 얇은 필름으로 만들어서 가요성과 유연성을 가지도록 한 인쇄회로기판(PCB)은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">플렉시블 PCB(flexible PCB)</li><li>다층면 PCB(multi-layer PCB)</li><li>관통구 PCB(through-hole PCB)</li><li>무관통구 PCB(non through-hole PCB)</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 87%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">절연기판을 얇은 필름으로 만들어 가요성과 유연성을 가지도록 한 것이 플렉시블 PCB입니다. 다른 보기들은 PCB의 다른 종류를 나타내는 용어입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4197,7 +4237,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#n720120408-34" question-id="n720120408-34" question-num="34" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">34</span>. 청사진으로 만들어진 전자 도면을 컴퓨터용 DATA 파일로 만들려면 다음 중 어떤 입력장치가 필요한가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>마우스</li><li>프린터</li><li>플로터</li><li class="correct">스캐너</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 69%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">청사진을 컴퓨터용 DATA 파일로 만들기 위해서는 청사진을 디지털화하여 컴퓨터가 인식할 수 있는 형태로 변환해야 합니다. 이를 위해서는 스캐너가 필요합니다. 스캐너는 종이나 사진 등의 이미지를 디지털화하여 컴퓨터에 저장할 수 있는 형태로 변환해주는 입력장치입니다. 따라서 청사진을 스캐너에 올려서 디지털화하면 컴퓨터용 DATA 파일로 만들 수 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4243,7 +4283,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n720120408-35" question-id="n720120408-35" question-num="35" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">35</span>. PCB Artwork에서 배선하는 과정을 나타내는 용어는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">route</li><li>line</li><li>hole</li><li>point</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 61%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"Route"는 PCB Artwork에서 배선하는 과정을 나타내는 용어입니다. 이는 PCB 디자인에서 전기적인 연결을 만들기 위해 트레이스(Trace)를 그리는 과정을 의미합니다. 따라서 "route"가 정답입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4289,7 +4329,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#n720120408-36" question-id="n720120408-36" question-num="36" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">36</span>. 부품이 PCB에 삽입 될 때에 부품의 리드가 삽입되는 Hole 주위에 입혀지는 엷은 구리 판막의 명칭은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">PAD</li><li>TRACK</li><li>VIA</li><li>POLYGON(COPPER)</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 62%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">PAD는 부품의 리드가 삽입되는 Hole 주위에 입혀지는 엷은 구리 판막의 명칭입니다. 이는 부품과 PCB 사이의 전기적 연결을 위해 사용되며, 부품의 리드와 PCB의 구리 층을 연결해주는 역할을 합니다. 따라서 PAD가 정답입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4335,7 +4375,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n720120408-37" question-id="n720120408-37" question-num="37" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">37</span>. 일반적인 고주파회로를 설계할 때 유의사항과 거리가 먼 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>배선의 길이는 가급적 짧게 한다.</li><li>배선이 꼬인 것은 코일로 간주한다.</li><li>회로의 중요한 요소에는 바이패스 콘덴서를 삽입한다.</li><li class="correct">유도 가능한 고주파 전송선은 다른 신호선과 평행되게 한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 63%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">유도 가능한 고주파 전송선은 다른 신호선과 평행되게 하는 것은 인접한 신호선 간의 상호작용을 최소화하기 위해서입니다. 고주파 신호는 전송선 주변의 전기장을 생성하며, 이 전기장은 인접한 신호선에 유도될 수 있습니다. 이러한 유도는 신호의 왜곡을 유발하고, 회로의 성능을 저하시킬 수 있습니다. 따라서 유도 가능한 고주파 전송선은 다른 신호선과 평행되게 배치하여 상호작용을 최소화해야 합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4381,7 +4421,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#n720120408-38" question-id="n720120408-38" question-num="38" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">38</span>. 전자회로에서 부분 상호간에 전달되는 신호의 계통을 알기 쉽게 나타낸 선도로서 계통도 또는 구성도라고 하는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">블록도</li><li>회로도</li><li>결선도</li><li>배치도</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 68%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">블록도는 전체 시스템을 블록으로 나누어 각 블록의 기능과 상호작용을 나타내는 도면이다. 따라서 전자회로에서 부분 상호간에 전달되는 신호의 계통을 나타내는 것보다는 전체 시스템의 구성과 기능을 파악하기에 더 적합하다. 따라서 정답은 "블록도"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4427,7 +4467,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n720120408-39" question-id="n720120408-39" question-num="39" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">39</span>. CAD 작업에 의하여 만들어진 부품 간의 결선정보, 부품번호, 핀 번호 등의 데이터를 말하며, 이 데이터를 기초로 배선 패턴의 설계 (Artwork) 가 이루어진 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>CAM 데이터</li><li>Silk 데이터</li><li class="correct">네트리스트 (Net list)</li><li>거버 데이터 (Gerber Data)</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 75%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">네트리스트는 CAD 작업으로 만들어진 부품 간의 결선정보, 부품번호, 핀 번호 등의 데이터를 의미합니다. 이 데이터를 기반으로 배선 패턴의 설계가 이루어지기 때문에, 네트리스트는 CAD 작업의 결과물 중 하나로써, 배선 패턴의 설계에 필수적인 정보를 제공합니다. 따라서, 네트리스트가 정답입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4473,7 +4513,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#n720120408-40" question-id="n720120408-40" question-num="40" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">40</span>. 세라믹 콘덴서의 표면에 “102K"로 표기되어 있다면 이 콘덴서이 정전용량 값과 허용오차 값은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">용량 값 : 1000[μF], 허용오차 : ±10[%]</li><li>용량 값 : 1000[μF], 허용오차 : ± 5[%]</li><li>용량 값 :  100[μF], 허용오차 : ±20[%]</li><li>용량 값 :  100[μF], 허용오차 : ±10[%]</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 58%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"102K"는 10과 2 영점을 의미하며, 이는 10과 2개의 0이 결합된 값인 1000을 나타낸다. 따라서 이 콘덴서의 용량 값은 1000[μF]이다. 또한, "K"는 허용오차를 나타내며, "K"의 경우 ±10[%]의 허용오차를 가진다. 따라서 이 콘덴서의 허용오차 값은 ±10[%]이다. 따라서 정답은 "용량 값 : 1000[μF], 허용오차 : ±10[%]"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4520,7 +4560,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n720120408-41" question-id="n720120408-41" question-num="41" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">41</span>. 수동소자로 전류의 흐름에 따라 자기에너지를 저장하며, 전류가 급하게 변화하는 것을 억제하기 위해 사용되는 소자는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>저항기 (R)</li><li>가변저항기 (VR)</li><li class="correct">유도기 (L)</li><li>콘덴서 (C)</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 47%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">유도기는 전류가 흐르면 자기장을 발생시켜 자기에너지를 저장합니다. 또한, 전류가 급하게 변화하면 자기장의 방향이 변화하여 전류의 급격한 변화를 억제하는 역할을 합니다. 따라서, 전류의 흐름에 따라 자기에너지를 저장하며, 전류가 급하게 변화하는 것을 억제하기 위해 사용되는 소자는 유도기입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4566,7 +4606,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#n720120408-42" question-id="n720120408-42" question-num="42" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">42</span>. 반도체 소자 중 전압의 크기에 따라 저항 값이 변하는 소자는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">배리스터</li><li>서미스터</li><li>트랜지스터</li><li>다이오드</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 67%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">배리스터는 전압의 크기에 따라 저항 값이 변하는 반도체 소자입니다. 이는 일종의 전압 제어 저항으로, 일정한 전압 이상이 되면 전류가 흐르게 되어 전압을 제한하거나 보호하는 역할을 합니다. 따라서, 주로 과전압 보호용으로 사용됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4612,7 +4652,9 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n720120408-43" question-id="n720120408-43" question-num="43" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">43</span>. 전자 회로도를 작성 할 때 고려해야 할 사항에 대한 설명으로 옳지 않는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>신호의 흐름은 도면의 왼쪽에서 오른쪽으로, 위에서 아래로 그린다.</li><li>주회로나 보조회로가 있는 경우는 주회로를 중심으로 그린다.</li><li class="correct">보조회로는 주회로의 바깥쪽에, 전원회로는 맨 위쪽에 그린다.</li><li>선과 선이 전기적으로 접속되는 곳은 ‘ㆍ’표를 한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 71%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"보조회로는 주회로의 바깥쪽에, 전원회로는 맨 위쪽에 그린다."가 옳지 않습니다. 보조회로와 전원회로의 위치는 회로도를 작성하는 사람의 개인적인 스타일에 따라 다를 수 있습니다. 따라서 이러한 규칙은 절대적인 것이 아니며, 일반적인 관례에 불과합니다.<br/>
+<br/>
+"보조회로는 주회로의 바깥쪽에, 전원회로는 맨 위쪽에 그린다."라는 규칙은 주회로와 보조회로, 전원회로의 위치를 구분하기 위한 일종의 관례입니다. 주회로를 중심으로 그리는 것은 회로의 구성을 명확하게 하기 위함이며, 보조회로와 전원회로의 위치를 일관성 있게 유지하여 회로도를 보는 사람들이 쉽게 이해할 수 있도록 합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4658,7 +4700,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#n720120408-44" question-id="n720120408-44" question-num="44" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">44</span>. 부품의 배치가 완료된 이후 핀(pin) 간의 배선 작업을 의미하는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>웨이퍼</li><li>블로킹</li><li>에칭</li><li class="correct">라우팅</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 61%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">라우팅은 부품이 배치된 PCB(회로 기판) 상에서 핀 간의 연결을 위해 경로를 설정하는 작업을 의미합니다. 따라서 "라우팅"이 정답입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4704,7 +4746,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n720120408-45" question-id="n720120408-45" question-num="45" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">45</span>. 다음에 나타내는 부품은 무엇을 설명하고 있는가?<img src="images/n720120408m45.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">능동 부품</li><li>기타 부품</li><li>수동 부품</li><li>보조 부품</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 82%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">해당 그림은 모터와 같은 전기적인 에너지를 이용하여 작동하는 부품으로, 스스로 움직이거나 작동하는 능동적인 특성을 가지고 있기 때문에 "능동 부품"이라고 부릅니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4750,7 +4792,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#n720120408-46" question-id="n720120408-46" question-num="46" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">46</span>. 다음은 다층인쇄회로(PCB) 공정 중 한 단계이다. 무엇을 설명한 것인가?<img src="images/n720120408m46.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>노광</li><li class="correct">본딩</li><li>절단</li><li>성형제</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 77%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">위 그림은 PCB 공정 중 본딩(bonding) 단계를 보여준다. 본딩은 칩과 PCB를 연결하기 위해 칩의 전극과 PCB의 전극을 연결하는 과정이다. 이를 위해 칩과 PCB 사이에 본딩 와이어(bonding wire)를 사용한다. 따라서 정답은 "본딩"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4796,7 +4838,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n720120408-47" question-id="n720120408-47" question-num="47" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">47</span>. 전자 부품의 배치도를 작성할 때 고려해야 할 사항으로 옳지 않은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>부품 상호간에 신호가 유도되지 않도록 한다.</li><li>균형 있게 배치한다.</li><li>부품의 종류, 기호, 용량, 외형도, 핀의위치, 극성 등을 표시하여야 한다.</li><li class="correct">IC의 경우는 모양을 판단할 수 있으므로 핀 번호를 표시하지 않아도 된다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 84%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">IC의 경우는 모양을 판단할 수 있으므로 핀 번호를 표시하지 않아도 된다는 것은 옳지 않습니다. IC의 모양은 제조사나 모델에 따라 다르기 때문에 핀 번호를 표시해야 다른 사람이나 기계가 쉽게 인식할 수 있습니다. 따라서 IC도 다른 부품들과 마찬가지로 핀 번호를 표시하여야 합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4842,7 +4884,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#n720120408-48" question-id="n720120408-48" question-num="48" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">48</span>. CAD시스템에 의한 제품 설계 및 도면 작성의 결과로 볼 수 없는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>설계 과정이 능률 향상에 의한 도면의 품질 향상</li><li>설계 요소의 표준화로 원가 절감</li><li>수치 계산 결과의 정확성 증가</li><li class="correct">도면 형상의 자유로운 표현</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 65%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">CAD시스템은 제품 설계 및 도면 작성을 자동화하여 빠르고 정확한 결과물을 얻을 수 있도록 도와줍니다. 그러나 도면 형상의 자유로운 표현은 CAD시스템으로는 제한적으로 표현할 수 있기 때문에 결과물로 볼 수 없습니다. 이는 디자이너의 창의성과 자유로운 표현력이 필요한 부분이기 때문입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4889,7 +4931,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n720120408-49" question-id="n720120408-49" question-num="49" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">49</span>. CAD용 소프트웨어 구성이라고 볼 수 없는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>그래픽 패키지</li><li>응용 프로그램</li><li>응용 데이터베이스</li><li class="correct">MGA(Mono chrome Graphic Adapter)</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 72%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">MGA(Mono chrome Graphic Adapter)는 CAD용 소프트웨어 구성이 아닌 하드웨어이기 때문에 정답입니다. 나머지 보기는 모두 CAD용 소프트웨어 구성에 포함될 수 있는 요소들입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4935,7 +4977,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#n720120408-50" question-id="n720120408-50" question-num="50" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">50</span>. 물체의 실체 길이와 도면에서 축소 또는 확대하여 그리는 길이의 비율을 척도라 하는데 실물보다 작게 그리는 척도는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">축척</li><li>실척</li><li>배척</li><li>NS</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 85%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">실물보다 작게 그리는 것을 의미하는 척도를 "축척"이라고 합니다. "실척"은 일반적으로 사용되지 않는 용어이며, "배척"은 실물보다 크게 그리는 것을 의미합니다. "NS"는 해당 문제와 관련이 없는 용어입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4981,7 +5023,11 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n720120408-51" question-id="n720120408-51" question-num="51" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">51</span>. 전자캐드의 특징 설명으로 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>회로의 설계에 적합하다.</li><li class="correct">기구의 설계에 적합하다.</li><li>회로의 동작 검증이 용이하다.</li><li>인쇄회로기판의 설계에 적합하다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 76%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "기구의 설계에 적합하다."입니다.<br/>
+<br/>
+전자캐드는 회로 및 인쇄회로기판의 설계에 적합하며, 회로의 동작 검증이 용이하다는 특징이 있습니다. 하지만 기구의 설계에 적합하다는 내용은 전자캐드와는 관련이 없습니다. 따라서 이 보기에서 틀린 것은 "기구의 설계에 적합하다."입니다.<br/>
+<br/>
+전자캐드는 3차원 모델링 기능을 제공하여 기구의 외형을 시각적으로 확인할 수는 있지만, 이는 기구 설계를 위한 전용 소프트웨어인 컴퓨터 지원 설계(CAD)와는 다른 개념입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5027,7 +5073,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#n720120408-52" question-id="n720120408-52" question-num="52" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">52</span>. 다음 중 전자통신기기의 패널을 설계 제도 할 때 유의할 점으로 옳은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>전원 코드는 전면에 배치한다.</li><li class="correct">조작상 서로 연관이 있는 요소끼리 근접 배치한다.</li><li>조작 빈도가 낮은 부품은 패널의 중앙이나 오른쪽에 배치한다.</li><li>장치에 외부 접속기가 있을 경우 반드시 패널의 위에 배치한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 59%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">조작상 서로 연관이 있는 요소끼리 근접 배치하는 이유는 사용자가 해당 기기를 조작할 때 편리하게 사용할 수 있도록 하기 위함입니다. 예를 들어, 텔레비전의 경우 전원 버튼과 채널 조절 버튼은 서로 연관이 있으므로 이 두 요소는 근접하게 배치되어 있습니다. 이렇게 배치함으로써 사용자는 전원을 켜고 채널을 조절하는 과정에서 손을 이동시키지 않아도 되므로 편리하게 사용할 수 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5073,7 +5119,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n720120408-53" question-id="n720120408-53" question-num="53" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">53</span>. PCB DESIGN에서 설계 오류를 검사하는 기능은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>Net list</li><li>Zoom</li><li>Edit</li><li class="correct">DRC</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 77%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">PCB DESIGN에서 설계 오류를 검사하는 기능은 DRC입니다. DRC는 Design Rule Check의 약자로, PCB 디자인 규칙을 검사하여 오류를 찾아내는 기능입니다. 이를 통해 회로의 안정성과 신뢰성을 높일 수 있습니다. 다른 보기들은 PCB 디자인에 사용되는 기능이지만, 설계 오류를 검사하는 기능은 DRC입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5119,7 +5165,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#n720120408-54" question-id="n720120408-54" question-num="54" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">54</span>. 인쇄회로기판(PCB) 설계용 CAD에서 일반적인 배선 알고리즘이 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>스트립 접속법</li><li>고속 라인법</li><li class="correct">인공지능 탐사법</li><li>기하학적 탐사법</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 71%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">인공지능 탐사법은 일반적인 PCB 설계용 CAD에서 사용되지 않는 알고리즘이다. 이는 인공지능 기술을 활용하여 최적의 배선 경로를 자동으로 탐색하는 방법으로, 기존의 수동적인 설계 방식과는 차별화된 혁신적인 기술이다. 따라서 인공지능 탐사법이 일반적인 배선 알고리즘이 아닌 것이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5165,7 +5211,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n720120408-55" question-id="n720120408-55" question-num="55" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">55</span>. 5색으로 표시된 고정 저항의 색에 대한 설명으로 옳은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">첫 번째 색-유효숫자</li><li>세 번째 색-10의 배수(곱수)</li><li>네 번째 색-허용오차</li><li>다섯 번째-정격전력[W]</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 66%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">고정 저항의 색 코드는 첫 번째 색이 유효숫자를 나타내고, 두 번째 색이 유효숫자의 자릿수를 나타냅니다. 세 번째 색은 10의 배수(곱수)를 나타내고, 네 번째 색은 허용 오차를 나타냅니다. 다섯 번째 색은 정격 전력을 나타냅니다. 따라서 첫 번째 색이 유효숫자를 나타내는 이유는 저항의 값이 가장 중요하기 때문입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5211,7 +5257,12 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#n720120408-56" question-id="n720120408-56" question-num="56" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">56</span>. 3000[Ω] 저항을 배치하고 그 값을 표시한 것 중 가장 적절한 표시 방법은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>3000[Ω]</li><li class="correct">3[kΩ]</li><li>3[μΩ]</li><li>3[MΩ]</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 85%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">가장 적절한 표시 방법은 "3[kΩ]"입니다. 이유는 다음과 같습니다.<br/>
+<br/>
+- "3000[Ω]"는 단위가 올바르게 표시되어 있지만, 숫자가 너무 크기 때문에 읽기 어렵습니다.<br/>
+- "3[μΩ]"는 단위가 틀렸습니다. "μ"는 마이크로를 나타내는 단위이므로, 3[μΩ]은 0.000003[Ω]을 의미합니다.<br/>
+- "3[MΩ]"는 단위가 맞지만, 저항의 값이 3[MΩ]보다 작기 때문에 너무 큰 값으로 표시됩니다.<br/>
+- 따라서, 3000[Ω]을 1000으로 나누어 단위를 kΩ으로 변환한 "3[kΩ]"가 가장 적절한 표시 방법입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5258,7 +5309,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n720120408-57" question-id="n720120408-57" question-num="57" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">57</span>. 다음 중 설계된 PCB 도면의 외곽 사이즈(size)가 1000×2000[mil]일 때, 이를 [mm]로 환산하면?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>0.254×0.508[mm]</li><li>2.54×5.08[mm]</li><li class="correct">25.4×50.8[mm]</li><li>254×508[mm]</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 61%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">1 mil은 0.0254mm이므로, 1000×2000[mil]을 mm로 환산하면 1000×0.0254mm × 2000×0.0254mm = 25.4×50.8[mm]이 됩니다. 따라서 정답은 "25.4×50.8[mm]"입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5304,7 +5355,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#n720120408-58" question-id="n720120408-58" question-num="58" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">58</span>. CAD 프로그램의 이용 설계시 정확한 부품의 위치 및 배선결선을 위해 화면상의 점 혹은 선으로 나타내어진 가상의 좌표는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>어노테이트(Annotate)</li><li>프리퍼런스(Preferonce)</li><li>폴리라인(Poly Line)</li><li class="correct">그리드(Grid)</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 79%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">CAD 프로그램에서 그리드(Grid)는 가상의 좌표를 나타내는데 사용되며, 부품의 위치나 배선결선을 정확하게 나타내기 위해 사용됩니다. 그리드는 일정한 간격으로 나누어진 수평선과 수직선으로 이루어져 있어, 부품이나 배선을 배치할 때 정확한 위치를 파악할 수 있도록 도와줍니다. 따라서 CAD 설계시 정확한 위치와 배선결선을 위해 그리드(Grid)를 사용하는 것이 중요합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5350,7 +5401,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n720120408-59" question-id="n720120408-59" question-num="59" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">59</span>. 다층 프린트 배선에서 도금관통구멍과 전기적 접속을 하지 않도록 하기 위하여 도금 관통구멍을 감싸는 부분에 도체 패턴의 도전재료가 없도록 한 영역을 무엇이라 하는가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>액세스 홀(Access hole)</li><li class="correct">클리어런스 홀(Clearance hole)</li><li>랜드리스 홀(Landless hole)</li><li>위치결정 (Location hole)</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 60%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">클리어런스 홀은 도금 관통구멍을 감싸는 부분에 도전재료가 없는 영역을 말한다. 이는 전기적 접촉을 방지하기 위해 사용되며, 도금된 구멍과 연결되는 전기적인 접촉을 막기 위해 필요하다. 따라서, 다층 프린트 배선에서 도금 관통구멍과 전기적 접속을 하지 않도록 하기 위해 클리어런스 홀을 사용한다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5396,7 +5447,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#n720120408-60" question-id="n720120408-60" question-num="60" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">60</span>. 다음 중 블록선도에서 사용하는 삼각형 도형이 사용되는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>전원회로</li><li>변조회로</li><li class="correct">연산증폭기</li><li>복조회로</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 75%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">연산증폭기는 입력 신호를 증폭하고, 출력 신호를 생성하는 회로로, 블록선도에서는 삼각형 도형으로 표시됩니다. 따라서 정답은 "연산증폭기"입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>

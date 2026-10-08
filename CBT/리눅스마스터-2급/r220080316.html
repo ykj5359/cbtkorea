@@ -489,6 +489,15 @@ var g5_cookie_domain = ".cbtkorea.kr";
 
 <!-- CANONICAL-CBT -->
 <link rel="canonical" href="https://cbtkorea.kr/CBT/%EB%A6%AC%EB%88%85%EC%8A%A4%EB%A7%88%EC%8A%A4%ED%84%B0-2%EA%B8%89/r220080316.html">
+<!-- AI-EXP-RESTORED -->
+<style>
+    .reply .report-modal, .reply .loading, .reply .reply-component { display: none !important; }
+    .ai-exp { list-style: none; padding: 0; margin: 0 0 10px 0; }
+    .ai-exp:last-child { margin-bottom: 0; }
+    .ai-exp-label { font-size: 12px; font-weight: 700; color: #1d4ed8; margin-bottom: 6px; }
+    .ai-exp-label small { font-weight: 400; color: #6b7280; margin-left: 6px; }
+    .ai-exp-empty { font-size: 13px; color: #6b7280; }
+</style>
 </head>
 <body>
 <!-- 상단 시작 { -->
@@ -2665,7 +2674,7 @@ $(function(){
 </div>
 </div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#r220080316-1" question-id="r220080316-1" question-num="1" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">1</span>. 다음에서 설명하는 디렉토리로 알맞은 것은?<img src="images/r220080316m1.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>/tmp</li><li>/usr</li><li>/boot</li><li class="correct">/var</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 54%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"/var" 디렉토리는 시스템에서 변하는 데이터가 저장되는 곳이기 때문에 로그 파일, 캐시, 데이터베이스 등이 저장되는 디렉토리이다. 따라서 시스템의 안정성과 성능을 유지하기 위해 이 디렉토리는 별도의 파티션으로 마운트하는 것이 좋다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2711,7 +2720,14 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#r220080316-2" question-id="r220080316-2" question-num="2" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">2</span>. 디렉토리 /tmp는 rwxrwxrwt 권한으로 설정되어 있어 시스템의 사용자들이 자유롭게 파일 등을 생성, 삭제 할 수 있다. 다음 chmod 명령 중 /tmp와 동일한 권한을 설정할 수 있는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>chmod 1775 /test</li><li>chmod 4777 /test</li><li>chmod 2777 /test</li><li class="correct">chmod 1777 /test</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 53%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "chmod 1777 /test"이다. <br/>
+<br/>
+이유는 다음과 같다. <br/>
+<br/>
+- rwxrwxrwt 권한 중 t는 sticky bit를 의미한다. 이는 디렉토리 내의 파일들이 삭제나 이동 등의 작업을 할 때, 파일 소유자나 디렉토리 소유자만이 해당 작업을 수행할 수 있도록 하는 역할을 한다. <br/>
+- 따라서 /tmp와 동일한 권한을 설정하려면, rwxrwxrwt 권한에 sticky bit를 추가해야 한다. <br/>
+- sticky bit는 숫자로는 1로 표현되므로, chmod 명령어에서는 1을 추가해줘야 한다. <br/>
+- 따라서 "chmod 1777 /test"는 /test 디렉토리에 rwxrwxrwt 권한과 sticky bit를 설정하는 명령어이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2757,7 +2773,13 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#r220080316-3" question-id="r220080316-3" question-num="3" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">3</span>. /etc/passwd는 모든 사용자들이 읽을 수 있으나 직접 수정은 root만 가능하다. 아래와 같이 /etc/passwd의 7번째 값인 /bin/bash를 일반사용자가 /bin/tcsh로 자신의 쉘을 변경하려고 한다면 어떤 명령을 수행해야 하는가?<img src="images/r220080316m3.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>tcsh</li><li class="correct">chsh</li><li>bash</li><li>bosh</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 76%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">일반 사용자가 자신의 쉘을 변경하기 위해서는 chsh 명령어를 사용해야 한다. chsh는 change shell의 약자로, 사용자의 로그인 쉘을 변경하는 명령어이다. 따라서, 일반 사용자는 다음과 같은 명령어를 입력하여 자신의 쉘을 변경할 수 있다.<br/>
+<br/>
+```<br/>
+$ chsh -s /bin/tcsh<br/>
+```<br/>
+<br/>
+위 명령어는 현재 로그인한 사용자의 쉘을 /bin/tcsh로 변경하는 명령어이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2803,7 +2825,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#r220080316-4" question-id="r220080316-4" question-num="4" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">4</span>. ihd.txt 파일을 새로 생성하였을 때 파일의 허가권을 rw-r----- 와 같이 하려고 할 경우 umask 값은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>022</li><li>020</li><li class="correct">026</li><li>024</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 69%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">umask 값은 파일 생성 시 기본적으로 적용되는 권한 제한 값으로, 원하는 권한을 제외한 값으로 설정해야 한다. 따라서 rw-r----- 권한을 설정하려면, 원하는 권한인 rw-와 ---를 제외한 값인 026을 umask 값으로 설정해야 한다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2849,7 +2871,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#r220080316-5" question-id="r220080316-5" question-num="5" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">5</span>. 다음과 같이 사용자 root, 그룹 root 소유인 디렉토리 ihd를 포함한 하위의 파일과 디렉토리의 소유그룹을 ihdgrp로 변경하려고 한다. 알맞는 것은?<img src="images/r220080316m5.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>chgrp -g ihdgrp ihd</li><li>chown -g ihdgrp ihd</li><li class="correct">chgrp -R ihdgrp ihd</li><li>chown -R ihdgrp ihd</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 63%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">chgrp 명령어는 파일이나 디렉토리의 그룹 소유권을 변경하는 명령어이다. -R 옵션을 사용하면 하위 디렉토리와 파일까지 모두 변경할 수 있다. 따라서 "chgrp -R ihdgrp ihd"가 정답이다. chown 명령어는 소유자와 그룹 소유권을 동시에 변경할 수 있지만, 이 문제에서는 그룹 소유권만 변경하라고 했으므로 chown은 적절하지 않다. -g 옵션은 그룹을 지정하는 옵션이지만, -R 옵션을 사용하지 않았으므로 하위 디렉토리와 파일의 그룹 소유권은 변경되지 않는다. 따라서 "chgrp -g ihdgrp ihd"는 적절하지 않다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2895,7 +2917,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#r220080316-6" question-id="r220080316-6" question-num="6" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">6</span>. 다음 중 리눅스 디렉토리의 일반적인 설명으로 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>/boot : 부트 이미지 저장 디렉토리</li><li>/lib : 라이브러리 저장 디렉토리</li><li>/etc : 각종 시스템 설정 파일 저장 디렉토리</li><li class="correct">/users : 사용자 홈 저장 디렉토리</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 75%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"/users : 사용자 홈 저장 디렉토리"가 틀린 설명입니다. 리눅스에서 사용자 계정은 각각의 홈 디렉토리를 가지며, 이 홈 디렉토리는 "/home" 디렉토리 안에 각각의 사용자 이름으로 생성됩니다. "/users" 디렉토리는 일반적으로 존재하지 않는 디렉토리입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2941,7 +2963,11 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#r220080316-7" question-id="r220080316-7" question-num="7" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">7</span>. 시스템 운영 중 저장 공간이 부족하여 디스크를 추가하려고 한다. 디스크 추가 시 사용해야 하는 명령어가 순서에 맞게 나열된 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">fdisk - mkfs - mount</li><li>mount - fdisk - mkfs</li><li>mkfs - mount - fdisk</li><li>fdisk - mount - mkfs</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 66%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "fdisk - mkfs - mount"이다. <br/>
+<br/>
+먼저, fdisk 명령어를 사용하여 새로운 디스크를 파티션으로 나누고 파일 시스템을 생성해야 한다. 그 다음, mkfs 명령어를 사용하여 새로운 파일 시스템을 생성해야 한다. 마지막으로, mount 명령어를 사용하여 새로운 파일 시스템을 마운트하여 사용할 수 있다. <br/>
+<br/>
+따라서, 디스크 추가 시에는 fdisk - mkfs - mount 순서로 명령어를 사용해야 한다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2987,7 +3013,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#r220080316-8" question-id="r220080316-8" question-num="8" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">8</span>. 다음에서 설명하는 명령어로 알맞은 것은?<img src="images/r220080316m8.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>scdk</li><li class="correct">fsck</li><li>ckfs</li><li>chkdisk</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 76%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">이 명령어는 파일 시스템을 검사하고 복구하는데 사용됩니다. 따라서 파일 시스템이 손상되었을 때 문제를 해결하는데 유용합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3034,7 +3060,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#r220080316-9" question-id="r220080316-9" question-num="9" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">9</span>. 다음은 어떤 명령의 수행 결과인가?<img src="images/r220080316m9.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>df -Gt</li><li>df -Ht</li><li>df -Tg</li><li class="correct">df -Th</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 56%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">이 명령은 시스템의 디스크 사용량을 보여주는데, "-Th" 옵션은 파일 시스템 유형을 함께 보여준다. 따라서, 위의 그림에서 파일 시스템 유형도 함께 보여주는 "-Th" 옵션이 정답이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3080,7 +3106,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#r220080316-10" question-id="r220080316-10" question-num="10" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">10</span>. 현재 디렉토리를 포함하여 하위에 있는 디렉토리의 파일 용량까지 한번에 보여주는 명령어는 무엇 인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>df</li><li>dc</li><li class="correct">du</li><li>dd</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 68%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "du"이다. "du"는 "disk usage"의 약자로, 현재 디렉토리를 포함하여 하위에 있는 디렉토리의 파일 용량을 보여준다. "df"는 디스크의 사용 가능한 용량을 보여주고, "dc"는 디렉토리 내용을 보여주고, "dd"는 데이터를 복사하는 명령어이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3126,7 +3152,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#r220080316-11" question-id="r220080316-11" question-num="11" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">11</span>. 다음 보기 중 올바르게 짝지어진 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>foreground - 화면에 보여주지 않으면서 실행 되는 상태</li><li>background - 화면에 보여주면서 실행되는 상태</li><li class="correct">suspend - 메모리에 올라가 있지만 정지된 상태</li><li>daemon - 화면에 보여주면서 실행되는 상태</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 76%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "suspend - 메모리에 올라가 있지만 정지된 상태" 입니다. 이는 프로세스가 일시적으로 중단되어 메모리에는 존재하지만 실행되지 않는 상태를 의미합니다. 이 상태에서는 CPU 자원을 차지하지 않으며, 다시 실행될 때 이전 상태를 유지합니다. 예를 들어, 사용자가 프로그램을 일시 중지하거나, 시스템이 자원 부족으로 프로세스를 일시 중지할 때 발생합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3172,7 +3198,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#r220080316-12" question-id="r220080316-12" question-num="12" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">12</span>. 아래와 같이 vi 편집기로 문서 작업 중 아래와 같이 작업이 suspend 되어 있다. 다시 작업을 계속하려면 어떤 명령을 내려야 하는가?<img src="images/r220080316m12.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>ag</li><li>bg</li><li class="correct">fg</li><li>ng</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 63%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">작업이 suspend 되어 있는 상태에서는 현재 작업 중인 프로세스를 백그라운드로 보내고 다른 작업을 수행할 수 있다. 이때, 백그라운드로 보낸 프로세스를 다시 포그라운드로 가져와서 작업을 계속하려면 "fg" 명령을 사용한다. "ag", "bg", "ng"는 모두 존재하지 않는 명령어이므로 정답은 "fg"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3218,7 +3244,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#r220080316-13" question-id="r220080316-13" question-num="13" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">13</span>. 서버를 운영하는 방식 중의 하나로 자신은 메모리에 상주하여 대기를 하고 있다가 서비스 요청을 받으면 해당 서비스 프로그램을 구동시켜 서비스를 제공하는 daemon으로 인터넷 슈퍼 데몬이라고 불리는 이것은 무엇인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>standalone</li><li>super daemon</li><li>httpd</li><li class="correct">xinetd</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 41%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "xinetd"이다. xinetd는 인터넷 슈퍼 데몬으로, 메모리에 상주하여 대기하다가 서비스 요청을 받으면 해당 서비스 프로그램을 구동시켜 서비스를 제공한다. 이는 다른 서버 운영 방식인 standalone과는 다르게 하나의 데몬으로 여러 서비스를 관리할 수 있어 효율적이다. httpd는 웹 서버 프로그램의 이름이며, 이와는 관련이 없다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3264,7 +3290,15 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#r220080316-14" question-id="r220080316-14" question-num="14" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">14</span>. 다음 프로세스에 보내는 신호(signal)와 번호의 의미가 연결된 것중 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">2 : INT(Interval, 실행간격 조정)</li><li>3 : QUIT(Quit, 실행 종료)</li><li>9 : KILL(Kill, 무조건 종료)</li><li>15 : TERM(Terminate, 가능한한 정상 종료)</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 51%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "2 : INT(Interval, 실행간격 조정)"이 아닌 다른 것이다. <br/>
+<br/>
+2번 INT(Interval, 실행간격 조정)는 프로세스에게 실행 간격을 조정하도록 신호를 보내는 것이다. 이 신호는 SIGALRM으로 번호는 14이다. <br/>
+<br/>
+다른 신호들의 의미와 번호는 다음과 같다. <br/>
+<br/>
+- 3 : QUIT(Quit, 실행 종료) - 프로세스를 종료하는 신호, SIGQUIT, 번호는 3<br/>
+- 9 : KILL(Kill, 무조건 종료) - 프로세스를 강제로 종료하는 신호, SIGKILL, 번호는 9<br/>
+- 15 : TERM(Terminate, 가능한한 정상 종료) - 프로세스를 정상적으로 종료하는 신호, SIGTERM, 번호는 15</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3310,7 +3344,9 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#r220080316-15" question-id="r220080316-15" question-num="15" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">15</span>. Foreground로 동작 중인 프로세스를 suspend 하려고 한다. 다음 보기 중 알맞은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">Ctrl + Z</li><li>Ctrl + C</li><li>Ctrl + X</li><li>Ctrl + D</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 61%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답: "Ctrl + Z"<br/>
+<br/>
+"Ctrl + Z"는 현재 foreground에서 동작 중인 프로세스를 suspend 시키는 단축키이다. 이는 프로세스를 일시적으로 멈추고, background로 이동시키는 역할을 한다. 이후에 "fg" 명령어를 통해 다시 foreground로 가져올 수 있다. 반면 "Ctrl + C"는 현재 실행 중인 프로세스를 강제로 종료시키는 단축키이며, "Ctrl + X"는 일반적으로 텍스트 에디터에서 사용되는 단축키로, 선택한 텍스트를 잘라내는 역할을 한다. "Ctrl + D"는 일반적으로 쉘에서 사용되는 단축키로, 입력을 종료하는 역할을 한다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3356,7 +3392,17 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#r220080316-16" question-id="r220080316-16" question-num="16" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">16</span>. 서버 사용률이 적은 매주 일요일 새벽 4시 정각에 백업 스크립트인 /usr/local/bin/backup.sh를 이용 하여 데이터를 백업을 하려고 한다. 다음 crontab의 설정 중 알맞은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>* 0 * 4 00 /usr/local/bin/backup.sh</li><li>0 * 4 00 * /usr/local/bin/backup.sh</li><li class="correct">00 4 * * 0 /usr/local/bin/backup.sh</li><li>4 00 * 0 * /usr/local/bin/backup.sh</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 72%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "00 4 * * 0 /usr/local/bin/backup.sh"이다. <br/>
+<br/>
+이유는 다음과 같다. <br/>
+<br/>
+- "00 4 * * 0"은 매주 일요일 새벽 4시 정각을 의미한다. <br/>
+- 백업 스크립트는 "/usr/local/bin/backup.sh"에 위치해 있으므로, 해당 경로를 명시해준다. <br/>
+- 다른 보기들은 모두 잘못된 설정이다. <br/>
+<br/>
+- "* 0 * 4 00"은 "00 0 4 * *"로 해석되어, 매월 4일 0시 0분에 실행된다. <br/>
+- "0 * 4 00 *"은 "00 4 * * *"로 해석되어, 매일 새벽 4시 0분부터 59분까지 매분마다 실행된다. <br/>
+- "4 00 * 0 *"은 "00 0 * * 4"로 해석되어, 매주 목요일 0시 4분에 실행된다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3403,7 +3449,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#r220080316-17" question-id="r220080316-17" question-num="17" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">17</span>. 시스템의 프로세스 수가 얼마이고 몇 개의 프로세스가 실행 중인지, CPU 상태는 어떤지 등에 대한 실시간 정보를 제공해주는 top 명령에서 CPU 사용률에 따라서 정렬할 때 사용하는 명령어는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>C</li><li class="correct">P</li><li>U</li><li>M</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 41%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "P"입니다. top 명령에서 CPU 사용률에 따라서 정렬할 때 사용하는 명령어는 "P" 또는 "%CPU"입니다. 이는 CPU 사용률이 높은 순서대로 프로세스를 정렬하기 위한 옵션입니다. "C"는 명령어 실행 시간, "U"는 사용자 CPU 시간, "M"은 메모리 사용량에 따라서 정렬하는 옵션입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3449,7 +3495,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#r220080316-18" question-id="r220080316-18" question-num="18" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">18</span>. 현재 동작 중인 프로세스들의 상태 중 PPID를 확인하려고 한다. 알맞은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>ps -e</li><li>ps -p</li><li class="correct">ps -f</li><li>ps -a</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 28%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">PPID는 부모 프로세스의 ID를 의미한다. 따라서 현재 동작 중인 프로세스들의 PPID를 확인하기 위해서는 ps 명령어를 사용해야 한다. 그 중에서도 -f 옵션은 full format으로 출력하며 PPID 정보를 포함하고 있다. 따라서 정답은 "ps -f"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3495,7 +3541,11 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#r220080316-19" question-id="r220080316-19" question-num="19" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">19</span>. 프로세스관련 명령어 중 프로세스의 상태를 모니터링하는 명령어가 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">kill</li><li>ps</li><li>pstree</li><li>top</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 70%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "kill"입니다. <br/>
+<br/>
+"kill" 명령어는 프로세스를 강제로 종료시키는 명령어이며, 프로세스의 상태를 모니터링하는 명령어가 아닙니다. <br/>
+<br/>
+반면 "ps", "pstree", "top" 명령어는 각각 현재 실행 중인 프로세스의 정보, 프로세스들의 계층 구조, CPU 및 메모리 사용량 등을 모니터링하는 명령어입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3541,7 +3591,11 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#r220080316-20" question-id="r220080316-20" question-num="20" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">20</span>. 웹서버(httpd)를 standalone으로 구동하면 다음과 같이 동시에 여러 개의 자식 프로세스가 동작하여 서비스 요청을 처리한다. 다음 중 웹서버(httpd)를  한번에 종료하는 명령으로 틀린 것은?<img src="images/r220080316m20.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>service httpd stop</li><li>killall httpd</li><li>kill -9 5966 5969 5976</li><li class="correct">kill -9 httpd</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 46%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "kill -9 httpd"이다.<br/>
+<br/>
+이유는 httpd는 부모 프로세스이며, 자식 프로세스들이 실제로 서비스를 처리하는 프로세스이기 때문이다. 따라서 httpd를 강제로 종료하면 자식 프로세스들은 종료되지 않고 남아있게 된다. 이는 서버의 안정성을 해치는 원인이 될 수 있다.<br/>
+<br/>
+따라서 올바른 종료 방법은 "service httpd stop"이나 "killall httpd"와 같이 httpd를 종료하는 명령어를 사용하는 것이다. 이러한 명령어는 부모 프로세스와 자식 프로세스들을 모두 종료시키기 때문에 안정적인 서버 운영을 위해서는 이러한 방법을 사용해야 한다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3587,7 +3641,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#r220080316-21" question-id="r220080316-21" question-num="21" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">21</span>. 다음 중 쉘(shell)에 대한 설명으로 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>사용자가 내린 명령을 해석하고 실행시키는 역할을 한다.</li><li class="correct">하나의 명령만을 처리하므로 여러 명령을 스크립트로 작성하는 것은 불가능하다.</li><li>명령 스크립트를 작성하여 배치(batch)프로그램으로 이용할 수 있다.</li><li>사용 중 다른 쉘로 변경하는 것이 가능하다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 76%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"하나의 명령만을 처리하므로 여러 명령을 스크립트로 작성하는 것은 불가능하다."가 틀린 설명입니다. 쉘은 여러 명령어를 스크립트로 작성하여 실행할 수 있습니다. 이를 통해 자동화된 작업이나 반복적인 작업을 수행할 수 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3633,7 +3687,11 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#r220080316-22" question-id="r220080316-22" question-num="22" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">22</span>. 다음 중 쉘과 명령어 해석기 동작 특성이 같은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">php</li><li>C언어</li><li>Cobol</li><li>파스칼</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 34%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "php"입니다. <br/>
+<br/>
+php는 인터프리터 언어로, 코드를 한 줄씩 읽어들이면서 즉시 실행합니다. 이는 쉘과 같은 동작 특성을 가지고 있습니다. <br/>
+<br/>
+반면 C언어, Cobol, 파스칼은 컴파일러 언어로, 코드를 먼저 컴파일하여 실행 파일을 만든 후 실행합니다. 이는 명령어 해석기와는 다른 동작 특성을 가지고 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3679,7 +3737,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#r220080316-23" question-id="r220080316-23" question-num="23" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">23</span>. 다음 중 쉘의 종류가 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>csh</li><li>bash</li><li class="correct">dash</li><li>ksh</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 76%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">dash는 쉘의 종류 중 하나이지만, 이유는 "쉘"이 아니라 "쉘 스크립트 해석기"이기 때문에 다른 쉘과는 조금 다릅니다. 따라서 dash는 쉘의 종류가 아니라고 할 수 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3725,7 +3783,13 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#r220080316-24" question-id="r220080316-24" question-num="24" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">24</span>. 쉘은 사용 중 다른 쉘로 변경할 수 있다. 다음 중 쉘 변경 명령어로 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>exec csh</li><li>chsh -s /bin/csh</li><li>csh</li><li class="correct">echo $SHELL</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 57%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "exec csh"이다. "exec csh"는 현재 쉘을 C 쉘로 변경하는 것이 아니라 현재 쉘에서 새로운 C 쉘을 실행시키는 것이다.<br/>
+<br/>
+"chsh -s /bin/csh"는 현재 사용자의 로그인 쉘을 C 쉘로 변경하는 명령어이다.<br/>
+<br/>
+"csh"는 현재 쉘을 C 쉘로 변경하는 명령어이다.<br/>
+<br/>
+"echo $SHELL"은 현재 사용 중인 쉘의 경로를 출력하는 명령어이다. 이 명령어를 실행하면 현재 사용 중인 쉘의 경로가 출력된다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3772,7 +3836,14 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#r220080316-25" question-id="r220080316-25" question-num="25" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">25</span>. 다음 중 디렉토리 관련 정보를 담고 있는 환경 변수가 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">USER</li><li>HOME</li><li>PATH</li><li>PWD</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 47%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답: USER<br/>
+<br/>
+설명: <br/>
+- HOME: 현재 사용자의 홈 디렉토리 경로를 담고 있는 환경 변수<br/>
+- PATH: 실행 파일을 찾을 때 검색할 경로들을 담고 있는 환경 변수<br/>
+- PWD: 현재 작업 중인 디렉토리 경로를 담고 있는 환경 변수<br/>
+<br/>
+하지만 USER는 현재 사용자의 이름을 담고 있는 환경 변수이며, 디렉토리와는 관련이 없습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3818,7 +3889,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#r220080316-26" question-id="r220080316-26" question-num="26" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">26</span>. 다음 중 bash의 환경 설정 파일이 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">.login</li><li>.bash_logout</li><li>.bashrc</li><li>.bash_profile</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 61%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">".login"은 bash의 환경 설정 파일이 아닙니다. 이 파일은 다른 쉘인 csh나 tcsh에서 사용되는 환경 설정 파일입니다. 따라서 bash에서는 ".login" 파일을 사용하지 않습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3864,7 +3935,11 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#r220080316-27" question-id="r220080316-27" question-num="27" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">27</span>. 다음 쉘 명령에서 내용이 화면에 출력되는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>cat /etc/inittab &gt; list</li><li class="correct">cat &lt; /etc/inittab</li><li>cat /etc/inittab &gt;&gt; list</li><li>cat /etc/inittab &gt; lpr</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 45%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "cat &lt; /etc/inittab"입니다. <br/>
+<br/>
+이유는 "&lt;" 기호는 입력 리디렉션을 의미하며, "/etc/inittab" 파일의 내용을 "cat" 명령어로 출력하라는 의미입니다. 따라서 해당 명령어는 "/etc/inittab" 파일의 내용을 화면에 출력합니다. <br/>
+<br/>
+다른 보기들은 출력 결과를 파일에 저장하거나 프린터로 출력하는 등의 다른 작업을 수행하므로, 화면에 출력되지 않습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3910,7 +3985,18 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#r220080316-28" question-id="r220080316-28" question-num="28" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">28</span>. 다음 중 bash에서 주석문의 시작을 나타내는 기호로 알맞은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>/*</li><li class="correct">#</li><li>REM</li><li>//</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 59%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "#"입니다. <br/>
+<br/>
+이유는 bash에서는 "#" 기호를 사용하여 주석문을 나타냅니다. 이 기호를 사용하면 해당 줄의 끝까지 주석으로 처리되며, 실행되지 않습니다. <br/>
+<br/>
+예를 들어, 다음과 같이 "#" 기호를 사용하여 주석문을 작성할 수 있습니다. <br/>
+<br/>
+```<br/>
+# 이 줄은 주석입니다.<br/>
+echo "이 줄은 실행됩니다."<br/>
+```<br/>
+<br/>
+위 코드에서 첫 번째 줄은 주석으로 처리되어 실행되지 않습니다. 두 번째 줄은 주석이 아니므로 실행됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3956,7 +4042,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#r220080316-29" question-id="r220080316-29" question-num="29" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">29</span>. 다음 중 화면(screen)에디터가 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>vi</li><li>pico</li><li class="correct">ed</li><li>emacs</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 70%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"ed"는 터미널 환경에서 사용하는 텍스트 에디터로, 화면에 직접적으로 편집 내용을 보여주지 않고 명령어를 입력하여 파일을 편집하는 방식을 취합니다. 따라서 "ed"는 화면(screen)에디터가 아닙니다. 반면 "vi", "pico", "emacs"는 모두 화면에 직접적으로 편집 내용을 보여주는 화면 에디터입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4002,7 +4088,13 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#r220080316-30" question-id="r220080316-30" question-num="30" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">30</span>. 다음 중 vi에서 기본적으로 지원되는 모드로 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>Ex모드</li><li>명령모드</li><li>입력모드</li><li class="correct">출력모드</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 63%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">vi에서 기본적으로 지원되는 모드 중 "출력모드"는 없습니다. <br/>
+<br/>
+- Ex모드: vi에서 :으로 시작하는 명령어를 입력하는 모드<br/>
+- 명령모드: vi를 실행하면 처음에 들어오는 모드로, 명령어를 입력할 수 있는 모드<br/>
+- 입력모드: 명령모드에서 i, a, o 등의 명령어를 입력하여 텍스트를 입력할 수 있는 모드<br/>
+<br/>
+출력모드는 존재하지 않습니다. vi에서는 명령모드에서 명령어를 입력하여 텍스트를 조작하고, 입력모드에서 텍스트를 입력하며, Ex모드에서는 파일을 저장하거나 종료하는 등의 명령어를 입력합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4048,7 +4140,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#r220080316-31" question-id="r220080316-31" question-num="31" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">31</span>. 다음 명령어 중 편집 중인 파일을 저장하지 않고 종료하는 명령으로 알맞은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">:q!</li><li>:w</li><li>:wq</li><li>:set nu</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 84%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">":q!"는 편집 중인 파일을 저장하지 않고 종료하는 명령어이다. "q"는 quit(종료)를 의미하고, 느낌표(!)는 강제로 종료하라는 의미이다. 따라서 ":q!"를 입력하면 파일을 저장하지 않고 강제로 종료할 수 있다. ":w"는 파일을 저장하는 명령어이고, ":wq"는 파일을 저장하고 종료하는 명령어이다. ":set nu"는 편집기에서 줄번호를 보여주는 명령어이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4094,7 +4186,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#r220080316-32" question-id="r220080316-32" question-num="32" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">32</span>. 다음 vi 명령모드에서 커서 이동명령 중 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">i</li><li>l</li><li>h</li><li>k</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 61%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "i"입니다. "i"는 입력모드로 진입하는 명령어이기 때문에 커서 이동 명령어가 아닙니다. "l", "h", "k"는 각각 오른쪽, 왼쪽, 위쪽으로 커서를 이동시키는 명령어입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4141,7 +4233,17 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#r220080316-33" question-id="r220080316-33" question-num="33" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">33</span>. vi에서 편집 작업 중 유닉스 명령을 실행시키는 방법으로 알맞은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>: &lt;유닉스 명령&gt;</li><li>; &lt;유닉스 명령&gt;</li><li class="correct">! &lt;유닉스 명령&gt;</li><li>| &lt;유닉스 명령&gt;</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 33%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "! &lt;유닉스 명령&gt;"입니다. <br/>
+<br/>
+"!"는 vi에서 유닉스 셸 명령을 실행시키는 명령어입니다. 이 명령어를 입력하고 나서 실행시키고자 하는 유닉스 명령어를 입력하면 됩니다. <br/>
+<br/>
+예를 들어, 파일 내에서 "grep" 명령어를 실행시키고 싶다면, 다음과 같이 입력하면 됩니다. <br/>
+<br/>
+!grep 검색어 파일명 <br/>
+<br/>
+이렇게 입력하면, 현재 편집 중인 파일에서 "검색어"를 찾아서 출력해줍니다. <br/>
+<br/>
+따라서, 유닉스 명령어를 실행시키기 위해서는 "!"를 사용하면 됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4187,7 +4289,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#r220080316-34" question-id="r220080316-34" question-num="34" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">34</span>. 다음 중 비모드형 편집기로 텍스트 편집 기능은 물론 컴파일, 강력한 도움말 등을 지원할 수 있는 편집기는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>vi</li><li>pico</li><li>ed</li><li class="correct">emacs</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 49%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "emacs"입니다. 이유는 emacs는 비모드형 편집기 중에서도 매우 강력한 기능을 제공하기 때문입니다. emacs는 텍스트 편집 기능 뿐만 아니라 컴파일, 디버깅, 프로젝트 관리 등 다양한 기능을 제공하며, 강력한 도움말 기능도 지원합니다. 또한 emacs는 사용자가 원하는 대로 커스터마이징이 가능하며, 다양한 플러그인과 확장 기능을 제공합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4233,7 +4335,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#r220080316-35" question-id="r220080316-35" question-num="35" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">35</span>. 다음 중 RPM에서 제공하는 기능이 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>자동 설치</li><li>업그레이드</li><li class="correct">시스템 성능 측정</li><li>시스템 검증</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 60%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">RPM은 패키지 관리 시스템으로, 소프트웨어 패키지를 자동 설치하고 업그레이드하며 시스템 검증을 수행할 수 있습니다. 그러나 RPM은 시스템 성능 측정 기능을 제공하지 않습니다. 이는 다른 도구들이 수행하는 작업이며, 예를 들어 sar, top, vmstat 등이 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4279,7 +4381,11 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#r220080316-36" question-id="r220080316-36" question-num="36" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">36</span>. 다음 RPM에 대한 설명 중 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>리눅스를 부팅한 상태에서 시스템 구성요소를 선택하여 rpm으로 추가 및 기존 파일의 업그레이드가 가능하다.</li><li>rpm으로 제작된 파일들은 컴파일을 할 필요 없이 자동적으로 설치할 수 있다.</li><li class="correct">rpm으로 패키지를 설치할 때 의존성(dependency)을 무시하고 설치하는 방법은 없다.</li><li>rpm을 이용하면 처음 설치한 패키지 상태와 파일 크기가 다른가를 체크 할 수 있다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 72%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"리눅스를 부팅한 상태에서 시스템 구성요소를 선택하여 rpm으로 추가 및 기존 파일의 업그레이드가 가능하다."가 틀린 설명입니다.<br/>
+<br/>
+rpm으로 패키지를 설치할 때 의존성(dependency)을 무시하고 설치하는 방법은 없는 이유는, 패키지가 의존하는 다른 패키지나 라이브러리가 설치되어 있지 않으면 해당 패키지를 설치할 수 없기 때문입니다. 따라서 의존성을 무시하고 설치하려고 하면 에러가 발생합니다.<br/>
+<br/>
+rpm으로 제작된 파일들은 컴파일을 할 필요 없이 자동적으로 설치할 수 있고, rpm을 이용하면 처음 설치한 패키지 상태와 파일 크기가 다른가를 체크할 수 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4325,7 +4431,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#r220080316-37" question-id="r220080316-37" question-num="37" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">37</span>. 다음 rpm 패키지 이름에서 설치 가능한 시스템의 아키텍처를 나타내는 것은?<img src="images/r220080316m37.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>kernel</li><li>2.5.29-2</li><li class="correct">i386</li><li>rpm</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 68%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"i386"는 CPU 아키텍처 중 하나로, 32비트 인텔 아키텍처를 나타냅니다. 따라서 "i386"로 표시된 rpm 패키지는 32비트 인텔 아키텍처를 가진 시스템에서 설치할 수 있습니다. 이 패키지는 "kernel"이라는 이름의 2.5.29-2 버전의 rpm 패키지이며, 이 패키지는 시스템의 커널을 업그레이드하는 데 사용됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4371,7 +4477,15 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#r220080316-38" question-id="r220080316-38" question-num="38" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">38</span>. 다음 RPM 명령 중 설치된 패키지를 제거하는 명령은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">rpm -e 패키지이름</li><li>rpm -i 패키지이름</li><li>rpm -q 패키지이름</li><li>rpm -V 패키지이름</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 74%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답: "rpm -e 패키지이름"<br/>
+<br/>
+설명: <br/>
+<br/>
+- "rpm -i 패키지이름": 패키지를 설치하는 명령<br/>
+- "rpm -q 패키지이름": 패키지의 정보를 조회하는 명령<br/>
+- "rpm -V 패키지이름": 패키지의 무결성을 검사하는 명령<br/>
+<br/>
+따라서, 설치된 패키지를 제거하는 명령은 "rpm -e 패키지이름"이다. "e"는 "erase"의 약자로, 패키지를 삭제하는 옵션이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4417,7 +4531,15 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#r220080316-39" question-id="r220080316-39" question-num="39" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">39</span>. 시스템에 설치되어 있는 모든 패키지의 정보를 알고자 할 때의 질의명령으로 알맞은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>rpm -qi</li><li class="correct">rpm -qa</li><li>rpm -qc</li><li>rpm -qs</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 63%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "rpm -qa"입니다. <br/>
+<br/>
+"rpm -qa"는 시스템에 설치된 모든 패키지의 정보를 보여주는 명령어입니다. <br/>
+<br/>
+- "rpm -qi"는 특정 패키지의 정보를 보여주는 명령어입니다. <br/>
+- "rpm -qc"는 특정 패키지의 설정 파일을 보여주는 명령어입니다. <br/>
+- "rpm -qs"는 특정 패키지를 검색하는 명령어입니다. <br/>
+<br/>
+따라서, 시스템에 설치된 모든 패키지의 정보를 알고자 할 때는 "rpm -qa"를 사용하면 됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4463,7 +4585,11 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#r220080316-40" question-id="r220080316-40" question-num="40" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">40</span>. 다음 중 파일 압축과 관련 없는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>compress</li><li>gzip</li><li>bzip2</li><li class="correct">dump</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 80%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "dump"입니다. <br/>
+<br/>
+"compress", "gzip", "bzip2"는 모두 파일 압축과 관련된 프로그램입니다. <br/>
+<br/>
+하지만 "dump"는 파일 시스템의 백업과 관련된 프로그램입니다. 파일을 압축하지 않고, 파일 시스템의 상태를 백업하거나 복원하는 데 사용됩니다. 따라서 파일 압축과는 직접적인 관련이 없습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4510,7 +4636,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#r220080316-41" question-id="r220080316-41" question-num="41" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">41</span>. 리눅스 커널 설치 시 make 명령을 이용할 때 설치 과정에 꼭 필요한 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>rpm</li><li>tar</li><li>README</li><li class="correct">Makefile</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 61%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">Makefile은 리눅스 커널을 설치하는 과정에서 필요한 명령어와 옵션을 정의하고 있는 파일이다. make 명령어를 실행할 때 Makefile을 참조하여 커널을 빌드하고 설치하는 과정을 수행한다. 따라서 Makefile은 리눅스 커널 설치 과정에서 꼭 필요한 파일이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4556,7 +4682,11 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#r220080316-42" question-id="r220080316-42" question-num="42" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">42</span>. dir1.tgz의 압축파일을 푸는 방법으로 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">gzip dir1.tgz</li><li>gzip -d dir1.tgz</li><li>gunzip dir1.tgz | tar xvf -</li><li>tar xvzf dir1.tgz</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 46%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "gzip dir1.tgz"입니다. <br/>
+<br/>
+"gzip" 명령어는 파일을 압축하는 명령어이며, 이미 압축된 파일을 푸는 기능은 없습니다. 따라서 "gzip dir1.tgz" 명령어는 올바른 방법이 아닙니다.<br/>
+<br/>
+올바른 방법은 "tar xvzf dir1.tgz" 입니다. 이 명령어는 "tar" 명령어를 사용하여 압축을 해제하고, "z" 옵션을 사용하여 gzip으로 압축된 파일을 해제합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4602,7 +4732,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#r220080316-43" question-id="r220080316-43" question-num="43" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">43</span>. 부팅 시 랜카드, 사운드카드 등의 드라이버(모듈)가 자동으로 커널에 적재되도록 설정해주는 설정 파일로 알맞은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>/etc/modules.cf</li><li>/etc/modprobe.cf</li><li class="correct">/etc/modprobe.conf</li><li>/etc/driver.conf</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 46%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"/etc/modprobe.conf" 파일은 부팅 시 자동으로 로드되는 모듈을 설정하는 파일입니다. 이 파일에는 랜카드, 사운드카드 등의 드라이버 모듈을 자동으로 로드하기 위한 설정이 포함됩니다. 따라서 이 파일이 부팅 시 필요한 모듈을 자동으로 로드하는 데 중요한 역할을 합니다. 다른 파일들은 이와 유사한 역할을 하지만, "/etc/modprobe.conf" 파일이 가장 일반적으로 사용되는 파일입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4648,7 +4778,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#r220080316-44" question-id="r220080316-44" question-num="44" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">44</span>. 커널에서 사용하기 위해 부팅 시 메모리에 적재하는 각종 하드웨어의 모듈이 저장되어 있는 디렉토리는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>/usr/&lt;커널버전&gt;/modules/kernel/drivers</li><li>/usr/modules/&lt;커널버전&gt;/kernel/drivers</li><li>/lib/&lt;커널버전&gt;/modules/kernel/drivers</li><li class="correct">/lib/modules/&lt;커널버전&gt;/kernel/drivers</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 36%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">커널 모듈은 커널의 일부분으로서 하드웨어나 파일 시스템 등의 기능을 제공하는데, 이러한 모듈들은 커널이 부팅될 때 메모리에 적재되어야 합니다. 이때, 모듈들은 "/lib/modules/&lt;커널버전&gt;/kernel/drivers" 디렉토리에 저장되어 있습니다. 이 디렉토리는 커널 모듈들이 저장되는 표준 디렉토리이며, 커널이 부팅될 때 이 디렉토리에서 모듈들을 찾아 메모리에 적재합니다. 따라서, 이 디렉토리는 커널 모듈들이 저장되는 중요한 위치입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4694,7 +4824,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#r220080316-45" question-id="r220080316-45" question-num="45" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">45</span>. 리눅스에서 일반적으로 프린터를 사용하기 위한 4가지 방식이 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>Local</li><li>Unix Printer</li><li>Samba Printer</li><li class="correct">NovellDirect</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 67%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">NovellDirect는 Novell Netware 운영 체제에서 사용되는 프린터 서비스이며, 리눅스에서는 일반적으로 사용되지 않는 방식입니다. 따라서, NovellDirect는 일반적으로 리눅스에서 프린터를 사용하기 위한 4가지 방식 중 하나가 아닙니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4740,7 +4870,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#r220080316-46" question-id="r220080316-46" question-num="46" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">46</span>. 리눅스에서 LPRng를 사용하여 프린터를 설치 하려고 할 때 설정해야하는 파일로 알맞은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>/etc/printconf</li><li class="correct">/etc/printcap</li><li>/etc/print.conf</li><li>/etc/print.cap</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 53%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"/etc/printcap" 파일은 LPRng에서 사용하는 프린터 설정 파일이기 때문에 프린터를 설치하려면 이 파일을 수정해야 합니다. 이 파일에는 프린터 이름, 프린터 타입, 프린터 위치, 프린터 드라이버 등의 정보가 포함되어 있습니다. 따라서 LPRng를 사용하여 프린터를 설치하려면 "/etc/printcap" 파일을 설정해야 합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4786,7 +4916,15 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#r220080316-47" question-id="r220080316-47" question-num="47" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">47</span>. 별도의 응용프로그램을 이용하지 않고 5장 분량의 ASCII 텍스트 파일인 ihd.txt를 명령행에서 바로 설정된 프린터 lp0를 통해서 출력하려고 한다. 다음 보기 중 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>cat ihd.txt | lpr</li><li class="correct">lpr &gt; ihd.txt</li><li>cat ihd.txt &gt; /dev/lp0</li><li>pr -l 5 ihd.txt | lpr</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 35%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "cat ihd.txt &gt; /dev/lp0"이다.<br/>
+<br/>
+"cat ihd.txt | lpr"은 ihd.txt 파일을 읽어서 lpr 명령어로 출력하는 것이다.<br/>
+<br/>
+"lpr &gt; ihd.txt"는 ihd.txt 파일을 lpr 명령어로 출력하는 것이다. &gt;는 출력을 파일로 리다이렉션하는 기호이다.<br/>
+<br/>
+"cat ihd.txt &gt; /dev/lp0"은 ihd.txt 파일을 /dev/lp0 장치로 출력하려는 것이다. 그러나 이 방법은 일반적으로 사용되지 않는다.<br/>
+<br/>
+"pr -l 5 ihd.txt | lpr"은 ihd.txt 파일을 5줄씩 출력하고 lpr 명령어로 출력하는 것이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4832,7 +4970,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#r220080316-48" question-id="r220080316-48" question-num="48" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">48</span>. 리눅스에서 사용하는 MP3 재생 프로그램으로 알맞은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">xmms</li><li>winamp</li><li>media player</li><li>pine</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 46%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">xmms는 리눅스에서 사용하는 유명한 MP3 재생 프로그램으로, Winamp과 비슷한 인터페이스와 기능을 제공합니다. 따라서 리눅스에서 MP3를 재생하기 위해서는 xmms를 사용하는 것이 적합합니다. 다른 보기인 "winamp"는 윈도우 운영체제에서 사용되는 MP3 재생 프로그램이며, "media player"는 윈도우 운영체제에서 사용되는 미디어 재생 프로그램입니다. "pine"은 이메일 클라이언트 프로그램입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4883,7 +5021,11 @@ $(function(){
 </div>
 </div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#r220080316-49" question-id="r220080316-49" question-num="49" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">49</span>. 리눅스 부팅시 X 윈도우로 부팅이 안되고, 콘솔 모드로 부팅이 된다. X 윈도우로 부팅이 되도록 하려고 할 때, 아래의 /etc/inittab 설정 중 맞는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>id:3:initdefault:</li><li>id:3:runlevel:</li><li class="correct">id:5:initdefault:</li><li>id:5:runlevel:</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 41%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "id:5:initdefault:" 이다.<br/>
+<br/>
+리눅스에서 init 프로세스는 시스템 부팅 시 가장 먼저 실행되는 프로세스이며, 시스템의 모든 프로세스를 관리한다. /etc/inittab 파일은 init 프로세스가 읽어들이는 설정 파일로, 시스템 부팅 시 init 프로세스가 이 파일을 참조하여 시스템 초기화 및 다양한 서비스를 시작한다.<br/>
+<br/>
+id:5:initdefault:는 시스템 부팅 시 기본 런레벨을 5로 설정하는 것이다. 런레벨 5는 그래픽 모드로 부팅하는 런레벨이며, X 윈도우 시스템을 사용할 수 있다. 따라서 이 설정을 적용하면 리눅스 시스템이 X 윈도우로 부팅되도록 할 수 있다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4929,7 +5071,15 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#r220080316-50" question-id="r220080316-50" question-num="50" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">50</span>. X 윈도우는 스크립트들이 순서에 따라 실행되 면서 구동된다. 다음 중 관련 스크립트의 구동 순서가 맞는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">xinitrc → .Xresources → .Xmodmap → Xclients</li><li>xinitrc → Xclients → .Xmodmap → .Xresources</li><li>xinitrc → .Xresources → Xclients → .Xmodmap</li><li>xinitrc → Xclients → .Xresources → .Xmodmap</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 40%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "xinitrc → .Xresources → .Xmodmap → Xclients"이다.<br/>
+<br/>
+xinitrc는 X 윈도우 시스템이 시작될 때 가장 먼저 실행되는 스크립트이다. 이 스크립트는 .Xresources와 .Xmodmap을 호출하고, 마지막으로 Xclients를 호출한다. <br/>
+<br/>
+.Xresources는 X 윈도우 시스템에서 사용되는 리소스 설정 파일이다. 이 파일은 xinitrc에서 호출되며, X 윈도우 시스템에서 사용되는 다양한 설정을 정의한다.<br/>
+<br/>
+.Xmodmap은 X 윈도우 시스템에서 사용되는 키 매핑 파일이다. 이 파일은 xinitrc와 .Xresources 이후에 호출되며, 키보드의 특정 키를 다른 키로 매핑하거나 키의 동작을 변경하는 등의 작업을 수행한다.<br/>
+<br/>
+마지막으로 Xclients는 X 윈도우 시스템에서 실행되는 클라이언트 프로그램들을 호출하는 스크립트이다. 이 스크립트는 xinitrc, .Xresources, .Xmodmap 이후에 호출되며, 사용자가 설정한 클라이언트 프로그램들을 실행한다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4975,7 +5125,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#r220080316-51" question-id="r220080316-51" question-num="51" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">51</span>. 다음은 리눅스 멀티미디어 관련 프로그램 중 하나에 대한 설명이다. 알맞은 것은 어느 것인가?<img src="images/r220080316m51.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>XMMS</li><li class="correct">GIMP</li><li>xv</li><li>Real Player</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 70%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "GIMP"이다. 그림 편집 및 그래픽 디자인을 위한 프로그램으로, 멀티미디어 관련 기능도 포함하고 있다. 다른 보기들은 음악 재생 및 비디오 재생 등의 멀티미디어 기능에 특화된 프로그램들이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5021,7 +5171,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#r220080316-52" question-id="r220080316-52" question-num="52" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">52</span>. 다음은 X 윈도우 관련 프로그램 중 하나에 대한 설명이다. 가장 알맞은 것은 어느 것인가?<img src="images/r220080316m52.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>데스크톱</li><li>디스플레이 매니저</li><li>KDE</li><li class="correct">윈도우 매니저</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 48%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">이 프로그램은 윈도우 매니저이다. 이는 X 윈도우 시스템에서 창의 위치, 크기, 제목 등을 관리하며, 사용자가 창을 이동하거나 크기를 조절할 수 있도록 해준다. 데스크톱은 운영체제에서 GUI 환경을 제공하는 것을 의미하며, 디스플레이 매니저는 로그인 화면과 배경화면 등을 관리하는 프로그램이다. KDE는 리눅스 운영체제에서 사용되는 데스크톱 환경 중 하나이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5067,7 +5217,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#r220080316-53" question-id="r220080316-53" question-num="53" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">53</span>. 다음에 나열된 문항 중 프로그램 성격이 나머지 3개와 다른 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>WindowMaker</li><li>twm</li><li class="correct">GNOME</li><li>AfterStep</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 52%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"GNOME"은 윈도우 매니저가 아닌 데스크톱 환경이기 때문에 나머지 3개와 성격이 다릅니다. GNOME은 유닉스 계열 운영체제에서 사용되는 데스크톱 환경으로, 그래픽 사용자 인터페이스와 일반적인 응용 프로그램, 파일 관리자, 네트워크 도구 등을 제공합니다. 반면, "WindowMaker", "twm", "AfterStep"은 모두 윈도우 매니저로, 창의 배치와 크기 조정, 타이틀 바, 메뉴 등을 관리합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5113,7 +5263,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#r220080316-54" question-id="r220080316-54" question-num="54" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">54</span>. X 윈도우 시스템의 특징 중 맞는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">프로그램 작성시 다른 종류의 컴퓨터에서 구동 될 수 있을 정도로 이식성이 뛰어나다.</li><li>사용자가 원하는 모양의 인터페이스를 바꿀 수 없다.</li><li>디스플레이 장치에 의존적이다.</li><li>서로 다른 기종을 함께 사용할 수 없다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 53%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">X 윈도우 시스템은 운영체제와는 독립적으로 작동하기 때문에 프로그램 작성시 다른 종류의 컴퓨터에서도 구동이 가능하며, 이식성이 뛰어나다. 이는 X 윈도우 시스템이 네트워크를 통해 다른 컴퓨터와 통신하며, 클라이언트-서버 구조로 이루어져 있기 때문이다. 따라서, 프로그램을 작성할 때 특정 운영체제나 하드웨어에 의존하지 않고, X 윈도우 시스템에서 제공하는 API를 사용하여 작성하면 다른 종류의 컴퓨터에서도 구동이 가능하다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5159,7 +5309,13 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#r220080316-55" question-id="r220080316-55" question-num="55" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">55</span>. X 윈도우에서 가상 터미널을 사용하기 위해 콘솔로 전환하였다가 다시 X 윈도우로 복귀하고자 한다. 다음 중 맞는 조합키는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>Ctrl + Alt + F1</li><li>Ctrl + Alt + F2</li><li>Ctrl + Alt + F4</li><li class="correct">Ctrl + Alt + F7</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 40%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답: Ctrl + Alt + F7<br/>
+<br/>
+설명: <br/>
+- Ctrl + Alt + F1 ~ F6: 가상 터미널로 전환<br/>
+- Ctrl + Alt + F7: X 윈도우로 복귀<br/>
+<br/>
+따라서, 가상 터미널에서 X 윈도우로 복귀하려면 Ctrl + Alt + F7 조합키를 사용해야 한다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5205,7 +5361,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#r220080316-56" question-id="r220080316-56" question-num="56" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">56</span>. 데스크톱 환경 중 하나인 KDE에 대한 설명으로 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>KDE가 실행되는 시스템은 리눅스뿐만 아니라 HP-UX, Solaris 등도 가능하다.</li><li>파일 매니저, 윈도우 매니저, 설정 시스템, 각종 애플리케이션의 집합체이다.</li><li>노르웨이의 Troll Tech사에서 개발되었다.</li><li class="correct">GTK 라이브러리 기반으로 개발되었다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 53%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"GTK 라이브러리 기반으로 개발되었다."는 틀린 설명이다. KDE는 Qt 라이브러리 기반으로 개발되었다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5252,7 +5408,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#r220080316-57" question-id="r220080316-57" question-num="57" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">57</span>. 다음 중 네트워크로 연결된 상태나 활성화된 소켓 등을 확인할 수 있는 명령어는 무엇인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>ifconfig</li><li>route</li><li class="correct">netstat</li><li>nslookup</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 51%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "netstat"이다. netstat 명령어는 현재 시스템에서 활성화된 네트워크 연결과 소켓 정보를 보여준다. 이를 통해 현재 시스템의 네트워크 상태를 확인할 수 있다. ifconfig는 네트워크 인터페이스의 구성 정보를 보여주고, route는 라우팅 테이블 정보를 보여준다. nslookup은 DNS 서버에 질의하여 도메인 이름에 해당하는 IP 주소를 찾아준다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5298,7 +5454,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#r220080316-58" question-id="r220080316-58" question-num="58" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">58</span>. 다음 중 시스템에 설정되어 게이트웨이를 확인 할 때 사용할 수 있는 명령어는 무엇인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>ifconfig</li><li>host</li><li class="correct">netstat</li><li>nslookup</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 41%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "netstat"이다. netstat 명령어는 현재 시스템의 네트워크 연결 상태를 보여주는 명령어로, 게이트웨이 정보를 확인할 수 있다. ifconfig 명령어는 네트워크 인터페이스의 설정 정보를 보여주고, host와 nslookup 명령어는 DNS 서버를 이용하여 호스트 이름을 IP 주소로 변환하는 기능을 제공한다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5344,7 +5500,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#r220080316-59" question-id="r220080316-59" question-num="59" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">59</span>. 다음의 내용을 확인할 수 있는 리눅스 시스템에서의 설정 파일은?<img src="images/r220080316m59.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">/etc/services</li><li>/etc/protocols</li><li>/etc/resolv.conf</li><li>/etc/hosts</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 38%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"/etc/services" 파일은 포트 번호와 해당 포트를 사용하는 프로토콜의 이름을 매핑하는 설정 파일이다. 따라서 이 파일을 확인하면 시스템에서 사용하는 포트와 프로토콜에 대한 정보를 확인할 수 있다. 예를 들어, "http" 프로토콜은 80번 포트를 사용하므로 "/etc/services" 파일에서 "http"와 "80/tcp"가 매핑되어 있을 것이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5390,7 +5546,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#r220080316-60" question-id="r220080316-60" question-num="60" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">60</span>. 다음 중 인터넷 서비스인 SSH의 포트 번호는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>21</li><li class="correct">22</li><li>23</li><li>25</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 61%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "22"입니다. SSH는 Secure Shell의 약자로, 네트워크 상에서 안전하게 원격으로 다른 컴퓨터를 제어하기 위한 프로토콜입니다. SSH는 TCP/IP 프로토콜을 사용하며, 기본 포트 번호는 22번입니다. 따라서 SSH를 사용하여 원격으로 컴퓨터를 제어하려면 해당 컴퓨터의 22번 포트를 열어야 합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5436,7 +5592,9 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#r220080316-61" question-id="r220080316-61" question-num="61" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">61</span>. LAN의 구조 중 링형 토폴로지(Topology)에 대한 설명으로 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>논리적이고 둥글고 단방향인 포인트 투 포인트(Point to Point)형태로 연결한다.</li><li>고성능 네트워크에 적합하다.</li><li class="correct">CDMA/CD방식이 대표적이며 또한 토큰 패싱(Token Passing)방식에 사용한다.</li><li>분산 제어와 검사, 회복이 가능하다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 33%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"논리적이고 둥글고 단방향인 포인트 투 포인트(Point to Point)형태로 연결한다."가 틀린 설명입니다. 링형 토폴로지는 물리적으로는 둥글게 연결되어 있지만 논리적으로는 선형적인 형태로 연결됩니다. 따라서 "논리적으로는 선형적인 형태로 연결되며 물리적으로는 둥글게 연결된다."로 설명하는 것이 맞습니다.<br/>
+<br/>
+CDMA/CD방식이 대표적인 이유는 링형 토폴로지에서는 데이터 충돌을 방지하기 위해 CSMA/CD방식을 사용하기 때문입니다. 또한 토큰 패싱 방식은 링형 토폴로지에서 노드 간 데이터 전송을 조절하기 위해 사용됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5482,7 +5640,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#r220080316-62" question-id="r220080316-62" question-num="62" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">62</span>. 다음에 설명하는 통신장비는 어느 것인가?<img src="images/r220080316m62.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>라우터(Router)</li><li>브리지(Bridge)</li><li>게이트웨이(Gateway)</li><li class="correct">리피터(Repeater)</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 69%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">주어진 그림은 리피터(Repeater)이다. 리피터는 신호를 증폭하여 전송 거리를 늘리는 역할을 한다. 따라서, 신호가 약해지거나 손실되는 경우에 사용되어 통신 품질을 유지하고 전송 거리를 늘린다. 라우터, 브리지, 게이트웨이는 모두 네트워크 간의 연결을 담당하는 장비이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5528,7 +5686,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#r220080316-63" question-id="r220080316-63" question-num="63" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">63</span>. OSI 7계층 중 네트워크의 대화제어자(Dialog Contoller)로서 통신 장치들 간의 상호작용을 설정하고 유지하며 동기화 역할을 수행하고, 사용자의 연결이 유효한지를 확인하고 설정하는 계층은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>데이터링크계층(Data Link Layer)</li><li class="correct">세션계층(Session Layer)</li><li>표현계층(Presentation Layer)</li><li>전송계층(Transport Layer)</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 47%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">세션계층은 네트워크의 대화제어자로서 통신 장치들 간의 상호작용을 설정하고 유지하며 동기화 역할을 수행하고, 사용자의 연결이 유효한지를 확인하고 설정하는 계층입니다. 이 계층은 데이터 전송을 위한 세션을 설정하고 유지하며, 데이터 전송 중에 발생하는 오류나 중단 등을 처리합니다. 따라서, 네트워크의 대화제어와 관련된 기능을 수행하기 때문에 세션계층이 정답입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5574,7 +5732,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#r220080316-64" question-id="r220080316-64" question-num="64" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">64</span>. 다음 중 TCP 및 UDP 프로토콜에 대한 설명 중 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>UDP는 불안정한 비접속 데이터그램 프로토콜 이다.</li><li>TCP는 접속기반(Connection-oriented) 프로토콜이다.</li><li>TCP는 바이트 스트림(byte-stream)프로토콜 이다.</li><li class="correct">UDP는 올바른 순서로 전달되었는지 확인하기 때문에 TCP에 비해 안정적이다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 67%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">UDP는 올바른 순서로 전달되었는지 확인하지 않기 때문에 TCP에 비해 불안정하다. 이는 UDP가 비접속 데이터그램 프로토콜이기 때문이다. 따라서 "UDP는 올바른 순서로 전달되었는지 확인하기 때문에 TCP에 비해 안정적이다."라는 설명은 틀린 설명이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5621,7 +5779,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#r220080316-65" question-id="r220080316-65" question-num="65" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">65</span>. 다음 중 하나의 클래스 C 네트워크의 호스트 개수를 64개로 구성할 경우 서브넷마스크는 어떻게 설정해야 하는가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>255.255.255.0</li><li>255.255.255.64</li><li>255.255.255.128</li><li class="correct">255.255.255.192</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 47%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">64개의 호스트를 가지려면 2의 6승인 64보다 큰 2의 제곱수인 128개의 IP 주소가 필요하다. 따라서 서브넷마스크는 255.255.255.192가 되어야 한다. 이는 11111111.11111111.11111111.11000000으로 표현되며, 네트워크 부분은 26비트이고 호스트 부분은 6비트이다. 이를 통해 4개의 서브넷을 만들 수 있고 각 서브넷마다 64개의 호스트를 가질 수 있다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5667,7 +5825,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#r220080316-66" question-id="r220080316-66" question-num="66" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">66</span>. 도메인 네임 체계에서 'or'이라는 서브도메인이 포함되어 있으면 어떠한 기관을 나타내는 것인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>정부기관</li><li class="correct">비영리기관</li><li>학교</li><li>회사</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 58%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">'or'은 "Organization"의 약어로, 비영리기관을 나타냅니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5713,7 +5871,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#r220080316-67" question-id="r220080316-67" question-num="67" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">67</span>. 인터넷 서비스 중 네트워크상의 다양한 호스트들이 파일을 공유할 수 있도록 해주는 프로토콜은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>telnet</li><li>HTTP</li><li>SMTP</li><li class="correct">NFS</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 61%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">NFS는 Network File System의 약자로, 네트워크상의 다른 호스트들이 파일을 공유할 수 있도록 해주는 프로토콜입니다. 다른 프로토콜들은 파일 공유 기능을 제공하지 않습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5759,7 +5917,9 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#r220080316-68" question-id="r220080316-68" question-num="68" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">68</span>. FTP를 이용하여 파일을 송수신할 때 전송상태를 확인하고자 한다. 다음 중 가장 알맞은 명령어는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>as</li><li class="correct">hash</li><li>list</li><li>bi</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 52%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">가장 알맞은 명령어는 "hash"이다. <br/>
+<br/>
+이유는 FTP 파일 전송 중에는 파일 크기가 크거나 네트워크 상태가 좋지 않을 경우 전송이 중간에 끊어질 수 있기 때문에 전송 상태를 확인하는 것이 중요하다. 이때 "hash" 명령어를 사용하면 파일 전송 중에 전송된 바이트 수를 보여주어 전송 상태를 확인할 수 있다. 이 명령어를 사용하면 파일 전송이 완료될 때까지 기다리지 않고도 전송 상태를 확인할 수 있어 효율적이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5805,7 +5965,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#r220080316-69" question-id="r220080316-69" question-num="69" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">69</span>. 다음 중 유즈넷 뉴스그룹(USENET NEWS GROUP)에 대한 설명 중 맞는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">공통의 주제별로 모여 정보를 나누고 토론하는 자유게시판 서비스이다.</li><li>인터넷상에서 채팅을 즐길 수 있게 해주는 서비스이다.</li><li>관련 프로그램으로는 BitchX, ircII, EPIC 등이 있다.</li><li>인터넷 회선을 이용하여 음성을 전달하는 서비스 이다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 58%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "공통의 주제별로 모여 정보를 나누고 토론하는 자유게시판 서비스이다."입니다. 유즈넷 뉴스그룹은 인터넷 상에서 주제별로 모인 사용자들이 정보를 공유하고 토론하는 자유게시판 서비스입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5851,7 +6011,11 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#r220080316-70" question-id="r220080316-70" question-num="70" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">70</span>. 다음 중 SSH(Secure Shell)에 대한 설명 중 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>원격지 서버의 내용을 로컬시스템에 복사할 수 있다.</li><li>rsh처럼 원격으로 쉘명령을 사용할 수 있다.</li><li class="correct">보안이 강화되어 rlogin처럼 반드시 계정 및 패스워드를 입력해야만 로그인할 수 있다.</li><li>telnet과 같이 원격지 서버에 접속할 때 사용 한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 36%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"원격지 서버의 내용을 로컬시스템에 복사할 수 있다."는 SSH에 대한 올바른 설명이다. <br/>
+<br/>
+하지만 "rsh처럼 원격으로 쉘명령을 사용할 수 있다.", "보안이 강화되어 rlogin처럼 반드시 계정 및 패스워드를 입력해야만 로그인할 수 있다.", "telnet과 같이 원격지 서버에 접속할 때 사용 한다."는 모두 SSH에 대한 올바른 설명이다.<br/>
+<br/>
+따라서, 주어진 보기 중에서 SSH에 대한 설명 중 틀린 것은 없다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5897,7 +6061,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#r220080316-71" question-id="r220080316-71" question-num="71" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">71</span>. ifconfig 명령으로 확인할 수 없는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>네트워크 인터페이스의 브로드캐스트</li><li class="correct">네트워크 인터페이스의 제조사</li><li>네트워크 인터페이스의 맥어드레스(MAC address)</li><li>네트워크 인터페이스의 넷마스크(Netmask)</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 69%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">ifconfig 명령은 네트워크 인터페이스의 정보를 확인하는 명령어이지만, 제조사 정보는 하드웨어적인 정보이기 때문에 ifconfig 명령으로 확인할 수 없다. 이 정보는 보통 하드웨어 제조사의 문서나 디바이스 매니저에서 확인할 수 있다. 따라서 "네트워크 인터페이스의 제조사"가 정답이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5943,7 +6107,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#r220080316-72" question-id="r220080316-72" question-num="72" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">72</span>. OSI 참조모델과 프로토콜을 주관하는 기관은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">ISO(International Standards Organization)</li><li>IEEE(Institute of Electrical and Electronics Engineers)</li><li>ANSI(American National Standards Institute)</li><li>EIA(Education Industries Association)</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 64%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">ISO(International Standards Organization)는 국제 표준화 기구로, 다양한 분야에서 표준화를 촉진하고 관리하는 기관입니다. OSI 참조모델과 프로토콜은 네트워크 분야에서 중요한 역할을 하기 때문에 ISO가 이를 주관하고 표준화하는 것입니다. 따라서 ISO가 정답입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5990,7 +6154,13 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#r220080316-73" question-id="r220080316-73" question-num="73" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">73</span>. 아파치 1.3 버전과 2.0 버전과의 비교 설명 중 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>아파치 2.0 버전만 멀티쓰레드(Multi-Thread) 방법을 이용하여 프로세스를 처리한다.</li><li>PHP연동시 아파치 1.3버전은 정적 및 동적 연동이 가능하지만 아파치 2.0은 동적연동만 가능하다.</li><li>아파치 1.3 버전에서는 포트번호 80과 8080을 동시에 운영하려면 관련설정파일이 2개이어야 한다.</li><li class="correct">아파치 1.3 및 2.0 버전 모두 포트번호 변경시 Port라는 지시자를 사용한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 20%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"아파치 1.3 및 2.0 버전 모두 포트번호 변경시 Port라는 지시자를 사용한다."가 틀린 것이다. 아파치 1.3 버전에서는 Listen 지시자를 사용하여 포트번호를 변경한다. <br/>
+<br/>
+아파치 2.0 버전은 멀티프로세스(Multi-Process)와 멀티쓰레드(Multi-Thread) 방법을 모두 지원한다. <br/>
+<br/>
+PHP연동시 아파치 1.3버전과 2.0 버전 모두 정적 및 동적 연동이 가능하다. <br/>
+<br/>
+아파치 1.3 버전에서는 포트번호 80과 8080을 동시에 운영하려면 하나의 설정파일에서 Listen 지시자를 두 번 사용해야 한다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6036,7 +6206,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#r220080316-74" question-id="r220080316-74" question-num="74" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">74</span>. 리눅스 인터페이스 중 loopback interface에서 사용하는 IP 주소는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>255.255.255.0</li><li>192.168.0.1</li><li class="correct">127.0.0.1</li><li>10.0.0.1</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 71%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">loopback interface는 자기 자신을 가리키는 가상의 인터페이스이며, 이를 통해 컴퓨터 내부에서 네트워크 통신을 시뮬레이션할 수 있습니다. 이 때 loopback interface에서 사용하는 IP 주소는 127.0.0.1입니다. 이는 IPv4에서 예약된 주소 중 하나로, 컴퓨터 내부에서만 사용되며 외부와 통신하지 않습니다. 따라서 loopback interface를 통해 자기 자신과 통신할 때는 이 IP 주소를 사용합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6082,7 +6252,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#r220080316-75" question-id="r220080316-75" question-num="75" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">75</span>. 다음 중 모뎀과 전화선을 이용할 경우 가장 관계가 깊은 프로토콜은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>ICMP</li><li>POP3</li><li class="correct">PPP</li><li>DHCP</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 52%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">PPP는 모뎀과 전화선을 통해 인터넷에 접속하기 위한 프로토콜로, 인증, 암호화, 데이터 압축 등의 기능을 제공하여 안전하고 효율적인 인터넷 연결을 가능하게 합니다. 따라서 모뎀과 전화선을 이용할 경우 PPP가 가장 관계가 깊은 프로토콜입니다. ICMP는 인터넷 제어 메시지 프로토콜, POP3는 이메일 수신 프로토콜, DHCP는 IP 주소 자동 할당 프로토콜입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6128,7 +6298,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#r220080316-76" question-id="r220080316-76" question-num="76" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">76</span>. 다음 중 FTP 클라이언트 프로그램이 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>ncftp</li><li>lftp</li><li>gftp</li><li class="correct">vsftp</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 35%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">vsftp는 FTP 서버 프로그램이며, 나머지 세 개는 FTP 클라이언트 프로그램입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6174,7 +6344,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#r220080316-77" question-id="r220080316-77" question-num="77" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">77</span>. 다음 중 블루투스(BLUETOOTH)에 대한 설명으로 알맞은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>1GHz대역을 사용하여 휴대폰 및 노트북과의 연결이 쉽다.</li><li class="correct">간섭방지를 위한 주파수 호핑 방식을 사용한다.</li><li>최대 데이터 전송속도는 10Mbps이며, 양방향 전송을 위해서 시분할 다중전송방식이 사용 된다.</li><li>전송거리는 100m이고, Option으로 200m까지 가능하다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 32%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">블루투스는 간섭방지를 위한 주파수 호핑 방식을 사용한다. 이는 무선 통신을 할 때 다른 기기들과의 간섭을 최소화하기 위해 주파수를 일정 주기로 바꾸어 사용하는 방식이다. 이를 통해 안정적인 통신이 가능하다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6220,7 +6390,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#r220080316-78" question-id="r220080316-78" question-num="78" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">78</span>. 다음은 리눅스를 이용한 기술에 대한 설명이다. 가장 알맞은 것은?<img src="images/r220080316m78.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">Beowulf Cluster</li><li>HA(High Available) Cluster</li><li>RAID</li><li>LVM(Logical Volume Manager)</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 39%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">이미지에서 보이는 것은 여러 대의 컴퓨터를 하나로 묶어서 하나의 컴퓨터처럼 사용하는 "클러스터링" 기술이다. "Beowulf Cluster"는 리눅스 기반의 고성능 컴퓨팅 클러스터를 구축하기 위한 오픈소스 소프트웨어이다. 따라서, 이미지에서 보이는 것은 Beowulf Cluster이다. "HA(High Available) Cluster"는 고가용성을 보장하기 위한 클러스터링 기술, "RAID"는 여러 개의 하드디스크를 묶어서 하나의 논리적인 디스크로 사용하는 기술, "LVM(Logical Volume Manager)"은 여러 개의 하드디스크를 묶어서 하나의 논리적인 볼륨으로 사용하는 기술이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6266,7 +6436,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#r220080316-79" question-id="r220080316-79" question-num="79" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">79</span>. 다음 중 임베디드(Embedded) 시스템에 대한 설명으로 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>open source, open architecture이다.</li><li>소규모 모듈 단위로 설계되어 있다.</li><li>리얼타임(Real time) 운영을 지원한다.</li><li class="correct">여러 하드웨어 구조에 이식될 수 없다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 67%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"여러 하드웨어 구조에 이식될 수 없다."는 틀린 설명입니다. 임베디드 시스템은 소규모 모듈 단위로 설계되어 다양한 하드웨어 구조에 이식될 수 있습니다. 이식성이 높은 임베디드 시스템은 다양한 환경에서 사용될 수 있어 유연성이 뛰어납니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6312,7 +6482,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#r220080316-80" question-id="r220080316-80" question-num="80" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">80</span>. 최근에는 물리적으로 하나의 시스템에 여러 운영체제를 설치할 수 있는 가상화(Virtualization) 기술이 각광을 받고 있다. 다음 중 리눅스에서 사용하는 가상화 소프트웨어는 무엇인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>iptables</li><li>heartbeat</li><li>snort</li><li class="correct">Xen</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 70%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">리눅스에서 사용하는 가상화 소프트웨어는 "Xen"이다. Xen은 하이퍼바이저(Hypervisor)라는 가상화 기술을 사용하여 여러 개의 가상 머신을 하나의 물리적 서버에서 동시에 실행할 수 있도록 해준다. 이를 통해 서버의 자원을 효율적으로 사용할 수 있고, 서버 관리 및 유지보수 비용을 줄일 수 있다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>

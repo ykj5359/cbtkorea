@@ -489,6 +489,15 @@ var g5_cookie_domain = ".cbtkorea.kr";
 
 <!-- CANONICAL-CBT -->
 <link rel="canonical" href="https://cbtkorea.kr/CBT/%ED%86%B5%EC%8B%A0%EA%B8%B0%EA%B8%B0%EA%B8%B0%EB%8A%A5%EC%82%AC/cac20041010.html">
+<!-- AI-EXP-RESTORED -->
+<style>
+    .reply .report-modal, .reply .loading, .reply .reply-component { display: none !important; }
+    .ai-exp { list-style: none; padding: 0; margin: 0 0 10px 0; }
+    .ai-exp:last-child { margin-bottom: 0; }
+    .ai-exp-label { font-size: 12px; font-weight: 700; color: #1d4ed8; margin-bottom: 6px; }
+    .ai-exp-label small { font-weight: 400; color: #6b7280; margin-left: 6px; }
+    .ai-exp-empty { font-size: 13px; color: #6b7280; }
+</style>
 </head>
 <body>
 <!-- 상단 시작 { -->
@@ -2665,7 +2674,7 @@ $(function(){
 </div>
 </div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#cac20041010-1" question-id="cac20041010-1" question-num="1" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">1</span>. 60[㎐],10[A] 사인파 교류의 순시값 표시는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>i = 10 sin 120πt</li><li>i = 7.07 sin 377πt</li><li class="correct">i = 14.14 sin 120πt</li><li>i = 14.14 sin 377πt</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">주어진 사인파 교류의 주파수는 60[Hz]이므로, 주기는 1/60[s]이다. 순시값은 사인파의 최대값인 진폭(amplitude)과 루트 2를 곱한 값이다. 따라서, 주어진 보기 중에서 진폭이 10[A]인 경우, 순시값은 10 x 루트 2 = 14.14[A]가 된다. 또한, 주파수가 60[Hz]이므로 각주기는 2π x 60 = 120π이다. 따라서, 순시값의 표시는 "i = 14.14 sin 120πt"가 된다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2711,7 +2720,19 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#cac20041010-2" question-id="cac20041010-2" question-num="2" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">2</span>. R = 10[Ω ], L = 0.4[mH]의 코일과 C = 250[㎊]의 콘덴서의 병렬공진회로에서 공진 임피이던스를 구하면? (단, Y = CR/L)<img src="images/cac20041010m2.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>6.25[㏀]</li><li>16[㏀]</li><li>62.5[㏀]</li><li class="correct">160[㏀]</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">공진 임피던스는 Z = R - jX, 여기서 X는 공진 주파수에서의 코일과 콘덴서의 반대 방향으로 작용하는 반응성입니다. <br/>
+<br/>
+공진 주파수는 1/2π√(LC)로 계산할 수 있습니다. 여기서 L과 C는 각각 코일과 콘덴서의 인덕턴스와 캐패시턴스입니다. <br/>
+<br/>
+따라서, 공진 주파수는 1/2π√(0.4×10^-3×250×10^-9) = 1591.55[Hz]입니다. <br/>
+<br/>
+이제 X를 계산할 수 있습니다. X = 1/(2πfC) - 2πfL = 1/(2π×1591.55×250×10^-9) - 2π×1591.55×0.4×10^-3 = -10[Ω]입니다. <br/>
+<br/>
+따라서, 공진 임피던스는 Z = R - jX = 10 - j(-10) = 10 + j10[Ω]입니다. <br/>
+<br/>
+이는 복소수 평면에서 45도 각도를 이루는 점으로, 크기는 √(10^2 + 10^2) = 14.14[Ω]입니다. <br/>
+<br/>
+따라서, 정답은 "160[㏀]"이 아닌, "14.14[Ω]"입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2757,7 +2778,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#cac20041010-3" question-id="cac20041010-3" question-num="3" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">3</span>. R = 7[㏀], X<sub>L</sub> = 7[㏀], X<sub>C</sub> = 7[㏀]의 소자가 직렬로 연결되었을때 공진 상태에서의 합성 임피던스는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>21[㏀]</li><li class="correct">7[㏀]</li><li>8.5[㏀]</li><li>14[㏀]</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">공진 상태에서는 X<sub>L</sub> = X<sub>C</sub> 이므로, X<sub>L</sub> - X<sub>C</sub> = 0 이 됩니다. 따라서, 합성 임피던스는 R 만큼이 됩니다. 따라서 정답은 "7[㏀]" 입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2803,7 +2824,11 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#cac20041010-4" question-id="cac20041010-4" question-num="4" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">4</span>. L[H]의 코일에 I[A]의 전류가 흐를때 축적되는 에너지[J]는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct"><img src="images/cac20041010m4b1.gif"/></li><li><img src="images/cac20041010m4b2.gif"/></li><li>LI<sup>2</sup></li><li>LI</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 LI<sup>2</sup>입니다.<br/>
+<br/>
+L[H]은 코일의 인덕턴스를 나타내며, I[A]는 전류를 나타냅니다. 인덕턴스는 전류가 흐를 때 자기장을 생성하고, 이 자기장에 의해 전류가 방해받게 됩니다. 이 때 축적되는 에너지는 1/2LI<sup>2</sup>로 계산됩니다. 이는 코일의 인덕턴스와 전류의 제곱에 비례하는 것을 의미합니다. 따라서 LI<sup>2</sup>가 정답입니다.<br/>
+<br/>
+그림은 코일의 자기장을 나타내며, 전류가 흐를 때 자기장이 생성되고, 이 자기장에 의해 전류가 방해받게 됩니다. 이 때 축적되는 에너지는 LI<sup>2</sup>로 계산됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2849,7 +2874,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#cac20041010-5" question-id="cac20041010-5" question-num="5" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">5</span>. 평행한 두 도선에 흐르는 전류가 같은 방향이면 두 도선 사이에는 어떤 힘이 작용하는가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">흡인력</li><li>회전력</li><li>반발력</li><li>힘이 작용하지 않는다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">평행한 두 도선에 흐르는 전류가 같은 방향이면 두 도선 사이에는 서로를 끌어당기는 힘이 작용합니다. 이를 흡인력이라고 합니다. 이는 두 도선 사이의 자기장이 상호작용하여 발생하는 것으로, 자기장의 방향이 서로 반대인 경우에는 반발력이 작용하게 됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2895,7 +2920,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#cac20041010-6" question-id="cac20041010-6" question-num="6" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">6</span>. P형 반도체에 있어서 정공을 만들어 주기 위해서 공급하는 불순물을 무엇이라 하는가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">엑셉터(acceptor)라 한다.</li><li>베이스(Base)라 한다.</li><li>캐리어(Carrier)라 한다.</li><li>도우너(donor)라 한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">엑셉터는 P형 반도체에서 양공을 만들어주는 불순물로서, 전자를 받아들이는 성질을 가지고 있기 때문에 이러한 이름이 붙여졌습니다. 베이스는 NPN 트랜지스터에서 중간층을 의미하며, 캐리어는 전자나 정공을 운반하는 입자를 의미합니다. 도우너는 N형 반도체에서 정공을 만들어주는 불순물로서, 전자를 기부하는 성질을 가지고 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2941,7 +2966,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#cac20041010-7" question-id="cac20041010-7" question-num="7" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">7</span>. 4단자망 회로에서 h정수 표시때 h<sub>22</sub>의 물리적인 뜻은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>입력단 개방때 전압 궤환률</li><li class="correct">입력 개방때 출력 어드미턴스</li><li>출력단 단락때 입력 어드미턴스</li><li>출력 단락때 전류 증폭률</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">h<sub>22</sub>는 입력단을 개방했을 때 출력단의 어드미턴스를 나타내는 매개변수입니다. 즉, 출력단에서 발생한 신호가 입력단으로 되돌아가는 양상을 나타내며, 이는 출력단의 신호가 입력단으로 되돌아가는 임피던스의 크기와 방향을 결정합니다. 따라서 h<sub>22</sub>가 작을수록 출력단의 임피던스가 크고, 입력단에서 발생한 잡음이나 외부 신호의 영향을 덜 받아 안정적인 동작이 가능합니다. 이에 반해 h<sub>11</sub>은 출력단을 개방했을 때 입력단의 어드미턴스를 나타내며, 입력단에서 발생한 신호가 출력단으로 되돌아가는 양상을 결정합니다. 따라서 h<sub>11</sub>이 작을수록 입력단의 임피던스가 크고, 출력단에서 발생한 잡음이나 외부 신호의 영향을 덜 받아 안정적인 동작이 가능합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2987,7 +3012,11 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#cac20041010-8" question-id="cac20041010-8" question-num="8" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">8</span>. 진폭변조도가 100%일 때 반송파(Carrier Wave)가 점하는 전력은 피변조파전력의 몇 분의 몇인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>1/2</li><li class="correct">2/3</li><li>3/4</li><li>4/5</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">진폭변조도가 100%일 때, 피변조파의 최대 진폭은 반송파의 진폭과 같아지므로 피변조파의 전력은 반송파의 전력과 같아집니다. 따라서 반송파가 점하는 전력은 피변조파전력의 1/2가 됩니다. <br/>
+<br/>
+반면에 진폭변조도가 100%일 때, 변조된 신호의 최대 진폭은 반송파의 진폭에 피변조파의 최대 진폭이 더해지므로 변조된 신호의 전력은 반송파의 전력보다 큽니다. 따라서 반송파가 점하는 전력은 변조된 신호의 전력보다 작아지게 됩니다. <br/>
+<br/>
+이러한 이유로, 진폭변조도가 100%일 때 반송파가 점하는 전력은 피변조파전력의 2/3이 됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3034,7 +3063,21 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#cac20041010-9" question-id="cac20041010-9" question-num="9" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">9</span>. 기본파의 전압이 20V, 제2고조파의 전압이 3V, 제 3 고조파의 전압이 1V일 때 일그러짐율 (왜율) K는 얼마인가? (단, 모든 전압은 실효치)</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li><img src="images/cac20041010m9b1.gif"/></li><li><img src="images/cac20041010m9b2.gif"/></li><li class="correct"><img src="images/cac20041010m9b3.gif"/></li><li><img src="images/cac20041010m9b4.gif"/></li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">일그러짐율 (왜율) K는 다음과 같이 계산됩니다.<br/>
+<br/>
+K = (제2고조파 전압의 효과값 + 제3고조파 전압의 효과값) / 기본파 전압의 효과값<br/>
+<br/>
+제2고조파 전압의 효과값 = 3 / √2 ≈ 2.12V<br/>
+제3고조파 전압의 효과값 = 1 / √2 ≈ 0.71V<br/>
+기본파 전압의 효과값 = 20 / √2 ≈ 14.14V<br/>
+<br/>
+따라서,<br/>
+<br/>
+K = (2.12V + 0.71V) / 14.14V ≈ 0.18<br/>
+<br/>
+즉, 일그러짐율 (왜율) K는 약 0.18입니다.<br/>
+<br/>
+보기에서 "<img src="https://cbtbank.kr/images/cac/cac20041010/cac20041010m9b3.gif"/>"이 정답인 이유는 K의 값이 0.1보다 크고 0.2보다 작기 때문입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3080,7 +3123,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#cac20041010-10" question-id="cac20041010-10" question-num="10" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">10</span>. 다음 중 이상적인 연산증폭기의 특징이 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">출력 임피던스가 무한대이다.</li><li>입력 임피던스가 무한대이다.</li><li>대역폭이 무한대이다.</li><li>전압 이득이 무한대이다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">출력 임피던스가 무한대이면 출력 신호가 외부 회로에 영향을 받지 않기 때문에 이상적인 연산증폭기의 특징이 아닙니다. 이는 출력 임피던스가 무한대일수록 출력 신호가 외부 회로에 전달되는데 필요한 전류가 적어지기 때문입니다. 따라서, 이상적인 연산증폭기는 입력 임피던스가 무한대, 대역폭이 무한대, 전압 이득이 무한대인 것이 이상적입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3126,7 +3169,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#cac20041010-11" question-id="cac20041010-11" question-num="11" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">11</span>. 발진주파수를 측정할 수 있는 계측기가 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>주파수계수기(Frequency Counter)</li><li>오실로스코프(Oscilloscope)</li><li class="correct">파워메타(Power Meter)</li><li>스펙트럼 분석기(Spectrum Analyzer)</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">파워메타는 전력 측정에 사용되는 계측기이며, 발진주파수를 측정하는 기능은 없습니다. 따라서 정답은 파워메타입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3172,7 +3215,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#cac20041010-12" question-id="cac20041010-12" question-num="12" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">12</span>. 주파수 변조시 변조지수가 커지면 주파수 대역폭은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">넓어진다.</li><li>좁아진다.</li><li>일정하다.</li><li>넓어지다가 좁아진다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">주파수 변조시 변조지수가 커지면 주파수 대역폭은 넓어진다. 이는 변조지수가 주파수 변화량에 대한 비율을 나타내기 때문이다. 변조지수가 커지면 주파수 변화량도 커지므로 주파수 대역폭도 넓어지게 된다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3218,7 +3261,11 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#cac20041010-13" question-id="cac20041010-13" question-num="13" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">13</span>. 정전용량이 같은 콘덴서 5개를 병렬로 했을 때의 합성용량은 직렬로 했을 때의 합성용량의 몇 배인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>1/5</li><li>5</li><li class="correct">25</li><li>100</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">콘덴서를 병렬로 연결하면 전하가 분산되어 각 콘덴서에 전하가 저장됩니다. 따라서 총 용량은 각 콘덴서의 용량을 합한 값이 됩니다. 따라서 정전용량이 같은 콘덴서 5개를 병렬로 연결하면 합성용량은 5배가 됩니다. <br/>
+<br/>
+반면, 콘덴서를 직렬로 연결하면 전하가 순차적으로 흐르면서 각 콘덴서에 전하가 저장됩니다. 따라서 총 용량은 각 콘덴서의 역수의 합의 역수가 됩니다. 정전용량이 같은 콘덴서 5개를 직렬로 연결하면 합성용량은 1/5가 됩니다. <br/>
+<br/>
+따라서 병렬로 연결했을 때의 합성용량은 직렬로 연결했을 때의 합성용량의 5배가 되므로, 정답은 "25"입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3264,7 +3311,9 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#cac20041010-14" question-id="cac20041010-14" question-num="14" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">14</span>. 복소수의 성질에 대한 설명 중 옳은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>복소수는 양수와 허수로 이루어진 수이다.</li><li>허수는 제곱하면 양수가 되는 수이다.</li><li class="correct">허수의 단위는 √-1 이다.</li><li>복소수에서의 절대값은 허수의 크기만을 나타낸다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "허수의 단위는 √-1 이다."입니다.<br/>
+<br/>
+복소수는 실수와 허수로 이루어진 수이며, 허수는 실수와 곱해져서 나타나는 수입니다. 허수는 제곱하면 음수가 되는 수이기 때문에 실수와 함께 사용하여 복소수를 나타냅니다. 이 때, 허수의 단위는 √-1로 정의되며, 이를 i라고 표기합니다. 따라서 복소수는 a+bi와 같은 형태로 나타낼 수 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3310,7 +3359,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#cac20041010-15" question-id="cac20041010-15" question-num="15" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">15</span>. 다음중 일그러짐이 가장 적어 저주파 증폭기에 사용되는 전력증폭회로는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">A급</li><li>B급</li><li>AB급</li><li>C급</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">일그러짐이 가장 적은 전력증폭회로는 A급입니다. A급은 입력 전압이 크게 변화할 때 출력 전압도 크게 변화하며, 입력 전압이 작게 변화할 때도 출력 전압이 작게 변화합니다. 이러한 특성으로 인해 A급은 일그러짐이 가장 적고, 음질이 가장 좋은 전력증폭회로로 사용됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3361,7 +3410,7 @@ $(function(){
 </div>
 </div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#cac20041010-16" question-id="cac20041010-16" question-num="16" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">16</span>. 전자계산기의 구성 재료로서 세대를 구분 할때 제4세대에 해당 하는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>트랜지스터(TR)</li><li>집적화 회로(IC)</li><li class="correct">고집적화 회로(LSI)</li><li>진공관(VT)</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">전자계산기의 구성 재료로서 세대를 구분할 때, 제4세대는 1971년부터 1981년까지의 시기를 말합니다. 이때 사용된 구성 재료는 고집적화 회로(LSI)입니다. LSI는 Large Scale Integration의 약자로, 대규모 집적 회로를 의미합니다. 이는 하나의 칩 안에 많은 수의 트랜지스터를 집적시켜서 만든 것으로, 이전의 집적화 회로(IC)보다 더 많은 기능을 수행할 수 있었습니다. 따라서, 고집적화 회로(LSI)는 제4세대 전자계산기의 구성 재료로 사용되었습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3408,7 +3457,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div>
 <div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#cac20041010-17" question-id="cac20041010-17" question-num="17" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">17</span>. 다음에 열거한 장치 중에서 순차처리(sequential access)만 가능한 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>자기 드럼</li><li class="correct">자기 테이프</li><li>자기 디스크</li><li>자기 코어</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">자기 테이프는 데이터를 순차적으로 읽거나 쓰는데 최적화된 장치이기 때문에 순차처리만 가능합니다. 자기 드럼, 자기 디스크, 자기 코어는 데이터를 임의로 접근할 수 있는 장치이므로 순차처리 뿐만 아니라 랜덤 액세스(random access)도 가능합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3454,7 +3503,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#cac20041010-18" question-id="cac20041010-18" question-num="18" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">18</span>. 다음 기억소자중 가장 빠른 호출 시간을 갖는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>가상 메모리</li><li>버퍼 메모리</li><li class="correct">캐시 메모리</li><li>보조 메모리</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">캐시 메모리는 CPU와 주기억장치 사이에 위치하여 CPU가 필요로 하는 데이터나 명령어를 미리 가져와 저장해두는 고속 메모리입니다. 따라서 CPU가 데이터나 명령어를 요청할 때 주기억장치보다 빠르게 접근할 수 있어 가장 빠른 호출 시간을 갖습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3500,7 +3549,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#cac20041010-19" question-id="cac20041010-19" question-num="19" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">19</span>. 2진수 1101.12 를 10진수로 고치면?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>13.2</li><li>13.75</li><li class="correct">13.5</li><li>13.1</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-empty">이 문항은 아직 해설이 준비되지 않았습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3546,7 +3595,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#cac20041010-20" question-id="cac20041010-20" question-num="20" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">20</span>. 순서도 작성에 필요한 다음 기호는 무엇을 나타내는가?<img src="images/cac20041010m20.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>처리기호</li><li>준비기호</li><li class="correct">판단기호</li><li>종료기호</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">이 기호는 조건을 판단하는 기호로, 조건에 따라 다음에 실행할 처리를 결정하는 역할을 합니다. 따라서 "판단기호"라고 부릅니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3592,7 +3641,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#cac20041010-21" question-id="cac20041010-21" question-num="21" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">21</span>. 다음중 드모르강의 법칙을 나타낸 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li><img src="images/cac20041010m21b1.gif"/></li><li><img src="images/cac20041010m21b2.gif"/></li><li class="correct"><img src="images/cac20041010m21b3.gif"/></li><li><img src="images/cac20041010m21b4.gif"/></li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">드모르강의 법칙을 나타낸 것은 "<img src="https://cbtbank.kr/images/cac/cac20041010/cac20041010m21b3.gif"/>" 입니다. 이는 A와 B가 모두 참인 경우와 A와 B가 모두 거짓인 경우에만 전체 명제가 참이 되는 것을 의미합니다. 즉, A와 B 중 하나라도 거짓이면 전체 명제는 거짓이 됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3638,7 +3687,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#cac20041010-22" question-id="cac20041010-22" question-num="22" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">22</span>. 컴퓨터 시스템의 효율적 운용을 위한 소프트웨어 집단을 무엇이라 하는가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">운영체제(operating system)</li><li>컴파일러(compiler)</li><li>기계어(machine language)</li><li>번역장치(interpreter)</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">운영체제는 컴퓨터 시스템의 자원을 효율적으로 관리하고, 사용자와 하드웨어 간의 인터페이스 역할을 수행하는 소프트웨어 집단입니다. 따라서 컴퓨터 시스템의 효율적 운용을 위한 소프트웨어 집단은 운영체제라고 합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3684,7 +3733,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#cac20041010-23" question-id="cac20041010-23" question-num="23" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">23</span>. 기계어를 기호화시킨 언어는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>C언어</li><li>Basic</li><li>Fortran</li><li class="correct">Assembly어</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">기계어는 0과 1로 이루어진 이진수로 표현된 프로그래밍 언어입니다. 이를 사람이 이해하기 쉬운 형태로 변환하기 위해 사용하는 언어가 어셈블리어입니다. 어셈블리어는 기계어와 1:1 대응되는 기호를 사용하여 프로그래밍을 작성할 수 있습니다. 따라서 어셈블리어는 기계어와 밀접한 관련이 있으며, 기계어를 기호화시킨 언어라고 할 수 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3730,7 +3779,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#cac20041010-24" question-id="cac20041010-24" question-num="24" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">24</span>. 다음과 같은 컴퓨터의 입출력 방식 중에서 가장 우수한 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>중앙처리장치에 의한 입출력 중 인터럽트 방식</li><li>중앙처리장치에 의한 입출력 중 프로그램 방식</li><li class="correct">채널(channel) 제어기에 의한 입출력</li><li>Off-line에 의한 배치(batch)방식의 입출력</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">채널 제어기에 의한 입출력 방식은 입출력 작업을 전용 장치인 채널 제어기가 담당하여 중앙처리장치의 부담을 줄이고, 병렬적으로 입출력 작업을 처리할 수 있어서 가장 우수한 방식입니다. 이 방식은 중앙처리장치와 입출력 장치 간의 데이터 전송을 채널 제어기가 담당하므로, 입출력 작업이 동시에 처리될 수 있어서 처리 속도가 빠르고 효율적입니다. 또한, 채널 제어기는 입출력 작업을 자동으로 처리할 수 있어서 중앙처리장치의 개입이 필요하지 않습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3777,7 +3826,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div>
 <div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#cac20041010-25" question-id="cac20041010-25" question-num="25" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">25</span>. 다음 중 조합 논리회로에 포함되지 않는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>멀티플렉스</li><li>인코더</li><li>전가산기</li><li class="correct">레지스터</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">조합 논리회로는 입력값에 따라 출력값이 결정되는 회로로, 현재 입력값만으로 출력값이 결정된다. 따라서 레지스터는 입력값과 출력값이 모두 존재하므로 조합 논리회로에 포함되지 않는다. 레지스터는 시퀀셜 논리회로에 속한다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3823,7 +3872,9 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#cac20041010-26" question-id="cac20041010-26" question-num="26" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">26</span>. 다음 중 동기식 시분할 다중화의 설명이 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>각각의 채널에 할당된 시간 슬롯이 점유할 수 있는 대역폭이 미리 할당됨</li><li>다중화기의 하드웨어적 구성이 용이하다</li><li>대역폭을 낭비하는 결과를 초래하여 전송시스템의 성능이 매우 감소된다</li><li class="correct">동적으로 대역폭을 각각의 채널에 할당한다</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"대역폭을 낭비하는 결과를 초래하여 전송시스템의 성능이 매우 감소된다"는 동기식 시분할 다중화의 설명이 아닙니다.<br/>
+<br/>
+동적으로 대역폭을 각각의 채널에 할당하는 것은 시간 슬롯이 필요한 만큼만 할당하므로 대역폭을 효율적으로 사용할 수 있기 때문입니다. 이는 다중화기의 하드웨어적 구성도 용이하게 만들어줍니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3869,7 +3920,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#cac20041010-27" question-id="cac20041010-27" question-num="27" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">27</span>. 다음의 전전자 교환기의 망동기 장치 방식중 사용하지 않는 방식은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">연속동기방식</li><li>종속동기방식</li><li>상호동기방식</li><li>독립동기방식</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">전전자 교환기에서 사용하지 않는 망동기 장치 방식은 "연속동기방식"입니다. 연속동기방식은 전화기를 들고 통화하는 동안에도 전기 신호가 계속해서 전달되는 방식으로, 현재의 디지털 통신 기술에서는 사용되지 않습니다. 따라서 전전자 교환기에서는 종속동기방식, 상호동기방식, 독립동기방식 중 하나를 사용합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3915,7 +3966,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#cac20041010-28" question-id="cac20041010-28" question-num="28" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">28</span>. 전자 교환기의 통화로부를 구성하는 시분할 변조 방식 중 가장 대표적인 방식은 무엇인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>FM</li><li>PM</li><li>FDM</li><li class="correct">PCM</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">PCM은 Pulse Code Modulation의 약자로, 아날로그 신호를 디지털 신호로 변환하는 방식입니다. 이 방식은 시간을 일정한 간격으로 나누어 샘플링하고, 각 샘플링 값의 크기를 일정한 비트 수로 양자화하여 디지털 신호로 변환합니다. 이렇게 변환된 디지털 신호는 전송 중에 노이즈나 왜곡에 영향을 받지 않고 안정적으로 전달될 수 있습니다. 또한, PCM 방식은 다른 방식에 비해 더 많은 정보를 전송할 수 있어서 대용량 데이터 전송에 적합합니다. 따라서, PCM은 전자 교환기의 통화로부를 구성하는 시분할 변조 방식 중 가장 대표적인 방식입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3961,7 +4012,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#cac20041010-29" question-id="cac20041010-29" question-num="29" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">29</span>. 이동통신 기술의 핵심을 이루는 기술로 우리나라가 세계 최초로 상용화하여 성공을 거두고 있는 기술 분야는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>펄스진폭 변조(PAM)</li><li>주파수 분할 다중화 접속(FDMA)</li><li>시분할 다중화 접속(TDMA)</li><li class="correct">코드 분할 다중 접속(CDMA)</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">CDMA는 다른 기술과 달리 주파수나 시간을 분할하지 않고, 각 사용자마다 고유한 코드를 부여하여 동시에 같은 주파수 대역을 사용할 수 있게 하는 기술입니다. 이를 통해 대역폭을 효율적으로 사용할 수 있고, 동시에 많은 사용자들이 안정적으로 통신할 수 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4007,7 +4058,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#cac20041010-30" question-id="cac20041010-30" question-num="30" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">30</span>. 교환기가 호출자의 데이터를 받았다가 피 호출자에게 전송하는 방식으로 전송 지연시간이 매우 긴 데이터 교환방식은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>회선교환 방식</li><li>음성용 일반교환 방식</li><li>패킷교환 방식</li><li class="correct">메시지 교환 방식</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">메시지 교환 방식은 데이터를 전송하기 전에 모든 데이터를 모아서 메시지로 만들어 전송하는 방식입니다. 이 때문에 전송 지연시간이 매우 길어지지만, 전송 중 오류가 발생하면 전체 메시지를 다시 전송해야 하는 단점이 있습니다. 따라서 대용량 데이터를 전송할 때는 적합하지 않지만, 안정적인 데이터 전송이 필요한 경우에는 유용하게 사용됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4058,7 +4109,7 @@ $(function(){
 </div>
 </div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#cac20041010-31" question-id="cac20041010-31" question-num="31" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">31</span>. 소리 에너지를 전기에너지로 변환하는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">송화기</li><li>수화기</li><li>전송로</li><li>안테나</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">소리 에너지를 전기 에너지로 변환하는 것은 송화기입니다. 송화기는 마이크로폰과 같은 소리를 받아들이는 장치를 통해 소리를 전기 신호로 변환하고, 이를 전송로를 통해 전파로 발신하는 장치입니다. 따라서 송화기는 소리를 전기 신호로 변환하는 역할을 합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4104,7 +4155,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#cac20041010-32" question-id="cac20041010-32" question-num="32" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">32</span>. 통신망의 형태를 결정하는 필요 조건이 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>통신 품질</li><li class="correct">교환기 명</li><li>통신 규모의 신뢰성</li><li>통신 규모의 확장성</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">교환기 명은 통신망의 형태를 결정하는 필요 조건이 아닙니다. 교환기 명은 교환기의 이름을 나타내는 것으로, 통신망의 형태와는 직접적인 연관성이 없습니다. 통신 품질, 통신 규모의 신뢰성, 통신 규모의 확장성은 모두 통신망의 형태를 결정하는 필요 조건입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4151,7 +4202,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#cac20041010-33" question-id="cac20041010-33" question-num="33" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">33</span>. 다음의 통신 회선의 구성 중 방법이 다른 하나는 어느 것인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>와이어 페어(wire pairs)케이블</li><li class="correct">마이크로 웨이브(microwave)</li><li>해저케이블(submarine cable)</li><li>광섬유케이블(optical fiber cable)</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">마이크로 웨이브는 무선 통신 기술로, 전파를 이용하여 통신을 수행합니다. 나머지 세 가지는 유선 통신 기술로, 케이블을 이용하여 신호를 전달합니다. 따라서 마이크로 웨이브는 유선 통신이 불가능한 상황에서 사용되는 무선 통신 기술이므로 방법이 다릅니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4197,7 +4248,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#cac20041010-34" question-id="cac20041010-34" question-num="34" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">34</span>. 단말기의 구성 중 단말장치와 데이터 전송회선을 물리적으로 연결해 주는 부분은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>회선 제어부</li><li class="correct">회선 접속부</li><li>입력 장치부</li><li>출력 장치부</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">회선 접속부는 단말기의 구성 중 단말장치와 데이터 전송회선을 물리적으로 연결해 주는 부분입니다. 따라서 데이터 전송을 위해서는 회선 접속부가 필수적으로 필요합니다. 회선 제어부는 데이터 전송을 제어하는 부분이며, 입력 장치부와 출력 장치부는 데이터의 입력과 출력을 담당하는 부분입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4243,7 +4294,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#cac20041010-35" question-id="cac20041010-35" question-num="35" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">35</span>. 다음 중 위성통신의 특징으로 설명이 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>하나의 위성국으로 넓은 지역의 통신을 확보할 수 있다.</li><li class="correct">전송지연이 발생하지 않는다.</li><li>통신의 제한 없이 넓은 통신을 할 수 있다.</li><li>통신 사용중 회선 설정이 용이하다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">전송지연이 발생하지 않는다는 설명이 틀린 것입니다. 위성통신에서도 전파가 지구와 위성 사이를 왕복하는 시간이 필요하기 때문에 일정한 전송지연이 발생합니다. 이는 지구와 위성 사이의 거리에 따라 달라지며, 일반적으로 0.25초 이상의 지연이 발생합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4289,7 +4340,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#cac20041010-36" question-id="cac20041010-36" question-num="36" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">36</span>. 오실로스코프에 두 사인파를 입력하여 위상차를 측정한 결과 다음과 같은 리사쥬 도형이 나타났다. 위상차는?<img src="images/cac20041010m36.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>0°</li><li class="correct">45°</li><li>90°</li><li>135°</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">리사주 도형에서 두 파형의 주기는 같으므로, 두 파형의 위상차는 파형의 주기에 대한 비율로 나타낼 수 있다. 이 경우, 파형의 주기는 4 격자이므로, 파형 1의 위상은 2 격자, 파형 2의 위상은 3 격자이다. 따라서, 파형 1이 파형 2보다 앞서는 위상차가 발생하며, 이는 45°이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4335,7 +4386,9 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#cac20041010-37" question-id="cac20041010-37" question-num="37" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">37</span>. 다음 중 전송방식이 갖추어야할 특징과 거리가 먼 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>잡음에 강해야 한다.</li><li class="correct">주파수 밴드가 좁아야 한다.</li><li>감쇄 영향이 적어야 한다</li><li>깨끗한 펄스 파형재생이 가능해야 한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">답: "감쇄 영향이 적어야 한다."<br/>
+<br/>
+전송방식이 갖추어야할 특징 중에서 주파수 밴드가 좁아야 하는 이유는 다음과 같습니다. 주파수 밴드가 좁다는 것은 특정 주파수 대역폭에서만 신호를 전송한다는 것을 의미합니다. 이는 다른 주파수 대역폭에서 발생하는 잡음이나 간섭을 최소화할 수 있기 때문에 전송 신호의 안정성과 신뢰성을 높일 수 있습니다. 따라서 전송방식이 갖추어야할 특징 중에서 주파수 밴드가 좁아야 한다는 것은 전송 신호의 안정성과 신뢰성을 높이기 위한 필수적인 조건입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4381,7 +4434,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#cac20041010-38" question-id="cac20041010-38" question-num="38" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">38</span>. 기준전압 1[V]에 대하여 1[mV]를 dB로 환산하면?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>-30</li><li class="correct">-60</li><li>1.0</li><li>10</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">1[mV]는 0dBV보다 60dB 작은 값이므로, 1[V]에 대하여 -60dBV가 됩니다. dBV는 전압의 상대적인 크기를 나타내는 단위이며, 0dBV는 1[V]를 의미합니다. 따라서 1[mV]는 1[V]에 비해 매우 작은 값이므로, dBV로 환산하면 음수값이 됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4427,7 +4480,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#cac20041010-39" question-id="cac20041010-39" question-num="39" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">39</span>. 교환기의 발달과정을 올바르게 표시한 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">자석식 → 공전식 → 자동식 → 전자식 → 디지털식</li><li>공전식 → 자석식 → 전자식 → 디지털식 → 자동식</li><li>전자식 → 자석식 → 디지털식 → 자동식 → 공전식</li><li>디지털식 → 전자식 → 자동식 → 자석식 → 공전식</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">교환기의 발달 과정은 기술의 발전과 함께 진행되었습니다. 초기에는 자석식 교환기가 개발되어 사용되었으며, 이후에는 공전식, 자동식, 전자식, 디지털식 교환기가 순차적으로 개발되어 사용되었습니다. 이 중에서 자석식 교환기는 자석을 이용하여 회로를 제어하는 방식으로 작동하였고, 이후에는 회전하는 기계적인 부분을 이용한 공전식 교환기가 개발되었습니다. 그리고 자동식 교환기는 전기적인 신호를 이용하여 회로를 제어하는 방식으로 작동하였으며, 전자식 교환기는 전자 부품을 이용하여 작동하였습니다. 마지막으로 디지털식 교환기는 디지털 신호를 이용하여 작동하며, 현재는 이러한 디지털식 교환기가 가장 많이 사용되고 있습니다. 따라서, 올바른 발달 과정은 "자석식 → 공전식 → 자동식 → 전자식 → 디지털식" 입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4473,7 +4526,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#cac20041010-40" question-id="cac20041010-40" question-num="40" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">40</span>. 전화기의 기본 구성 요소가 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>송화기</li><li>수화기</li><li>훅 스위치</li><li class="correct">키보드</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">전화기의 기본 구성 요소는 송화기, 수화기, 훅 스위치입니다. 이들은 전화기의 기본적인 기능을 수행하는데 필수적인 요소이며, 전화를 걸거나 받을 때 사용됩니다. 반면에 키보드는 전화번호나 메시지를 입력할 때 사용되는 선택적인 요소입니다. 따라서 키보드는 전화기의 기본 구성 요소가 아닙니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4520,7 +4573,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#cac20041010-41" question-id="cac20041010-41" question-num="41" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">41</span>. 다음 중 유선통신 방식의 대표적인 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>라디오</li><li class="correct">전화 통신</li><li>텔레비전</li><li>위성통신</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">유선통신은 유선을 통해 정보를 전송하는 방식을 말합니다. 이 중에서도 가장 대표적인 것은 전화 통신입니다. 전화는 전화기와 전화선을 이용하여 음성 정보를 상대방에게 전달하는 방식으로, 전 세계적으로 보급되어 있으며 일상 생활에서 가장 많이 사용되는 유선통신 방식 중 하나입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4566,7 +4619,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#cac20041010-42" question-id="cac20041010-42" question-num="42" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">42</span>. 다음의 그림은 어떤 통신망인가?<img src="images/cac20041010m42.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>그물(mesh)형</li><li>성(star)형</li><li>링(ring)형</li><li class="correct">버스(bus)형</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "버스(bus)형"입니다. 이유는 모든 장치들이 하나의 통신선을 공유하고 있기 때문입니다. 따라서 데이터가 한 장치에서 다른 장치로 전송될 때, 모든 장치가 데이터를 수신할 수 있습니다. 이러한 구조는 간단하고 비용이 적게 들어가지만, 한 장치에서 데이터를 전송할 때 전체 네트워크의 대역폭이 저하될 수 있다는 단점이 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4612,7 +4665,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#cac20041010-43" question-id="cac20041010-43" question-num="43" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">43</span>. 트래픽이론을 가장 관계 깊은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>통신시설 이용자가 정보교환을 위해 대기하는 시간</li><li>통신에 사용되는 모든 시간에 따른 회선수</li><li class="correct">적정 서비스 품질을 유지할 수 있는 범위 내에서 경제적인 통신 설비의 수의 산출</li><li>모든 가입자가 회선을 사용할 수 있는 시간 산출</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">트래픽이론은 통신망에서 발생하는 트래픽을 분석하여 적정한 서비스 품질을 유지할 수 있는 경제적인 통신 설비의 수를 산출하는 이론입니다. 따라서 정답은 "적정 서비스 품질을 유지할 수 있는 범위 내에서 경제적인 통신 설비의 수의 산출"입니다. 다른 보기들은 통신망에서 발생하는 트래픽을 분석하는데 있어서 중요한 요소이지만, 트래픽이론의 핵심은 경제적인 통신 설비의 수를 산출하는 것입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4658,7 +4711,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#cac20041010-44" question-id="cac20041010-44" question-num="44" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">44</span>. 입사파 전압이 84[V]이고, 반사파 전압이 28[V]이라면 반사 계수는 얼마인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>0.03</li><li class="correct">0.33</li><li>3.33</li><li>33.33</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">반사 계수는 (반사파 전압 / 입사파 전압)의 절댓값입니다. 따라서 반사 계수는 (28[V] / 84[V]) = 0.33 입니다. 보기에서 "0.03", "3.33", "33.33"은 모두 계산이 잘못되었기 때문에 정답이 될 수 없습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4704,7 +4757,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#cac20041010-45" question-id="cac20041010-45" question-num="45" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">45</span>. 전화 통화시 호(call)가 발생하여 통신이 끝날 때까지의 시간을 무었이라고 하는가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>통화 밀도 시간</li><li>트래픽 시간</li><li>최번 시간</li><li class="correct">보류 시간</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">전화 통화 중에 호(call)가 발생하면 상대방이나 통신망에서 일시적으로 통화를 보류하게 되는데, 이때 발생하는 시간을 보류 시간이라고 합니다. 따라서 보류 시간이 정답입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4755,7 +4808,7 @@ $(function(){
 </div>
 </div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#cac20041010-46" question-id="cac20041010-46" question-num="46" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">46</span>. 전기통신기본법의 궁극적인 목적은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>국가경제 개발계획의 효율적 운영</li><li>민주주의 토착화와 민주행정의 개선</li><li class="correct">공공복리의 증진도모</li><li>전기통신의 원활한 발전과 정보화사회의 촉진</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">전기통신기본법의 궁극적인 목적은 공공복리의 증진을 도모하는 것입니다. 이는 전기통신의 원활한 발전과 정보화사회의 촉진, 국가경제 개발계획의 효율적 운영, 민주주의 토착화와 민주행정의 개선 등과도 연관되어 있습니다. 전기통신은 현대 사회에서 필수적인 요소이며, 이를 통해 국민들의 생활 편의성과 경제 발전을 도모할 수 있기 때문입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4801,7 +4854,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#cac20041010-47" question-id="cac20041010-47" question-num="47" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">47</span>. 전기통신기본계획을 수립하는 목적은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">전기통신의 원활한 발전과 정보사회의 촉진을 위하여</li><li>전기통신기술을 경영하는 사업자 및 단체의 육성을 위하여</li><li>전기통신에 관한 기술정보를 체계적. 종합적으로 관리 보급하기 위하여</li><li>전기통신기자재 및 전기통신방식의 규격화를 위하여</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">전기통신기본계획을 수립하는 목적은 전기통신의 원활한 발전과 정보사회의 촉진을 위하여입니다. 이는 전기통신 기술의 발전과 함께 정보화 사회의 발전을 이루기 위해서는 체계적이고 종합적인 계획이 필요하기 때문입니다. 이를 통해 전기통신기술을 경영하는 사업자 및 단체의 육성과 전기통신에 관한 기술정보의 체계적인 관리와 보급, 그리고 전기통신기자재 및 전기통신방식의 규격화를 이룰 수 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4847,7 +4900,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#cac20041010-48" question-id="cac20041010-48" question-num="48" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">48</span>. 전기통신의 관장은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>정보통신부령이 정하는 바에 의하여 한국통신사장이 관장한다.</li><li class="correct">전기통신기본법에 의하여 이 법 또는 다른 법률에 특별히 규정한 것을 제외하고는 정보통신부장관이 관장한다.</li><li>대통령령에 의하여 한국통신사장이 관장한다.</li><li>통신산업에 종사하는 자가 관장한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">전기통신은 정보통신 기술의 일종으로, 따라서 정보통신 분야를 관장하는 정보통신부장관이 전기통신의 관장을 맡게 됩니다. 이는 전기통신기본법에서 명시되어 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4894,7 +4947,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div>
 <div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#cac20041010-49" question-id="cac20041010-49" question-num="49" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">49</span>. 전기통신망의 통합운영시 포함 사항이 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>대상, 시기, 방법 및 절차 사항</li><li>대통령령이 정하는 사항</li><li>통합후의 전기통신설비등의 운영에 관한 사항</li><li class="correct">설비의 설치요건에 관한 사항</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">전기통신망의 통합운영시 포함되어야 할 사항은 대상, 시기, 방법 및 절차 사항, 대통령령이 정하는 사항, 통합후의 전기통신설비등의 운영에 관한 사항입니다. 그러나 설비의 설치요건은 이미 설치되어 있는 것이므로 통합운영시 포함되지 않습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4940,7 +4993,11 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#cac20041010-50" question-id="cac20041010-50" question-num="50" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">50</span>. 부가통신사업에 관한 설명으로 적합하지 않은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>부가통신사업을 경영하고자 하는 자는 정보통신부장관에게 신고하여야 한다.</li><li>사업경영에 관하여 필요한 사항은 전기통신사업법으로 정한다.</li><li class="correct">부가통신역무의 제공업은 과학기술부장관이 관장하므로 사업계획은 이의 사전승인이 있어야 한다.</li><li>부가통신사업자가 사업을 폐지 하고자 할 때에는 그 내용을 정보통신부장관에게 신고하여야 한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"사업경영에 관하여 필요한 사항은 전기통신사업법으로 정한다."는 부가통신사업에 관한 설명으로 적합합니다.<br/>
+<br/>
+"부가통신역무의 제공업은 과학기술부장관이 관장하므로 사업계획은 이의 사전승인이 있어야 한다."는 부가통신사업에 관한 설명으로 적합합니다. 이유는 부가통신역무의 제공업은 과학기술정보통신부장관이 관장하고, 이에 따라 사업계획은 이의 사전승인이 필요하기 때문입니다.<br/>
+<br/>
+따라서 정답은 "사업경영에 관하여 필요한 사항은 전기통신사업법으로 정한다."입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4986,7 +5043,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#cac20041010-51" question-id="cac20041010-51" question-num="51" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">51</span>. 전기통신회선의 심선 상호간의 절연저항은 직류 500[V]절연저항계로 측정하여 얼마 이상이어야 하는가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">10[㏁]</li><li>15[㏁]</li><li>20[㏁]</li><li>22[㏁]</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">전기통신회선은 대개 48V 이하의 저전압을 사용하므로, 500V의 직류 전압으로 측정하는 것은 과도한 조건입니다. 따라서 전기통신회선의 심선 상호간의 절연저항은 최소한 10[㏁] 이상이어야 합니다. 이는 전기적 안전성을 보장하기 위한 기준값으로서, 전기통신회선의 안정적인 운용을 위해서는 이 기준값을 충족해야 합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5032,7 +5089,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#cac20041010-52" question-id="cac20041010-52" question-num="52" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">52</span>. 기술기준에서 정의하고 있는 고주파수는 얼마 이상의 주파수를 말하는가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>1[MHz] 이상의 전자파의 주파수</li><li>5[KHz] 이상의 전자파의 주파수</li><li class="correct">3.4[KHz]를 초과하는 전자파의 주파수</li><li>1[KHz]를 초과하는 전자파의 주파수</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">고주파수는 일반적으로 3[KHz] 이상의 주파수를 말합니다. 그 중에서도 기술기준에서는 3.4[KHz]를 초과하는 전자파의 주파수를 고주파수로 정의하고 있습니다. 이는 고주파수가 주로 무선 통신, 라디오, TV 등에서 사용되는 주파수 범위이기 때문입니다. 1[KHz] 이상의 주파수는 저주파수, 5[KHz] 이상의 주파수는 중간주파수에 해당합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5078,7 +5135,9 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#cac20041010-53" question-id="cac20041010-53" question-num="53" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">53</span>. 양호한 통신신호를 전송하기 위하여 일정한 기준을 정하고 있다. 다음에서 기술기준의 설명이 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">전화전송계의 주파수대역은 음성 및 반송주파수로 한다.</li><li>음량손실의 객관적 척도는 음량정격으로 한다.</li><li>전신전송기준의 척도는 전신왜율을 이용한다.</li><li>평형도의 단위는 데시벨(dB)로 한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">전화전송계의 주파수대역은 음성 및 반송주파수로 한다는 설명이 틀린 것은 아닙니다. 이는 전화 통화 시 사용되는 주파수 대역을 의미합니다. <br/>
+<br/>
+전화 통화 시에는 음성 신호가 송신되고, 이를 수신하기 위해 반송주파수가 사용됩니다. 따라서 전화전송계의 주파수대역은 음성 및 반송주파수로 한다는 것이 올바른 설명입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5124,7 +5183,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#cac20041010-54" question-id="cac20041010-54" question-num="54" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">54</span>. 정보통신공사의 발주자는 누구에게 공사의 감리를 발주하여야 하는가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>공사업자</li><li>통신사업자</li><li class="correct">용역업자</li><li>감리업자</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">발주자는 공사의 진행 상황과 품질을 감시하기 위해 감리를 발주하여야 합니다. 이때 감리를 담당하는 업체를 용역업자라고 합니다. 따라서 정답은 "용역업자"입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5170,7 +5229,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#cac20041010-55" question-id="cac20041010-55" question-num="55" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">55</span>. 정보통신공사를 설계하는 자는 어느법령이 정하는 기술기준에 적합하도록 설계하여야 하는가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>헌법</li><li>법률</li><li>대통령령</li><li class="correct">정보통신부령</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정보통신공사를 설계하는 자는 정보통신부령에서 정하는 기술기준에 적합하도록 설계하여야 합니다. 이는 정보통신부령이 정보통신분야에서의 기술기준을 제정하고 이를 준수하도록 규정하고 있기 때문입니다. 따라서 정보통신공사를 설계하는 자는 이를 준수하여야 합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5216,7 +5275,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#cac20041010-56" question-id="cac20041010-56" question-num="56" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">56</span>. 기간통신사업자가 정보통신부장관의 승인을 얻어야 설치 또는 변경할 수 있는 중요한 전기통신설비가 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>국제통신설비</li><li class="correct">구내선로설비</li><li>시외통신설비</li><li>무선통신설비</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">구내선로설비는 건물 내부나 캠퍼스 내부 등 제한된 범위 내에서 사용되는 전기통신설비로, 정보통신부장관의 승인을 받지 않아도 설치나 변경이 가능합니다. 따라서 정답은 "구내선로설비"입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5263,7 +5322,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div>
 <div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#cac20041010-57" question-id="cac20041010-57" question-num="57" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">57</span>. 정보기기의 전자파장해 방지기준은 어느 법령이 정하는 바에 따라야 하는가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">전파에 관한 법령</li><li>표준화에 관한 법령</li><li>통신보안에 관한 법령</li><li>단말기기에 관한 법령</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정보기기의 전자파장해 방지기준은 전파에 관한 법령에 따라야 합니다. 이는 정보기기가 전자파를 발생시키는 기기이기 때문에, 전파에 관한 법령에서는 이를 규제하고 방지하기 위한 기준을 제시하고 있기 때문입니다. 따라서 정보기기 제조 및 판매업체는 전파에 관한 법령에서 정한 기준을 준수하여 제품을 생산하고 판매해야 합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5309,7 +5368,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#cac20041010-58" question-id="cac20041010-58" question-num="58" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">58</span>. 별정통신사업을 경영하고자 하는 자는 어떤 절차를 받아야 하는가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>정보통신부장관의 허가를 받아야 한다.</li><li>한국통신사장과 협정을 맺어야 한다.</li><li>기간통신사업자에게 신고만 하면된다.</li><li class="correct">정보통신부장관에게 등록하여야 한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">별정통신사업은 정보통신망 이용촉진 및 정보보호 등에 관한 법률에 따라 정보통신부장관의 허가를 받아야 하며, 이를 위해 등록 절차를 거쳐야 합니다. 따라서 정답은 "정보통신부장관에게 등록하여야 한다." 입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5355,7 +5414,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#cac20041010-59" question-id="cac20041010-59" question-num="59" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">59</span>. 정보통신공사업자 이외의 자가 시공할 수 없는 공사는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>실험국의 무선설비 설치공사</li><li>간이무선국의 설치공사</li><li>인입국선이 3회선 미만의 구내통신선로 설비공사</li><li class="correct">교환설비공사</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">교환설비는 전화교환기와 같은 통신망의 핵심 장비로서, 전화나 인터넷 등의 통신 서비스를 제공하기 위해 필수적인 장비입니다. 따라서 이러한 교환설비를 설치하는 공사는 정보통신공사업자에게만 허가되어 있으며, 일반인이 직접 시공할 수 없습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5401,7 +5460,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#cac20041010-60" question-id="cac20041010-60" question-num="60" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">60</span>. 불온통신을 억제하고 건전한 정보문화를 확립하기 위해 설립한 기구는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">정보통신윤리위원회</li><li>한국정보통신진흥협회</li><li>전파연구소</li><li>통신위원회</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정보통신윤리위원회는 불온통신을 억제하고 건전한 정보문화를 확립하기 위해 설립된 기구입니다. 다른 보기들은 정보통신 분야와 관련된 기구들이지만, 정보통신윤리를 강조하는 목적을 가진 기구는 정보통신윤리위원회뿐입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>

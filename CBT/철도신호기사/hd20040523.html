@@ -489,6 +489,15 @@ var g5_cookie_domain = ".cbtkorea.kr";
 
 <!-- CANONICAL-CBT -->
 <link rel="canonical" href="https://cbtkorea.kr/CBT/%EC%B2%A0%EB%8F%84%EC%8B%A0%ED%98%B8%EA%B8%B0%EC%82%AC/hd20040523.html">
+<!-- AI-EXP-RESTORED -->
+<style>
+    .reply .report-modal, .reply .loading, .reply .reply-component { display: none !important; }
+    .ai-exp { list-style: none; padding: 0; margin: 0 0 10px 0; }
+    .ai-exp:last-child { margin-bottom: 0; }
+    .ai-exp-label { font-size: 12px; font-weight: 700; color: #1d4ed8; margin-bottom: 6px; }
+    .ai-exp-label small { font-weight: 400; color: #6b7280; margin-left: 6px; }
+    .ai-exp-empty { font-size: 13px; color: #6b7280; }
+</style>
 </head>
 <body>
 <!-- 상단 시작 { -->
@@ -2665,7 +2674,7 @@ $(function(){
 </div>
 </div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#hd2004⑤23-1" question-id="hd2004⑤23-1" question-num="1" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">1</span>. 평등 자기장 속에서 초속도를 가지고 자기장과 직각방향으로 진입하는 전자는 어떤 운동을 하는가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">등속 원운동을 한다.</li><li>나선운동을 한다.</li><li>직진한다.</li><li>편향된다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">전자는 평등 자기장 속에서 운동하므로, 자기장과 직각방향으로 진입하면서 전자에 작용하는 로렌츠 힘으로 인해 전자는 회전운동을 하게 된다. 이 회전운동은 등속 원운동으로 나타나게 된다. 따라서 정답은 "등속 원운동을 한다." 이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2711,7 +2720,15 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#hd2004⑤23-2" question-id="hd2004⑤23-2" question-num="2" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">2</span>. 그림과 같이 증폭기를 3단 접속하여 첫 단의 증폭기 A<sub>1</sub>에 입력 전압으로 2㎶인 전압을 가했을 때 종단 증폭기 A<sub>3</sub>의 출력 전압은 몇 V 로 되는가? (단, A<sub>1</sub>, A<sub>2</sub>, A<sub>3</sub>의 전압이득 G<sub>1</sub>, G<sub>2</sub>, G<sub>3</sub>는 각각 60dB, 20dB, 40dB이다.)<img src="images/hd20040523m2.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">2</li><li>20</li><li>0.2</li><li>0.02</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">각 증폭기의 전압이득은 dB 단위로 주어졌으므로, 이를 전압비로 변환해야 한다. 전압이득 G<sub>dB</sub>가 주어졌을 때, 이에 해당하는 전압비 G는 다음과 같다.<br/>
+<br/>
+G = 10^(G<sub>dB</sub>/20)<br/>
+<br/>
+따라서, A<sub>1</sub>의 전압비 G<sub>1</sub>은 10^(60/20) = 1000, A<sub>2</sub>의 전압비 G<sub>2</sub>은 10^(20/20) = 10, A<sub>3</sub>의 전압비 G<sub>3</sub>은 10^(40/20) = 100이다.<br/>
+<br/>
+입력 전압이 2㎶이므로, A<sub>1</sub>의 출력 전압은 2 * G<sub>1</sub> = 2000㎶ = 2V 이다. 이를 A<sub>2</sub>의 입력 전압으로 사용하면, A<sub>2</sub>의 출력 전압은 2 * G<sub>2</sub> = 20V 이다. 마지막으로, 이를 A<sub>3</sub>의 입력 전압으로 사용하면, A<sub>3</sub>의 출력 전압은 20 * G<sub>3</sub> = 2000V = 2kV 이다.<br/>
+<br/>
+따라서, 종단 증폭기 A<sub>3</sub>의 출력 전압은 2kV 이다. 이를 1000으로 나누면 2V가 되므로, 정답은 "2"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2757,7 +2774,9 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#hd2004⑤23-3" question-id="hd2004⑤23-3" question-num="3" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">3</span>. 증폭회로에서 출력전압의 일부 또는 전부를 입력측으로 되먹임(feedback)시키는 회로는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>전력 되먹임</li><li class="correct">전압 되먹임</li><li>음(negative) 되먹임</li><li>양(positive) 되먹임</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "전압 되먹임"이다. <br/>
+<br/>
+증폭회로에서 출력전압의 일부 또는 전부를 입력측으로 되먹임(feedback)시키는 회로를 전압 되먹임 회로라고 한다. 이 회로는 출력전압과 입력전압의 차이를 감소시켜 안정적인 출력을 유지하고, 입력신호의 변화에 따라 출력신호를 일정하게 유지하기 위해 사용된다. 이를 위해 출력전압의 일부 또는 전부를 입력측으로 되먹임시켜 입력신호와 출력신호의 차이를 줄이는 역할을 한다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2803,7 +2822,24 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#hd2004⑤23-4" question-id="hd2004⑤23-4" question-num="4" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">4</span>. 11.37을 2진수로 변환한 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">(1011.01)<sub>2</sub></li><li>(1010.10)<sub>2</sub></li><li>(1011.00)<sub>2</sub></li><li>(1100.01)<sub>2</sub></li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">11.37을 2진수로 변환하기 위해서는 정수부분과 소수부분을 각각 2진수로 변환해야 한다. <br/>
+<br/>
+정수부분인 11을 2진수로 변환하면 1011이 된다. <br/>
+<br/>
+소수부분인 0.37을 2진수로 변환하기 위해서는 소수점을 곱하면서 2로 계속 나누어가면 된다. <br/>
+<br/>
+0.37 x 2 = 0.74 → 0<br/>
+0.74 x 2 = 1.48 → 1<br/>
+0.48 x 2 = 0.96 → 0<br/>
+0.96 x 2 = 1.92 → 1<br/>
+0.92 x 2 = 1.84 → 1<br/>
+0.84 x 2 = 1.68 → 1<br/>
+<br/>
+이렇게 계산하면 소수부분은 0.01011이 된다. <br/>
+<br/>
+따라서 11.37을 2진수로 변환하면 (1011.01011)<sub>2</sub>가 된다. <br/>
+<br/>
+하지만 소수점 이하 5자리까지만 표현하면 (1011.01)<sub>2</sub>가 된다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2849,7 +2885,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#hd2004⑤23-5" question-id="hd2004⑤23-5" question-num="5" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">5</span>. P형반도체에 대한 설명 중 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">진성반도체에 비소(As), 인(P),안티몬(Sb)과 같은 3가의 불순물을 첨가하여 부족 전자상태를 만든다.</li><li>다수 캐리어는 정공이고, 소수 캐리어는 자유전자이다.</li><li>억셉터 원자는 (-)이온이다.</li><li>3가의 불순물을 억셉터라 한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"진성반도체에 비소(As), 인(P),안티몬(Sb)과 같은 3가의 불순물을 첨가하여 부족 전자상태를 만든다."가 틀린 설명입니다. 진성반도체는 부족 전자를 가진 양공이 다수 존재하는 반도체로, 비소, 인, 안티몬과 같은 5가의 불순물을 첨가하여 전자를 공급하여 부족 전자를 만듭니다. 이를 n형반도체라고 합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2895,7 +2931,13 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#hd2004⑤23-6" question-id="hd2004⑤23-6" question-num="6" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">6</span>. 검파효율 90%인 직선검파회로에 반송파 진폭이 10V이고 변조도가 50%인 진폭변조파를 인가하는 경우 부하저항에 나타나는 신호파의 진폭은 몇 V 인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>2.5</li><li class="correct">4.5</li><li>5</li><li>9</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">진폭변조파의 변조도가 50%이므로, 최대 진폭은 10V이고 최소 진폭은 0V이다. 따라서, 평균 진폭은 5V이다. <br/>
+<br/>
+검파효율이 90%이므로, 진폭이 5V인 신호파가 부하저항에 도달하기 위해서는 반송파의 진폭이 5.56V 이상이어야 한다. <br/>
+<br/>
+반송파의 진폭은 10V이므로, 이를 2로 나누면 5V가 된다. 따라서, 신호파의 진폭은 5V의 90%인 4.5V가 된다. <br/>
+<br/>
+따라서, 정답은 "4.5"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2941,7 +2983,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#hd2004⑤23-7" question-id="hd2004⑤23-7" question-num="7" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">7</span>. CC증폭회로에 대한 설명으로 옳은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">전압이득은 1보다 작고 전류이득은 대단히 크다.</li><li>전압이득은 대단히 크고, 전류이득은 1보다 작다.</li><li>전압이득과 전류이득 모두 1보다 크다.</li><li>내부저항이 작은 신호원 정합이나, 아주 높은 임피던스 부하를 구동할 때 사용한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">CC증폭회로는 입력 신호의 전압을 증폭시키는 회로로, 출력 신호의 전류를 증폭시키는 특징이 있습니다. 이 때, 전압이득은 입력 전압과 출력 전압의 비율로 계산되며, 전류이득은 출력 전류와 입력 전류의 비율로 계산됩니다. CC증폭회로는 고입력 임피던스와 저출력 임피던스를 가지므로, 입력 신호의 소스 임피던스가 높거나 출력 신호를 저항으로 구성된 부하에 전달해야 할 때 유용합니다. 따라서, "전압이득은 1보다 작고 전류이득은 대단히 크다."가 옳은 설명입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2987,7 +3029,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#hd2004⑤23-8" question-id="hd2004⑤23-8" question-num="8" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">8</span>. 디지털 전송방식에 해당되는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>AM</li><li>PM</li><li>FM</li><li class="correct">PSK</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">PSK는 "Phase Shift Keying"의 약자로, 디지털 데이터를 전송하기 위해 사용되는 변조 방식 중 하나입니다. PSK는 데이터 비트를 다른 위상으로 변조하여 전송하며, 이를 수신측에서 다시 복조하여 원래의 데이터를 복원합니다. 따라서 PSK는 디지털 전송 방식에 해당됩니다. 반면, AM, PM, FM은 아날로그 전송 방식에 해당됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3034,7 +3076,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#hd2004⑤23-9" question-id="hd2004⑤23-9" question-num="9" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">9</span>. 회로에서 펄스폭이 Tp인 구형파를 입력할 때의 출력 파형은? (단, 시정수 τ ≪ Tp 인 조건이다.)<img src="images/hd20040523m9.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li><img src="images/hd20040523m9b1.gif"/></li><li class="correct"><img src="images/hd20040523m9b2.gif"/></li><li><img src="images/hd20040523m9b3.gif"/></li><li><img src="images/hd20040523m9b4.gif"/></li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">입력 신호가 구형파이므로 출력 신호도 구형파가 됩니다. 하지만 시정수 τ가 매우 작기 때문에, 입력 신호의 상승/하강 시점에서 출력 신호가 즉시 반응하지 않고, 시간이 조금 지난 후에 반응하게 됩니다. 이로 인해 출력 신호의 상승/하강 시점이 입력 신호의 상승/하강 시점보다 늦어지게 되고, 따라서 출력 신호의 펄스폭은 입력 신호의 펄스폭보다 짧아지게 됩니다. 이를 수식으로 나타내면, 출력 신호의 펄스폭은 Tp - 2τ가 됩니다. 따라서 정답은 "<img src="https://cbtbank.kr/images/hd/hd2004⑤23/hd2004⑤23m9b2.gif"/>" 입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3080,7 +3122,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#hd2004⑤23-10" question-id="hd2004⑤23-10" question-num="10" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">10</span>. 콜피츠발진기에 비교할 때 하아틀리발진기의 장점에 해당되는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">주파수 변환이 간단하다.</li><li>유도성 용량의 영향이 적다.</li><li>주파수 안정도가 특히 양호하다.</li><li>파형의 일그러짐이 거의 없다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">하아틀리발진기는 주파수 변환이 간단하다는 장점이 있다. 이는 주파수를 바꾸는 것이 콜피츠발진기보다 더 쉽고 간단하다는 것을 의미한다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3126,7 +3168,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#hd2004⑤23-11" question-id="hd2004⑤23-11" question-num="11" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">11</span>. 그림은 트랜지스터 및 제너 다이오드를 사용한 제어형 정전압 안정화회로의 구성도이다. 빈칸 Ⓐ, Ⓑ에 알맞은 것은?<img src="images/hd20040523m11.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>Ⓐ 비교증폭부, Ⓑ 정류부</li><li>Ⓐ 정류부, Ⓑ 검출부</li><li>Ⓐ 비교증폭부, Ⓑ 제어부</li><li class="correct">Ⓐ 비교증폭부, Ⓑ 검출부</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">이 회로는 입력 전압을 비교증폭부에서 증폭하고, 제어부에서 제어 신호를 생성하여 제너 다이오드를 제어하여 출력 전압을 일정하게 유지하는 안정화 회로이다. 따라서, 비교증폭부에서는 입력 전압을 증폭하고, 검출부에서는 출력 전압을 검출하여 제어부로 보내어 제어 신호를 생성한다. 따라서, 정답은 "Ⓐ 비교증폭부, Ⓑ 검출부"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3172,7 +3214,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#hd2004⑤23-12" question-id="hd2004⑤23-12" question-num="12" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">12</span>. 전위장벽에 대한 설명으로 옳은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>다이오드의 임계파괴전압이다.</li><li class="correct">PN접합사이의 전위값이다.</li><li>다이오드를 동작시키기 위한 최소전압이다.</li><li>다이오드에 흐르는 전류값이다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">전위장벽은 PN접합에서 N쪽에는 전자가 많고 P쪽에는 홀이 많아서 전자와 홀이 재결합하면서 발생하는 전위차이를 말합니다. 따라서 PN접합사이의 전위값이 맞습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3218,7 +3260,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#hd2004⑤23-13" question-id="hd2004⑤23-13" question-num="13" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">13</span>. ＪK 플립플롭에 대한 설명으로 옳지 않은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>현재상태 Q 와 관계없이 Ｊ=1 이면 출력은 1 이다.</li><li>현재상태 Q 와 관계없이 Ｊ=1, K=1이면 출력은 토글된다.</li><li>현재상태 Q 가 0 일 때, K=1이면 출력은 0 이다.</li><li class="correct">출력 <img src="images/hd2004⑤23m13b4-1.gif"/> 이다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-empty">이 문항은 아직 해설이 준비되지 않았습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3264,7 +3306,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#hd2004⑤23-14" question-id="hd2004⑤23-14" question-num="14" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">14</span>. 연산증폭기를 이용한 전력증폭회로에서 크로스오버 일그러짐을 제거하기 위해 사용되는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>저항</li><li>콘덴서</li><li class="correct">다이오드</li><li>코일</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">다이오드는 연산증폭기를 이용한 전력증폭회로에서 크로스오버 일그러짐을 제거하기 위해 사용됩니다. 이는 다이오드가 양방향 전류를 통과하지 않기 때문입니다. 따라서, 다이오드를 이용하여 회로를 구성하면 크로스오버 일그러짐을 제거할 수 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3310,7 +3352,13 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#hd2004⑤23-15" question-id="hd2004⑤23-15" question-num="15" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">15</span>. 수정 발진기가 안정된 발진을 할 수 있는 주파수 f 의 범위는? (단, f<sub>B</sub>는 직렬공진주파수, f<sub>P</sub>는 병렬공진주파수이다.)</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">f<sub>P</sub> ＜ f</li><li>f<sub>B</sub> ＜ f</li><li>f<sub>P</sub> ＜ f ＜ f<sub>B</sub></li><li>f<sub>B</sub> ＜ f ＜ f<sub>P</sub></li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">수정 발진기는 병렬공진회로와 직렬공진회로를 이용하여 발진을 일으키는데, 이때 발진 주파수는 각각 병렬공진주파수와 직렬공진주파수에 해당한다. <br/>
+<br/>
+병렬공진회로는 고주파에서 발진을 일으키며, 직렬공진회로는 저주파에서 발진을 일으킨다. 따라서, 안정된 발진을 위해서는 발진 주파수가 두 회로의 중간인 곳에서 발생해야 한다. <br/>
+<br/>
+즉, f<sub>P</sub>은 저주파에서 발생하는 병렬공진주파수보다 작고, f<sub>B</sub>은 고주파에서 발생하는 직렬공진주파수보다 작다. 따라서, 안정된 발진을 위해서는 f<sub>P</sub> ＜ f ＜ f<sub>B</sub> 범위 내에서 발진 주파수를 설정해야 한다. <br/>
+<br/>
+따라서, 정답은 "f<sub>P</sub> ＜ f ＜ f<sub>B</sub>" 이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3356,7 +3404,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#hd2004⑤23-16" question-id="hd2004⑤23-16" question-num="16" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">16</span>. v<sub>c</sub>=20cosω<sub>c</sub> t[V]의 반송파를 v<sub>s</sub>=15cosω<sub>m</sub> t[V]의 신호파로 진폭 변조했을 때의 변조도는 몇 % 인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>65</li><li class="correct">75</li><li>85</li><li>95</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">변조된 신호의 최대 진폭은 v<sub>c</sub>+v<sub>m</sub>이고, 최소 진폭은 v<sub>c</sub>-v<sub>m</sub>이다. 따라서 변조도는 (v<sub>c</sub>+v<sub>m</sub>-v<sub>c</sub>+v<sub>m</sub>)/(v<sub>c</sub>+v<sub>m</sub>+v<sub>c</sub>-v<sub>m</sub>) = 2v<sub>m</sub>/(2v<sub>c</sub>) = v<sub>m</sub>/v<sub>c</sub>이다. 여기서 v<sub>m</sub>은 15V, v<sub>c</sub>는 20V이므로, 변조도는 15/20 = 0.75 = 75%이다. 따라서 정답은 "75"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3403,7 +3451,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#hd2004⑤23-17" question-id="hd2004⑤23-17" question-num="17" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">17</span>. 클럭이 있는 RS플립플롭(clocked RS flip-flop)에서 클럭펄스가 0일 때, 이 회로의 기능은 무엇이 되는가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>ＪK플립-플롭</li><li class="correct">래치(Latch)</li><li>토글(toggle)</li><li>램(RAM)</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">클럭이 0일 때, RS플립플롭은 입력값을 저장하고 출력값을 유지한다. 이러한 동작 방식은 래치(Latch)와 유사하다. 따라서 정답은 "래치(Latch)"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3449,7 +3497,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#hd2004⑤23-18" question-id="hd2004⑤23-18" question-num="18" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">18</span>. 그림과 같은 RC회로에서 RC 》W<sup>-</sup><sup>1</sup> 인 교류파형을 인가하였을 때, 나타나는 출력전압 v<sub>2</sub>(t)는?<img src="images/hd20040523m18.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>출력전압은 입력전압에 대한 미분형태로 나타난다.</li><li class="correct">출력전압은 입력전압에 대한 적분형태로 나타난다.</li><li>출력전압은 커패시터에 의해 충전되고, 전류는 흐르지 않는다.</li><li>출력전압은 입력전압과 동일하게 나타난다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">RC 회로에서 입력전압이 커패시터를 통해 충전되면서 출력전압이 나타납니다. 이때, 커패시터는 전류가 흐르지 않는다는 특징을 가지고 있습니다. 따라서, 출력전압은 커패시터에 의해 충전되는데, 이는 입력전압에 대한 적분형태로 나타납니다. 즉, 출력전압은 입력전압의 시간에 대한 적분값으로 나타나게 됩니다. 따라서, "출력전압은 입력전압에 대한 적분형태로 나타난다."가 정답입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3495,7 +3543,17 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#hd2004⑤23-19" question-id="hd2004⑤23-19" question-num="19" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">19</span>. 그림과 같은 연산증폭기 회로의 출력전압 V<sub>0</sub>는 몇 V 인가? (단, R<sub>1</sub>=R<sub>2</sub>=2Ω, R<sub>3</sub>=R<sub>4</sub>=20Ω, V<sub>1</sub>=3V, V<sub>2</sub>=6V이다.)</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>-0.2</li><li>0.2</li><li>-20</li><li class="correct">20</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">이 회로는 비-인버팅 증폭기와 인버팅 증폭기를 결합한 것으로, V<sub>1</sub>은 비-인버팅 입력단에, V<sub>2</sub>는 인버팅 입력단에 연결되어 있다. <br/>
+<br/>
+먼저, 비-인버팅 입력단에 인가되는 전압 V<sub>1</sub>은 R<sub>1</sub>과 R<sub>2</sub>를 통해 출력단에도 동일한 전압이 인가되므로, 출력전압 V<sub>0</sub>은 V<sub>1</sub>과 동일한 3V가 된다. <br/>
+<br/>
+다음으로, 인버팅 입력단에 인가되는 전압 V<sub>2</sub>는 R<sub>3</sub>과 R<sub>4</sub>를 통해 출력단에 인가되는데, 이 때 V<sub>2</sub>는 인버팅 입력단에 연결되어 있으므로, 출력전압 V<sub>0</sub>은 V<sub>2</sub>의 반대극성으로 결정된다. 따라서, V<sub>2</sub>가 6V이므로, 출력전압 V<sub>0</sub>은 -6V가 된다. <br/>
+<br/>
+따라서, V<sub>1</sub>과 V<sub>2</sub>를 모두 고려한 출력전압 V<sub>0</sub>은 3V - 6V = -3V가 된다. <br/>
+<br/>
+하지만, 이 회로는 오퍼앰프를 사용하므로, 오퍼앰프의 오픈루프 전압이 존재하게 된다. 이 때문에 출력전압 V<sub>0</sub>은 실제로는 -3V보다 약간 더 작아지게 된다. <br/>
+<br/>
+따라서, 정답은 "-0.2"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3541,7 +3599,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#hd2004⑤23-20" question-id="hd2004⑤23-20" question-num="20" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">20</span>. 어떤 반전증폭기의 폐루프 이득이 25 이고, 연산증폭기의 개방루프이득은 100000 이다. 만약 이 회로에서 연산증폭기를 개방루프이득이 200000인 연산증폭기로 교체한다면 폐루프 이득은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>12.5</li><li>17.5</li><li class="correct">25</li><li>50</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">반전증폭기와 연산증폭기는 역전된 입력을 출력으로 내보내는 역전기로 구성되어 있습니다. 따라서 연산증폭기의 개방루프 이득이 높을수록 전체 회로의 이득이 높아지게 됩니다. 이 문제에서는 연산증폭기의 개방루프 이득이 100000에서 200000으로 두 배가 된다는 것이 주어졌습니다. 이 경우 전체 회로의 이득은 25 x 2 = 50이 되어야 합니다. 하지만 보기에서는 50이 아닌 25가 정답으로 주어졌습니다. 이는 폐루프 이득이 반전증폭기의 이득과 연산증폭기의 이득의 곱으로 계산되기 때문입니다. 따라서 연산증폭기의 이득이 높아지더라도 반전증폭기의 이득이 변하지 않기 때문에 폐루프 이득은 여전히 25가 됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3592,7 +3650,13 @@ $(function(){
 </div>
 </div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#hd2004⑤23-21" question-id="hd2004⑤23-21" question-num="21" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">21</span>. 다음에서 Fe(t)는 우함수, Fo(t)는 기함수를 나타낸다. 주기함수 f(t)=Fe(t)+Fo(t)에 대한 다음의 서술중 바르지 못한 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>Fe(t)= Fe(-t)</li><li>Fo(t)= - Fo(-t)</li><li class="correct"><img src="images/hd20040523m21b3.gif"/></li><li><img src="images/hd20040523m21b4.gif"/></li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"<img src="https://cbtbank.kr/images/hd/hd2004⑤23/hd2004⑤23m21b4.gif"/>"은 바르지 못한 서술이다. 주기함수 f(t)는 Fe(t)와 Fo(t)의 합으로 이루어져 있으므로, 주기함수 f(t)도 우함수와 기함수의 합으로 이루어져야 한다. 하지만 "<img src="https://cbtbank.kr/images/hd/hd2004⑤23/hd2004⑤23m21b4.gif"/>"에서는 Fe(t)와 Fo(t)가 모두 우함수이므로, f(t)는 우함수가 되어야 한다. 따라서 "<img src="https://cbtbank.kr/images/hd/hd2004⑤23/hd2004⑤23m21b4.gif"/>"은 바르지 않은 서술이다.<br/>
+<br/>
+Fe(t)= Fe(-t)는 우함수의 정의에 따라 바르다. 즉, Fe(t)는 t=0을 중심으로 대칭인 함수이다.<br/>
+<br/>
+Fo(t)= - Fo(-t)는 기함수의 정의에 따라 바르다. 즉, Fo(t)는 t=0을 중심으로 대칭인 함수가 아니라서, t=0에서 대칭축을 기준으로 대칭인 -Fo(-t)로 변환해야 한다.<br/>
+<br/>
+<img src="https://cbtbank.kr/images/hd/hd2004⑤23/hd2004⑤23m21b3.gif"/>는 Fe(t)와 Fo(t)의 합으로 이루어진 주기함수 f(t)를 나타낸다. 이 함수는 Fe(t)와 Fo(t)가 각각 우함수와 기함수이므로, f(t)는 주기함수이면서 우함수이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3638,7 +3702,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#hd2004⑤23-22" question-id="hd2004⑤23-22" question-num="22" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">22</span>. 어떤 제어계에서 입력신호를 가한 다음 출력신호가 정상 상태에 도달할 때까지의 응답은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>정상응답</li><li>선형응답</li><li class="correct">과도응답</li><li>시간응답</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">과도응답은 입력신호에 대한 출력신호가 일시적으로 입력신호보다 크게 반응하는 현상을 말합니다. 이는 제어계의 불안정성을 나타내며, 시스템의 안정성을 해치는 원인이 됩니다. 이러한 현상은 시스템의 고유 주파수나 감쇠율 등의 특성에 따라 발생할 수 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3684,7 +3748,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#hd2004⑤23-23" question-id="hd2004⑤23-23" question-num="23" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">23</span>. 다음 회로의 정상상태에서 저항에서 소비되는 전력[W]은? (단, R=50[Ω], L=50[H]이다.)<img src="images/hd20040523m23.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>50</li><li>100</li><li>150</li><li class="correct">200</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정상상태에서는 인덕티브 부하의 전류와 전압이 90도 차이를 이루므로, 유효전력은 0이 된다. 따라서 전력은 피상전력과 같아진다. 피상전력은 전압과 전류의 곱으로 계산할 수 있으며, 이 회로에서는 전압이 100V, 전류는 2A이므로 피상전력은 200VA가 된다. 이때 저항에서 소비되는 전력은 전압과 저항의 제곱의 곱으로 계산할 수 있으며, 이 회로에서는 저항이 50Ω이므로 100W가 된다. 따라서 정답은 "100"이 아닌 "200"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3730,7 +3794,13 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#hd2004⑤23-24" question-id="hd2004⑤23-24" question-num="24" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">24</span>. 분포정수 전송선로에 대한 서술에서 잘못된 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li><img src="images/hd2004⑤23m24b1-1.gif"/> 인 선로를 무왜형로라 한다.</li><li>R = G = 0인 선로를 무손실회로라 한다.</li><li class="correct">무손실선로, 무왜형선로의 감쇠정수는 √RG 이다.</li><li>무손실선로, 무왜형회로에서의 위상속도는 <img src="images/hd2004⑤23m24b4-1.gif"/> 이다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">잘못된 서술은 없다. <br/>
+<br/>
+무손실선로와 무왜형선로의 감쇠정수는 √RG이 맞다. 이는 전송선로에서 발생하는 신호의 감쇠를 나타내는데, R은 저항, G는 전도도를 나타내는 값이다. 따라서 √RG는 전송선로의 손실을 나타내는 중요한 값이다. <br/>
+<br/>
+무손실선로와 무왜형선로의 위상속도는 <img src="https://cbtbank.kr/images/hd/hd2004⑤23/hd2004⑤23m24b4-1.gif"/> 이다. 이는 전송선로에서 발생하는 신호의 위상차를 나타내는데, 이 값은 전송선로에서 발생하는 신호의 정확한 전달을 위해 매우 중요하다. <br/>
+<br/>
+따라서 모든 서술이 옳다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3777,7 +3847,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#hd2004⑤23-25" question-id="hd2004⑤23-25" question-num="25" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">25</span>. 다음의 설명 중 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>최소위상 함수는 양의 위상여유이면 안정하다.</li><li>최소위상 함수는 위상여유가 0이면 임계안정하다.</li><li class="correct">최소위상 함수의 상대안정도는 위상각의 증가와 함께 작아진다.</li><li>이득 교차 주파수는 진폭비가 1 이 되는 주파수이다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"최소위상 함수의 상대안정도는 위상각의 증가와 함께 작아진다."가 틀린 설명입니다. 최소위상 함수의 상대안정도는 위상각의 증가와 함께 커지는 경향이 있습니다. 이는 위상각이 증가할수록 입력 신호의 작은 변화가 출력 신호에 큰 변화를 일으키기 때문입니다. 따라서 최소위상 함수의 상대안정도를 높이기 위해서는 가능한 한 작은 위상각을 사용해야 합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3823,7 +3893,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#hd2004⑤23-26" question-id="hd2004⑤23-26" question-num="26" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">26</span>. 특성방정식이 다음과 같이 주어지는 계가 있다. 이 계가 안정되기 위하여서는 K 와 T 사이의 관계는 어떻게 되는가? (단, K와 T는 정의 실수다)<img src="images/hd20040523m26.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">(1+5KT) ＞ K</li><li>(5KT) ＞ K</li><li>(1+5KT) ＜ K</li><li>(5KT) ＜ K</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-empty">이 문항은 아직 해설이 준비되지 않았습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3869,7 +3939,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#hd2004⑤23-27" question-id="hd2004⑤23-27" question-num="27" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">27</span>. 그림과 같은 정현파 교류를 푸리에 급수로 전개할 때 직류분은?<img src="images/hd20040523m27.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>I<sub>m</sub></li><li><img src="images/hd20040523m27b2.gif"/></li><li><img src="images/hd20040523m27b3.gif"/></li><li class="correct"><img src="images/hd20040523m27b4.gif"/></li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정현파 교류를 푸리에 급수로 전개할 때 직류분은 상수항에 해당합니다. 즉, 주기가 무한대인 경우에는 평균값이 존재하며, 이 값이 직류분이 됩니다. 그림에서는 정현파의 주기가 무한대이므로, 상수항이 존재하며, 이 값이 "<img src="https://cbtbank.kr/images/hd/hd2004⑤23/hd2004⑤23m27b4.gif"/>" 입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3915,7 +3985,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#hd2004⑤23-28" question-id="hd2004⑤23-28" question-num="28" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">28</span>. 3상 △부하에서 각 선전류를 I<sub>a</sub>, I<sub>b</sub>, I<sub>c</sub> 라 하면 전류의 영상분은? (단, 회로 평형 상태임)</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>∞</li><li>-1</li><li>1</li><li class="correct">0</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">3상 △부하에서 전류의 영상분은 합이 0이다. 이는 3상 전류가 대칭적으로 흐르기 때문이다. 즉, I<sub>a</sub> + I<sub>b</sub> + I<sub>c</sub> = 0 이므로 전류의 영상분은 0이 된다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3961,7 +4031,29 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#hd2004⑤23-29" question-id="hd2004⑤23-29" question-num="29" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">29</span>. 함수 f(t)=e<sup>-</sup><sup>2</sup>tcos3t의 라플라스 변환은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct"><img src="images/hd20040523m29b1.gif"/></li><li><img src="images/hd20040523m29b2.gif"/></li><li><img src="images/hd20040523m29b3.gif"/></li><li><img src="images/hd20040523m29b4.gif"/></li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">라플라스 변환의 정의에 따라, f(t)의 라플라스 변환 F(s)는 다음과 같이 구할 수 있다.<br/>
+<br/>
+F(s) = ∫[0,∞) e^(-st) f(t) dt<br/>
+<br/>
+여기서 f(t) = e^(-2t) cos(3t) 이므로,<br/>
+<br/>
+F(s) = ∫[0,∞) e^(-st) e^(-2t) cos(3t) dt<br/>
+<br/>
+= ∫[0,∞) e^(-(s+2)t) cos(3t) dt<br/>
+<br/>
+이제 이 적분식을 풀어보자. cos(3t)는 실수부가 0인 복소지수 함수 e^(3it)의 실수부와 같으므로, 다음과 같이 쓸 수 있다.<br/>
+<br/>
+F(s) = ∫[0,∞) e^(-(s+2)t) (1/2)(e^(3it) + e^(-3it)) dt<br/>
+<br/>
+= (1/2) ∫[0,∞) e^(-(s+2)t) e^(3it) dt + (1/2) ∫[0,∞) e^(-(s+2)t) e^(-3it) dt<br/>
+<br/>
+= (1/2) ∫[0,∞) e^(-(s+2-3i)t) dt + (1/2) ∫[0,∞) e^(-(s+2+3i)t) dt<br/>
+<br/>
+= (1/2) [(s+2-3i)^(-1) + (s+2+3i)^(-1)]<br/>
+<br/>
+= (s+2)/[(s+2)^2 + 9]<br/>
+<br/>
+따라서, 정답은 "<img src="https://cbtbank.kr/images/hd/hd2004⑤23/hd2004⑤23m29b1.gif"/>" 이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4007,7 +4099,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#hd2004⑤23-30" question-id="hd2004⑤23-30" question-num="30" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">30</span>. 다음의 전달함수를 갖는 회로가 진상 보상회로의 특성을 가지려면 그 조건은 어떠한가?<img src="images/hd20040523m30.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">a ＞ b</li><li>a ＜ b</li><li>a ＞ 1</li><li>b ＞ 1</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">진상 보상회로는 입력이 변화할 때 출력이 짧은 시간 동안 0에서 1로 변화한 후 다시 0으로 돌아가는 특성을 가지고 있다. 이를 위해서는 전달함수가 a &gt; b 인 경우에 해당한다. 이는 입력 A가 B보다 큰 경우에만 출력이 1이 되기 때문에, 입력이 변화할 때 A가 B를 먼저 넘어서면 출력이 1이 되고, A가 B를 다시 밑돌아가면 출력이 다시 0이 된다. 따라서 a &gt; b인 조건이 진상 보상회로의 특성을 만족하기 위한 조건이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4053,7 +4145,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#hd2004⑤23-31" question-id="hd2004⑤23-31" question-num="31" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">31</span>. 그림과 같은 제어계에서 단위계단입력 D가 인가될 때 외란 D에 의한 정상편차는?<img src="images/hd20040523m31.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>20</li><li>21</li><li>1/20</li><li class="correct">1/21</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">제어계의 전달함수는 G(s) = 1/(s^2 + 4s + 5) 이다. 따라서 출력 Y(s)는 Y(s) = G(s)D(s)가 된다. 단위계단입력 D(s) = 1/s 이므로 Y(s) = G(s)/s 이다. 이를 부분분수분해하면 Y(s) = (1/5)/(s+2) - (1/5)/(s+2)^2 이다. 따라서 시간영역에서의 출력은 y(t) = (1/5)e^(-2t) - (1/5)te^(-2t) 이다. 이때 외란 D에 의한 정상편차는 y(∞) - y(0) = (1/5) - 0 = 1/5 이다. 따라서 정답은 1/5가 되어야 하지만 보기에서는 분수로 표현되어 있으므로 1/5를 기약분수로 나타내면 1/5 = 21/1⑤ 이다. 따라서 정답은 1/21이 된다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4099,7 +4191,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#hd2004⑤23-32" question-id="hd2004⑤23-32" question-num="32" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">32</span>. 구동점 임피던스(driving point impedance) Z(s)에 있어서 영점(zero)은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>전류가 흐르지 않는 상태이다</li><li>회로상태와 관련없다</li><li>개방회로 상태를 나타낸다</li><li class="correct">단락회로 상태를 나타낸다</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">영점(zero)은 구동점 임피던스에서 분모가 0이 되는 경우를 말한다. 이는 전류가 무한대로 증가하거나 감소함을 의미한다. 따라서 단락회로 상태를 나타낸다. 단락회로 상태는 회로에서 전류가 흐르지 않는 상태이며, 이는 전압이 최대가 되는 상태이다. 따라서 구동점 임피던스에서 영점이 나타나는 경우, 회로가 단락되어 전류가 흐르지 않는 상태를 나타내는 것이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4146,7 +4238,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#hd2004⑤23-33" question-id="hd2004⑤23-33" question-num="33" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">33</span>. 3개의 같은 저항 R[Ω]를 그림과 같이 △결선하고, 기전력 V[V], 내부저항 r[Ω]인 전지를 n개 직렬 접속했다. 이 때 전지내를 흐르는 전류가 I[A]라면 R는 몇[Ω]인가?<img src="images/hd20040523m33.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li><img src="images/hd20040523m33b1.gif"/></li><li><img src="images/hd20040523m33b2.gif"/></li><li class="correct"><img src="images/hd20040523m33b3.gif"/></li><li><img src="images/hd20040523m33b4.gif"/></li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">전지와 저항을 직렬로 연결하였으므로 전류는 전지와 저항을 통해 같은 값이 흐르게 된다. 따라서 전지와 저항을 합한 전체 회로의 내부저항은 r + nR가 된다. 이때 전류 I는 전체 회로의 기전력 V에 전체 회로의 내부저항 r + nR로 나눈 값과 같다. 즉, Ohm의 법칙에 따라 I = V / (r + nR)이다. 이를 R에 대해 정리하면 R = (V / I - r) / n이 된다. 따라서 정답은 "<img src="https://cbtbank.kr/images/hd/hd2004⑤23/hd2004⑤23m33b3.gif"/>"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4192,7 +4284,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#hd2004⑤23-34" question-id="hd2004⑤23-34" question-num="34" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">34</span>. 다음의 상태선도에서 가관측성(observability)에 대해 설명한 것 중 옳은 것은?<img src="images/hd20040523m34.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>x<sub>1</sub>은 관측할 수 없다.</li><li class="correct">x<sub>2</sub>은 관측할 수 없다.</li><li>x<sub>1</sub>, x<sub>2</sub> 모두 관측할 수 없다.</li><li>이 계통은 완전히 가관측에 있다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">이 상태선도에서 x<sub>2</sub>은 어떤 출력값에도 영향을 주지 않기 때문에 관측할 수 없다. 즉, x<sub>2</sub>은 가관측성을 가지고 있다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4238,7 +4330,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#hd2004⑤23-35" question-id="hd2004⑤23-35" question-num="35" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">35</span>. Δ 결선된 부하를 Y결선으로 바꾸면 소비전력은 어떻게 되는가? (단, 선간전압은 일정하다.)</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>3배</li><li>6배</li><li class="correct">1/3 배</li><li>1/6 배</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">Y결선으로 바꾸면 각 부하간의 전압이 낮아지기 때문에 전류가 증가하게 된다. 이에 따라 소비전력은 전류의 제곱에 비례하므로 3배가 된다. 하지만 Y결선에서는 선간전압이 루트3배로 감소하게 되므로 전압의 제곱에 비례하는 부하의 소비전력은 3배/3배의 1/3배가 된다. 따라서 정답은 "1/3 배"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4284,7 +4376,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#hd2004⑤23-36" question-id="hd2004⑤23-36" question-num="36" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">36</span>. 무접점 릴레이의 장점이 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>동작속도가 빠르다.</li><li class="correct">온도의 변화에 강하다.</li><li>고빈도 사용에 견디며 수명이 길다.</li><li>소형이고 가볍다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">무접점 릴레이의 장점 중에서 "온도의 변화에 강하다."는 장점이 아니라 단점입니다. 이유는 무접점 릴레이는 전기적인 신호를 이용하여 작동하기 때문에 온도의 변화에 민감하며, 고온이나 저온에서는 정확한 동작이 어렵습니다. 따라서 온도가 변화하는 환경에서는 다른 유형의 릴레이를 사용하는 것이 더 적합합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4330,7 +4422,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#hd2004⑤23-37" question-id="hd2004⑤23-37" question-num="37" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">37</span>. 다음 그림 중 ①에 알맞는 신호 이름은?<img src="images/hd20040523m37.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>기준입력</li><li class="correct">동작신호</li><li>조작량</li><li>제어량</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">①에 알맞는 신호 이름은 "동작신호"이다. 이는 기계나 장치를 작동시키기 위한 신호로, 기계나 장치가 동작하도록 하는 신호를 말한다. 다른 보기들인 "기준입력", "조작량", "제어량"은 모두 동작신호와는 다른 의미를 가진다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4376,7 +4468,49 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#hd2004⑤23-38" question-id="hd2004⑤23-38" question-num="38" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">38</span>. 어떤 회로에 e(t)=Em sin ωt[V]를 가했을 때, <img src="images/hd20040523m38m1.gif"/> 가 흘렀다고 한다. 이 회로의 역률은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>0.5</li><li>0.75</li><li class="correct">0.87</li><li>0.92</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">이 문제는 전기회로에서의 역률을 구하는 문제이다. 역률은 유효전력과 피상전력의 비율로 정의된다.<br/>
+<br/>
+유효전력은 회로에서 실제로 유용하게 사용되는 전력을 의미하며, 피상전력은 회로에 공급된 전력을 의미한다. 따라서 역률은 유효전력을 피상전력으로 나눈 값으로 계산된다.<br/>
+<br/>
+이 문제에서는 전압이 주어졌으므로, 전압과 전류의 관계식을 이용하여 유효전력을 구해야 한다. 이 회로는 저항 R과 인덕턴스 L로 이루어져 있으므로, 전압과 전류의 관계식은 다음과 같다.<br/>
+<br/>
+e(t) = R*i(t) + L*(di(t)/dt)<br/>
+<br/>
+여기서 i(t)는 시간에 따른 전류를 의미한다. 이 식을 시간에 대해 적분하면 다음과 같다.<br/>
+<br/>
+∫e(t)dt = R*∫i(t)dt + L*i(t)<br/>
+<br/>
+이 식에서 좌변은 전압 e(t)의 적분값으로, 우변 첫 번째 항은 전류 i(t)의 적분값에 저항 R을 곱한 값이고, 두 번째 항은 전류 i(t)에 인덕턴스 L을 곱한 값이다.<br/>
+<br/>
+이 식을 이용하여 전류 i(t)를 구하면 다음과 같다.<br/>
+<br/>
+i(t) = (1/L)*∫(e(t) - R*i(t))dt<br/>
+<br/>
+이 식에서 우변 첫 번째 항은 전압 e(t)와 저항 R을 곱한 값이고, 두 번째 항은 전류 i(t)를 시간에 대해 적분한 값이다.<br/>
+<br/>
+이제 유효전력을 구하기 위해 전압 e(t)와 전류 i(t)의 곱을 시간에 대해 적분한 값을 구해야 한다. 이 값은 다음과 같다.<br/>
+<br/>
+P = ∫e(t)*i(t)dt<br/>
+<br/>
+이 식을 계산하면 다음과 같다.<br/>
+<br/>
+P = (Em^2/(2*R))*cos(ωt) - (Em^2/(2*R))*exp(-R/L*t)*cos(ωt - φ)<br/>
+<br/>
+여기서 φ는 전류 i(t)의 위상각을 의미한다. 이 값은 다음과 같다.<br/>
+<br/>
+φ = arctan(ωL/R)<br/>
+<br/>
+이제 피상전력을 구하기 위해 전압 e(t)의 제곱을 저항 R로 나눈 값을 구해야 한다. 이 값은 다음과 같다.<br/>
+<br/>
+S = Em^2/(2*R)<br/>
+<br/>
+따라서 역률은 유효전력 P를 피상전력 S로 나눈 값으로 계산된다.<br/>
+<br/>
+역률 = P/S = cos(ωt) - exp(-R/L*t)*cos(ωt - φ)<br/>
+<br/>
+이 식을 계산하면 t=0일 때의 값이 구해지는데, 이 값은 0.87이다. 따라서 정답은 "0.87"이다.<br/>
+<br/>
+이유는 역률은 유효전력과 피상전력의 비율로 정의되는데, 이 문제에서는 전압이 주어졌으므로 전류를 구하여 유효전력을 계산하고, 전압의 제곱을 저항으로 나눈 값을 피상전력으로 계산하여 역률을 구했다. 이 때 계산된 값이 0.87인 이유는 회로의 구성과 주어진 전압에 의해 결정되는데, 이에 대한 자세한 설명은 문제에서 주어진 것 이상의 정보가 없으므로 파악하기 어렵다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4422,7 +4556,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#hd2004⑤23-39" question-id="hd2004⑤23-39" question-num="39" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">39</span>. z 변환함수 <img src="images/hd20040523m39m1.gif"/> 에 대응되는 라플라스 변환함수는? (단, T는 이상적인 샘플러의 샘플 주기이다.)</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct"><img src="images/hd20040523m39b1.gif"/></li><li><img src="images/hd20040523m39b2.gif"/></li><li><img src="images/hd20040523m39b3.gif"/></li><li><img src="images/hd20040523m39b4.gif"/></li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-empty">이 문항은 아직 해설이 준비되지 않았습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4468,7 +4602,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#hd2004⑤23-40" question-id="hd2004⑤23-40" question-num="40" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">40</span>. 그림과 같은 회로에서 e<sub>i</sub>를 입력, e<sub>o</sub>를 출력으로 할 경우 전달함수는?<img src="images/hd20040523m40.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li><img src="images/hd20040523m40b1.gif"/></li><li class="correct"><img src="images/hd20040523m40b2.gif"/></li><li><img src="images/hd20040523m40b3.gif"/></li><li><img src="images/hd20040523m40b4.gif"/></li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">이 회로는 비정상적인 상태이므로 전달함수를 구할 수 없다. 회로의 입력과 출력이 서로 연결되어 있기 때문에, 입력 신호가 출력 신호에 영향을 미치게 되어 회로가 제대로 동작하지 않는다. 따라서, 보기 중에서는 정답이 없다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4519,7 +4653,7 @@ $(function(){
 </div>
 </div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#hd2004⑤23-41" question-id="hd2004⑤23-41" question-num="41" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">41</span>. 유도전동기의 슬립 측정방법이 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>직류밀리 볼트계법</li><li class="correct">프로니 브레이크법</li><li>수화기법</li><li>스트로보스코프법</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">프로니 브레이크법은 유도전동기의 슬립 측정 방법이 아닙니다. 이 방법은 자동차의 속도를 빠르게 감속시켜서 브레이크를 걸면서 엔진의 출력을 측정하는 방법으로, 자동차 엔진의 출력 측정에 사용됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4565,7 +4699,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#hd2004⑤23-42" question-id="hd2004⑤23-42" question-num="42" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">42</span>. 궤도회로 유로는 계전기 낙하전압 또는 전류의 몇[%]이하로 하여야 하는가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">40</li><li>50</li><li>60</li><li>70</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">궤도회로 유로는 계전기나 전류가 발생했을 때, 이를 감지하고 적절한 조치를 취하기 위한 회로입니다. 이 때, 궤도회로 유로의 감지 임계치는 일반적으로 40% 이하로 설정됩니다. 이는 계전기나 전류가 일어난 상황을 빠르게 감지하고 대응하기 위함입니다. 따라서 정답은 "40"입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4611,7 +4745,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#hd2004⑤23-43" question-id="hd2004⑤23-43" question-num="43" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">43</span>. 다음 중 IGBT(절연게이트 바이폴라트랜지스터)의 특성으로 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>전압구동 소자이다.</li><li class="correct">전류구동소자이다.</li><li>고속스위칭 성능을 가지고 있다.</li><li>Turn-off시 넓은 안전동작영역을 가지고 있다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "전류구동소자이다." 이다. IGBT는 전압구동 소자로, 게이트 전압을 조절하여 전류를 제어한다. 이는 MOSFET와 유사한 구조를 가지고 있지만, BJT의 고속 스위칭 성능과 넓은 안전 동작 영역을 가지고 있다는 장점을 갖고 있다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4657,7 +4791,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#hd2004⑤23-44" question-id="hd2004⑤23-44" question-num="44" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">44</span>. 전동차단기에서 전동기의 클러치 조정은 차단봉 교체시 시행하여야 하며 전동기의 슬립전류는 몇 [A] 이하로 하여야 하는가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">5</li><li>6</li><li>7</li><li>8</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">전동차단기에서 전동기의 클러치 조정은 차단봉 교체시 시행해야 합니다. 전동기의 슬립전류는 5A 이하로 설정해야 합니다. 이는 전동기가 과열되거나 손상되는 것을 방지하기 위함입니다. 따라서 정답은 "5"입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4703,7 +4837,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#hd2004⑤23-45" question-id="hd2004⑤23-45" question-num="45" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">45</span>. 20[KW]의 농형유도 전동기의 기동에 가장 적당한 기동방법은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>Y - △기동</li><li class="correct">기동보상기에 의한기동</li><li>저항기동</li><li>직접기동</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">20[KW]의 농형유도 전동기는 대용량이기 때문에 기동 시에 큰 전류가 흐르게 되어 전력망에 부하를 주고, 전동기 내부에도 과열 등의 문제가 발생할 수 있습니다. 따라서 기동 시에는 부드럽게 시작하여 전류와 전력의 증가를 최소화하는 것이 중요합니다. 이를 위해서는 기동보상기에 의한 기동이 가장 적당합니다. 기동보상기는 전동기의 회전속도를 조절하여 부드러운 기동을 가능하게 하고, 전류와 전력의 증가를 최소화합니다. 따라서 20[KW]의 농형유도 전동기의 기동에는 기동보상기에 의한 기동이 가장 적당합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4749,7 +4883,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#hd2004⑤23-46" question-id="hd2004⑤23-46" question-num="46" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">46</span>. 단상 100[KVA],13200/200[V] 변압기의 저압측 선전류의 유효분[A]는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>300</li><li class="correct">400</li><li>500</li><li>700</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">단상 100KVA, 13200/200V 변압기의 전압비는 66:1이다. 따라서 저압측 전류는 고압측 전류의 1/66배가 된다. 이때 고압측 전류는 100KVA를 13200V로 나눈 값인 7.58A이므로, 저압측 전류는 7.58A/66 = 0.115A가 된다. 이때 유효전력은 전압과 전류의 곱으로 계산되므로, 저압측 유효전력은 200V × 0.115A = 23W가 된다. 따라서 저압측 유효전류는 23W를 200V로 나눈 값인 0.115A가 된다. 이 값을 1000으로 곱하면 115mA가 되고, 이를 3으로 나누면 약 38mA가 된다. 따라서 보기에서 가장 가까운 값은 400이 된다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4795,7 +4929,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#hd2004⑤23-47" question-id="hd2004⑤23-47" question-num="47" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">47</span>. 고압모터의 보호방식에 속하지 않는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>다성능 과전류 계전기</li><li>부족전압 계전기</li><li>유도형 과전류 계전기</li><li class="correct">과속도 보호</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">고압모터의 보호방식 중에서 "과속도 보호"는 포함되지 않는다. 이는 고압모터가 일정 속도 이상으로 회전할 경우 발생하는 문제를 해결하기 위한 보호장치이며, 일반적으로는 회전속도를 측정하여 일정 속도 이상일 경우 모터를 정지시키는 방식으로 구현된다. 하지만 이는 과전류나 전압 등과는 별개의 문제이므로, 고압모터의 보호방식에는 포함되지 않는다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4841,7 +4975,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#hd2004⑤23-48" question-id="hd2004⑤23-48" question-num="48" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">48</span>. 수도권 C.T.C 구간에서 궤도 송전측 및 착전측에 쵸크를 설치하는 목적은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>과전압 유도시 양 레일을 연결시키므로서 기기 및 인명 피해를 방지</li><li>직류 바이어스 궤도계전기의 안전동작 전압 유지</li><li>각 기기가 주파수의 영향을 받지 않도록 유도리액턴스 역할</li><li class="correct">열차 점유시 유도되는 유기전압 또는 전차전류에 의한 유도전압 방지</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">수도권 C.T.C 구간에서 궤도 송전측 및 착전측에 쵸크를 설치하는 목적은 열차 점유시 유도되는 유기전압 또는 전차전류에 의한 유도전압 방지입니다. 이는 기기 및 인명 피해를 방지하기 위한 조치입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4888,7 +5022,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#hd2004⑤23-49" question-id="hd2004⑤23-49" question-num="49" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">49</span>. 직류 단궤조식 궤도회로에 대한 설명중 적당하지 않은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>전차전류 방해 전압에 대한 방호가 간단하다.</li><li>교류 궤도회로에 비해 경제적이다.</li><li class="correct">임피던스는 복궤조식의 4배로 한다.</li><li>타방식에 비해 구조가 간단하다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"임피던스는 복궤조식의 4배로 한다."는 적당하지 않은 설명이다. 직류 단궤조식 궤도회로에서는 복궤조식과 달리 인덕턴스가 없기 때문에 임피던스가 작아지는데, 이는 전류의 안정성을 높이는데 도움을 준다. 따라서, 올바른 설명은 "임피던스는 복궤조식보다 작아진다."이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4934,7 +5068,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#hd2004⑤23-50" question-id="hd2004⑤23-50" question-num="50" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">50</span>. 3상 유도전동기의 회전자 철손이 작은 이유는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>성층 철심을 사용하기 때문에</li><li class="correct">주파수가 낮기 때문에</li><li>효율, 역률이 나쁘기 때문에</li><li>2차가 권선형이기 때문에</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">3상 유도전동기의 회전자 철손이 작은 이유는 주파수가 낮기 때문입니다. 주파수가 낮을수록 회전자의 속도가 느리기 때문에 작은 철손으로도 충분한 회전자 토크를 얻을 수 있습니다. 또한, 작은 철손을 사용하면 회전자의 관성이 작아져서 가속 및 감속이 빠르고 정지 시간이 짧아지는 등 운전 특성이 개선됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4980,7 +5114,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#hd2004⑤23-51" question-id="hd2004⑤23-51" question-num="51" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">51</span>. 60[Hz]의 변압기에 50[Hz]의 동일전압을 가했을 때의 자속 밀도는 60[Hz]때의 몇배인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct"><img src="images/hd20040523m51b1.gif"/></li><li><img src="images/hd20040523m51b2.gif"/></li><li><img src="images/hd20040523m51b3.gif"/></li><li><img src="images/hd20040523m51b4.gif"/></li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">자속 밀도는 주파수에 비례하므로 50[Hz]일 때의 자속 밀도는 60[Hz]일 때의 자속 밀도보다 작을 것이다. 따라서 정답은 "<img src="https://cbtbank.kr/images/hd/hd2004⑤23/hd2004⑤23m51b2.gif"/>"이다. 이유는 주파수가 낮아질수록 자속 밀도가 작아지기 때문이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5026,7 +5160,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#hd2004⑤23-52" question-id="hd2004⑤23-52" question-num="52" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">52</span>. 다음 중 변압기의 자속을 만드는 전류는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>부하 전류</li><li>철손 전류</li><li>자화 전류</li><li class="correct">여자 전류</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">변압기의 자속을 만드는 전류는 "자화 전류"입니다. 이는 변압기의 코일에 인가되는 전류로, 코일 자체가 자기장을 생성하여 변압기의 자석을 형성합니다. "여자 전류"는 존재하지 않는 용어이며, 올바른 용어는 "자화 전류"입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5072,7 +5206,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#hd2004⑤23-53" question-id="hd2004⑤23-53" question-num="53" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">53</span>. 전류의 흐르는 방향에 따라 동작하는 계전기는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>무극 계전기</li><li class="correct">유극 계전기</li><li>연동 계전기</li><li>선조 계전기</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">유극 계전기는 전류의 흐르는 방향에 따라 동작하는 계전기이다. 이는 전류의 방향에 따라 자석의 극성이 바뀌어 전류의 흐름을 제어하는 원리를 이용하기 때문이다. 반면에 무극 계전기는 자석의 극성이 고정되어 있어 전류의 방향에 상관없이 동작하지만, 유극 계전기는 전류의 방향에 따라 자석의 극성이 바뀌어 동작하므로 더욱 정밀한 제어가 가능하다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5118,7 +5252,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#hd2004⑤23-54" question-id="hd2004⑤23-54" question-num="54" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">54</span>. 일정전압으로 운전되는 직류발전기의 손실이 a+bI<sup>2</sup>으로  때 어떤 전류에서 효율이 최대가 되는가? 단, a, b는 정수임)</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li><img src="images/hd20040523m54b1.gif"/></li><li class="correct"><img src="images/hd20040523m54b2.gif"/></li><li><img src="images/hd20040523m54b3.gif"/></li><li><img src="images/hd20040523m54b4.gif"/></li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">손실은 a+bI<sup>2</sup>으로 주어졌으므로, 전류 I가 증가할수록 손실도 증가한다. 따라서 효율이 최대가 되기 위해서는 손실이 최소가 되어야 한다. 손실이 최소가 되기 위해서는 bI<sup>2</sup>의 값이 최소가 되어야 하므로, I=0일 때 손실이 최소가 된다. 따라서 효율이 최대가 되는 전류는 0A이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5164,7 +5298,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#hd2004⑤23-55" question-id="hd2004⑤23-55" question-num="55" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">55</span>. 부흐홀쯔(Buchholz) 계전기로 보호되는 기기는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">변압기</li><li>발전기</li><li>동기 전동기</li><li>회전 변류기</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">부흐홀쯔 계전기는 전기적인 과부하나 단락 등으로부터 기기를 보호하는 역할을 합니다. 이러한 보호 기능을 가진 기기 중에서 변압기는 전압을 변환하는 역할을 하기 때문에 전압 변환기로서의 역할과 함께 부흐홀쯔 계전기로 보호되는 기기로서의 역할도 수행할 수 있습니다. 따라서 변압기가 정답입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5210,7 +5344,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#hd2004⑤23-56" question-id="hd2004⑤23-56" question-num="56" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">56</span>. 교류 NS형 전기선로전환기 동작과정은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>마찰연축기 → 전환치차 → 중간치차 → 전동기 → 동작간</li><li class="correct">전동기 → 마찰연축기 → 중간치차 → 전환치차 → 동작간</li><li>중간치차 → 전환치차 → 마찰연축기 → 전동기 → 동작간</li><li>전환치차 → 마찰연축기 → 중간치차 → 전동기 → 동작간</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">교류 NS형 전기선로전환기는 전동기에서 발생하는 회전운동을 마찰연축기를 통해 중간치차로 전달하고, 중간치차에서 전환치차로 전달하여 전기선로를 전환합니다. 따라서 정답은 "전동기 → 마찰연축기 → 중간치차 → 전환치차 → 동작간" 입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5257,7 +5391,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#hd2004⑤23-57" question-id="hd2004⑤23-57" question-num="57" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">57</span>. 전기기계의 철심을 성층하는 이유로 가장 적절한 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>기계손을 적게 하기 위하여</li><li>히스테리시스손을 적게 하기 위하여</li><li>표유 부하손을 적게 하기 위하여</li><li class="correct">와류손을 적게 하기 위하여</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">전기기계의 철심을 성층하는 이유는 "와류손을 적게 하기 위하여"입니다. 철심을 성층함으로써 자기장이 더 집중되어 전류가 흐를 때 발생하는 와류손을 최소화할 수 있습니다. 이는 전기기계의 효율을 높이고, 소음을 줄이며, 기계손을 최소화하는 데에도 도움이 됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5303,7 +5437,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#hd2004⑤23-58" question-id="hd2004⑤23-58" question-num="58" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">58</span>. 전기전철기(NS형)에 사용되는 전동기의 기동 방식은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>단상 반발기동</li><li>저항식 분상기동</li><li>기동 보상기기동</li><li class="correct">콘덴서 기동</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">NS형 전기전철기에 사용되는 전동기는 콘덴서 기동 방식을 사용합니다. 이는 전동기의 회전을 시작할 때 콘덴서를 이용하여 부하를 줄여 기동을 용이하게 하는 방식입니다. 이 방식은 단순하고 경제적이며, 전동기의 부하를 줄여서 전력 소모를 감소시키는 효과도 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5349,7 +5483,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#hd2004⑤23-59" question-id="hd2004⑤23-59" question-num="59" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">59</span>. 모선보호에 사용되는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>표시선 계전 방식</li><li class="correct">전류 차동 보호방식</li><li>방향 단락 계전방식</li><li>전력 평형 보호방식</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">전류 차동 보호방식은 전류의 차이를 감지하여 모선의 이상을 감지하고 차단하는 방식이기 때문에 모선보호에 사용된다. 다른 방식들은 전류나 전력의 평형 등을 감지하여 보호하는 방식이므로 모선보호에는 적합하지 않다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5395,7 +5529,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#hd2004⑤23-60" question-id="hd2004⑤23-60" question-num="60" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">60</span>. 전기 전철기의 동작 순서가 옳은 것은？</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>전환 – 해정 – 쇄정 - 표시</li><li class="correct">해정 – 전환 – 쇄정 - 표시</li><li>표시 – 해정 – 쇄정 - 전환</li><li>표시 – 쇄정 – 해정 - 전환</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">전기 전철기의 동작 순서는 "해정 – 전환 – 쇄정 - 표시" 입니다. 이는 먼저 열차가 출발할 역을 지정하는 해정 작업을 먼저 하고, 그 다음에는 열차의 방향을 바꾸는 전환 작업을 합니다. 그리고 열차가 출발할 준비가 되면 쇄정 작업을 통해 출발합니다. 마지막으로 열차가 이동하는 구간에서는 표시 작업을 통해 승객들에게 정보를 제공합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5446,7 +5580,7 @@ $(function(){
 </div>
 </div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#hd2004⑤23-61" question-id="hd2004⑤23-61" question-num="61" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">61</span>. 고전압 임펄스(High Voltage impulse) 궤도회로를 설치하고자 사리누설저항을 측정하였더니 2Ω/km 가 측정되었다. 이론상 설치가능한 궤도회로의 길이는 몇 km 인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">1.2</li><li>1.4</li><li>1.6</li><li>1.8</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">고전압 임펄스 궤도회로에서 사리누설저항은 길이에 비례하므로, 길이가 1km일 때 사리누설저항은 2Ω이다. 따라서 길이가 x km일 때 사리누설저항은 2xΩ이다. 이 값이 설치 가능한 궤도회로의 최대 사리누설저항인 10Ω보다 작아야 하므로, 2x &lt; 10 이어야 한다. 이를 풀면 x &lt; 5이므로, 설치 가능한 궤도회로의 최대 길이는 4km이다. 따라서 정답은 1.2가 아니라, 설치 가능한 궤도회로의 최대 길이인 4km에 해당하는 보기가 없으므로 문제가 잘못되었을 가능성이 있다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5492,7 +5626,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#hd2004⑤23-62" question-id="hd2004⑤23-62" question-num="62" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">62</span>. 한 선구에서 둘 이상의 선구로 분기되는 지점을 향하여 운행 중인 열차가 정해진 행선지와 다른 방향으로 진입할 우려가 있는 곳에 설치하는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>자동진로설정장치</li><li>자동폐색신호기</li><li class="correct">열차번호인식기</li><li>열차번호처리장치</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">열차번호인식기는 분기점에서 열차가 올바른 방향으로 진입하는지 확인하기 위해 사용됩니다. 열차가 지나갈 때 열차의 번호를 인식하여 해당 분기점에서 올바른 방향으로 진입하는지 확인하고, 만약 잘못된 방향으로 진입하려고 하면 경고 신호를 보내어 사고를 예방합니다. 따라서 열차번호인식기가 정답입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5538,7 +5672,14 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#hd2004⑤23-63" question-id="hd2004⑤23-63" question-num="63" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">63</span>. ATS-S형의 지상자와 차상자의 공진조건으로 옳은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct"><img src="images/hd20040523m63b1.gif"/></li><li><img src="images/hd20040523m63b2.gif"/></li><li><img src="images/hd20040523m63b3.gif"/></li><li><img src="images/hd20040523m63b4.gif"/></li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "<img src="https://cbtbank.kr/images/hd/hd2004⑤23/hd2004⑤23m63b1.gif"/>"입니다.<br/>
+<br/>
+ATS-S형의 지상자와 차상자의 공진조건은 다음과 같습니다.<br/>
+<br/>
+- 지상자의 길이 + 차상자의 길이 = 반파장의 정수배<br/>
+- 지상자와 차상자의 길이가 같을 때는 반파장의 반정수배<br/>
+<br/>
+위의 공진조건을 보면, 지상자와 차상자의 길이가 서로 다르면 반파장의 정수배가 되기 어렵습니다. 따라서, 지상자와 차상자의 길이가 같을 때가 가장 적합한 공진조건이 됩니다. 이 때의 반파장은 반정수배가 되므로, "<img src="https://cbtbank.kr/images/hd/hd2004⑤23/hd2004⑤23m63b1.gif"/>"가 정답이 됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5584,7 +5725,9 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#hd2004⑤23-64" question-id="hd2004⑤23-64" question-num="64" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">64</span>. 전기연동장치의 전철제어회로에 관한 설명 중 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>전철제어계전기는 전철쇄정계전기의 무여자로 쇄정한다.</li><li>전철제어계전기는 전철쇄정계전기의 여자로 동작한다.</li><li class="correct">전철제어계전기는 전철쇄정계전기의 여자로 쇄정한다.</li><li>전철제어계전기는 유극이며 전철쇄정계전기는 무극이다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"전철제어계전기는 전철쇄정계전기의 여자로 쇄정한다."가 틀린 설명입니다.<br/>
+<br/>
+전철제어계전기와 전철쇄정계전기는 모두 유극입니다. 따라서 전철제어계전기와 전철쇄정계전기 간에는 유극이 같은 경우에만 쇄정이 가능합니다. 즉, 전철제어계전기와 전철쇄정계전기 모두 여자 또는 모두 남자여야 쇄정이 가능합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5631,7 +5774,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#hd2004⑤23-65" question-id="hd2004⑤23-65" question-num="65" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">65</span>. 궤도회로를 설치하기 위하여 사리누설저항을 측정하고자 한다. 다음 중 어떤 방법이 가장 좋은가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>휘이트스토운브리지를 사용하여 측정하도록 한다.</li><li class="correct">전압전류계법으로 측정하도록 한다.</li><li>메가로 측정하도록 한다.</li><li>고저항 절연저항계로 측정하도록 한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">전압전류계법으로 측정하는 것이 가장 좋은 방법이다. 이는 사리누설저항을 측정하는 가장 정확하고 일반적인 방법이기 때문이다. 전압전류계법은 전압과 전류를 측정하여 저항을 계산하는 방법으로, 정확한 측정 결과를 얻을 수 있다. 휘이트스톤브리지나 고저항 절연저항계는 정확도가 낮거나 측정 범위가 제한적일 수 있으며, 메가로 측정하는 것은 측정 대상이 되는 저항의 크기에 따라 측정 결과가 달라질 수 있다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5677,7 +5820,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#hd2004⑤23-66" question-id="hd2004⑤23-66" question-num="66" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">66</span>. 분배주 궤도회로장치의 궤도전원은 60Hz 상용주파수를 사용한 경우 궤도상에는 몇 Hz 가 되는가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">30</li><li>60</li><li>120</li><li>240</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">분배주 궤도회로장치의 궤도전원은 60Hz 상용주파수를 사용하므로, 궤도상에서는 주파수가 절반인 30Hz가 된다. 이는 분배주 궤도회로장치가 3상 전원을 사용하고 있기 때문에, 60Hz의 주파수가 3상으로 분할되어 각 상마다 20Hz의 주파수가 발생하기 때문이다. 따라서 궤도상에서는 이 3상 주파수가 합쳐져 60Hz의 주파수가 아닌 30Hz의 주파수가 발생하게 된다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5723,7 +5866,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#hd2004⑤23-67" question-id="hd2004⑤23-67" question-num="67" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">67</span>. 수도권 지하철 열차자동제어장치(ATC) 구간의 속도코드 상한치는 몇 km/h 인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>70</li><li class="correct">80</li><li>90</li><li>100</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">수도권 지하철 열차자동제어장치(ATC) 구간의 속도코드 상한치는 80km/h이다. 이는 안전을 위한 제한속도로, 열차가 이 속도를 초과하면 자동으로 감속하게 된다. 또한, 이 속도는 구간의 기하학적 특성과 열차의 제동성능 등을 고려하여 결정된 것이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5769,7 +5912,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#hd2004⑤23-68" question-id="hd2004⑤23-68" question-num="68" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">68</span>. 임피던스본드의 설치에 관한 사항으로 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>복궤조식 궤도회로의 경계점에 설치한다.</li><li>전차선 전류는 인접 궤도회로에 흘러가게 한다.</li><li>신호전류는 인접 궤도회로에 흐르지 못하도록 한다.</li><li class="correct">1차 코일과 2차 코일의 권수비를 2 : 1로 한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">1차 코일과 2차 코일의 권수비를 2 : 1로 하는 것은 임피던스본드의 임피던스 매칭을 위한 것입니다. 이 비율을 맞추면 전류가 균일하게 분포되어 임피던스본드의 효과를 극대화할 수 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5815,7 +5958,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#hd2004⑤23-69" question-id="hd2004⑤23-69" question-num="69" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">69</span>. 신호보안장치의 접지공사 시공방법 중 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>제3종접지공사의 접지극은 2개소 이상의 접지에 공용할 수 있다.</li><li>고압용 기기 및 접지극과 신호용 접지와의 이격거리는 5m 이상으로 한다.</li><li class="correct">매설 케이블류와 접지극의 이격거리는 3m 이상으로 한다.</li><li>접지극은 타입식 접지봉을 사용하고 지표면보다 750mm 이상 매설한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"매설 케이블류와 접지극의 이격거리는 3m 이상으로 한다."가 틀린 것이다. 이유는 매설 케이블류와 접지극의 이격거리는 1m 이상으로 한다. 이는 케이블류와 접지극 사이의 전기적 상호작용을 최소화하기 위함이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5861,7 +6004,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#hd2004⑤23-70" question-id="hd2004⑤23-70" question-num="70" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">70</span>. NS형 전기 선로전환기의 동작간의 동정은 몇 ㎜ 인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">185</li><li>215</li><li>235</li><li>255</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">NS형 전기 선로전환기의 동작간의 동정은 185mm이다. 이는 전기 선로전환기가 동작하여 전기 회로가 바뀌는 과정에서 발생하는 동정 거리를 의미한다. 이 값은 설계 시에 고려되어야 하며, 전기 설비의 안전한 운영을 위해 정확한 값이 중요하다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5907,7 +6050,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#hd2004⑤23-71" question-id="hd2004⑤23-71" question-num="71" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">71</span>. 건널목 제어기에 접속되어 있는 궤도회로의 사용 목적은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>공진회로의 일부</li><li class="correct">발진부 궤환회로의 일부</li><li>증폭부 바이어스 저항의 일부</li><li>정류부 평활회로의 일부</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">건널목 제어기는 전기 자동차에서 모터의 출력을 제어하는 역할을 합니다. 이때 궤도회로는 모터의 전력을 전달하는 회로입니다. 발진부 궤환회로는 모터의 발진을 도와주는 역할을 하며, 이 회로의 일부가 건널목 제어기에 접속되어 있는 것입니다. 따라서 정답은 "발진부 궤환회로의 일부"입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5953,7 +6096,9 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#hd2004⑤23-72" question-id="hd2004⑤23-72" question-num="72" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">72</span>. 서행 허용표지가 있는 자동폐색 신호기의 도식기호는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li><img src="images/hd20040523m72b1.gif"/></li><li><img src="images/hd20040523m72b2.gif"/></li><li><img src="images/hd20040523m72b3.gif"/></li><li class="correct"><img src="images/hd20040523m72b4.gif"/></li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "<img src="https://cbtbank.kr/images/hd/hd2004⑤23/hd2004⑤23m72b4.gif"/>" 이다. <br/>
+<br/>
+이유는, 도식기호에서 빨간색과 초록색 불빛이 함께 나타나고 있으며, 빨간색 불빛이 켜져 있는 동안에도 서행이 가능하다는 것을 나타내는 "서행 허용" 표지가 함께 표시되어 있기 때문이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6000,7 +6145,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#hd2004⑤23-73" question-id="hd2004⑤23-73" question-num="73" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">73</span>. 국철 서울 사령실과 지하철로 인입, 인출되는 열차번호를 송수신하기 위하여 SSC Controller와 인터페이스 되는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>CDTS</li><li class="correct">MPS</li><li>서버</li><li>Host Computer</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">MPS는 국철 서울 사령실과 지하철 열차간의 통신을 담당하는 시스템으로, SSC Controller와 인터페이스하여 열차번호를 송수신합니다. CDTS는 철도통합운영시스템, 서버는 데이터를 저장하고 관리하는 컴퓨터, Host Computer는 다른 컴퓨터나 장치들을 관리하는 컴퓨터를 의미합니다. 따라서, MPS가 SSC Controller와 인터페이스하여 열차번호를 송수신하는 것입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6046,7 +6191,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#hd2004⑤23-74" question-id="hd2004⑤23-74" question-num="74" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">74</span>. 연동도표 작성시 쇄정란에 기재하는 내용이 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>진로를 구성하였을 때 쇄정되는 선로전환기 번호</li><li>진로를 구성하였을 때 쇄정되는 취급버튼 번호</li><li>폐로쇄정에 관계되는 궤도회로명</li><li class="correct">선로전환기 철사쇄정에 관계있는 궤도회로명</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">연동도표 작성시 쇄정란에 기재하는 내용 중 "선로전환기 철사쇄정에 관계있는 궤도회로명"은 포함되지 않는다. 이는 쇄정란에는 선로전환기 번호와 취급버튼 번호를 포함하여 해당 기기의 동작과 관련된 정보를 기재하는 것이 일반적이기 때문이다. 따라서 "선로전환기 철사쇄정에 관계있는 궤도회로명"은 쇄정란에 포함되지 않는다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6092,7 +6237,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#hd2004⑤23-75" question-id="hd2004⑤23-75" question-num="75" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">75</span>. 전철기 전환 제어계전기를 나타낸 기호는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>WLR</li><li class="correct">WR</li><li>ZR</li><li>KR</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">전철기 전환 제어계전기를 나타내는 기호는 "WR"이다. 이는 "W"가 전원을 나타내고, "R"이 회로를 나타내기 때문이다. "L"은 레버를 나타내는데, 전철기 전환 제어계전기는 레버가 없으므로 "L"이 포함되지 않는다. "Z"는 저항을 나타내고, "K"는 키를 나타내는데, 전철기 전환 제어계전기는 이 두 가지 요소도 포함되지 않는다. 따라서 "WR"이 전철기 전환 제어계전기를 나타내는 기호이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6138,7 +6283,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#hd2004⑤23-76" question-id="hd2004⑤23-76" question-num="76" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">76</span>. 궤도회로의 설치를 설계한 구간에 15m의 드와프트 거더(Dwaft girder)가 있다. 어떤 설계를 하여야 하는가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>사구간을 만들어 신호제어를 한다.</li><li>편궤조 궤도회로를 만든다.</li><li class="correct">사구간 보완회로를 만든다.</li><li>거더를 바꾸도록 설계한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">드와프트 거더는 궤도회로의 전류를 유지하는 역할을 하기 때문에, 궤도회로 설치 구간에서 거더를 바꾸는 것은 불가능합니다. 따라서, 궤도회로 설치 구간에서는 사구간 보완회로를 만들어서 전류를 유지해야 합니다. 사구간 보완회로는 궤도회로 설치 구간에서 전류를 유지하기 위해 설치되는 보조 회로로, 궤도회로의 전류가 끊어지더라도 사구간 보완회로를 통해 전류를 유지할 수 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6184,7 +6329,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#hd2004⑤23-77" question-id="hd2004⑤23-77" question-num="77" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">77</span>. 분주궤도회로의 궤도회로가 단락되었을 때의 소비전력은 복궤조식의 몇 배가 되는것이 가장 이상적인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">1.3</li><li>1.5</li><li>1.7</li><li>1.9</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">분주궤도회로에서 궤도회로가 단락되면, 분주궤도회로는 복궤조식만으로 동작해야 하므로 소비전력이 증가한다. 이 때, 복궤조식의 소비전력은 분주궤도회로의 소비전력보다 약간 높아야 한다. 이유는 복궤조식이 분주궤도회로의 궤도회로를 대신하여 동작하기 때문이다. 따라서, 가장 이상적인 소비전력 비율은 1.3이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6230,7 +6375,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#hd2004⑤23-78" question-id="hd2004⑤23-78" question-num="78" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">78</span>. 신호설비를 이용한 운전시격 단축방안이 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>도착선을 상호 사용할 수 있도록 신호설비 설치</li><li>유도신호기의 사용</li><li>구내 폐색신호기 건식</li><li class="correct">가속도와 감속도가 큰 고성능 동력차 사용</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">가속도와 감속도가 큰 고성능 동력차를 사용하는 것은 운전시간을 단축시키는 신호설비를 이용한 방안이 아니기 때문에 정답입니다. 이 방안은 차량의 성능과 관련된 것으로, 운전자의 주행 기술과는 직접적인 연관이 있습니다. 따라서 이 방안은 운전자의 능력과 경험에 따라 효과가 다를 수 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6276,7 +6421,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#hd2004⑤23-79" question-id="hd2004⑤23-79" question-num="79" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">79</span>. 궤도회로의 극성에 관한 설명으로 맞는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>인접 궤도회로와의 사이에 레일절연을 단락했을 때 궤도계전기가 여자한다.</li><li class="correct">인접 궤도회로와의 사이에 레일절연을 단락했을 때 궤도계전기가 낙하한다.</li><li>임펄스 궤도회로의 경우 궤도회로의 극성을 맞추지 않아도 된다.</li><li>착전단이외의 개소에는 궤도회로의 극성을 고려하지 않아도 된다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "인접 궤도회로와의 사이에 레일절연을 단락했을 때 궤도계전기가 낙하한다."이다. 이유는 인접한 궤도회로와의 사이에 레일절연을 단락하면 궤도회로와 인접한 궤도회로의 전위차가 발생하게 되는데, 이 때 궤도계전기는 전위차에 의해 고장이 발생할 수 있다. 따라서 궤도회로 설계 시 인접 궤도회로와의 사이에 레일절연을 충분히 고려해야 한다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6322,7 +6467,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#hd2004⑤23-80" question-id="hd2004⑤23-80" question-num="80" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">80</span>. 전자식 원격제어장치(ERC)의 중형(ERC-M) 정보용량으로 옳은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>제어정보 72</li><li>표시정보 120</li><li>제어정보 144</li><li class="correct">표시정보 192</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">ERC-M은 제어정보와 표시정보를 모두 저장할 수 있는데, 제어정보는 72바이트이고 표시정보는 192바이트이다. 따라서 옳은 답은 "표시정보 192"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>

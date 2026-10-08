@@ -489,6 +489,15 @@ var g5_cookie_domain = ".cbtkorea.kr";
 
 <!-- CANONICAL-CBT -->
 <link rel="canonical" href="https://cbtkorea.kr/CBT/%EA%B3%84%EB%A6%AC%EC%A7%81%EA%B3%B5%EB%AC%B4%EC%9B%90-%EC%BB%B4%ED%93%A8%ED%84%B0-%EC%9D%BC%EB%B0%98/mm20100724.html">
+<!-- AI-EXP-RESTORED -->
+<style>
+    .reply .report-modal, .reply .loading, .reply .reply-component { display: none !important; }
+    .ai-exp { list-style: none; padding: 0; margin: 0 0 10px 0; }
+    .ai-exp:last-child { margin-bottom: 0; }
+    .ai-exp-label { font-size: 12px; font-weight: 700; color: #1d4ed8; margin-bottom: 6px; }
+    .ai-exp-label small { font-weight: 400; color: #6b7280; margin-left: 6px; }
+    .ai-exp-empty { font-size: 13px; color: #6b7280; }
+</style>
 </head>
 <body>
 <!-- 상단 시작 { -->
@@ -2660,7 +2669,7 @@ $(function(){
 <div class="row">
 <div class="exams col-12 col-sm-12 col-md-12">
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mm20100724-1" question-id="mm20100724-1" question-num="1" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">1</span>. 마이크로 연산(operation)에 대한 설명으로 옳지 않은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>한 개의 클럭 펄스 동안 실행되는 기본 동작이다.</li><li>한 개의 마이크로 연산 수행시간을 마이크로 사이클 타임이라 부르며 CPU 속도를 나타내는 척도로 사용된다.</li><li class="correct">하나의 명령어는 항상 하나의 마이크로 연산이 동작되어 실행된다.</li><li>시프트(shift), 로드(load) 등이 있다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 72%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"하나의 명령어는 항상 하나의 마이크로 연산이 동작되어 실행된다."는 옳지 않은 설명이다. 하나의 명령어는 여러 개의 마이크로 연산으로 이루어질 수 있기 때문이다. 예를 들어, 덧셈 명령어는 레지스터에서 값을 가져오는 마이크로 연산과 덧셈을 수행하는 마이크로 연산 등으로 이루어진다. 따라서 하나의 명령어는 여러 개의 마이크로 연산이 동작되어 실행된다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2706,7 +2715,12 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mm20100724-2" question-id="mm20100724-2" question-num="2" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">2</span>. 주기억장치에서 사용가능한 부분은 다음과 같다. M1은 16KB (kilobyte), M2는 14KB, M3는 5KB, M4는 30KB이며 주기억장치의 시작 부분부터 M1, M2, M3, M4 순서가 유지되고 있다. 이때 13KB를 요구하는 작업이 최초적합(First Fit) 방법, 최적적합(Best Fit) 방법, 최악적합(Worst Fit) 방법으로 주기억장치에 각각 배치될 때 결과로 옳은 것은? 단, 배열순서는 왼쪽에서 첫 번째가 최초적합 결과이며 두 번째가 최적적합 결과 그리고 세 번째가 최악적합 결과를 의미한다.</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>M1, M2, M3</li><li class="correct">M1, M2, M4</li><li>M2, M1, M4</li><li>M4, M2, M3</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 83%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">- 최초적합 방법: 요구하는 크기보다 크거나 같은 공간 중 가장 처음으로 발견되는 곳에 할당하는 방법<br/>
+    - 13KB를 할당하기 위해 M1의 처음 16KB 중 13KB를 할당할 수 있으므로 M1에 할당한다. 따라서 결과는 "M1, M2, M4"이다.<br/>
+- 최적적합 방법: 요구하는 크기보다 크면서 가장 작은 공간에 할당하는 방법<br/>
+    - 13KB를 할당하기 위해 M2의 14KB 중 13KB를 할당할 수 있으므로 M2에 할당한다. 그러나 M1에도 13KB가 할당 가능하므로 최적적합 방법은 M1에 할당하는 것보다 비효율적이다. 따라서 결과는 "M1, M2, M4"이다.<br/>
+- 최악적합 방법: 요구하는 크기보다 크면서 가장 큰 공간에 할당하는 방법<br/>
+    - 13KB를 할당하기 위해 M4의 30KB 중 13KB를 할당할 수 있으므로 M4에 할당한다. 그러나 M1과 M2에도 13KB가 할당 가능하므로 최악적합 방법은 M4에 할당하는 것보다 비효율적이다. 따라서 결과는 "M1, M2, M4"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2752,7 +2766,9 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mm20100724-3" question-id="mm20100724-3" question-num="3" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">3</span>. 웹 애플리케이션을 개발하기 위한 스크립트 언어 중 성격이 다른 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">Javascript</li><li>JSP</li><li>ASP</li><li>PHP</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 77%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "Javascript"입니다. <br/>
+<br/>
+Javascript는 클라이언트 측에서 실행되는 스크립트 언어로, 웹 페이지의 동적인 기능을 구현하는 데 사용됩니다. 반면에 JSP, ASP, PHP는 서버 측에서 실행되는 스크립트 언어로, 웹 서버에서 동적인 웹 페이지를 생성하는 데 사용됩니다. 따라서 Javascript는 클라이언트 측에서 실행되는 성격이 다른 스크립트 언어입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2798,7 +2814,16 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mm20100724-4" question-id="mm20100724-4" question-num="4" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">4</span>. 해시(hash) 탐색에서 제산법(division)은 키(key) 값을 배열(array)의 크기로 나누어 그 나머지 값을 해시 값으로 사용하는 방법이다. 다음 데이터의 해시 값을 제산법으로 구하여 11개의 원소를 갖는 배열에 저장하려고 한다. 해시 값의 충돌(collision)이 발생하는 데이터를 열거해 놓은 것은?<img src="images/mm20100724m4.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>111, 112</li><li class="correct">112, 222</li><li>113, 221</li><li>220, 222</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 69%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">제산법으로 해시 값을 구할 때, 키 값을 배열의 크기로 나눈 나머지 값을 해시 값으로 사용한다. 이 문제에서는 배열의 크기가 11이므로, 각 데이터의 키 값을 11로 나눈 나머지 값을 구하면 된다.<br/>
+<br/>
+- 111을 11로 나눈 나머지는 1<br/>
+- 112를 11로 나눈 나머지는 1<br/>
+- 113을 11로 나눈 나머지는 2<br/>
+- 220을 11로 나눈 나머지는 9<br/>
+- 222을 11로 나눈 나머지는 0<br/>
+- 221을 11로 나눈 나머지는 10<br/>
+<br/>
+위 결과를 보면, 112와 222는 모두 해시 값이 1이 되므로 충돌이 발생한다. 따라서 정답은 "112, 222"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2844,7 +2869,11 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mm20100724-5" question-id="mm20100724-5" question-num="5" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">5</span>. 회사에서 211.168.83.0(클래스 C)의 네트워크를 사용하고 있다. 내부적으로 5개의 서브넷을 사용하기 위해 서브넷 마스크를 255.255.255.224로 설정하였다. 이때 211.168.83.34가 속한 서브넷의 브로드캐스트 주소는 어느 것인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>211.168.83.15</li><li>211.168.83.47</li><li class="correct">211.168.83.63</li><li>211.168.83.255</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 50%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">서브넷 마스크가 255.255.255.224이므로 3비트를 서브넷 ID로 사용하고 나머지 5비트를 호스트 ID로 사용한다. 따라서 211.168.83.0/27 네트워크를 사용하고 있으며, 호스트 ID는 0~31까지 사용 가능하다.<br/>
+<br/>
+211.168.83.34는 211.168.83.0/27 네트워크에 속하므로, 서브넷 ID는 211.168.83.32이다. 이 서브넷의 브로드캐스트 주소는 호스트 ID를 모두 1로 설정한 값이므로 211.168.83.63이 된다.<br/>
+<br/>
+따라서 정답은 "211.168.83.63"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2890,7 +2919,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mm20100724-6" question-id="mm20100724-6" question-num="6" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">6</span>. 데이터베이스 설계 시에 양질의 데이터베이스를 구축하기 위하여 데이터베이스 릴레이션을 정규화한다. 이때 고려해야 할 사항과 가장 관련이 없는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>원하지 않는 데이터의 중복을 제거한다.</li><li>원하지 않는 데이터의 종속을 제거한다.</li><li>한 릴레이션 내의 속성들 간의 관계를 고려한다.</li><li class="correct">한 릴레이션 내의 투플들 간의 관계를 고려한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 50%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">한 릴레이션 내의 투플들 간의 관계를 고려하는 것은 정규화의 핵심 원칙 중 하나인 함수적 종속성을 해결하기 위함이다. 함수적 종속성은 한 속성의 값이 다른 속성의 값에 종속되는 관계를 의미하며, 이를 해결하지 않으면 데이터의 무결성이 깨질 수 있다. 따라서 한 릴레이션 내의 투플들 간의 관계를 고려하여 정규화를 수행해야 한다. 다른 보기들은 데이터 중복과 종속성을 제거하는 것도 중요하지만, 이들은 함수적 종속성을 해결하기 위한 수단일 뿐이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2936,7 +2965,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mm20100724-7" question-id="mm20100724-7" question-num="7" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">7</span>. Windows XP에서 프린터 설정에 관한 설명으로 옳지 않은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>기본 프린터는 오직 1대만 설정할 수 있다.</li><li class="correct">네트워크 프린터는 기본 프린터로 설정할 수 없다.</li><li>한 대의 프린터를 여러 대의 컴퓨터에서 네트워크로 공유 가능하다.</li><li>[네트워크 설정 마법사]를 통해 파일 및 프린터도 공유할 수 있다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 58%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"네트워크 프린터는 기본 프린터로 설정할 수 없다."라는 설명은 옳지 않습니다. 네트워크 프린터도 기본 프린터로 설정할 수 있습니다. 기본 프린터는 오직 1대만 설정할 수 있다는 설명은 옳으며, 한 대의 프린터를 여러 대의 컴퓨터에서 네트워크로 공유 가능하고 [네트워크 설정 마법사]를 통해 파일 및 프린터도 공유할 수 있다는 설명은 모두 옳습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2982,7 +3011,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mm20100724-8" question-id="mm20100724-8" question-num="8" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">8</span>. 운영체제는 일괄처리(batch), 대화식(interactive), 실시간(real-time)시스템 그리고 일괄처리와 대화식이 결합된 혼합(hybrid) 시스템 등으로 분류될 수 있다. 이와 같은 분류 근거로 가장 알맞은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>고급 프로그래밍 언어의 사용 여부</li><li class="correct">응답 시간과 데이터 입력 방식</li><li>버퍼링(buffering) 기능 수행 여부</li><li>데이터 보호의 필요성 여부</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 60%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">운영체제의 분류는 주로 시스템의 특성에 따라 이루어진다. 일괄처리 시스템은 작업을 일정량 모아서 처리하는 방식으로, 대화식 시스템은 사용자와 컴퓨터가 상호작용하면서 작업을 처리하는 방식으로, 실시간 시스템은 작업을 즉각적으로 처리해야 하는 방식으로 분류된다. 이에 따라 응답 시간과 데이터 입력 방식이 가장 알맞은 이유는, 일괄처리 시스템은 작업을 일정량 모아서 처리하기 때문에 응답 시간이 느리고, 데이터 입력 방식도 일괄적으로 처리되기 때문에 일괄적인 형태로 입력되어야 한다. 대화식 시스템은 사용자와 컴퓨터가 상호작용하면서 작업을 처리하기 때문에 응답 시간이 빠르고, 데이터 입력 방식도 사용자의 입력에 따라 유동적으로 처리된다. 실시간 시스템은 작업을 즉각적으로 처리해야 하기 때문에 응답 시간이 매우 빠르고, 데이터 입력 방식도 실시간으로 처리되어야 한다. 이러한 특성들을 고려하여 운영체제를 분류하게 된다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3029,7 +3058,13 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mm20100724-9" question-id="mm20100724-9" question-num="9" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">9</span>. 다음 그래프를 너비 우선 탐색(Breadth First Search BFS), 깊이 우선 탐색(Depth First Search DFS) 방법으로 방문할 때 각 정점을 방문하는 순서로 옳은 것은? 단, 둘 이상의 정점을 선택할 수 있을 때는 알파벳 순서로 방문한다. (순서대로 BFS, DFS)<img src="images/mm20100724m9.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>A-B-F-C-E-D, A-B-C-D-E-F</li><li>A-B-C-D-E-F, A-B-F-C-E-D</li><li class="correct">A-B-F-C-D-E, A-B-C-D-E-F</li><li>A-B-C-D-E-F, A-B-C-D-F-E</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 53%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">BFS: A-B-F-C-D-E, DFS: A-B-C-D-E-F<br/>
+<br/>
+BFS는 너비를 우선으로 탐색하기 때문에 A-B-F-C-D-E 순서로 방문하게 된다. 즉, A에서 시작하여 인접한 정점인 B와 F를 먼저 방문하고, 그 다음으로 C를 방문하고, D와 E를 마지막으로 방문하게 된다.<br/>
+<br/>
+DFS는 깊이를 우선으로 탐색하기 때문에 A-B-C-D-E-F 순서로 방문하게 된다. 즉, A에서 시작하여 인접한 정점인 B를 먼저 방문하고, B에서 인접한 정점인 C를 방문하고, C에서 인접한 정점인 D를 방문하고, D에서 인접한 정점인 E를 방문하고, E에서 인접한 정점인 F를 마지막으로 방문하게 된다.<br/>
+<br/>
+따라서 정답은 "A-B-F-C-D-E, A-B-C-D-E-F"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3075,7 +3110,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mm20100724-10" question-id="mm20100724-10" question-num="10" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">10</span>. SQL에서는 데이터베이스 검색의 성능 및 편의 향상을 위하여 내장함수를 제공한다. 다음 중 SQL의 내장 집계함수(aggregate function)가 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>COUNT</li><li>SUM</li><li class="correct">TOTAL</li><li>MAX</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 61%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "TOTAL"이다. 왜냐하면 SQL에는 "TOTAL"이라는 내장 집계함수가 없기 때문이다. 대신에 "COUNT", "SUM", "MAX" 등의 내장 집계함수가 제공된다. "COUNT"는 특정 열의 행 수를 반환하고, "SUM"은 특정 열의 합계를 반환하며, "MAX"는 특정 열의 최댓값을 반환한다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3121,7 +3156,9 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mm20100724-11" question-id="mm20100724-11" question-num="11" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">11</span>. 다음의 Java 프로그램에서 사용되지 않은 기법은?<img src="images/mm20100724m11.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>캡슐화(Encapsulation)</li><li>상속(Inheritance)</li><li class="correct">오버라이딩(Overriding)</li><li>오버로딩(Overloading)</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 55%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">이 Java 프로그램에서 사용된 모든 기법은 다 사용되었으며, 사용되지 않은 기법은 없습니다.<br/>
+<br/>
+오버라이딩(Overriding)은 상위 클래스에서 정의된 메소드를 하위 클래스에서 재정의하여 사용하는 기법입니다. 이 프로그램에서는 Animal 클래스의 cry() 메소드를 Dog 클래스에서 재정의하여 사용하고 있으므로 오버라이딩이 사용된 것입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3167,7 +3204,12 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mm20100724-12" question-id="mm20100724-12" question-num="12" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">12</span>. 다음에서 ㉠과 ㉡에 들어갈 내용이 올바르게 짝지어진 것은? (순서대로 ㉠, ㉡)<img src="images/mm20100724m12.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">인출, MAR ← PC</li><li>인출, MAR ← MBR(AD)</li><li>실행, MAR ← PC</li><li>실행, MAR ← MBR(AD)</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 63%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">㉠: 인출, MAR ← PC<br/>
+㉡: 실행, MAR ← MBR(AD)<br/>
+<br/>
+이유: <br/>
+- 인출 단계에서는 PC(Program Counter)가 가리키는 메모리 주소에서 명령어를 가져와서 MBR(Memory Buffer Register)에 저장하고, 동시에 MAR(Memory Address Register)에 PC의 값을 저장합니다. 따라서 ㉠의 "인출, MAR ← PC"가 올바른 짝이 됩니다.<br/>
+- 실행 단계에서는 MBR에 저장된 명령어를 해석하여 해당 명령어를 실행합니다. 이때 MAR에는 명령어에서 필요한 메모리 주소가 저장됩니다. 따라서 ㉡의 "실행, MAR ← MBR(AD)"가 올바른 짝이 됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3213,7 +3255,11 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mm20100724-13" question-id="mm20100724-13" question-num="13" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">13</span>. MS Excel의 워크시트에서 사원별 수주량과 판매금액, 그리고 수주량과 판매금액의 합계가 입력되어 있다. 이때 C열에는 전체 수주량 대비 각 사원 수주량의 비율을, E열에는 전체 판매금액 대비 각 사원 판매금액의 비율을 보이고자 한다. 이를 위해 C2셀에 수식을 입력한 다음에 이를 C열과 E열의 나머지 셀에 복사하여 사용하고자 한다. C2셀에 입력할 내용으로 옳은 것은?<img src="images/mm20100724m13.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>=B2/B7*100</li><li>=$B$2/B7*100</li><li>=B2/$B$7*100</li><li class="correct">=B2/B$7*100</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 27%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "=B2/B$7*100"이다.<br/>
+<br/>
+이유는 B2셀에는 해당 사원의 수주량이 입력되어 있고, B7셀에는 전체 수주량의 합계가 입력되어 있다. 따라서 B2/B7을 하면 해당 사원의 수주량이 전체 수주량 대비 몇 퍼센트인지 구할 수 있다. 그리고 *100을 하면 백분율로 표현할 수 있다.<br/>
+<br/>
+$ 기호는 해당 셀이나 범위를 절대 참조하겠다는 의미이다. 따라서 B$7을 사용하면 수식을 복사할 때 B7셀이 아닌 B7열을 참조하게 된다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3259,7 +3305,9 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mm20100724-14" question-id="mm20100724-14" question-num="14" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">14</span>. 후위(postfix) 형식으로 표기된 다음 수식을 스택(stack)으로 처리하는 경우에, 스택의 탑(TOP) 원소의 값을 올바르게 나열한 것은? 단, 연산자(operator)는 한 자리의 숫자로 구성되는 두 개의 피연산자(operand)를 필요로 하는 이진(binary) 연산자이다.<img src="images/mm20100724m14.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>4, 5, 2, 3, 6, -1, 3</li><li>4, 5, 9, 2, 3, 6, -3</li><li>4, 5, 9, 2, 18, 3, 16</li><li class="correct">4, 5, 9, 2, 3, 6, 3</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 52%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">주어진 후위 표기식을 스택으로 처리할 때, 스택에 숫자를 push하다가 연산자를 만나면 스택에서 두 개의 피연산자를 pop하여 해당 연산자로 계산한 결과를 다시 스택에 push하는 과정을 반복한다. <br/>
+<br/>
+처음에는 스택이 비어있으므로 4와 5를 차례로 push한다. 그 다음으로 오는 2는 연산자이므로 스택에서 5와 4를 pop하여 4-5=-1을 계산하고, 이 결과를 다시 스택에 push한다. 그 다음으로 오는 3은 숫자이므로 스택에 push한다. 그 다음으로 오는 6은 연산자이므로 스택에서 3과 -1을 pop하여 -1+3=2를 계산하고, 이 결과를 다시 스택에 push한다. 마지막으로 오는 3은 연산자이므로 스택에서 2와 6을 pop하여 6-2=4를 계산하고, 이 결과가 스택의 탑(TOP) 원소가 된다. 따라서 올바른 탑(TOP) 원소의 순서는 "4, 5, 9, 2, 3, 6, 3"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3305,7 +3353,10 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mm20100724-15" question-id="mm20100724-15" question-num="15" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">15</span>. ＜보기＞는 자료의 표현과 관련된 설명이다. 옳은 것을 모두 고른 것은?<img src="images/mm20100724m15.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>ㄱ, ㄹ</li><li>ㄴ, ㄷ</li><li>ㄱ, ㄴ, ㄷ</li><li class="correct">ㄱ, ㄴ, ㄹ</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 54%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">- "ㄱ, ㄹ": 그래프의 x축은 시간, y축은 가격을 나타내고 있으며, 빨간색 선은 삼성전자 주식의 가격 변동을 나타내고 있다. <br/>
+- "ㄴ, ㄷ": 그래프의 내용과는 관련이 없는 설명이다. <br/>
+- "ㄱ, ㄴ, ㄷ": 그래프의 내용과는 관련이 없는 설명이다. <br/>
+- "ㄱ, ㄴ, ㄹ": 그래프의 x축과 y축, 그리고 빨간색 선이 각각 어떤 것을 나타내는지 명확하게 설명하고 있으며, 그래프의 내용을 이해하는 데 도움이 된다. 따라서 정답은 "ㄱ, ㄴ, ㄹ"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3351,7 +3402,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mm20100724-16" question-id="mm20100724-16" question-num="16" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">16</span>. 웹 개발 기법의 하나인 Ajax(Asynchronous Javascript and XML)에 대한 설명으로 옳지 않은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>대화식 웹 애플리케이션을 개발하기 위해 사용된다.</li><li class="correct">기술의 묶음이라기보다는 웹 개발을 위한 특정한 기술을 의미한다.</li><li>서버 처리를 기다리지 않고 비동기 요청이 가능하다.</li><li>Prototype, JQuery, Google Web Toolkit은 대표적인 Ajax 프레임워크이다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 24%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">옳지 않은 설명은 "기술의 묶음이라기보다는 웹 개발을 위한 특정한 기술을 의미한다." 이다. Ajax는 특정한 기술을 묶어서 사용하는 것이 아니라, 비동기적으로 서버와 통신하여 데이터를 주고받는 웹 개발 기술이다. 따라서 "기술의 묶음"이라는 표현은 적절하지 않다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3398,7 +3449,13 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mm20100724-17" question-id="mm20100724-17" question-num="17" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">17</span>. C 프로그램의 실행 결과로 옳은 것은?<img src="images/mm20100724m17.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">i = 0.0 j = 0 k = 3 m = 003</li><li>i = 0.3 j = 0 k = 3 m = 000</li><li>i = 0.0 j = 1 k = 1 m = 001</li><li>i = 0.3 j = 1 k = 1 m = 001</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 27%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">이 프로그램은 float형 변수 i와 j, int형 변수 k와 m을 선언하고, 각각의 초기값을 설정한 후 printf 함수를 사용하여 변수들의 값을 출력하는 프로그램입니다. <br/>
+<br/>
+i와 j는 초기값이 0.0으로 설정되어 있습니다. 그리고 k는 초기값이 3으로 설정되어 있고, m은 초기값이 0x3으로 설정되어 있습니다. <br/>
+<br/>
+따라서 printf 함수에서는 i와 j의 값이 0.0으로 출력되고, k의 값은 3으로 출력되며, m의 값은 0x3을 10진수로 변환한 값인 3이 아닌, 8진수로 표현한 값인 003으로 출력됩니다. <br/>
+<br/>
+따라서 정답은 "i = 0.0 j = 0 k = 3 m = 003"입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3444,7 +3501,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mm20100724-18" question-id="mm20100724-18" question-num="18" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">18</span>. 화소(pixel)당 24비트 컬러를 사용하고 해상도가 352×240 화소인 TV영상프레임(frame)을 초당 30개 전송할 때 필요한 통신 대역폭으로 가장 가까운 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>약 10Mbps</li><li>약 20Mbps</li><li>약 30Mbps</li><li class="correct">약 60Mbps</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 50%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">하나의 프레임은 352×240×24비트=2,116,800비트이다. 초당 30개의 프레임을 전송하므로, 초당 전송해야 할 비트 수는 2,116,800×30=63,504,000비트이다. 이를 Mbps로 변환하면 약 60Mbps가 된다. 따라서, 필요한 통신 대역폭은 약 60Mbps이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3490,7 +3547,13 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mm20100724-19" question-id="mm20100724-19" question-num="19" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">19</span>. 데이터베이스 관리시스템(DBMS)에서 질의 처리를 빠르게 수행하기 위해 질의를 최적화한다. 질의 최적화 시에 사용하는 경험적 규칙으로서 알맞지 않은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>추출(project) 연산은 일찍 수행한다.</li><li class="correct">조인(join) 연산은 가능한 한 일찍 수행한다.</li><li>선택(select) 연산은 가능한 한 일찍 수행한다.</li><li>중간 결과를 적게 산출하면서 빠른 시간에 결과를 줄 수 있어야 한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 44%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">선택 연산은 가능한 한 늦게 수행하는 것이 좋다. 이유는 선택 연산은 조인 연산보다 덜 복잡하고 빠르게 수행될 수 있기 때문이다. 따라서 선택 연산을 늦게 수행하면 불필요한 데이터를 많이 가져오게 되어 성능이 저하될 수 있다.<br/>
+<br/>
+조인(join) 연산은 가능한 한 일찍 수행하는 것이 좋다. 이유는 조인 연산은 많은 데이터를 처리해야 하기 때문에 조인 연산을 늦게 수행하면 중간 결과가 많이 발생하게 되어 성능이 저하될 수 있기 때문이다. 따라서 조인 연산을 가능한 한 일찍 수행하여 중간 결과를 적게 산출하면서 빠른 시간에 결과를 줄 수 있어야 한다.<br/>
+<br/>
+추출(project) 연산은 일찍 수행한다. 이유는 추출 연산은 데이터의 양을 줄이는 연산이기 때문에 추출 연산을 일찍 수행하면 이후의 연산에서 처리해야 할 데이터 양을 줄일 수 있기 때문이다.<br/>
+<br/>
+중간 결과를 적게 산출하면서 빠른 시간에 결과를 줄 수 있어야 한다. 이유는 중간 결과가 많이 발생하면 디스크 I/O가 많이 발생하여 성능이 저하될 수 있기 때문이다. 따라서 중간 결과를 적게 산출하면서 빠른 시간에 결과를 줄 수 있도록 최적화해야 한다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3536,7 +3599,9 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mm20100724-20" question-id="mm20100724-20" question-num="20" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">20</span>. 컴퓨터 시스템의 성능을 측정하는 척도에 대한 설명으로 알맞지 않은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>처리량(throughput)은 보통 안정된 상태에서 측정되며 하루에 처리되는 작업의 개수 또는 시간당 처리되는 온라인 처리의 개수 등으로 측정된다.</li><li>병목(bottleneck) 현상은 시스템 자원이 용량(capacity) 또는 처리량에 있어서 최대 한계에 도달할 때 발생될 수 있다.</li><li class="correct">응답 시간(response time)은 주어진 작업의 수행을 위해 시스템에 도착한 시점부터 완료되어 그 작업의 출력이 사용자에게 제출되는 시점까지의 시간으로 정의된다.</li><li>자원 이용도(utilization)는 일반적으로 전체 시간에 대해 주어진 자원이 실제로 사용되는 시간의 백분율로 나타낸다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 59%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답: "처리량(throughput)은 보통 안정된 상태에서 측정되며 하루에 처리되는 작업의 개수 또는 시간당 처리되는 온라인 처리의 개수 등으로 측정된다."<br/>
+<br/>
+응답 시간(response time)은 사용자가 작업을 요청한 시점부터 작업 결과가 출력되는 시점까지 걸리는 시간을 의미합니다. 즉, 사용자가 시스템에 요청한 작업이 완료되어 결과를 받을 때까지 걸리는 시간입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>

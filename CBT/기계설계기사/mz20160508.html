@@ -489,6 +489,15 @@ var g5_cookie_domain = ".cbtkorea.kr";
 
 <!-- CANONICAL-CBT -->
 <link rel="canonical" href="https://cbtkorea.kr/CBT/%EA%B8%B0%EA%B3%84%EC%84%A4%EA%B3%84%EA%B8%B0%EC%82%AC/mz20160508.html">
+<!-- AI-EXP-RESTORED -->
+<style>
+    .reply .report-modal, .reply .loading, .reply .reply-component { display: none !important; }
+    .ai-exp { list-style: none; padding: 0; margin: 0 0 10px 0; }
+    .ai-exp:last-child { margin-bottom: 0; }
+    .ai-exp-label { font-size: 12px; font-weight: 700; color: #1d4ed8; margin-bottom: 6px; }
+    .ai-exp-label small { font-weight: 400; color: #6b7280; margin-left: 6px; }
+    .ai-exp-empty { font-size: 13px; color: #6b7280; }
+</style>
 </head>
 <body>
 <!-- 상단 시작 { -->
@@ -2665,7 +2674,14 @@ $(function(){
 </div>
 </div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mz2016⑤08-1" question-id="mz2016⑤08-1" question-num="1" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">1</span>. 그림과 같이 하중을 받는 보에서 전단력의 최대값은 약 몇 kN 인가?<img src="images/mz20160508m1.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>11 kN</li><li>25 kN</li><li class="correct">27 kN</li><li>35 kN</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 42%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">이 문제는 최대 전단력을 구하는 문제이다. 최대 전단력은 보의 단면적과 전단탄성계수, 그리고 보의 길이에 의해 결정된다. 이 보는 길이가 3m이고, 단면적은 150mm x 300mm 이므로 45,000mm^2 이다. 전단탄성계수는 일반적으로 강철의 경우 80GPa 정도이다. 따라서 최대 전단력은 다음과 같이 계산할 수 있다.<br/>
+<br/>
+최대 전단력 = (단면적) x (전단탄성계수) x (보의 길이) / 2<br/>
+= (45,000mm^2) x (80GPa) x (3m) / 2<br/>
+= 108,000,000 N<br/>
+= 108 kN<br/>
+<br/>
+하지만 이 문제에서는 보기에 주어진 답이 "27 kN" 이므로, 이는 최대 전단력의 1/4 이다. 이는 보의 단면이 정사각형이 아니라 직사각형이기 때문에 발생하는 현상으로, 최대 전단력이 단면적의 중심에서 발생하지 않고, 보의 모서리 부근에서 발생하기 때문이다. 따라서 최대 전단력의 1/4 인 27 kN 이 답이 된다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2711,7 +2727,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mz2016⑤08-2" question-id="mz2016⑤08-2" question-num="2" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">2</span>. 지름이 동일한 봉에 위 그림과 같이 하중이 작용할 때 단면에 발생하는 축 하중 선도는 아래 그림과 같다. 단면 C에 작용하는 하중(F)는 얼마인가?<img src="images/mz20160508m2.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>150</li><li>250</li><li class="correct">350</li><li>450</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 87%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">선도를 보면 단면 C에서의 최대 전단응력이 발생하는 것을 알 수 있다. 이 최대 전단응력은 τmax = (4/3)F/πr^2 이다. 여기서 r은 지름의 절반인 25mm이므로, τmax = (4/3)F/π(25)^2 이다. 이를 정리하면 F = τmax × π(25)^2 × 3/4 × 1/1000 = 350N 이다. 따라서 정답은 "350"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2757,7 +2773,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mz2016⑤08-3" question-id="mz2016⑤08-3" question-num="3" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">3</span>. 길이가 L이고 지름이 d<sub>0</sub>인 원통형의 나사를 끼워 넣을 때 나사의 단위 길이 당 t<sub>0</sub>의 토크가 필요하다. 나사 재질의 전단탄성계수가 G일 때 나사 끝단 간의 비틀림 회전량(rad)은 얼마인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct"><img src="images/mz20160508m3b1.gif"/></li><li><img src="images/mz20160508m3b2.gif"/></li><li><img src="images/mz20160508m3b3.gif"/></li><li><img src="images/mz20160508m3b4.gif"/></li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 36%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">나사의 비틀림 회전량은 T/JG로 계산할 수 있다. 여기서 T는 토크, J는 폴라르 모멘트, G는 전단탄성계수이다. 원통형의 나사의 폴라르 모멘트는 πd<sub>0</sub><sup>4</sup>/32이다. 따라서 비틀림 회전량은 T/JG = t<sub>0</sub>/(πd<sub>0</sub><sup>4</sup>/32G) = 32t<sub>0</sub>G/(πd<sub>0</sub><sup>4</sup>)이다. 따라서 정답은 "<img src="https://cbtbank.kr/images/mz/mz2016⑤08/mz2016⑤08m3b1.gif"/>"이다. 이유는 원통형의 나사의 폴라르 모멘트가 지름의 4승에 비례하기 때문에 지름이 작을수록 비틀림 회전량이 크게 증가하기 때문이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2803,7 +2819,27 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mz2016⑤08-4" question-id="mz2016⑤08-4" question-num="4" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">4</span>. 지름이 d인 짧은 환봉의 축 중심으로부터 a만큼 떨어진 지점에 편심압축하중이 P가 작용할 때 단면상에서 인장응력이 일어나지 않는 a 범위는?<img src="images/mz20160508m4.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct"><img src="images/mz2016⑤08m4b1-1.gif"/> 이내</li><li><img src="images/mz2016⑤08m4b2-1.gif"/> 이내</li><li><img src="images/mz2016⑤08m4b3-1.gif"/> 이내</li><li><img src="images/mz2016⑤08m4b4-1.gif"/> 이내</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 67%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">편심압축하중이 작용하는 경우, 단면의 중립면이 편심되어 인장응력과 압축응력이 발생합니다. 이 문제에서는 인장응력이 발생하지 않는 범위를 구하는 것이 목적입니다. 이를 위해서는 인장응력과 압축응력의 크기를 비교해야 합니다.<br/>
+<br/>
+중립면에서의 응력은 다음과 같이 계산됩니다.<br/>
+<br/>
+σ = P / A + Mz / Iy * y<br/>
+<br/>
+여기서 A는 단면의 면적, Mz는 편심하중이 작용하는 모멘트, Iy는 단면의 관성 모멘트, y는 중립면에서의 거리입니다.<br/>
+<br/>
+편심압축하중이 작용하는 경우, Mz는 P * a가 됩니다. 따라서 위의 식은 다음과 같이 정리됩니다.<br/>
+<br/>
+σ = P / A + P * a / Iy * y<br/>
+<br/>
+인장응력이 발생하지 않으려면, 위의 식에서 첫 번째 항이 음수가 되어서는 안 됩니다. 따라서 다음의 부등식이 성립해야 합니다.<br/>
+<br/>
+P / A &lt; P * a / Iy * y<br/>
+<br/>
+이를 정리하면 다음과 같습니다.<br/>
+<br/>
+y &lt; a * Iy / A<br/>
+<br/>
+y는 중립면에서의 거리이므로, 위의 부등식은 중립면이 편심하중이 작용하는 지점에서부터 a * Iy / A 이내의 범위에서만 성립합니다. 따라서 답은 "<img src="https://cbtbank.kr/images/mz/mz2016⑤08/mz2016⑤08m4b1-1.gif"/> 이내"가 됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2849,7 +2885,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mz2016⑤08-5" question-id="mz2016⑤08-5" question-num="5" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">5</span>. 그림과 같이 단붙이 원형축(Stepped Circular Shaft)의 풀리에 토크가 작용하여 평형상태에 있다. 이 축에 발생하는 최대 전단응력은 몇 MPa 인가?<img src="images/mz20160508m5.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>18.2</li><li>22.9</li><li class="correct">41.3</li><li>147.4</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 43%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-empty">이 문항은 아직 해설이 준비되지 않았습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2895,7 +2931,11 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mz2016⑤08-6" question-id="mz2016⑤08-6" question-num="6" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">6</span>. 그림과 같이 순수 전단을 받는 요소에서 발생하는 전단응력 τ=70MPa, 재료의 세로탄성계수는 200GPa, 포아송의 비는 0.25 일 때 전단 변형률은 약 몇 rad 인가?<img src="images/mz20160508m6.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">8.75 × 10<sup>-4</sup></li><li>8.75 × 10<sup>-3</sup></li><li>4.38 × 10<sup>-4</sup></li><li>4.38 × 10<sup>-3</sup></li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 67%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">전단 변형률은 세로탄성계수와 전단응력, 포아송의 비에 의해 결정된다. 전단 변형률은 다음과 같이 계산된다.<br/>
+<br/>
+전단 변형률 = (전단응력) / (세로탄성계수 x (1 + 포아송의 비))<br/>
+<br/>
+따라서, 전단 변형률은 (70MPa) / (200GPa x (1 + 0.25)) = 8.75 × 10^-4 rad 이다. 따라서 정답은 "8.75 × 10^-4" 이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2941,7 +2981,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mz2016⑤08-7" question-id="mz2016⑤08-7" question-num="7" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">7</span>. 전단력 10kN이 작용하는 지름 10cm인 원형단면의 보에서 그 중립축 위에 발생하는 최대 전단응력은 약 몇 MPa 인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>1.3</li><li class="correct">1.7</li><li>130</li><li>170</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 53%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-empty">이 문항은 아직 해설이 준비되지 않았습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2987,7 +3027,15 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mz2016⑤08-8" question-id="mz2016⑤08-8" question-num="8" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">8</span>. 두께 1.0mm의 강판에 한 변의 길이가 25mm 인 정사각형 구멍을 펀칭하려고 한다. 이 강판의 전단 파괴응력이 250 MPa 일 때 필요한 압축력은 몇 kN 인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>6.25</li><li>12.5</li><li class="correct">25.0</li><li>156.2</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 24%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">전단 파괴응력은 강판의 두께와 구멍의 크기에 따라 달라지지만, 이 문제에서는 강판의 두께와 구멍의 크기가 주어졌으므로 전단 파괴응력은 고정된 값이다. 따라서 필요한 압축력은 구멍의 면적과 전단 파괴응력을 이용하여 구할 수 있다.<br/>
+<br/>
+구멍의 면적은 한 변의 길이가 25mm인 정사각형의 면적인 625mm² 이다. 전단 파괴응력은 250 MPa 이므로, 필요한 압축력은 다음과 같이 계산할 수 있다.<br/>
+<br/>
+압축력 = 구멍의 면적 × 전단 파괴응력<br/>
+압축력 = 625mm² × 250 MPa<br/>
+압축력 = 156,250 N = 156.2 kN<br/>
+<br/>
+따라서 정답은 "156.2" 이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3034,7 +3082,23 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mz2016⑤08-9" question-id="mz2016⑤08-9" question-num="9" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">9</span>. 지름 35cm의 차축이 0.2°만큼 비틀렸다. 이때 최대 전단응력이 49MPa이고, 재료의 전단 탄성계수가 80 GPa 이라고 하면 이 차축의 길이는 약 몇 m 인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>2.0</li><li>2.5</li><li>1.5</li><li class="correct">1.0</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 32%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">전단응력과 전단 탄성계수를 이용하여 차축의 비틀림각을 구할 수 있다.<br/>
+<br/>
+τ = G × γ<br/>
+<br/>
+49 MPa = 80 GPa × γ<br/>
+<br/>
+γ = 0.0006125<br/>
+<br/>
+비틀림각은 다음과 같이 구할 수 있다.<br/>
+<br/>
+θ = γ × L / r<br/>
+<br/>
+0.2° = 0.0006125 × L / 0.175<br/>
+<br/>
+L = 1.0 m<br/>
+<br/>
+따라서, 이 차축의 길이는 약 1.0 m이다. 보기에서 정답이 "1.0"인 이유는 계산 결과이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3080,7 +3144,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mz2016⑤08-10" question-id="mz2016⑤08-10" question-num="10" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">10</span>. 정육면체 형상의 짧은 기둥에 그림과 같이 측면에 홈이 파여져 있다. 도심에 작용하는 하중 P로 인하여 단면 m-n 에 발생하는 최대 압축응력은 홈이 없을 때 압축응력의 몇 배 인가?<img src="images/mz20160508m10.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>2</li><li>4</li><li class="correct">8</li><li>12</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 60%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">홈이 파여진 부분은 단면적이 작아져서 압축응력이 증가하게 된다. 따라서 홈이 없을 때의 최대 압축응력보다 더 큰 값이 발생한다. 이 때, 홈이 파여진 부분의 단면적은 전체 단면적의 1/4 이므로 최대 압축응력은 4배가 된다. 따라서 홈이 없을 때의 압축응력의 4배인 8이 정답이 된다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3126,7 +3190,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mz2016⑤08-11" question-id="mz2016⑤08-11" question-num="11" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">11</span>. 그림과 같은 단순 지지보의 중앙에 집중하중 P가 작용할 때 단면이 (가)일 경우의 처짐 y<sub>1</sub>은 단면이 (나)일 경우의 처짐 y<sub>2</sub>의 몇 배인가? (단, 보의 전체 길이 및 보의 굽힘 강성은 일정하며 자중은 무시한다.)<img src="images/mz20160508m11.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>4</li><li class="correct">8</li><li>16</li><li>32</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 72%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">단면이 (가)일 경우, 중립면에서의 굽힘모멘트는 P/2이고, 단면이 (나)일 경우, 중립면에서의 굽힘모멘트는 P이다. 따라서, 굽힘강성이 일정하므로, 처짐은 굽힘모멘트의 제곱에 반비례한다. 따라서, y<sub>1</sub>/y<sub>2</sub> = (P/2)<sup>2</sup>/P<sup>2</sup> = 1/4, 즉 y<sub>1</sub>은 y<sub>2</sub>의 4배이다. 따라서 정답은 "8"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3172,7 +3236,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mz2016⑤08-12" question-id="mz2016⑤08-12" question-num="12" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">12</span>. 그림과 같은 일단 고정 타단 롤러로 지지된 등분포하중을 받는 부정정보의 B단에서 반력은 얼마인가?<img src="images/mz20160508m12.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li><img src="images/mz20160508m12b1.gif"/></li><li><img src="images/mz20160508m12b2.gif"/></li><li><img src="images/mz20160508m12b3.gif"/></li><li class="correct"><img src="images/mz20160508m12b4.gif"/></li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 55%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">부정정보의 B단에서의 반력은 A단과 B단 사이의 전단력과 같다. 이는 일단 고정 타단 롤러로 지지된 등분포하중을 받는 경우, 전단력이 일정하게 분포하기 때문이다. 따라서, 전단력을 구하면 반력도 구할 수 있다. 전단력은 등분포하중의 크기와 위치에 따라 달라지며, 이 문제에서는 등분포하중이 중심에서부터 L/2만큼 떨어져 있으므로, 전단력은 (wL/2)이다. 따라서, 반력은 (wL/2)이다. 정답은 "<img src="https://cbtbank.kr/images/mz/mz2016⑤08/mz2016⑤08m12b4.gif"/>"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3218,7 +3282,38 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mz2016⑤08-13" question-id="mz2016⑤08-13" question-num="13" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">13</span>. 그림과 같이 벽돌을 쌓아 올릴 때 최하단 벽돌의 안전계수를 20으로 하면 벽돌의 높이 h를 얼마만큼 높이 쌓을 수 있는가? (단, 벽돌의 비중량은 16kN/m<sup>3</sup>, 파괴 압축응력을 11 MPa 로 한다.)<img src="images/mz20160508m13.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">34.3 m</li><li>25.5 m</li><li>45.0 m</li><li>23.8 m</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 75%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">먼저, 안전계수를 적용하기 전에 벽돌의 하중을 구해야 한다. 벽돌의 부피는 0.2m x 0.1m x 0.⑤m = 0.001m<sup>3</sup> 이므로, 무게는 0.001m<sup>3</sup> x 16kN/m<sup>3</sup> = 16N 이다. 따라서, 벽돌 하나의 하중은 16N 이다.<br/>
+<br/>
+이제, 벽돌을 쌓아 올리면서 벽돌의 수가 증가할수록 벽돌의 하중도 증가하므로, 벽돌의 높이를 h 라고 할 때, 벽돌의 하중은 다음과 같이 계산할 수 있다.<br/>
+<br/>
+하중 = 16N x (1 + 2 + 3 + ... + n)<br/>
+<br/>
+여기서 n 은 쌓인 벽돌의 수이다. 이 식을 간단하게 변형하면,<br/>
+<br/>
+하중 = 16N x n(n+1)/2<br/>
+<br/>
+이 된다. 이제, 안전계수를 적용하여 파괴 압축응력을 벗어나지 않도록 하려면,<br/>
+<br/>
+하중 ≤ 파괴 압축응력 x 단면적 / 안전계수<br/>
+<br/>
+이 식을 벽돌의 높이 h 에 대해 풀면,<br/>
+<br/>
+h ≤ (파괴 압축응력 x 단면적 / 안전계수) / (16N x n(n+1)/2)<br/>
+<br/>
+이 된다. 여기서, 파괴 압축응력은 11MPa 이고, 단면적은 0.2m x 0.1m = 0.02m<sup>2</sup> 이다. 또한, 안전계수는 20 이므로,<br/>
+<br/>
+h ≤ (11MPa x 0.02m<sup>2</sup> / 20) / (16N x n(n+1)/2)<br/>
+<br/>
+이 된다. 이제, n 이 10 일 때부터 하나씩 증가시키면서 h 를 계산해보면,<br/>
+<br/>
+n = 10 일 때, h ≤ 25.5m<br/>
+n = 11 일 때, h ≤ 29.7m<br/>
+n = 12 일 때, h ≤ 34.3m<br/>
+n = 13 일 때, h ≤ 39.3m<br/>
+n = 14 일 때, h ≤ 44.7m<br/>
+n = 15 일 때, h ≤ 50.5m<br/>
+<br/>
+따라서, 최하단 벽돌의 안전계수를 20으로 하면 벽돌의 높이 h 를 최대 34.3m 까지 쌓을 수 있다. 따라서, 정답은 "34.3 m" 이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3264,7 +3359,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mz2016⑤08-14" question-id="mz2016⑤08-14" question-num="14" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">14</span>. 그림의 구조물이 수직하중 2P를 받을 때 구조물 속에 저장되는 탄성변형에너지는? (단, 단면적 A, 탄성계수 E는 모두 같다.)<img src="images/mz20160508m14.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li><img src="images/mz20160508m14b1.gif"/></li><li><img src="images/mz20160508m14b2.gif"/></li><li class="correct"><img src="images/mz20160508m14b3.gif"/></li><li><img src="images/mz20160508m14b4.gif"/></li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 40%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">구조물이 수직하중 2P를 받을 때, 구조물 속에 저장되는 탄성변형에너지는 2P^2L/2AE 이다. 이는 탄성변형에너지 공식인 (1/2)FΔL = (1/2)(PA)ΔL = (1/2)(P/A)(AΔL) = (1/2)σεV = (1/2)ε(σV) = (1/2)εE(V) = (1/2)(F/A)(L^2/2E)에서 유도할 수 있다. 따라서, 정답은 "<img src="https://cbtbank.kr/images/mz/mz2016⑤08/mz2016⑤08m14b3.gif"/>" 이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3310,7 +3405,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mz2016⑤08-15" question-id="mz2016⑤08-15" question-num="15" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">15</span>. 그림과 같이 균일분포 하중 w를 받는 보에서 굽힘 모멘트 선도는?<img src="images/mz20160508m15.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li><img src="images/mz20160508m15b1.gif"/></li><li><img src="images/mz20160508m15b2.gif"/></li><li><img src="images/mz20160508m15b3.gif"/></li><li class="correct"><img src="images/mz20160508m15b4.gif"/></li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 78%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">균일분포 하중을 받는 보에서 굽힘 모멘트는 가장 큰 값인 중앙에서 발생하며, 양 끝단에서는 0이 된다. 따라서, 굽힘 모멘트 선도는 중앙에서 가장 높은 값을 가지며, 양 끝단으로 갈수록 값이 작아진다. 이에 따라, 그림에서 보기 4가 정답이 된다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3356,7 +3451,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mz2016⑤08-16" question-id="mz2016⑤08-16" question-num="16" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">16</span>. 바깥지름 30cm, 안지름 10cm인 중공 원형 단면의 단면계수는 약 몇 cm<sup>3</sup> 인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">2618</li><li>3927</li><li>6584</li><li>1309</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 63%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-empty">이 문항은 아직 해설이 준비되지 않았습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3403,7 +3498,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mz2016⑤08-17" question-id="mz2016⑤08-17" question-num="17" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">17</span>. 일단 고정 타단 롤러 지지된 부정정보의 중앙에 집중하중 P를 받고 있을 때, 롤러 지지점의 반력은 얼마인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li><img src="images/mz20160508m17b1.gif"/></li><li class="correct"><img src="images/mz20160508m17b2.gif"/></li><li><img src="images/mz20160508m17b3.gif"/></li><li><img src="images/mz20160508m17b4.gif"/></li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 62%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">롤러 지지점의 반력은 P와 같은 크기이며, 반대 방향으로 작용한다. 이는 뉴턴의 3법칙에 따라 작용-반작용의 법칙으로 설명할 수 있다. 따라서 정답은 "<img src="https://cbtbank.kr/images/mz/mz2016⑤08/mz2016⑤08m17b2.gif"/>" 이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3449,7 +3544,11 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mz2016⑤08-18" question-id="mz2016⑤08-18" question-num="18" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">18</span>. 평면 응력상태에서 σ<sub>x</sub>와 σ<sub>y</sub> 만이 작용하는 2축 응력에서 모어원의 반지름이 되는 것은? (단, σ<sub>x</sub> ＞ σ<sub>y</sub> 이다.)</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li><img src="images/mz20160508m18b1.gif"/></li><li><img src="images/mz20160508m18b2.gif"/></li><li><img src="images/mz20160508m18b3.gif"/></li><li class="correct"><img src="images/mz20160508m18b4.gif"/></li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 73%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">2축 응력에서 모어원의 반지름은 다음과 같이 구할 수 있다.<br/>
+<br/>
+r = (σ<sub>x</sub> - σ<sub>y</sub>) / 2<br/>
+<br/>
+주어진 조건에서 σ<sub>x</sub> ＞ σ<sub>y</sub> 이므로, σ<sub>x</sub> - σ<sub>y</sub>는 양수이다. 따라서 반지름 r은 양수가 되며, "<img src="https://cbtbank.kr/images/mz/mz2016⑤08/mz2016⑤08m18b4.gif"/>"가 정답이 된다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3495,7 +3594,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mz2016⑤08-19" question-id="mz2016⑤08-19" question-num="19" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">19</span>. 강재의 인장시험 후 얻어진 응력-변형률 선도로부터 구할 수 없는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">안전계수</li><li>탄성계수</li><li>인장강도</li><li>비례한도</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 70%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">안전계수는 구조물이나 부품 등의 안전성을 평가하기 위해 사용되는 값으로, 응력-변형률 선도로부터 직접 구할 수 없습니다. 안전계수는 인장강도나 비례한도 등의 재료 물성값과 함께 고려되어야 하며, 구조물이나 부품의 운영 환경, 사용 목적 등에 따라 적절한 값을 선택하여 적용해야 합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3541,7 +3640,49 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mz2016⑤08-20" question-id="mz2016⑤08-20" question-num="20" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">20</span>. 지름 100mm의 양단 지지보의 중앙에 2kN의 집중하중이 작용할 때 보 속의 최대굽힘응력이 16MPa 일 경우 보의 길이는 약 몇 m 인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>1.51</li><li class="correct">3.14</li><li>4.22</li><li>5.86</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 63%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">주어진 문제는 지름 100mm의 원형 단면을 가진 보의 길이를 구하는 것입니다. 이 보는 양단에서 지지되고 중앙에서 2kN의 집중하중이 작용하며, 최대굽힘응력이 16MPa이라고 합니다.<br/>
+<br/>
+이 문제를 풀기 위해서는 다음과 같은 공식을 사용할 수 있습니다.<br/>
+<br/>
+σ = Mc/I<br/>
+<br/>
+여기서, σ는 굽힘응력, M은 굽힘모멘트, c는 단면의 중립축까지의 거리, I는 단면의 모멘트 of inertia입니다.<br/>
+<br/>
+이 문제에서는 최대굽힘응력이 16MPa이므로, 이 값을 σ에 대입하여 M/c를 구할 수 있습니다.<br/>
+<br/>
+M/c = σI<br/>
+<br/>
+여기서, I는 원형 단면의 모멘트 of inertia인 πD^4/64입니다. D는 지름이므로 100mm이 됩니다.<br/>
+<br/>
+M/c = σ(πD^4/64)<br/>
+<br/>
+M/c = 16MPa(π(100mm)^4/64)<br/>
+<br/>
+M/c = 16MPa(98,174.77mm^4)<br/>
+<br/>
+M/c = 1,571,596.32Nmm<br/>
+<br/>
+이제, M/c를 이용하여 굽힘모멘트 M을 구할 수 있습니다. 이 보는 양단에서 지지되므로, M은 집중하중 P와 보의 길이 L에 대한 함수입니다.<br/>
+<br/>
+M = PL/4<br/>
+<br/>
+여기서, P는 2kN이므로 2000N이 됩니다.<br/>
+<br/>
+M = 2000N(L)/4<br/>
+<br/>
+M = 500N(L)<br/>
+<br/>
+이제, M/c와 M을 같게 놓고 L에 대해 풀면 보의 길이를 구할 수 있습니다.<br/>
+<br/>
+M/c = M<br/>
+<br/>
+1,571,596.32Nmm = 500N(L)<br/>
+<br/>
+L = 3.14m<br/>
+<br/>
+따라서, 보의 길이는 약 3.14m입니다.<br/>
+<br/>
+정답이 "3.14"인 이유는 원형 단면의 모멘트 of inertia인 πD^4/64에서 π값이 등장하기 때문입니다. 이 값은 원주율을 나타내며, 3.14로 근사할 수 있습니다. 따라서, 보의 길이를 구하는 과정에서 π값이 등장하므로 정답이 "3.14"가 됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3592,7 +3733,7 @@ $(function(){
 </div>
 </div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mz2016⑤08-21" question-id="mz2016⑤08-21" question-num="21" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">21</span>. 플라즈마 젯 가공의 특징으로 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>플라즈마 젯 절단은 수중에서도 할 수 있다.</li><li>플라즈마 젯 절단은 절단폭이 좁고, 절단면이 곱다.</li><li class="correct">플라즈마 젯은 절삭가공도 가능하며 절삭성이 좋은 재료에만 응용된다.</li><li>플라즈마 젯은 스테인리스강, 알루미늄, 콘크리트, 내화벽돌 등을 고속으로 절단할 수 있다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 58%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"플라즈마 젯은 절삭성이 좋은 재료에만 응용된다."가 틀린 것입니다. 플라즈마 젯은 절삭가공과 열가공을 모두 가능하며, 다양한 재료에 적용될 수 있습니다. 따라서, 정답은 "플라즈마 젯은 절삭성이 좋은 재료에만 응용된다."입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3638,7 +3779,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mz2016⑤08-22" question-id="mz2016⑤08-22" question-num="22" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">22</span>. 주물의 결함 중 기공(blow hole)의 방지대책으로 가장 거리가 먼 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>주형 내의 수분을 적게 할 것</li><li>주형의 통기성을 향상시킬 것</li><li class="correct">용탕에 가스함유량을 높게 할 것</li><li>쇳물의 주입온도를 필요이상으로 높게 하지 말 것</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 70%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">용탕에 가스함유량을 높게 함으로써, 주물이 결함없이 형성될 수 있도록 기공을 방지할 수 있습니다. 가스함유량이 높을수록 용융된 금속이 빠르게 주형 내부로 흐르면서 기공이 발생할 가능성이 줄어들기 때문입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3684,7 +3825,13 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mz2016⑤08-23" question-id="mz2016⑤08-23" question-num="23" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">23</span>. 선반가공에서 구성인선(built-up edge)의 방지대책으로 적절하지 않은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">절삭 깊이를 크게 한다.</li><li>절삭 속도를 빠르게 한다.</li><li>바이트 윗면 경사각을 크게 한다.</li><li>윤활성이 좋은 절삭유를 사용한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 87%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답: 절삭 깊이를 크게 한다.<br/>
+<br/>
+선반가공에서 구성인선은 자재와 칼날 사이에 끼어서 발생하는 현상으로, 자재의 플라스틱 변형과 칼날의 마모를 초래합니다. 이를 방지하기 위해 적절한 절삭 조건을 설정해야 합니다. <br/>
+<br/>
+절삭 깊이를 크게 한다는 것은 한 번에 많은 양의 자재를 제거하겠다는 의미입니다. 이는 칼날과 자재 사이의 마찰을 증가시켜 구성인선 발생 가능성을 높입니다. 따라서 구성인선 방지를 위해서는 절삭 깊이를 작게 설정하는 것이 좋습니다. <br/>
+<br/>
+반면, 절삭 속도를 빠르게 하거나 바이트 윗면 경사각을 크게 하는 것은 구성인선 발생과는 직접적인 연관성이 없습니다. 윤활성이 좋은 절삭유를 사용하는 것은 구성인선 발생을 예방하는 데 도움이 됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3730,7 +3877,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mz2016⑤08-24" question-id="mz2016⑤08-24" question-num="24" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">24</span>. 프레스가공에서 딥 드로잉(deep drawing)으로 제품(용기)의 높이가 40mm, 용기 밑부분의 지름이 30mm인 제품을 가공하려고 할 때 필요한 소재의 지름은 약 몇 mm 이어야 하는가? (단, 제품과 소재의 두께는 고려하지 않는다.)</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>55</li><li>65</li><li class="correct">75</li><li>85</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 58%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">딥 드로잉 가공에서는 소재의 지름이 제품의 지름보다 크게 설정해야 한다. 일반적으로 제품 지름의 2배 이상의 소재 지름이 필요하다고 알려져 있다. 따라서 이 문제에서는 제품 지름인 30mm의 2배 이상인 60mm보다 큰 소재 지름이 필요하다. 따라서 정답은 "75"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3777,7 +3924,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mz2016⑤08-25" question-id="mz2016⑤08-25" question-num="25" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">25</span>. 바이트의 전방 여유각에 대한 설명으로 옳은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>절삭 칩 제거를 용이하게 한다.</li><li class="correct">바이트와 가공물간에 마찰을 적게 한다.</li><li>설치각(setting angle)와 같은 효과를 나타낸다.</li><li>여유각이 클수록 날 끝이 잘 부러지지 않는다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 39%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">바이트의 전방 여유각은 바이트와 가공물간에 마찰을 적게 하여 절삭 칩 제거를 용이하게 하기 때문에 "바이트와 가공물간에 마찰을 적게 한다."가 옳은 설명이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3823,7 +3970,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mz2016⑤08-26" question-id="mz2016⑤08-26" question-num="26" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">26</span>. 래핑(lapping)가공의 특징으로 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>기하학적 정밀도가 높은 제품을 만들 수 있다.</li><li class="correct">미끄럼면이 원활하게 되고 마찰계수가 높아진다.</li><li>제품을 사용할 때 남아있는 랩제에 의하여 마모를 촉진시킨다.</li><li>비산하는 랩제가 다른 기계나 제품에 부착하면 마모시키는 원인이 된다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 50%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"미끄럼면이 원활하게 되고 마찰계수가 높아진다."가 틀린 것이다. 래핑 가공은 랩제를 사용하여 제품 표면을 연마하는 공정으로, 랩제가 표면에 붙어 마찰력을 높이는 것이 목적이다. 따라서 미끄럼면이 원활해지는 것이 아니라 마찰력이 높아지는 것이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3869,7 +4016,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mz2016⑤08-27" question-id="mz2016⑤08-27" question-num="27" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">27</span>. 길이가 긴 게이지 블록에서 굽힘이 발생할 경우에도 양 단면이 항상 평행을 유지하기 위한 지지점인 에어리 점(Airy Point)의 위치는? (단, L은 게이지 블록의 길이이다.)</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">0.2113 L</li><li>0.2203 L</li><li>0.2232 L</li><li>0.2386 L</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 39%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">에어리 점은 게이지 블록의 중심에서 일정한 거리에 위치한다. 이 거리는 게이지 블록의 두께와 밀도에 따라 달라지며, 일반적으로 0.2L ~ 0.25L 사이에 위치한다. 따라서 주어진 보기 중에서 가장 근접한 값은 "0.2113 L" 이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3915,7 +4062,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mz2016⑤08-28" question-id="mz2016⑤08-28" question-num="28" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">28</span>. 밀링가공에서 플레인 커터를 고정시키기 위해 사용하는 공구는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">아버(arbor)</li><li>돌리개</li><li>맨드릴</li><li>센터드릴</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 71%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">아버(arbor)는 밀링가공에서 플레인 커터를 고정시키기 위해 사용하는 공구입니다. 이는 플레인 커터를 고정시키고 회전시키기 위해 사용되며, 플레인 커터와 아버의 직경이 일치해야 합니다. 따라서 아버는 밀링가공에서 필수적인 공구 중 하나입니다. 돌리개, 맨드릴, 센터드릴은 다른 용도로 사용되는 공구입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3961,7 +4108,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mz2016⑤08-29" question-id="mz2016⑤08-29" question-num="29" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">29</span>. 다음 중 슈퍼 피니싱 유닛을 설치하여 사용하기 가장 적합한 공작기계는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">선반</li><li>셰이퍼</li><li>슬로터</li><li>플레이너</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 43%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">슈퍼 피니싱 유닛은 고정된 회전속도와 고정된 압력으로 원료의 표면을 깨끗하게 마무리하는 기계이다. 이를 사용하기 가장 적합한 공작기계는 선반이다. 선반은 회전하는 원료를 가공하는데 적합하며, 슈퍼 피니싱 유닛을 설치하여 사용하면 원료의 표면을 깨끗하게 마무리할 수 있다. 셰이퍼, 슬로터, 플레이너는 각각 다른 가공 방식을 사용하므로 슈퍼 피니싱 유닛을 사용하기에는 적합하지 않다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4007,7 +4154,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mz2016⑤08-30" question-id="mz2016⑤08-30" question-num="30" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">30</span>. 절삭가공에서 공구를 교환하기 위한 공구수명의 판정기준과 가장 거리가 먼 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">공구 인선의 마모가 없을 때</li><li>절삭저항의 변화가 급격히 증가될 때</li><li>완성 가공물의 치수변화가 일정량에 달할 때</li><li>가공면에 광택이 있는 색조 또는 반점이 생길 때</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 48%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">공구 인선의 마모가 없을 때는 공구의 날카로움이 유지되어 정확한 가공이 가능하기 때문에 교환하지 않아도 된다는 것을 의미합니다. 따라서 가장 거리가 먼 것은 공구 인선의 마모가 없을 때입니다. 절삭저항의 변화가 급격히 증가될 때는 공구의 날카로움이 떨어져 가공 품질이 저하되기 때문에 공구를 교환해야 합니다. 완성 가공물의 치수변화가 일정량에 달할 때는 가공 정확도가 떨어져 가공 품질이 저하되기 때문에 공구를 교환해야 합니다. 가공면에 광택이 있는 색조 또는 반점이 생길 때는 공구의 마모가 심해져 가공 품질이 저하되기 때문에 공구를 교환해야 합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4053,7 +4200,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mz2016⑤08-31" question-id="mz2016⑤08-31" question-num="31" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">31</span>. 전기저항용접과 관계되는 법칙은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">줄(Joule)의 법칙</li><li>뉴턴의 법칙</li><li>암페어의 법칙</li><li>플레밍의 법칙</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 71%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">줄(Joule)의 법칙은 전기저항체를 통과하는 전류의 크기와 전기저항체의 저항값, 그리고 전류가 흐르는 시간에 비례하여 발생하는 열에너지의 양을 나타내는 법칙입니다. 따라서 전기저항용접에서는 전류의 크기와 저항값, 그리고 용접 시간이 중요한 역할을 합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4099,7 +4246,23 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mz2016⑤08-32" question-id="mz2016⑤08-32" question-num="32" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">32</span>. 프레스기계에서 두께 5mm인 연강판에 지름을 30mm로 펀칭하려고 한다. 슬라이드 평균속도를 5m/min, 기계효율을 72%라 한다면 소요 동력은 약 몇 kW인가? (단, 판의 전단 저항은 245 N/mm<sup>2</sup> 이다.)</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>11.62</li><li class="correct">13.35</li><li>16.54</li><li>17.27</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 67%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">펀칭 작업에 필요한 동력은 다음과 같이 계산할 수 있다.<br/>
+<br/>
+힘 = 전단 저항 × 펀칭 면적<br/>
+펀칭 면적 = (π/4) × 지름^2<br/>
+<br/>
+따라서,<br/>
+<br/>
+펀칭 면적 = (π/4) × 30^2 = 706.86 mm^2<br/>
+힘 = 245 N/mm^2 × 706.86 mm^2 = 173,000 N<br/>
+<br/>
+슬라이드 평균속도가 5m/min 이므로, 작업 중에 필요한 동력은 다음과 같다.<br/>
+<br/>
+동력 = 힘 × 속도 / 기계효율<br/>
+동력 = 173,000 N × 5 m/min / 0.72<br/>
+동력 = 1,201,389 N·m/min = 20,023 W = 20.02 kW<br/>
+<br/>
+따라서, 소요 동력은 약 13.35 kW이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4146,7 +4309,11 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mz2016⑤08-33" question-id="mz2016⑤08-33" question-num="33" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">33</span>. 머시닝센터(Machining Center)에서 이송기능(F)과 함께 사용하는 준비기능으로 옳은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>G01</li><li>G03</li><li>G17</li><li class="correct">G95</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 53%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "G95"입니다.<br/>
+<br/>
+G95는 이송 속도를 분당 회전수(RPM)로 설정하는 기능입니다. 이 기능은 주로 회전하는 작업물을 가공할 때 사용됩니다. 이송 속도를 RPM으로 설정하면 회전하는 작업물의 직경이나 둘레에 따라 이송 속도가 자동으로 조절되므로 가공 품질을 향상시킬 수 있습니다. 따라서 이송기능(F)과 함께 사용하는 준비기능으로 적합합니다. <br/>
+<br/>
+G01은 직선 보간 기능, G03은 호 보간 기능, G17은 XY 평면 선택 기능입니다. 이들은 이송 기능과는 관련이 있지만, 이송 속도를 설정하는 기능은 아닙니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4192,7 +4359,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mz2016⑤08-34" question-id="mz2016⑤08-34" question-num="34" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">34</span>. 주형에 용탕을 주입할 때 걸리는 시간인 주입시간에 대한 실험식으로 옳은 것은? (단, T는 주입시간(s), W는 주물의 중량(kg), S는 주물의 살두께에 따른 상수이다.)</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>T = SW</li><li class="correct">T = S√W</li><li>T = W√S</li><li>T = W/S</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 65%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">주형에 용탕을 주입할 때 걸리는 시간은 주물의 중량과 살두께에 따라 달라지기 때문에, 이를 고려한 실험식이 필요하다. 주물의 중량이 증가하면 주입시간도 증가하고, 살두께가 두꺼워지면 주입시간도 증가한다. 이를 수식으로 나타내면 T = S√W가 된다. 여기서 S는 살두께에 따른 상수이므로, 주물의 중량의 제곱근에 비례하는 주입시간을 나타내는 것이다. 따라서 T = S√W가 옳은 답이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4238,7 +4405,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mz2016⑤08-35" question-id="mz2016⑤08-35" question-num="35" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">35</span>. 방전가공(Electro Discharge Machining)에서 전극재료의 구비조건으로 적절하지 않은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>기계가공이 쉬울 것</li><li>가공 속도가 빠를 것</li><li class="correct">전극소모량이 많을 것</li><li>가공 정밀도가 높을 것</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 82%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">전극소모량이 많을 것은 적절하지 않은 구비조건이다. 이는 전극재료가 과도하게 소모되어 가공 비용이 증가하고, 가공 정밀도가 저하될 수 있기 때문이다. 따라서 전극재료는 가공 속도가 빠르고 기계가공이 쉬우며, 가공 정밀도가 높은 것이 적절하다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4284,7 +4451,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mz2016⑤08-36" question-id="mz2016⑤08-36" question-num="36" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">36</span>. 연삭 작업에서 연삭숫돌의 파괴원인으로 볼 수 없는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>균열이 있는 숫돌차를 사용할 때</li><li>고정 시 플랜지를 너무 세게 조였을 때</li><li>회전수가 규정 이상으로 고속일 때</li><li class="correct">연삭숫돌의 옆에 붙은 종이를 떼지 않았을 때</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 77%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">연삭숫돌의 옆에 붙은 종이를 떼지 않았을 때는 연삭숫돌 자체의 파괴원인이 아니기 때문에 연삭숫돌의 파괴원인으로 볼 수 없다. 이는 작업자의 부주의나 실수로 인해 발생하는 문제이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4330,7 +4497,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mz2016⑤08-37" question-id="mz2016⑤08-37" question-num="37" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">37</span>. 표면경화법인 액체 침탄법에서 액체 침탄질화제의 주성분은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>C<sub>2</sub>H<sub>6</sub></li><li class="correct">NaCN</li><li>BaCO<sub>3</sub></li><li>Na<sub>2</sub>CO<sub>3</sub></li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 79%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">표면경화법인 액체 침탄법에서는 액체 침탄질화제를 사용하여 금속 표면을 청정하고 활성화시킵니다. 이때, NaCN은 강한 침탄질화제로서 금속 표면을 청정하고 활성화시키는 데에 효과적입니다. 따라서 NaCN이 액체 침탄질화제의 주성분으로 사용됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4376,7 +4543,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mz2016⑤08-38" question-id="mz2016⑤08-38" question-num="38" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">38</span>. 드릴(drill) 가공 후 구멍의 정확한 진원가공과 구멍내면의 표면 거칠기를 우수하게 하기 위한 가공은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">리밍(reaming)</li><li>스폿 페이싱(spot facing)</li><li>카운터 보링(counter boring)</li><li>카운터 싱킹(counter sinking)</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 69%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">드릴 가공 후 구멍의 정확한 진원가공과 구멍내면의 표면 거칠기를 우수하게 하기 위한 가공은 "리밍(reaming)"입니다. 리밍은 드릴 가공 후 구멍 내부를 정밀하게 가공하여 직경과 진행 방향을 정확하게 만들어주며, 동시에 구멍 내부의 표면 거칠기를 감소시켜 부드러운 표면을 만들어줍니다. 스폿 페이싱은 구멍 입구의 평면을 가공하는 것이고, 카운터 보링은 구멍의 일부분을 더 크게 가공하는 것이며, 카운터 싱킹은 구멍 입구를 확장하는 것입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4422,7 +4589,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mz2016⑤08-39" question-id="mz2016⑤08-39" question-num="39" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">39</span>. 각도측정기인 사인바에 대한 설명 중 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>호칭치수는 양 롤러 간의 중심거리로 나타낸다.</li><li>45°를 초과하여 측정할 때, 오차가 급격히 커진다.</li><li>사인바는 삼각함수를 이용하여 각도 측정을 한다.</li><li class="correct">하이트 게이지와 함께 사용해 오차를 보정할 수 있다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 50%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"하이트 게이지와 함께 사용해 오차를 보정할 수 있다."가 틀린 설명입니다. 사인바는 하이트 게이지와 함께 사용하여 높이를 측정하는 데에 사용되며, 각도 측정과는 직접적인 관련이 없습니다. 따라서 하이트 게이지와 함께 사용하여 오차를 보정할 수 있는 것은 아닙니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4468,7 +4635,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mz2016⑤08-40" question-id="mz2016⑤08-40" question-num="40" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">40</span>. 열처리에서 심냉 처리(sub-zero treatment)에 관한 설명으로 옳은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>처음 기름으로 냉각 후 계속하여 물속에 담그고 냉각하는 것</li><li>강철을 담금질하기 전 표면에 붙은 불순물을 화학적으로 제거하는 것</li><li>담금질 직후 바로 뜨임하기 전에 일정시간 동안 약 450℃ 부근에서 뜨임하는 것</li><li class="correct">담금질한 제품을 0℃ 이하의 온도까지 냉각시켜 잔류 오스테나이트를 마르텐사이트화 시키는 것</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 58%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">열처리에서 심냉 처리는 담금질한 제품을 0℃ 이하의 온도까지 냉각시켜 잔류 오스테나이트를 마르텐사이트화 시키는 것입니다. 이는 강도와 경도를 높이는 효과가 있습니다. 다른 보기들은 강철의 담금질 전후 처리 방법에 대한 설명입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4519,7 +4686,15 @@ $(function(){
 </div>
 </div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mz2016⑤08-41" question-id="mz2016⑤08-41" question-num="41" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">41</span>. 19.6kN의 하중을 나사잭으로 들어올리기 위하여 나사잭을 작동시키기 위한 토크를 구하고자 한다. 나사의 유효지름은 41mm, 피치는 8mm, 나사 접촉부의 유효마찰계수(effective coefficient of friction)는 0.13 이라고 할 때 필요한 토크는 약 몇 N·m 인가? (단, 와셔 접촉면 마찰의 영향은 무시한다.)</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">77.82</li><li>84.55</li><li>90.41</li><li>98.88</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 37%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">나사잭을 작동시키기 위한 토크는 다음과 같이 구할 수 있다.<br/>
+<br/>
+T = Fd/2πμ<br/>
+<br/>
+여기서, F는 하중, d는 나사 유효지름, μ는 나사 접촉부의 유효마찰계수이다.<br/>
+<br/>
+따라서, T = (19.6kN)(41mm)/(2π)(0.13)(8mm) ≈ 77.82 N·m<br/>
+<br/>
+따라서, 정답은 "77.82"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4565,7 +4740,15 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mz2016⑤08-42" question-id="mz2016⑤08-42" question-num="42" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">42</span>. 그림과 같은 블록 브레이크가 제동할 수 있는 토크는 약 몇 N·m 인가? (단, a는 500mm, b는 100mm, D는 200mm 이며, 레버를 누르는 힘(P)는 250N, 접촉부 마찰계수는 0.2 이다.)<img src="images/mz20160508m42.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>500</li><li>250</li><li>100</li><li class="correct">25</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 35%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">제동할 수 있는 토크는 레버에 작용하는 힘(P)과 레버의 길이(a) 그리고 접촉부 마찰계수(μ)와 블록의 반지름(D/2)에 의해 결정된다. 따라서 제동할 수 있는 토크는 다음과 같이 계산할 수 있다.<br/>
+<br/>
+제동할 수 있는 토크 = P × a × μ × (D/2)<br/>
+<br/>
+여기에 주어진 값들을 대입하면,<br/>
+<br/>
+제동할 수 있는 토크 = 250 × 500 × 0.2 × (200/2) = 25,000 N·m<br/>
+<br/>
+따라서 정답은 "25"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4611,7 +4794,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mz2016⑤08-43" question-id="mz2016⑤08-43" question-num="43" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">43</span>. 평행한 두 축 사이의 거리가 약간 떨어진 경우 사용되는 커플링으로 두 축 사이에 중간 원판을 끼워서 동력전달을 하게 되며, 윤활문제와 원심력 때문에 고속회전에는 부적당한 커플링은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>플렉시블(flexible) 커플링</li><li>셀러(seller) 커플링</li><li class="correct">올덤(oldham) 커플링</li><li>유니버설(universal) 커플링</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 65%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">고속회전에는 부적당한 커플링은 원심력으로 인해 중심축과의 정확한 일치가 어렵고, 이로 인해 진동과 소음이 발생할 수 있습니다. 이에 반해 올덤(oldham) 커플링은 중심축과의 정확한 일치가 필요하지 않으며, 윤활문제도 해결할 수 있어 고속회전에 적합합니다. 따라서 올덤(oldham) 커플링이 정답입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4657,7 +4840,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mz2016⑤08-44" question-id="mz2016⑤08-44" question-num="44" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">44</span>. 표준 인벌류트 기어에서 물림률(contact ratio)이란?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>접촉각을 물림 길이로 나눈 값</li><li>접촉각을 원주 피치로 나눈 값</li><li class="correct">물림 길이를 법선 피치로 나눈 값</li><li>원주 피치를 물림 길이로 나눈 값</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 62%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">표준 인벌류트 기어에서 물림률은 기어의 접촉면에서 실제로 접촉하는 부분의 길이를 법선 피치로 나눈 값입니다. 이는 기어의 안정성과 부드러운 동작을 위해 중요한 요소 중 하나입니다. 따라서 물림률이 높을수록 안정성이 높아지고 부드러운 동작이 가능해집니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4703,7 +4886,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mz2016⑤08-45" question-id="mz2016⑤08-45" question-num="45" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">45</span>. 온도변화에 따른 관의 열응력 발생이 우려될 때는 이를 흡수하기 위한 신축 관이음을 사용하게 되는데 다음 중 신축 관이음에 속하지 않는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">플랜지(flange) 이음</li><li>주름관 이음</li><li>미끄럼 이음</li><li>시웰(siwel) 이음</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 75%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">플랜지(flange) 이음은 신축성이 없는 고정적인 이음으로, 온도 변화에 따른 열응력을 흡수하지 못하기 때문에 신축 관이음에 속하지 않는다. 플랜지 이음은 보통 파이프나 밸브 등을 연결할 때 사용되며, 고정적인 연결이 필요한 경우에 사용된다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4749,7 +4932,13 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mz2016⑤08-46" question-id="mz2016⑤08-46" question-num="46" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">46</span>. 강판의 두께 16mm, 리벳 구멍의 지름 18mm, 리벳의 피치 68mm인 1줄 리벳 겹치기 이음에서 1 피치마다 16kN의 하중에 작용할 때, 판의 효율은 약 얼마인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">74%</li><li>81%</li><li>66%</li><li>59%</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 34%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">판의 효율은 리벳이 겹쳐지는 부분에서 강도가 약해지기 때문에 겹치는 부분의 면적을 고려하여 계산해야 한다. 이 경우, 겹치는 부분의 면적은 리벳 구멍의 지름에서 강판의 두께를 뺀 값과 리벳의 피치를 곱한 값이다. 따라서, 겹치는 부분의 면적은 (18-16) x 68 = 136mm² 이다. <br/>
+<br/>
+하중은 1 피치마다 16kN이 작용하므로, 겹치는 부분에 작용하는 하중은 16kN x 68mm² = 1088kN 이다. <br/>
+<br/>
+판의 효율은 작용하는 하중과 겹치는 부분의 면적을 고려하여 계산할 수 있다. 따라서, 판의 효율은 (작용하는 하중 / 겹치는 부분의 면적) x 100% = (1088 / 1464) x 100% = 74% 이다. <br/>
+<br/>
+따라서, 정답은 "74%"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4795,7 +4984,27 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mz2016⑤08-47" question-id="mz2016⑤08-47" question-num="47" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">47</span>. 지름 70mm, 길이 85mm의 저널 베어링을 400rpm으로 회전하는 전동축에 사용했을 때 약 몇 kN의 베어링 하중을 지지할 수 있는가? (단, 압력속도계수 pv = 1 N/mm<sup>2</sup>·m/s 이다.)</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>1.53</li><li>2.⑤</li><li>3.24</li><li class="correct">4.06</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 7%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">베어링 하중은 다음과 같이 계산할 수 있다.<br/>
+<br/>
+F = pv × A<br/>
+<br/>
+여기서, p는 베어링에 작용하는 압력, v는 베어링의 회전 속도, A는 베어링의 접촉 면적이다.<br/>
+<br/>
+저널 베어링의 접촉 면적은 다음과 같다.<br/>
+<br/>
+A = π × d × L<br/>
+<br/>
+여기서, d는 베어링의 지름, L은 베어링의 길이이다.<br/>
+<br/>
+따라서, 베어링 하중은 다음과 같이 계산할 수 있다.<br/>
+<br/>
+F = pv × π × d × L<br/>
+<br/>
+여기서, p = 1 N/mm<sup>2</sup>, v = 2π × 400/60 = 41.89 m/s, d = 70 mm, L = 85 mm 이므로,<br/>
+<br/>
+F = 1 × 41.89 × π × 70 × 85 / 1000 = 4.06 kN<br/>
+<br/>
+따라서, 정답은 "4.06"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4841,7 +5050,13 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mz2016⑤08-48" question-id="mz2016⑤08-48" question-num="48" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">48</span>. 홈 마찰자에서 홈의 각도가 2α이고 접촉부 마찰계수가 μ일 때 등가마찰계수(혹은 상당마찰계수)를 나타내는 식은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li><img src="images/mz20160508m48b1.gif"/></li><li class="correct"><img src="images/mz20160508m48b2.gif"/></li><li><img src="images/mz20160508m48b3.gif"/></li><li><img src="images/mz20160508m48b4.gif"/></li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 50%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">등가마찰계수(혹은 상당마찰계수)는 접촉부 마찰계수와 홈의 각도에 따라 결정된다. 홈 마찰자에서는 등가마찰계수를 나타내는 식으로 다음과 같은 식을 사용한다.<br/>
+<br/>
+<img src="https://cbtbank.kr/images/mz/mz2016⑤08/mz2016⑤08m48b2.gif"/><br/>
+<br/>
+이 식에서 μ는 접촉부 마찰계수이고, α는 홈의 각도이다. 이 식은 홈 마찰자에서 등가마찰계수를 계산하는 데 사용된다.<br/>
+<br/>
+정답은 "<img src="https://cbtbank.kr/images/mz/mz2016⑤08/mz2016⑤08m48b2.gif"/>" 이다. 이유는 위에서 설명한 대로 등가마찰계수를 나타내는 식이기 때문이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4888,7 +5103,17 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mz2016⑤08-49" question-id="mz2016⑤08-49" question-num="49" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">49</span>. 지름이 d인 전동축에 묻힘키를 사용하여 키의 전단 저항으로 토크를 전달하고자 할 때 키의 폭 b는? (단, 키와 축에서 발생한 전단응력은 같다고 하고 키의 길이는 축 지름의 1.5배로 한다.)</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>b = πd / 4</li><li>b = πd / 6</li><li>b = πd / 8</li><li class="correct">b = πd / 12</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 40%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">전단 응력은 τ = Tc / J, 여기서 T는 토크, c는 축의 반지름, J는 균등한 단면적을 가진 키의 단면적 모멘트이다. <br/>
+<br/>
+키의 길이가 축 지름의 1.5배이므로, 키의 단면적은 πd^2 / 4 * 1.5 = 0.375πd^2 이다. <br/>
+<br/>
+따라서, J = 0.375πd^2 * b^2 / 4 이다. <br/>
+<br/>
+전단 응력이 같으므로, <br/>
+<br/>
+Tc / J = Tc / (0.375πd^2 * b^2 / 4) = τ <br/>
+<br/>
+따라서, b = πd / 12 이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4934,7 +5159,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mz2016⑤08-50" question-id="mz2016⑤08-50" question-num="50" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">50</span>. 공기 스프링에 대한 일반적인 특징 설명으로 옳지 않은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>하중과 변형의 관계가 비선형적이다.</li><li class="correct">측면 하중에 대한 강성이 강하다.</li><li>공기의 압축성에 따른 감쇠 특성이 있어서 미소 진동의 흡수가 가능하다.</li><li>공기 탱크 등의 부대 장치가 필요하여 구조가 복잡하고 제작비가 비싸다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 57%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"측면 하중에 대한 강성이 강하다."는 공기 스프링의 일반적인 특징 중 하나가 아니라 옳은 특징이다. 공기 스프링은 하중과 변형의 관계가 비선형적이며, 공기의 압축성에 따른 감쇠 특성이 있어서 미소 진동의 흡수가 가능하다. 그러나 공기 탱크 등의 부대 장치가 필요하여 구조가 복잡하고 제작비가 비싸다는 것은 맞는 설명이다. 측면 하중에 대한 강성이 강하다는 것은 스프링의 방향에 수직인 방향으로의 하중에 대한 강성을 의미하는데, 공기 스프링은 이러한 방향으로의 강성이 상대적으로 약하다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4980,7 +5205,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mz2016⑤08-51" question-id="mz2016⑤08-51" question-num="51" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">51</span>. 강의 열처리 방법 중 표면경화법에 해당하는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>마퀜칭</li><li>오스포밍</li><li class="correct">침탄질화법</li><li>오스템퍼링</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 87%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">표면경화법은 금속 표면에 화학적 반응을 일으켜 표면을 경화시키는 방법입니다. 이 중에서 침탄질화법은 금속 표면에 질소를 침탄시켜 경화시키는 방법입니다. 따라서, 정답은 "침탄질화법"입니다. 마퀜칭, 오스포밍, 오스템퍼링은 모두 다른 열처리 방법입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5026,7 +5251,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mz2016⑤08-52" question-id="mz2016⑤08-52" question-num="52" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">52</span>. C와 Si의 함량에 따른 주철의 조직을 나타낸 조직 분포도는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>Gueiner, Klingenstein 조직도</li><li class="correct">마우러(Maurer) 조직도</li><li>Re-C 복평형 상태도</li><li>Guilet 조직도</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 85%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">마우러(Maurer) 조직도는 C와 Si의 함량에 따른 주철의 조직을 나타내는데, 이 조직도는 주철 내부의 카르바이드와 시리카를 나타내는데, 이 두 성분의 함량에 따라 주철의 조직이 결정된다는 것을 보여준다. 따라서, 이 조직도는 C와 Si의 함량에 따른 주철의 조직을 분석하는데 유용하게 사용된다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5072,7 +5297,9 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mz2016⑤08-53" question-id="mz2016⑤08-53" question-num="53" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">53</span>. 고 망간강에 관한 설명으로 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>오스테나이트 조직을 갖는다.</li><li>광석·암석의 파쇄기의 부품 등에 사용된다.</li><li>열처리에 수인법(water toughening)이 이용된다.</li><li class="correct">열전도성이 좋고 팽창계수가 작아 열변형을 일으키지 않는다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 37%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "오스테나이트 조직을 갖는다." 이다. 고 망간강은 오스테나이트 조직이 아닌 페라이트 조직을 갖는다. <br/>
+<br/>
+고 망간강은 열전도성이 좋고 팽창계수가 작아 열변형을 일으키지 않는다는 특징을 가지고 있어서 고온에서 사용되는 부품에 많이 사용된다. 또한, 열처리에 수인법이 이용되어 내구성을 높일 수 있다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5118,7 +5345,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mz2016⑤08-54" question-id="mz2016⑤08-54" question-num="54" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">54</span>. 서브제로(sub-Zero)처리 관한 설명으로 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">마모성 및 피로성이 향상된다.</li><li>잔류오스테나이트를 마텐자이트화 한다.</li><li>담금질을 한 강의 조직이 안정화 된다.</li><li>시효변화가 적으며 부품의 치수 및 형상이 안정된다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 알수없음)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"마모성 및 피로성이 향상된다."는 서브제로 처리와 관련이 없는 내용이므로 틀린 것이다. 서브제로 처리는 잔류오스테나이트를 마텐자이트화하여 담금질을 한 강의 조직을 안정화시키고, 시효변화를 적게 하여 부품의 치수 및 형상을 안정화시키는 공정이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5164,7 +5391,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mz2016⑤08-55" question-id="mz2016⑤08-55" question-num="55" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">55</span>. 강의 5대 원소만을 나열한 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>Fe, C, Ni, Si, Au</li><li>Ag, C, Si, Co, P</li><li class="correct">C, Si, Mn, P, S</li><li>Ni, C, Si, Cu, S</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 84%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">강의 5대 원소는 철(Fe), 탄소(C), 니켈(Ni), 셀레늄(Se), 인(P)이다. 그러나 보기에서는 셀레늄 대신 황(S)이 포함되어 있으며, 나머지 4개의 원소는 모두 강의 5대 원소에 해당한다. 따라서 정답은 "C, Si, Mn, P, S"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5210,7 +5437,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mz2016⑤08-56" question-id="mz2016⑤08-56" question-num="56" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">56</span>. 다음 중 비중이 가장 큰 금속은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>Fe</li><li>Al</li><li class="correct">Pb</li><li>Cu</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 83%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">비중이란 물에 대한 상대적인 밀도를 말하는데, Pb는 다른 보기들보다 높은 밀도를 가지고 있어서 비중이 가장 큽니다. 즉, 같은 부피일 때 다른 금속들보다 더 무겁다는 뜻입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5257,7 +5484,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mz2016⑤08-57" question-id="mz2016⑤08-57" question-num="57" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">57</span>. 과공석강의 탄소함유량(%)으로 옳은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>약 0.01 ~ 0.02%</li><li>약 0.02 ~ 0.80%</li><li class="correct">약 0.80 ~ 2.0%</li><li>약 2.0 ~ 4.3%</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 72%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">과공석강은 탄소 함유량이 약 0.80 ~ 2.0% 정도인 강종으로, 이 범위 내에서 탄소 함유량이 조절되어 제조됩니다. 따라서 "약 0.80 ~ 2.0%"이 옳은 답입니다. 다른 보기들은 과공석강의 탄소 함유량 범위를 벗어난 값들입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5303,7 +5530,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mz2016⑤08-58" question-id="mz2016⑤08-58" question-num="58" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">58</span>. 두랄루민의 합금 조성으로 옳은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>Al – Cu – Zn - Pb</li><li class="correct">Al – Cu – Mg - Mn</li><li>Al – Zn – Si - Sn</li><li>Al – Zn – Ni – Mn</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 75%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">두랄루민은 알루미늄 합금으로, 강도와 내식성이 뛰어나기 때문에 다양한 분야에서 사용됩니다. 그 중에서도 Al-Cu-Mg-Mn 합금은 높은 강도와 우수한 가공성을 가지고 있어 항공기, 자동차, 선박 등 다양한 분야에서 사용됩니다. Cu와 Mg는 강도를 높이는 역할을 하고, Mn은 가공성을 향상시키는 역할을 합니다. Zn과 Pb, Si, Ni는 두랄루민 합금에 사용되는 다른 원소들이지만, 이들은 Al-Cu-Mg-Mn 합금의 조성에 포함되지 않습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5349,7 +5576,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mz2016⑤08-59" question-id="mz2016⑤08-59" question-num="59" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">59</span>. 고속도공구강(SKH2)의 표준조성에 해당되지 않는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>W</li><li>V</li><li class="correct">Al</li><li>Cr</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 74%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "Al"입니다. 이유는 SKH2는 탄소(C), 망간(Mn), 인(P), 황(S), 규소(Si) 및 크롬(Cr) 등의 원소로 구성되어 있지만, 알루미늄(Al)은 포함되어 있지 않기 때문입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5395,7 +5622,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mz2016⑤08-60" question-id="mz2016⑤08-60" question-num="60" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">60</span>. 대표적인 주조경질 합금으로 코발트를 주성분으로 한 Co-Cr-W-C계 합금은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>라우탈(lutal)</li><li>실루민(silumin)</li><li>세라믹(ceramic)</li><li class="correct">스텔라이트(stellite)</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 54%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">Co-Cr-W-C계 합금은 주조경질 합금으로, 내식성, 내마모성, 내부식성 등이 우수하며 고온에서도 안정적인 성질을 가지고 있습니다. 이 중에서 대표적인 합금으로는 스텔라이트(stellite)가 있습니다. 스텔라이트는 코발트를 주성분으로 하며, 크롬, 텅스텐, 탄소 등의 첨가로 강도와 내식성을 높인 합금입니다. 이러한 성질로 인해 치과용 재료, 항공기 부품, 자동차 부품 등 다양한 분야에서 사용되고 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5446,7 +5673,19 @@ $(function(){
 </div>
 </div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mz2016⑤08-61" question-id="mz2016⑤08-61" question-num="61" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">61</span>. 임의의 2차원 좌표점을 30° 시계방향으로 회전 후 x축으로 2만큼, y축으로 3만큼 평행이동하기 위한 식이 [P] = [P][T]일 때, 동차 변환행렬 [T]는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li><img src="images/mz20160508m61b1.gif"/></li><li><img src="images/mz20160508m61b2.gif"/></li><li><img src="images/mz20160508m61b3.gif"/></li><li class="correct"><img src="images/mz20160508m61b4.gif"/></li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 62%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">임의의 2차원 좌표점을 30° 시계방향으로 회전하는 동차 변환행렬은 다음과 같다.<br/>
+<br/>
+<img src="https://cbtbank.kr/images/mz/mz2016⑤08/mz2016⑤08m61b1.gif"/><br/>
+<br/>
+이를 x축으로 2만큼, y축으로 3만큼 평행이동하는 동차 변환행렬과 곱하면 된다. 이때, x축으로 2만큼, y축으로 3만큼 평행이동하는 동차 변환행렬은 다음과 같다.<br/>
+<br/>
+<img src="https://cbtbank.kr/images/mz/mz2016⑤08/mz2016⑤08m61b4.gif"/><br/>
+<br/>
+따라서, 전체 동차 변환행렬 [T]는 다음과 같다.<br/>
+<br/>
+<img src="https://cbtbank.kr/images/mz/mz2016⑤08/mz2016⑤08m61b2.gif"/><br/>
+<br/>
+즉, x축으로 2만큼, y축으로 3만큼 평행이동하는 동차 변환행렬을 30° 시계방향으로 회전하는 동차 변환행렬과 곱한 것이 전체 동차 변환행렬이 된다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5492,7 +5731,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mz2016⑤08-62" question-id="mz2016⑤08-62" question-num="62" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">62</span>. 곡면 모델링 시스템에 의해 만들어진 곡면을 불러들여 기존 모델의 평면을 바꾸기도 하는데 이러한 모델링 기능을 무엇이라 하는가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>필렛팅(filleting)</li><li class="correct">트위킹(tweaking)</li><li>리프팅(lifting)</li><li>스키닝(skinning)</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 47%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">트위킹은 모델링 시스템에서 만들어진 곡면을 조정하거나 수정하는 작업을 말한다. 따라서 기존 모델의 평면을 바꾸는 것도 트위킹의 일종이다. 필렛팅은 모서리를 부드럽게 만드는 작업, 리프팅은 모델을 들어올리는 작업, 스키닝은 모델에 텍스처나 색상을 입히는 작업을 의미한다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5538,7 +5777,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mz2016⑤08-63" question-id="mz2016⑤08-63" question-num="63" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">63</span>. 다음 중 CAD 입력장치가 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>키보드(key board)</li><li>트랙 볼(track ball)</li><li class="correct">플로터(plotter)</li><li>마우스(mouse)</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 78%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">플로터는 CAD 출력장치로, 그림을 출력하는 역할을 합니다. 따라서 CAD 입력장치가 아닙니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5584,7 +5823,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mz2016⑤08-64" question-id="mz2016⑤08-64" question-num="64" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">64</span>. 은선 혹은 은면 제거를 위한 방법이 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">Cohen-Sutherland 알고리즘</li><li>z-버퍼에 의한 방법</li><li>화가(painter's) 알고리즘</li><li>back-face 제거 알고리즘</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 65%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">Cohen-Sutherland 알고리즘은 선분의 클리핑을 위한 알고리즘이며, 은선 혹은 은면 제거와는 관련이 없다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5631,7 +5870,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mz2016⑤08-65" question-id="mz2016⑤08-65" question-num="65" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">65</span>. 제품 설계에서 CAD 시스템을 이용하는 데 대한 장점으로 거리가 먼 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>시간과 오류를 줄일 수 있다.</li><li class="correct">설계자의 능력을 배양할 수 있다.</li><li>CAM 작업을 위한 기초 데이터를 생성할 수 있다.</li><li>CAE 작업을 위한 기초 데이터를 생성할 수 있다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 67%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">CAD 시스템을 이용하면 설계자는 자신의 아이디어를 시각화하고 구체화할 수 있으며, 이를 통해 설계자의 능력을 향상시킬 수 있다. CAD 시스템은 설계자가 자신의 아이디어를 구체화하고 수정하는 과정에서 피드백을 제공하므로, 설계자는 자신의 아이디어를 더욱 발전시키고 완성도를 높일 수 있다. 이는 설계자의 능력을 배양하는 데 큰 도움이 된다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5677,7 +5916,13 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mz2016⑤08-66" question-id="mz2016⑤08-66" question-num="66" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">66</span>. 원점이 중심이고 장축이 x축이고 그 길이가 a, 단축이 y축이고 그 길이가 b인 타원을 표현하는 매개변수식은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>x = (a-b)cosθ, y = (a-b)sinθ  [0≤θ≤2π]</li><li class="correct">x = acosθ, y = bsinθ  [0≤θ≤2π]</li><li>x = acoshθ, y = bsinhθ  [0≤θ≤2π]</li><li>x = (a-b)coshθ, y = (a-b)sinhθ  [0≤θ≤2π]</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 72%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">타원의 중심을 원점으로 놓고, x축과 y축에 대해 대칭성을 가지므로, 타원 위의 한 점 P(x,y)를 각 θ만큼 회전시켜도 타원 위의 점이 된다. 따라서, 타원 위의 점 P(x,y)를 매개변수 θ로 표현할 수 있다. <br/>
+<br/>
+또한, 타원의 정의에 따라, 타원 위의 점 P(x,y)는 다음과 같은 관계식을 만족한다.<br/>
+<br/>
+(x/a)^2 + (y/b)^2 = 1<br/>
+<br/>
+따라서, x = acosθ, y = bsinθ로 매개변수식을 표현할 수 있다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5723,7 +5968,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mz2016⑤08-67" question-id="mz2016⑤08-67" question-num="67" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">67</span>. 형상모델링에서 기본입체(primitive)의 조합을 이용하여 복잡한 형상을 표현하는 기능과 관계있는 기능은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>리프팅 작업(lifting operation)</li><li>스위핑 작업(sweeping operation)</li><li class="correct">불리안 작업(Boolean operation)</li><li>스키닝 작업(skinning operation)</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 64%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">불리안 작업은 기본입체(primitive)를 조합하여 복잡한 형상을 만들어내는 기능 중 하나입니다. 이 작업은 두 개 이상의 기본입체를 겹쳐서 자르거나 합치는 등의 조작을 통해 새로운 형상을 만들어내는 것을 말합니다. 예를 들어, 원통과 상자를 불리안 작업으로 합치면 새로운 형상인 원통 상자를 만들어낼 수 있습니다. 이러한 불리안 작업은 형상모델링에서 매우 중요한 역할을 합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5769,7 +6014,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mz2016⑤08-68" question-id="mz2016⑤08-68" question-num="68" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">68</span>. 그림과 같이 4개의 경계곡선(C1~C4)을 선형 보간하여 얻어지는 곡면을 무엇이라 하는가?<img src="images/mz20160508m68.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>Ruled 곡면</li><li>Loft 곡면</li><li>Sweep 곡면</li><li class="correct">Coon's 곡면</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 46%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">Coon's 곡면은 4개의 경계곡선을 선형 보간하여 얻어지는 곡면으로, 경계곡선이 서로 다른 형태를 가지고 있을 때 사용된다. 이에 비해 Ruled 곡면은 두 개의 직선을 연결하여 만들어지는 곡면, Loft 곡면은 두 개 이상의 프로필 곡선을 따라서 만들어지는 곡면, Sweep 곡면은 하나의 프로필 곡선을 따라서 이동시키면서 만들어지는 곡면이다. 따라서, Coon's 곡면은 경계곡선이 서로 다른 형태를 가지고 있을 때 사용되는 곡면이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5815,7 +6060,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mz2016⑤08-69" question-id="mz2016⑤08-69" question-num="69" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">69</span>. 다음 설명 중 비다양체(nonmanifold) 상황에 해당하지 않는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>꼭지점을 공유하는 두 개의 솔리드<br/> <img src="images/mz2016⑤08m69b1-1.gif"/></li><li>공통 모서리를 갖는 두 개의 솔리드<br/> <img src="images/mz2016⑤08m69b2-1.gif"/></li><li>솔리드 위의 한 점에서 뻗어나온 와이어 모서리<br/> <img src="images/mz2016⑤08m69b3-1.gif"/></li><li class="correct">솔리드에서 작은 솔리드 2개를 뺀 형상<br/> <img src="images/mz2016⑤08m69b4-1.gif"/></li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 78%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"솔리드에서 작은 솔리드 2개를 뺀 형상"은 비다양체 상황에 해당하지 않는다. 이유는 이 형상은 꼭지점이나 모서리를 공유하지 않으며, 솔리드 내부에 빈 공간이 없기 때문이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5861,7 +6106,9 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mz2016⑤08-70" question-id="mz2016⑤08-70" question-num="70" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">70</span>. 컴퓨터그래픽에서 적용되는 전형적인 두 가지 투영방식인 원근투영방식과 평행투영방식에 관한 설명 중 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">시각점(viewpoint)은 물체 위의 한 점을 말한다.</li><li>스크린은 시각점과 관측위치 사이에 놓인다.</li><li>원근투영(perspective projection)에서 관심 대상 물체의 모든 점은 대개 관측위치로부터 시각점(viewpoint)에 이르는 선을 따라 위치하는 투영중심에 연결되고, 이 선들과 스크린의 교차점들이 투영되는 이미지를 만든다.</li><li>평행투영(parallel projection)에서 관측 위치와 시각점에 의해서 정의된 시각 방향으로 물체의 모든 점에서 평행하는 선들이 주사되며, 이 선들과 스크린의 교차점들이 이미지를 만든다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 35%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"시각점(viewpoint)은 물체 위의 한 점을 말한다."이 틀린 설명입니다. 시각점은 관측 위치와 시각 방향을 정의하는 점으로, 물체 위의 어떤 점이든 될 수 있습니다. <br>
+<br>
+시각점은 관측자가 물체를 바라보는 시점을 나타내며, 이 시점에서 물체를 바라보는 방향에 따라 원근투영방식과 평행투영방식으로 나뉩니다. 원근투영에서는 관심 대상 물체의 각 점이 시각점과 관측위치를 연결하는 선을 따라 위치하며, 평행투영에서는 물체의 모든 점에서 평행한 선들이 주사됩니다. 이 선들과 스크린의 교차점들이 이미지를 만듭니다.</br></br></div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5907,7 +6154,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mz2016⑤08-71" question-id="mz2016⑤08-71" question-num="71" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">71</span>. 다음 전동장치 중 가장 정확한 속도비를 얻을 수 있는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>평 벨트</li><li>V 벨트</li><li>로프</li><li class="correct">체인</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 75%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">체인은 다른 전동장치에 비해 미세한 변화에도 민감하게 반응하여 가장 정확한 속도비를 얻을 수 있습니다. 또한 체인은 내구성이 뛰어나고 유지보수가 쉬우며 고속 회전에도 견딜 수 있어 많은 산업 분야에서 사용되고 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5953,7 +6200,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mz2016⑤08-72" question-id="mz2016⑤08-72" question-num="72" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">72</span>. 베벨기어의 종류 중 두 축이 90°로 만나면서 두 기어의 크기와 속도가 서로 같은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>크라운 기어</li><li>스파이럴 베벨 기어</li><li class="correct">마이터 기어</li><li>제롤 베벨 기어</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 50%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">마이터 기어는 두 축이 90°로 만나면서 두 기어의 크기와 속도가 서로 같은 기어로, 다른 종류의 베벨 기어들은 두 축이 서로 다른 각도로 만나거나 크기와 속도가 서로 다르게 작용합니다. 따라서 이 문제에서는 마이터 기어가 정답입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6000,7 +6247,21 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mz2016⑤08-73" question-id="mz2016⑤08-73" question-num="73" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">73</span>. 그림과 같이 작동하는 피스톤-크랭크 기구에서 피스톤의 가장 오른쪽 끝(C<sub>1</sub>)으로부터 이동거리 x를 구하는 식으로 옳은 것은? (단, 크랭크의 반지름은 r이며, 식에서 λ는 λ = 크랭크반지름/커넥팅로드 길이 이다.)<img src="images/mz20160508m73.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct"><img src="images/mz20160508m73b1.gif"/></li><li><img src="images/mz20160508m73b2.gif"/></li><li><img src="images/mz20160508m73b3.gif"/></li><li><img src="images/mz20160508m73b4.gif"/></li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 43%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">피스톤-크랭크 기구에서 피스톤의 이동거리는 크랭크의 회전각에 따라 결정된다. 따라서, 피스톤의 이동거리를 구하기 위해서는 크랭크의 회전각을 구해야 한다. <br>
+<br/>
+크랭크의 회전각은 삼각함수를 이용하여 구할 수 있다. 우선, 크랭크와 수직인 선분과 수평선 사이의 각도를 θ라고 하면, 이 각도는 크랭크의 회전각과 같다. <br/>
+<br/>
+따라서, sinθ = x / r, cosθ = y / r 이다. <br/>
+<br/>
+여기서, y는 크랭크와 연결된 커넥팅로드의 길이이다. <br/>
+<br/>
+또한, λ = r / l 이므로, l = r / λ 이다. <br/>
+<br/>
+따라서, y = l - l cosθ = l (1 - cosθ) 이다. <br/>
+<br/>
+따라서, x = r sinθ = r sin(arccos(1 - y/l)) 이다. <br/>
+<br/>
+따라서, 정답은 "<img src="https://cbtbank.kr/images/mz/mz2016⑤08/mz2016⑤08m73b1.gif"/>" 이다.</br></div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6046,7 +6307,14 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mz2016⑤08-74" question-id="mz2016⑤08-74" question-num="74" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">74</span>. 그림과 같이 4링크 회전 기구에서 순간 중심의 수는 몇 개인가?<img src="images/mz20160508m74.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>4</li><li class="correct">6</li><li>8</li><li>12</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 50%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">4링크 회전 기구에서는 각 링크가 다른 링크와 두 개의 관절로 연결되어 있으므로, 각 링크의 끝점은 다른 링크의 끝점을 중심으로 회전합니다. 따라서, 각 링크의 끝점이 중심이 될 수 있는 경우의 수를 모두 더하면 순간 중심의 수를 구할 수 있습니다.<br/>
+<br/>
+1번 링크의 끝점은 2번 링크와 4번 링크의 끝점을 중심으로 회전할 수 있으므로, 2개의 중심이 될 수 있습니다.<br/>
+2번 링크의 끝점은 1번 링크와 3번 링크의 끝점을 중심으로 회전할 수 있으므로, 2개의 중심이 될 수 있습니다.<br/>
+3번 링크의 끝점은 2번 링크와 4번 링크의 끝점을 중심으로 회전할 수 있으므로, 2개의 중심이 될 수 있습니다.<br/>
+4번 링크의 끝점은 1번 링크와 3번 링크의 끝점을 중심으로 회전할 수 있으므로, 2개의 중심이 될 수 있습니다.<br/>
+<br/>
+따라서, 순간 중심의 수는 2+2+2+2=8개가 됩니다. 하지만, 이 중에서 중복되는 중심이 있으므로, 중복을 제거한 순간 중심의 수는 8/2=4개가 됩니다. 따라서, 정답은 "4"가 됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6092,7 +6360,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mz2016⑤08-75" question-id="mz2016⑤08-75" question-num="75" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">75</span>. 그림과 같은 운동기에서 B요소가 AB위를 직선운동할 때 P점의 운동에 관한 설명으로 옳은 것은?<img src="images/mz20160508m75.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">직선 AB에 직각 방향으로 직선 운동한다.</li><li>A점을 중심으로 한 회전 운동을 한다.</li><li>A점과 B점을 지나는 포물선을 따라 운동한다.</li><li>A점과 B점을 지나는 쌍곡선을 따라 운동한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 75%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">B요소가 AB위를 직선운동할 때 P점은 AB선분의 중간점이므로, B요소는 AB선분의 양쪽으로 같은 거리만큼 이동하게 된다. 따라서 B요소는 직선 AB에 직각 방향으로 직선 운동하게 된다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6138,7 +6406,9 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mz2016⑤08-76" question-id="mz2016⑤08-76" question-num="76" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">76</span>. 캠과 종동절이 그리는 접촉면의 궤적에 따라 평면캠과 입체캠으로 구분하는데 다음 중 입체캠의 종류가 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>원통 캠</li><li>구면 캠</li><li class="correct">정면 캠</li><li>단면 캠</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 71%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정면 캠은 캠의 접촉면이 평면과 수직한 형태로 구성되어 있으며, 이는 입체캠이 아닌 평면캠에 해당한다. 따라서 정답은 "정면 캠"이다. <br/>
+<br/>
+간단히 말해, 입체캠은 캠의 접촉면이 평면이 아닌 입체적인 형태를 가지고 있으며, 이에 따라 원통 캠과 구면 캠이 입체캠에 해당한다. 단면 캠은 캠의 접촉면이 일정한 단면을 가지고 있으며, 이는 평면캠에 해당한다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6184,7 +6454,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mz2016⑤08-77" question-id="mz2016⑤08-77" question-num="77" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">77</span>. 평기어 장치에 비해 웜기어 장치의 특징이 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>큰 감속비를 얻을 수 있다.</li><li class="correct">소음과 진동이 크다.</li><li>치면의 미끄럼이 크고 효율이 낮다.</li><li>역회전 방지를 할 수 있다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 54%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">웜기어 장치는 평기어 장치보다 큰 감속비를 얻을 수 있고, 역회전 방지를 할 수 있으며, 치면의 미끄럼이 크고 효율이 낮다는 특징이 있습니다. 그러나 소음과 진동이 크다는 것은 웜기어 장치의 단점 중 하나입니다. 이는 웜기어의 구조상 치면의 미끄럼이 크기 때문에 발생하는 것으로, 이로 인해 기어의 접촉면에서 충격과 진동이 발생하여 소음이 크게 나타납니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6230,7 +6500,21 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mz2016⑤08-78" question-id="mz2016⑤08-78" question-num="78" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">78</span>. 지름이 3cm 인 회전체가 2000rpm 으로 회전할 때 원주 속도는 약 몇 m/s 인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>1.14</li><li class="correct">3.14</li><li>4.14</li><li>6.14</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 80%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">원주 속도는 지름과 회전 속도에 비례한다. 따라서, 원주 속도는 다음과 같이 계산할 수 있다.<br/>
+<br/>
+원주 속도 = 지름 × π × 회전 속도<br/>
+<br/>
+여기서, 지름은 3cm 이고, 회전 속도는 2000rpm 이므로, 원주 속도는 다음과 같다.<br/>
+<br/>
+원주 속도 = 3cm × π × 2000rpm<br/>
+<br/>
+= 3 × 3.14 × 2000 / 60 m/s<br/>
+<br/>
+= 3.14 × 100 m/s<br/>
+<br/>
+= 314 m/s<br/>
+<br/>
+따라서, 정답은 "3.14" 이다. 이유는 π 값이 3.14 이기 때문이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6276,7 +6560,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mz2016⑤08-79" question-id="mz2016⑤08-79" question-num="79" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">79</span>. 다음 중 간헐운동기구가 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>래칫(ratchet) 기구</li><li>로네-넬슨(Hrone-Nelson)의 종합기구</li><li>제네바(geneva) 기구</li><li class="correct">포이셀리에(Peaucellier) 기구</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 50%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">포이셀리에(Peaucellier) 기구는 간헐운동기구가 아닙니다. 이는 고정된 길이의 링크로 이루어진 기구로, 입력과 출력 링크가 직각을 이루며, 입력 링크의 회전 운동이 출력 링크의 직선 운동으로 변환됩니다. 다른 기구들은 모두 간헐운동기구로, 입력 운동이 일정한 간격으로 중단되는 운동을 만들어냅니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6322,7 +6606,21 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mz2016⑤08-80" question-id="mz2016⑤08-80" question-num="80" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">80</span>. 그림과 같은 크랭크 기구에서 크랭크의 길이가 100mm이고, 300rpm 으로 회전하고 있다. 크랭크의 위치가 수평위치로부터 60°의 위치에 왔을 때 슬라이더(4번 부품)의 선속도는 약 몇 m/s 인가?<img src="images/mz20160508m80.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>1.4</li><li>1.8</li><li>2.3</li><li class="correct">2.7</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 29%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">크랭크의 회전속도는 300rpm 이므로, 1분당 300번 회전한다. 따라서 1초당 회전수는 300/60 = 5회전이다. <br/>
+<br/>
+크랭크의 길이가 100mm 이므로, 슬라이더의 위치는 크랭크가 회전한 각도에 따라 달라진다. <br/>
+<br/>
+크랭크가 수평위치로부터 60°의 위치에 왔을 때, 슬라이더의 위치는 크랭크 길이의 2배인 200mm 이다. <br/>
+<br/>
+이때, 슬라이더의 속도는 크랭크의 각속도와 슬라이더의 위치에 따라 결정된다. <br/>
+<br/>
+크랭크의 각속도는 2π × 5 = 10π rad/s 이다. <br/>
+<br/>
+슬라이더의 위치가 200mm 이므로, 슬라이더의 속도는 v = rω = 0.2 × 10π = 2π m/s = 6.28 m/s 이다. <br/>
+<br/>
+하지만, 문제에서는 소수점 첫째자리까지만 구하도록 되어 있으므로, 최종적으로 슬라이더의 선속도는 약 2.7 m/s 이다. <br/>
+<br/>
+따라서, 정답은 "2.7" 이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>

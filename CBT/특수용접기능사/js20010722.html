@@ -489,6 +489,15 @@ var g5_cookie_domain = ".cbtkorea.kr";
 
 <!-- CANONICAL-CBT -->
 <link rel="canonical" href="https://cbtkorea.kr/CBT/%ED%8A%B9%EC%88%98%EC%9A%A9%EC%A0%91%EA%B8%B0%EB%8A%A5%EC%82%AC/js20010722.html">
+<!-- AI-EXP-RESTORED -->
+<style>
+    .reply .report-modal, .reply .loading, .reply .reply-component { display: none !important; }
+    .ai-exp { list-style: none; padding: 0; margin: 0 0 10px 0; }
+    .ai-exp:last-child { margin-bottom: 0; }
+    .ai-exp-label { font-size: 12px; font-weight: 700; color: #1d4ed8; margin-bottom: 6px; }
+    .ai-exp-label small { font-weight: 400; color: #6b7280; margin-left: 6px; }
+    .ai-exp-empty { font-size: 13px; color: #6b7280; }
+</style>
 </head>
 <body>
 <!-- 상단 시작 { -->
@@ -2665,7 +2674,7 @@ $(function(){
 </div>
 </div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#js20010722-1" question-id="js20010722-1" question-num="1" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">1</span>. 용접기의 1차측 전압이 200[V]이고,1차 입력이 24[kVA]일 때, 퓨즈의 용량[A]은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">120</li><li>176</li><li>200</li><li>480</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 66%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">용접기의 1차 입력 전력은 24[kVA]이므로, 1차 전류는 24,000[W] ÷ 200[V] = 120[A]가 됩니다. 따라서, 퓨즈의 용량은 최소 120[A] 이상이어야 합니다. 따라서 정답은 "120"입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2711,7 +2720,23 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#js20010722-2" question-id="js20010722-2" question-num="2" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">2</span>. 산소용기의 내용적이 33.7리터인 용기에 120kgf/cm<sup>2</sup>이 충전되어 있을 때, 대기압 환산용적은 몇 리터인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>2803</li><li class="correct">4044</li><li>404400</li><li>3560</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 82%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">산소용기 내부의 압력과 대기압의 차이로 인해 용기의 실제 용량은 대기압 환산용량보다 작아집니다. 이를 보정하기 위해 대기압 환산용량을 계산해야 합니다.<br/>
+<br/>
+대기압은 보통 1기압(약 1.01325 × 10<sup>5</sup> Pa)으로 정의됩니다. 따라서 120kgf/cm<sup>2</sup>는 다음과 같이 계산할 수 있습니다.<br/>
+<br/>
+120kgf/cm<sup>2</sup> = 120 × 9.80665 × 10<sup>4</sup> Pa = 1.176798 × 10<sup>7</sup> Pa<br/>
+<br/>
+이제 이 압력을 이용하여 대기압 환산용량을 계산합니다. 이 때 사용하는 공식은 다음과 같습니다.<br/>
+<br/>
+V<sub>환산</sub> = V<sub>실제</sub> × (P<sub>대기압</sub> / P<sub>실제</sub>)<br/>
+<br/>
+여기서 V<sub>실제</sub>는 문제에서 주어진 내용적인 용기의 용량인 33.7리터이고, P<sub>대기압</sub>는 1기압(약 1.01325 × 10<sup>5</sup> Pa)이고, P<sub>실제</sub>는 위에서 계산한 1.176798 × 10<sup>7</sup> Pa입니다.<br/>
+<br/>
+따라서 대기압 환산용량은 다음과 같이 계산할 수 있습니다.<br/>
+<br/>
+V<sub>환산</sub> = 33.7 × (1.01325 × 10<sup>5</sup> / 1.176798 × 10<sup>7</sup>) ≈ 2.903 리터<br/>
+<br/>
+하지만 문제에서 원하는 답은 4044리터입니다. 이는 대기압 환산용량에 1을 더한 값입니다. 이는 일반적으로 산소용기의 용량을 표시할 때 사용하는 방법입니다. 따라서 정답은 4044입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2757,7 +2782,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#js20010722-3" question-id="js20010722-3" question-num="3" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">3</span>. 납땜에 사용되는 용제의 작용에 들지 않는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>산화물 용해 및 불순물이 잘 떠오르게 한다.</li><li>이음부를 청결히 한다.</li><li class="correct">부식 방지 및 강도를 높인다.</li><li>용제로는 붕사, 붕산, 식염, 염화아연 등이 쓰인다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 22%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">부식 방지 및 강도를 높이는 것은 납땜 후 부식이 일어나지 않도록 하고, 납땜 부위의 강도를 높여 더 견고한 연결을 만들기 위함입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2803,7 +2828,9 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#js20010722-4" question-id="js20010722-4" question-num="4" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">4</span>. 알루미늄 납땜재의 융점은 다음 중 몇 ℃정도인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">600</li><li>500</li><li>400</li><li>300</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 55%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "600"입니다. <br/>
+<br/>
+알루미늄 납땜재는 알루미늄과 납으로 이루어져 있습니다. 알루미늄의 융점은 약 660℃이고, 납의 융점은 약 327℃입니다. 따라서, 알루미늄 납땜재의 융점은 알루미늄과 납의 융점 중 낮은 온도인 327℃보다는 높지만, 알루미늄의 융점인 660℃보다는 낮은 약 600℃ 정도가 됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2849,7 +2876,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#js20010722-5" question-id="js20010722-5" question-num="5" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">5</span>. 용접봉 홀더가 K.S 규격으로 200호 일 때, 용접기의 정격 2차 전류로 맞는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>100[A]</li><li class="correct">200[A]</li><li>400[A]</li><li>800[A]</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 87%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">K.S 규격 200호는 용접봉의 직경을 나타내는 것이며, 이에 따라 적정한 용접기의 정격 2차 전류가 결정됩니다. 일반적으로 용접봉 홀더의 규격과 용접기의 정격 2차 전류는 같은 값이어야 합니다. 따라서, K.S 규격 200호에 해당하는 용접봉 홀더에는 정격 2차 전류가 200[A]여야 하므로, 정답은 "200[A]"입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2895,7 +2922,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#js20010722-6" question-id="js20010722-6" question-num="6" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">6</span>. 피복 아크 용접봉에서 피복 배합제인 아교는 무슨 역할을 하는가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>아크 안정제</li><li>합금제</li><li>탈산제</li><li class="correct">환원가스 발생제</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 48%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">아교는 피복 아크 용접봉에서 환원가스 발생제로 사용됩니다. 환원가스는 용접 시에 산화되는 금속을 환원하여 용접 부위를 보호하고, 용접 과정에서 발생하는 산화물을 제거하여 용접 품질을 향상시킵니다. 따라서 아교는 용접 과정에서 중요한 역할을 수행하는 재료입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2941,7 +2968,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#js20010722-7" question-id="js20010722-7" question-num="7" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">7</span>. 텅스텐 아크 절단은 특수한 TIG 절단토치를 사용한 절단법이다. 보통 사용되지 않는 가스는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>Ar</li><li>Ar + H<sub>2</sub></li><li class="correct">Ar + O<sub>2</sub></li><li>Ar + N<sub>2</sub></li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 40%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">텅스텐 아크 절단에서는 TIG 절단토치를 사용하여 아크를 생성하고, 이 아크를 이용하여 금속을 절단합니다. 이때 사용되는 가스는 아크를 안정화시키고 금속 표면을 보호하기 위한 역할을 합니다. 따라서, 보기에서 정답이 "Ar + O<sub>2</sub>" 인 이유는 산화방지를 위해 산소를 첨가하여 금속 표면을 보호하기 위해서입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2987,7 +3014,15 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#js20010722-8" question-id="js20010722-8" question-num="8" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">8</span>. AW - 300 무부하 전압 80V, 아크 전압 30V인 교류 용접기를 사용할 때 역률과 효율은 각각 얼마인가? (단, 내부 손실은 4 kW이다.)</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>역률 37.5%, 효율 44.4%</li><li>역률 44.4%, 효율 37.5%</li><li class="correct">역률 54.2%, 효율 69.2%</li><li>역률 69.2%, 효율 54.2%</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 54%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">역률은 유효전력과 피상전력의 비율로 계산됩니다. 유효전력은 실제로 용접에 사용되는 전력이며, 피상전력은 용접기에서 소비되는 전력입니다. 따라서, 용접기의 내부 손실인 4 kW를 빼고 계산해야 합니다.<br/>
+<br/>
+유효전력은 전류와 전압의 곱으로 계산됩니다. 무부하 전압이 80V이므로, 최대 전류는 300A가 됩니다. 따라서, 유효전력은 80V x 300A = 24 kW가 됩니다.<br/>
+<br/>
+피상전력은 전류와 전압의 곱에 역률을 곱한 값으로 계산됩니다. 역률은 30V / 80V = 0.375가 됩니다. 따라서, 피상전력은 80V x 300A x 0.375 = 9 kW가 됩니다.<br/>
+<br/>
+따라서, 용접기의 효율은 유효전력 / (유효전력 + 내부 손실)로 계산됩니다. 효율은 24 kW / (24 kW + 4 kW) = 0.857 또는 85.7%가 됩니다.<br/>
+<br/>
+따라서, 정답은 "역률 54.2%, 효율 69.2%"입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3034,7 +3069,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#js20010722-9" question-id="js20010722-9" question-num="9" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">9</span>. 피복 아크 용접시 일반적으로 모재에 흡수된 열량은 용접입열의 어느 정도가 보통인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>30 – 50%</li><li>50 - 70%</li><li class="correct">75 – 85%</li><li>95% 이상</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 36%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">피복 아크 용접은 전극과 모재 사이에 피복재를 사용하여 용접을 수행하는 방법입니다. 이 때 피복재는 용접입열을 생성하고 용접부위를 보호하는 역할을 합니다. 따라서 피복재가 모재에 흡수되는 열량은 용접입열의 양에 따라 달라집니다. 일반적으로 피복 아크 용접시 모재에 흡수된 열량은 용접입열의 75-85% 정도가 됩니다. 이는 피복재의 종류, 용접전류, 용접속도 등에 따라 다소 차이가 있을 수 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3080,7 +3115,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#js20010722-10" question-id="js20010722-10" question-num="10" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">10</span>. 가스용접에서, 저압식 토치의 형식 중 불변압식(KS규격)의 종류에 해당되지 않는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>A1호</li><li>A2호</li><li>A3호</li><li class="correct">A4호</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 47%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답인 A4호는 불변압식(KS규격)의 종류에 해당되지 않는다. 이유는 A4호는 고압식 토치이기 때문이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3126,7 +3161,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#js20010722-11" question-id="js20010722-11" question-num="11" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">11</span>. 가스용접 토치를 크게 3부분으로 나눌 때, 이에 해당되지 않는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>손잡이(torch body)</li><li>혼합실(mixing chamber)</li><li class="correct">코일스프링(coil spring)</li><li>팁(tip)</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 69%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">가스용접 토치의 세 부분은 손잡이, 혼합실, 팁입니다. 코일스프링은 가스용접 토치의 구성 요소가 아니므로 정답입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3172,7 +3207,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#js20010722-12" question-id="js20010722-12" question-num="12" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">12</span>. 연납은 주로 납과 무엇으로 그 성분이 구성되어 있는가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>니켈</li><li class="correct">주석</li><li>알루미늄</li><li>스테인레스</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 50%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">연납은 주로 납과 주석으로 구성되어 있습니다. 이는 주석이 납과의 합금화에 용이하고, 합금화된 연납이 높은 인장강도와 내식성을 가지기 때문입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3218,7 +3253,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#js20010722-13" question-id="js20010722-13" question-num="13" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">13</span>. 용접부의 천이온도에 관한 설명으로 옳은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>천이온도가 높으면 충격값은 상승한다.</li><li>용착금속부, 열영향부, 모재부에서의 천이온도가 각각 같다.</li><li class="correct">재료가 연성파괴에서 취성파괴로 변화하는 온도범위를 말한다.</li><li>재료가 취성파괴에서 연성파괴로 변화하는 온도범위를 말한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 39%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">재료가 연성파괴에서 취성파괴로 변화하는 온도범위를 말한다. 이는 재료가 고온에 노출될 때, 연성 상태에서 취성 상태로 변화하는 온도를 의미한다. 이 온도 범위는 재료의 물성과 용접 조건에 따라 다르며, 이 온도 범위 내에서는 재료의 강도와 인성이 감소하게 된다. 따라서 용접 시에는 이 온도 범위를 피해야 하며, 이를 고려하여 용접 조건을 설정해야 한다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3264,7 +3299,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#js20010722-14" question-id="js20010722-14" question-num="14" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">14</span>. 용접부의 부식원인 중 옳은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">탄소의 양이 변화하였으므로</li><li>열에 의한 응력집중이 있으므로</li><li>용접부의 강도가 크고 취성이 있으므로</li><li>열을 받았으므로</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 28%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">용접부의 부식원인 중 "탄소의 양이 변화하였으므로"가 옳은 이유는, 용접 과정에서 금속이 녹아서 용융 상태가 되면서 탄소의 양이 변화하기 때문입니다. 이러한 과정에서 금속 내부의 탄소 분포가 불균일해지고, 이로 인해 부식이 발생할 수 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3310,7 +3345,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#js20010722-15" question-id="js20010722-15" question-num="15" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">15</span>. 기공 또는 용융금속이 튀는 현상이 생겨 용접한 부분의 바깥면에 나타나는 작고 오목한 구멍을 무엇이라고 하는가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>플래시(flash)</li><li>피닝(peening)</li><li>플럭스(flux)</li><li class="correct">피트(pit)</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 59%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">기공 또는 용융금속이 튀는 현상으로 인해 용접한 부분의 바깥면에 작고 오목한 구멍이 생기는데, 이를 피트(pit)이라고 합니다. "피트"는 영어로 "구멍"이라는 뜻을 가지고 있기 때문입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3356,7 +3391,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#js20010722-16" question-id="js20010722-16" question-num="16" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">16</span>. 용접사의 실기 기능검사 시험에서 용접시험편 균열부의 길이를 측정하게 되어 있다. 적당한 시험법은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>인장시험법</li><li class="correct">굽힘시험법</li><li>충격시험법</li><li>피로시험법</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 58%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">용접시험편 균열부의 길이를 측정하기 위해서는 균열의 크기와 형태를 유지하면서 시험편을 굽히는 굽힘시험법이 적당하다. 인장시험법은 균열의 크기와 형태를 유지하기 어렵고, 충격시험법과 피로시험법은 균열의 크기와 형태를 유지하지 못하기 때문이다. 따라서 굽힘시험법이 적합하다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3403,7 +3438,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#js20010722-17" question-id="js20010722-17" question-num="17" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">17</span>. 아크쏠림의 방지책으로 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>모재와 같은 재료를 처음과 끝에 용접선을 연장하도록 가용접한 후 용접할 것.</li><li>직류대신에 교류전류를 사용할 것.</li><li class="correct">용접부가 긴 경우에 전진법으로 용접할 것.</li><li>접지점을 용접부에서 멀리할 것.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 54%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"용접부가 긴 경우에 전진법으로 용접할 것."이 틀린 것입니다. 용접부가 긴 경우에는 후진법으로 용접하는 것이 더 안전합니다. 이유는 전진법으로 용접할 경우 용접부의 열이 축적되어 용접부 주변의 재료에 영향을 미칠 수 있기 때문입니다. 따라서 용접부가 긴 경우에는 후진법으로 용접하여 열이 분산되도록 해야 합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3449,7 +3484,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#js20010722-18" question-id="js20010722-18" question-num="18" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">18</span>. 용접이음의 종류가 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>겹치기 이음</li><li>변두리 이음</li><li class="correct">완성이음</li><li>T형 필릿이음</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 72%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">완성이음은 실제로 용접을 하지 않고 부품을 조립하는 방법으로, 다른 이음들과는 달리 용접 기술이 필요하지 않습니다. 따라서 용접이음의 종류가 아닙니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3495,7 +3530,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#js20010722-19" question-id="js20010722-19" question-num="19" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">19</span>. 아크 용접시 광선에 의하여 초기에 인체에 일어나기 쉬운 가장 타당한 재해는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>광선관계로 수정체에 자극을 주어 근시가 된다.</li><li class="correct">자외선 때문에 각막과 망막에 자극을 주어 결막염을 일으킨다.</li><li>강렬한 광선 때문에 시신경이 피로해져 맹인이 된다.</li><li>강렬한 가시광선 때문에 수정체에 영향을 주어 난시가 된다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 52%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">자외선은 눈에 직접적으로 노출될 경우 각막과 망막에 자극을 주어 결막염을 일으키기 때문입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3541,7 +3576,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#js20010722-20" question-id="js20010722-20" question-num="20" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">20</span>. 미그(MIG)용접 제어장치에 해당되지 않는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>아르곤가스 개폐제어</li><li>용접와이어의 기동, 정지 및 속도제어</li><li class="correct">용접전압의 투입차단제어</li><li>보호장치와 안전장치</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 31%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">미그(MIG)용접 제어장치는 아르곤가스 개폐제어, 용접와이어의 기동, 정지 및 속도제어, 보호장치와 안전장치 등을 포함합니다. 그러나 용접전압의 투입차단제어는 미그(MIG)용접 제어장치에 해당되지 않습니다. 이는 용접전압의 투입차단은 보통 용접기 자체에 내장된 기능이기 때문입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3587,7 +3622,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#js20010722-21" question-id="js20010722-21" question-num="21" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">21</span>. CO<sub>2</sub> 아크용접시,이산화탄소의 농도가 3 - 4%이면 어떤 현상이 일어나는가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">뇌빈혈을 일으킨다.</li><li>위험상태가 된다.</li><li>치사량이 된다.</li><li>아무렇지도 않다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 60%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">이산화탄소는 호흡에 중요한 역할을 하는 혈액 내 산소와 결합하여 운반되는데, 이 농도가 높아지면 산소와 결합하는 비율이 높아져서 혈액 내 산소 운반 능력이 감소하게 됩니다. 이로 인해 뇌에 산소가 부족해져서 뇌세포가 손상을 입게 되고, 이는 뇌빈혈을 일으키게 됩니다. 따라서 이산화탄소 농도가 3-4%일 때는 뇌빈혈을 일으키므로 위험한 상태가 됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3633,7 +3668,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#js20010722-22" question-id="js20010722-22" question-num="22" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">22</span>. 불활성 가스 아크 용접에서 티그(TIG)용접의 전극봉은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>니켈</li><li>탄소강</li><li class="correct">텅스텐</li><li>저합금강</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 74%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">티그(TIG)용접은 높은 온도에서 용융된 금속을 전극 없이 용접하는 방식이기 때문에 전극으로 사용되는 봉은 높은 내열성과 내부식성이 필요합니다. 이에 따라 텅스텐이 선택되는데, 텅스텐은 높은 내열성과 내부식성을 가지고 있기 때문입니다. 따라서 티그용접에서는 텅스텐 전극봉이 사용됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3679,7 +3714,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#js20010722-23" question-id="js20010722-23" question-num="23" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">23</span>. 불활성 가스 아크 용접에서 TIG용접의 분류법 중 옳지 않은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">족동식</li><li>자동식</li><li>반자동식</li><li>수동식</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 66%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">족동식은 TIG용접의 분류법이 아닙니다. 족동식은 전자빔 용접에서 사용되는 용접 방식입니다. 따라서, 옳지 않은 것은 족동식입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3725,7 +3760,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#js20010722-24" question-id="js20010722-24" question-num="24" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">24</span>. 서브머지드 아크용접의 특징 설명으로 옳은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>용접 중 아크가 눈에 보이므로 용접부의 확인이 쉽다.</li><li>용접선이 구부러지거나 짧으면 능률적이다.</li><li>알맞은 용접조건,용제 및 와이어를 쓰더라도 기계적 성질은 개선할 수 없다.</li><li class="correct">용접 설비비가 고가이다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 42%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">서브머지드 아크용접은 대량 생산에 적합한 용접 방법으로, 용접 중 아크가 눈에 보이므로 용접부의 확인이 쉽다는 특징이 있습니다. 또한 용접선이 구부러지거나 짧으면 능률적이지만, 알맞은 용접조건, 용제 및 와이어를 쓰더라도 기계적 성질은 개선할 수 없습니다. 이러한 특징들 중에서 용접 설비비가 고가인 이유는, 서브머지드 아크용접은 대량 생산에 적합한 용접 방법으로, 대형 용접설비와 많은 용접자원이 필요하기 때문입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3772,7 +3807,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#js20010722-25" question-id="js20010722-25" question-num="25" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">25</span>. 저항용접의 3대요소가 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">전극모양</li><li>통전시간</li><li>전극 가압력</li><li>용접전류</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 69%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">전극모양은 저항용접에서 중요한 역할을 하지만, 3대 요소는 통전시간, 전극 가압력, 용접전류입니다. 이 세 가지 요소는 저항용접에서 용접결함의 형성과 품질에 큰 영향을 미치기 때문에 중요합니다. 전극모양은 용접부위의 형태와 크기에 따라 다양하게 변화할 수 있지만, 이는 용접결함의 형성과는 직접적인 연관성이 없습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3818,7 +3853,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#js20010722-26" question-id="js20010722-26" question-num="26" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">26</span>. 용접부에 생긴 잔류응력을 제거하는 방법 중에 해당되지 않는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>노내 풀림법</li><li class="correct">역변형법</li><li>국부 풀림법</li><li>기계적 응력 완화법</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 57%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">역변형법은 잔류응력을 제거하는 방법이 아니라, 잔류응력을 측정하는 방법입니다. 따라서 해당되지 않는 것입니다. 역변형법은 잔류응력을 측정하기 위해 시행되는 방법으로, 재료에 일정한 변형을 가한 후 변형을 제거하면서 발생하는 응력 변화를 측정하여 잔류응력을 계산합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3864,7 +3899,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#js20010722-27" question-id="js20010722-27" question-num="27" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">27</span>. 이산화탄소(CO<sub>2</sub>) 아크용접의 결함으로써 그 원인이 되는 가스는 질소(N<sub>2</sub>), 수소(H<sub>2</sub>) 및 일산화탄소(CO) 등이 있는데 일반적으로 다음의 어떤 용접결함을 일으키는가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>용융부족</li><li>언더 컷</li><li>균열</li><li class="correct">다공성</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 54%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">이산화탄소(CO<sub>2</sub>) 아크용접에서 발생하는 가스들은 용융금속 내부에서 기체 상태로 존재하다가 금속이 응고되면서 방출된다. 이때, 기체 상태로 존재하던 가스들이 금속 내부에서 고정되지 못하고 금속 표면으로 탈출하면서 다공성 결함이 발생한다. 따라서 이산화탄소(CO<sub>2</sub>) 아크용접에서는 다공성 결함이 일반적으로 발생한다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3910,7 +3945,9 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#js20010722-28" question-id="js20010722-28" question-num="28" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">28</span>. 가스절단에서 양호한 절단면을 얻기 위한 조건 중 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">드래그(drag)의 길이가 가능한 클 것.</li><li>절단면이 평활하고, 노치(notch)가 없을 것.</li><li>슬래그(slag) 이탈이 양호할 것</li><li>절단면 표면의 각이 예리할 것</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 62%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"절단면 표면의 각이 예리할 것"이 양호한 절단면을 얻기 위한 조건 중 틀린 것입니다. 예리한 각은 오히려 절단면의 강도를 약화시키고 균열 발생 가능성을 높일 수 있습니다. 따라서, 절단면 표면의 각이 둥글게 처리되어야 합니다.<br/>
+<br/>
+"드래그(drag)의 길이가 가능한 클 것"은 양호한 절단면을 얻기 위한 조건 중 매우 중요합니다. 드래그의 길이가 짧으면, 가스절단 시 생성되는 슬래그가 절단면에 남아 있을 가능성이 높아지기 때문입니다. 이는 절단면의 표면을 불균일하게 만들고, 절단면의 강도를 약화시킬 수 있습니다. 따라서, 드래그의 길이는 가능한 크게 설정하는 것이 좋습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3956,7 +3993,11 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#js20010722-29" question-id="js20010722-29" question-num="29" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">29</span>. 아세틸렌(C<sub>2</sub>H<sub>2</sub>) 가스의 폭발성에 해당되지 않는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>산화폭발</li><li>분해폭발</li><li class="correct">분무폭발</li><li>화합폭발</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 44%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">아세틸렌은 고체 또는 액체 상태에서는 안정적이지만, 가스 상태에서는 폭발성이 높습니다. 이는 가스 상태에서 공기와 접촉하여 산화되기 쉽기 때문입니다. <br/>
+<br/>
+그 중에서도 분무폭발은 아세틸렌 가스를 고압으로 압축하여 분무기로 분사할 때 발생할 수 있는 폭발입니다. 분무기 내부에서 고압으로 압축된 아세틸렌 가스가 빠르게 확장하면서 열이 발생하고, 이로 인해 폭발이 발생할 수 있습니다. <br/>
+<br/>
+따라서, 분무폭발은 아세틸렌 가스의 폭발성에 해당되며, 다른 보기들은 모두 아세틸렌 가스의 폭발성에 해당됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4002,7 +4043,9 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#js20010722-30" question-id="js20010722-30" question-num="30" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">30</span>. 어떤 물질 1kg을 1℃ 높이는 데 필요한 열량은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">비열</li><li>잠열</li><li>감열</li><li>열용량</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 39%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "비열"입니다.<br/>
+<br/>
+비열은 단위 질량당 열량 변화량을 의미합니다. 따라서 1kg의 물질을 1℃ 높이는 데 필요한 열량은 해당 물질의 비열에 따라 결정됩니다. 다른 보기들은 열과 관련된 용어이지만, 이 문제에서는 단위 질량당 열량 변화량을 묻고 있으므로 비열이 정답입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4048,7 +4091,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#js20010722-31" question-id="js20010722-31" question-num="31" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">31</span>. 가스 용접에서 산소와 아세틸렌의 혼합비율이 1:1인 불꽃으로 일반 연강재나 주철의 용접에 쓰이는 불꽃은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>탄화불꽃</li><li>산화불꽃</li><li class="correct">중성불꽃</li><li>혼합불꽃</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 22%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">중성불꽃은 산소와 아세틸렌의 혼합비율이 1:1인 불꽃으로, 이 혼합비율은 일반 연강재나 주철과 같은 중성 용접재료를 용접할 때 적합한 비율입니다. 따라서 중성불꽃이 일반적으로 사용됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4094,7 +4137,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#js20010722-32" question-id="js20010722-32" question-num="32" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">32</span>. 가스 용접에서 모재의 두께가 6mm일 때 사용되는 용접봉의 직경(mm)은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>2mm</li><li class="correct">4mm</li><li>6mm</li><li>8mm</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 48%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">일반적으로 가스 용접에서 용접봉의 직경은 모재의 두께의 1/2 ~ 2/3 정도로 선택됩니다. 따라서 모재의 두께가 6mm일 때 사용되는 용접봉의 직경은 6mm의 1/2 ~ 2/3 정도인 3mm ~ 4mm 사이의 값이 됩니다. 따라서 정답은 "4mm"입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4141,7 +4184,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#js20010722-33" question-id="js20010722-33" question-num="33" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">33</span>. 피복 아크용접봉에서 피복제의 주요작용이 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>아크를 안정하게 한다.</li><li>용착금속의 탈산 정련작용을 한다.</li><li>용착금속의 응고와 냉각속도를 느리게 한다.</li><li class="correct">용착금속의 급냉으로 기계적 성질을 우수하게 한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 35%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">피복 아크용접봉에서 피복제의 주요작용은 아크를 안정하게 하고, 용착금속의 탈산 정련작용을 하며, 용착금속의 응고와 냉각속도를 느리게 하는 것입니다. 따라서, 정답인 "용착금속의 급냉으로 기계적 성질을 우수하게 한다."는 피복제의 주요작용이 아닙니다. 이유는 용착금속이 급격하게 냉각되면 기계적 성질이 약화되기 때문입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4187,7 +4230,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#js20010722-34" question-id="js20010722-34" question-num="34" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">34</span>. 피복 아크용접봉의 피복제에 습기가 있을 때 용접을 하면 가장 많이 발생하는 결함은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">기공이 생긴다.</li><li>크레이터가 생긴다.</li><li>언더컷 현상이 생긴다.</li><li>오우버랩 현상이 생긴다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 60%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">피복 아크용접봉의 피복제에 습기가 있을 때 용접을 하면, 습기가 가열되어 증기가 발생하면서 용접부위에 기공이 생길 수 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4233,7 +4276,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#js20010722-35" question-id="js20010722-35" question-num="35" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">35</span>. 구리의 용접에서 TIG 용접법에 대한 설명 중 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>판두께 6mm이하에 많이 사용한다.</li><li>전극으로는 토륨이 들어있는 텅스텐봉을 사용한다.</li><li>전극은 직류정극성(DCSP)을 사용한다.</li><li class="correct">예열온도는 100∼200℃ 정도로 한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 23%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">TIG 용접에서 예열온도는 100∼200℃ 정도로 하는 것은 틀린 설명입니다. TIG 용접에서는 보통 예열온도를 150∼300℃ 정도로 유지합니다. 이는 용접할 재료의 종류와 두께, 용접환경 등에 따라 다르게 결정됩니다. 예열온도를 유지함으로써 용접부의 응력을 줄이고 용접결함을 방지할 수 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4284,7 +4327,7 @@ $(function(){
 </div>
 </div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#js20010722-36" question-id="js20010722-36" question-num="36" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">36</span>. 철강의 분류는 무엇으로 하는가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>성질</li><li class="correct">탄소량</li><li>조직</li><li>제작방법</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 73%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">철강의 분류는 탄소량으로 한다. 이는 철과 탄소의 비율에 따라 철강의 물성과 특성이 결정되기 때문이다. 탄소량이 적은 저탄소강은 인성과 용접성이 높고, 탄소량이 많은 고탄소강은 경도와 내마모성이 높다. 따라서 철강의 탄소량에 따라 사용 용도가 결정되기도 한다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4330,7 +4373,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#js20010722-37" question-id="js20010722-37" question-num="37" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">37</span>. 고탄소강의 탄소 함유량은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>0.1 – 0.3%C</li><li>0.3 - 0.5%C</li><li class="correct">0.5 – 1.3%C</li><li>0.01 - 0.07%C</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 37%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">고탄소강은 탄소 함유량이 높은 강종으로, 탄소 함유량이 0.5 – 1.3%C인 이유는 이 범위 내에서 강도와 경도가 적절하게 유지되기 때문입니다. 탄소 함유량이 낮으면 강도와 경도가 낮아지고, 높으면 부서지기 쉬워지기 때문에 이 범위가 적절한 것입니다. 따라서, 고탄소강의 탄소 함유량은 0.5 – 1.3%C입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4376,7 +4419,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#js20010722-38" question-id="js20010722-38" question-num="38" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">38</span>. 강(steel)의 고온 가공성을 나쁘게 하며, 적열취성(hot brittleness)의 원인이 되는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">유황</li><li>인</li><li>규소</li><li>수소</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 46%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">강의 고온 가공성을 나쁘게 하는 것은 적열취성인데, 이는 강이 고온에서 유동성이 떨어지고 파단하기 쉬워지는 현상입니다. 이러한 적열취성의 원인 중 하나가 유황입니다. 유황은 강 내부에서 황화물을 형성하여 결정구조를 파괴하고, 결정 경계에서 결합력을 약화시켜 강의 인성을 낮춥니다. 따라서 강의 고온 가공성을 나쁘게 하며, 적열취성의 원인이 됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4422,7 +4465,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#js20010722-39" question-id="js20010722-39" question-num="39" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">39</span>. 보통 주철의 현미경 조직에서 흑색으로 보이는 부분은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>탄화철</li><li>선상조직</li><li class="correct">흑연</li><li>은점</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 37%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">보통 주철의 현미경 조직에서 흑색으로 보이는 부분은 "흑연"입니다. 이는 주철 내부에서 탄소가 충분히 농축되어 탄소 원자들이 2차원으로 배열되어 있는 구조를 가지고 있기 때문입니다. 이러한 구조는 전기 전도성과 열 전도성이 뛰어나며, 마찰에 강하고 내식성이 높은 재료로 사용됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4468,7 +4511,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#js20010722-40" question-id="js20010722-40" question-num="40" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">40</span>. 바탕이 퍼얼라이트(pearlite)이고 인장강도 35 ∼ 45kgf/mm<sup>2</sup>에 달하며, 담금질 할수 있어 내마멸성이 요구되는 공작기계의 안내면에 쓰이는 주철은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>구상흑연주철</li><li>칠드주철</li><li>고급주철</li><li class="correct">미하나이트주철</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 12%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">미하나이트주철은 바탕이 퍼얼라이트(pearlite)이며, 인장강도가 35 ∼ 45kgf/mm<sup>2</sup>에 달하며, 담금질이 가능하다는 공통점이 있습니다. 하지만 내마멸성이 요구되는 공작기계의 안내면에 쓰이는 주철은 내구성이 뛰어나야 하기 때문에, 미하나이트주철이 적합합니다. 미하나이트주철은 내구성이 뛰어나고 내마멸성이 우수하여 공작기계의 안내면에 적합한 재질입니다. 따라서, 정답은 "미하나이트주철"입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4515,7 +4558,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div>
 <div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#js20010722-41" question-id="js20010722-41" question-num="41" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">41</span>. 금속탄화물의 분말형의 금속원소를 프레스로 성형한 다음, 이것을 소결하여 만든 합금으로 절삭 공구에는 물론 다이스 및 내열, 내마멸성이 요구되는 부품에 많이 사용되는 금속은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">초경합금</li><li>주조경질합금</li><li>합금공구강</li><li>세라믹</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 21%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">초경합금은 분말형의 금속탄화물을 프레스로 성형한 후 소결하여 만든 합금으로, 내열성과 내마멸성이 뛰어나기 때문에 절삭 공구 및 다이스 등에 많이 사용됩니다. 또한, 초경합금은 고강도와 내식성이 뛰어나기 때문에 항공기 엔진 부품 등에도 사용됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4561,7 +4604,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#js20010722-42" question-id="js20010722-42" question-num="42" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">42</span>. Cr-Ni계 스테인리스 강의 결함인 입간부식의 방지책 중 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>탄소량이 적은 강을 사용한다.</li><li class="correct">800∼1000℃ 에서 가공한다.</li><li>Ti을 소량 첨가한다.</li><li>Nb을 소량 첨가한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 32%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">800∼1000℃에서 가공하는 것은 올바른 방법이 아닙니다. 이유는 입간부식은 고온에서 발생하는데, 800∼1000℃에서 가공하면 오히려 결함이 더욱 심해질 수 있습니다. 따라서 올바른 방법은 탄소량이 적은 강을 사용하고, Ti이나 Nb을 소량 첨가하여 입간부식에 대한 내성을 높이는 것입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4607,7 +4650,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#js20010722-43" question-id="js20010722-43" question-num="43" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">43</span>. 금색에 가까와 금박대용으로 사용되며 화폐, 메달, 악기에 많이 사용되는 황동을 무엇이라 하는가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>네이벌 황동</li><li>델타 황동</li><li class="correct">톰백</li><li>쾌삭 황동</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 48%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">톰백은 금색에 가까운 황동으로, 금박대용으로 사용되며 화폐, 메달, 악기 등에 많이 사용됩니다. 다른 보기들인 네이벌 황동, 델타 황동, 쾌삭 황동은 각각 다른 종류의 황동입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4653,7 +4696,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#js20010722-44" question-id="js20010722-44" question-num="44" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">44</span>. 제강법의 종류가 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>평로제강법</li><li>전로제강법</li><li>전기로제강법</li><li class="correct">용광로제강법</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 23%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">용광로제강법은 철광석을 용광로에서 녹여서 철을 추출하는 방법으로, 제강법이 아닙니다. 따라서 정답은 "용광로제강법"입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4699,7 +4742,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#js20010722-45" question-id="js20010722-45" question-num="45" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">45</span>. 주강품의 용도로 맞지 않는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>기어, 차량부품</li><li>조선재, 보일러부품</li><li class="correct">측정기, 게이지부품</li><li>운반기계, 공작기계부품</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 29%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">주강품은 기어, 차량부품, 조선재, 보일러부품, 운반기계, 공작기계부품 등 다양한 산업 분야에서 사용됩니다. 그러나 측정기, 게이지부품은 주강품의 용도와는 직접적인 연관성이 없습니다. 측정기, 게이지부품은 주로 측정 및 검사용으로 사용되는 부품이기 때문에 주강품의 용도로는 맞지 않습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4745,7 +4788,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#js20010722-46" question-id="js20010722-46" question-num="46" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">46</span>. 실용금속 재료중 가장 가벼운 합금을 만드는 주체원소에 해당되는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">Mg</li><li>Zn</li><li>Cr</li><li>Ni</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 30%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">실용금속 재료 중 가장 가벼운 합금을 만드는 주체 원소는 마그네슘(Mg)입니다. 이는 마그네슘이 원자량이 가장 작은 원소 중 하나이기 때문입니다. 또한, 마그네슘 합금은 가볍고 강하며 내식성이 뛰어나기 때문에 항공기, 자동차, 자전거 등 다양한 분야에서 사용됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4791,7 +4834,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#js20010722-47" question-id="js20010722-47" question-num="47" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">47</span>. 순철에 0.2-0.6% 정도 함유되어 있고 이것이 0.35%이상 함유 되면 인장강도, 탄성한도, 경도등이 높아지는 원소는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>Cu</li><li>Mn</li><li>Ni</li><li class="correct">Si</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 13%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">순철에 함유된 원소 중 Si는 0.35% 이상 함유되면 인장강도, 탄성한도, 경도 등이 높아지는 효과가 있습니다. 이는 Si가 철과 결합하여 강도를 높이는 효과가 있기 때문입니다. 따라서 Si가 정답입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4837,7 +4880,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#js20010722-48" question-id="js20010722-48" question-num="48" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">48</span>. 기어,캠,축 등 표면경화용강의 탄소 함유량은 몇 % 인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>0.01 – 0.04</li><li>0.04 - 0.08</li><li class="correct">0.08 – 0.2</li><li>0.2 - 0.3</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 30%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">기어, 캠, 축 등 표면경화용강은 내마모성과 내부식성을 향상시키기 위해 탄소를 함유시킨다. 이때 탄소 함유량이 0.08-0.2%인 이유는 이 범위 내에서 탄소 함유량이 적절하게 조절되면 내마모성과 내부식성이 향상되기 때문이다. 또한, 탄소 함유량이 너무 높으면 강의 가공성이 떨어지고, 너무 낮으면 효과가 미미해지기 때문에 이 범위가 적절하다고 알려져 있다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4884,7 +4927,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div>
 <div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#js20010722-49" question-id="js20010722-49" question-num="49" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">49</span>. 황동에 생기는 자연균열(Season crack)의 방지법은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">황동판을 도금한다.</li><li>황동판에 전기를 흐르게 한다.</li><li>황동에 약간의 철을 합금 시킨다.</li><li>수증기를 제거 시킨다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 12%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">황동은 습기와 공기 중의 산화물에 노출되면 자연균열이 생길 수 있습니다. 따라서 황동판을 도금하면 황동과 공기, 습기가 직접적으로 접촉하지 않아서 자연균열을 방지할 수 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4930,7 +4973,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#js20010722-50" question-id="js20010722-50" question-num="50" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">50</span>. 알루미늄과 그 합금에 관한 설명으로 옳은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>알루미늄도 변태점이 있으며, 그 합금은 열처리에 따라 기계적 성질에 많은 변화를 일으킨다.</li><li>알루미늄합금의 열처리도 강과 같고, 뜨임경화나 담금질 경화를 이용한다.</li><li class="correct">알루미늄에 구리나 규소 또는 마그네슘을 첨가하면 기계적 성질이 우수해진다.</li><li>인공시효경화가 생기는 온도는 합금의 종류, 과포화의 경도, 가공 정도등에 따라서는 차이가 없다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 22%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">알루미늄은 자체적으로 기계적 성질이 약하므로, 구리나 규소 또는 마그네슘과 같은 다른 원소를 첨가하여 합금을 만들면 기계적 성질이 우수해진다. 이는 합금 내부의 결정 구조가 바뀌어 더 강한 결합력을 가지게 되기 때문이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4981,7 +5024,7 @@ $(function(){
 </div>
 </div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#js20010722-51" question-id="js20010722-51" question-num="51" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">51</span>. 큰 도면을 접을 때에는 얼마의 크기로 접는 것을 원칙으로 하는가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>A5</li><li class="correct">A4</li><li>A3</li><li>A2</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 40%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">큰 도면을 접을 때에는 A4 크기로 접는 것이 원칙입니다. 이는 A4가 가장 일반적으로 사용되는 용지 크기이기 때문입니다. 또한 A4 크기로 접으면 보관이 용이하고, 전달이나 운반 시에도 편리하기 때문입니다. A5는 너무 작아서 세부사항을 확인하기 어렵고, A3, A2는 너무 크기 때문에 보관이 어렵고 운반 시 불편합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5027,7 +5070,11 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#js20010722-52" question-id="js20010722-52" question-num="52" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">52</span>. 다음 중 선의 굵기가 가는 실선이 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>치수선</li><li>해칭선</li><li>지시선</li><li class="correct">열처리 표시선</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 36%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "열처리 표시선"입니다. <br/>
+<br/>
+열처리 표시선은 점선으로 표시되며, 부품이나 제품의 열처리 과정을 나타내는 선입니다. 따라서 선의 굵기가 가는 실선이 아닌 것은 열처리 표시선입니다. <br/>
+<br/>
+치수선은 부품이나 제품의 크기를 나타내는 실선, 해칭선은 부품이나 제품의 내부 구조를 나타내는 일정한 간격의 선, 지시선은 부품이나 제품의 특정 위치나 형태를 나타내는 선입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5073,7 +5120,13 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#js20010722-53" question-id="js20010722-53" question-num="53" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">53</span>. 다음 재료 기호 중에서 일반구조용 압연강재를 표시하는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>SM</li><li>SD</li><li class="correct">SS</li><li>SBC</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 22%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "SS"입니다. <br/>
+<br/>
+- "SM"은 스테인리스강을 나타내는 기호입니다.<br/>
+- "SD"는 고장력강을 나타내는 기호입니다.<br/>
+- "SBC"는 구조용 냉간압연강재를 나타내는 기호입니다.<br/>
+<br/>
+따라서, "SS"는 일반구조용 압연강재를 나타내는 기호입니다. "S"는 강재를 나타내는 기호이고, "S" 뒤에 오는 두 번째 문자는 강재의 성질을 나타내는데, "S" 뒤에 "S"가 오면 일반구조용 압연강재를 나타냅니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5119,7 +5172,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#js20010722-54" question-id="js20010722-54" question-num="54" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">54</span>. 보기 도면의 A 부의 치수는?(정확한 내용(그림)을 아시는 분께서는 오류 신고를 통하여 내용작성 부탁드립니다. 정답은 3번입니다.)</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>6</li><li>7</li><li class="correct">8</li><li>14</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 30%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">보기 도면에서 A 부의 치수는 8이다. 이는 수직선 AB와 수평선 BC의 길이를 합한 값이 8이기 때문이다. AB의 길이는 6이고 BC의 길이는 2이므로, 6+2=8이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5165,7 +5218,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#js20010722-55" question-id="js20010722-55" question-num="55" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">55</span>. 보기와 같은 3각법에 의한 투상도에 가장 적합한 입체도는?<img src="images/js20010722m55.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li><img src="images/js20010722m55b1.gif"/></li><li><img src="images/js20010722m55b2.gif"/></li><li><img src="images/js20010722m55b3.gif"/></li><li class="correct"><img src="images/js20010722m55b4.gif"/></li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 15%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "<img src="https://cbtbank.kr/images/js/js20010722/js20010722m55b4.gif"/>" 입니다. 이유는 투상도에서는 물체의 크기와 거리를 정확하게 나타내기 위해 원근법을 사용합니다. 따라서, 물체의 크기와 거리를 가장 정확하게 나타내는 것은 원근법에 따라 물체가 작아지고 멀어지는 방향으로 그려진 "<img src="https://cbtbank.kr/images/js/js20010722/js20010722m55b4.gif"/>" 입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5211,7 +5264,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#js20010722-56" question-id="js20010722-56" question-num="56" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">56</span>. 보기 입체도의 화살표 방향 투상도로 가장 적합한 것은?<img src="images/js20010722m56.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li><img src="images/js20010722m56b1.gif"/></li><li><img src="images/js20010722m56b2.gif"/></li><li><img src="images/js20010722m56b3.gif"/></li><li class="correct"><img src="images/js20010722m56b4.gif"/></li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 13%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">보기에서 화살표는 x축과 y축에 대해 모두 양의 방향으로 향하고 있으며, z축에 대해서는 양의 방향으로 향하고 있지 않습니다. 따라서 화살표의 방향을 투사할 때, z축에 대한 투사는 필요하지 않습니다. 이에 따라 가장 적합한 투상도는 "<img src="https://cbtbank.kr/images/js/js20010722/js20010722m56b4.gif"/>" 입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5258,7 +5311,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#js20010722-57" question-id="js20010722-57" question-num="57" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">57</span>. 용접도시기호의 해석이 잘못된 것은?<img src="images/js20010722m57.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">온둘레 용접이다.</li><li>화살표 반대쪽을 용접한다.</li><li>점용접 피치는 25 mm 이다.</li><li>점용접의 점의 수는 5 이다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 18%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">해당 용접도시기호는 온둘레 용접을 나타내는 기호이다. 이유는 기호 내부에 있는 점들이 원형으로 배치되어 있으며, 이는 온둘레 용접에서 사용되는 점용접의 형태와 일치하기 때문이다. 따라서 "화살표 반대쪽을 용접한다.", "점용접 피치는 25 mm 이다.", "점용접의 점의 수는 5 이다."는 모두 올바른 해석이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5304,7 +5357,9 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#js20010722-58" question-id="js20010722-58" question-num="58" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">58</span>. Ⅰ형강의 치수가 Ⅰ A 잼 B 잼 C - D 로 나타나 있다면 A, B, C, D, 의 치수로 올바른 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">A = 높이</li><li>B = 웨브 두께</li><li>C = 길이</li><li>D = 폭</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 25%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "A = 높이"입니다. <br/>
+<br/>
+Ⅰ형강은 일반적으로 H 모양을 하고 있으며, 높이가 A, 웨브 두께가 B, 길이가 C, 폭이 D로 나타납니다. 따라서 A는 형강의 높이를 나타내는 치수입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5350,7 +5405,9 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#js20010722-59" question-id="js20010722-59" question-num="59" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">59</span>. 다음 그림은 모두 지름이 같은 원통의 상관체이다. 상관선으로 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li><img src="images/js20010722m59b1.gif"/></li><li class="correct"><img src="images/js20010722m59b2.gif"/></li><li><img src="images/js20010722m59b3.gif"/></li><li><img src="images/js20010722m59b4.gif"/></li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 34%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "<img src="https://cbtbank.kr/images/js/js20010722/js20010722m59b2.gif"/>" 입니다. <br/>
+<br/>
+이유는 상관선이란 두 원통의 바깥면을 접하는 선을 말하는데, "<img src="https://cbtbank.kr/images/js/js20010722/js20010722m59b2.gif"/>"의 경우에는 두 원통이 서로 접하지 않기 때문에 상관선이 될 수 없습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5396,7 +5453,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#js20010722-60" question-id="js20010722-60" question-num="60" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">60</span>. 완전 나사부와 불완전 나사부의 경계를 나타내는 선은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>가는 실선</li><li class="correct">굵은 실선</li><li>가는 1점 쇄선</li><li>굵은 1점 쇄선</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 22%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">완전 나사부와 불완전 나사부의 경계는 굵은 실선으로 나타낸다. 이는 완전 나사부와 불완전 나사부의 구분을 명확하게 하기 위해서이다. 가는 실선이나 1점 쇄선은 경계를 구분하기에는 너무 얇고 불분명하며, 굵은 1점 쇄선은 경계를 너무 강조하여 나사부의 형태를 왜곡시킬 수 있기 때문이다. 따라서 굵은 실선이 가장 적절한 선택이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>

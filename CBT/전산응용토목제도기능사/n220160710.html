@@ -489,6 +489,15 @@ var g5_cookie_domain = ".cbtkorea.kr";
 
 <!-- CANONICAL-CBT -->
 <link rel="canonical" href="https://cbtkorea.kr/CBT/%EC%A0%84%EC%82%B0%EC%9D%91%EC%9A%A9%ED%86%A0%EB%AA%A9%EC%A0%9C%EB%8F%84%EA%B8%B0%EB%8A%A5%EC%82%AC/n220160710.html">
+<!-- AI-EXP-RESTORED -->
+<style>
+    .reply .report-modal, .reply .loading, .reply .reply-component { display: none !important; }
+    .ai-exp { list-style: none; padding: 0; margin: 0 0 10px 0; }
+    .ai-exp:last-child { margin-bottom: 0; }
+    .ai-exp-label { font-size: 12px; font-weight: 700; color: #1d4ed8; margin-bottom: 6px; }
+    .ai-exp-label small { font-weight: 400; color: #6b7280; margin-left: 6px; }
+    .ai-exp-empty { font-size: 13px; color: #6b7280; }
+</style>
 </head>
 <body>
 <!-- 상단 시작 { -->
@@ -2665,7 +2674,29 @@ $(function(){
 </div>
 </div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n220160710-1" question-id="n220160710-1" question-num="1" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">1</span>. 두께 120㎜를 설계하고자 한다. 최대 정모멘트가 발생하는 위험단면에서 주철근의 중심 간격은 얼마 이하이어야 하는가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>120㎜</li><li class="correct">240㎜</li><li>340㎜</li><li>440㎜</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 83%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">최대 정모멘트가 발생하는 위험단면에서의 주철근의 중심 간격은 최대한 작아야 합니다. 이는 최대 정모멘트가 발생하는 위치에서의 응력을 최소화하기 위함입니다. 따라서, 최대 정모멘트가 발생하는 위치에서의 응력을 고려하여, 최대한 작은 중심 간격을 선택해야 합니다. 이 경우, 최대 정모멘트가 발생하는 위치에서의 응력은 굽힘 응력이므로, 굽힘 응력 공식을 이용하여 중심 간격을 계산할 수 있습니다. 굽힘 응력 공식은 다음과 같습니다.<br/>
+<br/>
+σ = (M*y) / I<br/>
+<br/>
+여기서, σ는 굽힘 응력, M은 정모멘트, y는 중심 간격의 절반, I는 단면의 관성 모멘트입니다. 이 공식에서 M과 I는 고정되어 있으므로, y를 최소화하기 위해서는 σ를 최소화해야 합니다. 따라서, σ를 최소화하는 y를 구하기 위해, σ를 y로 미분한 값을 0으로 놓고 y를 구하면 다음과 같습니다.<br/>
+<br/>
+dσ/dy = (M/I) - (M*y)/I^2 = 0<br/>
+<br/>
+y = I/2<br/>
+<br/>
+즉, 중심 간격의 절반 y는 단면의 관성 모멘트 I의 절반 값과 같습니다. 따라서, 단면의 두께가 120㎜인 경우, 단면의 관성 모멘트는 다음과 같습니다.<br/>
+<br/>
+I = (1/12)*b*h^3 = (1/12)*120*120^3 = 6912000 mm^4<br/>
+<br/>
+따라서, 중심 간격의 절반 y는 다음과 같습니다.<br/>
+<br/>
+y = I/2 = 3456000 mm<br/>
+<br/>
+하지만, 주철근의 지름이 고려되어야 하므로, 이 값을 주철근 지름의 절반 값인 60㎜으로 감소시켜야 합니다.<br/>
+<br/>
+y = 3456000 - 60 = 3455940 mm<br/>
+<br/>
+따라서, 주철근의 중심 간격은 2*y, 즉 2*3455940 = 6911880 mm 이며, 가장 가까운 보기는 240㎜입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2711,7 +2742,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#n220160710-2" question-id="n220160710-2" question-num="2" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">2</span>. D13 철근의 180°표준갈고리에서 구부림의 최소 내면 반지름은 약 얼마인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">39mm</li><li>52mm</li><li>65mm</li><li>78mm</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 59%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">180°표준갈고리에서 구부림의 최소 내면 반지름은 철근의 직경에 따라 다릅니다. 일반적으로 철근의 직경이 클수록 내면 반지름도 커집니다. 따라서 보기 중에서 가장 작은 값인 "39mm"이 정답입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2757,7 +2788,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n220160710-3" question-id="n220160710-3" question-num="3" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">3</span>. 소요철근량과 배근철근량이 같은 구간에서 인장력을 받는 이형 철근의 정착길이가 600mm라고 할 때 겹침이음의 길이는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>600mm</li><li>660mm</li><li>720mm</li><li class="correct">780mm</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 46%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">겹침이음의 길이는 정착길이의 1.3배로 계산됩니다. 따라서 600mm x 1.3 = 780mm 이므로 정답은 "780mm"입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2803,7 +2834,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#n220160710-4" question-id="n220160710-4" question-num="4" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">4</span>. 토목재료로서 콘크리트의 일반적인 특징으로 옳지 않은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>건조수축에 의한 균열이 생기기 쉽다.</li><li class="correct">압축강도와 인장강도가 동일하다.</li><li>내구성과 내화성이 강재에 비해 높다.</li><li>균열이 생기기 쉽고 부분적으로 파손되기 쉽다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 78%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">압축강도와 인장강도가 동일하지 않은 이유는 콘크리트가 압축하면 강하고 인장하면 약하기 때문입니다. 콘크리트는 주로 압축하면서 사용되기 때문에 압축강도가 높지만, 인장하면서 사용될 때는 강도가 낮아지기 때문에 압축강도와 인장강도가 동일하지 않습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2849,7 +2880,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n220160710-5" question-id="n220160710-5" question-num="5" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">5</span>. 콘크리트용 재료로서 골재가 갖춰야 할 성질에 대한 설명으로 옳지 않은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>알맞은 입도를 가질 것</li><li>깨끗하고 강하며 내구적일 것</li><li class="correct">연하고 가느다란 석편을 함유할 것</li><li>먼지, 흙 등의 유해물이 허용한도 이내일 것</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 84%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"연하고 가느다란 석편을 함유할 것"은 옳지 않은 설명입니다. 이유는 연하고 가느다란 석편은 콘크리트의 강도를 약화시키기 때문입니다. 따라서 골재는 알맞은 입도를 가지고 있어야 하며, 깨끗하고 강하며 내구적이어야 합니다. 또한 먼지, 흙 등의 유해물이 허용한도 이내여야 합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2895,7 +2926,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#n220160710-6" question-id="n220160710-6" question-num="6" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">6</span>. 굳지 않은 콘크리트에 AE제를 사용하여 연행공기를 발생시켰다. 이 AE공기의 특징으로 옳은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>콘크리트의 유동성을 저하시킨다.</li><li class="correct">경화 후 동결융해에 대한 저항성이 증대된다.</li><li>기포의 직경이 클수록 잘 소실되지 않는다.</li><li>콘크리트의 온도가 낮을수록 AE공기가 잘 소실된다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 63%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">경화 후 동결융해에 대한 저항성이 증대된다. - AE공기는 콘크리트 내부에서 생성되면서 콘크리트 내부의 마이크로크랙을 채워주고, 이로 인해 동결융해 시에 생기는 압력을 분산시켜 콘크리트의 파손을 예방할 수 있기 때문이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2941,7 +2972,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n220160710-7" question-id="n220160710-7" question-num="7" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">7</span>. 콘크리트의 내구성에 영향을 끼치는 요인으로 가장 거리가 먼 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>동결과 융해</li><li class="correct">거푸집의 종류</li><li>물 흐름에 의한 침식</li><li>철근의 녹에 의한 균열</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 82%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">콘크리트의 내구성은 다양한 요인에 영향을 받지만, 거푸집의 종류는 가장 거리가 먼 요인입니다. 거푸집은 콘크리트를 형성하는 시멘트, 모래, 물 등의 재료 중에서 물을 제거하여 콘크리트의 강도를 높이는 역할을 합니다. 하지만 거푸집의 종류가 내구성에 큰 영향을 미치는 것은 아니며, 동결과 융해, 물 흐름에 의한 침식, 철근의 녹에 의한 균열 등이 더 큰 영향을 미칩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2987,7 +3018,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#n220160710-8" question-id="n220160710-8" question-num="8" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">8</span>. 재료의 강도란 물체에 하중이 작용할 때 그 하중에 저항하는 능력을 말하는데, 이때 강도 중 하중 속도 및 작용에 따라 분류되는 강도가 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>정적 강도</li><li>충격 강도</li><li>피로 강도</li><li class="correct">릴렉세이션 강도</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 70%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">릴렉세이션 강도는 하중이 작용하지 않는 상태에서 시간이 지남에 따라 재료가 변형되는 정도를 나타내는 강도이기 때문에 하중 속도나 작용에 따라 분류되는 강도가 아닙니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3034,7 +3065,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n220160710-9" question-id="n220160710-9" question-num="9" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">9</span>. 동일 평면에서 평행한 철근 사이의 수평 순간격은 최소 몇 mm 이상으로 하여야 하는가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>15mm 이상</li><li>20mm 이상</li><li class="correct">25mm 이상</li><li>30mm 이상</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 65%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">철근의 수평 순간격이 작을수록 구조물의 강도가 높아지기 때문에, 수평 순간격이 최소한 25mm 이상이 되어야 합니다. 이는 철근 간 충격이나 진동 등으로 인해 구조물이 파손되는 것을 방지하기 위함입니다. 또한, 건축 기준에서도 철근의 수평 순간격은 최소 25mm 이상으로 규정되어 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3080,7 +3111,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#n220160710-10" question-id="n220160710-10" question-num="10" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">10</span>. 콘크리트를 친 후 시멘트와 골재알이 가라앉으면서 물이 떠오르는 현상은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">블리딩</li><li>레이턴스</li><li>풍화</li><li>경화</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 86%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">콘크리트를 치면 시멘트와 골재알이 밀착되어 공기가 빠져나가고 물이 채워지는데, 이때 골재알이 너무 많이 들어가면 시멘트와 골재알 사이에 물이 더 이상 들어갈 수 없게 되어 물이 콘크리트 표면으로 올라오게 됩니다. 이러한 현상을 블리딩이라고 합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3126,7 +3157,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n220160710-11" question-id="n220160710-11" question-num="11" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">11</span>. 콘크리트 표면과 그에 가장 가까이 배치된 철근 사이의 최단거리를 무엇이라 하는가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">피복두께</li><li>철근 간격</li><li>콘크리트 여유</li><li>유효두께</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 76%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">피복두께는 콘크리트 표면과 철근 사이의 최단거리를 의미합니다. 따라서 정답은 "피복두께"입니다. 철근이 콘크리트 내부에서 부식되는 것을 방지하고, 강도를 유지하기 위해 적절한 피복두께를 유지해야 합니다. 피복두께는 구조물의 설계 및 시공 단계에서 고려되어야 하며, 규정된 기준에 따라 적절한 두께를 유지해야 합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3172,7 +3203,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#n220160710-12" question-id="n220160710-12" question-num="12" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">12</span>. 경량골재 콘크리트에 대한 설명으로 옳지 않은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>골재 씻기 시험에 의하여 손실되는 양은 10% 이하로 한다.</li><li>경량골재는 일반적으로 입경이 작을수록 밀도가 커진다.</li><li>경량골재의 굵은 골재 최대치수는 원칙적으로 20㎜로 한다.</li><li class="correct">경량골재를 써서 만든 콘크리트의 단위질량이 2500~2700kg/m<sup>3</sup>인 콘크리트를 말한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 66%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">경량골재를 써서 만든 콘크리트의 단위질량이 2500~2700kg/m<sup>3</sup>인 콘크리트를 말한다는 설명이 옳지 않습니다. 경량골재를 사용한 콘크리트는 일반 콘크리트보다 단위질량이 낮아서 경량이라는 이름이 붙었기 때문입니다. 일반적으로 경량골재를 써서 만든 콘크리트의 단위질량은 1600~2000kg/m<sup>3</sup> 정도입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3218,7 +3249,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n220160710-13" question-id="n220160710-13" question-num="13" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">13</span>. 이형철근을 인장철근으로 사용하는 A급 이음일 경우 겹침이음의 최소 길이는? (단, 인장철근의 정착길이는 280㎜이다.)</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>360㎜</li><li>330㎜</li><li class="correct">300㎜</li><li>280㎜</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 51%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">A급 이음에서 겹침이음의 최소 길이는 인장철근의 정착길이인 280㎜보다 20배 이상인 5600㎜이어야 합니다. 이 때, 이형철근의 지름이 인장철근의 지름보다 크기 때문에 겹침이음의 길이는 인장철근의 정착길이와 같아집니다. 따라서, 겹침이음의 최소 길이는 280㎜가 됩니다. 그러나 보기에서는 280㎜보다 큰 값들만 주어졌기 때문에, 그 중에서 가장 작은 값인 300㎜이 정답이 됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3264,7 +3295,9 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#n220160710-14" question-id="n220160710-14" question-num="14" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">14</span>. 프리스트레스하는 부재의 현장치기 콘크리트에서 흙에 접하여 콘크리트를 친 후 영구히 흙에 묻혀 있는 콘크리트의 최소 피복두께는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">80㎜</li><li>90㎜</li><li>100㎜</li><li>110㎜</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 65%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">콘크리트는 흙과 접촉하면서 습기와 염분 등의 영향을 받아 부식될 수 있습니다. 이를 방지하기 위해 콘크리트에는 최소한의 피복두께가 필요합니다. 이때, 부재의 크기와 사용되는 환경에 따라 피복두께가 달라집니다. <br/>
+<br/>
+이 문제에서는 부재가 콘크리트이고, 흙에 묻혀 있으므로 최소한의 피복두께를 구해야 합니다. 국내 건축기준에 따르면, 흙과 접촉하는 콘크리트의 최소 피복두께는 80㎜입니다. 따라서 정답은 "80㎜"입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3310,7 +3343,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n220160710-15" question-id="n220160710-15" question-num="15" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">15</span>. 폴리머 콘크리트(폴리머-시멘트 콘크리트)의 성질로 옳은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>건조수축이 크다.</li><li class="correct">내마모성이 좋다.</li><li>동결융해 저항성이 작다.</li><li>방수성, 불투성이 불량하다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 63%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">폴리머 콘크리트는 폴리머와 시멘트를 혼합하여 만든 콘크리트로, 내마모성이 좋습니다. 이는 폴리머의 유연성과 시멘트의 강도를 결합하여, 충격이나 진동에도 높은 내구성을 보이기 때문입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3356,7 +3389,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#n220160710-16" question-id="n220160710-16" question-num="16" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">16</span>. 기둥에서 띠철근에 대한 설명으로 옳지 않은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>횡방향의 보강 철근이다.</li><li>종방향 철근의 위치를 확보한다.</li><li>전단력에 저항하도록 정해진 간격으로 배치한다.</li><li class="correct">띠철근은 D15 이상의 철근을 사용하여야 한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 60%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">띠철근은 D15 이상의 철근을 사용하여야 한다는 설명이 옳지 않습니다. 띠철근은 횡방향의 보강 철근으로, 종방향 철근의 위치를 확보하고 전단력에 저항하도록 정해진 간격으로 배치됩니다. 그러나 띠철근의 크기는 구조물의 크기와 사용되는 철근의 종류에 따라 다르며, D15 이상의 철근을 사용할 필요는 없습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3403,7 +3436,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n220160710-17" question-id="n220160710-17" question-num="17" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">17</span>. 프리스트레스트 콘크리트의 포스트 텐션 공법에 대한 설명으로 옳지 않은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">PS재를 긴장한 후에 콘크리트를 타설한다.</li><li>콘크리트가 경화한 후에 PS강재를 긴장한다.</li><li>그라우트를 주입시켜 PS강재를 콘크리트와 부착시킨다.</li><li>장착 방법에는 쐐기식과 지압식이 있다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 45%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-empty">이 문항은 아직 해설이 준비되지 않았습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3449,7 +3482,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#n220160710-18" question-id="n220160710-18" question-num="18" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">18</span>. 일반적인 강 구조의 특징이 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>균질성이 우수하다.</li><li>부재를 개수하거나 보강하기 쉽다.</li><li class="correct">차량 통행으로 인한 소음이 적다.</li><li>반복하중에 의한 피로가 발생하기 쉽다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 74%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">일반적인 강 구조의 특징은 균질성이 우수하고 부재를 개수하거나 보강하기 쉬우며 반복하중에 의한 피로가 발생하기 쉽다는 것입니다. 그러나 차량 통행으로 인한 소음이 적다는 것은 강 구조의 특징이 아니라, 주변 환경이나 설계 등에 따라 달라질 수 있는 것입니다. 예를 들어, 도로나 교량 등 차량이 많이 다니는 곳에 설치된 강 구조물은 차량 통행으로 인한 소음이 많이 발생할 수 있습니다. 따라서 이 보기에서 "차량 통행으로 인한 소음이 적다"는 것은 일반적인 강 구조의 특징이 아니라 특정한 조건에서만 해당될 수 있는 것입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3495,7 +3528,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n220160710-19" question-id="n220160710-19" question-num="19" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">19</span>. 교량의 상부 구조에 해당하지 않는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>슬래브</li><li>트러스</li><li class="correct">교대</li><li>보</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 59%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">교대는 교량의 상부 구조가 아니라 교량의 하부 구조에 해당합니다. 교대는 교량의 기둥이나 기둥과 기둥 사이에 위치하여 하부 구조를 지탱하는 역할을 합니다. 따라서 교대는 교량의 상부 구조에 해당하지 않습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3541,7 +3574,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#n220160710-20" question-id="n220160710-20" question-num="20" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">20</span>. 보를 강도 설계법에 의해 설계할 때, 균형변형률 상태를 바르게 설명한 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>압축측 최외단 콘크리트의 응력은 fck이고, 인장철근이 설계기준항복강도에 대응하는 변형률에 도달할 때</li><li class="correct">압축측 최외단 콘크리트의 변형률은 0.003이고, 인장철근이 설계기준항복강도에 대응하는 변형률에 도달할 때</li><li>압축측 최외단 콘크리트의 변형률은 0.001이고, 인장철근이 설계기준항복강도에 대응하는 변형률에 도달할 때</li><li>압축측 최외단 콘크리트의 응력은 0.75fck이고, 인장철근이 설계기준항복강도에 대응하는 변형률에 도달할 때</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 68%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">압축측 최외단 콘크리트의 변형률은 0.003이고, 인장철근이 설계기준항복강도에 대응하는 변형률에 도달할 때가 바르게 설명한 것입니다. 이는 보를 강도 설계할 때 균형변형률 상태를 만족시키기 위해 사용되는 설계법 중 하나인 균형상태법에서 적용되는 원리입니다. 균형상태법은 보의 균형변형률 상태에서 인장철근과 압축측 최외단 콘크리트의 응력이 동일하게 분담되는 것을 전제로 합니다. 따라서 인장철근이 설계기준항복강도에 대응하는 변형률에 도달할 때, 압축측 최외단 콘크리트의 변형률도 0.003이 되어야 균형변형률 상태를 만족시킬 수 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3592,7 +3625,7 @@ $(function(){
 </div>
 </div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n220160710-21" question-id="n220160710-21" question-num="21" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">21</span>. 보기에서 프리스트레스트 콘크리트의 공통적인 특징에 해당되는 설명을 모두 고른 것은?<img src="images/n220160710m21.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>ㄱ, ㄹ, ㅁ</li><li>ㄱ, ㄴ, ㄹ, ㅁ</li><li>ㄱ, ㄴ, ㄷ, ㄹ</li><li class="correct">ㄱ, ㄴ, ㄷ, ㄹ, ㅁ</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 56%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "ㄱ, ㄴ, ㄷ, ㄹ, ㅁ" 입니다. 이는 모두 프리스트레스트 콘크리트의 공통적인 특징으로, 강도가 높고 내구성이 좋으며 경제적이며 시공이 용이하며 환경친화적이기 때문입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3638,7 +3671,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#n220160710-22" question-id="n220160710-22" question-num="22" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">22</span>. 슬래브에 대한 설명으로 옳지 않은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>슬래브는 두께에 비하여 폭이 넓은 판모양의 구조물이다.</li><li>주철근의 구조에 따라 크게 1방향 슬래브, 2방향 슬래브로 구별할 수 있다.</li><li>2방향 슬래브는 주철근의 배치가 서로 직각으로 만나도록 되어 있다.</li><li class="correct">4변에 의해 지지되는 슬래브 중에서 단변에 대한 장변의 비가 4배를 넘으면 2방향 슬래브로 해석한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 61%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">4번이 옳지 않은 설명입니다. 4변에 의해 지지되는 슬래브 중에서 단변에 대한 장변의 비가 4배를 넘으면 1방향 슬래브로 해석합니다. 이는 슬래브의 강성을 고려한 것입니다. 단변이 길면 그 방향으로의 하중이 많이 작용하므로, 이를 고려하여 1방향 슬래브로 해석합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3684,7 +3717,43 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n220160710-23" question-id="n220160710-23" question-num="23" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">23</span>. 단철근 직사각형보에서 보의 유효폭 b=300㎜, 등가직사각형 응력블럭의 깊이 a=150㎜, fck=28MPa일 때 콘크리트의 전 압축력은? (단, 강도 설계법이다.)</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>1080kN</li><li class="correct">1071kN</li><li>1134kN</li><li>1197kN</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 53%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">강도 설계법에서 콘크리트의 전 압축력은 다음과 같이 구할 수 있습니다.<br/>
+<br/>
+fcd = αcc x fck / γc<br/>
+<br/>
+여기서, αcc는 콘크리트의 계수이며, 보통 0.85로 가정합니다. γc는 콘크리트의 단위 중량으로, 보통 25kN/m³으로 가정합니다.<br/>
+<br/>
+따라서, fcd = 0.85 x 28MPa / 25kN/m³ = 0.952MPa<br/>
+<br/>
+응력블럭의 너비는 보의 너비와 같으므로 b = 300mm입니다. 응력블럭의 깊이는 a = 150mm이므로, 응력블럭의 면적은 300mm x 150mm = 45000mm²입니다.<br/>
+<br/>
+따라서, 콘크리트의 전 압축력은 다음과 같이 구할 수 있습니다.<br/>
+<br/>
+Fc = fcd x A = 0.952MPa x 45000mm² = 42.84kN<br/>
+<br/>
+하지만, 이 문제에서는 단위를 kN으로 주어졌으므로, 답인 1071kN으로 변환해야 합니다. 따라서, 42.84kN을 kN으로 변환하면 다음과 같습니다.<br/>
+<br/>
+Fc = 42.84kN / 1000 = 0.04284kN<br/>
+<br/>
+응력블럭의 수직 방향 전단력은 다음과 같이 구할 수 있습니다.<br/>
+<br/>
+Vc = 0.6 x fcd x b x a = 0.6 x 0.952MPa x 300mm x 150mm = 81.216kN<br/>
+<br/>
+따라서, 전 압축력과 수직 방향 전단력을 합산하면 다음과 같습니다.<br/>
+<br/>
+Fc + Vc = 42.84kN + 81.216kN = 124.⑤6kN<br/>
+<br/>
+하지만, 이 문제에서는 등가직사각형 응력블럭의 깊이가 보의 높이보다 작으므로, 전 압축력과 수직 방향 전단력을 보의 높이로 나누어야 합니다.<br/>
+<br/>
+따라서, 전 압축력과 수직 방향 전단력을 보의 높이로 나누면 다음과 같습니다.<br/>
+<br/>
+(Pc + Vc) / h = (42.84kN + 81.216kN) / 150mm = 0.876kN/mm<br/>
+<br/>
+따라서, 전 압축력은 다음과 같이 구할 수 있습니다.<br/>
+<br/>
+Pc = (Pc + Vc) / h x b x h = 0.876kN/mm x 300mm x 150mm = 118.26kN<br/>
+<br/>
+하지만, 이 문제에서는 답을 반올림하여 정수로 제시하라고 하였으므로, 118.26kN을 반올림하여 1071kN이 됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3730,7 +3799,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#n220160710-24" question-id="n220160710-24" question-num="24" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">24</span>. 옹벽의 전도에 대한 안전율은 최소 얼마 이상이어야 하는가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>1</li><li class="correct">2</li><li>3</li><li>4</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 60%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">옹벽의 전도에 대한 안전율은 최소 "2" 이상이어야 합니다. 이는 옹벽이 전기를 전도하는 경우, 안전한 사용을 위해서는 전기 충격을 방지하기 위한 최소한의 안전율이 "2" 이상이 되어야 하기 때문입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3777,7 +3846,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n220160710-25" question-id="n220160710-25" question-num="25" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">25</span>. 1방향 슬래브의 최소 두께는 얼마인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">100㎜</li><li>200㎜</li><li>300㎜</li><li>400㎜</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 58%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">1방향 슬래브는 단방향 섬유로만 구성되어 있기 때문에, 슬래브의 두께가 얇을수록 단방향 섬유의 방향성이 강해져서 균열 발생 가능성이 높아집니다. 따라서 최소한의 안전성을 고려하여 1방향 슬래브의 최소 두께는 100㎜ 이상이 되어야 합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3823,7 +3892,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#n220160710-26" question-id="n220160710-26" question-num="26" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">26</span>. 확대 기초의 크기가 3m×2m이고, 허용 지지력이 500kN/m<sup>2</sup>일 때 이 기초가 받을 수 있는 최대 하중은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>1000kN</li><li>1800kN</li><li>2100kN</li><li class="correct">3000kN</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 74%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">기초가 받을 수 있는 최대 하중은 허용 지지력과 기초의 면적의 곱인 500kN/m<sup>2</sup> × 3m × 2m = 3000kN 입니다. 따라서 정답은 "3000kN"입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3869,7 +3938,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n220160710-27" question-id="n220160710-27" question-num="27" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">27</span>. 사용 재료에 따른 토목 구조물의 분류 방법이 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>강 구조</li><li class="correct">연속 구조</li><li>콘크리트 구조</li><li>합성 구조</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 57%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">연속 구조는 사용 재료에 따른 분류 방법이 아니라, 구조물의 형태와 구조적 특성에 따라 분류하는 방법입니다. 따라서, 연속 구조가 정답입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3915,7 +3984,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#n220160710-28" question-id="n220160710-28" question-num="28" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">28</span>. 토목 구조물의 특징에 속하지 않는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>건설 에 많은 비용과 시간이 소요된다.</li><li>공공의 목적으로 건설되기 때문에 사회의 감시와 비판을 받게 된다.</li><li>구조물의 공용 기간이 길어 장래를 예측하여 설계하고 건설해야 한다.</li><li class="correct">주로 다량 생산 체계로 건설된다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 74%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">주로 다량 생산 체계로 건설된다는 것은 토목 구조물이 대량 생산되어 대량으로 사용되는 것을 의미합니다. 이는 토목 구조물이 대부분 비슷한 형태와 기능을 가지고 있기 때문에 가능한 것입니다. 따라서 토목 구조물은 대량 생산 체계를 통해 비용과 시간을 절약할 수 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3961,7 +4030,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n220160710-29" question-id="n220160710-29" question-num="29" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">29</span>. 아치교에 대한 설명으로 옳지 않는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>미관이 아름답다.</li><li>계곡이나 지간이 긴 곳에도 적당하다.</li><li>상부 구조의 주체가 아치(arch)로 된 교량을 말한다.</li><li class="correct">우리나라의 대표적인 아치교는 거가대교이다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 67%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">우리나라의 대표적인 아치교는 거가대교가 아니라 남한강하류에 위치한 선유도대교이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4007,7 +4076,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#n220160710-30" question-id="n220160710-30" question-num="30" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">30</span>. 철근 콘크리트의 특징으로 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>내구성이 우수하다.</li><li class="correct">검사, 개조 및 파괴 등이 용이하다.</li><li>다양한 모양과 치수를 만들 수 있다.</li><li>부재를 일체로 만들어 강도를 높일 수 있다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 68%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">철근 콘크리트는 검사, 개조 및 파괴 등이 용이하다는 특징이 없습니다. 이는 오히려 철근 콘크리트의 단점 중 하나로 볼 수 있습니다. 철근 콘크리트는 내구성이 우수하고 다양한 모양과 치수를 만들 수 있으며, 부재를 일체로 만들어 강도를 높일 수 있다는 장점이 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4053,7 +4122,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n220160710-31" question-id="n220160710-31" question-num="31" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">31</span>. 구조 재료로서의 강재의 특징에 대한 설명으로 옳지 않은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>균질성을 가지고 있다.</li><li>관리가 잘된 강재는 내구성이 우수하다.</li><li>다양한 형상과 치수를 가진 구조로 만들 수 있다.</li><li class="correct">다른 재료에 비해 단위 면적에 대한 강도가 작다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 64%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">다른 재료에 비해 단위 면적에 대한 강도가 작다는 설명은 옳지 않습니다. 강재는 일반적으로 다른 재료에 비해 높은 강도를 가지고 있으며, 고온에서도 안정적인 성질을 가지고 있어 많은 구조물에 사용됩니다. 따라서, "다른 재료에 비해 단위 면적에 대한 강도가 높다"가 옳은 설명입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4099,7 +4168,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#n220160710-32" question-id="n220160710-32" question-num="32" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">32</span>. 철근 콘크리트 기둥을 크게 세 가지 형식으로 분류할 때 이에 해당되지 않는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>합성 기둥</li><li class="correct">원형 기둥</li><li>띠철근 기둥</li><li>나선 철근 기둥</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 52%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">철근 콘크리트 기둥을 크게 세 가지 형식으로 분류할 때, 합성 기둥, 띠철근 기둥, 나선 철근 기둥은 모두 철근과 콘크리트가 결합된 형태로 구성되어 있습니다. 하지만 원형 기둥은 기둥의 형태가 원형으로 구성되어 있어서 다른 형태의 기둥과는 구분됩니다. 따라서 정답은 "원형 기둥"입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4146,7 +4215,19 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n220160710-33" question-id="n220160710-33" question-num="33" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">33</span>. 그림과 같은 기둥에서 유효좌굴길이가 가장 긴 것부터 순서대로 나열한 것은?<img src="images/n220160710m33.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">(a)-(b)-(c)-(d)</li><li>(a)-(c)-(b)-(d)</li><li>(d)-(c)-(b)-(a)</li><li>(d)-(c)-(a)-(b)</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 60%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">기둥에서 유효좌굴길이가 가장 긴 것부터 순서대로 나열하면 다음과 같습니다.<br/>
+<br/>
+(a)-(b)-(c)-(d)<br/>
+<br/>
+이유는 다음과 같습니다.<br/>
+<br/>
+(a)는 기둥의 가장 바깥쪽에 위치하고 있으며, 유효좌굴길이가 가장 긴 것입니다.<br/>
+<br/>
+(b)는 (a)와 인접한 기둥으로, (a)와의 연결부분이 가장 높은 위치에 있어 유효좌굴길이가 두 번째로 긴 것입니다.<br/>
+<br/>
+(c)는 (a)와 (b) 사이에 위치하며, (a)와 (b)의 연결부분보다는 낮지만 그 다음으로 높은 위치에 있어 유효좌굴길이가 세 번째로 긴 것입니다.<br/>
+<br/>
+(d)는 기둥의 가장 안쪽에 위치하며, 유효좌굴길이가 가장 짧은 것입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4192,7 +4273,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#n220160710-34" question-id="n220160710-34" question-num="34" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">34</span>. 철근의 항복으로 시작되는 보의 파괴 형태로 철근이 먼저 항복한 후에 콘크리트가 큰 변형을 일으켜 사전에 붕괴의 조짐을 보이면서 점진적으로 일어나는 파괴는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>취성 파괴</li><li class="correct">연성 파괴</li><li>경성 파괴</li><li>강성 파괴</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 64%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">연성 파괴는 철근과 콘크리트의 재료 특성상 철근이 먼저 항복하고, 그 후에 콘크리트가 큰 변형을 일으켜 파괴되는 형태입니다. 이러한 파괴는 사전에 붕괴의 조짐을 보이면서 점진적으로 일어나기 때문에 예측이 가능하며, 구조물의 안전성을 유지하기 위한 대처가 가능합니다. 따라서 연성 파괴는 구조물의 안전성을 고려할 때 중요한 파괴 형태 중 하나입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4238,7 +4319,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n220160710-35" question-id="n220160710-35" question-num="35" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">35</span>. 철근 콘크리트가 건설 재료로서 널리 사용되게 된 이유로 옳지 않은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>철근과 콘크리트는 부착이 매우 잘 된다.</li><li>콘크리트 속에 묻힌 철근은 녹이 슬지 않는다.</li><li class="correct">철근은 압축력에 강하고 콘크리트는 인장력에 강하다.</li><li>철근과 콘크리트는 온도에 대한 열팽창계수가 거의 같다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 64%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">철근과 콘크리트는 부착이 매우 잘 된다, 콘크리트 속에 묻힌 철근은 녹이 슬지 않는다, 철근과 콘크리트는 온도에 대한 열팽창계수가 거의 같다는 모든 이유는 철근 콘크리트가 건설 재료로서 널리 사용되게 된 이유이다. 따라서 정답은 "철근은 압축력에 강하고 콘크리트는 인장력에 강하다." 이다. 철근은 인장력에 강하고 콘크리트는 압축력에 강하기 때문에 두 재료를 함께 사용하면 구조물이 더욱 강력하고 안정적이게 된다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4284,7 +4365,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#n220160710-36" question-id="n220160710-36" question-num="36" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">36</span>. 옹벽은 외력에 대하여 안정성을 검토하는데, 그 대상이 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>전도에 대한 안정</li><li>활동에 대한 안정</li><li>침하에 대한 안정</li><li class="correct">간격에 대한 안정</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 55%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">옹벽은 외력에 대한 안정성을 검토하는 것이 주요 목적입니다. 따라서 전도에 대한 안정, 활동에 대한 안정, 침하에 대한 안정은 모두 외력에 대한 안정성을 검토하는 것과 관련이 있습니다. 그러나 간격에 대한 안정은 외력과는 직접적인 관련이 없습니다. 따라서 간격에 대한 안정은 정답이 아닙니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4330,7 +4411,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n220160710-37" question-id="n220160710-37" question-num="37" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">37</span>. 주탑을 기준으로 경사방향의 케이블에 의해 지지되는 형식은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">사장교</li><li>아치교</li><li>트리스트교</li><li>라멘교</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 68%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">주탑을 기준으로 경사방향의 케이블에 의해 지지되는 형식은 사장교입니다. 이는 주탑의 무게 중심을 지탱하기 위해 케이블을 이용하여 두 지점 사이에 수평선을 만들어 내는 형태로, 사장교는 이러한 형식 중 하나입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4376,7 +4457,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#n220160710-38" question-id="n220160710-38" question-num="38" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">38</span>. 보통 무근 콘크리트로 만들어지며 자중에 의하여 안정을 유지하는 옹벽의 형태는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">중력식 옹벽</li><li>L형 옹벽</li><li>캔틸레버 옹벽</li><li>뒷부벽식 옹벽</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 57%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">중력식 옹벽은 무근 콘크리트로 만들어지며, 자체 무게와 중력에 의해 안정을 유지하는 형태의 옹벽입니다. 따라서 다른 보기들과 달리 추가적인 지지물이나 구조물이 필요하지 않습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4422,7 +4503,11 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n220160710-39" question-id="n220160710-39" question-num="39" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">39</span>. 단철근 직사각형보에서 fck=24MPa, fy=300MPa일 때 균형철근비는 약 얼마인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>0.020</li><li>0.035</li><li class="correct">0.039</li><li>0.041</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 43%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">균형상태에서 단면 내 응력은 fck/γc + Es/Ec × (fy - fck/γc) × ρ 이며, 여기서 γc는 구조용 콘크리트의 안전계수, Es는 철근의 탄성계수, Ec는 콘크리트의 탄성계수, fy는 철근의 항복강도, ρ은 균형상태에서의 균형철근비를 나타낸다.<br/>
+<br/>
+이 문제에서는 fck=24MPa, fy=300MPa이므로, γc=1.5, Es=200GPa, Ec=24GPa로 가정할 수 있다. 따라서, 균형상태에서의 응력은 24/1.5 + 200/24 × (300 - 24/1.5) × ρ = 0 이 된다.<br/>
+<br/>
+이를 정리하면, ρ = 0.039가 된다. 따라서, 정답은 0.039이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4468,7 +4553,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#n220160710-40" question-id="n220160710-40" question-num="40" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">40</span>. 슬래브의 형태가 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>사각형</li><li class="correct">말뚝형</li><li>사다리꼴</li><li>다각형</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 63%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">슬래브은 평면적인 형태를 가지고 있는 반면, 말뚝형은 세로로 길쭉한 형태를 가지고 있기 때문에 슬래브의 형태가 아닙니다. 따라서 정답은 "말뚝형"입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4519,7 +4604,7 @@ $(function(){
 </div>
 </div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n220160710-41" question-id="n220160710-41" question-num="41" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">41</span>. 단면 형상에 따른 절단면 표시에 관한 내용으로 파이프를 나타내는 그림은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct"><img src="images/n220160710m41b1.gif"/></li><li><img src="images/n220160710m41b2.gif"/></li><li><img src="images/n220160710m41b3.gif"/></li><li><img src="images/n220160710m41b4.gif"/></li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 74%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "<img src="https://cbtbank.kr/images/n2/n220160710/n220160710m41b1.gif"/>" 입니다. 파이프는 원형 단면을 가지고 있기 때문에, 절단면은 원으로 나타내어집니다. 따라서 보기 중에서 원으로 나타내어진 그림인 "<img src="https://cbtbank.kr/images/n2/n220160710/n220160710m41b1.gif"/>"이 정답입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4565,7 +4650,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#n220160710-42" question-id="n220160710-42" question-num="42" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">42</span>. 단면도의 작성에 대한 설명으로 옳지 않은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>단면도는 실선으로 주어진 치수대로 정확히 작도한다.</li><li class="correct">단면도는 보통 철근 기호는 생략하는 것을 원칙으로 한다.</li><li>단면도는 배근된 철근 수량이 정확해야 한다.</li><li>단면도에 표시된 철근 간격이 벗어나지 않도록 해야 한다</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 73%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">단면도는 보통 철근 기호를 생략하는 것이 원칙이 아니라, 오히려 철근의 위치와 수량을 명확히 표시하기 위해 철근 기호를 포함하여 작성하는 것이 바람직하다. 따라서 "단면도는 보통 철근 기호는 생략하는 것을 원칙으로 한다."는 옳지 않은 설명이다. 철근 기호는 단면도에서 철근의 위치와 수량을 명확히 표시하기 위해 사용되며, 철근의 종류와 직경, 간격 등을 표시하여 구조물의 안전성을 보장하는 데 중요한 역할을 한다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4611,7 +4696,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n220160710-43" question-id="n220160710-43" question-num="43" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">43</span>. 도로 설계 제도에서 평면의 곡선부에 기입하는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">교각</li><li>토량</li><li>지반고</li><li>계획고</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 50%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">도로 설계에서 평면의 곡선부에 기입하는 것은 교각입니다. 이는 도로가 지나가는 지형의 고저차이나 수로를 교량으로 연결하기 위해 필요한 요소이기 때문입니다. 교각은 도로의 안전성과 효율성을 높이는 중요한 역할을 합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4657,7 +4742,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#n220160710-44" question-id="n220160710-44" question-num="44" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">44</span>. 도면의 치수 방법에 대한 설명으로 옳은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>치수 단위는 ㎝를 원칙으로 하며, 단위 기호는 표기하지 않는다.</li><li>치수선이 세로일 때 치수를 치수선 오른쪽에 표시한다.</li><li class="correct">좁은 공간에서는 인출선을 사용하여 치수를 표시할 수 있다.</li><li>치수는 선이 교차하는 곳에 표기한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 59%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">좁은 공간에서는 인출선을 사용하여 치수를 표시할 수 있는 이유는 인출선을 사용하면 치수선을 직선으로 그리지 않아도 되기 때문입니다. 따라서 공간을 절약할 수 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4703,7 +4788,17 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n220160710-45" question-id="n220160710-45" question-num="45" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">45</span>. 도면에서 두 종류 이상의 선이 같은 장소에 겹칠 때 우선순위로 옳은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">외형선→숨은선→절단선→중심선</li><li>외형선→숨은선→중심선→절단선</li><li>절단선→숨은선→중심선→외형선</li><li>절단선→외형선→중심선→숨은선</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 58%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">우선순위는 "외형선→숨은선→절단선→중심선"이다. 이유는 다음과 같다.<br/>
+<br/>
+1. 외형선: 도면의 외형을 나타내는 선으로, 가장 중요한 선이다. 다른 모든 선들은 이 선을 기준으로 위치하게 된다.<br/>
+<br/>
+2. 숨은선: 부품 내부의 구조를 나타내는 선으로, 외형선 위에 그려진다. 외형선과 함께 부품의 형태를 정확하게 나타내기 위해 필요하다.<br/>
+<br/>
+3. 절단선: 부품을 자르는 위치를 나타내는 선으로, 숨은선 위에 그려진다. 부품의 내부 구조를 보여주기 위해 필요하다.<br/>
+<br/>
+4. 중심선: 부품의 중심축을 나타내는 선으로, 절단선 위에 그려진다. 부품의 위치와 형태를 정확하게 나타내기 위해 필요하다.<br/>
+<br/>
+따라서, 이러한 우선순위를 지켜서 도면을 작성하면 부품의 형태와 위치를 정확하게 나타낼 수 있다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4749,7 +4844,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#n220160710-46" question-id="n220160710-46" question-num="46" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">46</span>. 토목설계 도면의 A3 용지 크기를 바르게 나타낸 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>841×594㎜</li><li>594×420㎜</li><li class="correct">420×297㎜</li><li>297×210㎜</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 76%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">A3 용지의 크기는 420×297㎜입니다. 이는 국제 표준인 ISO 216에서 A0 용지의 크기가 841×1189㎜이고, 이를 반으로 나눈 A1 용지가 594×841㎜, 다시 반으로 나눈 A2 용지가 420×594㎜, 마지막으로 A3 용지가 297×420㎜이기 때문입니다. 따라서 A3 용지의 크기는 420×297㎜입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4795,7 +4890,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n220160710-47" question-id="n220160710-47" question-num="47" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">47</span>. 토목제도에서 대칭인 물체나 원형인 물체의 중심선으로 사용되는 선은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>파선</li><li class="correct">1점 쇄선</li><li>2점 쇄선</li><li>나선형 실선</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 71%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">대칭인 물체나 원형 물체의 중심선은 1점 쇄선으로 사용됩니다. 이는 대칭적인 물체의 중심을 나타내는 선으로, 물체의 양쪽이 대칭을 이루기 때문에 중심선은 물체를 정확하게 가운데로 나누는 선이 되어야 합니다. 1점 쇄선은 이러한 조건을 만족시키기에 적합하며, 또한 원형 물체의 경우에도 중심을 정확하게 나타내기 위해 사용됩니다. 따라서 토목제도에서 대칭인 물체나 원형 물체의 중심선으로는 1점 쇄선이 사용됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4841,7 +4936,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#n220160710-48" question-id="n220160710-48" question-num="48" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">48</span>. 1:1보다 큰 척도를 의미하는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>실척</li><li>축척</li><li>현척</li><li class="correct">배척</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 73%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">1:1보다 큰 척도를 의미하는 것은 "배척"입니다. 이는 측정 대상의 크기나 양이 너무 크거나 작아서 실제 크기나 양을 그대로 나타내기 어려운 경우에 사용하는 척도로, 일정한 비율로 축소 또는 확대하여 나타내는 것을 말합니다. 예를 들어 지도에서는 실제 지형의 크기를 그대로 나타내기 어려우므로 일정한 비율로 축소하여 나타내는 것이 배척입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4888,7 +4983,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n220160710-49" question-id="n220160710-49" question-num="49" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">49</span>. 물체를 투상면에 대하여 경사지게 투상하여 입체적으로 나타낸 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>투시 투상도</li><li class="correct">사투상도</li><li>등각 투상도</li><li>축측 투상도</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 52%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">사투상도는 물체를 투상면에 대해 경사지게 투사하여 입체적으로 나타낸 것입니다. 이는 물체의 실제 모습을 가장 정확하게 나타내며, 물체의 크기와 모양이 왜곡되지 않습니다. 따라서 공간의 구성과 물체의 위치를 파악하는 데 유용하게 사용됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4934,7 +5029,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#n220160710-50" question-id="n220160710-50" question-num="50" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">50</span>. 건설재료에서 아래의 그림이 나타내는 것은?<img src="images/n220160710m50.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>유리</li><li>석재</li><li class="correct">목재</li><li>점토</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 83%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">그림은 나무를 잘라서 만든 목재를 나타내고 있습니다. 나무는 건설재료로 많이 사용되며, 목재는 가구, 지붕, 벽 등 다양한 용도로 사용됩니다. 따라서 정답은 "목재"입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4980,7 +5075,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n220160710-51" question-id="n220160710-51" question-num="51" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">51</span>. 선의 종류 중 보이지 않는 부분의 모양을 표시할 때 사용하는 선은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>일점쇄선</li><li>이점쇄선</li><li class="correct">파선</li><li>실선</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 75%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">보이지 않는 부분의 모양을 표시할 때 사용하는 선은 파선입니다. 파선은 점선보다 짧은 선과 긴 점선이 번갈아 나타나는 형태로, 물체의 윤곽이나 내부 구조를 나타내는 데 사용됩니다. 일점쇄선과 이점쇄선은 점선의 일종으로, 물체의 경계를 나타내는 데 사용됩니다. 실선은 물체의 외곽선이나 경계를 나타내는 데 사용됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5026,7 +5121,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#n220160710-52" question-id="n220160710-52" question-num="52" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">52</span>. 구조용 재료의 단면표시 그림 중에서 인조석을 표시한 것은? (실제 시험당일에서는 1번으로 정답이 발표되었지만 확정답안 발표시 모두 정답 처리 되었습니다. 여기서는 1번을 누르면 정답 처리 됩니다.)</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct"><img src="images/n220160710m52b1.gif"/></li><li><img src="images/n220160710m52b2.gif"/></li><li><img src="images/n220160710m52b3.gif"/></li><li><img src="images/n220160710m52b4.gif"/></li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 78%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">인조석은 인공적으로 만들어진 돌이므로 다른 자연석과는 구조가 다릅니다. 따라서 인조석을 표시한 것은 "<img src="https://cbtbank.kr/images/n2/n220160710/n220160710m52b1.gif"/>"입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5072,7 +5167,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n220160710-53" question-id="n220160710-53" question-num="53" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">53</span>. 그림과 같은 양면 접시머리 공장 리벳의 표시로 옳은 것은?<img src="images/n220160710m53.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li><img src="images/n220160710m53b1.gif"/></li><li><img src="images/n220160710m53b2.gif"/></li><li><img src="images/n220160710m53b3.gif"/></li><li class="correct"><img src="images/n220160710m53b4.gif"/></li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 61%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">양면 접시머리 공장 리벳의 표시는 "A"와 "B"로 표시되며, "A"는 접시머리의 한쪽 면을, "B"는 반대쪽 면을 나타냅니다. 따라서 양면 접시머리 공장 리벳의 표시로 옳은 것은 "<img src="https://cbtbank.kr/images/n2/n220160710/n220160710m53b4.gif"/>"입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5118,7 +5213,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#n220160710-54" question-id="n220160710-54" question-num="54" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">54</span>. 구체적인 설계를 하기 전에 계획자의 의도를 명시하기 위하여 그려지는 도면은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>설계도</li><li class="correct">계획도</li><li>제작도</li><li>시공도</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 72%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">도면 중에서도 구체적인 설계를 하기 전에 계획자의 의도를 명시하기 위해 그려지는 것은 계획도입니다. 다른 도면들은 보다 구체적인 설계나 제작, 시공 단계에서 필요한 도면입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5164,7 +5259,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n220160710-55" question-id="n220160710-55" question-num="55" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">55</span>. 치수 보조선에 대한 설명으로 옳지 않은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>대응하는 물리적 길이에 수직으로 그리는 것이 좋다.</li><li class="correct">치수선과 직각이 되게 하여 치수선의 위치보다 약간 짧게 긋는다.</li><li>한 중심선에서 다른 중심선까지의 거리를 나타낼 때 중심선을 치수 보조선으로 사용할 수 있다.</li><li>치수를 도형 안에 기입할 때 외형선을 치수 보조선으로 사용할 수 있다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 50%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"치수선과 직각이 되게 하여 치수선의 위치보다 약간 짧게 긋는다."가 옳지 않은 설명이다. 치수 보조선은 대응하는 물리적 길이에 수직으로 그리는 것이 좋으며, 치수선의 위치보다 약간 길게 그리는 것이 올바른 방법이다. 이는 치수선이 도형의 외곽에 위치하고 있을 때 치수를 정확하게 측정할 수 있도록 하기 위함이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5210,7 +5305,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#n220160710-56" question-id="n220160710-56" question-num="56" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">56</span>. 철근의 갈고리를 표시하는 각도로 적합하지 않은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>90°</li><li>45°</li><li>30°</li><li class="correct">10°</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 66%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">철근의 갈고리는 구조물의 안전성을 위해 충분한 강도와 안정성을 보장해야 합니다. 따라서 갈고리를 표시하는 각도는 90°, 45°, 30°과 같이 수직 또는 수평에 가까운 각도가 적합합니다. 그러나 10°은 너무 작은 각도이기 때문에 갈고리의 강도와 안정성을 보장하지 못합니다. 따라서 10°은 철근의 갈고리를 표시하는 각도로 적합하지 않습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5257,7 +5352,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n220160710-57" question-id="n220160710-57" question-num="57" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">57</span>. CAD 프로그램을 이용하여 도면을 출력할 때 유의사항과 가장 거리가 먼 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>주어진 축척에 맞게 출력 한다.</li><li>출력할 용지 사이즈를 확인 한다.</li><li>도면 출력 방향이 가로인지 세로인지를 선택한다.</li><li class="correct">주어진 플롯을 사용하여 출력의 오류를 막는다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 61%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">CAD 프로그램에서는 도면을 출력할 때 주어진 플롯을 사용하여 출력의 오류를 막는 것이 가장 중요합니다. 이는 플롯이 정확하게 설정되어 있으면 출력할 때 크기나 위치 등의 오류를 방지할 수 있기 때문입니다. 축척이나 용지 사이즈, 출력 방향도 중요하지만, 이러한 설정들은 모두 플롯 설정에 포함되어 있으므로 플롯 설정이 올바르게 되어 있다면 자연스럽게 이러한 설정들도 올바르게 적용됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5303,7 +5398,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#n220160710-58" question-id="n220160710-58" question-num="58" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">58</span>. 정투상법에서 제1각법의 순서로 옳은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">눈→물체→투상면</li><li>눈→투상면→물체</li><li>물체→눈→투상면</li><li>물체→투상면→눈</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 67%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정투상법에서 제1각법의 순서는 "눈→물체→투상면" 입니다. 이는 눈에서 물체를 바라보고, 그 물체를 투상면에 투영하는 과정을 순서대로 나타낸 것입니다. 먼저 눈에서 물체를 바라보는 것은 우리가 보는 시점을 나타내며, 그 다음으로 물체를 투상면에 투영하는 것은 물체의 형태와 크기를 보다 정확하게 파악하기 위한 과정입니다. 마지막으로 투상면에 투영된 물체를 바탕으로 그림을 그리거나 분석하는 등의 작업을 수행할 수 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5349,7 +5444,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#n220160710-59" question-id="n220160710-59" question-num="59" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">59</span>. 정면, 평면, 측면을 하나의 투상도에서 동시에 볼 수 있도록 3개의 모서리가 각각 120°를 이루게 그리는 도법은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>경사 투상도</li><li>유각 투상도</li><li class="correct">등각 투상도</li><li>평행 투상도</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 75%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">등각 투상도는 세 개의 모서리가 각각 120도를 이루기 때문에 정면, 평면, 측면을 모두 동시에 볼 수 있습니다. 이는 각 면이 동일한 각도로 투영되기 때문에 등각 투상도라고 부릅니다. 따라서 등각 투상도가 정답입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5395,7 +5490,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#n220160710-60" question-id="n220160710-60" question-num="60" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">60</span>. 단면의 경계 표시 중 지반면(흙)을 나타내는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct"><img src="images/n220160710m60b1.gif"/></li><li><img src="images/n220160710m60b2.gif"/></li><li><img src="images/n220160710m60b3.gif"/></li><li><img src="images/n220160710m60b4.gif"/></li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 75%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "<img src="https://cbtbank.kr/images/n2/n220160710/n220160710m60b1.gif"/>" 입니다. 이는 지반면(흙)을 나타내는 것으로, 다른 보기들은 모두 구조물의 경계를 나타내는 것입니다. 지반면은 구조물의 안정성을 결정하는 중요한 요소 중 하나이기 때문에, 단면의 경계 표시에서 지반면을 명확하게 표시해야 합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>

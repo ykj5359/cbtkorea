@@ -489,6 +489,15 @@ var g5_cookie_domain = ".cbtkorea.kr";
 
 <!-- CANONICAL-CBT -->
 <link rel="canonical" href="https://cbtkorea.kr/CBT/%ED%95%AD%EA%B3%B5%EA%B8%B0%EA%B4%80%EC%A0%95%EB%B9%84%EA%B8%B0%EB%8A%A5%EC%82%AC/bs20030720.html">
+<!-- AI-EXP-RESTORED -->
+<style>
+    .reply .report-modal, .reply .loading, .reply .reply-component { display: none !important; }
+    .ai-exp { list-style: none; padding: 0; margin: 0 0 10px 0; }
+    .ai-exp:last-child { margin-bottom: 0; }
+    .ai-exp-label { font-size: 12px; font-weight: 700; color: #1d4ed8; margin-bottom: 6px; }
+    .ai-exp-label small { font-weight: 400; color: #6b7280; margin-left: 6px; }
+    .ai-exp-empty { font-size: 13px; color: #6b7280; }
+</style>
 </head>
 <body>
 <!-- 상단 시작 { -->
@@ -2665,7 +2674,58 @@ $(function(){
 </div>
 </div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bs20030720-1" question-id="bs20030720-1" question-num="1" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">1</span>. 그림과 같은 벤튜리관으로 밀도가 1000㎏/m<sup>3</sup>인 물이 흘러가고 있다. 목부분 a에서의 단면적이 4㎝<sup>2</sup>이고, 출구 b에서의 단면적이 16㎝<sup>2</sup>이다. 출구 b에서의 유체의 속도는 1m/sec, 압력은 104N/m<sup>2</sup>이다.목부분에서의 유체의 압력은 몇 N/m<sup>2</sup>인가?<img src="images/bs20030720m1.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">2500</li><li>5000</li><li>7500</li><li>10000</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 40%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">베르누이의 방정식을 이용하면, <br/>
+<br/>
+P<sub>a</sub> + 1/2ρv<sub>a</sub><sup>2</sup> + ρgh<sub>a</sub> = P<sub>b</sub> + 1/2ρv<sub>b</sub><sup>2</sup> + ρgh<sub>b</sub><br/>
+<br/>
+여기서, <br/>
+- P<sub>a</sub> : 목부분에서의 압력<br/>
+- v<sub>a</sub> : 목부분에서의 속도 (구하려는 값)<br/>
+- h<sub>a</sub> : 목부분에서의 높이 (고도)<br/>
+- P<sub>b</sub> : 출구 b에서의 압력 (104N/m<sup>2</sup>)<br/>
+- v<sub>b</sub> : 출구 b에서의 속도 (1m/sec)<br/>
+- h<sub>b</sub> : 출구 b에서의 높이 (고도)<br/>
+<br/>
+물의 밀도는 1000㎏/m<sup>3</sup>이므로, ρ = 1000kg/m<sup>3</sup>이다.<br/>
+<br/>
+또한, 목부분과 출구 b는 수평이므로, h<sub>a</sub> = h<sub>b</sub>이다.<br/>
+<br/>
+단면적은 A = 4×10<sup>-4</sup>m<sup>2</sup> (목부분)와 A = 16×10<sup>-4</sup>m<sup>2</sup> (출구 b)이다.<br/>
+<br/>
+출구 b에서의 속도는 v<sub>b</sub> = 1m/sec이므로, <br/>
+1/2ρv<sub>b</sub><sup>2</sup> = 500N/m<sup>2</sup>이다.<br/>
+<br/>
+높이는 h<sub>a</sub> = h<sub>b</sub>이므로, h는 식에서 상쇄된다.<br/>
+<br/>
+따라서, <br/>
+<br/>
+P<sub>a</sub> + 1/2ρv<sub>a</sub><sup>2</sup> = P<sub>b</sub> + 1/2ρv<sub>b</sub><sup>2</sup><br/>
+<br/>
+P<sub>a</sub> + 1/2×1000×v<sub>a</sub><sup>2</sup> = 104 + 500<br/>
+<br/>
+P<sub>a</sub> + 500v<sub>a</sub><sup>2</sup> = 604<br/>
+<br/>
+P<sub>a</sub> = 604 - 500v<sub>a</sub><sup>2</sup><br/>
+<br/>
+목부분에서의 단면적은 A = 4×10<sup>-4</sup>m<sup>2</sup>이므로, <br/>
+목부분에서의 유체의 유속은 Q = Av<sub>a</sub>이다.<br/>
+<br/>
+출구 b에서의 단면적은 A = 16×10<sup>-4</sup>m<sup>2</sup>이므로, <br/>
+출구 b에서의 유체의 유속은 Q = Av<sub>b</sub> = 16×10<sup>-4</sup>×1 = 16×10<sup>-4</sup>m<sup>3</sup>/sec이다.<br/>
+<br/>
+두 유속이 같으므로, <br/>
+<br/>
+Av<sub>a</sub> = Av<sub>b</sub><br/>
+<br/>
+4×10<sup>-4</sup>v<sub>a</sub> = 16×10<sup>-4</sup>×1<br/>
+<br/>
+v<sub>a</sub> = 4/16 = 0.25m/sec<br/>
+<br/>
+따라서, <br/>
+<br/>
+P<sub>a</sub> = 604 - 500×0.25<sup>2</sup> = 2500N/m<sup>2</sup><br/>
+<br/>
+따라서, 정답은 "2500"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2711,7 +2771,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bs20030720-2" question-id="bs20030720-2" question-num="2" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">2</span>. 동력장치가 없고 고정날개를 가진, 공기보다 무거운 항공기는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>비행선</li><li class="correct">활공기</li><li>오토자이로</li><li>기구</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 70%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">활공기는 동력장치 없이 고정날개를 가지고 있으며, 공기보다 무거운 항공기입니다. 이는 고도를 유지하면서도 공중에 떠다닐 수 있는 원리인 고정날개와 공기저항을 이용하여 비행하는 것입니다. 따라서, 활공기가 정답입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2757,7 +2817,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bs20030720-3" question-id="bs20030720-3" question-num="3" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">3</span>. 베르누이 정리에 의한 압력과 속도와의 관계는 어떠한가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>압력이 커지면 속도가 커진다.</li><li class="correct">압력이 커지면 속도가 작아진다.</li><li>압력이 커지면 속도가 일정해진다.</li><li>압력이 작아지면 속도가 일정해진다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 85%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">베르누이 정리에 따르면 유체의 속도가 증가하면 압력은 감소하고, 속도가 감소하면 압력은 증가한다. 따라서 압력이 커지면 유체 입자들이 서로 밀어내며 속도가 감소하게 되고, 압력이 작아지면 유체 입자들이 서로 끌어당겨 속도가 증가하게 된다. 따라서 "압력이 커지면 속도가 작아진다."가 정답이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2803,7 +2863,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bs20030720-4" question-id="bs20030720-4" question-num="4" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">4</span>. 비행기가 수평비행을 하기 위한 조건으로 가장 올바른 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">양력과 무게가 같아야 한다.</li><li>양력과 항력이 같아야 한다.</li><li>항력과 무게가 같아야 한다.</li><li>추력과 양력이 같아야 한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 61%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">비행기가 수평비행을 하기 위해서는 중력과 양력이 균형을 이루어야 합니다. 중력은 비행기의 무게에 의해 발생하고, 양력은 비행기의 날개에서 발생하는 상승력입니다. 따라서 양력과 무게가 같아야 비행기가 수평비행을 할 수 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2849,7 +2909,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bs20030720-5" question-id="bs20030720-5" question-num="5" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">5</span>. 비행기의 수직축에 대해 기수를 오른쪽으로 회전시키는 모멘트가 양(+)의 빗놀이 모멘트이다. 이 빗놀이 모멘트(N)을 식의 계수형으로 나타내면? (단, q : 동압, S : 날개면적, b : 날개길이, C<sub>N</sub> : 빗놀이 모멘트계수)</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li><img src="images/bs20030720m5b1.gif"/></li><li class="correct"><img src="images/bs20030720m5b2.gif"/></li><li><img src="images/bs20030720m5b3.gif"/></li><li><img src="images/bs20030720m5b4.gif"/></li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 64%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">빗놀이 모멘트는 비행기의 수직축에 대한 회전 모멘트이므로, 이를 나타내는 식은 M<sub>N</sub> = qSC<sub>N</sub>b이다. 따라서 보기 중에서 M<sub>N</sub>을 나타내는 식은 "<img src="https://cbtbank.kr/images/bs/bs20030720/bs20030720m5b2.gif"/>"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2895,7 +2955,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bs20030720-6" question-id="bs20030720-6" question-num="6" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">6</span>. 어떤 평판주위를 일정한 속도로 흘러갈 때 레이놀드수가 가장 큰 유체는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">공기</li><li>순수한 물</li><li>정제된 윤활유</li><li>순수한 벌꿀</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 65%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">레이놀드수는 유체의 운동 상태를 나타내는 수치로, 유체의 밀도, 속도, 점성 등의 특성에 따라 결정됩니다. 레이놀드수가 크다는 것은 유체의 운동 상태가 난류 형태로 변화하고 있다는 것을 의미합니다. 이에 따라 레이놀드수가 가장 큰 유체는 점성이 낮고 밀도가 작은 유체일수록 난류 형태로 운동하기 쉽습니다. 따라서 공기는 점성이 낮고 밀도가 작아 레이놀드수가 가장 큰 유체 중 하나입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2941,7 +3001,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bs20030720-7" question-id="bs20030720-7" question-num="7" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">7</span>. 충격파의 강도란 무엇인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>충격파 전후의 온도차</li><li class="correct">충격파 전후의 압력차</li><li>충격파 전후의 속도차</li><li>충격파 전후의 밀도차</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 87%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">충격파는 매우 높은 압력을 가지고 있으며, 이는 충격파 전후의 압력차로 나타납니다. 충격파가 지나가면서 공기 분자들이 밀집되어 압력이 증가하고, 충격파가 지나간 후에는 공기 분자들이 희박해져 압력이 감소합니다. 따라서 충격파의 강도는 이 압력차로 측정됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2987,7 +3047,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bs20030720-8" question-id="bs20030720-8" question-num="8" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">8</span>. Z축(수직축)을 중심으로 빗놀이(Yawing)모멘트를 주기 위해 필요한 조종면은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>도움날개(Aileron)</li><li>승강키(Elevator)</li><li class="correct">방향키(Rudder)</li><li>스포일러(Spoiler)</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 80%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">Z축(수직축)을 중심으로 회전하는 빗놀이(Yawing)모멘트를 주기 위해서는 방향을 조절하는 방향키(Rudder)가 필요합니다. 다른 조종면인 도움날개(Aileron)와 승강키(Elevator)는 각각 롤링(rolling)과 피치(pitch) 모멘트를 주는데 사용됩니다. 스포일러(Spoiler)는 비행기의 고도를 조절하는 데 사용됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3034,7 +3094,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bs20030720-9" question-id="bs20030720-9" question-num="9" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">9</span>. 헬리콥터에서 조종사의 조종을 쉽게 하기위한 것과 가장 거리가 먼 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>플래핑 힌지</li><li>리드-래그 힌지</li><li class="correct">버핏팅(buffeting)</li><li>주기적 피치(cyclic pitch)</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 86%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">버핏팅은 헬리콥터가 고속 비행 시에 발생하는 공기의 진동 현상으로, 조종사의 조종을 어렵게 만듭니다. 따라서 헬리콥터에서 조종사의 조종을 쉽게 하기 위한 것과 가장 거리가 먼 것은 버핏팅입니다. 플래핑 힌지는 로터 블레이드의 상승과 하강을 제어하는데 사용되며, 리드-래그 힌지는 로터 블레이드의 회전을 제어하는데 사용됩니다. 주기적 피치는 로터 블레이드의 각도를 조절하여 헬리콥터를 움직이는데 사용됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3080,7 +3140,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bs20030720-10" question-id="bs20030720-10" question-num="10" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">10</span>. 헬리콥터의 회전면 하중(원판 하중) D.L을 구하는 식으로 맞는 것은?(단, W는 헬리콥터의 전체무게이고, A는 회전면의 단면적이다.)</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">D.L=W/A</li><li>D.L=A/W</li><li>D.L=WA</li><li>D.L=W+A</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 53%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">D.L은 회전면에 작용하는 하중을 의미합니다. 이 하중은 회전면의 단면적 A에 비례하며, 전체 무게 W에도 비례합니다. 따라서 D.L은 W/A로 표현됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3126,7 +3186,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bs20030720-11" question-id="bs20030720-11" question-num="11" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">11</span>. 비행기가 항력을 이겨서 계속 비행하는데 필요한 동력을 마력으로 표시한 것을 무엇이라 하는가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>이용마력</li><li>제동마력</li><li>여유마력</li><li class="correct">필요마력</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 83%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">비행기가 항력을 이겨서 계속 비행하는데 필요한 동력을 마력으로 표시한 것을 "필요마력"이라고 합니다. 이는 비행기가 공기 저항과 중력을 이겨내기 위해 필요한 최소한의 동력을 의미합니다. 따라서 비행기가 비행 중에는 필요마력 이상의 이용마력을 사용하며, 제동마력은 비행기가 착륙할 때 필요한 마력을 의미합니다. 여유마력은 비행 중 예기치 못한 상황이 발생했을 때 대비하여 남겨둔 여분의 마력을 의미합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3172,7 +3232,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bs20030720-12" question-id="bs20030720-12" question-num="12" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">12</span>. 비행기 정적 세로안정(Static Longitudinal Stability)을 가장 올바르게 설명한 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">받음각의 변화에 의해 발생한 키놀이 모멘트가 비행기를 원래의 평형된 받음각 상태로 돌아가는 것이다.</li><li>도움날개의 변화에 의해 발생한 키놀이 모멘트가 비행기를 원래의 평형된 상태로 돌아가는 것이다.</li><li>받음각의 변화에 의해 발생한 빗놀이 모멘트가 비행기를 원래의 평형된 받음각 상태로 돌아가는 것이다.</li><li>받음각의 변화에 의해 발생한 옆놀이 모멘트가 비행기를 원래의 평형된 받음각 상태로 돌아가는 것이다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 46%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">비행기의 정적 세로안정은 받음각의 변화에 의해 발생한 키놀이 모멘트가 비행기를 원래의 평형된 받음각 상태로 돌아가는 것입니다. 이는 받음각이 증가하면 기체 앞부분의 양력이 증가하여 비행기의 앞부분이 올라가게 되고, 이에 따라 기체의 중심이 뒤로 이동하여 뒷부분의 양력이 증가합니다. 이로 인해 비행기는 받음각 상승에 대한 안정성을 유지하게 됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3218,7 +3278,11 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bs20030720-13" question-id="bs20030720-13" question-num="13" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">13</span>. 양력계수를 CL, 공기 밀도를 ρ , 비행기의 속도를 V, 날개의 면적을 S라고 할 때, 양력 L은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li><img src="images/bs20030720m13b1.gif"/></li><li><img src="images/bs20030720m13b2.gif"/></li><li class="correct"><img src="images/bs20030720m13b3.gif"/></li><li><img src="images/bs20030720m13b4.gif"/></li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 84%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">양력 L은 다음과 같이 계산됩니다.<br/>
+<br/>
+L = 1/2 * CL * ρ * V^2 * S<br/>
+<br/>
+따라서, 보기에서 "<img src="https://cbtbank.kr/images/bs/bs20030720/bs20030720m13b3.gif"/>" 가 정답인 이유는 CL, ρ, V, S 모두 양력 L과 관련된 변수이기 때문입니다. 이 중에서도 CL은 날개의 형태와 공기의 흐름에 따라 결정되는 양력 계수이므로, 양력 L을 결정하는 가장 중요한 변수 중 하나입니다. 따라서, CL 값이 증가하면 양력 L도 증가하게 됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3264,7 +3328,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bs20030720-14" question-id="bs20030720-14" question-num="14" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">14</span>. 비행 중 비행기에 작용하는 항력의 종류가 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>압력항력</li><li>마찰항력</li><li>유도항력</li><li class="correct">음파항력</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 85%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">비행 중 비행기에 작용하는 항력의 종류 중 "음파항력"은 정답이 아닙니다. "음파항력"은 비행기가 초음속 이상의 속도로 비행할 때 발생하는 항력으로, 비행기의 날개나 몸통 주변에서 발생하는 압력 차이로 인해 발생합니다. 따라서 정답은 없습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3310,7 +3374,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bs20030720-15" question-id="bs20030720-15" question-num="15" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">15</span>. NACA 2415 날개골에서 15는 무엇을 표시 하는가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>최대 두께의 위치가 앞전으로부터 시위의 15%이다.</li><li>최대 캠버가 시위의 15%이다.</li><li class="correct">최대 두께가 시위의 15%이다.</li><li>최대 캠버의 위치가 앞전에서부터 시위의 15%이다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 75%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">NACA 2415에서 15는 최대 두께가 시위의 15%라는 것을 나타냅니다. 이는 날개골의 앞쪽에서부터 뒤쪽으로 이동함에 따라 날개골의 두께가 변화하는 것을 의미합니다. 따라서, 최대 두께가 시위의 15%이므로 날개골의 두께가 가장 두꺼운 위치는 앞쪽에서부터 시위의 15% 지점에 위치하게 됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3356,7 +3420,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bs20030720-16" question-id="bs20030720-16" question-num="16" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">16</span>. 부품의 상태에 관계없이 일정한 사용시간 한계내에 도달하면 항공기에서 부품을 장탈하여 정기적으로 분해, 점검하는 정비관리 방식은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>신뢰성 정비관리</li><li class="correct">예방 정비관리</li><li>특별 정비관리</li><li>사후 정비관리</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 50%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">일정한 사용시간 한계내에 도달하면 부품의 상태에 관계없이 항공기에서 부품을 장탈하여 정기적으로 분해, 점검하는 것은 예방 정비관리 방식입니다. 이는 부품의 고장이 발생하기 전에 미리 예방적으로 점검하고 교체함으로써 항공기의 안전성을 유지하고 고장 발생을 최소화하는 방식입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3403,7 +3467,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bs20030720-17" question-id="bs20030720-17" question-num="17" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">17</span>. 항공기의 수리순환 부품에 초록색 표찰이 붙어 있다. 이것은 무엇을 뜻하는가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">수리요구 부품</li><li>사용가능 부품</li><li>폐기품</li><li>오버홀</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 70%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">초록색 표찰은 수리요구 부품을 뜻합니다. 이는 해당 부품이 수리가 필요한 상태이며, 교체가 필요한 부품임을 나타냅니다. 사용가능 부품은 정상적으로 작동하는 부품을 뜻하며, 폐기품은 버려져야 할 부품을 뜻합니다. 오버홀은 대규모 수리를 뜻하며, 모든 부품이 교체되는 경우가 많습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3449,7 +3513,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bs20030720-18" question-id="bs20030720-18" question-num="18" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">18</span>. 케이블을 케이블 단자에 압착할 때 사용되는 공구는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>패스너 공구</li><li>트위스터 공구</li><li class="correct">스웨이징 공구</li><li>버킹 바</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 67%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">케이블을 케이블 단자에 압착할 때 사용되는 공구는 스웨이징 공구입니다. 이는 케이블을 단단하게 고정시키기 위해 케이블의 끝을 미리 가공한 후, 그 끝을 스웨이징 공구에 삽입하여 압착하는 방식으로 작동합니다. 이 방식은 케이블의 끝을 더욱 안정적으로 고정시키며, 높은 인장강도를 가진 케이블에도 적용할 수 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3495,7 +3559,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bs20030720-19" question-id="bs20030720-19" question-num="19" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">19</span>. 토크 렌치 아암의 길이가 6in인 토크 렌치에 0.5in의 토크 어댑터를 연결하여 토크의 값이 20ℓ b-in되게 볼트를 토크하였다. 볼트에 실제로 가해지는 토크의 값은 몇 ℓ b-in인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>20.66</li><li class="correct">21.66</li><li>22.66</li><li>23.66</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 54%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">토크 렌치와 토크 어댑터를 연결한 경우, 총 길이는 6in + 0.5in = 6.5in이 된다. 따라서 볼트에 가해지는 토크는 20ℓ b-in × (6.5in ÷ 6in) = 21.66ℓ b-in이 된다. 이는 보기 중에서 "21.66"이 정답인 이유이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3541,7 +3605,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bs20030720-20" question-id="bs20030720-20" question-num="20" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">20</span>. 도면에서 은선(hidden line)은?<img src="images/bs20030720m20.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>A</li><li class="correct">B</li><li>C</li><li>D</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 65%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">은선은 실제로 그려지지 않는 선으로, 뒤에 있는 물체가 가리는 부분을 나타냅니다. 이 도면에서는 B 영역이 A 영역을 가리고 있으므로, B 영역에 해당하는 부분에 은선이 그려져야 합니다. 따라서 정답은 "B"입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3592,7 +3656,7 @@ $(function(){
 </div>
 </div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bs20030720-21" question-id="bs20030720-21" question-num="21" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">21</span>. 판금가공에서 재료의 최소굽힘 반지름에 대한 설명 중 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>재료의 최소굽힘 반지름이란 판재를 최소 예각으로 굽힐 수 있는 반지름을 말한다.</li><li>풀림처리한 판재는 그 두께의 반지름까지 구부릴 수 있다.</li><li>굽힘 반지름이 너무 작으면 응력과 변형에 의해 재료가 약해져서 균열이 생길 수 있다.</li><li class="correct">보통 쓰이는 최소굽힘 반지름은 두께의 1배 정도이다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 49%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"보통 쓰이는 최소굽힘 반지름은 두께의 1배 정도이다."가 틀린 것이 아니라 옳은 것입니다. 이유는 판재를 굽힐 때 굽힘 반지름이 너무 작으면 재료가 약해져서 균열이 생길 수 있기 때문에, 최소한의 굽힘 반지름을 유지해야 합니다. 이 최소한의 굽힘 반지름은 보통 두께의 1배 정도로 설정됩니다. 따라서 "보통 쓰이는 최소굽힘 반지름은 두께의 1배 정도이다."는 옳은 설명입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3638,7 +3702,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bs20030720-22" question-id="bs20030720-22" question-num="22" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">22</span>. 리벳(RIVET)를 아닐링(Annealing)을 한 후 작업을 할 때까지 냉장고에 보관하고, 냉각상태에서 꺼낸 다음 10∼20분 이내에 작업을 수행하여야 하는 재질의 RIVET는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">2024 T</li><li>2017 T</li><li>1100</li><li>2119 T</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 70%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">2024 T 알루미늄 합금은 열처리 후 강도가 높아지는 T4 처리가 되어 있으며, 높은 강도와 경도를 가지고 있습니다. 따라서 아닐링 후 냉각 상태에서 꺼내 작업을 수행해야 하는 경우에도 강도와 경도가 유지되므로 작업에 적합한 재질입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3684,7 +3748,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bs20030720-23" question-id="bs20030720-23" question-num="23" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">23</span>. 항공기 검사방법중 보어스코프 검사(BORESCOPE INSPECTION)가 주로 사용되는 곳은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>착륙장치(LANDING GEAR)</li><li class="correct">기관(ENGING)</li><li>조종면(FLIGHT CONTROL SURFACE)</li><li>계기(INSTRUMENT)</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 67%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">보어스코프 검사는 엔진 내부의 부품 및 구조물을 검사하는데 주로 사용됩니다. 엔진은 항공기의 핵심 부품 중 하나이며, 안전과 성능에 매우 중요한 역할을 합니다. 따라서 엔진의 안전성과 성능을 유지하기 위해 정기적인 검사가 필요하며, 이때 보어스코프 검사가 사용됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3730,7 +3794,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bs20030720-24" question-id="bs20030720-24" question-num="24" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">24</span>. 비자성체의 부품검사에 사용하지 않는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">자분 탐상 검사(Magnetic particle inspection)</li><li>와전류장비(eddy-current inspection)</li><li>초음파검사(ultrasonic inspection)</li><li>침투 탐상 검사(liquid penetrant inspection)</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 60%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">자분 탐상 검사는 비자성체의 부품검사에 사용되지 않습니다. 이는 자분 탐상 검사가 자성체에만 적용되기 때문입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3777,7 +3841,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bs20030720-25" question-id="bs20030720-25" question-num="25" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">25</span>. 노란색 안전색채를 설명한것 중 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">노란색 안전색채의 장비 및 시설물은 직접 인체에 위험을 준다.</li><li>충돌, 추락, 전복 및 이에 유사한 사고위험이 있는 장비 및 시설물에 표시한다.</li><li>보통 검정색과 노란색을 번갈아 가며 칠한다.</li><li>노란색 안전색채의 장비 및 시설물은 주의하지 않으면 사고의 위험이 있음을 알려주는 역할을 한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 52%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"노란색 안전색채의 장비 및 시설물은 직접 인체에 위험을 준다."가 틀린 것입니다. 노란색 안전색채는 주로 충돌, 추락, 전복 등 위험한 상황이 예상되는 장비 및 시설물에 표시하여 주의를 불러일으키는 역할을 합니다. 따라서, "노란색 안전색채의 장비 및 시설물은 주의하지 않으면 사고의 위험이 있음을 알려주는 역할을 한다."가 맞는 설명입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3823,7 +3887,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bs20030720-26" question-id="bs20030720-26" question-num="26" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">26</span>. 그림 중 조종사 위치에서 볼 때 회전익기의 로터를 회전시키라는 신호는 어느 것인가?<img src="images/bs20030720m26.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>A</li><li>B</li><li>C</li><li class="correct">D</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 73%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답인 "D"는 조종사 위치에서 볼 때 회전익기의 로터를 회전시키는 신호를 나타내는 것으로, 그림에서 조종사 위치에서 보이는 로터의 위치가 "D"이기 때문입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3869,7 +3933,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bs20030720-27" question-id="bs20030720-27" question-num="27" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">27</span>. Which term means 0.001 ampere?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>Microampere</li><li>Kiloampere</li><li class="correct">Milliampere</li><li>Centiampere</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 62%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">Milliampere means 0.001 ampere because "milli" is a prefix that means one-thousandth (1/1000) and is represented by the symbol "m". Therefore, one milliampere is equal to 0.001 amperes.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3915,7 +3979,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bs20030720-28" question-id="bs20030720-28" question-num="28" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">28</span>. 밑줄친 부분을 의미하는 올바른 용어는?<img src="images/bs20030720m28.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>감속기어</li><li>고정장치</li><li>계류장치</li><li class="correct">착륙장치</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 81%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">이미지에서 보이는 부분은 비행기가 착륙할 때 사용되는 착륙장치입니다. 착륙장치는 비행기가 바퀴를 내리고 지면에 닿을 때 사용되며, 비행기의 속도를 감속시켜 안전하게 착륙할 수 있도록 도와줍니다. 따라서 정답은 "착륙장치"입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3961,7 +4025,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bs20030720-29" question-id="bs20030720-29" question-num="29" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">29</span>. 고주파,저주파,비교방법 등의 종류가 있는 비파괴 검사 방법은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>육안검사법</li><li>자분탐상법</li><li class="correct">초음파 검사법</li><li>와전류 검사법</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 73%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">초음파 검사법은 고주파와 저주파, 와전류와 같은 다른 비파괴 검사 방법과는 달리, 소리의 진동을 이용하여 물체 내부의 결함이나 손상을 감지하는 방법입니다. 이는 물체 내부를 파고들어가는 소리파가 반사되는 시간과 강도를 측정하여 결함을 파악하는 것으로, 비교적 정확하고 신뢰성이 높은 검사 방법으로 널리 사용됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4007,7 +4071,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bs20030720-30" question-id="bs20030720-30" question-num="30" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">30</span>. 다이얼 게이지의 용도가 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>평면의 상태 검사</li><li>원통의 진원 상태 검사</li><li>축의 휘어진 상태나 편심 상태 검사</li><li class="correct">안지름이나, 바깥지름, 깊이 등 검사</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 60%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">다이얼 게이지는 안지름이나 바깥지름, 깊이 등을 검사하는 용도로 사용됩니다. 따라서 "안지름이나, 바깥지름, 깊이 등 검사"가 다이얼 게이지의 용도가 아닌 것입니다. 다이얼 게이지는 평면의 상태 검사, 원통의 진원 상태 검사, 축의 휘어진 상태나 편심 상태 검사 등에 사용됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4053,7 +4117,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bs20030720-31" question-id="bs20030720-31" question-num="31" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">31</span>. 액화성 석유 가스(LPG)와 액화성 자연 가스(LNG)에서 발생하는 화재는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">E급 화재</li><li>D급 화재</li><li>C급 화재</li><li>B급 화재</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 51%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">액화성 석유 가스(LPG)와 액화성 자연 가스(LNG)는 고온, 고압 상태에서 액화되어 저장되기 때문에 불씨나 열에 노출되면 즉시 증발하여 공기 중에 농도가 높은 가스가 발생합니다. 이 가스는 공기와 혼합되어 폭발성이 매우 높은 불안정한 상태를 유지하게 됩니다. 따라서, 액화성 석유 가스(LPG)와 액화성 자연 가스(LNG)에서 발생하는 화재는 폭발성이 매우 높은 E급 화재로 분류됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4099,7 +4163,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bs20030720-32" question-id="bs20030720-32" question-num="32" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">32</span>. 항공기 급유시 안전 사항과 관계 없는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>지정된 위치에 20kg 이상 되는 CO<sub>2</sub> 소화기를 비치 하고 감시요원을 반드시 배치해야 한다.</li><li>150m 이내에서는 담배를 피우지 말아야 한다.</li><li>연료 차량은 항공기와 충분한 거리를 유지해야 한다.</li><li class="correct">기상 레이더가 작동 중일 때에는 50m 이내에서 급유해서는 안된다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 64%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">기상 레이더는 전자파를 발생시켜 주변의 날씨 상황을 파악하는 장비입니다. 이 장비가 작동 중일 때에는 전자파가 주변에 방출되므로, 급유 중인 항공기 주변에서는 전자파에 노출될 가능성이 있습니다. 따라서 기상 레이더가 작동 중일 때에는 50m 이내에서 급유해서는 안 됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4146,7 +4210,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bs20030720-33" question-id="bs20030720-33" question-num="33" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">33</span>. 관제탑에서 활주로를 횡단하려는 차량에게 위험- 활주로 유도로 상에 있는 인원 및 차량은 사주를 경계한 후 즉시 본 장소를 떠나라는 신호등의 신호방법으로 가장 적합한 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>녹색 등</li><li>점멸 녹색 등</li><li>흰색 등</li><li class="correct">점멸 적색 등</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 75%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">활주로를 횡단하려는 차량에게 위험을 경고하기 위해서는 가장 강렬한 신호인 적색 등을 사용해야 합니다. 또한, 점멸하는 적색 등을 사용하면 더욱 눈에 띄어 경고 효과를 높일 수 있습니다. 따라서, "점멸 적색 등"이 가장 적합한 신호방법입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4192,7 +4256,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bs20030720-34" question-id="bs20030720-34" question-num="34" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">34</span>. 다음에서 정비기술 도서에 해당되지 않는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>정비기술 정보</li><li>작동기술 정보</li><li class="correct">정비규정</li><li>부품기술 정보</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 38%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정비규정은 정비 기술에 대한 정보가 아니라, 정비 작업을 수행할 때 준수해야 할 규정이기 때문입니다. 따라서 정답은 "정비규정"입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4238,7 +4302,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bs20030720-35" question-id="bs20030720-35" question-num="35" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">35</span>. 얇은 패널에 너트를 부착하여 사용할 수 있도록 고안된 특수 너트는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">앵커너트</li><li>평너트</li><li>캐슬 너트</li><li>자동 고정 너트</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 54%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">앵커너트는 얇은 패널에 부착할 수 있는 너트로, 특수한 형태의 외부 쓰레드와 내부 쓰레드를 가지고 있어서 패널 내부에 고정됩니다. 이러한 구조로 인해 패널에 대한 고정력이 높아지며, 특히 건축물의 외벽 등에 사용되어 안정성을 높이는 데에 적합합니다. 따라서 앵커너트가 정답입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4284,7 +4348,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bs20030720-36" question-id="bs20030720-36" question-num="36" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">36</span>. 체적을 일정하게 유지시키면서 단위질량을 단위온도로 올리는데 필요한 열량을 무엇이라 하는가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>비열비</li><li>엔탈피</li><li>정압비열</li><li class="correct">정적비열</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 58%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정적비열은 단위질량의 물질을 일정한 압력과 체적에서 가열시켜서 온도를 1도 상승시키는 데 필요한 열의 양을 말합니다. 즉, 압력이 일정한 상태에서 열을 가한 경우의 열량 변화를 나타내는 것이며, 이는 고체나 액체의 물질에서는 거의 일정한 값으로 유지됩니다. 따라서, 체적을 일정하게 유지시키면서 단위질량을 단위온도로 올리는데 필요한 열량을 나타내는 것이 바로 정적비열입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4330,7 +4394,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bs20030720-37" question-id="bs20030720-37" question-num="37" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">37</span>. 항공기 엔진의 윤활유 소기펌프(scavenge pump)는 압력펌프(pressure pump)보다 용량이 크다. 그 이유는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">공기가 혼합되어 체적이 증가하므로</li><li>압력 펌프보다 압력이 낮으므로</li><li>윤활유가 고온이 되어 팽창하므로</li><li>소기펌프가 파괴되기 쉬우므로</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 54%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">항공기 엔진 내부에서 윤활유가 사용되면서 열이 발생하고, 이로 인해 윤활유가 팽창하게 됩니다. 이 팽창된 윤활유는 체적이 증가하게 되므로, 윤활유를 효율적으로 회수하기 위해서는 윤활유 소기펌프의 용량이 압력펌프보다 크게 설계되어야 합니다. 따라서, "공기가 혼합되어 체적이 증가하므로"가 정답입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4376,7 +4440,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bs20030720-38" question-id="bs20030720-38" question-num="38" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">38</span>. 고압축비(high compression ratio)의 기관에 고온 스파크 플러그를 사용하였을 때 나타나는 현상은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>기관이 시동후 즉시 꺼진다.</li><li class="correct">조기점화 현상이 나타난다.</li><li>연소정지 현상이 나타난다.</li><li>스파크 플러그에 탄소 찌꺼기가 부착된다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 67%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">고압축비 기관에서는 고온 스파크 플러그를 사용하면 조기점화 현상이 나타납니다. 이는 고압축비 기관에서 연료와 공기가 혼합된 상태에서 스파크 플러그가 작동하면, 연소가 예상보다 빨리 일어나서 피스톤이 상승하는 동안에도 연소가 계속 일어나게 되어 엔진이 불안정해지고 성능이 저하됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4422,7 +4486,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bs20030720-39" question-id="bs20030720-39" question-num="39" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">39</span>. 마그네토의 E-GAP(갭)이란?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">극의 중립위치에서 브레이커 포인트가 열리는 점까지의 각도</li><li>극의 중립위치와 브레이커 포인트가 닫혀있는 점의 각도</li><li>최대 자속의 위치와 브레이커 포인트가 열려있는 점까지의 각도</li><li>최대 자속의 위치와 브레이커 포인트가 닫혀있는 점의 각도</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 34%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">E-GAP은 마그네토의 극의 중립위치에서 브레이커 포인트가 열리는 점까지의 각도를 의미합니다. 이는 마그네토에서 전류가 흐르는 방향과 자기장의 방향이 일치하는 지점에서 브레이커 포인트가 열리기 때문입니다. 따라서 극의 중립위치에서 브레이커 포인트가 열리는 점까지의 각도가 E-GAP이 됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4468,7 +4532,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bs20030720-40" question-id="bs20030720-40" question-num="40" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">40</span>. 실린더 체적이 80㎝<sup>3</sup>이며, 피스톤의 행정체적이 70㎝<sup>3</sup>이라면 압축비는 얼마인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>10:1</li><li>9:1</li><li class="correct">8:1</li><li>7:1</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 64%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">압축비는 실린더 체적을 피스톤의 행정체적으로 나눈 값에서 1을 빼준 것입니다. 따라서 압축비는 80/70-1 = 1.14, 즉 약 1.1이 됩니다. 이 값은 보기에 없으므로, 피스톤의 행정체적이 실린더 체적보다 작기 때문에 압축비가 1보다 작아지는 것입니다. 따라서 정답은 "8:1"이 됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4519,7 +4583,7 @@ $(function(){
 </div>
 </div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bs20030720-41" question-id="bs20030720-41" question-num="41" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">41</span>. 제트기관의 실속을 줄이기 위하여 사용되는 장치가 아닌것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>가변 흡입공기 가이드 베인(Variable Inlet GuideVane)</li><li>가변 스테이터 베인(Variable Stator Vane)</li><li>압축기 블리드 밸브(Compressor Bleed Valve)</li><li class="correct">가변 로터 블레이드(Variable Rotor Blade)</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 37%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">가변 로터 블레이드는 제트기 엔진에서 회전하는 로터 블레이드의 각도를 조절하여 엔진의 성능을 최적화하는 장치이지만, 다른 보기들은 모두 제트기 엔진의 공기 유동을 제어하여 엔진의 성능을 향상시키는 장치입니다. 따라서 가변 로터 블레이드는 제외됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4565,7 +4629,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bs20030720-42" question-id="bs20030720-42" question-num="42" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">42</span>. 가스터빈 엔진(gas turbine engine)의 오일(oil)냉각 방법으로 가장 많이 사용되는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>공기냉각(air oil cooler)</li><li class="correct">연료-오일냉각(fuel-oil cooler)</li><li>라디에타(radiator)</li><li>바이패스공기(by pass air)</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 73%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">가스터빈 엔진에서는 연료와 오일이 함께 순환되기 때문에, 연료-오일냉각 방법을 사용하여 냉각한다. 이 방법은 연료와 오일을 함께 냉각시키기 때문에, 냉각 효율이 높고 엔진 내부에서 발생하는 열을 효과적으로 제거할 수 있다. 또한, 연료-오일냉각 방법은 공기냉각 방법보다 냉각 효율이 높기 때문에 가스터빈 엔진에서 가장 많이 사용되는 방법 중 하나이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4611,7 +4675,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bs20030720-43" question-id="bs20030720-43" question-num="43" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">43</span>. 연소실에 유입되는 1차 유입공기에 강한 선회를 주어와류를 발생시키는 장치는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>후레임 튜브</li><li>인너 라이너</li><li class="correct">스웰 가이드 베인</li><li>아우터 라이너</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 67%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">스웰 가이드 베인은 연소실에 유입되는 1차 유입공기에 강한 선회를 주어 와류를 발생시키는 장치입니다. 이는 연소 공기의 흐름을 제어하여 연소 효율을 높이고 배기 가스의 오염도를 낮추는 역할을 합니다. 따라서 스웰 가이드 베인이 정답입니다. 후레임 튜브, 인너 라이너, 아우터 라이너는 다른 부품이며, 스웰 가이드 베인과는 역할이 다릅니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4657,7 +4721,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bs20030720-44" question-id="bs20030720-44" question-num="44" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">44</span>. 가스터빈 기관의 터빈 노즐의 주 목적은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>가스압력을 증가시키기 위하여</li><li>축방향의 가스흐름을 일직선이 되게하기 위하여</li><li class="correct">가스의 흐름 방향을 바꾸며, 속도를 증가시키기 위하여</li><li>가스의 압력과 속도를 증가시키기 위하여</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 48%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">가스터빈 기관에서 터빈 노즐의 주 목적은 가스의 흐름 방향을 바꾸며, 속도를 증가시키기 위하여입니다. 이는 터빈 블레이드에 가스를 공급하여 회전력을 발생시키기 위해 필요합니다. 따라서 가스압력을 증가시키기 위한 목적이나 축방향의 가스흐름을 일직선이 되게하기 위한 목적은 아닙니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4703,7 +4767,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bs20030720-45" question-id="bs20030720-45" question-num="45" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">45</span>. 제트기관의 역추력(reverse thrust)은 다음 어느것에 의하여 조종 되어지는가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>랜딩 기어 스위치(landing gear switch)</li><li>드로틀 스위치(throttle switch)</li><li>플랩 스위치(flap switch)</li><li class="correct">스러스트 레버(thrust lever)</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 46%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">제트기관의 역추력은 스러스트 레버(thrust lever)에 의하여 조종되어진다. 스러스트 레버는 조종사가 조종실 내부에서 조작하는 기기로, 엔진의 추력을 조절하는 역할을 한다. 역추력을 사용하기 위해서는 스러스트 레버를 뒤로 당기는 것으로 충분하다. 따라서 스러스트 레버가 제트기관의 역추력을 조종하는데 사용되는 기기이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4749,7 +4813,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bs20030720-46" question-id="bs20030720-46" question-num="46" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">46</span>. 터보제트 기관에서 공기압력이 가장 높은 곳은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>터빈의 출구</li><li>연소실의 출구</li><li class="correct">디퓨우저의 출구</li><li>압축기 출구</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 36%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">디퓨우저는 압축기에서 압축된 공기를 확장시켜 역압을 증가시키는 역할을 합니다. 이로 인해 공기의 속도가 감소하면서 압력이 증가하게 되는데, 이는 터보제트 엔진에서 가장 높은 압력이 발생하는 지점입니다. 따라서 디퓨우저의 출구가 공기압력이 가장 높은 곳입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4795,7 +4859,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bs20030720-47" question-id="bs20030720-47" question-num="47" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">47</span>. 조종사가 가스터어빈 기관을 갑자기 가속시켰을 때 나타날 수 있는 현상중 옳지 않는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">연료-공기 혼합비가 너무 희박하게 된다.</li><li>터빈 입구 온도가 과도하게 상승한다.</li><li>압축기 실속이 일어나게 된다.</li><li>기관의 회전수는 압축기 자체의 관성 때문에 즉시 증가하지 않는다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 39%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">안전한 비행을 위해서는 연료와 공기가 적절한 비율로 혼합되어야 합니다. 그러나 조종사가 갑자기 가스터어빈 기관을 가속시키면서 공기의 유입량이 증가하면서 연료-공기 혼합비가 너무 희박해지게 됩니다. 이는 연소가 원활하지 않아 엔진의 성능이 저하되고, 연소가 불완전하게 일어나면서 유해물질이 배출될 가능성이 높아집니다. 따라서 안전한 비행을 위해서는 연료-공기 혼합비를 적절하게 유지해야 합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4841,7 +4905,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bs20030720-48" question-id="bs20030720-48" question-num="48" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">48</span>. 왕복기관에서 하이드로릭 록(hydraulic lock)은 어떤 곳에 가장 많이 걸리는가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>대향형 엔진 우측 실린더</li><li>성형엔진 상부 실린더</li><li>대향형 엔진 좌측 실린더</li><li class="correct">성형엔진 하부 실린더</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 47%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">하이드로릭 록은 엔진 내부에 물이나 기름 등이 쌓여서 실린더 내부에 공기가 들어갈 수 없게 되는 현상입니다. 이는 엔진의 회전을 막아 큰 손상을 초래할 수 있습니다. 성형엔진 하부 실린더는 엔진 내부에서 가장 낮은 위치에 있어서, 물이나 기름 등이 쌓일 가능성이 높아 하이드로릭 록이 가장 많이 발생하는 곳입니다. 따라서 정답은 "성형엔진 하부 실린더"입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4888,7 +4952,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bs20030720-49" question-id="bs20030720-49" question-num="49" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">49</span>. 기관의 오일 온도계는 어디의 오일 온도를 지시하는가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>오일 냉각기로 들어오는 오일</li><li>오일 저장 탱크의 오일</li><li>오일 저장탱크로 귀환되는 오일</li><li class="correct">기관으로 들어가는 오일</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 40%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">기관의 오일 온도계는 기관으로 들어가는 오일의 온도를 지시합니다. 이는 기관 내부에서 오일이 가장 많이 사용되기 때문에, 오일의 온도가 기관의 작동에 큰 영향을 미치기 때문입니다. 따라서 오일 온도를 측정하여 기관의 안정적인 작동을 유지하기 위해 기관으로 들어가는 오일의 온도를 측정합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4934,7 +4998,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bs20030720-50" question-id="bs20030720-50" question-num="50" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">50</span>. 부자식 기화기에서 연료가 넘쳐 흐르는 가장 큰 원인은 무엇인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>방출 노즐이 막혔다.</li><li>주 공기 블리이드가 막혔다.</li><li>부자면이 너무 낮다.</li><li class="correct">니이들과 시이트(needle and seat)가 새고 있다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 37%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">부자식 기화기에서 연료가 넘쳐 흐르는 가장 큰 원인은 니이들과 시이트(needle and seat)가 새고 있다는 것입니다. 이는 연료가 기화기 내부에 너무 많이 유입되어 과다한 연료 공급이 발생하기 때문입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4980,7 +5044,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bs20030720-51" question-id="bs20030720-51" question-num="51" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">51</span>. 흡입 밸브(intake valve)가 상사점 전에 열리는 것을 무엇이라 하는가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>밸브랩(valve lap)</li><li class="correct">밸브리이드(valve lead)</li><li>밸브랙(valve lag)</li><li>밸브간격(valve clearance)</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 42%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">흡입 밸브가 상사점 전에 열리는 것을 밸브리이드(valve lead)라고 합니다. 이는 엔진의 작동 원리에서 유입되는 공기와 연료가 효율적으로 혼합되어 연소될 수 있도록 하기 위해 필요한 것입니다. 밸브리이드는 흡입 밸브가 열리는 시점을 미세하게 앞당기는 것을 의미하며, 이를 통해 공기와 연료가 신속하게 혼합되어 연소가 원활하게 이루어질 수 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5026,7 +5090,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bs20030720-52" question-id="bs20030720-52" question-num="52" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">52</span>. 가스터빈 기관에서 고출력상태의 작동점검 사항으로 가장 옳은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>기관회전수에 따른 연료유량 점검</li><li>배기가스 온도 점검</li><li class="correct">가속시간 점검</li><li>오일압력 점검</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 21%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">가스터빈 기관에서 고출력상태의 작동점검 사항으로 가속시간 점검이 가장 옳은 것은, 가속시간은 기관의 작동 안정성과 성능을 평가하는 중요한 요소 중 하나이기 때문입니다. 가속시간이 너무 길거나 짧으면 기관의 안정성과 성능에 영향을 미칠 수 있습니다. 따라서 가속시간을 적절하게 조절하고 점검하는 것이 중요합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5072,7 +5136,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bs20030720-53" question-id="bs20030720-53" question-num="53" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">53</span>. 왕복기관에서 밸브간극을 규정값으로 조절했을 때 얻어지는 이점과 관계가 먼 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>고출력을 얻을 수 있다.</li><li>기관의 수명을 연장할 수 있다.</li><li>혼합기의 손실이 적다.</li><li class="correct">조기점화를 방지할 수 있다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 39%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">왕복기관에서 밸브간극을 규정값으로 조절하면, 연료와 공기의 정확한 비율을 유지할 수 있어서 조기점화를 방지할 수 있습니다. 조기점화는 연소가 일어나기 전에 연료-공기 혼합물이 스스로 발화하는 것을 말하며, 이는 기관의 성능을 저하시키고 손상을 초래할 수 있습니다. 따라서 밸브간극을 규정값으로 조절함으로써 기관의 안정성과 수명을 연장할 수 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5118,7 +5182,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bs20030720-54" question-id="bs20030720-54" question-num="54" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">54</span>. 연료조절장치(F.C.U)의 수감부에서 수감하는 요소에 해당되지 않는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>RPM</li><li>CDP</li><li>CIT</li><li class="correct">TIT</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 55%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">TIT는 연료조절장치(F.C.U)의 수감부에서 수감하는 요소 중 하나가 아닙니다. RPM은 엔진 회전수, CDP는 압력 차단기, CIT는 쿨랜트 온도를 나타내는데 반해, TIT는 터빈 입구 온도를 나타내는 것으로, 연료조절장치와는 직접적인 연관이 없습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5164,7 +5228,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bs20030720-55" question-id="bs20030720-55" question-num="55" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">55</span>. 가스터빈 축류형 압축기의 스테이터 베인(Stator vane)의 가장 중요한 기능은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">공기의 속도를 감소시키고 압력을 증가</li><li>공기의 속도를 감소시키고 압력을 감소</li><li>공기의 속도를 증가시키고 압력을 감소</li><li>공기의 속도를 증가시키고 압력을 증가</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 53%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">가스터빈 축류형 압축기에서 스테이터 베인은 회전하는 로터 블레이드에 의해 유입된 공기의 속도를 감소시키는 역할을 합니다. 이로 인해 공기의 운동에너지가 감소하고 정지압력이 증가하게 되어 압축이 이루어지게 됩니다. 따라서 스테이터 베인의 가장 중요한 기능은 "공기의 속도를 감소시키고 압력을 증가"시키는 것입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5210,7 +5274,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bs20030720-56" question-id="bs20030720-56" question-num="56" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">56</span>. 제트기관의 공기를 압축하는 방법에 따라 분류한 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">램 제트 기관, 펄스제트 기관, 가스터빈 기관</li><li>램 제트 기관, 터보제트 기관, 가스터빈 기관</li><li>펄스제트 기관, 터보제트 기관, 가스터빈 기관</li><li>램 터빈 기관, 터보제트 기관, 가스터빈 기관</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 38%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">제트기관의 공기를 압축하는 방법에 따라 분류한 것은 "램 제트 기관, 펄스제트 기관, 가스터빈 기관" 입니다. 램 제트 기관은 고속 비행에 적합한 고압력 압축기를 사용하여 공기를 압축합니다. 펄스제트 기관은 연소 후 발생하는 폭발적인 압력을 이용하여 공기를 압축합니다. 가스터빈 기관은 고속 회전하는 가스터빈을 이용하여 공기를 압축합니다. 따라서 이 세 가지 방법으로 공기를 압축하는 제트기관이 분류되었습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5257,7 +5321,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bs20030720-57" question-id="bs20030720-57" question-num="57" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">57</span>. 체적효율에 해당되는 수식으로 가장 올바른 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">실제 흡입된 체적 / 행정 체적</li><li>실린더 체적 / 실제 흡입된 체적</li><li>연소실 체적 / 실린더 체적</li><li>행정 체적 / 실제 흡입된 체적</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 37%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">체적효율은 엔진이 실제로 흡입한 공기의 체적과 비교하여 실제로 연소에 이용되는 공기의 체적을 나타내는 지표입니다. 따라서 첫 번째 보기인 "실제 흡입된 체적 / 행정 체적"이 가장 올바른 수식입니다. 이는 실제로 엔진이 흡입한 공기의 체적을 행정 체적으로 나눈 것으로, 이 값이 높을수록 엔진의 효율이 높다는 것을 의미합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5303,7 +5367,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bs20030720-58" question-id="bs20030720-58" question-num="58" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">58</span>. 브레이톤 사이클(Brayton cycle)에 대하여 가장 올바르게 설명한 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">2개의 단열과정과 2개의 정압과정으로 이루어진다.</li><li>2개의 단열과정과 2개의 정적과정으로 이루어진다.</li><li>2개의 정압과정과 2개의 정적과정으로 이루어진다.</li><li>2개의 등온과정과 2개의 정적과정으로 이루어진다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 63%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">브레이톤 사이클은 열기관 사이클 중 하나로, 가스를 이용하여 열을 일으키는 열기관의 작동 원리를 나타내는 사이클입니다. 이 사이클은 2개의 단열과정과 2개의 정압과정으로 이루어져 있습니다. 단열과정은 가스가 열을 주고 받지 않고 일정한 압력과 부피를 유지하면서 온도가 변하는 과정을 말하며, 정압과정은 가스가 일정한 압력을 유지하면서 부피와 온도가 변하는 과정을 말합니다. 따라서 브레이톤 사이클은 2개의 단열과정과 2개의 정압과정으로 이루어진다고 설명할 수 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5349,7 +5413,16 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bs20030720-59" question-id="bs20030720-59" question-num="59" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">59</span>. 피스톤의 지름이 135mm, 행정 거리가 150mm, 실린더 수가 6, 기관의 제동평균 유효압력이 7.5 Kgf/cm<sup>2</sup> , 회전수가 2600rpm일 때에 제동마력은 얼마인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>579(PS)</li><li>479(PS)</li><li>379(PS)</li><li class="correct">279(PS)</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 25%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">제동마력은 다음과 같이 계산할 수 있습니다.<br/>
+<br/>
+제동마력 = (피스톤 지름/2)^2 x 3.14 x 행정 거리 x 실린더 수 x 기관의 제동평균 유효압력 x 회전수 ÷ 75<br/>
+<br/>
+여기에 주어진 값들을 대입하면,<br/>
+<br/>
+제동마력 = (135/2)^2 x 3.14 x 150 x 6 x 7.5 x 2600 ÷ 75<br/>
+         = 279,450<br/>
+<br/>
+소수점 이하를 버리면 제동마력은 279(PS)가 됩니다. 따라서 정답은 "279(PS)"입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5395,7 +5468,21 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bs20030720-60" question-id="bs20030720-60" question-num="60" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">60</span>. 왕복기관에서 5 현상 내용과 가장 관계 깊은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>압축→ 점화→ 배기→ 출력→ 흡입</li><li>흡입→ 점화→ 압축→ 출력→ 배기</li><li>흡입→ 점화→ 압축→ 폭발→ 배기</li><li class="correct">흡입→ 압축→ 점화→ 폭발→ 배기</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 84%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "흡입→ 압축→ 점화→ 폭발→ 배기"입니다. <br/>
+<br/>
+왕복기관은 4가지 과정을 반복하는 엔진으로, 흡입, 압축, 점화, 배기의 순서로 작동합니다. <br/>
+<br/>
+먼저 흡입 단계에서는 공기와 연료가 혼합된 공기 연료 혼합물이 실린더 안으로 흡입됩니다. <br/>
+<br/>
+다음으로 압축 단계에서는 피스톤이 상승하여 공기 연료 혼합물을 압축합니다. <br/>
+<br/>
+그리고 점화 단계에서는 점화 플러그가 불꽃을 일으켜 공기 연료 혼합물을 불태워 폭발시킵니다. <br/>
+<br/>
+폭발 단계에서는 연료가 폭발하여 피스톤을 밀어내어 출력을 만듭니다. <br/>
+<br/>
+마지막으로 배기 단계에서는 연소 후 남은 가스가 실린더에서 배출됩니다. <br/>
+<br/>
+따라서, "흡입→ 압축→ 점화→ 폭발→ 배기"가 가장 관계가 깊습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>

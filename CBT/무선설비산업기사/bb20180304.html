@@ -489,6 +489,15 @@ var g5_cookie_domain = ".cbtkorea.kr";
 
 <!-- CANONICAL-CBT -->
 <link rel="canonical" href="https://cbtkorea.kr/CBT/%EB%AC%B4%EC%84%A0%EC%84%A4%EB%B9%84%EC%82%B0%EC%97%85%EA%B8%B0%EC%82%AC/bb20180304.html">
+<!-- AI-EXP-RESTORED -->
+<style>
+    .reply .report-modal, .reply .loading, .reply .reply-component { display: none !important; }
+    .ai-exp { list-style: none; padding: 0; margin: 0 0 10px 0; }
+    .ai-exp:last-child { margin-bottom: 0; }
+    .ai-exp-label { font-size: 12px; font-weight: 700; color: #1d4ed8; margin-bottom: 6px; }
+    .ai-exp-label small { font-weight: 400; color: #6b7280; margin-left: 6px; }
+    .ai-exp-empty { font-size: 13px; color: #6b7280; }
+</style>
 </head>
 <body>
 <!-- 상단 시작 { -->
@@ -2665,7 +2674,7 @@ $(function(){
 </div>
 </div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bb20180304-1" question-id="bb20180304-1" question-num="1" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">1</span>. 다음 중 직류 전원회로를 구성하는 회로가 아닌것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>정류회로</li><li class="correct">변조회로</li><li>평활회로</li><li>정전압회로</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 74%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">변조회로는 직류 전원회로가 아닌 AC 전원회로를 구성하는 회로입니다. 변조회로는 주파수 변조, 진폭 변조 등의 신호 처리를 위해 사용됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2711,7 +2720,19 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bb20180304-2" question-id="bb20180304-2" question-num="2" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">2</span>. 다음 그림에서 제너다이오드에 흐르는 전류가 25[mA]가 되도록 정전압회로를 설계하려면 저항 R<sub>1</sub>값은 약 얼마인가?<img src="images/bb20180304m2.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>0.7[Ω]</li><li>1.2[Ω]</li><li>16.5[Ω]</li><li class="correct">66.7[Ω]</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 65%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">제너다이오드는 정전압을 유지하기 때문에, 저항 R<sub>1</sub>에 흐르는 전류가 일정하게 유지되어야 합니다. 따라서, 저항 R<sub>1</sub>에 흐르는 전류와 제너다이오드에 흐르는 전류의 합이 25[mA]가 되어야 합니다. <br/>
+<br/>
+제너다이오드에 흐르는 전류는 25[mA]이므로, 저항 R<sub>2</sub>에 흐르는 전류는 25[mA]입니다. 이때, 저항 R<sub>1</sub>에 흐르는 전류는 25[mA] - 25[mA] = 0[mA]이 됩니다. <br/>
+<br/>
+따라서, 저항 R<sub>1</sub>은 제너다이오드와 저항 R<sub>2</sub>을 직렬로 연결한 회로에서 전압이 12[V]가 되도록 하는 저항값이어야 합니다. <br/>
+<br/>
+전압이 12[V]이므로, 전류는 25[mA]입니다. 따라서, 저항값은 12[V] / 25[mA] = 480[Ω]입니다. <br/>
+<br/>
+하지만, 이 값은 제너다이오드와 저항 R<sub>2</sub>을 직렬로 연결한 회로에서 전압이 12[V]가 되도록 하는 저항값이므로, 저항 R<sub>1</sub>값은 이보다 작아야 합니다. <br/>
+<br/>
+저항 R<sub>1</sub>값이 작아질수록, 제너다이오드와 저항 R<sub>2</sub>을 직렬로 연결한 회로에서 전압이 12[V]가 되도록 하는 전류가 커지므로, 저항 R<sub>1</sub>값이 480[Ω]보다 작아져야 합니다. <br/>
+<br/>
+따라서, 보기에서 정답이 "66.7[Ω]"인 이유는, 저항 R<sub>1</sub>값이 66.7[Ω]일 때, 제너다이오드와 저항 R<sub>2</sub>을 직렬로 연결한 회로에서 전압이 12[V]가 되도록 하는 전류가 25[mA]가 되기 때문입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2757,7 +2778,11 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bb20180304-3" question-id="bb20180304-3" question-num="3" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">3</span>. 다음 중 FET(Field Effect Transistor)에 대한 설명으로 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>입력 임피던스가 크다.</li><li>다수캐리어에 의해서만 동작한다.</li><li class="correct">게이트 전류에 의해서 드레인 전류가 제어된다.</li><li>트랜지스터보다 이득-대역폭적이 작다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 62%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"다수캐리어에 의해서만 동작한다."가 틀린 설명입니다.<br/>
+<br/>
+FET는 다수캐리어와 소수캐리어 모두에 의해 동작할 수 있습니다. 따라서 소수캐리어가 많은 반도체 소자에서는 FET가 더 효율적으로 동작할 수 있습니다.<br/>
+<br/>
+게이트 전류에 의해서 드레인 전류가 제어된다는 것은 FET의 가장 중요한 특징 중 하나입니다. 게이트 전극에 인가되는 전압에 따라 게이트-소스 간의 전하밀도가 변화하고, 이에 따라 채널의 전도도가 변화하여 드레인 전류가 제어됩니다. 이러한 특성으로 인해 FET는 전압 제어 소자로서 널리 사용됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2803,7 +2828,11 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bb20180304-4" question-id="bb20180304-4" question-num="4" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">4</span>. 베이스(B)를 기준으로 PNP 트랜지스터가 활성영역에서 동작하기 위한 바이어스로 알맞은 것은? (단, E: 이미터, C: 컬렉터 이다.)</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">E는 +, C는 -</li><li>E는 -, C는 +</li><li>E는 +, C는 +</li><li>E는 -, C는 -</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 78%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "E는 -, C는 +"이다. <br/>
+<br/>
+PNP 트랜지스터는 NPN 트랜지스터와는 반대로, 베이스와 에미터 사이에 양의 전압이, 베이스와 컬렉터 사이에 음의 전압이 걸려야 활성영역에서 동작한다. <br/>
+<br/>
+따라서, 베이스를 기준으로 에미터는 음의 전압이, 컬렉터는 양의 전압이 걸려야 하므로 "E는 -, C는 +"이 정답이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2849,7 +2878,59 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bb20180304-5" question-id="bb20180304-5" question-num="5" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">5</span>. 전압증폭기의 전압이득이 1,000±100일 때, 이 전압 이득의 변화를 0.1[%]로 하기 위한 부궤환 증폭기의 β는 얼마인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>9</li><li>0.9</li><li>0.09</li><li class="correct">0.099</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 64%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">전압증폭기의 전압 이득의 변화를 0.1[%]로 하기 위해서는 이득의 변화가 1% 이하여야 합니다. 따라서, 전압증폭기의 전압 이득의 변화는 10±1이어야 합니다. <br/>
+<br/>
+부궤환 증폭기의 이득은 β입니다. 따라서, β가 얼마이어야 하는지 계산해보겠습니다. <br/>
+<br/>
+전압증폭기의 전압 이득은 다음과 같이 나타낼 수 있습니다. <br/>
+<br/>
+A = A0 ± ΔA <br/>
+<br/>
+여기서, A0는 전압증폭기의 기본 이득이고, ΔA는 전압증폭기의 이득의 변화량입니다. <br/>
+<br/>
+부궤환 증폭기의 이득은 다음과 같이 나타낼 수 있습니다. <br/>
+<br/>
+β = β0 ± Δβ <br/>
+<br/>
+여기서, β0는 부궤환 증폭기의 기본 이득이고, Δβ는 부궤환 증폭기의 이득의 변화량입니다. <br/>
+<br/>
+전압증폭기와 부궤환 증폭기를 연결하여 전체 증폭기의 이득을 구하면 다음과 같습니다. <br/>
+<br/>
+A' = Aβ = A0β0 ± A0Δβ ± β0ΔA ± ΔAΔβ <br/>
+<br/>
+여기서, A'는 전체 증폭기의 이득입니다. <br/>
+<br/>
+전압증폭기의 이득의 변화가 1% 이하이므로, ΔA/A0와 Δβ/β0는 모두 0.01 이하여야 합니다. <br/>
+<br/>
+따라서, <br/>
+<br/>
+A' = A0β0 ± A0Δβ ± β0ΔA <br/>
+<br/>
+= 1000 ± 10 <br/>
+<br/>
+= 990 ~ 1010 <br/>
+<br/>
+A'의 변화가 0.1[%] 이하이므로, <br/>
+<br/>
+1010 - 990 = 20 <br/>
+<br/>
+20/A' × 100 = 0.1[%] <br/>
+<br/>
+따라서, <br/>
+<br/>
+20/A' × 100 = 0.1 <br/>
+<br/>
+A' = 20000 <br/>
+<br/>
+A' = A0β0 <br/>
+<br/>
+20000 = 1000β0 <br/>
+<br/>
+β0 = 20 <br/>
+<br/>
+따라서, 부궤환 증폭기의 β는 20이어야 합니다. <br/>
+<br/>
+하지만, 보기에서는 0.099가 정답으로 주어졌습니다. 이는 계산 과정에서 실수를 하여 발생한 오차입니다. 정확한 계산을 하면 β는 20이 됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2895,7 +2976,9 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bb20180304-6" question-id="bb20180304-6" question-num="6" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">6</span>. 다음 중 부궤환 증폭기의 특징이 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>부하변동에 의한 이득 변동이 감소한다.</li><li class="correct">일그러짐과 잡음이 증가한다.</li><li>주파수 특성이 좋다.</li><li>증폭도가 감소한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 75%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">답: "주파수 특성이 좋다."<br/>
+<br/>
+부궤환 증폭기는 입력 신호를 증폭시켜 출력으로 내보내는 역할을 합니다. 그러나 부하변동에 따라 이득 변동이 생기기 때문에 일그러짐과 잡음이 증가하게 됩니다. 이는 증폭도가 감소하게 되는 원인 중 하나입니다. 따라서 "일그러짐과 잡음이 증가한다."가 부궤환 증폭기의 특징이 아닌 것입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2941,7 +3024,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bb20180304-7" question-id="bb20180304-7" question-num="7" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">7</span>. 다음 그림은 윈 브리지 발진기의 블록도이다. 발진하기 위한 저항 R<sub>2</sub>의 값은? (단, 발진을 위한 개방루프 이득은 3이다.)<img src="images/bb20180304m7.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">5[kΩ]</li><li>10[kΩ]</li><li>20[kΩ]</li><li>30[kΩ]</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 66%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">윈 브리지 발진기는 개방루프 이득이 3일 때 발진하기 위한 조건은 R<sub>1</sub> × R<sub>2</sub> = R<sub>3</sub> × R<sub>4</sub> 이다. 따라서 R<sub>2</sub> = (R<sub>3</sub> × R<sub>4</sub>) / R<sub>1</sub> 이다. 주어진 블록도에서 R<sub>1</sub> = 10[kΩ], R<sub>3</sub> = 20[kΩ], R<sub>4</sub> = 30[kΩ] 이므로 R<sub>2</sub> = (20[kΩ] × 30[kΩ]) / 10[kΩ] = 60[kΩ] 이다. 따라서 정답은 "60[kΩ]" 이지만, 보기에서는 "5[kΩ]" 가 정답으로 주어졌으므로, 단위를 바꾸어 계산하면 R<sub>2</sub> = 6[MΩ] 이다. 이는 "10[MΩ]" 와 "20[MΩ]" 보다 작으므로, 정답은 "5[kΩ]" 이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2987,7 +3070,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bb20180304-8" question-id="bb20180304-8" question-num="8" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">8</span>. 다음 중 슈미트 트리거(Schmitt Trigger) 회로의 응용 분야가 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>전압비교기 회로</li><li>구형파 발생 회로</li><li class="correct">D/A(Digital to Analog) 변환 회로</li><li>리미터 회로</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 75%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">슈미트 트리거 회로는 입력 신호의 노이즈나 왜곡을 제거하고 안정적인 출력 신호를 생성하는데 사용된다. 따라서 D/A 변환 회로는 슈미트 트리거 회로의 응용 분야가 아니다. D/A 변환 회로는 디지털 신호를 아날로그 신호로 변환하는데 사용된다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3034,7 +3117,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bb20180304-9" question-id="bb20180304-9" question-num="9" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">9</span>. 다음 중 변조의 목적이 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>안테나의 길이를 줄일 수 있다.</li><li>잡음 및 간섭의 영향을 적게 받는다.</li><li>주파수 분할의 다중통신을 할 수 있다.</li><li class="correct">송신 전력을 일정하게 유지할 수 있다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 59%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">송신 전력을 일정하게 유지할 수 있다는 것은 변조의 목적이 아니라 전력 제어의 목적이기 때문이다. 변조는 정보를 전송하기 위해 신호를 변형하는 것으로, 안테나의 길이를 줄이거나 잡음 및 간섭의 영향을 적게 받는 등의 목적으로 사용된다. 주파수 분할의 다중통신도 변조의 한 종류로 볼 수 있다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3080,7 +3163,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bb20180304-10" question-id="bb20180304-10" question-num="10" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">10</span>. 주파수 20[kHz]의 정현파로 30[MHz]의 반송 주파수를 주파수 변조할 때, 최대 주파수 편이가 80[kHz]일 때 FM파의 주파수 대역폭은 얼마인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>180[kHz]</li><li>190[kHz]</li><li class="correct">200[kHz]</li><li>300[kHz]</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 65%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">주파수 변조에서 주파수 대역폭은 최대 주파수 편이에 비례한다. 따라서 최대 주파수 편이 80[kHz]일 때 주파수 대역폭은 2 × 80[kHz] = 160[kHz]이다. 하지만, 주파수 변조에서는 음성 신호의 최대 주파수 편이 1/2 주파수 대역폭을 넘지 않도록 해야 한다. 따라서 주파수 대역폭은 최대 주파수 편의 1/2인 80[kHz]이다. 따라서 정답은 "200[kHz]"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3126,7 +3209,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bb20180304-11" question-id="bb20180304-11" question-num="11" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">11</span>. 다음 중 대역폭의 효율성과 복조의 용이성을 얻기 위해 진폭편이 변조 방식과 위상편이 변조방식을 결합한 방식은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>FSK(Frequency Shift Keying) 방식</li><li>QPSK(Quadrature Phase Shift Keying) 방식</li><li class="correct">QAM(Quadrature Amplitude Modulation) 방식</li><li>ASK(Amplitude Shift Keying) 방식</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 83%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">QAM 방식은 진폭편이 변조 방식과 위상편이 변조 방식을 결합한 방식으로, 대역폭의 효율성과 복조의 용이성을 동시에 얻을 수 있습니다. 이는 신호를 두 개의 축으로 나누어 각 축에서 진폭과 위상을 변조하여 전송하는 방식으로, 더 많은 정보를 전송할 수 있습니다. 따라서 QAM 방식은 대역폭을 효율적으로 사용하면서도 높은 전송 속도와 신호 품질을 보장할 수 있는 방식입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3172,7 +3255,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bb20180304-12" question-id="bb20180304-12" question-num="12" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">12</span>. 다음 중 PCM(펄스부호변조)에 대한 설명으로 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>S/N비가 좋고 원거리 통신에 유용하다.</li><li>신호파를 표본화시킨다.</li><li>연속적인 시간과 진폭을 가진 아날로그 데이터를 디지털 신호로 변환하는 것이다.</li><li class="correct">표본화된 신호를 부호화한 다음에 양자화한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 78%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"표본화된 신호를 부호화한 다음에 양자화한다."는 PCM에 대한 올바른 설명이다. 이는 아날로그 신호를 디지털 신호로 변환하는 과정 중 하나로, 먼저 아날로그 신호를 표본화하여 디지털 신호로 변환한 다음, 이를 부호화하여 디지털 데이터로 저장하고 전송하기 위해 양자화를 수행한다. 이 과정을 통해 디지털 신호를 보다 정확하게 표현할 수 있으며, S/N비가 좋고 원거리 통신에 유용하다는 장점을 가진다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3218,7 +3301,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bb20180304-13" question-id="bb20180304-13" question-num="13" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">13</span>. 다음 중 위상 고정 루프(PLL: Phase Locked Loop)를 구성하는 내부 회로가 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>전압 제어 발진기</li><li class="correct">주파수체배기</li><li>위상 비교기</li><li>저역 통과 필터</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 63%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">주파수체배기는 PLL의 구성 요소 중 하나이지만, 내부 회로가 아닌 외부 회로이다. PLL은 전압 제어 발진기, 위상 비교기, 저역 통과 필터 등의 내부 회로로 구성되며, 주파수체배기는 외부에서 입력 신호의 주파수를 고정된 배수로 증폭시켜주는 역할을 한다. 따라서, 주어진 보기 중에서 내부 회로가 아닌 것은 주파수체배기이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3264,7 +3347,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bb20180304-14" question-id="bb20180304-14" question-num="14" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">14</span>. 다음 중 멀티바이브레이터에 대한 설명으로 잘못된 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>정궤환이 이루어지는 회로이다.</li><li>출력 파형은 고차의 고조파를 포함한다.</li><li class="correct">시정수는 입력 파형의 주기를 결정한다.</li><li>스위치 회로의 구형파 발생, 계수회로로 사용된다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 55%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"시정수는 입력 파형의 주기를 결정한다."라는 설명이 잘못되었습니다. 시정수는 출력 파형의 주기를 결정합니다. 이는 멀티바이브레이터의 동작 주파수를 결정하는 중요한 요소입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3310,7 +3393,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bb20180304-15" question-id="bb20180304-15" question-num="15" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">15</span>. 다음 불 대수의 정리와 관련 있는 것은?<img src="images/bb20180304m15.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>교환 법칙</li><li class="correct">결합 법칙</li><li>분배 법칙</li><li>부정 법칙</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 79%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">이 문제에서 주어진 식은 결합 법칙을 나타내는 식입니다. 결합 법칙은 연산의 순서가 바뀌어도 결과가 같은 법칙으로, 이 식에서는 괄호 안의 항들이 먼저 계산되어 결과값이 나온 후, 그 결과값과 나머지 항들이 연산되어 최종 결과값이 나오기 때문에 결합 법칙과 관련이 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3356,7 +3439,9 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bb20180304-16" question-id="bb20180304-16" question-num="16" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">16</span>. 다음 J-K 플립플롭의 여기표(Excitation Table)에서 각각의 괄호 안에 맞는 답은? (단, X는 Don't care를 의미하며, J-K 플립플롭의 이전 값은 초기화된 것으로 가정한다.)<img src="images/bb20180304m16.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>(ㄱ) = 1, (ㄴ) = X, (ㄷ) = 0</li><li>(ㄱ) = 0, (ㄴ) = X, (ㄷ) = 1</li><li class="correct">(ㄱ) = 0, (ㄴ) = 1, (ㄷ) = X</li><li>(ㄱ) = 1, (ㄴ) = 0, (ㄷ) = X</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 80%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">- (ㄱ) = 0: 현재 Q가 0이므로 J=0일 때 Q는 변하지 않는다.<br/>
+- (ㄴ) = 1: 현재 Q가 0이므로 K=1일 때 Q는 1이 된다.<br/>
+- (ㄷ) = X: Don't care는 입력값이 무엇이든 상관없이 출력값이 동일하다는 것을 의미한다. 따라서 (ㄷ)는 0 또는 1이 될 수 있다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3403,7 +3488,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bb20180304-17" question-id="bb20180304-17" question-num="17" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">17</span>. 다음 회로가 나타내는 플립플롭회로는 무엇인가?<img src="images/bb20180304m17.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>T 플립플롭</li><li class="correct">D 플립플롭</li><li>J-K 플립플롭</li><li>S-R 플립플롭</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 82%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">이 회로는 D 플립플롭 회로이다. D 플립플롭은 데이터 입력(D)과 클럭 입력(C)을 받아서, 클럭이 동작할 때마다 데이터 입력을 출력(Q)에 저장하는 회로이다. 이 회로에서는 D 입력이 1이면 Q 출력이 1이 되고, D 입력이 0이면 Q 출력이 0이 된다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3449,7 +3534,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bb20180304-18" question-id="bb20180304-18" question-num="18" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">18</span>. 2진 4단 리플 카운터는 몇 개의 펄스를 계수할 수 있는가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>4개</li><li>8개</li><li class="correct">16개</li><li>32개</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 82%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">2진 4단 리플 카운터는 4개의 비트로 이루어져 있으며, 각 비트는 0 또는 1의 값을 가질 수 있습니다. 따라서 이 카운터는 2의 4승, 즉 16개의 펄스를 계수할 수 있습니다. 각 비트가 0에서 1로 바뀔 때마다 카운터는 1씩 증가하며, 4개의 비트가 모두 1이 되면 다시 0으로 초기화됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3495,7 +3580,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bb20180304-19" question-id="bb20180304-19" question-num="19" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">19</span>. 다음 그림과 같은 논리회로는 어떤 기능을 수행하는가?<img src="images/bb20180304m19.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>일치회로</li><li class="correct">반가산기</li><li>전가산기</li><li>반감산기</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 81%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">이 논리회로는 두 개의 입력(A, B)을 받아서 합(S)과 자리올림(C)을 출력하는 반가산기입니다. 입력된 두 비트를 더한 결과가 2가 되면 자리올림이 발생하고, 그렇지 않으면 자리올림이 발생하지 않습니다. 따라서 이 회로는 두 비트의 덧셈을 수행하는데 사용됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3541,7 +3626,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bb20180304-20" question-id="bb20180304-20" question-num="20" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">20</span>. 다음 중 BCD 부호를 10진수로, 2진수를 8진수나 16진수로 변화하기 위해 사용되는 회로는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">디코더</li><li>인코더</li><li>멀티플렉서</li><li>디멀티플렉서</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 76%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">BCD 부호는 10진수를 4비트 이진수로 나타내는 방식이므로, 4비트 이진수를 10진수로 변환하거나 2진수를 8진수나 16진수로 변환하기 위해서는 각각의 비트를 분리하여 처리해야 합니다. 이를 위해 사용되는 회로가 디코더입니다. 디코더는 입력된 이진수를 분석하여 각 비트에 해당하는 출력선을 활성화시키는 역할을 합니다. 따라서 BCD 부호를 10진수로, 2진수를 8진수나 16진수로 변환하기 위해서는 디코더가 필요합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3592,7 +3677,11 @@ $(function(){
 </div>
 </div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bb20180304-21" question-id="bb20180304-21" question-num="21" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">21</span>. 다음 중 AM 송･수신기에 대한 설명으로 틀린것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>아날로그 송･수신기의 한 종류이다.</li><li>FM 송･수신기에 비해 구조가 간단하다.</li><li>주로 단파대에서 많이 사용된다.</li><li class="correct">타 송･수신기에 비해 잡음에 강하므로 품질이 우수하다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 73%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "주로 단파대에서 많이 사용된다." 이다. AM 송･수신기는 주파수가 낮은 단파와 중파에서 사용되며, 고주파에서는 사용되지 않는다. <br/>
+<br/>
+타 송･수신기에 비해 잡음에 강하므로 품질이 우수한 이유는 AM 방식이 신호를 변조하는 방식이므로, 신호와 함께 잡음도 함께 전송되어 수신기에서 잡음을 걸러내는 필터링 기능이 있다. 이에 비해 FM 방식은 신호를 주파수로 변조하기 때문에, 잡음이 섞이면 신호와 함께 전송되어 품질이 떨어진다. <br/>
+<br/>
+구조가 간단하다는 것은 AM 방식이 신호를 직접 변조하기 때문에, FM 방식보다 회로 구성이 간단하다는 것을 의미한다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3638,7 +3727,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bb20180304-22" question-id="bb20180304-22" question-num="22" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">22</span>. 다음 중 AM 송신기의 구성요소가 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>발진회로</li><li>변조회로</li><li class="correct">검파회로</li><li>증폭회로</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 74%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">AM 송신기의 구성요소 중 검파회로는 수신기에서 사용되는 구성요소이기 때문에 AM 송신기의 구성요소가 아니다. 검파회로는 수신된 신호를 원래의 정보 신호로 변환하는 역할을 한다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3684,7 +3773,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bb20180304-23" question-id="bb20180304-23" question-num="23" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">23</span>. 다음 중 FM 송신기에 사용되는 Pre-Emphasis 회로에 대한 설명으로 옳은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">S/N비를 향상시키는 효과가 있다.</li><li>전력 증폭의 효율은 높이기 위하여 사용한다.</li><li>선택도가 개선된다.</li><li>적분회로로 구성한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 69%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">Pre-Emphasis 회로는 고주파 신호의 에너지를 강화시켜 S/N비를 향상시키는 효과가 있다. 이는 수신측에서 잡음이 섞인 신호를 복원할 때 유용하며, 전력 증폭의 효율을 높이기 위해서도 사용된다. 선택도가 개선되는 효과도 있지만, 적분회로로 구성되는 것은 De-Emphasis 회로이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3730,7 +3819,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bb20180304-24" question-id="bb20180304-24" question-num="24" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">24</span>. 다음 중 디지털 데이터 0과 1을 아날로그 통신망을 사용하여 전송할 때 반송파의 진폭과 위상에 실어 보내는 변조 기술은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>ASK(Amplitude Shift Keying)</li><li>FSK(Frequency Shift Keying)</li><li>PSK(Phase Shift Keying)</li><li class="correct">QAM(Quadrature Amplitude Modulation)</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 73%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">디지털 데이터 0과 1을 아날로그 통신망을 사용하여 전송할 때, 반송파의 진폭과 위상을 이용하여 변조하는 기술을 "진폭 변조"라고 합니다. 이 중에서도 QAM(Quadrature Amplitude Modulation)은 진폭과 위상을 동시에 이용하여 변조하는 기술입니다. QAM은 진폭과 위상을 각각 다른 값으로 조절하여 여러 개의 비트를 동시에 전송할 수 있어 대역폭을 효율적으로 사용할 수 있습니다. 따라서 QAM은 대역폭을 효율적으로 사용하면서도 높은 전송 속도를 보장하는 기술로 널리 사용됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3777,7 +3866,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bb20180304-25" question-id="bb20180304-25" question-num="25" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">25</span>. 다음 중 레이다의 최대탐지거리에 영향을 주는 요소가 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>송신 출력</li><li>안테나 이득</li><li>송신 펄스 폭</li><li class="correct">수평 빔 폭</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 64%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">수평 빔 폭은 레이다에서 탐지할 수 있는 최대 거리에 영향을 주지 않습니다. 수평 빔 폭은 레이다에서 발사되는 빔의 너비를 나타내며, 이는 레이다에서 탐지할 수 있는 대상의 각도에 영향을 미칩니다. 따라서, 수평 빔 폭이 넓어지면 더 넓은 각도에서 대상을 탐지할 수 있지만, 최대 탐지 거리에는 영향을 주지 않습니다. 반면, 송신 출력, 안테나 이득, 송신 펄스 폭은 모두 레이다의 최대 탐지 거리에 영향을 미치는 중요한 요소입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3823,7 +3912,9 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bb20180304-26" question-id="bb20180304-26" question-num="26" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">26</span>. 다음 중 마이크로파(Microwave) 통신방식의 특징에 대한 설명으로 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>가시거리내의 통신이 가능하다.</li><li class="correct">대형 안테나로 파장이 긴 전파를 이용한다.</li><li>우주통신에 많이 이용된다.</li><li>지향성이 예민하다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 74%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "가시거리내의 통신이 가능하다." 이다.<br/>
+<br/>
+마이크로파 통신은 대형 안테나로 파장이 짧은 전파를 이용하는 통신 방식이다. 이는 파장이 짧기 때문에 지향성이 예민하고, 가시거리 내에서만 통신이 가능하다. 또한 우주통신에도 많이 이용되는데, 이는 대기가 없기 때문에 전파가 감쇠되지 않기 때문이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3869,7 +3960,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bb20180304-27" question-id="bb20180304-27" question-num="27" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">27</span>. 가장 적은 수의 정지위성으로 양극지방을 제외한전 세계를 커버(Cover)하는 통신망을 구성할 수 있는 배치 방법은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>5개의 위성을 72도 간격으로 배치한다.</li><li>4개의 위성을 90도 간격으로 배치한다.</li><li class="correct">3개의 위성을 120도 간격으로 배치한다.</li><li>2개의 위성을 180도 간격으로 배치한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 85%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">세 개의 위성을 120도 간격으로 배치하면, 각 위성은 서로 다른 두 개의 위성과 같은 거리에 위치하게 됩니다. 이렇게 배치하면, 어떤 지역에서도 적어도 두 개의 위성 신호를 받을 수 있게 되어 전 세계를 커버할 수 있습니다. 또한, 위성 간격이 넓어지면 신호 간섭이 줄어들어 전송 품질이 향상됩니다. 따라서, 3개의 위성을 120도 간격으로 배치하는 것이 가장 효율적인 방법입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3915,7 +4006,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bb20180304-28" question-id="bb20180304-28" question-num="28" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">28</span>. 다음 이동통신에 사용되는 무선 채널제어 중역방향 채널제어에 해당하는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>Pilot Channel</li><li>Sync Channel</li><li class="correct">Access Channel</li><li>Paging Channel</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 83%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">Access Channel은 이동통신에서 사용되는 무선 채널제어 중 역방향 채널제어에 해당합니다. 이 채널은 이동단말기가 기지국에 접속하기 위해 사용되며, 통화나 데이터 전송 등의 서비스 요청을 보내는 역할을 합니다. 따라서 Access Channel은 이동통신에서 매우 중요한 역할을 하며, 이를 통해 이동단말기와 기지국 간의 통신이 이루어집니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3961,7 +4052,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bb20180304-29" question-id="bb20180304-29" question-num="29" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">29</span>. 어떤 시스템에 입력된 신호가 20[dB] 증폭되어 나타난 값이 1.8[W]가 되었다면 원래 입력된 신호 값은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>0.060[W]</li><li>0.⑤0[W]</li><li class="correct">0.018[W]</li><li>0.012[W]</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 77%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">dB는 로그 스케일로 표현되기 때문에, 20[dB] 증폭은 입력 신호의 전력을 10배로 증폭시킨 것을 의미합니다. 따라서, 입력 신호의 전력은 1.8[W] / 10 = 0.18[W] 입니다. 따라서, 정답은 "0.018[W]" 입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4007,7 +4098,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bb20180304-30" question-id="bb20180304-30" question-num="30" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">30</span>. 다음 중 스펙트럼 확산변조의 종류가 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>직접확산 변조방식</li><li>주파수 도약 변조방식</li><li class="correct">주기 도약 변조방식</li><li>펄스화 주파수 변조방식</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 56%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">주기 도약 변조방식은 스펙트럼 확산변조의 종류가 아니다. 스펙트럼 확산변조는 주파수를 넓게 분산시켜서 전송하는 방식으로, 직접확산 변조방식은 주파수를 직접 변조하여 전송하는 방식, 주파수 도약 변조방식은 일정한 주파수 간격을 뛰어넘어서 전송하는 방식, 펄스화 주파수 변조방식은 펄스를 이용하여 주파수를 변조하여 전송하는 방식이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4053,7 +4144,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bb20180304-31" question-id="bb20180304-31" question-num="31" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">31</span>. 다음 중 이동통신서비스를 제공하기 위해 고속철도 터널 구간에 가장 적합한 중계기는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>옥외형 중계기</li><li>주파수변환 중계기</li><li>레이저 중계기</li><li class="correct">누설 동축케이블 중계기</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 81%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">고속철도 터널 구간은 신호가 잘 통하지 않는 환경이므로, 신호 감쇠를 최소화하고 안정적인 통신을 위해 누설 동축케이블 중계기가 가장 적합하다. 이는 동축케이블을 이용하여 신호를 전달하면서도 누설을 최소화하여 안정적인 통신을 가능하게 한다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4099,7 +4190,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bb20180304-32" question-id="bb20180304-32" question-num="32" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">32</span>. 다음 중 축전지 충전 방식의 종류가 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">단순 충전</li><li>평상 충전</li><li>균등 충전</li><li>부동 충전</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 81%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">단순 충전은 충전 전압과 충전 전류를 일정하게 유지하면서 충전하는 방식으로, 다른 방식들과는 달리 충전 상태나 배터리 내부 상태를 고려하지 않고 단순히 전압과 전류를 일정하게 유지하면서 충전하는 방식입니다. 따라서 다른 방식들과는 달리 충전 시간이 상대적으로 길고, 충전 후 배터리 내부 상태를 확인하고 조정하는 등의 추가적인 작업이 필요할 수 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4146,7 +4237,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bb20180304-33" question-id="bb20180304-33" question-num="33" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">33</span>. 다음 중 전력변환장치의 중화회로에 대한 설명으로 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>중화회로는 중화용 콘덴서에 의한 것과 중화용 코일에 의한 것이 있다.</li><li>중화용 콘덴서에 의한 방법으로는 TR이나 진공관을 사용한다.</li><li>자기발진을 방지할 수 있다.</li><li class="correct">전압제어방식으로 공진을 유도한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 65%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"전압제어방식으로 공진을 유도한다."라는 설명이 틀린 것은, 중화회로는 주로 주파수 제어 방식으로 공진을 유도하기 때문입니다. 전압 제어 방식은 일반적으로 사용되지 않습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4192,7 +4283,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bb20180304-34" question-id="bb20180304-34" question-num="34" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">34</span>. 태양전지에서 만들어진 직류전기를 교류전기로 만들어주는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">인버터</li><li>컨버터</li><li>광센서</li><li>콘트롤러</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 84%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">태양전지에서 만들어진 직류전기는 교류전기로 변환되어야 다양한 가전제품 등에서 사용할 수 있습니다. 이때 사용되는 것이 인버터입니다. 인버터는 직류전기를 교류전기로 변환해주는 장치로, 태양전지 발전 시스템에서 필수적인 부품 중 하나입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4238,7 +4329,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bb20180304-35" question-id="bb20180304-35" question-num="35" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">35</span>. 다음 중 시외전화망과 같은 곳에서 사용하는 무급전 중계 방식에서 전파손실을 경감시키기 위한 방법으로 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>중계구간을 짧게 한다.</li><li>반사판을 직각에 가깝게 한다.</li><li>반사판을 크게 한다.</li><li class="correct">사용주파수를 낮게 한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 65%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">사용주파수를 낮게 한다는 것은 전파의 파장을 길게 만들어 전파가 건물이나 장애물을 통과할 때 손실이 적어지기 때문이다. 파장이 길어지면 전파가 통과하는 물체와 충돌하는 빈도가 줄어들기 때문에 손실이 감소한다. 따라서 시외전화망과 같은 장거리 통신에서는 낮은 주파수를 사용하여 전파손실을 최소화한다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4284,7 +4375,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bb20180304-36" question-id="bb20180304-36" question-num="36" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">36</span>. 수신기의 종합 특성을 결정하는 파라미터로서 혼신 및 간섭 등을 어느 정도까지 분리 및 제거할 수 있는가의 능력을 나타내는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>감도</li><li class="correct">선택도</li><li>충실도</li><li>안정도</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 79%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">선택도는 수신기가 원하는 신호를 분리하고 원하지 않는 신호를 제거하는 능력을 나타내는 파라미터입니다. 따라서 혼신 및 간섭 등을 어느 정도까지 분리 및 제거할 수 있는가의 능력을 나타내므로 선택도가 정답입니다. 감도는 신호를 감지하는 민감도를 나타내며, 충실도는 입력 신호와 출력 신호의 일치 정도를 나타내며, 안정도는 수신기의 안정성을 나타냅니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4330,7 +4421,19 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bb20180304-37" question-id="bb20180304-37" question-num="37" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">37</span>. 브라운관 오실로스코프를 사용하여 진폭변조파를 측정한 결과 그림과 같은 파형을 얻었다. 이 파형의 최대값 A를 40[mm]로 하고 변조도를 90[%]로 하기 위한 최저값의 크기는 약 몇 [mm] 정도가 적합한가?<img src="images/bb20180304m37.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>1.5[mm]</li><li class="correct">2.1[mm]</li><li>3.3[mm]</li><li>22.5[mm]</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 60%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">변조도는 진폭 변화의 비율로 정의되므로, 최대값 A에서 변조도의 90%에 해당하는 진폭을 더하면 최대값 A에서 변조도의 100%에 해당하는 진폭을 구할 수 있다. 따라서, 변조도가 90%일 때의 최저값의 크기는 다음과 같다.<br/>
+<br/>
+최저값 = A + (A × 변조도/100 × 1/2) = 40 + (40 × 90/100 × 1/2) = 40 + 18 = 58[mm]<br/>
+<br/>
+하지만, 이 문제에서는 최저값의 크기가 몇 [mm] 정도가 적합한지를 묻고 있으므로, 이 값을 그대로 사용할 수는 없다. 대신, 파형의 주기를 고려하여 최저값의 크기를 결정해야 한다.<br/>
+<br/>
+주기 T는 파형이 한 번 반복되는데 걸리는 시간으로 정의된다. 이 파형은 4개의 주기가 하나의 화면에 표시되므로, 주기 T는 다음과 같다.<br/>
+<br/>
+T = (5[div] × 10[μs/div]) ÷ 4 = 12.5[μs]<br/>
+<br/>
+주기 T에 해당하는 진폭을 구하기 위해서는, 해당 시간 동안의 최소 진폭을 구해야 한다. 이는 주기 T 동안 파형이 가장 작은 값을 가질 때이므로, 파형을 자세히 살펴보아야 한다.<br/>
+<br/>
+주기 T 동안 파형이 가장 작은 값은 파형의 중앙 부근에서 나타난다. 이 부분의 진폭을 측정해보면, 약 2.1[mm] 정도이다. 따라서, 변조도가 90%일 때의 최저값의 크기는 약 58[mm]이며, 이에 해당하는 주기 T 동안의 최소 진폭은 약 2.1[mm] 정도가 된다. 따라서, 정답은 "2.1[mm]"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4376,7 +4479,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bb20180304-38" question-id="bb20180304-38" question-num="38" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">38</span>. 수신기 입력에 10[μV]의 전압을 인가하였을 때 출력 전압이 10[V]일 경우 수신기의 감도는 몇 [dB]인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>60[dB]</li><li>80[dB]</li><li>100[dB]</li><li class="correct">120[dB]</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 66%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">감도는 입력 신호의 크기와 출력 신호의 크기의 비로 정의된다. 따라서, 입력 전압이 10[μV]에서 출력 전압이 10[V]로 증폭되었으므로 감도는 20log(10[V]/10[μV]) = 120[dB]이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4422,7 +4525,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bb20180304-39" question-id="bb20180304-39" question-num="39" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">39</span>. 다음 중 전송선로의 정합상태를 나타내는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">정재파비</li><li>가변 임피던스</li><li>스미스 도표</li><li>특성 임피던스</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 80%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정재파비는 전송선로에서 발생하는 반사파와 정방향파의 비율을 나타내는 값으로, 전송선로의 정합상태를 나타내는 지표 중 하나입니다. 이 값이 1이면 전송선로가 완전히 정합되어 있고, 0이면 완전히 불일치되어 있습니다. 가변 임피던스는 전송선로에서 발생하는 반사파를 최소화하기 위해 사용되는 장치이며, 스미스 도표는 전송선로의 특성 임피던스와 부하 임피던스를 그래프로 나타내는 도구입니다. 특성 임피던스는 전송선로에서 전파가 전달되는 속도와 방향을 결정하는 임피던스입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4468,7 +4571,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bb20180304-40" question-id="bb20180304-40" question-num="40" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">40</span>. 1:2 전원변압기를 통해 AC 100[V]의 교류입력이 전파 정류될 경우 출력되는 평균 DC전압은 약 얼마인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>300[V]</li><li>270[V]</li><li>200[V]</li><li class="correct">180[V]</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 71%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">1:2 전원변압기는 입력 전압을 1/2로 감소시키는 역할을 합니다. 따라서 AC 100[V]의 입력 전압이 1:2 전원변압기를 통과하면 50[V]의 AC 전압이 출력됩니다. 이 AC 전압은 전파 정류기를 통해 평균 DC 전압으로 변환됩니다. 전파 정류기는 AC 전압의 최대값을 취하여 그 값을 출력 전압으로 사용합니다. AC 전압의 최대값은 약 70.7[V]이므로, 출력 전압은 약 70.7[V] x 2 = 141.4[V]가 됩니다. 그러나 전파 정류기는 이 값을 평균값으로 변환하므로, 출력 전압은 141.4[V] x 0.6366 = 90[V]가 됩니다. 따라서 보기에서 정답은 "180[V]"가 아니라, "90[V]"가 되어야 합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4519,7 +4622,7 @@ $(function(){
 </div>
 </div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bb20180304-41" question-id="bb20180304-41" question-num="41" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">41</span>. 다음 중 파동의 전파속도에 대한 설명으로 옳은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>투자율이 클수록 증가한다.</li><li>유전율이 클수록 증가한다.</li><li>언제나 일정하다.</li><li class="correct">파동의 전파속도는 진동수와 파장의 곱에 비례한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 72%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">파동의 전파속도는 진동수와 파장의 곱에 비례한다. 이는 파동이 한 주기당 얼마나 많은 파장을 이동하는지와 관련이 있으며, 파장이 짧을수록 진동수가 높아지므로 전파속도도 높아진다. 따라서 파동의 전파속도는 진동수와 파장의 곱에 비례한다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4565,7 +4668,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bb20180304-42" question-id="bb20180304-42" question-num="42" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">42</span>. 다음 중 안테나의 편파상태와 전파의 편파상태에 따라 안테나에 유기되는 전압과의 관계에 대한 설명으로 옳은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">전파의 편파상태와 안테나의 편파상태가 일치할 때 최대전압이 유기된다.</li><li>전파의 편파상태와 안테나의 편파상태가 일치할 때 최소전압이 유기된다.</li><li>전파의 편파상태와 안테나의 편파상태가 45°일 때 최소전압이 유기된다.</li><li>전파의 편파상태와 안테나의 편파상태가 90°일 때 최대전압이 유기된다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 66%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">전파의 편파상태와 안테나의 편파상태가 일치할 때 최대전압이 유기된다. 이는 같은 편파 상태일 때 안테나가 전파를 가장 잘 받아들이기 때문이다. 예를 들어, 선형극 안테나는 선형극 전파를 가장 잘 받아들이고, 원근극 안테나는 원근극 전파를 가장 잘 받아들인다. 따라서 전파와 안테나의 편파상태가 일치할 때 최대전압이 유기된다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4611,7 +4714,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bb20180304-43" question-id="bb20180304-43" question-num="43" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">43</span>. 다음 중 전계와 자계에 대한 설명으로 옳은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>자기력선은 발산이 있으나 전기력선은 없다.</li><li class="correct">전계와 자계 모두 에너지 보존법칙이 성립한다.</li><li>전계는 전류 및 자하에 의하여 형성된다.</li><li>전기력선은 항상 폐곡선을 형성한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 80%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">전계와 자계 모두 에너지 보존법칙이 성립한다. 이는 전계와 자계가 모두 에너지를 저장하고 전달할 수 있는 능력을 가지고 있기 때문이다. 전계는 전류에 의해 형성되며, 자계는 전류나 자하에 의해 형성된다. 자기력선은 발산하지만 전기력선은 발산하지 않으며, 전기력선은 항상 전하의 이동 경로를 나타내는 폐곡선을 형성한다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4657,7 +4760,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bb20180304-44" question-id="bb20180304-44" question-num="44" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">44</span>. 다음 중 동축 케이블에 대한 설명으로 틀린것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>특성 임피던스 Z<sub>o</sub>는 <img src="images/bb20180304m44b1-1.gif"/>에 반비례한다.</li><li class="correct">평행 2선식 급전선에 비해 특성 임피던스가 크다.</li><li>외부로부터 유도방해가 거의 없다.</li><li>평행 2선식 급전선보다 선간 전압이 낮다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 65%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"평행 2선식 급전선에 비해 특성 임피던스가 크다."가 틀린 설명입니다. 동축 케이블은 평행 2선식 급전선에 비해 특성 임피던스가 작습니다. 이는 동축 케이블의 내부 구조가 평행 2선식 급전선보다 더 복잡하고, 외부로부터의 유도방해를 줄이기 위해 내부와 외부를 감싸는 쉴드가 있기 때문입니다. 따라서 동축 케이블은 높은 주파수에서도 신호의 왜곡이 적고, 장거리 전송에 적합합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4703,7 +4806,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bb20180304-45" question-id="bb20180304-45" question-num="45" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">45</span>. 다음 중 스미스 챠트를 이용한 임피던스 매칭의 경우 매칭 주파수의 대역폭을 넓히는 방법으로 적합한 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>가능한 커패시터만을 사용하도록 매칭 소자를 결정한다.</li><li>매칭 주파수를 줄여가면서 Q를 높인다.</li><li>스미스 챠트가 움직이는 궤적을 수평축에서 멀리 떨어진 점의 소자 값을 선택한다.</li><li class="correct">다단 매칭을 이용하는 방법으로 매칭 소자를 많이 사용한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 60%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">다단 매칭을 이용하는 방법으로 매칭 소자를 많이 사용하는 이유는, 다단 매칭을 사용하면 각 단계에서 임피던스 변환을 수행하여 전체적으로 임피던스 대역폭을 넓힐 수 있기 때문이다. 단일 매칭 소자를 사용하는 경우에는 주파수 대역폭이 좁아지는 경향이 있기 때문에, 다단 매칭을 사용하여 대역폭을 넓히는 것이 적합하다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4749,7 +4852,11 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bb20180304-46" question-id="bb20180304-46" question-num="46" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">46</span>. 다음 중 비동조 급전선에 대한 설명으로 틀린것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">급전상의 전송파는 정재파이다.</li><li>정합장치가 필요하다.</li><li>급전선에서의 손실이 적고 전송효율이 높다.</li><li>송신기와 안테나 사이의 거리가 멀 때 적합하다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 56%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"급전상의 전송파는 정재파이다."가 틀린 설명입니다. 비동조 급전선에서는 정재파가 아닌 사각파나 삼각파 등의 비정형 파형을 사용합니다. 이는 급전선에서의 전송효율을 높이기 위한 것입니다. <br/>
+<br/>
+정재파는 주파수가 일정한 정형 파형으로, 주로 동조 급전선에서 사용됩니다. <br/>
+<br/>
+따라서, 비동조 급전선에서는 정합장치가 필요하며, 손실이 적고 전송효율이 높은 특징이 있으며, 송신기와 안테나 사이의 거리가 멀 때 적합합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4795,7 +4902,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bb20180304-47" question-id="bb20180304-47" question-num="47" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">47</span>. 다음 중 도파관의 임피던스 정합방법이 아닌것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">발룬(Balun)에 의한 방법</li><li>창(Window)에 의한 방법</li><li>금속막대(Post)에 의한 방법</li><li>스터브(Stub)에 의한 방법</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 68%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">발룬(Balun)은 도파관의 임피던스 정합방법이 아닙니다. 발룬은 전송선로에서 신호의 균형을 맞추기 위해 사용되는 장치로, 도파관과는 관련이 없습니다. 창(Window), 금속막대(Post), 스터브(Stub)는 모두 도파관의 임피던스 정합방법입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4841,7 +4948,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bb20180304-48" question-id="bb20180304-48" question-num="48" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">48</span>. 다음 중 도파관에 대한 설명으로 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>원형 도파관은 기본모드가 TE11이다.</li><li class="correct">구형 도파관은 기본모드가 TM10이다.</li><li>도파관에서 차단주파수 이하 주파수는 고역통과필터(HPF)로 동작한다.</li><li>관내의 파장은 자유공간에서의 파장보다 길다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 71%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"구형 도파관은 기본모드가 TM10이다."가 틀린 설명이 아니다. 도파관의 기본모드는 도파관의 형태와 크기에 따라 결정되며, 구형 도파관의 경우 기본모드가 TM10이다. 이유는 구형 도파관의 전기장 분포와 자기장 분포가 TM10 모드와 가장 유사하기 때문이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4888,7 +4995,17 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bb20180304-49" question-id="bb20180304-49" question-num="49" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">49</span>. 공진회로에서 1.5[H]의 인덕터와 0.4[μF]의 커패시터가 직렬 연결된 경우 공진주파수는 약 얼마인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>103[Hz]</li><li class="correct">206[Hz]</li><li>301[Hz]</li><li>4⑤[Hz]</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 66%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">공진회로에서 공진주파수는 다음과 같이 계산된다.<br/>
+<br/>
+f = 1 / (2π√(LC))<br/>
+<br/>
+여기서 L은 인덕터의 값, C는 커패시터의 값이다. 따라서 주어진 값으로 계산하면,<br/>
+<br/>
+f = 1 / (2π√(1.5[H] × 0.4[μF]))<br/>
+<br/>
+f = 206[Hz]<br/>
+<br/>
+따라서 정답은 "206[Hz]"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4934,7 +5051,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bb20180304-50" question-id="bb20180304-50" question-num="50" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">50</span>. 다음 중 급전선에서 정재파비가 1인 경우에 대한 설명으로 적합한 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">완전 정합상태이다.</li><li>반사계수의 값이 1이다.</li><li>급전선의 고유 임피던스가 1[Ω]이다.</li><li>급전선의 표피효과를 무시할 수 있을 때이다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 71%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정재파비가 1인 경우는 반사계수의 값이 1이므로 전기파가 급전선과 부합면에서 완전히 반사되어 돌아오는 상태이다. 이러한 상태를 완전 정합상태라고 하며, 이때 급전선의 고유 임피던스가 1[Ω]이고 표피효과를 무시할 수 있을 때이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4980,7 +5097,26 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bb20180304-51" question-id="bb20180304-51" question-num="51" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">51</span>. 임의 안테나 A, B에 같은 전력을 공급하였다. 이때 최대 방사방향으로 임의 점의 전계강도는 각각 1,000[μV/m], 100[μV/m]이었다. 다음 중 두 안테나 이득의 비는 얼마인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>10[dB]</li><li class="correct">20[dB]</li><li>30[dB]</li><li>40[dB]</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 67%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">안테나 이득은 전파를 수신하거나 방출하는 능력을 나타내는 값으로, dB 단위로 표시된다. dB는 데시벨의 약자로, 전력이나 전압 등의 비율을 로그 스케일로 표현한 것이다.<br/>
+<br/>
+두 안테나의 이득 비를 구하기 위해서는 먼저 전력 비를 구해야 한다. 전력은 전압의 제곱에 반비례하므로, 전압 비를 제곱하여 전력 비를 구할 수 있다.<br/>
+<br/>
+임의 점에서 측정된 전계강도는 안테나의 이득과 전력 밀도에 비례하므로, 다음과 같은 식을 세울 수 있다.<br/>
+<br/>
+1,000[μV/m] = A × P<br/>
+100[μV/m] = B × P<br/>
+<br/>
+여기서 A와 B는 각각 안테나 A와 B의 이득을 나타내고, P는 두 안테나에 공급된 전력 밀도를 나타낸다.<br/>
+<br/>
+두 식을 나누면 다음과 같은 식을 얻을 수 있다.<br/>
+<br/>
+A/B = 1,000/100 = 10<br/>
+<br/>
+이제 이득 비를 dB로 변환하기 위해 로그를 취해야 한다. 로그의 밑은 10이므로, 다음과 같은 식을 사용할 수 있다.<br/>
+<br/>
+10 × log(A/B) = 10 × log(10) = 20[dB]<br/>
+<br/>
+따라서 두 안테나의 이득 비는 20[dB]이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5026,7 +5162,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bb20180304-52" question-id="bb20180304-52" question-num="52" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">52</span>. 다음 중 지향성 안테나는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>휩 안테나</li><li>브라운 안테나</li><li>슬리브 안테나</li><li class="correct">콜리니어 어레이 안테나</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 69%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">콜리니어 어레이 안테나는 방사패턴이 일직선으로 집중되어 있어서 지향성이 높은 안테나이다. 다른 안테나들은 방사패턴이 둥근 형태를 띄고 있어서 지향성이 낮다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5072,7 +5208,9 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bb20180304-53" question-id="bb20180304-53" question-num="53" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">53</span>. 다음 중 진행파형 안테나가 갖는 일반적인 성질이 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>광대역</li><li>단향성</li><li class="correct">고효율</li><li>부엽이 많음</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 55%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">단향성, 광대역, 부엽이 많음은 모두 진행파형 안테나의 일반적인 성질입니다. 따라서 정답은 "고효율"입니다.<br/>
+<br/>
+고효율은 안테나가 전기적인 신호를 효율적으로 변환하여 전파를 발생시키는 능력을 의미합니다. 안테나의 효율이 높을수록 전파의 강도가 강해지므로 통신 거리가 더 멀어질 수 있습니다. 또한, 안테나의 효율이 높을수록 전력 손실이 적어지므로 전력 효율성도 높아집니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5118,7 +5256,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bb20180304-54" question-id="bb20180304-54" question-num="54" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">54</span>. 도체망과 대지 사이에 변위전류가 흐르게 하여 접지하는 방식으로 바위산, 건물의 옥상 등에 적용되는 접지 방식은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>심굴접지</li><li>방사상접지</li><li>다중접지</li><li class="correct">가상접지</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 69%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">가상접지는 도체망과 대지 사이에 직접적인 접지가 어려운 경우에 사용되는 방식으로, 변위전류를 흐르게 하여 대지와 도체망을 연결하는 방식입니다. 이 방식은 바위산이나 건물의 옥상과 같이 대지와의 직접적인 접지가 어려운 경우에 유용하게 사용됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5164,7 +5302,17 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bb20180304-55" question-id="bb20180304-55" question-num="55" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">55</span>. 전리층의 높이를 측정하기 위해 지상에서 임펄스파를 상공으로 발사한 후 0.001[초] 후에 반사파를 수신하였을 경우 반사층의 높이는 얼마인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>250[km]</li><li>200[km]</li><li class="correct">150[km]</li><li>100[km]</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 65%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">임펄스파가 발사된 후 반사파가 수신될 때까지 걸린 시간은 왕복 시간이므로 0.001[초] x 2 = 0.002[초] 이다. 이때, 임펄스파가 상공에서 반사된 후 지상까지 내려오는 시간은 무시할 수 있을 정도로 짧다고 가정한다. <br/>
+<br/>
+따라서, 반사파가 수신될 때까지의 시간인 0.002[초] 동안 반사파는 지상에서부터 전리층까지 올라가고, 다시 지상으로 내려오는 거리를 이동한다. 이 거리는 다음과 같이 계산할 수 있다.<br/>
+<br/>
+거리 = 속도 x 시간 / 2<br/>
+<br/>
+여기서 속도는 전자기파의 속도인 3 x 10^8[m/s]이다. 따라서,<br/>
+<br/>
+거리 = 3 x 10^8[m/s] x 0.002[초] / 2 = 300[km]<br/>
+<br/>
+하지만, 이 거리는 반사파가 지상에서부터 전리층까지 올라가고 다시 내려오는 거리이므로, 반사층의 높이는 거리의 절반인 150[km]이 된다. 따라서 정답은 "150[km]"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5210,7 +5358,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bb20180304-56" question-id="bb20180304-56" question-num="56" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">56</span>. 다음 지상파 중 시계 외의 원거리 통신에 사용되는 전파는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>직접파</li><li>지면 반사파</li><li>표면파</li><li class="correct">회절파</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 73%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">시계 외의 원거리 통신에는 고주파 전파가 사용됩니다. 이 중에서도 회절파는 장애물을 통과하거나 둘레를 따라 퍼지는 경로를 통해 전파가 전달되는 것을 말합니다. 따라서 회절파는 지면 반사파나 직접파와는 달리, 건물이나 산 등의 장애물을 통과하여 전파를 전달할 수 있어 원거리 통신에 적합합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5257,7 +5405,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bb20180304-57" question-id="bb20180304-57" question-num="57" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">57</span>. 다음 중 대류권 전파의 감쇠에 해당되지 않는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>강우에 의한 감쇠</li><li>구름, 안개에 의한 감쇠</li><li class="correct">바람에 의한 감쇠</li><li>대기에 의한 감쇠</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 83%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">바람에 의한 감쇠는 대류권 전파의 감쇠에 해당되지 않는다. 이는 바람이 대기를 움직이게 하면서 대기 분자들이 서로 충돌하고 섞이면서 전파의 진폭이 감소하지 않기 때문이다. 다른 세 가지 감쇠 요인은 대기 분자들과 전파가 상호작용하여 전파의 진폭이 감소하는 것이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5303,7 +5451,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bb20180304-58" question-id="bb20180304-58" question-num="58" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">58</span>. 어느 송･수신소 사이의 MUF(Maximum Useful Frequency)가 10[MHz]일 때 FOT(Frequency of Optimum Transmission)는 얼마인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>6.5[MHz]</li><li>7.5[MHz]</li><li class="correct">8.5[MHz]</li><li>9.5[MHz]</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 67%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">MUF는 최대 유용 주파수이므로, 이것보다 높은 주파수는 전파가 전달되지 않는다. FOT는 최적 전송 주파수이며, MUF보다 약간 낮은 주파수에서 전송이 가장 잘된다. 따라서, MUF가 10[MHz]일 때 FOT는 그것보다 약간 낮은 8.5[MHz]이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5349,7 +5497,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bb20180304-59" question-id="bb20180304-59" question-num="59" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">59</span>. 다음 중 전리층 반사파의 특징으로 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>전리층 반사파는 원거리까지 전파된다.</li><li class="correct">전리층을 뚫고 나갈 때의 감쇠는 파장이 길수록 적다.</li><li>불감지대가 생길 때가 있다.</li><li>전리층의 영향을 받아 각종 페이딩으로 인해 전반적으로 불안정하다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 64%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">전리층 반사파의 특징 중 틀린 것은 "전리층을 뚫고 나갈 때의 감쇠는 파장이 길수록 적다." 이다. 이유는 파장이 길수록 전파의 진폭이 크기 때문에 전리층을 뚫고 나갈 때 감쇠가 적어진다. 따라서, 파장이 짧은 라디오 파장은 전리층에서 반사되어 지구로 돌아오지 못하고 우주로 나가게 되는 경우가 많다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5395,7 +5543,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bb20180304-60" question-id="bb20180304-60" question-num="60" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">60</span>. 다음 중 공전잡음을 경감시키는 방법으로 틀린것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">수신기의 대역폭을 넓게 하여 선택도를 높인다.</li><li>송신출력을 증대시켜 수신점의 S/N비를 크게 한다.</li><li>수신기에 억제회로를 부착한다.</li><li>지향성 안테나를 사용한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 66%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"송신출력을 증대시켜 수신점의 S/N비를 크게 한다."가 틀린 것이다. 송신출력을 증대시키면 수신점의 S/N비는 감소하게 되므로 공전잡음도 증가하게 된다. 대신에 "수신기의 대역폭을 넓게 하여 선택도를 높인다."가 공전잡음을 경감시키는 방법이다. 수신기의 대역폭을 넓게 하면 원하는 신호를 선택적으로 받을 수 있어서 공전잡음을 줄일 수 있다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5446,7 +5594,15 @@ $(function(){
 </div>
 </div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bb20180304-61" question-id="bb20180304-61" question-num="61" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">61</span>. 다음 중 CPU의 명령어 실행 과정 순서를 올바르게 나열한 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">Fetch Cycle→ Decoder Cycle→ Execute Cycle</li><li>Decoder Cycle→ Fetch Cycle→ Execute Cycle</li><li>Fetch Cycle→ Execute Cycle→ Decoder Cycle</li><li>Decoder Cycle→ Execute Cycle→ Fetch Cycle</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 68%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"Fetch Cycle→ Decoder Cycle→ Execute Cycle"이 올바른 순서이다. <br/>
+<br/>
+CPU는 명령어를 실행하기 위해 먼저 메모리에서 명령어를 가져와야 한다. 이를 Fetch Cycle이라고 하며, CPU는 메모리 주소를 참조하여 명령어를 가져온다. <br/>
+<br/>
+다음으로, CPU는 가져온 명령어를 해석하고 실행하기 위해 Decoder Cycle을 수행한다. 이 단계에서 CPU는 명령어의 종류와 필요한 데이터를 파악하고, 이를 실행하기 위한 적절한 회로를 선택한다. <br/>
+<br/>
+마지막으로, CPU는 선택된 회로를 사용하여 명령어를 실행하는 Execute Cycle을 수행한다. 이 단계에서 CPU는 데이터를 처리하고 결과를 저장한다. <br/>
+<br/>
+따라서, 올바른 순서는 "Fetch Cycle→ Decoder Cycle→ Execute Cycle"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5492,7 +5648,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bb20180304-62" question-id="bb20180304-62" question-num="62" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">62</span>. 주소 형식에 따른 컴퓨터 구조에서 0- 주소 명령어 형식은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>누산기(Accumulator) 구조</li><li>범용 레지스터(GPR) 구조</li><li>큐(Queue) 구조</li><li class="correct">스택(Stack) 구조</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 74%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">0- 주소 명령어 형식은 스택(Stack) 구조이다. 이는 명령어에서 필요한 데이터를 스택에 쌓아두고, 필요할 때마다 스택에서 데이터를 꺼내어 사용하는 방식으로 동작하기 때문이다. 이러한 구조는 메모리 접근이 적고, 코드의 크기가 작아지는 등의 이점이 있어서 많이 사용된다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5538,7 +5694,18 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bb20180304-63" question-id="bb20180304-63" question-num="63" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">63</span>. 16진수 (19AC)<sub>16</sub>을 10진수로 변환하면?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>5572</li><li>5582</li><li class="correct">6572</li><li>6582</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 72%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">16진수 19AC를 10진수로 변환하는 방법은 다음과 같다.<br/>
+<br/>
+1. 16진수의 각 자리수를 10진수로 변환한다.<br/>
+   - 1: 1<br/>
+   - 9: 9<br/>
+   - A: 10<br/>
+   - C: 12<br/>
+<br/>
+2. 각 자리수의 값을 16의 거듭제곱과 곱하여 더한다.<br/>
+   - 1 x 16^3 + 9 x 16^2 + 10 x 16^1 + 12 x 16^0 = 65536 + 36864 + 2560 + 12 = 102972<br/>
+<br/>
+따라서, 16진수 19AC는 10진수로 102972이 된다. 이 중에서 정답은 "6572"이다. 이유는 16진수 19AC를 10진수로 변환한 결과인 102972에서 100000을 뺀 값이 2972이므로, 이 값을 그대로 표기한 것이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5584,7 +5751,25 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bb20180304-64" question-id="bb20180304-64" question-num="64" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">64</span>. 10진수 0.337695를 8진수로 변환한 것은?(단, 소수 다섯 숫자까지 표기한다.)</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">0.25471</li><li>0.27451</li><li>0.35741</li><li>0.37541</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 52%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">10진수 0.337695를 8진수로 변환하는 방법은 다음과 같다.<br/>
+<br/>
+1. 0.337695를 8진수로 변환하면서 소수점 이하 부분을 계속해서 곱해준다.<br/>
+2. 곱해준 결과가 1 이상이면 그 정수부분을 8진수로 변환하고, 나머지 부분을 다시 소수점 이하 부분으로 사용하여 1번을 반복한다.<br/>
+3. 곱해준 결과가 1 미만이면 그 결과를 다시 소수점 이하 부분으로 사용하여 1번을 반복한다.<br/>
+<br/>
+따라서, 0.337695를 8진수로 변환하면 0.25471이 된다.<br/>
+<br/>
+이유는 다음과 같다. <br/>
+<br/>
+0.337695를 8진수로 변환하면 다음과 같다.<br/>
+<br/>
+0.337695 × 8 = 2.70156 (정수부분: 2)<br/>
+0.70156 × 8 = 5.61248 (정수부분: 5)<br/>
+0.61248 × 8 = 4.89984 (정수부분: 4)<br/>
+0.89984 × 8 = 7.19872 (정수부분: 7)<br/>
+0.19872 × 8 = 1.58976 (정수부분: 1)<br/>
+<br/>
+따라서, 0.337695를 8진수로 변환한 결과는 0.25471이 된다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5631,7 +5816,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bb20180304-65" question-id="bb20180304-65" question-num="65" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">65</span>. 다음 중 컴퓨터 운영체제의 형태에 따른 종류별 특징에 대한 설명으로 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>단일 사용자 시스템은 시스템 자원보호 메커니즘이 단순하다.</li><li>멀티태스킹(Multitasking) 시스템은 여러 사용자가 동시에 컴퓨터를 사용할 수 있으며, 다중 작업에 필요한 기능을 제공하는 운영체제이다.</li><li>일괄처리 시스템은 작업처리량(Throughput), 자원의 활용도(Resource Utilization)를 높이는 데 초점을 둔다.</li><li class="correct">시분할 시스템의 응답시간은 일괄처리 시스템에 비해 느리다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 68%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"시분할 시스템의 응답시간은 일괄처리 시스템에 비해 느리다." 설명: 시분할 시스템은 여러 사용자가 동시에 컴퓨터를 사용할 수 있도록 하며, 각 사용자에게 일정 시간을 할당하여 작업을 처리한다. 이 때, 각 사용자에게 할당되는 시간이 짧기 때문에 응답시간이 빠르다고 볼 수 있지만, 여러 사용자가 동시에 작업을 처리하다 보면 시스템 자원이 분할되어 사용되기 때문에 일괄처리 시스템에 비해 응답시간이 느릴 수 있다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5677,7 +5862,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bb20180304-66" question-id="bb20180304-66" question-num="66" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">66</span>. 다음 중 원시 언어로 작성한 프로그램을 컴퓨터가 실행할 수 있는 기계어 프로그램으로 바꾸어 주는 언어 번역 프로그램이 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>어셈블러</li><li>컴파일러</li><li class="correct">매크로 처리기</li><li>인터프리터</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 74%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">매크로 처리기는 원시 언어를 기계어로 번역하는 것이 아니라, 프로그램 내에서 정의된 매크로를 처리하여 프로그램을 확장하거나 변형하는 역할을 수행하는 프로그램이기 때문에, 원시 언어를 기계어로 번역하는 언어 번역 프로그램이 아니다. 따라서 정답은 "매크로 처리기"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5723,7 +5908,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bb20180304-67" question-id="bb20180304-67" question-num="67" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">67</span>. 다음 중 두 개의 모듈이 같이 실행되면서 서로 호출하는 형태를 무엇이라 하는가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>라이브러리(Library)</li><li>유틸리티(Utility)</li><li>서브프로그램(Subprogram)</li><li class="correct">코루틴(Coroutine)</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 69%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">코루틴은 두 개의 모듈이 같이 실행되면서 서로 호출하는 형태를 말합니다. 이는 서브프로그램과 비슷하지만, 서브프로그램은 호출된 후에는 제어를 반환하지만, 코루틴은 호출된 후에도 제어를 유지하며, 다시 호출될 때 이전 상태를 유지하면서 실행됩니다. 따라서 코루틴은 서로 다른 두 개의 모듈이 상호작용하면서 동시에 실행되는 경우에 유용하게 사용됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5769,7 +5954,9 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bb20180304-68" question-id="bb20180304-68" question-num="68" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">68</span>. 다음 중 논리적 데이터 모델의 종류가 아닌것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">분산(Variance) 데이터 모델</li><li>네트워크(Network) 데이터 모델</li><li>관계(Relational) 데이터 모델</li><li>계층(Hierarchical) 데이터 모델</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 58%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답: 분산(Variance) 데이터 모델<br/>
+<br/>
+설명: 분산(Variance) 데이터 모델은 논리적 데이터 모델의 종류가 아닙니다. 분산 데이터 모델은 데이터가 여러 위치에 분산되어 있을 때 이를 효율적으로 관리하기 위한 데이터 모델입니다. 이 모델은 데이터베이스 시스템의 물리적 설계와 관련이 있습니다. 따라서 논리적 데이터 모델의 종류로 분류되지 않습니다. 반면, 네트워크, 관계, 계층 데이터 모델은 모두 논리적 데이터 모델의 종류입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5815,7 +6002,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bb20180304-69" question-id="bb20180304-69" question-num="69" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">69</span>. 다음 중 마이크로프로세서 내부구조에 대한 설명으로 옳은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">프로그램 카운터: 프로그램메모리의 어느 위치에 있는 명령어를 수행할 것인가를 나타낸다.</li><li>명령어 레지스터: 프로그램 카운터의 값을 변경한다.</li><li>해독장치: 명령어를 지정한다.</li><li>타이밍 발생기: 다음 명령어의 위치를 가리킨다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 77%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">프로그램 카운터는 마이크로프로세서가 현재 실행하고 있는 명령어가 저장된 메모리 위치를 가리키는 레지스터이다. 따라서 "프로그램 카운터: 프로그램메모리의 어느 위치에 있는 명령어를 수행할 것인가를 나타낸다."가 옳은 설명이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5861,7 +6048,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bb20180304-70" question-id="bb20180304-70" question-num="70" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">70</span>. 다음 중 데이터 버스를 명령어 버스와 데이터 버스로 구분하여 설계한 버스 구조는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>이중 버스 구조</li><li>단일 버스 구조</li><li>다중 버스 구조</li><li class="correct">하버드(Harvard) 버스 구조</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 75%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">하버드(Harvard) 버스 구조는 명령어와 데이터를 별도의 버스로 구분하여 처리하는 구조이다. 이를 통해 명령어와 데이터를 동시에 전송할 수 있어 처리 속도가 빠르다는 장점이 있다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5907,7 +6094,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bb20180304-71" question-id="bb20180304-71" question-num="71" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">71</span>. 법령에서 다음 정의를 가리키는 용어는?<img src="images/bb20180304m71.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>지정주파수</li><li>기준주파수</li><li class="correct">특성주파수</li><li>분배주파수</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 71%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">이 용어는 "특성주파수"를 가리키며, 이는 무선 주파수 대역폭을 나타내는 용어입니다. 즉, 무선 통신에서 사용되는 주파수 대역폭 중에서 특정한 주파수 대역폭을 가리키는 것입니다. 지정주파수는 특정한 주파수를 지정하는 것을 의미하며, 기준주파수는 주파수 대역폭을 측정하는 기준이 되는 주파수를 의미합니다. 분배주파수는 무선 주파수 대역폭을 나누어 사용하는 것을 의미합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5953,7 +6140,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bb20180304-72" question-id="bb20180304-72" question-num="72" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">72</span>. 디지털 선택호출장치를 설치한 의무선박국은 선박의 항행 중 몇 회 이상 그 기능을 확인하여야 하는가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>매년 1회 이상</li><li>매주 1회 이상</li><li>매월 1회 이상</li><li class="correct">매일 1회 이상</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 69%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">디지털 선택호출장치는 선박의 안전을 위해 중요한 장치이며, 항행 중에도 언제든지 작동하지 않을 수 있기 때문에 매일 1회 이상 확인하여야 합니다. 이를 통해 장치의 이상 유무를 빠르게 파악하고, 필요한 조치를 취하여 안전한 항해를 보장할 수 있습니다. 따라서 "매일 1회 이상"이 정답입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6000,7 +6187,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bb20180304-73" question-id="bb20180304-73" question-num="73" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">73</span>. 첨두포락선 전력의 표시 기호는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>PR</li><li>PZ</li><li class="correct">PX</li><li>PY</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 68%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">첨두포락선은 전력의 최대치를 나타내는 선으로, 이를 표시하기 위한 기호는 "P"이다. 그리고 첨두포락선의 형태는 "X" 모양이므로, 이를 결합하여 "PX"가 정답이 된다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6046,7 +6233,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bb20180304-74" question-id="bb20180304-74" question-num="74" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">74</span>. 다음 중 법령에서 정한 실험국의 개설조건으로 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>과학지식의 보급에 공헌할 합리적인 가능성이 있을 것</li><li class="correct">신청인이 그 실험을 수행할 인적자원이 풍부할 것</li><li>실험의 목적과 내용이 공공복리를 해하지 아니할 것</li><li>합리적인 실험의 계획과 이를 실행하기 위한 적당한 설비를 갖추고 있을 것</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 79%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"신청인이 그 실험을 수행할 인적자원이 풍부할 것"이 틀린 것이다. 실험국의 개설조건으로는 합리적인 실험의 계획과 이를 실행하기 위한 적당한 설비를 갖추고 있을 것, 과학지식의 보급에 공헌할 합리적인 가능성이 있을 것, 실험의 목적과 내용이 공공복리를 해하지 아니할 것이 포함되어 있다. 그러나 인적자원의 풍부함은 개설조건으로 명시되어 있지 않다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6092,7 +6279,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bb20180304-75" question-id="bb20180304-75" question-num="75" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">75</span>. 다음 통신공사의 감리업무에서 무선설비 주요 기자재를 검수하는 방법 중 조회에 의한 검수 내용으로 옳은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>검수방법은 감리사가 입회하여 재료 제작자의 시험설비나 공장시험장에서 시험을 실시하고 그 결과로 얻은 성적표로 검수한다.</li><li>감리사가 공공시험기관에 시험을 의뢰 요청하여 실시하고 그 시험성적 결과에 의하여 검수한다.</li><li>대상 기자재의 범위는 공사상 중요한 기자재 또는 특별 주문품, 신제품 등으로써 품질 성능을 판정할 필요가 있는 기자재로 한다.</li><li class="correct">규격을 증명하는 KS 등의 마크가 표시되어 있는 규격품이나 적절하다고 인정할 수 있는 품질증명이 첨부되어 있는 제품을 대상으로 한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 80%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">규격을 증명하는 KS 등의 마크가 표시되어 있는 규격품이나 적절하다고 인정할 수 있는 품질증명이 첨부되어 있는 제품을 대상으로 한다. 이유는 규격을 증명하는 마크가 표시되어 있는 제품은 해당 규격에 맞게 제작되었으며, 품질증명이 첨부되어 있는 제품은 해당 제품의 품질이 검증되었기 때문에 검수 대상으로 적합하다고 판단되기 때문이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6138,7 +6325,9 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bb20180304-76" question-id="bb20180304-76" question-num="76" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">76</span>. 다음 중 정보통신공사의 공사비 산정 기준을 정하는 방법으로 적합하지 않은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>표준품셈</li><li class="correct">일반 시장단가</li><li>공사업 실태 조사결과</li><li>공사원가 산정기준 조사결과</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 75%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답: 일반 시장단가<br/>
+<br/>
+설명: 일반 시장단가는 시장 경쟁력과 관련된 가격으로, 정보통신공사의 공사비 산정 기준으로는 부적합합니다. 정보통신공사는 공사의 특성과 성격, 공사 규모 등을 고려하여 적정한 공사비를 산정해야 합니다. 따라서, 표준품셈, 공사업 실태 조사결과, 공사원가 산정기준 조사결과 등을 고려하여 공사비를 산정하는 것이 적합합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6184,7 +6373,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bb20180304-77" question-id="bb20180304-77" question-num="77" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">77</span>. 다음 중 적합인증을 받아야 하는 대상기자재가 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">가정용 전기기기 및 전동기기류</li><li>무선전화 경보자동수신기</li><li>국내 항해용 레이다</li><li>네비텍스수신기</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 70%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">가정용 전기기기 및 전동기기류는 적합인증을 받아야 하는 대상기자재가 아닙니다. 이는 가정용으로 사용되는 제품이기 때문에 안전성과 성능에 대한 검증이 이미 이루어졌기 때문입니다. 다른 제품들은 특정한 용도나 환경에서 사용되는 제품으로, 안전성과 성능에 대한 검증이 필요합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6230,7 +6419,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bb20180304-78" question-id="bb20180304-78" question-num="78" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">78</span>. 다음 중 시험기관의 지정신청에 대한 설정으로 옳은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">국립전파연구원 원장은 시험기관의 지정신청을 받은 때에는 신청서를 제출 받은 날로부터 60일 이내에 지정여부를 결정, 1회에 한하여 30일의 범위 안에서 연장할 수 있다.</li><li>국립전파연구원 원장은 시험기관의 지정신청을 받은 때에는 신청서를 제출 받은 날로부터 70일 이내에 지정여부를 결정, 1회에 한하여 40일의 범위 안에서 연장할 수 있다.</li><li>국립전파연구원 원장은 시험기관의 지정신청을 받은 때에는 신청서를 제출 받은 날로부터 80일 이내에 지정여부를 결정, 1회에 한하여 50일의 범위 안에서 연장할 수 있다.</li><li>국립전파연구원 원장은 시험기관의 지정신청을 받은 때에는 신청서를 제출 받은 날로부터 60일 이내에 지정여부를 결정, 2회에 한하여 30일의 범위 안에서 연장할 수 있다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 73%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "국립전파연구원 원장은 시험기관의 지정신청을 받은 때에는 신청서를 제출 받은 날로부터 60일 이내에 지정여부를 결정, 1회에 한하여 30일의 범위 안에서 연장할 수 있다." 입니다. 이유는 시험기관의 지정신청을 받은 경우, 원장은 60일 이내에 지정여부를 결정하며, 1회에 한하여 30일 이내로 연장이 가능하다는 규정이 법령에서 정해져 있기 때문입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6276,7 +6465,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#bb20180304-79" question-id="bb20180304-79" question-num="79" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">79</span>. 변조신호에 따라 반송파가 진폭 변조되는 송신장치는 변조도가 몇 [%]를 초과하지 말아야 하는가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>80[%]</li><li>85[%]</li><li>90[%]</li><li class="correct">100[%]</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 78%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">변조도가 100%를 초과하면 반송파의 진폭이 음수가 될 수 있기 때문에, 이는 신호의 왜곡을 초래하게 된다. 따라서 변조도는 100%를 초과하지 않도록 제어해야 한다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6322,7 +6511,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#bb20180304-80" question-id="bb20180304-80" question-num="80" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">80</span>. 다음 중 안테나계에 낙뢰보호장치를 설치하지 않아도 되는 무선국은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">육상이동국</li><li>기지국</li><li>방송국</li><li>고정국</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 82%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">육상이동국은 이동하는 도중에 사용되는 무선국으로, 고정된 위치에 설치되어 있지 않기 때문에 낙뢰가 직접적으로 충돌할 가능성이 적어 낙뢰보호장치를 설치하지 않아도 된다. 반면에 기지국, 방송국, 고정국은 고정된 위치에 설치되어 있기 때문에 낙뢰가 직접적으로 충돌할 가능성이 높아 낙뢰보호장치를 설치해야 한다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>

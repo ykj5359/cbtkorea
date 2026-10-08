@@ -489,6 +489,15 @@ var g5_cookie_domain = ".cbtkorea.kr";
 
 <!-- CANONICAL-CBT -->
 <link rel="canonical" href="https://cbtkorea.kr/CBT/%EA%B3%84%EB%A6%AC%EC%A7%81%EA%B3%B5%EB%AC%B4%EC%9B%90-%EC%BB%B4%ED%93%A8%ED%84%B0-%EC%9D%BC%EB%B0%98/mm20080831.html">
+<!-- AI-EXP-RESTORED -->
+<style>
+    .reply .report-modal, .reply .loading, .reply .reply-component { display: none !important; }
+    .ai-exp { list-style: none; padding: 0; margin: 0 0 10px 0; }
+    .ai-exp:last-child { margin-bottom: 0; }
+    .ai-exp-label { font-size: 12px; font-weight: 700; color: #1d4ed8; margin-bottom: 6px; }
+    .ai-exp-label small { font-weight: 400; color: #6b7280; margin-left: 6px; }
+    .ai-exp-empty { font-size: 13px; color: #6b7280; }
+</style>
 </head>
 <body>
 <!-- 상단 시작 { -->
@@ -2660,7 +2669,9 @@ $(function(){
 <div class="row">
 <div class="exams col-12 col-sm-12 col-md-12">
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mm20080831-1" question-id="mm20080831-1" question-num="1" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">1</span>. UNIX 명령어 ls -l을 수행했을 때의 결과에 대한 설명으로 알맞지않은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>peter라는 사용자는 aaash 파일을 수정할 수 있다.</li><li>staff 그룹 사용자는 aaash 파일을 실행할 수 있다.</li><li class="correct">aaash 파일은 심볼릭 링크(symbolic link)가 2개 있다.</li><li>다른 사용자도 이 파일의 내용을 볼 수 있다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 63%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"다른 사용자도 이 파일의 내용을 볼 수 있다."는 ls -l 결과와 관련이 없는 설명이므로 알맞지 않은 것이다.<br/>
+<br/>
+aaash 파일은 심볼릭 링크(symbolic link)가 2개 있다는 것은 해당 파일이 다른 파일을 가리키는 링크 파일이 2개 있다는 뜻이다. 이 링크 파일들은 원본 파일과 동일한 권한을 가지므로, peter 사용자는 aaash 파일을 수정할 수 있고, staff 그룹 사용자는 aaash 파일을 실행할 수 있다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2706,7 +2717,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mm20080831-2" question-id="mm20080831-2" question-num="2" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">2</span>. 리눅스 운영체제에 대한 설명으로 알맞지 않은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">리눅스는 마이크로커널(microkernel) 방식으로 구현되었으며 커널 코드의 임의의 기능들을 동적으로 적재(load)하여 사용할 수 있다.</li><li>리눅스 커널 2.6 버전의 스케줄러는 임의의 프로세스를 선점할 수 있으며 우선순위 기반 알고리즘이다.</li><li>리눅스 운영체제는 윈도우 파일 시스템인 NTFS와 저널링 파일 시스템인 JFFS를 지원한다.</li><li>리눅스는 다중 사용자와 다중 프로세서를 지원하는 다중 작업형 운영체제이다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 30%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">리눅스는 마이크로커널(microkernel) 방식으로 구현되지 않았다. 리눅스는 모놀리틱(monolithic) 커널 방식으로 구현되었다. 모놀리틱 커널은 모든 시스템 기능을 하나의 커널 안에 구현하는 방식이며, 마이크로커널은 최소한의 기능만을 구현하고 나머지 기능은 유저 모드에서 실행되는 서비스로 분리하는 방식이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2752,7 +2763,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mm20080831-3" question-id="mm20080831-3" question-num="3" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">3</span>. 다음 중 객체지향 언어의 특징으로 알맞지 않은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>상속성</li><li>다형성</li><li class="correct">구조화</li><li>추상화</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 80%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">구조화는 객체지향 언어의 특징이 아닙니다. 구조화는 프로그램을 구조적으로 분해하여 모듈화하고, 각 모듈을 함수로 구현하는 것을 말합니다. 이는 구조적 프로그래밍의 특징입니다. 객체지향 언어의 특징으로는 상속성, 다형성, 추상화 등이 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2798,7 +2809,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mm20080831-4" question-id="mm20080831-4" question-num="4" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">4</span>. 다음 중 시스템 소프트웨어로 알맞지 않은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>윈도우 XP</li><li>리눅스</li><li class="correct">워드프로세서</li><li>컴파일러</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 74%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">워드프로세서는 문서 작성을 위한 응용 소프트웨어이며, 시스템 소프트웨어가 아닙니다. 시스템 소프트웨어는 운영체제, 드라이버, 컴파일러 등과 같이 컴퓨터 시스템의 기본적인 동작을 제어하고 관리하는 소프트웨어를 말합니다. 따라서 정답은 "워드프로세서"입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2844,7 +2855,11 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mm20080831-5" question-id="mm20080831-5" question-num="5" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">5</span>. 운영체제에서 교착상태(deadlock)가 발생할 필요 조건으로 알맞지 않은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>환형 대기(circular wait) 조건으로 각 프로세스는 순환적으로 다음 프로세스가 요구하는 자원을 가지고 있다.</li><li class="correct">선점(preemption) 조건으로 프로세스가 소유하고 있는 자원은 다른 프로세스에 의해 선점될 수 있다.</li><li>점유하며 대기(hold and wait) 조건으로 프로세스는 할당된 자원을 가진 상태에서 다른 자원을 기다린다.</li><li>상호 배제(mutual exclusion) 조건으로 프로세스들은 필요로 하는 자원에 대해 배타적인 통제권을 갖는다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 57%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">선점(preemption) 조건으로 프로세스가 소유하고 있는 자원은 다른 프로세스에 의해 선점될 수 있다는 것은 교착상태 발생 필요 조건 중 하나가 아닙니다.<br/>
+<br/>
+선점 조건은 자원을 사용 중인 프로세스가 강제로 자원을 반납하고 다른 프로세스가 사용할 수 있도록 하는 것을 말합니다. 이는 교착상태를 예방하는 방법 중 하나입니다. 따라서 선점 조건은 교착상태 발생 필요 조건이 아니라 교착상태 예방 조건입니다.<br/>
+<br/>
+따라서 정답은 "선점(preemption) 조건으로 프로세스가 소유하고 있는 자원은 다른 프로세스에 의해 선점될 수 있다."입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2890,7 +2905,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mm20080831-6" question-id="mm20080831-6" question-num="6" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">6</span>. 자신을 타인이나 다른 시스템에게 속이는 행위를 의미하며 침입하고자 하는 호스트의 IP 주소를 바꾸어서 해킹하는 기법을 가리키는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">Spoofing</li><li>Sniffing</li><li>Phishing</li><li>DoS 공격</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 52%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">Spoofing은 자신의 실제 IP 주소를 숨기고 다른 IP 주소를 사용하여 호스트에 접근하는 기법을 의미한다. 이를 통해 해커는 자신의 실제 위치를 숨기고, 다른 사람이나 시스템으로 위장하여 침입하거나 공격할 수 있다. 따라서, "Spoofing"이 정답이다. Sniffing은 네트워크 상에서 데이터를 가로채는 기법, Phishing은 사이버 범죄에서 사용되는 사기 기법, DoS 공격은 서비스 거부 공격을 의미한다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2936,7 +2951,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mm20080831-7" question-id="mm20080831-7" question-num="7" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">7</span>. RAID(Redundant Array of Inexpensive Disks)에 대한 설명으로 알맞지 않은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>RAID-0는 디스크 스트라이핑(disk striping) 방식으로 중복 저장과 오류 검출 및 교정이 없는 방식이다.</li><li>RAID-1은 디스크 미러링(disk mirroring) 방식이며 높은 신뢰도를 갖는 방식이다.</li><li class="correct">RAID-4는 데이터를 비트 단위로 여러 디스크에 분할하여 저장하며 별도의 패리티 디스크를 사용한다.</li><li>RAID-5는 패리티 블록들을 여러 디스크에 분산 저장하는 방식이며 단일 오류 검출 및 교정이 가능한 방식이다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 53%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"RAID-4는 데이터를 비트 단위로 여러 디스크에 분할하여 저장하며 별도의 패리티 디스크를 사용한다."가 알맞지 않은 설명이다. RAID-4는 데이터를 블록 단위로 분할하여 저장하며, 별도의 패리티 디스크를 사용한다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2982,7 +2997,9 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mm20080831-8" question-id="mm20080831-8" question-num="8" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">8</span>. 캐시 기억 장치(cache memory)에 대한 설명으로 알맞지 않은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">직접 사상(direct mapping) 방식은 주기억장치의 임의의 블록들이 어떠한 슬롯으로든 사상될 수 있는 방식이다.</li><li>세트-연관 사상(set-associative mapping) 방식은 직접 사상 방식과 연관사상(associative mapping) 방식을 혼합한 방식이다.</li><li>슬롯의 수가 128개인 4-way 연관 사상 방식인 경우 슬롯을 공유하는 주기억 장치 블록들이 4개의 슬롯으로 적재될 수 있는 방식이다.</li><li>캐시 쓰기 정책(cache write policy)은 write through 방식과 write back 방식 등이 있다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 46%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"직접 사상(direct mapping) 방식은 주기억장치의 임의의 블록들이 어떠한 슬롯으로든 사상될 수 있는 방식이다."가 알맞지 않은 설명이다.<br/>
+<br/>
+직접 사상 방식은 주기억장치의 블록들을 고정된 슬롯에 사상하는 방식이다. 예를 들어, 캐시 메모리가 8개의 슬롯을 가지고 있다면, 주기억장치의 블록들은 항상 고정된 슬롯 중 하나에만 적재된다. 따라서 "어떠한 슬롯으로든 사상될 수 있는 방식"이 아니라, 고정된 슬롯에 사상되는 방식이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3029,7 +3046,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mm20080831-9" question-id="mm20080831-9" question-num="9" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">9</span>. 데이터통신 흐름 제어 방식인 Go-Back-N ARQ에서 6번 프레임까지 전송을 하였는데 수신측에서 3번 프레임에 오류가 있다고 재전송을 요청해 왔을 경우 재전송되는 프레임의 수는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>1개</li><li>2개</li><li>3개</li><li class="correct">4개</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 42%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">Go-Back-N ARQ에서는 수신측에서 오류가 발생한 프레임부터 다시 전송을 시작하게 된다. 따라서 3번 프레임에 오류가 발생했다면, 3번, 4번, 5번, 6번 프레임이 모두 재전송되어야 한다. 따라서 정답은 "4개"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3075,7 +3092,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mm20080831-10" question-id="mm20080831-10" question-num="10" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">10</span>. MS Access의 데이터베이스를 이용한 성적 테이블에서 적어도 2명 이상이 수강하는 과목에 대해 등록한 학생수와 평균점수를 구하기 위한 SQL 질의문을 작성할 경우 빈칸에 적절한 표현은?<img src="images/mm20080831m10.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>WHERE SUM(학번) &gt;= 2</li><li>WHERE COUNT(학번) &gt;= 2</li><li>HAVING SUM(학번) &gt;= 2</li><li class="correct">HAVING COUNT(학번) &gt;= 2</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 50%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">HAVING 절은 그룹화된 결과에 대한 조건을 지정하는 절이다. 따라서, "HAVING COUNT(학번) &gt;= 2"는 학번을 그룹화하여 학번이 2명 이상인 과목에 대해서만 결과를 출력하겠다는 의미이다. WHERE 절은 그룹화되기 전에 조건을 지정하는 것이므로, "WHERE COUNT(학번) &gt;= 2"는 그룹화되기 전에 학번이 2명 이상인 모든 데이터를 출력하겠다는 의미이다. 따라서, 정답은 "HAVING COUNT(학번) &gt;= 2"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3121,7 +3138,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mm20080831-11" question-id="mm20080831-11" question-num="11" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">11</span>. &lt;그림&gt;의 순서도를 표현하는 문장 형식으로 알맞은 것은?<img src="images/mm20080831m11.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">for문－while문－case문－do～while문</li><li>do～while문－for문－중첩조건문－조건문</li><li>for문－do～while문－중첩조건문－조건문</li><li>do～while문－조건문－case문－while문</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 54%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">그림에서는 먼저 for문이 실행되고, for문 안에서 while문이 실행된다. 그리고 while문 안에서는 switch문(case문)이 실행되고, switch문 안에서는 do-while문이 실행된다. 따라서 순서는 "for문－while문－case문－do～while문"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3167,7 +3184,15 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mm20080831-12" question-id="mm20080831-12" question-num="12" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">12</span>. 주어진 연도가 윤년인지를 판단하고자 한다. 연도가 400으로 나누어 떨어지거나, 4로 나누어떨어지면서 100으로 나누어 떨어지지 않은면 윤년이다. C언어에서 윤년을 계산하는 조건식으로 알맞은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>연도%4!=0 &amp;&amp;연도%100==0 || 연도%400!=0</li><li class="correct">연도%4==0 &amp;&amp;연도%100!=0 || 연도%400==0</li><li>연도%4!=0 &amp;&amp;연도%100==0 &amp;&amp;연도%400!=0</li><li>연도%4==0 &amp;&amp;연도%100!=0 &amp;&amp;연도%400==0</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 52%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "연도%4==0 &amp;&amp; 연도%100!=0 || 연도%400==0" 이다.<br/>
+<br/>
+이유는 다음과 같다.<br/>
+<br/>
+- 연도가 400으로 나누어 떨어지면 윤년이다. 이를 표현하기 위해 "연도%400==0"을 사용한다.<br/>
+- 연도가 100으로 나누어 떨어지면 윤년이 아니다. 이를 표현하기 위해 "연도%100!=0"을 사용한다.<br/>
+- 연도가 4로 나누어 떨어지면서 100으로 나누어 떨어지지 않으면 윤년이다. 이를 표현하기 위해 "연도%4==0"을 사용한다.<br/>
+<br/>
+따라서, "연도%4==0 &amp;&amp; 연도%100!=0 || 연도%400==0"은 연도가 윤년인지 판단하는 조건식으로 알맞다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3213,7 +3238,15 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mm20080831-13" question-id="mm20080831-13" question-num="13" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">13</span>. 10진수 461<sub>(10)</sub>을 16진수로 나타낸 값으로 맞는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>19A<sub>(16)</sub></li><li class="correct">1CD<sub>(16)</sub></li><li>1DB<sub>(16)</sub></li><li>2DF<sub>(16)</sub></li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 50%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">461을 16진수로 나타내기 위해서는 먼저 16의 제곱수 중에서 461보다 작은 가장 큰 수를 찾아야 한다. 16의 2제곱은 256이므로, 16의 3제곱인 4096보다 작은 가장 큰 수는 16의 2제곱인 256이다. <br/>
+<br/>
+따라서, 461을 16진수로 나타내기 위해서는 16의 2제곱인 256으로 나눈 몫과 나머지를 구해야 한다. <br/>
+<br/>
+461 ÷ 256 = 1 ... 2⑤ <br/>
+<br/>
+나머지 2⑤를 16진수로 나타내면 CD이다. <br/>
+<br/>
+따라서, 461<sub>(10)</sub>을 16진수로 나타낸 값은 1CD<sub>(16)</sub>이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3259,7 +3292,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mm20080831-14" question-id="mm20080831-14" question-num="14" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">14</span>. 임의의 자료에서 최소값 또는 최대값을 구할 경우 가장 적합한 자료구조는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>이진탐색트리</li><li>스택(stack)</li><li class="correct">힙(heap)</li><li>해쉬(hash)</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 39%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">힙은 최소값 또는 최대값을 빠르게 찾을 수 있는 자료구조이다. 이진탐색트리는 탐색에 특화된 자료구조이고, 스택은 후입선출 구조로 최소값 또는 최대값을 찾는 데 적합하지 않다. 해쉬는 키-값 쌍을 저장하는 자료구조로 최소값 또는 최대값을 찾는 데 적합하지 않다. 따라서, 최소값 또는 최대값을 구할 때 가장 적합한 자료구조는 힙이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3305,7 +3338,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mm20080831-15" question-id="mm20080831-15" question-num="15" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">15</span>. OSI 참조 모델에서 송수신지의 IP 주소를 헤더에 포함하여 전송하는 논리주소 지정 기능과 송신지에서 수신지까지 데이터가 전송될 수 있도록 최단 전송 경로를 선택하는 라우팅 기능 등을 수행하는 계층으로 옳은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>데이터링크 계층</li><li class="correct">네트워크 계층</li><li>전송 계층</li><li>세션 계층</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 58%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">네트워크 계층은 IP 주소를 헤더에 포함하여 전송하고, 최단 전송 경로를 선택하는 라우팅 기능을 수행하는 계층입니다. 따라서 이러한 기능들을 수행하는 계층은 네트워크 계층입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3351,7 +3384,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mm20080831-16" question-id="mm20080831-16" question-num="16" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">16</span>. 인터넷에서는 도메인 주소를 IP 주소로 변환시켜주는 컴퓨터가 있어야 하는데 이러한 컴퓨터의 이름으로 알맞은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>PROXY 서버</li><li>DHCP 서버</li><li>WEB 서버</li><li class="correct">DNS 서버</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 64%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">DNS 서버는 도메인 이름을 IP 주소로 변환시켜주는 역할을 합니다. 따라서 인터넷에서 도메인 이름을 입력하면 DNS 서버가 해당 도메인 이름에 대한 IP 주소를 찾아서 반환해주는 역할을 합니다. 이를 통해 사용자는 도메인 이름을 통해 웹사이트에 접속할 수 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3398,7 +3431,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mm20080831-17" question-id="mm20080831-17" question-num="17" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">17</span>. 컴퓨터 네트워크상에서 음성 데이터를 IP 데이터 패킷으로 변환하여 전화 통화와 같이 음성 통화를 가능케 해 주는 기술로 알맞은 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>VPN</li><li>IPSec</li><li>IPv6</li><li class="correct">VoIP</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 60%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">VoIP는 Voice over Internet Protocol의 약자로, 음성 데이터를 IP 데이터 패킷으로 변환하여 인터넷을 통해 전송하는 기술입니다. 따라서 인터넷을 통해 음성 통화를 할 수 있게 해주는 기술이라고 할 수 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3444,7 +3477,28 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mm20080831-18" question-id="mm20080831-18" question-num="18" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">18</span>. 오디오 CD에 있는 100초 분량의 노래를 MP3 음질의 압축되지 않은 WAV 데이터로 변환하여 저장하고자 한다. 변환시 WAV 파일의 크기는 대략 얼마인가? (단, MP3 음질은 샘플링율이 44.1KHz, 샘플당 비트수는 16bit이고 스테레오이다. 1K = 1,000으로 계산함)</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>141.1KB</li><li>8.8MB</li><li class="correct">17.6MB</li><li>70.5MB</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 52%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">100초 분량의 노래를 WAV 파일로 변환하려면 다음과 같이 계산할 수 있다.<br/>
+<br/>
+- 샘플링율: 44.1KHz<br/>
+- 샘플당 비트수: 16bit<br/>
+- 스테레오<br/>
+<br/>
+따라서, 1초당 데이터 용량은 다음과 같다.<br/>
+<br/>
+= (44,100 샘플/초) x (16비트/샘플) x (2채널) / 8 (비트/바이트)<br/>
+= 176,400 바이트/초<br/>
+<br/>
+100초 분량의 데이터 용량은 다음과 같다.<br/>
+<br/>
+= 176,400 바이트/초 x 100초<br/>
+= 17,640,000 바이트<br/>
+<br/>
+이를 MB 단위로 변환하면 다음과 같다.<br/>
+<br/>
+= 17,640,000 바이트 / (1,000 x 1,000)<br/>
+= 16.8 MB<br/>
+<br/>
+따라서, WAV 파일의 크기는 대략 17.6MB이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3490,7 +3544,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#mm20080831-19" question-id="mm20080831-19" question-num="19" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">19</span>. &lt;그림&gt;은 전자계산기(Calculator)를 객체지향적으로 분석한 다이어그램이다. 어떤 다이어그램인가?<img src="images/mm20080831m19.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">Usecase Diagram</li><li>Sequence Diagram</li><li>State Diagram</li><li>Class Diagram</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 57%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">이 다이어그램은 사용자의 요구사항과 시스템의 기능을 나타내는 Usecase Diagram이다. Usecase Diagram은 시스템의 기능을 사용자의 관점에서 표현하며, 시스템과 사용자 간의 상호작용을 보여준다. 이 다이어그램에서는 사용자가 계산기를 사용하는 시나리오를 나타내고 있다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3536,7 +3590,15 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#mm20080831-20" question-id="mm20080831-20" question-num="20" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">20</span>. MS Excel의 워크시트에서 D4셀에 =RIGHT(C4,LEN(C4)-4)&amp;"****"을 입력했을 때 결과 값으로 알맞은 것은?<img src="images/mm20080831m20.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>****2119-9019</li><li>019-2119-****</li><li>019-****-9019</li><li class="correct">2119-9019****</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 46%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "2119-9019****"입니다.<br/>
+<br/>
+이유는 다음과 같습니다.<br/>
+<br/>
+=RIGHT(C4,LEN(C4)-4)&amp;"****"<br/>
+<br/>
+위 수식은 C4 셀의 문자열에서 처음 4글자를 제외한 나머지 문자열 뒤에 "****"를 붙인 값을 D4 셀에 출력하는 것입니다.<br/>
+<br/>
+따라서 C4 셀의 값인 "019-2119-9019"에서 처음 4글자 "019-"를 제외한 나머지 "2119-9019" 뒤에 "****"를 붙인 "2119-9019****"가 D4 셀에 출력됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>

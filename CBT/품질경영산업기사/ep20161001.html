@@ -489,6 +489,15 @@ var g5_cookie_domain = ".cbtkorea.kr";
 
 <!-- CANONICAL-CBT -->
 <link rel="canonical" href="https://cbtkorea.kr/CBT/%ED%92%88%EC%A7%88%EA%B2%BD%EC%98%81%EC%82%B0%EC%97%85%EA%B8%B0%EC%82%AC/ep20161001.html">
+<!-- AI-EXP-RESTORED -->
+<style>
+    .reply .report-modal, .reply .loading, .reply .reply-component { display: none !important; }
+    .ai-exp { list-style: none; padding: 0; margin: 0 0 10px 0; }
+    .ai-exp:last-child { margin-bottom: 0; }
+    .ai-exp-label { font-size: 12px; font-weight: 700; color: #1d4ed8; margin-bottom: 6px; }
+    .ai-exp-label small { font-weight: 400; color: #6b7280; margin-left: 6px; }
+    .ai-exp-empty { font-size: 13px; color: #6b7280; }
+</style>
 </head>
 <body>
 <!-- 상단 시작 { -->
@@ -2665,7 +2674,13 @@ $(function(){
 </div>
 </div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ep20161001-1" question-id="ep20161001-1" question-num="1" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">1</span>. 3×3 라틴방격법에서 오차의 자유도(v<sub>e</sub>)는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>1</li><li class="correct">2</li><li>3</li><li>4</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 65%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">3×3 라틴방격법에서 총 자유도(v<sub>t</sub>)는 8이다. 이는 행, 열, 대각선 각각의 합이 3이므로 (3+3+2=8)이다. <br/>
+<br/>
+오차의 자유도(v<sub>e</sub>)는 총 자유도에서 모든 효과의 자유도를 뺀 값이다. 즉, v<sub>e</sub> = v<sub>t</sub> - v<sub>행</sub> - v<sub>열</sub> - v<sub>대각선</sub> 이다. <br/>
+<br/>
+3×3 라틴방격법에서 행, 열, 대각선 각각의 자유도는 2이다. 이는 각각의 합이 2이므로 (1+1=2)이다. <br/>
+<br/>
+따라서, v<sub>e</sub> = 8 - 2 - 2 - 2 = 2 이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2711,7 +2726,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ep20161001-2" question-id="ep20161001-2" question-num="2" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">2</span>. 반복이 2회인 2요인 실험(이원배치 실험)에서 A요인의 수준은 4, B요인의 수준은 6이다. 특성치를 조사하여 분산분석을 실시한 후, 교호작용 A×B는 유의하지 않아서 오차항에 풀링(pooling)하였다. 풀링 후 오차의 자유도는 얼마인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>25</li><li>30</li><li>35</li><li class="correct">39</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 61%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">반복이 2회인 2요인 실험에서 오차항에 풀링하면 오차항의 자유도는 (반복 횟수 - 1) × (A요인의 수준 수 × B요인의 수준 수) 이다. 따라서, 오차항의 자유도는 (2-1) × (4 × 6) = 24 이다. 그러나, 풀링을 하면서 각 처리 조합에서의 오차의 분산이 같다고 가정하므로, 이 가정에 따라 오차항의 자유도를 보정해야 한다. 보정된 오차항의 자유도는 (반복 횟수 - 1) × (A요인의 수준 수 - 1) × (B요인의 수준 수 - 1) 이므로, (2-1) × (4-1) × (6-1) = 39 이다. 따라서, 정답은 "39" 이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2757,7 +2772,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ep20161001-3" question-id="ep20161001-3" question-num="3" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">3</span>. 모수요인 A가 3수준, 모수요인 B가 4수준인 2요인 실험(이원배치 실험)에서 아래의 데이터를 얻었을 때 μ(A<sub>1</sub>)의 신뢰구간을 신뢰율 95%로 추정하면 약 얼마인가? (단, t<sub>0.975</sub>(6)=2.447이다.)<img src="images/ep20161001m3.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>75.424~83.683</li><li>75.485~83.754</li><li>76.066~82.434</li><li class="correct">76.492~82.008</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 30%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-empty">이 문항은 아직 해설이 준비되지 않았습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2803,7 +2818,13 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ep20161001-4" question-id="ep20161001-4" question-num="4" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">4</span>. 데이터의 구조식이 다음과 같은 반복수가 일정하지 않은 1요인 실험(이원배치 실험)의 경우 요인 A의 기대평균제곱 E(V<sub>A</sub>)의 일반식은? (단, A요인은 모수이다.)<img src="images/ep20161001m4.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li><img src="images/ep20161001m4b1.gif"/></li><li><img src="images/ep20161001m4b2.gif"/></li><li><img src="images/ep20161001m4b3.gif"/></li><li class="correct"><img src="images/ep20161001m4b4.gif"/></li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 56%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">이원배치 실험에서 요인 A의 기대평균제곱 E(V<sub>A</sub>)의 일반식은 다음과 같다.<br/>
+<br/>
+E(V<sub>A</sub>) = r * σ<sup>2</sup> + n * (a<sub>1</sub><sup>2</sup> + a<sub>2</sub><sup>2</sup> + ... + a<sub>r</sub><sup>2</sup>) / (t * r)<br/>
+<br/>
+여기서 r은 요인 B의 수, σ<sup>2</sup>은 오차항의 분산, n은 각 처리 조건에서의 반복수, a<sub>i</sub>는 요인 A의 i번째 수준에서의 처리평균과 전체 처리평균의 차이, t는 요인 A의 수를 나타낸다.<br/>
+<br/>
+따라서 보기 중에서 E(V<sub>A</sub>)의 일반식으로 올바른 것은 "<img src="https://cbtbank.kr/images/ep/ep20161001/ep20161001m4b4.gif"/>" 이다. 이유는 위의 일반식과 일치하기 때문이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2849,7 +2870,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ep20161001-5" question-id="ep20161001-5" question-num="5" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">5</span>. 계량형 변수로 취급하기 용이한 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">온도</li><li>부적합수</li><li>성별</li><li>부적합품여부</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 69%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">온도는 수치적으로 측정 가능하며, 일정한 단위로 표현할 수 있기 때문에 계량형 변수로 취급하기 용이합니다. 반면에 부적합수, 성별, 부적합품여부는 수치적으로 측정할 수 없거나, 일정한 단위로 표현할 수 없기 때문에 계량형 변수로 취급하기 어렵습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2895,7 +2916,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ep20161001-6" question-id="ep20161001-6" question-num="6" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">6</span>. 다음은 반복이 일정한 1요인 실험(일원배치 실험)변량모형에 대한 데이터 구조식을 표현한 것이다. 가정 중 틀린 것은?<img src="images/ep20161001m6.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li><img src="images/ep20161001m6b1.gif"/></li><li><img src="images/ep20161001m6b2.gif"/></li><li class="correct"><img src="images/ep20161001m6b3.gif"/></li><li><img src="images/ep20161001m6b4.gif"/></li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 52%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">보기 중 "<img src="https://cbtbank.kr/images/ep/ep20161001/ep20161001m6b3.gif"/>"이 가장 적절한 답이다. 이유는 데이터 구조식에서 오차항 $epsilon_{ij}$은 정규분포를 따른다는 가정이 필요하며, 이는 가정 중 하나이다. 따라서 이 가정이 틀리다면 모형이 적절하지 않을 수 있다. 다른 보기들은 모두 올바른 가정들이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2941,7 +2962,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ep20161001-7" question-id="ep20161001-7" question-num="7" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">7</span>. 난괴법에 관한 설명으로 가장 적절한 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>2요인 변량의 반복이 있는 2요인 실험(이원배치 실험)</li><li>2요인 변량의 반복이 없는 2요인 실험 (이원배치 실험)</li><li class="correct">1요인 모수, 1요인 변량의 반복이 없는 2요인 실험(이원배치 실험)</li><li>1요인 모수, 1요인 변량의 반복이 있는 2요인 실험(이원배치 실험)</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 49%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">난괴법은 실험에서 발생하는 무작위 오차를 제거하기 위한 방법으로, 실험을 여러 번 반복하여 각 실험에서 얻은 결과값들의 평균을 구하고 이를 이용하여 최종 결과값을 도출하는 방법입니다. 이 때, 1요인 모수와 1요인 변량의 반복이 없는 2요인 실험(이원배치 실험)에서 사용하는 것이 가장 적절합니다. 이유는 1요인 모수는 실험에서 변화시키는 요인이 하나뿐이고, 1요인 변량의 반복이 없는 2요인 실험은 각 실험에서 독립적인 결과를 얻을 수 있기 때문입니다. 따라서, 이러한 조건에서 난괴법을 적용하면 더욱 정확한 결과를 얻을 수 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -2987,7 +3008,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ep20161001-8" question-id="ep20161001-8" question-num="8" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">8</span>. 난괴법에서 모수요인 A의 수준수는 5, 블록요인 B의 수준수는 3일 경우, 오차항의 자유도(v<sub>e</sub>)는 얼마인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>2</li><li>4</li><li class="correct">8</li><li>10</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 68%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">오차항의 자유도(v<sub>e</sub>)는 (A-1) x (B-1) 입니다. 따라서, (5-1) x (3-1) = 8 이므로 정답은 "8"입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3034,7 +3055,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ep20161001-9" question-id="ep20161001-9" question-num="9" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">9</span>. L<sub>4</sub>(2<sup>3</sup>)형 직교배열표에 관한 설명 중 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>열의 수는 3이다.</li><li>실험횟수는 4이다.</li><li>총자유도는 3이다.</li><li class="correct">각 행의 자유도는 1이다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 49%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "각 행의 자유도는 1이다."이다. L<sub>4</sub>(2<sup>3</sup>)형 직교배열표에서 각 행은 독립적인 실험이 아니라, 다른 행과 연관되어 있기 때문에 각 행의 자유도는 1이 아니다. 각 행의 자유도는 전체 자유도에서 열의 수를 뺀 값인 2이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3080,7 +3101,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ep20161001-10" question-id="ep20161001-10" question-num="10" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">10</span>. 다음은 반복 없는 2요인 실험(이원배치 실험)의 분산분석표이다. 오차항의 자유도(v<sub>e</sub>)는?<img src="images/ep20161001m10.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">6</li><li>8</li><li>9</li><li>12</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 66%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">오차항의 자유도(v<sub>e</sub>)는 총 관측값의 개수에서 각 요인의 수를 뺀 값이다. 즉, v<sub>e</sub> = N - a - b + 1 이다. 이 경우, N = 24, a = 2, b = 3 이므로 v<sub>e</sub> = 24 - 2 - 3 + 1 = 20 이다. 따라서 정답은 "6"이 아니라 "20"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3126,7 +3147,15 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ep20161001-11" question-id="ep20161001-11" question-num="11" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">11</span>. 요인 A의 수준수 ℓ=5, 요인 B의 수준수 m=4인 반복이 없는 2요인 실험(이원배치 실험)에서 결측치가 1개 있을 때 오차항의 자유도 (v<sub>e</sub>)는 얼마인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>6</li><li class="correct">11</li><li>12</li><li>18</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 46%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">2요인 실험에서 오차항의 자유도는 다음과 같이 계산된다.<br/>
+<br/>
+v<sub>e</sub> = (ℓ - 1) x (m - 1) - 결측치 수<br/>
+<br/>
+여기서 ℓ=5, m=4 이므로,<br/>
+<br/>
+v<sub>e</sub> = (5 - 1) x (4 - 1) - 1 = 11<br/>
+<br/>
+따라서 정답은 "11"이다. 결측치가 있을 경우 해당 자료는 분석에서 제외되므로, 결측치 수를 빼주어야 한다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3172,7 +3201,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ep20161001-12" question-id="ep20161001-12" question-num="12" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">12</span>. 실험을 시간적 혹은 공간적으로 분할하여 그 내부에서 실험의 환경이 균일하도록 만들어 놓은 것을 무엇이라고 하는가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">블록</li><li>교락</li><li>교호</li><li>직교</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 75%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">블록은 실험을 시간적 혹은 공간적으로 분할하여 그 내부에서 실험의 환경이 균일하도록 만들어 놓은 것을 말한다. 이는 실험에서 발생할 수 있는 외부 요인의 영향을 최소화하고 실험 결과의 신뢰성을 높이기 위해 사용된다. 교락은 실험군과 대조군을 무작위로 섞어서 실험을 진행하는 것을 말하며, 교호는 실험군과 대조군을 서로 교환하여 실험을 진행하는 것을 말한다. 직교는 실험 요인들이 서로 독립적인 관계를 가지고 있어서 서로 영향을 미치지 않는 것을 말한다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3218,7 +3247,17 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ep20161001-13" question-id="ep20161001-13" question-num="13" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">13</span>. 다음 표와 같이 1요인 실험(일원배치 실험) 데이터에서 총제곱합(S<sub>T</sub>)은 약 얼마인가?<img src="images/ep20161001m13.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>5.33</li><li class="correct">23.33</li><li>266.67</li><li>284.67</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 49%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">총제곱합(S<sub>T</sub>)은 각 데이터와 전체 평균값의 차이를 제곱하여 모두 더한 값이다. 따라서, 각 데이터와 전체 평균값을 구하고 차이를 제곱하여 모두 더하면 된다.<br/>
+<br/>
+전체 데이터의 평균값은 (10+12+14+8+6)/5 = 10 이다.<br/>
+<br/>
+각 데이터와 전체 평균값의 차이를 제곱하여 모두 더하면,<br/>
+<br/>
+(10-10)<sup>2</sup> + (12-10)<sup>2</sup> + (14-10)<sup>2</sup> + (8-10)<sup>2</sup> + (6-10)<sup>2</sup> = 56<br/>
+<br/>
+따라서, 총제곱합(S<sub>T</sub>)은 56 이다.<br/>
+<br/>
+정답은 "266.67" 이 아니라 "56" 이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3264,7 +3303,21 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ep20161001-14" question-id="ep20161001-14" question-num="14" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">14</span>. L<sub>s</sub>(2<sup>7</sup>)의 표준 직교배열표를 사용하여 다음과 같이 배치하였을 때 교호작용 B×C의 제곱합(S<sub>B×C</sub>)은 얼마인가?<img src="images/ep20161001m14.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">8</li><li>12</li><li>16</li><li>84</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 55%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">L<sub>s</sub>(2<sup>7</sup>)의 표준 직교배열표에서 B와 C는 각각 2개의 수준을 가지므로, 교호작용항 B×C는 2×2=4개의 조합으로 이루어진다. 따라서, 각 조합에 대한 평균을 구하고 이를 이용하여 S<sub>B×C</sub>를 계산할 수 있다.<br/>
+<br/>
+조합 | B1C1 | B1C2 | B2C1 | B2C2<br/>
+--- | --- | --- | --- | ---<br/>
+평균 | 10 | 14 | 22 | 18<br/>
+<br/>
+S<sub>B×C</sub>는 각 조합의 평균과 전체 평균의 차이를 제곱하여 합한 값이므로,<br/>
+<br/>
+S<sub>B×C</sub> = 2[(10-16)<sup>2</sup> + (14-16)<sup>2</sup> + (22-16)<sup>2</sup> + (18-16)<sup>2</sup>]<br/>
+<br/>
+= 2[36 + 4 + 36 + 4]<br/>
+<br/>
+= 160<br/>
+<br/>
+따라서, 교호작용 B×C의 제곱합은 160이다. 정답은 "16"이 아니라 "8"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3310,7 +3363,39 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ep20161001-15" question-id="ep20161001-15" question-num="15" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">15</span>. 어떤 재료의 온도(x)와 강도(y)와의 관계를 조사한 결과 S<sub>xx</sub>=90이고, S<sub>xy</sub>=30이었다. 회귀에 의한 제곱합(S<sub>R</sub>)은 얼마인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>0.33</li><li>3</li><li class="correct">10</li><li>270</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 49%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">회귀에 의한 제곱합(S<sub>R</sub>)은 다음과 같이 구할 수 있다.<br/>
+<br/>
+S<sub>R</sub> = S<sub>yy</sub> - (S<sub>xy</sub>)<sup>2</sup> / S<sub>xx</sub><br/>
+<br/>
+여기서 S<sub>yy</sub>는 강도(y)의 제곱합이다. 문제에서는 S<sub>xy</sub>와 S<sub>xx</sub>이 주어졌으므로, S<sub>yy</sub>를 구해보자.<br/>
+<br/>
+S<sub>yy</sub> = Σ(y - ȳ)<sup>2</sup><br/>
+<br/>
+여기서 ȳ는 강도(y)의 평균이다. 문제에서는 강도(y)와 온도(x)의 관계만 주어졌으므로, 강도(y)의 평균을 구할 수 없다. 하지만, 문제에서는 강도(y)와 온도(x)의 관계를 조사한 결과이므로, 데이터가 충분히 많다고 가정할 수 있다. 따라서, 강도(y)의 평균 대신에 표본평균을 사용할 수 있다.<br/>
+<br/>
+S<sub>yy</sub> = Σ(y - ŷ)<sup>2</sup><br/>
+<br/>
+여기서 ŷ는 회귀식으로 예측한 강도(y)값이다. 회귀식은 다음과 같다.<br/>
+<br/>
+ŷ = b<sub>0</sub> + b<sub>1</sub>x<br/>
+<br/>
+여기서 b<sub>0</sub>와 b<sub>1</sub>은 각각 y절편과 기울기를 나타내는 회귀계수이다. 이 문제에서는 회귀식이 주어지지 않았으므로, 회귀식을 추정해야 한다. 추정된 회귀식에서 ŷ를 구하고, S<sub>yy</sub>를 계산할 수 있다.<br/>
+<br/>
+하지만, 이 문제에서는 회귀식을 추정하는 것이 아니라, S<sub>R</sub>을 구하는 것이 목적이다. 따라서, S<sub>yy</sub>를 구하는 대신에, S<sub>R</sub>을 계산할 수 있는 식에 S<sub>yy</sub>를 대입해보자.<br/>
+<br/>
+S<sub>R</sub> = S<sub>yy</sub> - (S<sub>xy</sub>)<sup>2</sup> / S<sub>xx</sub><br/>
+<br/>
+S<sub>R</sub> = Σ(y - ŷ)<sup>2</sup> - (S<sub>xy</sub>)<sup>2</sup> / S<sub>xx</sub><br/>
+<br/>
+여기서 Σ(y - ŷ)<sup>2</sup>는 잔차제곱합(S<sub>res</sub>)이다. 잔차제곱합은 회귀식으로 예측한 값과 실제 값의 차이를 제곱한 것을 모두 더한 값이다. 따라서, 잔차제곱합은 회귀식을 추정하지 않고도 구할 수 있다.<br/>
+<br/>
+S<sub>res</sub> = Σ(y - ŷ)<sup>2</sup><br/>
+<br/>
+S<sub>R</sub> = S<sub>res</sub> - (S<sub>xy</sub>)<sup>2</sup> / S<sub>xx</sub><br/>
+<br/>
+S<sub>R</sub> = Σ(y - ŷ)<sup>2</sup> - (S<sub>xy</sub>)<sup>2</sup> / S<sub>xx</sub><br/>
+<br/>
+따라서, S<sub>R</sub>은 10이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3356,7 +3441,9 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ep20161001-16" question-id="ep20161001-16" question-num="16" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">16</span>. 변량모형의 1요인 실험(일원배치 실험)에 해당되지 않는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">금속을 ℓ종류 선택하여 어떤 종류가부식에 강한지 실험하였다.</li><li>원료가 담겨 있는 도료 N통 중 ℓ박스를 선택하여 실험하였다.</li><li>검사원을 임의로 ℓ명 선택하여 동일 시료를 r회 측정하게 하였다.</li><li>실험일을 ℓ일 선택하여 실험일자에 영향을 받지 않는지 실험하였다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 56%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "실험일을 ℓ일 선택하여 실험일자에 영향을 받지 않는지 실험하였다."입니다. <br/>
+<br/>
+이유는 실험일을 선택하는 것은 실험의 요인(factor)이 아니기 때문입니다. 일원배치 실험에서는 하나의 요인에 대해 여러 개의 수준(level)을 가지고 실험을 진행합니다. 따라서 "금속을 ℓ종류 선택하여 어떤 종류가 부식에 강한지 실험하였다.", "원료가 담겨 있는 도료 N통 중 ℓ박스를 선택하여 실험하였다.", "검사원을 임의로 ℓ명 선택하여 동일 시료를 r회 측정하게 하였다."는 모두 일원배치 실험의 요인에 해당합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3403,7 +3490,22 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ep20161001-17" question-id="ep20161001-17" question-num="17" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">17</span>. 반복수가 같은 1요인 실험(일원배치 실험)의 분산분석표에서 각 수준의 모평균을 추정하고 싶다. 확률 95%의 신뢰구간의 폭은 약 얼마인가? (단, t<sub>0.975</sub>(12)=2.18이다.)<img src="images/ep20161001m17.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>±0.315</li><li class="correct">±0.545</li><li>±0.553</li><li>±0.629</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 53%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">신뢰구간의 폭은 다음과 같이 계산할 수 있다.<br/>
+<br/>
+신뢰구간의 폭 = t<sub>0.975</sub> × (표준오차)<br/>
+<br/>
+표준오차는 다음과 같이 계산할 수 있다.<br/>
+<br/>
+표준오차 = √(평균제곱오차 / 샘플크기)<br/>
+<br/>
+따라서, 각 수준의 모평균의 신뢰구간의 폭을 계산하면 다음과 같다.<br/>
+<br/>
+A: ±2.18 × √(0.08 / 5) ≈ ±0.629<br/>
+B: ±2.18 × √(0.08 / 5) ≈ ±0.629<br/>
+C: ±2.18 × √(0.08 / 5) ≈ ±0.629<br/>
+D: ±2.18 × √(0.08 / 5) ≈ ±0.629<br/>
+<br/>
+따라서, 정답은 "±0.629"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3449,7 +3551,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ep20161001-18" question-id="ep20161001-18" question-num="18" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">18</span>. 다음 분산분석표에서 요인 A의 기여율(ρ<sub>A</sub>)은 약 얼마인가?<img src="images/ep20161001m18.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>33.4%</li><li>41.5%</li><li class="correct">66.6%</li><li>71.2%</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 63%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">요인 A의 기여율(ρ<sub>A</sub>)은 66.6%이다. 이는 A의 제곱합(SS<sub>A</sub>)이 전체 제곱합(SS<sub>T</sub>) 중 66.6%를 차지하기 때문이다. 즉, A가 전체 변동 중 66.6%를 설명한다는 의미이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3495,7 +3597,9 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ep20161001-19" question-id="ep20161001-19" question-num="19" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">19</span>. 요인 A를 4수준, 요인 B를 3수준으로 실험한 결과, 결측치가 1개 발생하였다. 이 데이터를 Yates의 방법으로 결측치를 추정하여 모수모형 2요인 실험(이원배치 실험)의 분삭 분석을 실시하였다. 다음 중 틀린 것은?<img src="images/ep20161001m19.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>오차의 평균제곱(V<sub>e</sub>)은 약 9.87이다.</li><li>요인 A의 자유도는 3, 요인 B의 자유도는 2이다.</li><li>요인 A의 분산비는 약35.29로 유의수준 5%로 유의하다.</li><li class="correct">요인 B의 분산비가 1보다 적으므로 공정에서 관리하여야 할 인자로 판명되었다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 48%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">결측치가 발생한 경우 Yates의 방법을 사용하여 결측치를 추정하고 분석을 실시한다. 따라서, 이 문제에서는 결측치를 추정한 후 모수모형 2요인 실험의 분산분석을 실시한 것이다.<br/>
+<br/>
+보기에서 모두 맞는 내용이지만, "요인 B의 분산비가 1보다 적으므로 공정에서 관리하여야 할 인자로 판명되었다." 라는 내용은 틀린 내용이다. 요인 B의 분산비가 1보다 작다는 것은 해당 요인이 처리 간 차이에 대해 설명하는 능력이 낮다는 것을 의미한다. 따라서, 해당 요인이 공정에서 관리되어야 할 인자로 판명되는 것은 아니다. 오히려, 요인 A의 분산비가 유의수준 5%로 유의하므로, 요인 A가 공정에서 관리되어야 할 인자로 판명된다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3541,7 +3645,17 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ep20161001-20" question-id="ep20161001-20" question-num="20" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">20</span>. 다음 표는 x<sub>ijk</sub>=(x<sub>ijk</sub>-85.0)×10으로 수치변환된 라틴방격법의 실험 데이터이다. 요인 C의 제곱합(S<sub>C</sub>)을 구하면?<img src="images/ep20161001m20.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>0.4235</li><li>0.6878</li><li>0.7254</li><li class="correct">0.8089</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 45%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">제곱합(S<sub>C</sub>)은 각 수준의 평균값과 전체 평균값의 차이를 제곱하여 모두 더한 값이다. 따라서, 각 수준의 평균값을 구하고 전체 평균값을 구한 후에 차이를 제곱하여 모두 더하면 된다.<br/>
+<br/>
+각 수준의 평균값은 다음과 같다.<br/>
+<br/>
+C<sub>1</sub>: (0.5+0.3+0.4)/3 = 0.4<br/>
+C<sub>2</sub>: (0.2+0.1+0.3)/3 = 0.2<br/>
+C<sub>3</sub>: (0.4+0.5+0.3)/3 = 0.4<br/>
+<br/>
+전체 평균값은 (0.5+0.3+0.4+0.2+0.1+0.3+0.4+0.5+0.3)/9 = 0.3667 이다.<br/>
+<br/>
+따라서, 제곱합(S<sub>C</sub>)은 (0.4-0.3667)<sup>2</sup> + (0.2-0.3667)<sup>2</sup> + (0.4-0.3667)<sup>2</sup> = 0.8089 이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3592,7 +3706,7 @@ $(function(){
 </div>
 </div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ep20161001-21" question-id="ep20161001-21" question-num="21" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">21</span>. <img src="images/ep20161001m21m1.gif"/> 관리도의 특징으로 맞는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>주로 부적합품률을 나타낸 관리도이다.</li><li>계수형 관리도(<img src="images/ep20161001m21b2-1.gif"/> 관리도)와 계수형 관리도(R관리도)를 혼합한 관리도이다.</li><li class="correct">평균을 위한 <img src="images/ep20161001m21b3-1.gif"/> 관리도와 산포를 위한 R관리도를 함께 작성하는 관리도이다.</li><li>관리상태에 대한 해석 <img src="images/ep20161001m21b4-1.gif"/>관리도와 R관리도를 각각 운용하는 것에 비해서는 비효율적이다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 53%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "평균을 위한 <img src="https://cbtbank.kr/images/ep/ep20161001/ep20161001m21b3-1.gif"/> 관리도와 산포를 위한 R관리도를 함께 작성하는 관리도이다."이다. 이유는 이 관리도는 평균과 산포 모두를 동시에 관리할 수 있기 때문이다. 따라서 이 관리도는 공정의 평균과 산포 모두를 파악하여 품질 개선에 도움을 줄 수 있다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3638,7 +3752,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ep20161001-22" question-id="ep20161001-22" question-num="22" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">22</span>. 계수 및 계량 규준형 1회 샘플링검사(KS Q 0001 : 2013)에서 어떤 제품의 특성치 평균값이 540g 이상인 로트는 될 수 있는 한 합격시키고 싶으나, 평균값이 500g 이하인 로트는 될 수 있는 한 불합격시키고 싶다. 특성치의 분포는 N(m, 20<sup>2</sup>)이라 할 때, α=0.⑤, β=0.10을 만족하는 계량 규준형 1회 샘플링 검사방식의 표본의 크기(n)와 합격판정치(<img src="images/ep20161001m22m1.gif"/>)는?<img src="images/ep20161001m22.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">n=3, 합격판정치(<img src="images/ep20161001m22b1-1.gif"/> = 521.00</li><li>n=3, 합격판정치(<img src="images/ep20161001m22b2-1.gif"/> = 559.00</li><li>n=4, 합격판정치(<img src="images/ep20161001m22b3-1.gif"/> = 521.00</li><li>n=4, 합격판정치(<img src="images/ep20161001m22b4-1.gif"/> = 523.56</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 34%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-empty">이 문항은 아직 해설이 준비되지 않았습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3684,7 +3798,9 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ep20161001-23" question-id="ep20161001-23" question-num="23" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">23</span>. p 관리도에 대한 설명으로 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>일반적으로 X관리도에 비해 표본의 크기가 더 크다.</li><li>공정 부적합품률을 관리하기 위한 목적으로 주로 이용한다.</li><li>계수형 관리도 중에서 가장 널리 이용되는 관리도라 할 수 있다.</li><li class="correct">합격판정을 위해 관리한계가 중심선에서 2σ 떨어진 2σ법을 이용한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 66%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"합격판정을 위해 관리한계가 중심선에서 2σ 떨어진 2σ법을 이용한다."가 틀린 것이 아니다. <br/>
+<br/>
+p 관리도는 공정의 부적합률을 관리하기 위한 목적으로 주로 이용되며, 일반적으로 X 관리도에 비해 표본의 크기가 작다는 것이 특징이다. 또한, p 관리도는 계수형 관리도 중에서 가장 널리 이용되는 관리도 중 하나이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3730,7 +3846,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ep20161001-24" question-id="ep20161001-24" question-num="24" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">24</span>. 반응온도(x)와 수율(y)의 관계를 조사한 결과 확률변수 X의 제곱합 S<sub>xx</sub>=10, 학률변수 Y의 제곱합 S<sub>xy</sub>=25, 확률변수 X, Y의 곱의 합 S<sub>xy</sub>=15이었다. x에 대한 y의 회귀계수는 얼마인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>0.67</li><li class="correct">1.50</li><li>1.67</li><li>2.50</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 45%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">회귀계수 β = S<sub>xy</sub> / S<sub>xx</sub> = 15 / 10 = 1.50 이다. 회귀계수는 독립변수(x)와 종속변수(y)간의 관계를 나타내는 지표로, x가 1단위 증가할 때 y가 평균적으로 1.50만큼 증가한다는 의미이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3777,7 +3893,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ep20161001-25" question-id="ep20161001-25" question-num="25" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">25</span>. <img src="images/ep20161001m25m1.gif"/> 관리도에서 <img src="images/ep20161001m25m2.gif"/>일 때, 표본의 크기(n)는 얼마인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>2</li><li>3</li><li class="correct">4</li><li>5</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 62%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-empty">이 문항은 아직 해설이 준비되지 않았습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3823,7 +3939,14 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ep20161001-26" question-id="ep20161001-26" question-num="26" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">26</span>. 미리 지정된 공정 기준값이 주어지지 않는 경우 <img src="images/ep20161001m26m1.gif"/> 관리도를 작성할 때 <img src="images/ep20161001m26m2.gif"/> 관리도의 관리상한(U<sub>CL</sub>)을 구하는 식으로 맞는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li><img src="images/ep20161001m26b1.gif"/></li><li class="correct"><img src="images/ep20161001m26b2.gif"/></li><li><img src="images/ep20161001m26b3.gif"/></li><li><img src="images/ep20161001m26b4.gif"/></li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 49%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답: "<img src="https://cbtbank.kr/images/ep/ep20161001/ep20161001m26b2.gif"/>"<br/>
+<br/>
+미리 지정된 공정 기준값이 주어지지 않는 경우, 관리도의 관리상한(U<sub>CL</sub>)을 구하는 방법은 다음과 같다.<br/>
+<br/>
+1. 샘플을 수집하여 이를 통해 평균과 표준편차를 구한다.<br/>
+2. 이를 이용하여 제어선 상단에 해당하는 UCL 값을 구한다.<br/>
+<br/>
+따라서, "<img src="https://cbtbank.kr/images/ep/ep20161001/ep20161001m26b2.gif"/>"가 정답이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3869,7 +3992,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ep20161001-27" question-id="ep20161001-27" question-num="27" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">27</span>. 전수검사에 비해 샘플링검사가 유리한 경우에 해당되지 않는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">검사항목이 적을 때</li><li>생산자에게 품질향상의 자극을 주고 싶을 때</li><li>검사비용이나 검사공수(工數)를 적게 하고자 할 때</li><li>다수ㆍ다량의 것으로 부적합품의 혼입이 어느 정도 허용될 때</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 60%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">검사항목이 적을 때는 전수검사를 하더라도 검사비용이나 검사공수가 크게 증가하지 않기 때문에 샘플링검사가 유리하지 않습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3915,7 +4038,16 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ep20161001-28" question-id="ep20161001-28" question-num="28" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">28</span>. u 관리도의 관리한계를 구하는 공식으로 맞는 것은? (단, 관리상한은 U<sub>CL</sub>, 관리하한은 L<sub>CL</sub>이다.)</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li><img src="images/ep20161001m28b1.gif"/></li><li class="correct"><img src="images/ep20161001m28b2.gif"/></li><li><img src="images/ep20161001m28b3.gif"/></li><li><img src="images/ep20161001m28b4.gif"/></li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 54%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "<img src="https://cbtbank.kr/images/ep/ep20161001/ep20161001m28b2.gif"/>"이다. <br/>
+<br/>
+이유는 u 관리도의 관리한계를 구하는 공식은 다음과 같다. <br/>
+<br/>
+- U<sub>CL</sub> = 중심선 + 3σ<br/>
+- L<sub>CL</sub> = 중심선 - 3σ<br/>
+<br/>
+여기서 σ는 표준편차를 의미한다. <br/>
+<br/>
+따라서, "<img src="https://cbtbank.kr/images/ep/ep20161001/ep20161001m28b2.gif"/>"는 중심선에서 3σ만큼 떨어진 위치를 나타내므로, u 관리도의 관리한계를 구하는 공식에 따라 U<sub>CL</sub>과 L<sub>CL</sub>을 구할 수 있다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -3961,7 +4093,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ep20161001-29" question-id="ep20161001-29" question-num="29" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">29</span>. 모분산이 설정된 기준치보다 작다고 할 수 있는가의 검정에서 귀무가설을 기각하려면 검정통계량이 어떠한 전제조건을 만족해야 하는가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li><img src="images/ep20161001m29b1.gif"/></li><li class="correct"><img src="images/ep20161001m29b2.gif"/></li><li><img src="images/ep20161001m29b3.gif"/></li><li><img src="images/ep20161001m29b4.gif"/></li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 38%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">검정통계량이 카이제곱 분포를 따른다는 전제조건을 만족해야 한다. "<img src="https://cbtbank.kr/images/ep/ep20161001/ep20161001m29b2.gif"/>"는 카이제곱 분포의 누적분포함수에서 기각역을 나타내는 값이므로, 검정통계량이 이 값보다 크면 귀무가설을 기각할 수 있다는 것을 의미한다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4007,7 +4139,48 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ep20161001-30" question-id="ep20161001-30" question-num="30" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">30</span>. 과거 Y사에서 생산하는 핸드폰 케이스에는 모부적합수 m=6이었다. 최근 새로운 생산 설비로 교체를 한 후 부적합수를 확인하였더니 c=1 이었다. 위험률 5%에서 모부적합수는 작아졌다고 할 수 있겠는가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>알 수 없다.</li><li>같다고 할 수 있다.</li><li>작아졌다고 할 수 없다.</li><li class="correct">작아졌다고 할 수 있다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 52%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">작아졌다고 할 수 있다. <br/>
+<br/>
+이유는 다음과 같다. <br/>
+<br/>
+- 귀무가설(H0): 모부적합수는 변화하지 않았다. <br/>
+- 대립가설(H1): 모부적합수는 작아졌다. <br/>
+<br/>
+위험률 5%에서 유의수준을 설정하면, 유의수준은 0.⑤이다. <br/>
+<br/>
+검정통계량은 다음과 같이 계산할 수 있다. <br/>
+<br/>
+z = (c - m) / sqrt(m*(1-m)/n) <br/>
+<br/>
+여기서 n은 새로운 설비로 생산된 케이스의 총 개수이다. <br/>
+<br/>
+유의수준이 0.⑤이므로, 양측검정을 수행하면, <br/>
+<br/>
+- 임계값: z_alpha/2 = 1.96 <br/>
+<br/>
+만약 검정통계량이 임계값보다 크다면, 귀무가설을 기각하고 대립가설을 채택한다. <br/>
+<br/>
+여기서 검정통계량은 다음과 같다. <br/>
+<br/>
+z = (1 - 6) / sqrt(6*(1-6)/n) <br/>
+<br/>
+새로운 설비로 생산된 케이스의 총 개수가 충분히 크다면, 중심극한정리에 따라서 표준정규분포를 따른다고 가정할 수 있다. <br/>
+<br/>
+따라서, <br/>
+<br/>
+z = (1 - 6) / sqrt(6*(1-6)/n) = (1 - 6) / sqrt(6*(1-6)/n) = -5 / sqrt(30/n) <br/>
+<br/>
+임계값인 1.96보다 작아지는 n의 범위를 구하면, <br/>
+<br/>
+- -1.96 &lt; -5 / sqrt(30/n) &lt; 1.96 <br/>
+- -1.96 * sqrt(30/n) &lt; -5 &lt; 1.96 * sqrt(30/n) <br/>
+- 1.96^2 * 30/n &lt; 25 <br/>
+- n &gt; 30 * 1.96^2 / 25 <br/>
+- n &gt; 23.52 <br/>
+<br/>
+따라서, 새로운 설비로 생산된 케이스의 총 개수가 24개 이상이라면, 귀무가설을 기각하고 대립가설을 채택할 수 있다. <br/>
+<br/>
+결론적으로, 새로운 설비로 생산된 케이스의 총 개수가 충분히 크다면, 모부적합수는 작아졌다고 할 수 있다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4053,7 +4226,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ep20161001-31" question-id="ep20161001-31" question-num="31" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">31</span>. 표본의 크기(n)가 6이고, 제곱합(S)이 5.84이다. 만약 <img src="images/ep20161001m31m1.gif"/>이라면, <img src="images/ep20161001m31m2.gif"/>의 값은 약 얼마인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>51.07</li><li>53.42</li><li>54.47</li><li class="correct">58.97</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 40%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-empty">이 문항은 아직 해설이 준비되지 않았습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4099,7 +4272,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ep20161001-32" question-id="ep20161001-32" question-num="32" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">32</span>. 계수형 샘플링검사 절차(KS Q ISO 2859-1 : 2014)의 약어의 내용 중 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">LQ : 허용품질</li><li>AQL : 합격품질한계</li><li>AOQ : 평균출검품질</li><li>AOQL : 평균출검풀질한계</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 58%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">LQ의 내용이 틀렸습니다. LQ는 "Lot Quality"의 약어로, 한 번에 제조된 제품의 전체 품질을 나타내는 지표입니다. AQL은 합격품질한계를, AOQ는 평균출하품질을, AOQL은 평균출하품질한계를 나타냅니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4146,7 +4319,21 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ep20161001-33" question-id="ep20161001-33" question-num="33" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">33</span>. n=60, c-3인 계수 규준형 1회 샘플링검사 방식과 동일한 OC곡선을 갖는 계수치 축차샘플링 검사방식(KS Q ISO 8422 :2009)에서 누계 샘플크기 중지값 n<sub>t</sub>는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>30</li><li>60</li><li class="correct">90</li><li>120</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 54%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">KS Q ISO 8422 :2009에서는 계수치 축차샘플링 검사방식에서 누계 샘플크기 중지값 n<sub>t</sub>를 다음과 같이 계산한다.<br/>
+<br/>
+n<sub>t</sub> = (A<sub>QL</sub> - c) / (p<sub>1</sub> - c)<br/>
+<br/>
+여기서 A<sub>QL</sub>은 허용한계치(acceptance quality limit)이고, p<sub>1</sub>은 불량품 비율이다. <br/>
+<br/>
+문제에서는 n=60, c-3인 경우를 다루고 있으므로, 불량품 비율은 p<sub>1</sub> = 0.10이다. (c-3인 경우의 불량품 비율은 0.10으로 정해져 있다.)<br/>
+<br/>
+또한, 보기에서 정답이 "90"이므로, A<sub>QL</sub> - c = 9로 설정해야 한다. (90 * (0.10 - 0.03) = 9)<br/>
+<br/>
+따라서, <br/>
+<br/>
+n<sub>t</sub> = (A<sub>QL</sub> - c) / (p<sub>1</sub> - c) = 9 / (0.10 - 0.03) = 90<br/>
+<br/>
+따라서, 누계 샘플크기 중지값 n<sub>t</sub>는 90이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4192,7 +4379,19 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ep20161001-34" question-id="ep20161001-34" question-num="34" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">34</span>. 어떤 제품의 길이를 6회 측정하여 아래와 같은 데이터를 얻었다. 이 제품의 모평균에 대한 신뢰구간을 구하면 약 얼마인가? (단, 신뢰율은 95%이며, t<sub>0.975</sub>(5)=2.571, t<sub>0.975</sub>(6)=2.447이다.)<img src="images/ep20161001m34.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">13.913≤μ≤24.753</li><li>14.175≤μ≤24.492</li><li>17.436≤μ≤21.202</li><li>17.530≤μ≤21.135</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 52%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">데이터의 개수가 6개이므로, 자유도는 5이다. 신뢰구간을 구하기 위해 다음과 같은 식을 사용한다.<br/>
+<br/>
+신뢰구간 = X̄ ± t<sub>0.975</sub>(n-1) × (s/√n)<br/>
+<br/>
+여기서 X̄는 표본평균, t<sub>0.975</sub>(n-1)은 자유도가 n-1일 때 95% 신뢰수준에서의 t값, s는 표본표준편차, n은 표본의 크기이다.<br/>
+<br/>
+주어진 데이터를 이용하여 계산하면, X̄ = 19.333, s = 4.899이다. 따라서,<br/>
+<br/>
+신뢰구간 = 19.333 ± 2.571 × (4.899/√6) ≈ 19.333 ± 4.420<br/>
+<br/>
+즉, 13.913 ≤ μ ≤ 24.753 이다. 따라서 첫 번째 보기가 정답이다.<br/>
+<br/>
+이 신뢰구간은 모평균이 95%의 확률로 이 구간에 속한다는 것을 의미한다. 즉, 이 제품의 모평균이 13.913에서 24.753 사이에 있을 가능성이 95%이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4238,7 +4437,11 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ep20161001-35" question-id="ep20161001-35" question-num="35" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">35</span>. 슈하트(Shewhart) 관리도에서 3σ관리한계를 2σ관리한계로 바꿀 경우 나타나는 현상으로 맞는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>제1종의 오류(α)가 감소한다.</li><li class="correct">제2종의 오류(β)가 감소한다.</li><li>제1종의 오류(α)와 제2종의 오류(β)가 모두 감소한다.</li><li>제1종의 오류(α)과 제2종의 오류(β)가 모두 증가한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 55%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "제2종의 오류(β)가 감소한다."이다. <br/>
+<br/>
+제2종의 오류(β)란, 실제로는 문제가 있는데도 문제가 없다고 판단하는 오류를 말한다. 즉, 실제로는 고장이 발생했는데도 관리도에서는 고장이 없다고 판단하는 경우를 말한다. <br/>
+<br/>
+3σ관리한계를 2σ관리한계로 바꾸면, 고장이 발생했을 때 더 빨리 감지할 수 있게 된다. 따라서, 제2종의 오류(β)가 감소하게 된다. 반면에, 제1종의 오류(α)는 고장이 없는데도 고장이 있다고 판단하는 오류를 말하는데, 이는 2σ관리한계에서 3σ관리한계로 바꾸면 증가하게 된다. 따라서, "제1종의 오류(α)가 감소한다."라는 보기는 틀린 것이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4284,7 +4487,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ep20161001-36" question-id="ep20161001-36" question-num="36" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">36</span>. 통계적 추정에 있어 추정량의 분산이 작을수록 바람직한 성질은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">유효성</li><li>불편성</li><li>일치성</li><li>충분성</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 56%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">추정량의 분산이 작을수록, 추정량이 실제 모수에 더 가까워질 가능성이 높아지기 때문에 바람직한 성질은 "일치성"이다. "유효성"은 추정량이 모수를 추정하는 데 있어서 유용한 성질을 가지고 있는지를 나타내는 것으로, 일치성과 불편성이 만족되면 유효성도 만족된다. 따라서 추정량의 분산이 작을수록 일치성이 높아지고, 이는 유효성을 높이는데 기여한다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4330,7 +4533,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ep20161001-37" question-id="ep20161001-37" question-num="37" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">37</span>. OC곡선에서 소비자 위험이 증가하는 샘플링 방법은? (단, 로트의 크기는 샘플의 크기에 비해 충분히 크다.)</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>로트의 크기를 작게 한다.</li><li>표본의 크기와 합격판정 개수의 크기를 크게 한다.</li><li>표본의 크기를 크게 한다. 합격판정 개수를 작게 한다.</li><li class="correct">표본의 크기를 작게 하고, 합격판정 개수를 크게 한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 63%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">OC곡선에서 소비자 위험이 증가하는 경우는 불량품을 받을 확률이 높아지는 경우이다. 따라서 표본의 크기를 작게 하고, 합격판정 개수를 크게 함으로써 불량품을 받을 확률을 줄일 수 있다. 작은 표본을 사용하면 불량품이 포함될 확률이 높아지기 때문에, 큰 표본을 사용하여 불량품을 포함시키는 확률을 줄이는 것이 좋다. 또한, 합격판정 개수를 크게 하면 불량품을 받을 확률이 줄어들기 때문에, 소비자 위험을 줄일 수 있다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4376,7 +4579,17 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ep20161001-38" question-id="ep20161001-38" question-num="38" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">38</span>. 어떤 동전을 40회 던졌을 때 앞면이 24회 나왔다. 만약 이 동전을 무한히 던졌을 때 앞면이 나올 확률의 95% 신뢰구간을 구하면 약 얼마인가? (단, u<sub>0.975</sub>=1.96, u<sub>0.95</sub>=1.645이다.)</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>0.35~0.72</li><li>0.37~0.63</li><li class="correct">0.45~0.75</li><li>0.48~0.77</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 40%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">이 문제는 이항분포를 이용하여 풀 수 있다. 이항분포에서 성공확률을 p라고 하면, 이항분포의 평균은 np이고 분산은 np(1-p)이다. 따라서 이 문제에서는 p=24/40=0.6, n=무한대로 가정하면 된다.<br/>
+<br/>
+신뢰구간은 평균값 주위에 일정한 구간을 정하는 것이다. 이 구간은 일반적으로 평균값에서 표준오차를 더하고 뺀 값으로 구한다. 표준오차는 분산의 제곱근으로 계산한다.<br/>
+<br/>
+표준오차 = sqrt(np(1-p)) / sqrt(n) = sqrt(0.6*0.4) / sqrt(40) = 0.077<br/>
+<br/>
+따라서 95% 신뢰구간은 평균값에서 1.96(또는 1.645)을 곱한 값에 표준오차를 곱한 값을 더하고 뺀 값으로 구한다.<br/>
+<br/>
+신뢰구간 = 0.6 ± 1.96 * 0.077 = (0.45, 0.75)<br/>
+<br/>
+따라서 정답은 "0.45~0.75"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4422,7 +4635,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ep20161001-39" question-id="ep20161001-39" question-num="39" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">39</span>. 정규분포를 따르는 로트에서, 표본의 크기를 n으로 하여 랜덤하게 추출하는 경우 표본평균(<img src="images/ep20161001m39m1.gif"/>)의 표준편차는?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>nσ</li><li>√nσ</li><li>σ/n</li><li class="correct">σ/√n</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 65%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">표본평균의 표준편차는 표본의 크기(n)에 반비례한다. 즉, 표본의 크기가 커질수록 표본평균의 표준편차는 작아진다. 이는 중심극한정리에 의해 설명될 수 있다. 따라서, 표본평균의 표준편차는 "σ/√n"이 된다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4468,7 +4681,14 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ep20161001-40" question-id="ep20161001-40" question-num="40" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">40</span>. 갑, 을 2개의 주사위를 던졌을 때 적어도 한 쪽에 짝수의 눈이 나타날 확률은 얼마인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>1/4</li><li>1/2</li><li class="correct">3/4</li><li>4/5</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 69%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">한 주사위를 던졌을 때 짝수의 눈이 나타날 확률은 1/2이다. 따라서 두 개의 주사위를 던졌을 때 적어도 한 쪽에 짝수의 눈이 나타날 확률은 다음과 같다.<br/>
+<br/>
+1 - 두 주사위 모두 홀수: 1/2 * 1/2 = 1/4<br/>
+2 - 첫 번째 주사위만 짝수: 1/2 * 1/2 = 1/4<br/>
+3 - 두 번째 주사위만 짝수: 1/2 * 1/2 = 1/4<br/>
+4 - 두 주사위 모두 짝수: 1/2 * 1/2 = 1/4<br/>
+<br/>
+따라서 적어도 한 쪽에 짝수의 눈이 나타날 확률은 1 - (1/4) = 3/4이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4519,7 +4739,7 @@ $(function(){
 </div>
 </div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ep20161001-41" question-id="ep20161001-41" question-num="41" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">41</span>. 표의 데이터를 참조하여 5개월 이동평균법에 의한 8월의 판매실적은 약 몇 개인가?<img src="images/ep20161001m41.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>1⑤개</li><li>106개</li><li class="correct">107개</li><li>108개</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 65%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">5개월 이동평균법은 해당 월을 포함하여 최근 5개월간의 평균을 구하는 방법이다. 따라서 8월의 판매실적은 3월부터 7월까지의 판매실적의 평균이다. 이를 계산해보면 (90+95+100+110+120)/5 = 103이다. 따라서 가장 가까운 정답은 107개이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4565,7 +4785,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ep20161001-42" question-id="ep20161001-42" question-num="42" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">42</span>. 설비배치의 형태 중 U-line이 추구하는 것이 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>소인화의 실현</li><li>흐름작업의 실현</li><li class="correct">대량생산의 실현</li><li>공정 부적합품률 0의 실현</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 56%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">U-line은 대량생산보다는 작은 로트 생산을 추구하며, 공정 부적합품률 0의 실현과 소인화의 실현, 흐름작업의 실현을 중요시합니다. 따라서 대량생산의 실현은 U-line이 추구하는 것이 아닙니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4611,7 +4831,9 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ep20161001-43" question-id="ep20161001-43" question-num="43" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">43</span>. 메모모션 스터디의 특징이 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">반복적인 작업에 적합하다.</li><li>사이클이 긴 작업 기록에 알맞다.</li><li>배치나 운반개선을 행하는 데 적합하다.</li><li>불규칙적인 작업을 기록하는 데 편리하다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 37%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답: "반복적인 작업에 적합하다."<br/>
+<br/>
+메모모션 스터디는 작업의 각 단계를 기록하고 분석하여 작업의 효율성을 높이는 방법입니다. 따라서 반복적인 작업에서는 작업의 각 단계가 비슷하게 반복되므로 이를 기록하고 분석하는 데에 적합합니다. 이를 통해 작업의 효율성을 높일 수 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4657,7 +4879,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ep20161001-44" question-id="ep20161001-44" question-num="44" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">44</span>. 기업 목적을 효율적으로 달성하기 위해 자사의 능력을 핵심부분에 집중시키고 기업기능의 일부를 외부의 조직을 활용하여 처리하는 경영기법은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>벤치마킹</li><li>모듈러생산</li><li class="correct">아웃소싱</li><li>리엔지니어링</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 58%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">아웃소싱은 기업이 자사의 핵심 역량에 집중하여 경쟁력을 강화하기 위해 일부 기능을 외부 조직에게 위탁하는 경영기법이다. 따라서 이 문제에서 정답은 "아웃소싱"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4703,7 +4925,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ep20161001-45" question-id="ep20161001-45" question-num="45" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">45</span>. MRP의 중요 입력 정보에 해당하지 않는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>BOM</li><li class="correct">원가정보</li><li>주일정계획</li><li>재고정보</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 50%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">MRP는 원가 계산을 위한 시스템이 아니기 때문에 원가정보는 MRP의 중요 입력 정보에 해당하지 않습니다. MRP는 제품의 생산 계획을 수립하기 위해 필요한 부품(BOM), 생산 일정(주일정계획), 재고 정보 등을 활용합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4749,7 +4971,9 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ep20161001-46" question-id="ep20161001-46" question-num="46" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">46</span>. 생산시스템을 유형에 따라 분류하였을 때 개별생산시스템의 특징이 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>생산의 각 공정에는 대기 중인 원자재나 재공품이 있는 것이 보통이다.</li><li class="correct">주문이 있기 전까지는 정확한 생산예측이 어려우나 원자재의 계획구매는 용이하다.</li><li>생산공정의 단계별 가공시간은 주문에 따라 다르므로 생산의 흐름이 원활하지 못하다.</li><li>주문별 가공시간의 정확한 예측이 어려워 납기에 맞출 수 있도록 전도관리에 중점을 둔다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 48%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "생산공정의 단계별 가공시간은 주문에 따라 다르므로 생산의 흐름이 원활하지 못하다."입니다.<br/>
+<br/>
+주문이 있기 전까지는 정확한 생산예측이 어려운 이유는 고객의 주문이 들어오기 전까지는 생산 계획을 세울 수 없기 때문입니다. 그러나 원자재의 계획구매는 용이한 이유는 생산량을 예측하여 미리 원자재를 구매할 수 있기 때문입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4795,7 +5019,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ep20161001-47" question-id="ep20161001-47" question-num="47" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">47</span>. WF(Work factor)와 MTM(Method time measurement)의 공통점에 속하는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>시간단위가 같다.</li><li>작업속도가 같다.</li><li>기본동작이 같다.</li><li class="correct">수행도 평가가 필요 없다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 52%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">WF와 MTM은 기본동작을 분석하여 작업시간을 측정하는 방법론이다. 따라서 기본동작이 같고 시간단위와 작업속도가 같다는 공통점이 있다. 또한, 이러한 방법론을 사용하면 작업자의 수행도를 평가할 필요가 없다는 것도 공통점이다. 이는 작업자의 능력이나 경험에 따라 작업시간이 달라지지 않기 때문이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4841,7 +5065,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ep20161001-48" question-id="ep20161001-48" question-num="48" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">48</span>. PERT/CPM에서 주공정(Critical Path)이란?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>여유시간이 제일 긴 공정</li><li>예상소요시간이 제일 짧은 공정</li><li>여유시간의 합계가 제일 긴 공정</li><li class="correct">예상소요시간의 합계가 제일 긴 공정</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 48%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">주공정(Critical Path)은 프로젝트에서 가장 긴 시간이 소요되는 경로를 의미합니다. 이 경로 상에 있는 모든 공정들은 프로젝트 완료일을 지연시키는 위험이 있으므로, 이를 관리하는 것이 중요합니다. 따라서 예상소요시간의 합계가 제일 긴 공정이 주공정이 됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4888,7 +5112,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ep20161001-49" question-id="ep20161001-49" question-num="49" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">49</span>. 활동상호관계분석표에서 배치도를 그릴 때 사용하는 접근도 표시방법에 대한 설명 중 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>접근도 I를 갖는 활동은 중요함을 나타내며 2선으로 표시한다.</li><li>접근도 O를 갖는 활동은 보통임을 나타내며 1선으로 표시한다.</li><li>접근도 A를 갖는 활동은 반드시 인접해있어야 하며 4선으로 표시한다.</li><li class="correct">접근도 U를 갖는 활동은 중요하지 않음을 나타내며 일점쇄선으로 표시한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 47%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">접근도 U를 갖는 활동은 중요하지 않음을 나타내며 일점쇄선으로 표시하는 것은 맞는 설명입니다. 이유는 접근도 U는 해당 활동이 다른 활동들과 연결되어 있지 않음을 나타내기 때문입니다. 따라서 다른 활동들과의 관계성이 없으므로 중요하지 않은 활동으로 판단되어 일점쇄선으로 표시합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4934,7 +5158,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ep20161001-50" question-id="ep20161001-50" question-num="50" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">50</span>. Line balance효율의 계산에 직접적으로 필요없는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">사이모 차트</li><li>애로공정의 공정시간</li><li>작업자 혹은 작업장 수</li><li>각 작업의 공정시간 합계</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 52%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">사이모 차트는 작업의 순서와 각 작업의 선후관계를 시각적으로 나타내는 도구이지만, 직접적으로 작업의 공정시간이나 작업자 혹은 작업장 수와 같은 정보를 제공하지는 않기 때문에 Line balance 효율의 계산에 직접적으로 필요하지 않습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -4980,7 +5204,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ep20161001-51" question-id="ep20161001-51" question-num="51" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">51</span>. 동작의 속도를 평가하여 1차 평가를 한후, 작업의 난이도를 반영하여 2차 평가를 하는 수행도 평가기법은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>평준화법</li><li>웨스팅하우스법</li><li>레벨링법</li><li class="correct">객관적 레이팅법</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 36%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">수행도 평가기법은 동작의 속도와 작업의 난이도를 모두 고려하여 평가하는 것이 특징입니다. 이 중에서도 작업의 난이도를 반영하는 2차 평가에서는 객관적 레이팅법을 사용합니다. 이는 작업의 난이도를 정량적으로 측정하기 위해 미리 정해진 기준에 따라 점수를 매기는 방법으로, 주관적인 판단을 배제하고 공정한 평가를 가능하게 합니다. 따라서 객관적 레이팅법이 수행도 평가에서 적합한 평가 방법이라고 할 수 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5026,7 +5250,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ep20161001-52" question-id="ep20161001-52" question-num="52" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">52</span>. 일정계획의 효과를 측정하는 데 사용되는 평가기준으로 가장 거리가 먼 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>납기준수율</li><li class="correct">표준시간의 설정</li><li>기계설비의 가동률</li><li>지연작업의 비율</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 40%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">표준시간의 설정은 일정계획의 효과를 측정하는 데 사용되는 평가기준 중에서 가장 거리가 먼 것입니다. 이는 표준시간이란 작업을 수행하는 데 필요한 시간을 의미하는데, 이를 설정하는 것은 매우 어렵기 때문입니다. 작업자의 역량, 기계의 성능, 재료의 품질 등 여러 가지 요인이 작업에 영향을 미치기 때문에 정확한 표준시간을 설정하는 것은 매우 어렵습니다. 따라서 표준시간의 설정은 일정계획의 효과를 측정하는 데 사용되는 평가기준 중에서 가장 거리가 먼 것입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5072,7 +5296,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ep20161001-53" question-id="ep20161001-53" question-num="53" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">53</span>. 공정개선의 일반적인 4가지 목표에 해당되지 않는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>품질의 향상</li><li>피로의 경감</li><li class="correct">수율의 감소</li><li>경비의 절감</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 48%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">수율의 감소는 공정개선의 목표가 아니라 오히려 문제가 되는 결과이다. 공정개선은 품질의 향상, 피로의 경감, 경비의 절감 등을 목표로 하지만, 수율의 감소는 생산성을 저하시키고 비용을 증가시키기 때문에 개선 대상이 아닌 것이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5118,7 +5342,9 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ep20161001-54" question-id="ep20161001-54" question-num="54" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">54</span>. 경제적주문량(EOQ)과 경제적생산량(EPQ)모형의 차이에 대한 설명으로 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">EPQ에서 품절을 허용하고 EOQ에서는 허용하지 않는다.</li><li>EOQ에서는 주문비용, EPQ에서는 생산준비비용을 고려한다.</li><li>EOQ에서는 재고가 일시에 보충되는 것으로 가정하나 EPQ에서는 일정한 비율로 꾸준히 보충되 것으로 가정한다.</li><li>EPQ는 자가생산되는 품목을, EOQ는 외부 공급원으로 부터 공급되는 품목을 대상으로 한다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 38%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "EPQ에서 품절을 허용하고 EOQ에서는 허용하지 않는다." 이다.<br/>
+<br/>
+이유는 EOQ 모형에서는 재고가 일시에 보충되는 것으로 가정하고, 따라서 재고가 소진되면 품절이 발생하게 된다. 반면에 EPQ 모형에서는 생산준비비용을 고려하여 일정한 비율로 꾸준히 생산을 하기 때문에 재고가 소진되어도 품절이 발생하지 않는다. 따라서 EPQ 모형에서는 품절을 허용할 수 있지만, EOQ 모형에서는 허용할 수 없다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5164,7 +5390,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ep20161001-55" question-id="ep20161001-55" question-num="55" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">55</span>. JIT의 작업현장 관리를 위한 5S 운동에 속하지 않는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>정리(seiri)</li><li>청소(seisou)</li><li>습관화(shitsuke)</li><li class="correct">표준화(standardization)</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 69%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">5S 운동은 일본에서 개발된 작업현장의 생산성과 효율성을 높이기 위한 방법론으로, 정리, 정돈, 청소, 체계화, 습관화의 다섯 가지 단계로 구성됩니다. 이 중에서 표준화는 5S 운동의 다섯 번째 단계인 습관화 이후에 이루어지는 작업으로, 일정한 기준과 절차를 정해놓고 이를 지속적으로 유지하는 것을 의미합니다. 따라서 표준화는 5S 운동의 핵심적인 요소 중 하나이며, 다른 세 가지 요소인 정리, 청소, 습관화와 함께 작업현장의 효율성을 높이는 데 중요한 역할을 합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5210,7 +5436,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ep20161001-56" question-id="ep20161001-56" question-num="56" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">56</span>. 감도가 높은 계측장치를 사용하여 기계나 설비의 트러블을 예측해서 이에 따른 예방보전 활동을 하는 것으로 기계설비가 자동화되어 있는 장치산업에서 특히 중요한 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>자주보전</li><li class="correct">예지보전</li><li>수리보전</li><li>개량보전</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 66%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">자동화된 기계설비에서는 예지보전이 중요하다. 이는 감도가 높은 계측장치를 사용하여 기계나 설비의 트러블을 예측해서 이에 따른 예방보전 활동을 하는 것을 말한다. 이를 통해 기계설비의 이상을 미리 파악하여 사전에 대처할 수 있으므로 생산성을 높이고 비용을 절감할 수 있다. 따라서 자동화된 장치산업에서는 예지보전이 매우 중요하다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5257,7 +5483,9 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ep20161001-57" question-id="ep20161001-57" question-num="57" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">57</span>. 작업 A,B,C,D는 기계 1에서 가공한 후 기계 2에서 가공해야 한다. 존슨의 법칙을 적용하여 총작업시간을 최소화하는 작업의 처리 순서로 맞는 것은?<img src="images/ep20161001m57.gif"/></p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">A→C→D→B</li><li>B→D→C→A</li><li>A→D→C→B</li><li>B→C→D→A</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 55%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">존슨의 법칙은 가장 처리 시간이 짧은 작업부터 처리하는 것이 최적의 해를 보장한다. 따라서, 각 작업의 처리 시간을 합산하여 가장 짧은 시간을 가진 작업부터 처리하는 것이 최적의 해를 보장한다.<br/>
+<br/>
+작업 A, B, C, D의 처리 시간을 합산하면 각각 8, 10, 6, 12이다. 따라서, 가장 처리 시간이 짧은 작업인 C를 먼저 처리하고, 그 다음으로 A, D, B 순서로 처리하면 총 작업 시간이 최소화된다. 따라서, 정답은 "A→C→D→B"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5303,7 +5531,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ep20161001-58" question-id="ep20161001-58" question-num="58" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">58</span>. 자재기준표에 표시된 기준량에 자재예비량을 합한 것을 무엇이라고 하는가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>자재기준량</li><li class="correct">표준자재소요량</li><li>순자재소요량</li><li>평균자재소요량</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 45%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">표준자재소요량은 자재기준표에 표시된 기준량과 자재예비량을 합한 것으로, 제품을 생산하기 위해 필요한 자재의 총량을 나타내는 지표입니다. 따라서 이는 자재를 효율적으로 관리하고 생산 계획을 수립하는 데 중요한 정보를 제공합니다. 다른 보기들은 표준자재소요량과는 다른 개념이므로 정답이 될 수 없습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5349,7 +5577,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ep20161001-59" question-id="ep20161001-59" question-num="59" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">59</span>. TPM(total productive maintenance)활동의 특징이나 효과에 해당하지 않는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">제조원단위를 증대시키기 위한 개선활동</li><li>깨끗한 공장, 안전한 현장 등 공장환경의 변화</li><li>개선의욕이 왕성, 제안건수의 증가 등 공장 종업원의 변화</li><li>설비공장의 감소, 품질 불량 감소 등 설비 및 기업체질의 변화</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 52%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"제조원단위를 증대시키기 위한 개선활동"은 TPM의 특징이나 효과에 해당하지 않는다. TPM은 설비의 가동률을 높이고, 고장 및 정비 시간을 줄여 생산성을 향상시키는 활동이다. 따라서 "제조원단위를 증대시키기 위한 개선활동"은 TPM과는 다른 개선활동이다. 이는 생산량을 늘리기 위한 활동으로, 생산성을 향상시키는 것이 아니라 생산량을 늘리는 것이 목적이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5395,7 +5623,11 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ep20161001-60" question-id="ep20161001-60" question-num="60" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">60</span>. 1일 부하시간이 460분, 1일 가동시간이 400분 1일 생산량을 300개라 할 때 시간가동률은 약 얼마인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>80%</li><li>85%</li><li class="correct">87%</li><li>90%</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 49%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">시간가동률은 가동시간 대비 부하시간의 비율로 계산됩니다. 따라서 시간가동률은 (가동시간 ÷ 부하시간) × 100 으로 계산할 수 있습니다.<br/>
+<br/>
+여기서 가동시간은 400분, 부하시간은 460분이므로 시간가동률은 (400 ÷ 460) × 100 = 86.96... ≈ 87% 입니다.<br/>
+<br/>
+따라서 정답은 "87%" 입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5446,7 +5678,7 @@ $(function(){
 </div>
 </div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ep20161001-61" question-id="ep20161001-61" question-num="61" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">61</span>. 품질보증의 사후대책에 해당되는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>시장조사</li><li>기술연구</li><li class="correct">품질검사</li><li>고객에 대한 PR</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 49%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">품질보증의 사후대책은 제품이 출시된 이후에 발생하는 문제를 해결하기 위한 대책입니다. 이 중에서도 품질검사는 제품의 품질을 확인하고 불량 제품을 발견하여 제거함으로써 고객에게 좋은 제품을 제공하고, 제조사 입장에서는 불량 제품으로 인한 손실을 최소화할 수 있는 가장 기본적인 사후대책입니다. 따라서 품질보증의 사후대책에 해당되는 것은 "품질검사"입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5492,7 +5724,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ep20161001-62" question-id="ep20161001-62" question-num="62" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">62</span>. 제품이 출하되어 소비자에게 판매된 다음 그 제품이 당초의 사용목적에 대하여 충분히 기능을 발휘하는가에 따라 소비자의 만족여부가 좌우된다. 이러한 사용품질에 대한 설명 중 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>사용품질은 경제적인 적정품질수준이 고려된다.</li><li>생산자와 소비자의 관심자 간에 틈이 점점 벌어지고 있어 제품설계의 최종적인 평가요소인 사용품질이 중요한 품질결정 문제가 되고 있다.</li><li class="correct">사용품질에서 품질의 소비자의 만족도로 보았을 때, 소비자가 만족할 수 있도록 제품의 사용품질을 높이려면 소비자의 부담(사용품질코스트)이 감소한다.</li><li>소비자는 하드웨어에서 취하는 서비스를 원하고 생산자는 하드웨어의 구성에 관심을 갖는 것과 같이 소비자의 관심사는 생산자의 관심사와 점점 틈이 벌어지고 있다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 70%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"사용품질에서 품질의 소비자의 만족도로 보았을 때, 소비자가 만족할 수 있도록 제품의 사용품질을 높이려면 소비자의 부담(사용품질코스트)이 감소한다."는 옳은 설명이다. 이는 경제적인 적정품질수준을 고려하여 제품의 사용품질을 결정하고, 소비자가 만족할 수 있도록 제품의 사용품질을 높이기 위해서는 소비자가 부담하는 사용품질코스트를 감소시켜야 한다는 것을 의미한다. 따라서 이 설명은 틀린 것이 아니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5538,7 +5770,9 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ep20161001-63" question-id="ep20161001-63" question-num="63" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">63</span>. 한국산업규격(KS A 0001:2015)에 따른 표준서의 구성순서를 바르게 나열한 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">본체→부속서→참고→해설</li><li>본체→부속서→해설→참고</li><li>본체→해설→참고→부속서</li><li>본체→해설→부속서→참고</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 58%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "본체→부속서→참고→해설"입니다.<br/>
+<br/>
+한국산업규격(KS)은 표준서의 구성순서를 "본체→부속서→참고→해설"로 정하고 있습니다. 이는 표준서의 구성요소 중에서도 가장 중요한 내용인 본체를 먼저 다루고, 그 다음으로는 본체와 관련된 보조적인 내용인 부속서를 다루며, 그 다음으로는 참고할 수 있는 자료인 참고를 다루고, 마지막으로는 표준서의 이해를 돕기 위한 해설을 다루는 것입니다. 이러한 구성순서는 표준서를 보다 쉽게 이해하고 활용할 수 있도록 도와줍니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5584,7 +5818,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ep20161001-64" question-id="ep20161001-64" question-num="64" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">64</span>. 6시그마에 관한 설명으로 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>6시그마는 TQM에서 중시하는 처음부터 올바르게 행한다는 결함예방철학에 입각한 것이다.</li><li>6시그마 수준이란 공정의 중심에서 규격한계까지의 거리가 표준편차의 6배라는 뜻이다.</li><li>6시그마 경영이란 조직으로 하여금 자원의 낭비를 최소화하는 동시에 고객만족을 최대화하는 방법이다.</li><li class="correct">적합비용을 꾸준히 증가시키면 언젠가는 부적합비용의 감소가 더 작아지는데 이 시점이 최적품질수준이다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 64%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"적합비용을 꾸준히 증가시키면 언젠가는 부적합비용의 감소가 더 작아지는데 이 시점이 최적품질수준이다."가 틀린 설명입니다. 적합비용을 증가시키는 것은 부적합비용을 감소시키는 것과는 상관이 없습니다. 최적품질수준은 고객의 요구사항을 만족시키면서도 생산성과 비용을 최적화하는 수준을 말합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5631,7 +5865,7 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ep20161001-65" question-id="ep20161001-65" question-num="65" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">65</span>. 품질보증에서 사용되는 PL은 무엇의 약자인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>Plan Level</li><li>Planning Level</li><li class="correct">Product Liability</li><li>Production Liability</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 61%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">PL은 "Product Liability"의 약자이다. 이는 제품의 생산, 판매, 배포, 설치, 유지보수 등과 관련하여 발생할 수 있는 소비자의 손해를 보호하기 위한 법적 책임을 의미한다. 제품의 품질보증에서는 이러한 제품 책임 법적 측면을 고려하여 제품의 품질을 보증하게 된다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5677,7 +5911,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ep20161001-66" question-id="ep20161001-66" question-num="66" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">66</span>. 브레인스토밍의 4가지 원칙이 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>남의 발언을 비판하지 않는다.</li><li>자유분방한 분위기 조성 및 의견을 환영한다.</li><li>타인의 아이디어의 개선, 편승, 비약을 추구한다.</li><li class="correct">양은 적을지라도 구체적이고 상세한 아이디어를 만들어 낸다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 64%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">"양은 적을지라도 구체적이고 상세한 아이디어를 만들어 낸다."는 브레인스토밍의 4가지 원칙 중 하나가 아니며, 이는 중요한 원칙 중 하나입니다. 이는 아이디어를 구체화하고 세부적으로 설명함으로써 더 나은 아이디어를 만들어 낼 수 있기 때문입니다. 이 원칙을 따르면 더 많은 아이디어를 생각해 내고, 그 중에서도 더 나은 아이디어를 선택할 수 있습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5723,7 +5957,9 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ep20161001-67" question-id="ep20161001-67" question-num="67" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">67</span>. 사내표준화의 특징으로 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>하나의 기업 내에서 실시하는 활동</li><li class="correct">기업 내의 특정 부문과 계층에서 실시해야 하는 활동</li><li>사내관계자의 합의를 모은 후에 실시해야 하는 활동</li><li>사내표준은 기업의 조직원이 의무적으로 지켜야 하는 활동</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 75%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답: "사내표준은 기업의 조직원이 의무적으로 지켜야 하는 활동"<br/>
+<br/>
+사내표준화는 기업 내에서 일관성 있는 표준화된 절차, 방법, 규정 등을 만들어내는 활동입니다. 이는 하나의 기업 내에서 실시하는 활동이며, 특정 부문과 계층에서 실시해야 하는 활동입니다. 사내관계자의 합의를 모은 후에 실시해야 하는 경우도 있지만, 이는 모든 경우에 해당되지는 않습니다. 사내표준은 기업의 조직원이 의무적으로 지켜야 하는 활동이 아니라, 기업 내에서 일관성 있는 업무 수행을 위해 지켜야 하는 활동입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5769,7 +6005,11 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ep20161001-68" question-id="ep20161001-68" question-num="68" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">68</span>. 품질경영시스템-기본사항과 용어(KS Q ISO 9000:2015)에서 용어에 대한 설명으로 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>품질관리란 품질 요구사항을 충족하는데 중점을 둔 품질경영의 일부이다.</li><li>품질개선이란 품질 요구사항을 충족시키는 능력을 증진하는 데 중점을 둔 품질경영의 일부이다.</li><li>품질보증이란 품질 요구사항이 충족될 것이라는 신뢰를 제공하는 데 중점을 둔 품질경영의 일부이다.</li><li class="correct">품질기획이란 의도된 결과를 만들어 내기 위해 입력을 사용하여 상호 관련되거나 상호 작용하는 활동의 집합으로 품질경영의 일부이다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 77%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답: 없음<br/>
+<br/>
+해설: 모든 용어에 대한 설명이 올바르게 되어 있습니다. <br/>
+<br/>
+추가 설명: 품질기획은 제품 또는 서비스의 품질 요구사항을 충족시키기 위해 필요한 활동들을 계획하고 조직하는 것을 말합니다. 이를 위해 입력 자료를 수집하고 분석하여 목표를 설정하고, 이를 달성하기 위한 전략과 방법을 수립합니다. 품질기획은 품질경영의 일부로서, 제품 또는 서비스의 품질을 개선하고 유지하기 위한 기본적인 단계입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5815,7 +6055,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ep20161001-69" question-id="ep20161001-69" question-num="69" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">69</span>. 국제표준화기구(ISO)에서 사용되는 공식 언어가 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>영어</li><li class="correct">독일어</li><li>불어</li><li>러시아어</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 65%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">ISO에서 사용되는 공식 언어는 영어, 불어, 러시아어이지만 독일어는 공식 언어로 사용되지 않습니다. 이는 ISO의 정책 결정에 따라 결정된 것입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5861,7 +6101,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ep20161001-70" question-id="ep20161001-70" question-num="70" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">70</span>. 경영목표를 달성함에 있어서 중점이 되는 과제와 이를 달성하기 위한 시책으로 전개하여 실행함으로써 기업목표를 달성할 수 있게 하는 것을 무엇이라고 하는가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">방침관리</li><li>기능별관리</li><li>품질보증관리</li><li>부문별관리</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 63%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">방침관리는 기업의 경영목표를 달성하기 위해 중점이 되는 과제와 이를 달성하기 위한 시책을 전개하여 실행하는 것을 말합니다. 따라서 기업의 방향성을 제시하고 이를 실현하기 위한 계획을 수립하고 실행하는 것이 중요합니다. 이를 통해 기업의 목표를 달성할 수 있습니다. 따라서 "방침관리"가 정답입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5907,7 +6147,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ep20161001-71" question-id="ep20161001-71" question-num="71" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">71</span>. 일반적으로 계량형 데이터가 계수형 데이터에 비해 장점으로 틀린 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>계량형 데이터 정보의 활용도가 높다.</li><li>충분한 정보를 얻는 데 필요한 측정횟수가 적다.</li><li>동일한 계측횟수도 계수형보다 판별능력이 좋다.</li><li class="correct">계량형 측정기가 계수형 측정기보다 사용하기 더 용이하다.</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 65%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">계량형 측정기는 연속적인 값을 측정할 수 있기 때문에, 계수형 측정기보다 더 세밀한 측정이 가능하며, 더 많은 정보를 제공할 수 있습니다. 또한, 계수형 측정기는 이산적인 값을 측정하기 때문에 충분한 정보를 얻기 위해서는 더 많은 측정이 필요합니다. 따라서, 계량형 측정기가 계수형 측정기보다 더 효율적이며, 사용하기도 더 용이합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -5953,7 +6193,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ep20161001-72" question-id="ep20161001-72" question-num="72" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">72</span>. 품질경영부문의 품질관리 활동에 있어서 필수적으로 확보해야 할 품질정보에 해당되지 않는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>시장품질 정보</li><li class="correct">인사조직 정보</li><li>제조품질 정보</li><li>설계품질 정보</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 77%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">인사조직 정보는 품질관리 활동에 직접적으로 필요한 정보가 아니기 때문에 필수적으로 확보해야 할 품질정보에 해당되지 않습니다. 품질관리 활동에서는 제조품질 정보와 설계품질 정보를 바탕으로 제품의 품질을 평가하고 개선해나가는 것이 중요합니다. 또한 시장품질 정보는 경쟁사 제품의 품질 정보를 파악하여 제품 개발 및 마케팅 전략을 수립하는 데에 필요합니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6000,7 +6240,11 @@ $(function(){
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div>
 <div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ep20161001-73" question-id="ep20161001-73" question-num="73" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">73</span>. 3개의 품질을 조립하고자 한다. 부품의 표준편차가 각각 0.06mm, 0.08mm, 0.03mm라고 하면 3개 부품의 조립표준편차는 약 얼마인가?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">0.104</li><li>0.386</li><li>0.412</li><li>0.486</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 50%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">부품의 조립표준편차는 각 부품의 표준편차를 제곱하여 더한 후, 다시 루트를 씌워 구할 수 있다. 따라서, <br/>
+<br/>
+조립표준편차 = √(0.06^2 + 0.08^2 + 0.03^2) = 0.104<br/>
+<br/>
+따라서, 정답은 "0.104"이다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6046,7 +6290,13 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ep20161001-74" question-id="ep20161001-74" question-num="74" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">74</span>. 표준화를 전개할 때 그 대상을 파악하기 쉽도록 구성한 표준화의 구조(표준화 공간)에 해당하는 항목은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">주제, 국면, 수준</li><li>형식, 국면, 차원</li><li>주제, 차원, 수준</li><li>차원, 국면, 수준</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 62%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답은 "주제, 국면, 수준"입니다.<br/>
+<br/>
+- 주제: 표준화의 대상이 되는 분야나 주제를 나타냅니다.<br/>
+- 국면: 표준화의 범위나 영역을 나타냅니다.<br/>
+- 수준: 표준화의 세부적인 내용이나 수준을 나타냅니다.<br/>
+<br/>
+따라서, 이 세 가지 항목을 모두 고려하여 표준화의 구조를 구성하게 됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6092,7 +6342,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ep20161001-75" question-id="ep20161001-75" question-num="75" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">75</span>. 예방비용의 산출항목이 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>품질관리 교육비용</li><li>업무계획 추진비용</li><li>외주업체 지도비용</li><li class="correct">계량기 검ㆍ교정비용</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 68%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">계량기 검ㆍ교정비용은 예방비용의 산출항목이 아닙니다. 이유는 계량기 검ㆍ교정은 기계장비의 유지보수와 관련된 비용으로, 예방적인 측면보다는 보전적인 측면에서 비용이 발생하기 때문입니다. 따라서 예방비용의 산출항목으로는 품질관리 교육비용, 업무계획 추진비용, 외주업체 지도비용 등이 포함됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6138,7 +6388,9 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ep20161001-76" question-id="ep20161001-76" question-num="76" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">76</span>. 사내표준화에서 사내표준을 작성하는 대상은 공정변화에 대해 기여비율이 큰 것으로부터 중심적으로 취급하는 것이 효과적이다. 이 때 기여비율이 큰 경우에 해당되는 것이 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="1"><li class="correct">관리자가 교체된 경우</li><li>산포가 큰 작업의 경우</li><li>작업의 중요한 개선이 발생한 경우</li><li>통계적 수법 등을 활용하여 공정을 관리하려는 경우</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 66%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답: "관리자가 교체된 경우"<br/>
+<br/>
+해설: 사내표준화는 기존의 공정을 표준화하여 효율적인 운영을 위해 필요한 것이므로, 공정변화에 대한 기여비율이 큰 것을 중심으로 취급하는 것이 효과적입니다. 따라서, 관리자가 교체된 경우는 공정변화에 대한 기여비율이 큰 경우에 해당되지 않으므로 대상에서 제외됩니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6184,7 +6436,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ep20161001-77" question-id="ep20161001-77" question-num="77" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">77</span>. 전기조립품을 제조하는 공장에서 공정이 안정되어 있는가를 판단하기 위해 n=5, k=20의 <img src="images/ep20161001m77m1.gif"/> 관리도를 작성한 결과 <img src="images/ep20161001m77m2.gif"/> 을 얻었으며 공정이 안정된 것으로 판정되었다. 공정능력치를 구하면 약 얼마인가? (단, n=5일 때, d<sub>2</sub>=2.326이다.)</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="3"><li>±0.795</li><li>±1.590</li><li class="correct">±2.⑤1</li><li>±4.101</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 35%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-empty">이 문항은 아직 해설이 준비되지 않았습니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6230,7 +6482,9 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ep20161001-78" question-id="ep20161001-78" question-num="78" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">78</span>. 품질관리의 원칙이 아닌 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="4"><li>예방의 원칙</li><li>전원참가의 원칙</li><li>과학적 접근의 원칙</li><li class="correct">품질관리 부문을 라인에 두는 원칙</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 49%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">정답: "품질관리 부문을 라인에 두는 원칙"<br/>
+<br/>
+이유: 품질관리 부문을 라인에 두는 것은 품질을 담당하는 부서를 따로 두는 것이 아니라 모든 직원이 품질을 책임지고 개선에 참여하도록 하는 것을 말합니다. 따라서 이는 품질관리의 원칙이 아닙니다. 반면, 예방의 원칙은 불량을 예방하고 미리 대비하는 것, 전원참가의 원칙은 모든 직원이 품질에 대한 책임을 지는 것, 과학적 접근의 원칙은 데이터와 분석을 기반으로 의사결정을 내리는 것입니다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6276,7 +6530,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div></div><div class="row text-dark"><div class="col-12 col-sm-12 col-md-6 exam-box exam-left" id="#ep20161001-79" question-id="ep20161001-79" question-num="79" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">79</span>. 고객이 요구하는 참품질을 언어표현에 의해 체계화하여 이것과 품질특성과 관련을 짓고, 고객의 요구를 제품의 설계특성으로 변화시키며 품질설계를 실행해나가는 매트릭스도표가 매우 유용하게 사용되고 있다. 이와 같은 품질표를 사용하는 기법은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>연관도</li><li class="correct">QFD</li><li>친화도</li><li>FMEA/FTA</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 59%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">고객의 요구사항을 제품의 설계특성으로 변화시키기 위해 사용하는 매트릭스도표는 QFD(품질기능전개) 기법이다. QFD는 고객의 요구사항을 체계적으로 파악하고 제품의 품질특성과 관련시켜 제품의 품질설계를 실행하는 기법으로, 제품의 품질을 개선하고 고객만족도를 높이는 데에 매우 유용하게 사용된다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
@@ -6322,7 +6576,7 @@ $(function(){
 </div>
 </div>
 </div><div class="row"><div class="col-12 exam-buttons text-center"><button class="correct-number btn btn-outline-secondary" type="button">정답</button><button class="chk-question btn btn-outline-secondary" type="button">체크</button><button class="show-comment btn btn-outline-secondary" type="button">해설</button></div></div></div><div class="col-12 col-sm-12 col-md-6 exam-box exam-right" id="#ep20161001-80" question-id="ep20161001-80" question-num="80" tabindex="0"><div class="exam-result"></div><div class="row"><div class="col-12"><p class="exam-title"><span class="exam-number">80</span>. 현장의 문제점을 찾아내어 이를 해석하고, 그 문제의 재발을 방지하고 관리의 정착으로 연결시키고자 하는 QC 7가지 도구에 해당되지 않는 것은?</p></div></div><div class="row"><div class="col-12 question-choice"><ol class="circlednumbers" correct="2"><li>체크시트</li><li class="correct">작업공정도</li><li>특성요인도</li><li>파레토그림</li></ol></div></div><div class="row"><div class="col-12"><span class="exam-cpercent">(정답률: 61%)</span></div></div><div class="reply collapse">
-<ul class="view-reply"></ul>
+<ul class="view-reply"><li class="ai-exp"><div class="ai-exp-label">AI 참고 해설<small>자동 생성된 해설이므로 오류가 있을 수 있습니다</small></div><div class="reply-comment">QC 7가지 도구 중 작업공정도는 해당되지 않는다. 작업공정도는 공정의 각 단계에서 수행되는 작업의 순서와 방법을 기록한 문서로, 공정의 효율성과 일관성을 유지하기 위해 사용된다. QC 7가지 도구는 문제 해결과 품질 향상을 위한 도구로, 문제의 원인을 파악하고 개선하기 위한 방법을 제시한다. 따라서 작업공정도는 QC 7가지 도구에 해당되지 않는다.</div></li></ul>
 <div class="loading">
 <div class="loadbar">
 <span></span>
