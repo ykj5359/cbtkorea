@@ -106,7 +106,7 @@
             <div class="relative max-w-2xl mx-auto">
                 <input type="text" id="searchInput" placeholder="시험 명칭을 입력하세요" 
                     class="w-full px-6 py-4 rounded-full shadow-2xl focus:outline-none text-lg">
-                <button class="absolute right-2 top-2 bg-blue-600 text-white p-3 rounded-full hover:bg-blue-700">
+                <button type="button" id="searchBtn" aria-label="검색" class="absolute right-2 top-2 bg-blue-600 text-white p-3 rounded-full hover:bg-blue-700">
                     <i class="fas fa-search px-2"></i>
                 </button>
             </div>
@@ -284,7 +284,11 @@
 
         <div id="all-categories" class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
             <div class="bg-gray-50 px-6 py-4 border-b border-gray-200">
-                <h3 class="font-bold title-dark">전체 시험 목록 (가나다순) - 총 547개</h3>
+                <h3 class="font-bold title-dark" id="categoriesTitle">전체 시험 목록 (가나다순) - 총 547개</h3>
+                <div id="searchStatus" class="hidden mt-2 text-sm flex flex-wrap items-center gap-2">
+                    <span id="searchStatusText" class="text-blue-700 font-semibold"></span>
+                    <button type="button" id="searchReset" class="px-3 py-1 rounded-full border border-gray-300 text-gray-600 hover:bg-gray-100">전체 보기</button>
+                </div>
             </div>
             <div class="p-6">
                 <div class="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-8 space-y-2" id="categoriesList">
@@ -834,6 +838,7 @@
                     <div class="text-sm text-gray-600 hover:text-blue-600 cursor-pointer"><a href="CBT-list/화학분석기사(구)-list.html">화학분석기사(구)</a></div>
                     <div class="text-sm text-gray-600 hover:text-blue-600 cursor-pointer"><a href="CBT-list/화훼장식기능사-list.html">화훼장식기능사</a></div>
                     <div class="text-sm text-gray-600 hover:text-blue-600 cursor-pointer"><a href="CBT-list/화훼장식기사-list.html">화훼장식기사</a></div>
+                    <div class="text-sm text-gray-600 hover:text-blue-600 cursor-pointer"><a href="CBT-list/환경기능사-list.html">환경기능사</a></div>
                 </div>
             </div>
         </div>
@@ -975,14 +980,58 @@
             });
         });
         
-        // 검색 기능
-        document.getElementById('searchInput')?.addEventListener('input', function(e) {
-            const searchTerm = e.target.value.toLowerCase();
-            document.querySelectorAll('#categoriesList div').forEach(link => {
-                const text = link.textContent.toLowerCase();
-                link.style.display = text.includes(searchTerm) ? 'block' : 'none';
+        // 검색 기능: 입력 시 실시간 필터, Enter/검색 버튼 시 결과 안내 + 시험 목록으로 자동 스크롤
+        (function () {
+            const input = document.getElementById('searchInput');
+            const btn = document.getElementById('searchBtn');
+            const list = document.getElementById('categoriesList');
+            const box = document.getElementById('all-categories');
+            const status = document.getElementById('searchStatus');
+            const statusText = document.getElementById('searchStatusText');
+            if (!input || !list || !box) return;
+            const norm = s => String(s || '').toLowerCase().replace(/[\s\-_]/g, '');
+            const empty = document.createElement('p');
+            empty.id = 'searchEmpty';
+            empty.className = 'hidden text-center text-gray-500 py-8';
+            list.parentNode.insertBefore(empty, list.nextSibling);
+            function filter() {
+                const raw = input.value.trim();
+                const term = norm(raw);
+                let count = 0;
+                list.querySelectorAll(':scope > div').forEach(item => {
+                    const hit = !term || norm(item.textContent).includes(term);
+                    item.style.display = hit ? 'block' : 'none';
+                    if (hit) count++;
+                });
+                if (term) {
+                    status.classList.remove('hidden');
+                    statusText.textContent = count ? `'${raw}' 검색 결과 ${count}개` : `'${raw}' 검색 결과가 없습니다`;
+                    empty.textContent = `'${raw}'에 해당하는 시험이 없습니다. 다른 키워드로 검색해 보세요.`;
+                    empty.classList.toggle('hidden', count > 0);
+                } else {
+                    status.classList.add('hidden');
+                    empty.classList.add('hidden');
+                }
+            }
+            function search() {
+                filter();
+                const nav = document.querySelector('nav');
+                const offset = (nav ? nav.offsetHeight : 64) + 16;
+                const y = box.getBoundingClientRect().top + window.pageYOffset - offset;
+                window.scrollTo({ top: y, behavior: 'smooth' });
+                box.classList.add('ring-4', 'ring-blue-300');
+                setTimeout(() => box.classList.remove('ring-4', 'ring-blue-300'), 1500);
+                input.blur();
+            }
+            input.addEventListener('input', filter);
+            input.addEventListener('keydown', e => {
+                if (e.key === 'Enter' && !e.isComposing) { e.preventDefault(); search(); }
             });
-        });
+            btn && btn.addEventListener('click', search);
+            document.getElementById('searchReset')?.addEventListener('click', () => {
+                input.value = ''; filter(); input.focus();
+            });
+        })();
     </script>
 </body>
 </html>
