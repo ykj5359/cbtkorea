@@ -15,3 +15,6 @@ __pycache__/
 temp_shorts/
 shorts_output/
 cardnews_output/
+
+# 대출중개인 원본 자료(PDF/이미지/zip) — 배포 제외
+CBT/대출중개인 자격시험/
