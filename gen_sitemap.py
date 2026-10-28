@@ -69,7 +69,7 @@ cat_body = "".join(url_block(enc("CBT-list/" + f.name), "weekly", "0.7") for f i
 write_urlset(ROOT / "sitemap-categories.xml", cat_body)
 
 # ── 3) CBT 기출문제 전체 ──
-exam_files = [f for f in (ROOT / "CBT").rglob("*.html") if not skip(f)]
+exam_files = [f for f in (ROOT / "CBT").glob("*/*.html") if not skip(f) and f.stat().st_size > 0]  # CBT/{종목}/{회차}.html 만 (하위 작업폴더 중복본 제외)
 exam_files.sort()
 exam_body = "".join(
     url_block(enc("CBT/" + f.relative_to(ROOT / "CBT").as_posix()), "monthly", "0.6")

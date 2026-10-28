@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<!-- GA4-CBT -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C6X67SNW5B"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-C6X67SNW5B');</script>
+<!-- /GA4-CBT -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>페이지를 찾을 수 없습니다 - CBT 기출문제</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 min-h-screen flex flex-col">
+    <nav class="bg-white border-b border-gray-200">
+        <div class="max-w-5xl mx-auto px-4 h-16 flex items-center">
+            <a href="/" class="text-xl font-bold text-blue-600">CBT 기출문제</a>
+        </div>
+    </nav>
+    <main class="flex-1 flex items-center justify-center px-4 py-16">
+        <div class="max-w-lg w-full text-center">
+            <p class="text-6xl font-bold text-blue-600 mb-4">404</p>
+            <h1 class="text-2xl font-bold text-gray-800 mb-3">요청하신 페이지를 찾을 수 없습니다</h1>
+            <p class="text-gray-600 mb-8">주소가 바뀌었거나 삭제된 페이지입니다. 아래에서 원하는 시험을 찾아보세요.</p>
+            <form id="f" class="flex gap-2 mb-6">
+                <input id="q" type="text" placeholder="시험 명칭 (예: 전기기사)" class="flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-blue-500">
+                <button class="px-5 py-3 rounded-lg bg-blue-600 text-white font-semibold hover:bg-blue-700"><i class="fas fa-search"></i></button>
+            </form>
+            <div class="flex flex-wrap justify-center gap-2 text-sm">
+                <a href="/" class="px-4 py-2 rounded-full bg-white border border-gray-300 hover:bg-gray-100">홈</a>
+                <a href="/exams.html" class="px-4 py-2 rounded-full bg-white border border-gray-300 hover:bg-gray-100">전체 기출문제</a>
+                <a href="/guides.html" class="px-4 py-2 rounded-full bg-white border border-gray-300 hover:bg-gray-100">자격증 가이드</a>
+                <a href="/cbt-qnet.html" class="px-4 py-2 rounded-full bg-white border border-gray-300 hover:bg-gray-100">실전 CBT</a>
+            </div>
+        </div>
+    </main>
+    <script>
+        document.getElementById('f').addEventListener('submit', function (e) {
+            e.preventDefault();
+            var v = document.getElementById('q').value.trim();
+            location.href = '/' + (v ? '?q=' + encodeURIComponent(v) : '');
+        });
+    </script>
+</body>
+</html>

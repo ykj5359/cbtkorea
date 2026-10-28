@@ -1013,12 +1013,12 @@
                     empty.classList.add('hidden');
                 }
             }
-            function search() {
+            function search(instant) {
                 filter();
                 const nav = document.querySelector('nav');
                 const offset = (nav ? nav.offsetHeight : 64) + 16;
                 const y = box.getBoundingClientRect().top + window.pageYOffset - offset;
-                window.scrollTo({ top: y, behavior: 'smooth' });
+                window.scrollTo({ top: y, behavior: instant === true ? 'auto' : 'smooth' });
                 box.classList.add('ring-4', 'ring-blue-300');
                 setTimeout(() => box.classList.remove('ring-4', 'ring-blue-300'), 1500);
                 input.blur();
@@ -1027,10 +1027,13 @@
             input.addEventListener('keydown', e => {
                 if (e.key === 'Enter' && !e.isComposing) { e.preventDefault(); search(); }
             });
-            btn && btn.addEventListener('click', search);
+            btn && btn.addEventListener('click', () => search(false));
             document.getElementById('searchReset')?.addEventListener('click', () => {
                 input.value = ''; filter(); input.focus();
             });
+            // 다른 페이지(404 등)에서 ?q=키워드 로 넘어온 경우 바로 검색
+            const q0 = new URLSearchParams(location.search).get('q');
+            if (q0) { input.value = q0; window.addEventListener('load', () => search(true)); }
         })();
     </script>
 </body>
