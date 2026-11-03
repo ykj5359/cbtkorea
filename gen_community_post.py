@@ -183,9 +183,9 @@ def make_post(date: dt.date, seq_id: int) -> dict:
         "author": "운영자",
         "date": date.strftime("%m-%d"),
         "timestamp": date.strftime("%Y-%m-%d") + "T09:00",
-        "views": rnd.randint(120, 900),
-        "likes": rnd.randint(8, 60),
-        "comments": rnd.randint(0, 12),
+        "views": 0,
+        "likes": 0,
+        "comments": 0,
         "content": body_fn(cert, date),
     }
 
